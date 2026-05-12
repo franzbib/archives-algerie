@@ -1,102 +1,131 @@
-# Project State For LLMs
+# Project State for LLMs — Archives Algérie
 
-## 1. Depot
+## 1. Dépôt et branche
 
-- Repo: `franzbib/archives-algerie`
-- Branche de travail: `master`
-- Branche `main`: ne pas utiliser pour l'instant sauf decision explicite.
-- Etat actuel: V0 archivistique.
+- Repo : franzbib/archives-algerie
+- Branche de travail actuelle : master
+- Important : la branche main ne doit pas être utilisée pour l’instant, sauf décision explicite.
+- Le travail utile est actuellement sur master.
 
-## 2. Principe du projet
+## 2. Nature du projet
 
-`archives-algerie` est une application web d'exploration d'archives historiques
-scannees sur l'Algerie.
+Application Next.js d’exploration d’archives historiques scannées concernant l’Algérie, avec une attention particulière aux dossiers SHD, à Boghari, à la frontière marocaine, aux documents FLN récupérés, aux microfilms et aux ensembles généalogiques.
 
-Le projet doit respecter une logique archivistique:
+L’application doit respecter une logique archivistique :
+- fonds ;
+- cote ;
+- dossier ;
+- document ;
+- page ;
+- image scannée ;
+- OCR futur ;
+- analyse future.
 
-- collection / fonds
-- cote
-- dossier
-- document
-- page
+Elle ne doit pas être conçue comme une simple galerie d’images.
 
-La V0 repose sur un manifeste local JSON. Elle ne doit pas etre traitee comme
-une simple galerie d'images.
+## 3. État actuel
 
-Limites actuelles:
+État : V0 archivistique.
 
-- pas encore d'OCR dans l'application web ;
-- pas encore d'IA ;
-- pas encore d'ingestion Google Drive automatique ;
-- les liens Drive sont des URL conservees dans le manifeste local.
+La V0 contient :
+- une application Next.js + TypeScript + Tailwind ;
+- un manifeste local JSON ;
+- une page d’accueil ;
+- une page de collections ;
+- des fiches collections ;
+- des fiches documents préparatoires ;
+- une page de questionnement préparatoire ;
+- des scripts préparatoires pour manifeste, OCR local, normalisation OCR et chunks.
 
-## 3. Architecture
+Ce qui n’est pas encore actif :
+- pas d’OCR réel dans l’application ;
+- pas d’appel OpenAI ;
+- pas d’embeddings ;
+- pas de base PostgreSQL ;
+- pas de connexion automatique à Google Drive ;
+- pas d’authentification ;
+- pas d’ingestion massive.
 
-Pages existantes:
+## 4. Fichiers importants
 
-- `/`
-- `/collections`
-- `/collections/[id]`
-- `/documents/[id]`
-- `/questionnement`
-
-Types:
-
-- `src/types/archive.ts`
-
-Manifeste:
-
+- `README.md`
+- `docs/ARCHITECTURE.md`
+- `docs/ROADMAP.md`
 - `src/data/archives-manifest.json`
-
-Fonctions de lecture:
-
+- `src/types/archive.ts`
 - `src/lib/archiveManifest.ts`
-
-Scripts:
-
+- `src/app/page.tsx`
+- `src/app/collections/page.tsx`
+- `src/app/collections/[id]/page.tsx`
+- `src/app/documents/[id]/page.tsx`
+- `src/app/questionnement/page.tsx`
 - `scripts/build-manifest.ts`
-- `scripts/validate-manifest.ts`
 - `scripts/ocr-local.ts`
 - `scripts/normalize-ocr.ts`
 - `scripts/prepare-chunks.ts`
 
-Composants importants:
+## 5. Règles de développement
 
-- `src/components/collection-list.tsx`
-- `src/components/document-list.tsx`
-- `src/components/collections/collections-browser.tsx`
-- `src/components/stat-card.tsx`
-- `src/components/ui/status-badge.tsx`
+Tout futur travail doit respecter ces règles :
 
-## 4. Regles a respecter
+1. Travailler par petites étapes vérifiables.
+2. Toujours indiquer les fichiers modifiés.
+3. Toujours indiquer les commandes de vérification.
+4. Ne jamais inventer de données archivistiques.
+5. Ne jamais créer de faux OCR.
+6. Ne jamais produire de réponse IA sans source.
+7. Ne pas transformer l’application en galerie décorative.
+8. Ne pas connecter Google Drive automatiquement sans étape de contrôle.
+9. Ne pas ajouter OpenAI ou embeddings avant validation de l’OCR et des chunks.
+10. Conserver la logique collection → document → page.
 
-- Ne pas transformer l'application en galerie d'images.
-- Ne pas inventer de donnees historiques.
-- Ne pas creer de faux OCR.
-- Ne pas ajouter d'appel IA sans decision explicite.
-- Toute future IA devra citer ses sources: collection, cote, document, page et
-  extrait OCR.
-- Travailler par petites etapes.
-- Toujours indiquer les fichiers modifies.
-- Toujours indiquer les tests ou commandes de verification lancees.
-- Conserver la separation entre manifeste, types, fonctions utilitaires,
-  composants et routes.
+## 6. Règles pour Codex
 
-## 5. Roadmap courte
+Quand Codex intervient :
+- il doit auditer avant de modifier si la demande est large ;
+- il doit éviter les refontes globales ;
+- il doit faire des commits courts et nommés clairement ;
+- il doit préserver l’architecture existante ;
+- il doit vérifier npm run lint et npm run build si le code applicatif change.
 
-1. Stabilisation V0.
-2. Filtres de collections.
-3. Fiches collection et document.
-4. Ingestion Google Drive controlee.
-5. OCR.
-6. Chunks.
-7. Recherche sourcee.
+## 7. Règles pour Antigravity
 
-## 6. Dernieres decisions
+Quand Antigravity intervient :
+- il doit se limiter à l’interface et à l’expérience visuelle ;
+- il ne doit pas modifier la logique métier ;
+- il ne doit pas modifier le manifeste sans demande explicite ;
+- il doit conserver une esthétique sobre : archives, bibliothèque, papier, fiches, catalogues ;
+- il doit éviter l’esthétique spectaculaire, militaire ou ludique.
 
-- Travailler sur `master`.
-- `main` ne contient pas l'etat utile du projet pour l'instant.
-- Conserver la logique collection / document / page.
-- La page `/questionnement` est une preparation methodologique, pas une recherche
-  active.
-- Les donnees de la V0 doivent venir du manifeste local.
+## 8. Roadmap courte
+
+Prochaine progression recommandée :
+
+1. Stabiliser la V0.
+2. Activer les filtres de collections.
+3. Améliorer les fiches collection.
+4. Améliorer les fiches document.
+5. Préparer l’inventaire enrichi V1.
+6. Préparer l’ingestion Drive contrôlée.
+7. Préparer l’OCR local sur un échantillon.
+8. Préparer les chunks.
+9. Préparer la recherche plein texte.
+10. Préparer seulement ensuite la recherche en langage naturel sourcée.
+
+## 9. Risques principaux
+
+- confusion entre main et master ;
+- ingestion trop rapide de Google Drive ;
+- OCR de mauvaise qualité non signalé ;
+- réponses IA non sourcées ;
+- confusion entre document, page et image ;
+- surcharge visuelle ;
+- perte de la logique archivistique ;
+- développement trop ambitieux d’un coup.
+
+## 10. Dernière consigne
+
+Le projet doit avancer comme un instrument de recherche historique progressif :
+d’abord inventorier, puis OCRiser, puis vérifier, puis indexer, puis interroger.
+
+Ne pas faire l’inverse.
