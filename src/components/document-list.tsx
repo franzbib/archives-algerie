@@ -15,7 +15,7 @@ export function DocumentList({ documents }: DocumentListProps) {
   if (documents.length === 0) {
     return (
       <div className="border-2 border-dashed border-paper-border bg-paper/30 p-8 text-center text-sm leading-6 text-warm">
-        Aucun document n&apos;est encore rattache a cette collection dans le manifeste.
+        Aucun document rattaché pour l&apos;instant.
       </div>
     );
   }

@@ -81,15 +81,7 @@ export default async function CollectionPage({
               </h1>
             </div>
 
-            <a
-              href={collection.driveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex w-fit items-center gap-2 border border-paper-border bg-background px-4 py-2 text-sm text-foreground"
-            >
-              Dossier Drive
-              <ExternalLink className="h-4 w-4" />
-            </a>
+            <DriveLink href={collection.driveUrl} />
           </div>
 
           <dl className="mt-8 grid gap-4 border-t border-paper-border pt-5 text-sm sm:grid-cols-2 lg:grid-cols-4">
@@ -114,7 +106,7 @@ export default async function CollectionPage({
             <dl className="mt-6 grid gap-4 border-t border-paper-border pt-5 text-sm sm:grid-cols-3">
               <MetaItem
                 label="Documents rattaches"
-                value={String(documents.length || collection.documentCount)}
+                value={String(documents.length)}
               />
               <MetaItem label="Types presents" value={formatList(documentTypes)} />
               <MetaItem label="Mots-cles" value={formatList(keywords)} />
@@ -184,6 +176,28 @@ function TreatmentItem({
         </StatusBadge>
       </div>
     </div>
+  );
+}
+
+function DriveLink({ href }: { href?: string }) {
+  if (!href || href.trim().length === 0) {
+    return (
+      <p className="w-fit border border-paper-border bg-background px-4 py-2 text-sm text-warm">
+        Lien Drive non renseigné
+      </p>
+    );
+  }
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex w-fit items-center gap-2 border border-paper-border bg-background px-4 py-2 text-sm text-foreground"
+    >
+      Dossier Drive
+      <ExternalLink className="h-4 w-4" />
+    </a>
   );
 }
 
