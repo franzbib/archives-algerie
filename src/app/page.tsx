@@ -32,7 +32,7 @@ export default function Home() {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-foreground/80">
               Cette V0 lit un manifeste local JSON pour naviguer dans des
               collections issues de dossiers Drive. Elle prepare la consultation
-              image + OCR et une future recherche en langage naturel sourcée,
+              image + OCR et une future recherche en langage naturel sourcee,
               sans connecter encore Google Drive, OCR ou IA.
             </p>
           </div>

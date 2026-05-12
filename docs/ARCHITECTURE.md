@@ -74,7 +74,7 @@ scripts
 ```
 
 Outils Node independants pour preparer les donnees hors application web:
-construction de manifeste, OCR local, normalisation et chunks.
+construction et validation de manifeste, OCR local, normalisation et chunks.
 
 ## Frontieres futures
 

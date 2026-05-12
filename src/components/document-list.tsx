@@ -54,7 +54,7 @@ export function DocumentList({ documents }: DocumentListProps) {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
                 >
-                  Source Drive
+                  Dossier Drive
                   <ExternalLink className="h-3.5 w-3.5" />
                 </a>
               </div>

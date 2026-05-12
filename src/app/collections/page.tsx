@@ -1,5 +1,4 @@
-import { ArchiveFilters } from "@/components/archive-filters";
-import { CollectionList } from "@/components/collection-list";
+import { CollectionsBrowser } from "@/components/collections/collections-browser";
 import { getArchiveFacets, getCollections } from "@/lib/archiveManifest";
 
 export default function CollectionsPage() {
@@ -17,16 +16,13 @@ export default function CollectionsPage() {
             Collections d&apos;archives
           </h1>
           <p className="mt-4 max-w-3xl text-sm leading-6 text-foreground/75">
-            Liste issue du manifeste local. Les filtres par cote, lieu, periode,
-            type de document et statut sont prevus pour la suite.
+            Parcourez les collections du manifeste local par institution, region,
+            periode, statut ou recherche textuelle.
           </p>
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-8 px-6 py-10 lg:grid-cols-[280px_1fr] lg:px-8">
-        <ArchiveFilters facets={facets} />
-        <CollectionList collections={collections} />
-      </section>
+      <CollectionsBrowser collections={collections} facets={facets} />
     </main>
   );
 }

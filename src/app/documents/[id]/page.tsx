@@ -105,7 +105,7 @@ export default async function DocumentPage({
               rel="noreferrer"
               className="mt-6 inline-flex items-center gap-2 border border-paper-border bg-background px-4 py-2 text-sm text-foreground"
             >
-              Source Drive
+              Dossier Drive
               <ExternalLink className="h-4 w-4" />
             </a>
           </div>

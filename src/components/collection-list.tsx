@@ -11,6 +11,14 @@ interface CollectionListProps {
 }
 
 export function CollectionList({ collections }: CollectionListProps) {
+  if (collections.length === 0) {
+    return (
+      <div className="border border-dashed border-paper-border bg-paper/60 p-6 text-sm leading-6 text-warm">
+        Aucune collection ne correspond à ces critères.
+      </div>
+    );
+  }
+
   return (
     <div className="grid gap-4">
       {collections.map((collection) => (
@@ -69,7 +77,7 @@ export function CollectionList({ collections }: CollectionListProps) {
 
           <div className="mt-4 flex items-center gap-2 text-xs text-warm">
             <Archive className="h-4 w-4" />
-            <span>Fonds classe par cote, dossier, document et page.</span>
+            <span>Fonds classe par cote, dossier, document et pages futures.</span>
           </div>
         </article>
       ))}

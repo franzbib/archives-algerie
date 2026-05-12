@@ -110,6 +110,7 @@ connectent pas l'API Google Drive.
 
 ```bash
 npm run manifest:build
+npm run manifest:validate
 npm run ocr:local
 npm run ocr:normalize
 npm run chunks:prepare
@@ -124,6 +125,12 @@ npm run manifest:build -- --config scripts/archive-sources.json --out src/data/a
 
 Le script lit une liste locale de collections/documents et produit le manifeste
 JSON stable utilise par l'application.
+
+Pour verifier le manifeste courant:
+
+```bash
+npm run manifest:validate
+```
 
 ### OCR local
 
@@ -173,6 +180,7 @@ docs/
   ROADMAP.md
 scripts/
   build-manifest.ts
+  validate-manifest.ts
   ocr-local.ts
   normalize-ocr.ts
   prepare-chunks.ts
