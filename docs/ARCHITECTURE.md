@@ -1,32 +1,32 @@
 # Architecture
 
-## Principes
+## Intention
 
-L'application respecte une logique archivistique et ne reduit pas les archives a
-des fichiers images. Une image numerisee represente au mieux une page; elle doit
-rester rattachee a un document, lui-meme classe dans un dossier, avec une cote et
-un contexte de collection.
+L'application explore des archives historiques scannees sur l'Algerie. Elle doit
+rester archivistique avant d'etre visuelle: une image est une representation de
+page, une page appartient a un document, un document appartient a un dossier, et
+le dossier reste rattache a un fonds et a une cote.
 
-## Modele de domaine
+## Source de donnees V0
 
-- `ArchiveCollection`: ensemble coherent de provenance, de periode et de
-  description commune.
-- `ArchiveFolder`: dossier ou sous-dossier classe par cote.
-- `ArchiveDocument`: unite documentaire consultable, par exemple registre,
-  correspondance, carte ou dossier administratif.
-- `ArchivePage`: page physique ou numerisee appartenant a un document.
-- `DateRange`: periode normalisee avec libelle d'affichage.
+La V0 lit uniquement `src/data/archives-manifest.json`.
 
-Les types sont definis dans `src/lib/archive-types.ts`.
+Ce manifeste est une couche intermediaire stable entre les dossiers Google Drive
+et l'application. Il reference les collections et documents sans appeler l'API
+Google Drive.
 
-## Manifeste d'archives
+## Domaine
 
-`src/data/archives-manifest.json` sert de couche intermediaire stable. Il liste
-les collections, leur source, leur region, leur periode, leur statut de
-traitement et un lien vers le dossier Drive. Il ne connecte pas l'API Google
-Drive: le lien reste une reference externe, lisible et remplacable.
+Types principaux dans `src/types/archive.ts`:
 
-Les statuts prevus sont:
+- `Collection`: fonds ou ensemble de dossiers repere par institution, cote,
+  region, periode et URL Drive.
+- `Document`: unite documentaire preparatoire avec type, lieu, date, mots-cles,
+  statut OCR et resume.
+- `ArchivePage`: point d'ancrage futur pour une image scannee et un texte OCR.
+- `ArchiveStatus`: cycle de traitement de l'inventaire a la verification.
+
+Statuts:
 
 - `to_inventory`
 - `inventoried`
@@ -35,52 +35,54 @@ Les statuts prevus sont:
 - `indexed`
 - `verified`
 
-Les types du manifeste sont dans `src/types/archive.ts`. Les fonctions de lecture
-et de presentation sont dans `src/lib/archiveManifest.ts`.
-
-## Organisation applicative
+## Organisation
 
 ```text
 src/app
 ```
 
-Contient les routes Next.js App Router, le layout global et les styles.
+Routes App Router:
+
+- `/`
+- `/collections`
+- `/collections/[id]`
+- `/documents/[id]`
+- `/questionnement`
 
 ```text
 src/components
 ```
 
-Contient les composants d'affichage. La V0 expose notamment l'arborescence des
-collections, dossiers et documents.
+Composants reutilisables: listes, filtres prevus, badges, cartes et blocs de
+consultation.
 
 ```text
-src/data
+src/lib/archiveManifest.ts
 ```
 
-Contient le manifeste local des collections. Cette couche permet de faire evoluer
-les sources, les statuts et les liens Drive sans coupler l'interface a une API
-externe.
+Fonctions de lecture et de derivation:
+
+- collections
+- documents
+- documents par collection
+- details par identifiant
+- facettes de filtrage
+- libelles de statuts et types documentaires
 
 ```text
-src/lib
+scripts
 ```
 
-Contient le domaine, les donnees de demonstration et, plus tard, les services
-metier: chargement de donnees, indexation, normalisation, recherche.
+Outils Node independants pour preparer les donnees hors application web:
+construction de manifeste, OCR local, normalisation et chunks.
 
-```text
-src/types
-```
+## Frontieres futures
 
-Contient les types partages du manifeste et des futures couches d'ingestion.
-
-## Futures frontieres techniques
-
-- OCR: module separe qui produit du texte par page sans ecraser les metadonnees
-  archivistiques.
-- Indexation: service qui indexe collections, dossiers, documents, pages et
-  transcriptions.
-- Recherche semantique: couche optionnelle au-dessus de l'index, avec vecteurs
-  rattaches aux entites du domaine.
-- Persistance: remplacement des donnees de demonstration par une base ou une API
-  sans changer les composants d'affichage.
+- Google Drive: remplacera progressivement les URL manuelles par une ingestion
+  controlee.
+- OCR: produira du texte par page sans ecraser le brut.
+- Indexation: indexera metadonnees, OCR et references archivistiques.
+- Embeddings: creeront des passages interrogeables, toujours rattaches a une
+  cote, un document et une page.
+- Recherche en langage naturel: devra citer les sources du manifeste et les
+  passages OCR.

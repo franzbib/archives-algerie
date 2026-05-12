@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import { Archive, Library, Search } from "lucide-react";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,9 +28,40 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-background text-foreground`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <header className="sticky top-0 z-10 border-b border-paper-border bg-background/90 backdrop-blur-sm">
+          <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+            <Link
+              href="/"
+              className="flex items-center gap-3 text-foreground transition-opacity hover:opacity-80"
+            >
+              <Library className="h-6 w-6 stroke-[1.5]" />
+              <span className="font-serif text-xl font-medium tracking-wide">
+                Archives Algerie
+              </span>
+            </Link>
+            <nav className="flex items-center gap-6">
+              <Link
+                href="/collections"
+                className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
+              >
+                <Archive className="h-4 w-4 stroke-[2]" />
+                Collections
+              </Link>
+              <Link
+                href="/questionnement"
+                className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
+              >
+                <Search className="h-4 w-4 stroke-[2]" />
+                Recherche
+              </Link>
+            </nav>
+          </div>
+        </header>
+        <div className="flex-1">{children}</div>
+      </body>
     </html>
   );
 }

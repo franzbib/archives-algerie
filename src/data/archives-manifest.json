@@ -1,60 +1,234 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "0.2.0",
   "updatedAt": "2026-05-12",
   "collections": [
     {
-      "id": "alg-adm",
-      "title": "Administration territoriale en Algerie",
-      "source": "Versements administratifs historiques",
-      "region": "Algerie - ensemble du territoire",
-      "period": {
-        "start": "1848",
-        "end": "1962",
-        "label": "1848-1962"
-      },
-      "processingStatus": "inventoried",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/placeholder-alg-adm",
-      "notes": "Collection pilote pour structurer les cotes, dossiers et documents."
+      "id": "shd-1h4382-d1-boghari",
+      "title": "Syntheses de renseignements, Secteur Boghari",
+      "sourceInstitution": "Service historique de la Defense",
+      "archiveReference": "SHD 1H4382 D1",
+      "region": "Boghari, Medea",
+      "period": "1956-1960",
+      "description": "Fonds de dossiers de renseignement et de syntheses territoriales relatifs au secteur de Boghari pendant la guerre d'Algerie.",
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-shd-1h4382-d1",
+      "status": "inventoried",
+      "documentCount": 2
     },
     {
-      "id": "alg-ec",
-      "title": "Registres et etat civil",
-      "source": "Copies de registres et instruments de recherche",
-      "region": "Alger, Oran, Constantine",
-      "period": {
-        "start": "1830",
-        "end": "1962",
-        "label": "1830-1962"
-      },
-      "processingStatus": "ocr_pending",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/placeholder-alg-ec",
-      "notes": "Les donnees personnelles devront etre traitees selon les regles de communicabilite."
+      "id": "shd-1h1647-d1-fln-w4",
+      "title": "Documents FLN recuperes W4",
+      "sourceInstitution": "Service historique de la Defense",
+      "archiveReference": "SHD 1H1647 D1",
+      "region": "Wilaya IV",
+      "period": "1957-1961",
+      "description": "Dossier preparatoire recensant des documents attribues au FLN, avec pieces recuperees et notes de contexte.",
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-shd-1h1647-d1",
+      "status": "to_inventory",
+      "documentCount": 1
     },
     {
-      "id": "alg-cp",
-      "title": "Cartes, plans et limites administratives",
-      "source": "Cartes numerisees et plans administratifs",
-      "region": "Algerie - regions administratives",
-      "period": {
-        "start": "1870",
-        "end": "1958",
-        "label": "1870-1958"
-      },
-      "processingStatus": "to_inventory",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/placeholder-alg-cp"
+      "id": "shd-gr-9m2274-frontiere-maroc",
+      "title": "Frontiere Maroc",
+      "sourceInstitution": "Service historique de la Defense",
+      "archiveReference": "SHD GR 9 M 2274",
+      "region": "Frontiere Algerie-Maroc",
+      "period": "1955-1962",
+      "description": "Ensemble de dossiers sur la zone frontaliere, la circulation, les dispositifs militaires et les passages transfrontaliers.",
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-shd-gr-9m2274",
+      "status": "inventoried",
+      "documentCount": 2
     },
     {
-      "id": "alg-presse",
-      "title": "Presse et bulletins administratifs",
-      "source": "Periodiques et bulletins officiels",
-      "region": "Algerie - centres urbains",
-      "period": {
-        "start": "1900",
-        "end": "1962",
-        "label": "1900-1962"
-      },
-      "processingStatus": "indexed",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/placeholder-alg-presse"
+      "id": "microfilm-frontiere-maroc",
+      "title": "Microfilm Frontiere Maroc",
+      "sourceInstitution": "Collection numerisee de travail",
+      "archiveReference": "Microfilm Frontiere Maroc",
+      "region": "Frontiere Algerie-Maroc",
+      "period": "1950-1962",
+      "description": "Microfilm numerise a inventorier, rattache aux dossiers concernant la frontiere marocaine.",
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-microfilm-frontiere-maroc",
+      "status": "ocr_pending",
+      "documentCount": 1
+    },
+    {
+      "id": "boghari-ancienne",
+      "title": "Boghari a l'ancienne",
+      "sourceInstitution": "Collection iconographique locale",
+      "archiveReference": "Boghari a l'ancienne",
+      "region": "Boghari",
+      "period": "1900-1962",
+      "description": "Documents iconographiques et contextuels pour situer la ville, ses lieux et ses usages dans la longue duree.",
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-boghari-ancienne",
+      "status": "to_inventory",
+      "documentCount": 1
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-boghari-synthese-renseignements-1958",
+      "collectionId": "shd-1h4382-d1-boghari",
+      "title": "Synthese mensuelle de renseignements",
+      "documentType": "renseignement",
+      "dateLabel": "1958",
+      "place": "Secteur Boghari",
+      "peopleMentioned": [],
+      "keywords": ["renseignement", "secteur", "Boghari", "synthese"],
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-doc-boghari-synthese",
+      "ocrStatus": "ocr_pending",
+      "summary": "Document fictif de V0 representant une synthese de renseignements rattachee au dossier SHD 1H4382 D1.",
+      "folderTitle": "D1 - Syntheses de renseignements",
+      "archiveReference": "SHD 1H4382 D1",
+      "pages": [
+        {
+          "id": "page-boghari-synthese-001",
+          "pageNumber": 1,
+          "label": "Page 1",
+          "imageStatus": "placeholder",
+          "ocrTextStatus": "ocr_pending"
+        },
+        {
+          "id": "page-boghari-synthese-002",
+          "pageNumber": 2,
+          "label": "Page 2",
+          "imageStatus": "placeholder",
+          "ocrTextStatus": "ocr_pending"
+        }
+      ]
+    },
+    {
+      "id": "doc-boghari-note-lieux-1959",
+      "collectionId": "shd-1h4382-d1-boghari",
+      "title": "Note sur les lieux et axes du secteur",
+      "documentType": "rapport",
+      "dateLabel": "1959",
+      "place": "Boghari",
+      "peopleMentioned": [],
+      "keywords": ["lieux", "axes", "secteur", "Boghari"],
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-doc-boghari-lieux",
+      "ocrStatus": "to_inventory",
+      "summary": "Notice preparatoire pour un document de contexte sur les lieux et axes de circulation du secteur.",
+      "folderTitle": "D1 - Notes sectorielles",
+      "archiveReference": "SHD 1H4382 D1",
+      "pages": [
+        {
+          "id": "page-boghari-note-001",
+          "pageNumber": 1,
+          "label": "Feuillet 1",
+          "imageStatus": "placeholder",
+          "ocrTextStatus": "to_inventory"
+        }
+      ]
+    },
+    {
+      "id": "doc-fln-w4-piece-recuperee",
+      "collectionId": "shd-1h1647-d1-fln-w4",
+      "title": "Piece recuperee attribuee au FLN",
+      "documentType": "tract",
+      "dateLabel": "Sans date precise",
+      "place": "Wilaya IV",
+      "peopleMentioned": [],
+      "keywords": ["FLN", "Wilaya IV", "piece recuperee"],
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-doc-fln-w4",
+      "ocrStatus": "to_inventory",
+      "summary": "Fiche fictive de document pour preparer l'inventaire detaille des pieces recuperees.",
+      "folderTitle": "D1 - Documents FLN recuperes",
+      "archiveReference": "SHD 1H1647 D1",
+      "pages": []
+    },
+    {
+      "id": "doc-frontiere-maroc-carte",
+      "collectionId": "shd-gr-9m2274-frontiere-maroc",
+      "title": "Carte de travail sur la frontiere Maroc",
+      "documentType": "carte",
+      "dateLabel": "1958-1960",
+      "place": "Frontiere Algerie-Maroc",
+      "peopleMentioned": [],
+      "keywords": ["frontiere", "Maroc", "carte", "passages"],
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-doc-frontiere-carte",
+      "ocrStatus": "ocr_pending",
+      "summary": "Document cartographique fictif representant une piece de consultation future.",
+      "folderTitle": "Cartes et limites",
+      "archiveReference": "SHD GR 9 M 2274",
+      "pages": [
+        {
+          "id": "page-frontiere-carte-001",
+          "pageNumber": 1,
+          "label": "Carte",
+          "imageStatus": "placeholder",
+          "ocrTextStatus": "ocr_pending"
+        }
+      ]
+    },
+    {
+      "id": "doc-frontiere-maroc-rapport-circulation",
+      "collectionId": "shd-gr-9m2274-frontiere-maroc",
+      "title": "Rapport sur la circulation frontaliere",
+      "documentType": "rapport",
+      "dateLabel": "1960",
+      "place": "Zone frontaliere ouest",
+      "peopleMentioned": [],
+      "keywords": ["frontiere", "circulation", "controle", "Maroc"],
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-doc-frontiere-rapport",
+      "ocrStatus": "inventoried",
+      "summary": "Fiche preparatoire d'un rapport a OCRiser puis a indexer.",
+      "folderTitle": "Rapports et notes",
+      "archiveReference": "SHD GR 9 M 2274",
+      "pages": [
+        {
+          "id": "page-frontiere-rapport-001",
+          "pageNumber": 1,
+          "label": "Page 1",
+          "imageStatus": "placeholder",
+          "ocrTextStatus": "ocr_pending"
+        },
+        {
+          "id": "page-frontiere-rapport-002",
+          "pageNumber": 2,
+          "label": "Page 2",
+          "imageStatus": "placeholder",
+          "ocrTextStatus": "ocr_pending"
+        }
+      ]
+    },
+    {
+      "id": "doc-microfilm-frontiere-bobine",
+      "collectionId": "microfilm-frontiere-maroc",
+      "title": "Bobine microfilm a inventorier",
+      "documentType": "microfilm",
+      "dateLabel": "Periode a confirmer",
+      "place": "Frontiere Algerie-Maroc",
+      "peopleMentioned": [],
+      "keywords": ["microfilm", "frontiere", "inventaire"],
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-doc-microfilm",
+      "ocrStatus": "to_inventory",
+      "summary": "Entree de travail pour une bobine a segmenter en documents et pages.",
+      "folderTitle": "Microfilm Frontiere Maroc",
+      "archiveReference": "Microfilm Frontiere Maroc",
+      "pages": []
+    },
+    {
+      "id": "doc-boghari-ancienne-photo",
+      "collectionId": "boghari-ancienne",
+      "title": "Vue ancienne de Boghari",
+      "documentType": "photographie",
+      "dateLabel": "Date a identifier",
+      "place": "Boghari",
+      "peopleMentioned": [],
+      "keywords": ["Boghari", "photographie", "lieu"],
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-doc-boghari-photo",
+      "ocrStatus": "to_inventory",
+      "summary": "Document iconographique fictif pour preparer la consultation image + metadonnees.",
+      "folderTitle": "Iconographie",
+      "archiveReference": "Boghari a l'ancienne",
+      "pages": [
+        {
+          "id": "page-boghari-photo-001",
+          "pageNumber": 1,
+          "label": "Image",
+          "imageStatus": "placeholder",
+          "ocrTextStatus": "to_inventory"
+        }
+      ]
     }
   ]
 }

@@ -1,4 +1,4 @@
-export type ArchiveProcessingStatus =
+export type ArchiveStatus =
   | "to_inventory"
   | "inventoried"
   | "ocr_pending"
@@ -6,30 +6,74 @@ export type ArchiveProcessingStatus =
   | "indexed"
   | "verified";
 
+export type ArchiveProcessingStatus = ArchiveStatus;
+
+export type DocumentType =
+  | "renseignement"
+  | "rapport"
+  | "correspondance"
+  | "tract"
+  | "carte"
+  | "microfilm"
+  | "photographie"
+  | "temoignage"
+  | "autre";
+
 export interface ArchiveManifest {
   schemaVersion: string;
   updatedAt: string;
-  collections: ArchiveManifestCollection[];
+  collections: Collection[];
+  documents: Document[];
 }
 
-export interface ArchiveManifestCollection {
+export interface Collection {
   id: string;
   title: string;
-  source: string;
+  sourceInstitution: string;
+  archiveReference: string;
   region: string;
-  period: ArchivePeriod;
-  processingStatus: ArchiveProcessingStatus;
-  driveFolderUrl: string;
-  notes?: string;
+  period: string;
+  description: string;
+  driveUrl: string;
+  status: ArchiveStatus;
+  documentCount: number;
 }
 
-export interface ArchivePeriod {
-  start: string;
-  end?: string;
+export interface Document {
+  id: string;
+  collectionId: string;
+  title: string;
+  documentType: DocumentType;
+  dateLabel: string;
+  place: string;
+  peopleMentioned: string[];
+  keywords: string[];
+  driveUrl: string;
+  ocrStatus: ArchiveStatus;
+  summary: string;
+  folderTitle?: string;
+  archiveReference?: string;
+  pages?: ArchivePage[];
+}
+
+export interface ArchivePage {
+  id: string;
+  pageNumber: number;
   label: string;
+  imageStatus: "placeholder" | "available";
+  ocrTextStatus: ArchiveStatus;
 }
 
 export interface ArchiveManifestSummary {
   collections: number;
-  byStatus: Record<ArchiveProcessingStatus, number>;
+  documents: number;
+  byStatus: Record<ArchiveStatus, number>;
+}
+
+export interface ArchiveFacets {
+  references: string[];
+  regions: string[];
+  periods: string[];
+  documentTypes: DocumentType[];
+  statuses: ArchiveStatus[];
 }

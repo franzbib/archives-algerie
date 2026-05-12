@@ -1,19 +1,24 @@
 import manifest from "@/data/archives-manifest.json";
 import type {
+  ArchiveFacets,
   ArchiveManifest,
-  ArchiveManifestCollection,
   ArchiveManifestSummary,
-  ArchiveProcessingStatus,
+  ArchiveStatus,
+  Collection,
+  Document,
+  DocumentType,
 } from "@/types/archive";
 
-export const archiveProcessingStatuses = [
+export const archiveStatuses = [
   "to_inventory",
   "inventoried",
   "ocr_pending",
   "ocr_done",
   "indexed",
   "verified",
-] as const satisfies readonly ArchiveProcessingStatus[];
+] as const satisfies readonly ArchiveStatus[];
+
+export const archiveProcessingStatuses = archiveStatuses;
 
 const archiveManifest = manifest as ArchiveManifest;
 
@@ -21,28 +26,68 @@ export function getArchiveManifest(): ArchiveManifest {
   return archiveManifest;
 }
 
-export function getManifestCollections(): ArchiveManifestCollection[] {
+export function getCollections(): Collection[] {
   return archiveManifest.collections;
+}
+
+export function getManifestCollections(): Collection[] {
+  return getCollections();
+}
+
+export function getCollectionById(id: string): Collection | undefined {
+  return archiveManifest.collections.find((collection) => collection.id === id);
+}
+
+export function getDocuments(): Document[] {
+  return archiveManifest.documents;
+}
+
+export function getDocumentsByCollectionId(collectionId: string): Document[] {
+  return archiveManifest.documents.filter(
+    (document) => document.collectionId === collectionId,
+  );
+}
+
+export function getDocumentById(id: string): Document | undefined {
+  return archiveManifest.documents.find((document) => document.id === id);
+}
+
+export function getCollectionForDocument(document: Document): Collection | undefined {
+  return getCollectionById(document.collectionId);
 }
 
 export function getArchiveManifestSummary(): ArchiveManifestSummary {
   return archiveManifest.collections.reduce<ArchiveManifestSummary>(
     (summary, collection) => ({
       collections: summary.collections + 1,
+      documents: summary.documents + collection.documentCount,
       byStatus: {
         ...summary.byStatus,
-        [collection.processingStatus]: summary.byStatus[collection.processingStatus] + 1,
+        [collection.status]: summary.byStatus[collection.status] + 1,
       },
     }),
     {
       collections: 0,
+      documents: 0,
       byStatus: createEmptyStatusCounts(),
     },
   );
 }
 
-export function getProcessingStatusLabel(status: ArchiveProcessingStatus): string {
-  const labels: Record<ArchiveProcessingStatus, string> = {
+export function getArchiveFacets(): ArchiveFacets {
+  return {
+    references: unique(archiveManifest.collections.map((item) => item.archiveReference)),
+    regions: unique(archiveManifest.collections.map((item) => item.region)),
+    periods: unique(archiveManifest.collections.map((item) => item.period)),
+    documentTypes: unique(
+      archiveManifest.documents.map((document) => document.documentType),
+    ) as DocumentType[],
+    statuses: [...archiveStatuses],
+  };
+}
+
+export function getStatusLabel(status: ArchiveStatus): string {
+  const labels: Record<ArchiveStatus, string> = {
     to_inventory: "A inventorier",
     inventoried: "Inventorie",
     ocr_pending: "OCR a faire",
@@ -54,12 +99,36 @@ export function getProcessingStatusLabel(status: ArchiveProcessingStatus): strin
   return labels[status];
 }
 
-function createEmptyStatusCounts(): Record<ArchiveProcessingStatus, number> {
-  return archiveProcessingStatuses.reduce(
+export function getProcessingStatusLabel(status: ArchiveStatus): string {
+  return getStatusLabel(status);
+}
+
+export function getDocumentTypeLabel(type: DocumentType): string {
+  const labels: Record<DocumentType, string> = {
+    renseignement: "Renseignement",
+    rapport: "Rapport",
+    correspondance: "Correspondance",
+    tract: "Tract",
+    carte: "Carte",
+    microfilm: "Microfilm",
+    photographie: "Photographie",
+    temoignage: "Temoignage",
+    autre: "Autre",
+  };
+
+  return labels[type];
+}
+
+function createEmptyStatusCounts(): Record<ArchiveStatus, number> {
+  return archiveStatuses.reduce(
     (counts, status) => ({
       ...counts,
       [status]: 0,
     }),
-    {} as Record<ArchiveProcessingStatus, number>,
+    {} as Record<ArchiveStatus, number>,
   );
+}
+
+function unique<T extends string>(values: T[]): T[] {
+  return [...new Set(values)].sort((a, b) => a.localeCompare(b));
 }

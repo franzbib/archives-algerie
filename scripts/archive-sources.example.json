@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.2.0",
+  "collections": [
+    {
+      "id": "shd-1h4382-d1-boghari",
+      "title": "Syntheses de renseignements, Secteur Boghari",
+      "sourceInstitution": "Service historique de la Defense",
+      "archiveReference": "SHD 1H4382 D1",
+      "region": "Boghari, Medea",
+      "period": "1956-1960",
+      "description": "Exemple de collection issue d'un dossier Drive.",
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-shd-1h4382-d1",
+      "status": "to_inventory",
+      "documentCount": 1
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-boghari-synthese-renseignements-1958",
+      "collectionId": "shd-1h4382-d1-boghari",
+      "title": "Synthese mensuelle de renseignements",
+      "documentType": "renseignement",
+      "dateLabel": "1958",
+      "place": "Secteur Boghari",
+      "peopleMentioned": [],
+      "keywords": ["renseignement", "Boghari"],
+      "driveUrl": "https://drive.google.com/drive/folders/placeholder-doc-boghari",
+      "ocrStatus": "ocr_pending",
+      "summary": "Fiche preparatoire de document.",
+      "folderTitle": "D1 - Syntheses de renseignements",
+      "archiveReference": "SHD 1H4382 D1",
+      "pages": [
+        {
+          "id": "page-boghari-synthese-001",
+          "pageNumber": 1,
+          "label": "Page 1",
+          "imageStatus": "placeholder",
+          "ocrTextStatus": "ocr_pending"
+        }
+      ]
+    }
+  ]
+}
