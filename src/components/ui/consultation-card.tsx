@@ -14,8 +14,15 @@ interface ConsultationCardProps {
 
 export function ConsultationCard({ title, subtitle, code, description, href, footer, tags }: ConsultationCardProps) {
   return (
-    <div className="group relative flex flex-col justify-between border border-paper-border bg-paper p-6 transition-all hover:border-warm hover:shadow-sm">
-      <div>
+    <div className="group relative flex flex-col justify-between border-2 border-paper-border bg-paper p-6 transition-all hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_#e4e2db] hover:border-warm">
+      {/* Simulation de reliure ou de fiche perforée sur la gauche */}
+      <div className="absolute left-0 top-0 bottom-0 w-8 border-r border-dashed border-paper-border/60 bg-sepia/10 flex flex-col items-center justify-evenly py-4">
+        <div className="h-2 w-2 rounded-full border border-paper-border bg-background"></div>
+        <div className="h-2 w-2 rounded-full border border-paper-border bg-background"></div>
+        <div className="h-2 w-2 rounded-full border border-paper-border bg-background"></div>
+      </div>
+      
+      <div className="pl-6">
         <div className="mb-4 flex items-start justify-between gap-4">
           <div>
             {code && (
@@ -51,7 +58,7 @@ export function ConsultationCard({ title, subtitle, code, description, href, foo
       </div>
 
       {footer && (
-        <div className="mt-6 border-t border-dashed border-paper-border pt-4 text-xs text-warm">
+        <div className="ml-6 mt-6 border-t border-dashed border-paper-border pt-4 text-xs text-warm">
           {footer}
         </div>
       )}

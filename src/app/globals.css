@@ -36,7 +36,9 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 23.5h10000' stroke='%23e4e2db' stroke-width='1' fill='none' opacity='0.6'/%3E%3C/svg%3E");
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
