@@ -20,9 +20,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <section className="border-b border-paper-border bg-paper">
-        <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+        <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
           <div className="max-w-4xl">
-            <p className="font-mono text-xs uppercase tracking-widest text-warm">
+            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
               Archives historiques scannees sur l&apos;Algerie
             </p>
             <h1 className="mt-4 font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
@@ -63,10 +63,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-8 px-6 py-10 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-        <div className="space-y-5">
+      <section className="mx-auto grid max-w-6xl gap-12 px-6 py-12 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+        <div className="space-y-6">
           <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-warm">
+            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
               Principe V0
             </p>
             <h2 className="mt-2 font-serif text-3xl font-medium text-foreground">
@@ -93,9 +93,9 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="mb-5 flex items-end justify-between gap-4">
+          <div className="mb-6 flex items-end justify-between gap-4">
             <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-warm">
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
                 Apercu
               </p>
               <h2 className="mt-2 font-serif text-3xl font-medium text-foreground">

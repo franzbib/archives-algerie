@@ -56,10 +56,10 @@ export default async function DocumentPage({
         </div>
       </div>
 
-      <section className="mx-auto grid max-w-6xl gap-8 px-6 py-10 lg:grid-cols-[360px_1fr] lg:px-8">
-        <aside className="space-y-5">
-          <div className="border border-paper-border bg-paper p-6 shadow-sm">
-            <p className="font-mono text-xs uppercase tracking-widest text-warm">
+      <section className="mx-auto grid max-w-6xl gap-8 px-6 py-12 lg:grid-cols-[360px_1fr] lg:px-8">
+        <aside className="space-y-6">
+          <div className="border border-paper-border bg-paper p-6 shadow-sm md:p-8">
+            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
               {document.archiveReference ?? collection.archiveReference}
             </p>
             <h1 className="mt-3 font-serif text-3xl font-medium text-foreground">
@@ -79,7 +79,7 @@ export default async function DocumentPage({
             </div>
           </div>
 
-          <div className="border border-paper-border bg-paper p-6">
+          <div className="border border-paper-border bg-paper p-6 md:p-8">
             <h2 className="font-serif text-xl font-medium text-foreground">
               Metadonnees
             </h2>
@@ -125,11 +125,11 @@ export default async function DocumentPage({
             />
           </div>
 
-          <div className="border border-paper-border bg-paper p-6">
-            <div className="mb-5 flex items-center gap-3">
+          <div className="border border-paper-border bg-paper p-6 md:p-8">
+            <div className="mb-6 flex items-center gap-3">
               <Search className="h-5 w-5 text-warm" />
               <div>
-                <p className="font-mono text-xs uppercase tracking-widest text-warm">
+                <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
                   Preparation recherche sourcee
                 </p>
                 <h2 className="font-serif text-2xl font-medium text-foreground">
@@ -161,10 +161,10 @@ export default async function DocumentPage({
                 ))}
               </div>
             ) : (
-              <p className="border border-dashed border-paper-border bg-background p-5 text-sm text-warm">
+              <div className="border-2 border-dashed border-paper-border bg-paper/30 p-8 text-center text-sm leading-6 text-warm">
                 Aucune page n&apos;est encore decrite. Cette fiche reste un point
                 d&apos;ancrage pour le futur decoupage en pages.
-              </p>
+              </div>
             )}
           </div>
         </section>
@@ -176,10 +176,10 @@ export default async function DocumentPage({
 function MetaItem({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <dt className="font-mono text-xs uppercase tracking-widest text-warm">
+      <dt className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
         {label}
       </dt>
-      <dd className="mt-1 text-foreground">{value}</dd>
+      <dd className="mt-1 font-medium text-foreground">{value}</dd>
     </div>
   );
 }
@@ -194,12 +194,12 @@ function Panel({
   text: string;
 }) {
   return (
-    <div className="min-h-64 border border-paper-border bg-paper p-6">
+    <div className="min-h-64 border border-paper-border bg-paper p-6 md:p-8">
       <div className="flex items-center gap-3 text-warm">
         {icon}
         <h2 className="font-serif text-2xl font-medium text-foreground">{title}</h2>
       </div>
-      <div className="mt-6 flex aspect-[4/3] items-center justify-center border border-dashed border-paper-border bg-background p-6 text-center text-sm leading-6 text-warm">
+      <div className="mt-6 flex aspect-[4/3] items-center justify-center border-2 border-dashed border-paper-border bg-paper/30 p-6 text-center text-sm leading-6 text-warm">
         {text}
       </div>
     </div>

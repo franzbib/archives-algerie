@@ -64,12 +64,12 @@ export default async function CollectionPage({
         </div>
       </div>
 
-      <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
+      <section className="mx-auto max-w-6xl px-6 py-12 lg:px-8">
         <div className="border border-paper-border bg-paper p-6 shadow-sm md:p-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-3xl">
               <div className="flex flex-wrap items-center gap-3">
-                <p className="font-mono text-xs uppercase tracking-widest text-warm">
+                <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
                   Fonds / cote : {displayValue(collection.archiveReference)}
                 </p>
                 <StatusBadge variant={statusVariant(collection.status)}>
@@ -103,8 +103,8 @@ export default async function CollectionPage({
 
       <section className="mx-auto grid max-w-6xl gap-8 px-6 lg:grid-cols-[1fr_320px] lg:px-8">
         <div className="space-y-8">
-          <section className="border border-paper-border bg-paper p-6">
-            <p className="font-mono text-xs uppercase tracking-widest text-warm">
+          <section className="border border-paper-border bg-paper p-6 md:p-8">
+            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
               Resume
             </p>
             <p className="mt-3 text-base leading-7 text-foreground/80">
@@ -122,10 +122,10 @@ export default async function CollectionPage({
           </section>
 
           <section>
-            <div className="mb-5 flex items-center gap-3 border-b border-paper-border pb-4">
+            <div className="mb-6 flex items-center gap-3 border-b border-paper-border pb-4">
               <FolderArchive className="h-5 w-5 text-warm" />
               <div>
-                <p className="font-mono text-xs uppercase tracking-widest text-warm">
+                <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
                   Documents rattaches
                 </p>
                 <h2 className="font-serif text-2xl font-medium text-foreground">
@@ -137,11 +137,11 @@ export default async function CollectionPage({
           </section>
         </div>
 
-        <aside className="h-fit border border-paper-border bg-paper p-6">
-          <div className="mb-5 flex items-center gap-3">
+        <aside className="h-fit border border-paper-border bg-paper p-6 md:p-8">
+          <div className="mb-6 flex items-center gap-3">
             <CheckCircle2 className="h-5 w-5 text-warm" />
             <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-warm">
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
                 Etat du traitement
               </p>
               <h2 className="font-serif text-xl font-medium text-foreground">
@@ -190,10 +190,10 @@ function TreatmentItem({
 function MetaItem({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <dt className="font-mono text-xs uppercase tracking-widest text-warm">
+      <dt className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
         {label}
       </dt>
-      <dd className="mt-1 text-foreground">{displayValue(value)}</dd>
+      <dd className="mt-1 font-medium text-foreground">{displayValue(value)}</dd>
     </div>
   );
 }

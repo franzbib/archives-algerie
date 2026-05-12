@@ -14,20 +14,19 @@ interface DocumentListProps {
 export function DocumentList({ documents }: DocumentListProps) {
   if (documents.length === 0) {
     return (
-      <div className="border border-dashed border-paper-border bg-paper/60 p-6 text-sm text-warm">
+      <div className="border-2 border-dashed border-paper-border bg-paper/30 p-8 text-center text-sm leading-6 text-warm">
         Aucun document n&apos;est encore rattache a cette collection dans le manifeste.
       </div>
     );
   }
 
   return (
-    <div className="overflow-hidden border border-paper-border bg-paper">
-      <div className="divide-y divide-paper-border">
-        {documents.map((document) => (
-          <article key={document.id} className="p-5">
+    <div className="grid gap-4">
+      {documents.map((document) => (
+        <article key={document.id} className="group relative border-2 border-paper-border bg-paper p-6 transition-all hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_#e4e2db] hover:border-warm">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
               <div className="max-w-3xl">
-                <p className="font-mono text-xs uppercase tracking-widest text-warm">
+                <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
                   {document.archiveReference ?? document.collectionId}
                   {document.folderTitle ? ` / ${document.folderTitle}` : ""}
                 </p>
@@ -79,14 +78,13 @@ export function DocumentList({ documents }: DocumentListProps) {
             </div>
           </article>
         ))}
-      </div>
     </div>
   );
 }
 
 function Tag({ children }: { children: string }) {
   return (
-    <span className="border border-paper-border/70 bg-sepia px-2 py-1 font-mono text-[10px] uppercase tracking-wide text-warm">
+    <span className="border border-paper-border/70 bg-background px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wide text-foreground">
       {children}
     </span>
   );

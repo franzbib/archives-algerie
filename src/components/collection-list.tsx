@@ -13,7 +13,7 @@ interface CollectionListProps {
 export function CollectionList({ collections }: CollectionListProps) {
   if (collections.length === 0) {
     return (
-      <div className="border border-dashed border-paper-border bg-paper/60 p-6 text-sm leading-6 text-warm">
+      <div className="border-2 border-dashed border-paper-border bg-paper/30 p-8 text-center text-sm leading-6 text-warm">
         Aucune collection ne correspond à ces critères.
       </div>
     );
@@ -24,11 +24,11 @@ export function CollectionList({ collections }: CollectionListProps) {
       {collections.map((collection) => (
         <article
           key={collection.id}
-          className="border border-paper-border bg-paper p-5 shadow-sm"
+          className="group relative border-2 border-paper-border bg-paper p-6 transition-all hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_#e4e2db] hover:border-warm"
         >
           <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-3xl">
-              <p className="font-mono text-xs uppercase tracking-widest text-warm">
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
                 Fonds / cote : {collection.archiveReference}
               </p>
               <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
@@ -65,7 +65,7 @@ export function CollectionList({ collections }: CollectionListProps) {
             <MetaItem label="Region" value={collection.region} />
             <MetaItem label="Periode" value={collection.period} />
             <div>
-              <dt className="font-mono text-xs uppercase tracking-widest text-warm">
+              <dt className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
                 Documents
               </dt>
               <dd className="mt-1 flex items-center gap-2 text-foreground">
@@ -88,10 +88,10 @@ export function CollectionList({ collections }: CollectionListProps) {
 function MetaItem({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <dt className="font-mono text-xs uppercase tracking-widest text-warm">
+      <dt className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
         {label}
       </dt>
-      <dd className="mt-1 text-foreground">{value}</dd>
+      <dd className="mt-1 font-medium text-foreground">{value}</dd>
     </div>
   );
 }

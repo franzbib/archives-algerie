@@ -31,8 +31,8 @@ export default function QuestionnementPage() {
       </div>
 
       <section className="border-b border-paper-border bg-paper">
-        <div className="mx-auto max-w-6xl px-6 py-12 lg:px-8">
-          <p className="font-mono text-xs uppercase tracking-widest text-warm">
+        <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
+          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
             Recherche en langage naturel - preparation
           </p>
           <h1 className="mt-3 max-w-4xl font-serif text-4xl font-medium text-foreground md:text-5xl">
@@ -48,7 +48,7 @@ export default function QuestionnementPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-8 px-6 py-10 lg:grid-cols-[1fr_360px] lg:px-8">
+      <section className="mx-auto grid max-w-6xl gap-8 px-6 py-12 lg:grid-cols-[1fr_360px] lg:px-8">
         <div className="space-y-8">
           <section className="grid gap-4 md:grid-cols-2">
             <InfoCard
@@ -73,9 +73,9 @@ export default function QuestionnementPage() {
             />
           </section>
 
-          <section className="border border-paper-border bg-paper p-6">
-            <div className="mb-5">
-              <p className="font-mono text-xs uppercase tracking-widest text-warm">
+          <section className="border border-paper-border bg-paper p-6 md:p-8">
+            <div className="mb-6">
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
                 Maquette non fonctionnelle
               </p>
               <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
@@ -102,8 +102,8 @@ export default function QuestionnementPage() {
             </p>
           </section>
 
-          <section className="border border-paper-border bg-paper p-6">
-            <p className="font-mono text-xs uppercase tracking-widest text-warm">
+          <section className="border border-paper-border bg-paper p-6 md:p-8">
+            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
               Exemple de format attendu
             </p>
             <div className="mt-4 border border-dashed border-paper-border bg-background p-5">
@@ -134,8 +134,8 @@ export default function QuestionnementPage() {
           </section>
         </div>
 
-        <aside className="h-fit border border-paper-border bg-paper p-6">
-          <p className="font-mono text-xs uppercase tracking-widest text-warm">
+        <aside className="h-fit border border-paper-border bg-paper p-6 md:p-8">
+          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
             Questions possibles
           </p>
           <div className="mt-4 space-y-3">
