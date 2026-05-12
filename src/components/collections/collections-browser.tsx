@@ -73,7 +73,7 @@ export function CollectionsBrowser({ collections, facets }: CollectionsBrowserPr
                 className="w-full border border-paper-border bg-background px-3 py-2 pl-9 text-sm text-foreground"
                 id="collection-search"
                 onChange={(event) => updateFilter("query", event.target.value)}
-                placeholder="Titre, cote, description..."
+                placeholder="Titre, cote, region, periode..."
                 type="search"
                 value={filters.query}
               />
@@ -190,6 +190,8 @@ function filterCollections(
         collection.title,
         collection.archiveReference,
         collection.description,
+        collection.region,
+        collection.period,
       ].join(" "),
     );
 
