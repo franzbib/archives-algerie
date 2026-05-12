@@ -24,6 +24,8 @@ import {
 } from "@/lib/archiveManifest";
 import type { ArchiveStatus } from "@/types/archive";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getDocuments().map((document) => ({ id: document.id }));
 }

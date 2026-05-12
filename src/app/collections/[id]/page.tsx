@@ -24,6 +24,8 @@ interface TreatmentState {
   status: ArchiveStatus;
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getCollections().map((collection) => ({ id: collection.id }));
 }
