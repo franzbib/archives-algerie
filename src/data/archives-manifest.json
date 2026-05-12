@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "2026-05-12",
+  "collections": [
+    {
+      "id": "alg-adm",
+      "title": "Administration territoriale en Algerie",
+      "source": "Versements administratifs historiques",
+      "region": "Algerie - ensemble du territoire",
+      "period": {
+        "start": "1848",
+        "end": "1962",
+        "label": "1848-1962"
+      },
+      "processingStatus": "inventoried",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/placeholder-alg-adm",
+      "notes": "Collection pilote pour structurer les cotes, dossiers et documents."
+    },
+    {
+      "id": "alg-ec",
+      "title": "Registres et etat civil",
+      "source": "Copies de registres et instruments de recherche",
+      "region": "Alger, Oran, Constantine",
+      "period": {
+        "start": "1830",
+        "end": "1962",
+        "label": "1830-1962"
+      },
+      "processingStatus": "ocr_pending",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/placeholder-alg-ec",
+      "notes": "Les donnees personnelles devront etre traitees selon les regles de communicabilite."
+    },
+    {
+      "id": "alg-cp",
+      "title": "Cartes, plans et limites administratives",
+      "source": "Cartes numerisees et plans administratifs",
+      "region": "Algerie - regions administratives",
+      "period": {
+        "start": "1870",
+        "end": "1958",
+        "label": "1870-1958"
+      },
+      "processingStatus": "to_inventory",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/placeholder-alg-cp"
+    },
+    {
+      "id": "alg-presse",
+      "title": "Presse et bulletins administratifs",
+      "source": "Periodiques et bulletins officiels",
+      "region": "Algerie - centres urbains",
+      "period": {
+        "start": "1900",
+        "end": "1962",
+        "label": "1900-1962"
+      },
+      "processingStatus": "indexed",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/placeholder-alg-presse"
+    }
+  ]
+}
