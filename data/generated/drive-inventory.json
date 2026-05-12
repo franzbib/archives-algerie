@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-05-12T14:51:14.618Z",
+  "mode": "mock",
+  "sourceFile": "scripts/drive-sources.example.json",
+  "notes": [
+    "Inventaire brut: ne pas importer automatiquement dans le manifeste valide.",
+    "Aucun fichier n'est telecharge par ce script.",
+    "Aucun OCR, aucun appel OpenAI, aucun embedding.",
+    "Mode mock: GOOGLE_DRIVE_API_KEY est absent. Les dossiers sont listes avec files: []."
+  ],
+  "folders": [
+    {
+      "collectionId": "drive-root-archives-algerie",
+      "folderTitle": "Dossier racine Google Drive - Archives Algerie",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/14O9TWvUovqJ99-0MwHne35NG28Y5XL0y?usp=sharing",
+      "files": [],
+      "status": "to_inventory"
+    },
+    {
+      "collectionId": "shd-1h4382-d1",
+      "folderTitle": "SHD 1H4382 D1 - Syntheses de renseignements, Secteur Boghari",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/14O9TWvUovqJ99-0MwHne35NG28Y5XL0y?usp=sharing",
+      "files": [],
+      "status": "to_inventory"
+    },
+    {
+      "collectionId": "shd-1h1647-d1",
+      "folderTitle": "SHD 1H1647 D1 - Documents FLN recuperes W4",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/14O9TWvUovqJ99-0MwHne35NG28Y5XL0y?usp=sharing",
+      "files": [],
+      "status": "to_inventory"
+    },
+    {
+      "collectionId": "shd-gr-9m2274",
+      "folderTitle": "SHD GR 9 M 2274 - Frontiere Maroc",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/14O9TWvUovqJ99-0MwHne35NG28Y5XL0y?usp=sharing",
+      "files": [],
+      "status": "to_inventory"
+    },
+    {
+      "collectionId": "microfilm-frontiere-maroc",
+      "folderTitle": "Microfilm Frontiere Maroc",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/14O9TWvUovqJ99-0MwHne35NG28Y5XL0y?usp=sharing",
+      "files": [],
+      "status": "to_inventory"
+    },
+    {
+      "collectionId": "boghari-ancienne",
+      "folderTitle": "Boghari a l'ancienne",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/14O9TWvUovqJ99-0MwHne35NG28Y5XL0y?usp=sharing",
+      "files": [],
+      "status": "to_inventory"
+    }
+  ]
+}
