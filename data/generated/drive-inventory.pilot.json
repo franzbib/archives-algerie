@@ -25,7 +25,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:22:18.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:32.148Z",
@@ -36,7 +41,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-12-02T16:59:24.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:32.400Z",
@@ -47,7 +57,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:23:04.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:32.446Z",
@@ -58,7 +73,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:23:28.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:32.682Z",
@@ -69,7 +89,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:24:02.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.723Z",
@@ -80,7 +105,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:25:20.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.481Z",
@@ -91,7 +121,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:25:40.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:14.666Z",
@@ -102,7 +137,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2026-01-29T10:01:42.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.714Z",
@@ -113,7 +153,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:26:14.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.812Z",
@@ -124,7 +169,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:27:06.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.577Z",
@@ -135,7 +185,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:27:42.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.757Z",
@@ -146,7 +201,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:29:06.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:17.040Z",
@@ -157,7 +217,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:09:52.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.823Z",
@@ -168,7 +233,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:30:08.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.895Z",
@@ -179,7 +249,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:30:28.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:19.448Z",
@@ -190,7 +265,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2026-01-16T16:57:14.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.659Z",
@@ -201,7 +281,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:31:04.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:21.885Z",
@@ -212,7 +297,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:13:54.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:24.503Z",
@@ -223,7 +313,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T12:31:50.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:27.162Z",
@@ -234,7 +329,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:14:28.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:29.660Z",
@@ -245,7 +345,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:15:12.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:32.273Z",
@@ -256,7 +361,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:16:26.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:34.703Z",
@@ -267,7 +377,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2026-01-16T16:58:12.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:37.205Z",
@@ -278,7 +393,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2026-01-16T16:58:24.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:39.769Z",
@@ -289,7 +409,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:17:24.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:42.107Z",
@@ -300,7 +425,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2026-01-16T16:58:52.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:44.471Z",
@@ -311,7 +441,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:18:54.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:46.720Z",
@@ -322,7 +457,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2026-01-16T16:58:44.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:48.989Z",
@@ -333,7 +473,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:20:20.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:51.744Z",
@@ -344,7 +489,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:20:46.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:54.047Z",
@@ -355,7 +505,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:21:10.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.793Z",
@@ -366,7 +521,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-12-02T13:18:44.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T18:35:34.825Z",
@@ -377,7 +537,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-12-02T13:18:34.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:56.335Z",
@@ -388,7 +553,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:22:46.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:55:58.484Z",
@@ -399,7 +569,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:22:48.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:56:00.821Z",
@@ -410,7 +585,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:22:56.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:56:03.024Z",
@@ -421,7 +601,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:24:18.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:56:05.665Z",
@@ -432,7 +617,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:25:18.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:56:08.048Z",
@@ -443,7 +633,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:25:28.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:56:10.436Z",
@@ -454,7 +649,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:25:54.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         },
         {
           "createdTime": "2026-05-10T20:56:12.785Z",
@@ -465,7 +665,12 @@
           "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "modifiedTime": "2025-11-27T09:26:08.000Z",
           "probablePageNumber": null,
-          "status": "to_inventory"
+          "status": "to_inventory",
+          "fileKind": "image",
+          "conversionNeeded": true,
+          "conversionTarget": "jpg",
+          "preparationStatus": "needs_ordering",
+          "preparationNote": "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier."
         }
       ],
       "status": "to_inventory"

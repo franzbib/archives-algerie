@@ -5,13 +5,22 @@ import { ArrowLeft, ExternalLink, FolderSearch, ShieldAlert } from "lucide-react
 import { StatusBadge } from "@/components/ui/status-badge";
 
 interface DriveInventoryFile {
+  conversionNeeded?: boolean;
+  conversionTarget?: "jpg" | "pdf" | "png" | null;
   createdTime?: string;
+  fileKind?: "image" | "pdf" | "unknown";
   fileName: string;
   mimeType: string;
   driveFileId: string;
   driveUrl: string;
   ingestionNote?: string;
   modifiedTime?: string;
+  preparationNote?: string;
+  preparationStatus?:
+    | "excluded"
+    | "needs_ordering"
+    | "ready_for_conversion"
+    | "to_inventory";
   probablePageNumber: number | null;
   status: "to_inventory";
 }
@@ -44,8 +53,17 @@ const inventoryPath = path.join(
 
 export default function DriveInventoryPage() {
   const inventory = readPilotInventory();
+  const allFiles = inventory?.sources.flatMap((source) => source.files) ?? [];
   const totalFiles =
     inventory?.sources.reduce((total, source) => total + source.files.length, 0) ?? 0;
+  const imageCount = allFiles.filter((file) => getFileKind(file) === "image").length;
+  const conversionNeededCount = allFiles.filter(getConversionNeeded).length;
+  const needsOrderingCount = allFiles.filter(
+    (file) => getPreparationStatus(file) === "needs_ordering",
+  ).length;
+  const readyForConversionCount = allFiles.filter(
+    (file) => getPreparationStatus(file) === "ready_for_conversion",
+  ).length;
   const isEmptyOrMock = !inventory || inventory.mode === "mock" || totalFiles === 0;
   const isManualSnapshot = inventory?.mode === "manual_snapshot";
 
@@ -94,6 +112,10 @@ export default function DriveInventoryPage() {
             label="Fichiers listés"
             value={String(inventory?.fileCount ?? totalFiles)}
           />
+          <SummaryCard label="Images" value={String(imageCount)} />
+          <SummaryCard label="Conversions" value={String(conversionNeededCount)} />
+          <SummaryCard label="À ordonner" value={String(needsOrderingCount)} />
+          <SummaryCard label="Prêts conversion" value={String(readyForConversionCount)} />
         </div>
 
         <section className="mb-8 border border-paper-border bg-paper p-6">
@@ -118,6 +140,15 @@ export default function DriveInventoryPage() {
                 <p>
                   La conversion fichier → page/document nécessitera une validation
                   humaine.
+                </p>
+                <p>
+                  Une image HEIC n&apos;est pas encore une page validée : l&apos;ordre
+                  des fichiers doit être vérifié avant rattachement.
+                </p>
+                <p>
+                  La conversion HEIC → JPG est une étape technique préalable ;
+                  l&apos;OCR ne devra commencer qu&apos;après validation d&apos;un petit
+                  échantillon.
                 </p>
               </div>
             </div>
@@ -201,6 +232,18 @@ function FileRow({ file }: { file: DriveInventoryFile }) {
           <dl className="mt-3 grid gap-3 text-sm sm:grid-cols-2">
             <MetaItem label="Type MIME" value={file.mimeType} />
             <MetaItem
+              label="Type interprété"
+              value={formatFileKind(getFileKind(file))}
+            />
+            <MetaItem
+              label="Conversion"
+              value={formatConversionNeeded(getConversionNeeded(file))}
+            />
+            <MetaItem
+              label="Cible"
+              value={formatConversionTarget(getConversionTarget(file))}
+            />
+            <MetaItem
               label="Créé le"
               value={file.createdTime ? formatDate(file.createdTime) : "Non renseigné"}
             />
@@ -214,13 +257,23 @@ function FileRow({ file }: { file: DriveInventoryFile }) {
               label="Page probable"
               value={file.probablePageNumber?.toString() ?? "Non renseigné"}
             />
+            <MetaItem
+              label="Préparation"
+              value={formatPreparationStatus(getPreparationStatus(file))}
+            />
           </dl>
           {file.ingestionNote && (
             <p className="mt-3 text-sm leading-6 text-warm">{file.ingestionNote}</p>
           )}
+          <p className="mt-2 text-sm leading-6 text-foreground/75">
+            {getPreparationNote(file)}
+          </p>
         </div>
         <div className="flex shrink-0 flex-wrap gap-2 lg:justify-end">
           <StatusBadge variant="neutral">À inventorier</StatusBadge>
+          <StatusBadge variant="warning">
+            {formatPreparationStatus(getPreparationStatus(file))}
+          </StatusBadge>
           <a
             className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
             href={file.driveUrl}
@@ -281,4 +334,97 @@ function formatMode(mode: DriveInventory["mode"] | undefined): string {
   };
 
   return mode ? labels[mode] : "Absent";
+}
+
+function getFileKind(file: DriveInventoryFile): NonNullable<DriveInventoryFile["fileKind"]> {
+  if (file.fileKind) {
+    return file.fileKind;
+  }
+
+  const mimeType = file.mimeType.toLocaleLowerCase("fr");
+  if (mimeType.startsWith("image/")) {
+    return "image";
+  }
+
+  if (mimeType === "application/pdf") {
+    return "pdf";
+  }
+
+  return "unknown";
+}
+
+function getConversionNeeded(file: DriveInventoryFile): boolean {
+  if (typeof file.conversionNeeded === "boolean") {
+    return file.conversionNeeded;
+  }
+
+  const mimeType = file.mimeType.toLocaleLowerCase("fr");
+  return mimeType === "image/heif" || mimeType === "image/heic";
+}
+
+function getConversionTarget(file: DriveInventoryFile): DriveInventoryFile["conversionTarget"] {
+  if (file.conversionTarget) {
+    return file.conversionTarget;
+  }
+
+  return getConversionNeeded(file) ? "jpg" : null;
+}
+
+function getPreparationStatus(
+  file: DriveInventoryFile,
+): NonNullable<DriveInventoryFile["preparationStatus"]> {
+  if (file.preparationStatus) {
+    return file.preparationStatus;
+  }
+
+  return getFileKind(file) === "image" ? "needs_ordering" : "to_inventory";
+}
+
+function getPreparationNote(file: DriveInventoryFile): string {
+  if (file.preparationNote) {
+    return file.preparationNote;
+  }
+
+  if (getConversionNeeded(file)) {
+    return "Image HEIC listée depuis Drive ; conversion nécessaire avant OCR ; ordre et rattachement page/document à vérifier.";
+  }
+
+  if (getFileKind(file) === "image") {
+    return "Image listée depuis Drive ; ordre et rattachement page/document à vérifier avant toute exploitation.";
+  }
+
+  return "Fichier listé depuis Drive ; type et rattachement archivistique à vérifier avant traitement.";
+}
+
+function formatFileKind(kind: NonNullable<DriveInventoryFile["fileKind"]>): string {
+  const labels: Record<NonNullable<DriveInventoryFile["fileKind"]>, string> = {
+    image: "Image",
+    pdf: "PDF",
+    unknown: "Inconnu",
+  };
+
+  return labels[kind];
+}
+
+function formatConversionNeeded(value: boolean): string {
+  return value ? "Oui" : "Non";
+}
+
+function formatConversionTarget(
+  target: DriveInventoryFile["conversionTarget"] | undefined,
+): string {
+  return target ? target.toUpperCase() : "Aucune";
+}
+
+function formatPreparationStatus(
+  status: NonNullable<DriveInventoryFile["preparationStatus"]>,
+): string {
+  const labels: Record<NonNullable<DriveInventoryFile["preparationStatus"]>, string> = {
+    excluded: "Exclu",
+    needs_ordering: "À ordonner",
+    ready_for_conversion: "Prêt pour conversion",
+    to_inventory: "À inventorier",
+  };
+
+  return labels[status];
 }

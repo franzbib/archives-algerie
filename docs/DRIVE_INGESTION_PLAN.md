@@ -104,6 +104,32 @@ Cette methode reste un inventaire brut:
 Le snapshot manuel ne doit pas etre importe automatiquement dans
 `src/data/archives-manifest.json`.
 
+## Qualification preparatoire des fichiers
+
+La sortie Drive peut ajouter une qualification technique non destructive aux
+fichiers listes. Cette qualification sert a preparer le travail sans transformer
+un fichier brut en notice archivistique validee.
+
+On distingue volontairement:
+
+- le fichier Drive, qui est une entree technique ;
+- l'image, qui peut etre une vue numerisee ;
+- la page, qui doit etre rattachee a un document ;
+- le document, qui appartient a une cote, un dossier et une collection.
+
+Les fichiers HEIC sont marques comme images necessitant une conversion vers JPG
+avant tout test OCR. Cette conversion n'est pas effectuee par l'inventaire Drive:
+elle restera une etape technique separee, limitee a un echantillon controle.
+
+Le statut `needs_ordering` est prudent: il signifie que l'ordre des fichiers et
+leur rattachement page/document doivent etre verifies avant exploitation. Une
+image listee depuis Drive ne doit donc pas etre consideree automatiquement comme
+une page validee, ni comme un document autonome.
+
+L'inventaire Drive brut ne doit pas alimenter directement le manifeste principal.
+Seules les informations relues et validees humainement pourront etre reportees
+dans `src/data/archives-manifest.json`.
+
 ## Activer l'ingestion Drive reelle de niveau 1
 
 L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers

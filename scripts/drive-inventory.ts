@@ -30,13 +30,22 @@ interface DriveInventorySource {
 }
 
 interface DriveInventoryFile {
+  conversionNeeded: boolean;
+  conversionTarget: "jpg" | "pdf" | "png" | null;
   createdTime?: string;
+  fileKind: "image" | "pdf" | "unknown";
   fileName: string;
   mimeType: string;
   driveFileId: string;
   driveUrl: string;
   ingestionNote: string;
   modifiedTime?: string;
+  preparationNote: string;
+  preparationStatus:
+    | "excluded"
+    | "needs_ordering"
+    | "ready_for_conversion"
+    | "to_inventory";
   probablePageNumber: number | null;
   status: "to_inventory";
 }
@@ -181,16 +190,76 @@ async function listDriveFolderFiles(
 }
 
 function toInventoryFile(file: GoogleDriveFile): DriveInventoryFile {
+  const qualification = qualifyDriveFile(file.mimeType);
+
   return {
+    conversionNeeded: qualification.conversionNeeded,
+    conversionTarget: qualification.conversionTarget,
     createdTime: file.createdTime,
+    fileKind: qualification.fileKind,
     fileName: file.name,
     mimeType: file.mimeType,
     driveFileId: file.id,
     driveUrl: file.webViewLink ?? `https://drive.google.com/file/d/${file.id}/view`,
     ingestionNote: "Fichier liste depuis Drive ; contenu non lu.",
     modifiedTime: file.modifiedTime,
+    preparationNote: qualification.preparationNote,
+    preparationStatus: qualification.preparationStatus,
     probablePageNumber: null,
     status: "to_inventory",
+  };
+}
+
+function qualifyDriveFile(mimeType: string): Pick<
+  DriveInventoryFile,
+  | "conversionNeeded"
+  | "conversionTarget"
+  | "fileKind"
+  | "preparationNote"
+  | "preparationStatus"
+> {
+  const normalizedMime = mimeType.toLocaleLowerCase("fr");
+
+  if (normalizedMime === "image/heif" || normalizedMime === "image/heic") {
+    return {
+      conversionNeeded: true,
+      conversionTarget: "jpg",
+      fileKind: "image",
+      preparationNote:
+        "Image HEIC listee depuis Drive ; conversion necessaire avant OCR ; ordre et rattachement page/document a verifier.",
+      preparationStatus: "needs_ordering",
+    };
+  }
+
+  if (normalizedMime.startsWith("image/")) {
+    return {
+      conversionNeeded: false,
+      conversionTarget: null,
+      fileKind: "image",
+      preparationNote:
+        "Image listee depuis Drive ; ordre et rattachement page/document a verifier avant toute exploitation.",
+      preparationStatus: "needs_ordering",
+    };
+  }
+
+  if (normalizedMime === "application/pdf") {
+    return {
+      conversionNeeded: false,
+      conversionTarget: null,
+      fileKind: "pdf",
+      preparationNote:
+        "PDF liste depuis Drive ; structure interne et rattachement documentaire a verifier avant OCR.",
+      preparationStatus: "to_inventory",
+    };
+  }
+
+  return {
+    conversionNeeded: false,
+    conversionTarget: null,
+    fileKind: "unknown",
+    preparationNote:
+      "Fichier liste depuis Drive ; type a verifier avant traitement.",
+    preparationStatus: "to_inventory",
   };
 }
 
