@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { Archive, BookOpen, FileText, Search } from "lucide-react";
+import { Archive, BookOpen, ClipboardList, FileText, Search } from "lucide-react";
 import { CollectionList } from "@/components/collection-list";
 import { StatCard } from "@/components/stat-card";
 import {
@@ -58,6 +58,13 @@ export default function Home() {
             >
               <Search className="h-4 w-4" />
               Recherche future
+            </Link>
+            <Link
+              href="/inventaire"
+              className="inline-flex items-center gap-2 border border-paper-border bg-background px-4 py-2 text-sm font-medium text-foreground"
+            >
+              <ClipboardList className="h-4 w-4" />
+              Suivi inventaire
             </Link>
           </div>
         </div>
