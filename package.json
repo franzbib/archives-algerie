@@ -11,7 +11,8 @@
     "manifest:validate": "tsx scripts/validate-manifest.ts",
     "ocr:local": "tsx scripts/ocr-local.ts",
     "ocr:normalize": "tsx scripts/normalize-ocr.ts",
-    "chunks:prepare": "tsx scripts/prepare-chunks.ts"
+    "chunks:prepare": "tsx scripts/prepare-chunks.ts",
+    "pipeline:pilot": "tsx scripts/run-pilot-pipeline.ts"
   },
   "dependencies": {
     "heic-convert": "^2.1.0",

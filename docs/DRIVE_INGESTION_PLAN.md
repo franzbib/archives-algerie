@@ -348,6 +348,49 @@ indexation, citation ou integration dans le manifeste principal.
 La validation humaine reste obligatoire avant toute exploitation comme
 transcription historique.
 
+## Pipeline pilote local
+
+Le script `scripts/run-pilot-pipeline.ts` orchestre les etapes locales du pilote
+sans integrer d'IA. Il enchaine, dans l'ordre:
+
+1. inventaire Drive ;
+2. telechargement controle de l'echantillon ;
+3. conversion HEIC -> JPG ;
+4. OCR brut local ;
+5. normalisation mecanique de l'OCR.
+
+Commande Windows PowerShell:
+
+```powershell
+npx.cmd tsx scripts/run-pilot-pipeline.ts --sources scripts/drive-sources.pilot.example.json --inventory data/generated/drive-inventory.pilot.json --workspace .local/archive-sample --limit 8 --lang fra --confirm
+```
+
+Le meme script est disponible via npm:
+
+```powershell
+npm.cmd run pipeline:pilot -- --sources scripts/drive-sources.pilot.example.json --inventory data/generated/drive-inventory.pilot.json --workspace .local/archive-sample --limit 8 --lang fra --confirm
+```
+
+Le pipeline ne fait pas:
+
+- appel OpenAI ;
+- creation d'embeddings ;
+- lecture assistee par IA ;
+- modification du manifeste principal ;
+- modification de Google Drive ;
+- validation de transcription.
+
+Les options `--skip-inventory`, `--skip-download`, `--skip-conversion`,
+`--skip-ocr` et `--skip-normalization` servent a reprendre un pipeline deja
+partiellement execute ou a relancer une seule portion controlee. Chaque etape
+reste bloquante: si une commande echoue, le pipeline s'arrete et ne continue pas
+silencieusement.
+
+La validation humaine reste obligatoire apres OCR et normalisation. La lecture
+assistee par IA reste une etape separee, non automatisee par ce pipeline, afin
+de maintenir la distinction entre OCR brut, OCR nettoye, hypothese de lecture et
+transcription validee.
+
 ## Activer l'ingestion Drive reelle de niveau 1
 
 L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers
