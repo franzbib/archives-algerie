@@ -1,0 +1,9 @@
+[
+  {
+    "collectionId": "shd-1h4382-d1-boghari",
+    "title": "SHD 1H4382 D1 - Syntheses de renseignements, Secteur Boghari",
+    "driveUrl": "https://drive.google.com/drive/folders/placeholder-shd-1h4382-d1",
+    "notes": "Dossier pilote pour inventaire brut controle. Utiliser l'URL Drive deja referencee dans le manifeste local ; remplacer le placeholder par l'URL reelle avant inventaire Drive.",
+    "status": "pilot"
+  }
+]

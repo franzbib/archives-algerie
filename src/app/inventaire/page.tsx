@@ -70,7 +70,7 @@ export default function InventoryPage() {
 
         <div className="mb-6 flex items-center gap-3">
           <ClipboardList className="h-5 w-5 text-warm" />
-          <div>
+          <div className="flex-1">
             <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
               Tableau de suivi
             </p>
@@ -78,6 +78,12 @@ export default function InventoryPage() {
               Collections du manifeste
             </h2>
           </div>
+          <Link
+            className="text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
+            href="/inventaire-drive"
+          >
+            Inventaire Drive pilote
+          </Link>
         </div>
 
         <InventoryDashboard collections={collections} />

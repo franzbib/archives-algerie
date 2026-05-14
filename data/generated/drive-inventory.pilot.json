@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-05-14T16:19:57.343Z",
+  "mode": "mock",
+  "sourceFile": "scripts/drive-sources.pilot.example.json",
+  "notes": [
+    "Inventaire brut: ne pas importer automatiquement dans le manifeste valide.",
+    "Aucun fichier n'est telecharge par ce script.",
+    "Aucun OCR, aucun appel OpenAI, aucun embedding.",
+    "Mode mock: GOOGLE_DRIVE_API_KEY est absent. Les dossiers sont listes avec files: []."
+  ],
+  "sources": [
+    {
+      "collectionId": "shd-1h4382-d1-boghari",
+      "title": "SHD 1H4382 D1 - Syntheses de renseignements, Secteur Boghari",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/placeholder-shd-1h4382-d1",
+      "files": [],
+      "status": "to_inventory"
+    }
+  ]
+}

@@ -2,22 +2,25 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 interface DriveSource {
-  id: string;
+  collectionId?: string;
+  id?: string;
+  notes?: string;
+  status?: "pilot" | "to_inventory";
   title: string;
   driveUrl: string;
 }
 
 interface DriveInventory {
   generatedAt: string;
-  mode: "google_drive_api" | "mock";
+  mode: "drive" | "mock";
   sourceFile: string;
   notes: string[];
-  folders: DriveInventoryFolder[];
+  sources: DriveInventorySource[];
 }
 
-interface DriveInventoryFolder {
+interface DriveInventorySource {
   collectionId: string;
-  folderTitle: string;
+  title: string;
   driveFolderUrl: string;
   files: DriveInventoryFile[];
   status: "to_inventory";
@@ -66,18 +69,19 @@ async function main() {
     );
   }
 
-  const folders: DriveInventoryFolder[] = [];
+  const inventorySources: DriveInventorySource[] = [];
 
   for (const source of sources) {
     validateSource(source);
+    const collectionId = getCollectionId(source);
 
     const files = apiKey
       ? await listDriveFolderFiles(source.driveUrl, apiKey)
       : [];
 
-    folders.push({
-      collectionId: source.id,
-      folderTitle: source.title,
+    inventorySources.push({
+      collectionId,
+      title: source.title,
       driveFolderUrl: source.driveUrl,
       files: files.map(toInventoryFile),
       status: "to_inventory",
@@ -86,10 +90,10 @@ async function main() {
 
   const inventory: DriveInventory = {
     generatedAt: new Date().toISOString(),
-    mode: apiKey ? "google_drive_api" : "mock",
+    mode: apiKey ? "drive" : "mock",
     sourceFile: sourcePath,
     notes,
-    folders,
+    sources: inventorySources,
   };
 
   await mkdir(path.dirname(outputPath), { recursive: true });
@@ -97,9 +101,9 @@ async function main() {
 
   console.log(`Drive inventory written: ${outputPath}`);
   console.log(`Mode: ${inventory.mode}`);
-  console.log(`Folders: ${folders.length}`);
+  console.log(`Sources: ${inventorySources.length}`);
   console.log(
-    `Files: ${folders.reduce((total, folder) => total + folder.files.length, 0)}`,
+    `Files: ${inventorySources.reduce((total, source) => total + source.files.length, 0)}`,
   );
 }
 
@@ -186,9 +190,14 @@ function extractDriveFolderId(driveFolderUrl: string): string | null {
 }
 
 function validateSource(source: DriveSource) {
-  requireString(source.id, "source.id");
-  requireString(source.title, `${source.id}.title`);
-  requireString(source.driveUrl, `${source.id}.driveUrl`);
+  const collectionId = getCollectionId(source);
+  requireString(collectionId, "source.collectionId");
+  requireString(source.title, `${collectionId}.title`);
+  requireString(source.driveUrl, `${collectionId}.driveUrl`);
+}
+
+function getCollectionId(source: DriveSource): string {
+  return source.collectionId ?? source.id ?? "";
 }
 
 async function readJson<T>(filePath: string): Promise<T> {
