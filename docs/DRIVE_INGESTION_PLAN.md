@@ -312,6 +312,27 @@ dates, sigles ou formulations historiques doivent rester humaines et tracees. Un
 nettoyage automatique ne doit jamais remplacer un mot par un autre sur une base
 semantique.
 
+## Lecture assistee par IA - transcription hypothetique
+
+Une future etape de lecture assistee par IA pourra aider a proposer une lecture
+probable a partir de l'OCR brut et de l'OCR nettoye mecaniquement. Cette lecture
+devra rester une hypothese de travail, distincte d'une transcription validee.
+
+L'IA ne devra pas inventer de passage absent de l'OCR fourni. Elle devra marquer
+explicitement les incertitudes: mots illisibles, noms propres incertains, dates
+incertaines, lieux incertains ou fragments ambigus.
+
+Les noms, lieux et dates devront toujours etre verifies sur l'image source avant
+toute validation. Une lecture assistee ne pourra pas remplacer la relecture
+humaine, et ne devra pas etre utilisee comme source definitive.
+
+Les etats doivent rester separes:
+
+- OCR brut ;
+- OCR nettoye mecaniquement ;
+- lecture assistee hypothetique ;
+- transcription validee humainement.
+
 ## Activer l'ingestion Drive reelle de niveau 1
 
 L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers
