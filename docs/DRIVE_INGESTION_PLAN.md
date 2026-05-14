@@ -85,6 +85,25 @@ npx tsx scripts/drive-inventory.ts --sources scripts/drive-sources.example.json 
 Aucune dependance lourde n'est ajoutee. Le script utilise `fetch`, disponible
 dans Node.js moderne.
 
+## Snapshot manuel pilote
+
+Un snapshot manuel peut etre utilise pour tester l'interface avant une
+connexion API Drive reelle. Dans ce cas, la liste de fichiers est fournie depuis
+un connecteur Drive et enregistree localement dans un fichier genere, par
+exemple `data/generated/drive-inventory.pilot.json`.
+
+Cette methode reste un inventaire brut:
+
+- les fichiers ont ete listes, mais leur contenu n'a pas ete lu ;
+- aucune image n'a ete telechargee ;
+- aucun OCR n'a ete lance ;
+- les fichiers HEIC devront probablement etre convertis avant OCR ;
+- la correspondance fichier -> page -> document reste a etablir par validation
+  humaine.
+
+Le snapshot manuel ne doit pas etre importe automatiquement dans
+`src/data/archives-manifest.json`.
+
 ## Risques
 
 - Confondre dossier Drive, collection, dossier archivistique et document.

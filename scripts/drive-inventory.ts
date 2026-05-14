@@ -12,7 +12,7 @@ interface DriveSource {
 
 interface DriveInventory {
   generatedAt: string;
-  mode: "drive" | "mock";
+  mode: "drive" | "manual_snapshot" | "mock";
   sourceFile: string;
   notes: string[];
   sources: DriveInventorySource[];

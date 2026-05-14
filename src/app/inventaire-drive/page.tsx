@@ -23,7 +23,7 @@ interface DriveInventorySource {
 
 interface DriveInventory {
   generatedAt: string;
-  mode: "drive" | "mock";
+  mode: "drive" | "manual_snapshot" | "mock";
   sourceFile?: string;
   notes?: string[];
   sources: DriveInventorySource[];
@@ -41,6 +41,7 @@ export default function DriveInventoryPage() {
   const totalFiles =
     inventory?.sources.reduce((total, source) => total + source.files.length, 0) ?? 0;
   const isEmptyOrMock = !inventory || inventory.mode === "mock" || totalFiles === 0;
+  const isManualSnapshot = inventory?.mode === "manual_snapshot";
 
   return (
     <main className="min-h-screen bg-background pb-16">
@@ -74,7 +75,7 @@ export default function DriveInventoryPage() {
 
       <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
         <div className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          <SummaryCard label="Mode" value={inventory?.mode ?? "absent"} />
+          <SummaryCard label="Mode" value={formatMode(inventory?.mode)} />
           <SummaryCard
             label="Généré le"
             value={inventory ? formatDate(inventory.generatedAt) : "Non généré"}
@@ -92,6 +93,12 @@ export default function DriveInventoryPage() {
               </p>
               <div className="mt-3 space-y-2 text-sm leading-6 text-foreground/80">
                 <p>Cette page présente un inventaire brut.</p>
+                {isManualSnapshot && (
+                  <p>
+                    Inventaire partiel ; les fichiers ne sont pas encore des
+                    documents validés.
+                  </p>
+                )}
                 <p>Les fichiers n&apos;ont pas été lus.</p>
                 <p>Les images n&apos;ont pas été OCRisées.</p>
                 <p>Les fichiers listés ne sont pas encore des notices validées.</p>
@@ -238,4 +245,14 @@ function formatDate(value: string): string {
     timeStyle: "short",
     timeZone: "Europe/Paris",
   }).format(new Date(value));
+}
+
+function formatMode(mode: DriveInventory["mode"] | undefined): string {
+  const labels: Record<DriveInventory["mode"], string> = {
+    drive: "Drive API",
+    manual_snapshot: "Snapshot manuel",
+    mock: "Mock",
+  };
+
+  return mode ? labels[mode] : "Absent";
 }
