@@ -274,6 +274,44 @@ utilise pour des reponses automatiques avant relecture humaine. La relecture
 devra signaler les erreurs de noms propres, dates, lieux, mots coupes et zones
 illisibles.
 
+## Normalisation mecanique de l'OCR brut
+
+La normalisation mecanique intervient apres la production de l'OCR brut, mais
+elle ne remplace jamais ce brut. Les fichiers originaux doivent rester conserves
+dans:
+
+```text
+.local/archive-sample/ocr/raw/
+```
+
+Le script `scripts/normalize-ocr-sample.ts` lit ces fichiers `.txt` et produit
+des textes legerement nettoyes dans:
+
+```text
+.local/archive-sample/ocr/clean/
+```
+
+Il cree aussi:
+
+```text
+.local/archive-sample/ocr/normalization-manifest.json
+```
+
+Commande Windows PowerShell:
+
+```powershell
+npx.cmd tsx scripts/normalize-ocr-sample.ts --input .local/archive-sample/ocr/raw --out .local/archive-sample/ocr/clean --confirm
+```
+
+Les nettoyages autorises sont strictement mecaniques: normalisation des retours
+a la ligne, reduction des espaces multiples et suppression des lignes vides. Le
+texte nettoye n'est pas une transcription validee.
+
+Aucune IA n'est utilisee a ce stade. Les corrections de noms propres, lieux,
+dates, sigles ou formulations historiques doivent rester humaines et tracees. Un
+nettoyage automatique ne doit jamais remplacer un mot par un autre sur une base
+semantique.
+
 ## Activer l'ingestion Drive reelle de niveau 1
 
 L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers
