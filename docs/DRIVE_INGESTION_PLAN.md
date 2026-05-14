@@ -186,6 +186,50 @@ Cette etape ne convertit pas les fichiers HEIC, ne lance pas d'OCR, n'appelle
 pas OpenAI et ne cree pas d'embeddings. Les fichiers telecharges ne deviennent
 pas des pages ni des documents valides sans controle humain.
 
+## Conversion locale controlee HEIC -> JPG
+
+La conversion locale doit rester limitee a l'echantillon pilote. Convertir
+seulement 5 a 10 images permet de tester la qualite technique sans propager une
+erreur d'orientation, d'ordre ou de rattachement a tout le dossier.
+
+Le script `scripts/convert-sample-heic.ts` lit
+`.local/archive-sample/download-manifest.json`, retrouve uniquement les fichiers
+HEIC listes dans le manifeste de telechargement, puis ecrit les JPG dans:
+
+```text
+.local/archive-sample/converted/
+```
+
+Il cree aussi:
+
+```text
+.local/archive-sample/conversion-manifest.json
+```
+
+Commande Windows PowerShell:
+
+```powershell
+npx.cmd tsx scripts/convert-sample-heic.ts --input .local/archive-sample/raw --out .local/archive-sample/converted --manifest .local/archive-sample/download-manifest.json --confirm
+```
+
+La conversion utilise la dependance Node `heic-convert`, adaptee a un usage local
+Windows sans ajouter de traitement OCR. Les HEIC originaux sont conserves dans
+`.local/archive-sample/raw/`; les JPG convertis restent locaux dans `.local/`,
+ignore par Git.
+
+Cette conversion ne valide ni page ni document. Elle produit seulement des
+images JPG de travail pour un controle visuel. Avant tout OCR, il faut verifier:
+
+- lisibilite ;
+- orientation ;
+- doublons ;
+- pages floues ;
+- ordre probable ;
+- debut et fin de document.
+
+L'OCR ne doit venir qu'apres ce controle visuel et seulement sur un echantillon
+dont le rattachement fichier -> page -> document est compris.
+
 ## Activer l'ingestion Drive reelle de niveau 1
 
 L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers
