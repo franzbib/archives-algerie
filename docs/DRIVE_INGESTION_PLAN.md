@@ -230,6 +230,50 @@ images JPG de travail pour un controle visuel. Avant tout OCR, il faut verifier:
 L'OCR ne doit venir qu'apres ce controle visuel et seulement sur un echantillon
 dont le rattachement fichier -> page -> document est compris.
 
+## OCR local brut sur echantillon
+
+L'OCR doit commencer uniquement sur l'echantillon pilote converti en JPG. Cette
+limite permet de mesurer la qualite de reconnaissance avant tout traitement plus
+large.
+
+Le script `scripts/ocr-sample.ts` lit les JPG dans:
+
+```text
+.local/archive-sample/converted/
+```
+
+Il produit un fichier texte brut par image dans:
+
+```text
+.local/archive-sample/ocr/raw/
+```
+
+Il cree aussi:
+
+```text
+.local/archive-sample/ocr/ocr-manifest.json
+```
+
+Commande Windows PowerShell:
+
+```powershell
+npx.cmd tsx scripts/ocr-sample.ts --input .local/archive-sample/converted --out .local/archive-sample/ocr/raw --lang fra --confirm
+```
+
+Le script utilise Tesseract installe localement. La langue par defaut est `fra`.
+Certains dossiers pourront necessiter plus tard `fra+ara` ou d'autres modeles si
+des mentions arabes ou multilingues apparaissent.
+
+Cette etape produit uniquement de l'OCR brut. Il ne faut pas nettoyer trop tot:
+le texte brut doit rester conserve comme sortie primaire afin de mesurer les
+erreurs, comparer les corrections futures et documenter les limites de la
+reconnaissance.
+
+L'OCR brut n'est pas une transcription validee. Il ne doit pas etre indexe ni
+utilise pour des reponses automatiques avant relecture humaine. La relecture
+devra signaler les erreurs de noms propres, dates, lieux, mots coupes et zones
+illisibles.
+
 ## Activer l'ingestion Drive reelle de niveau 1
 
 L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers
