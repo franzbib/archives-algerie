@@ -15,7 +15,12 @@ import {
   getDocumentTypeLabel,
   getStatusLabel,
 } from "@/lib/archiveManifest";
-import type { ArchiveStatus, Document } from "@/types/archive";
+import type {
+  ArchiveStatus,
+  Collection,
+  Document,
+  ReliabilityLevel,
+} from "@/types/archive";
 
 type TreatmentKey = "inventory" | "ocr" | "indexing" | "verification";
 
@@ -114,6 +119,56 @@ export default async function CollectionPage({
               <MetaItem label="Mots-cles" value={formatList(keywords)} />
             </dl>
           </section>
+
+          {hasV1CollectionNotes(collection) && (
+            <section className="border border-paper-border bg-paper p-6 md:p-8">
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+                Inventaire enrichi V1
+              </p>
+              <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
+                Notes de description provisoires
+              </h2>
+
+              <dl className="mt-6 grid gap-4 border-t border-paper-border pt-5 text-sm sm:grid-cols-2">
+                <OptionalMetaItem
+                  label="Perimetre archivistique"
+                  value={collection.archivalScope}
+                />
+                <OptionalMetaItem
+                  label="Contexte historique"
+                  value={collection.historicalContext}
+                />
+                <OptionalMetaItem
+                  label="Note de provenance"
+                  value={collection.provenanceNote}
+                />
+                <OptionalMetaItem
+                  label="Notes de traitement"
+                  value={collection.processingNotes}
+                />
+                <OptionalMetaItem
+                  label="Lieux mentionnes"
+                  value={formatOptionalList(collection.placesMentioned)}
+                />
+                <OptionalMetaItem
+                  label="Organisations mentionnees"
+                  value={formatOptionalList(collection.organizationsMentioned)}
+                />
+                <OptionalMetaItem
+                  label="Personnes mentionnees"
+                  value={formatOptionalList(collection.peopleMentioned)}
+                />
+                <OptionalMetaItem
+                  label="Incertitudes"
+                  value={collection.uncertaintyNotes}
+                />
+                <OptionalMetaItem
+                  label="Niveau de fiabilite"
+                  value={formatReliabilityLevel(collection.reliabilityLevel)}
+                />
+              </dl>
+            </section>
+          )}
 
           <section>
             <div className="mb-6 flex items-center gap-3 border-b border-paper-border pb-4">
@@ -214,6 +269,20 @@ function MetaItem({ label, value }: { label: string; value: string }) {
   );
 }
 
+function OptionalMetaItem({
+  label,
+  value,
+}: {
+  label: string;
+  value?: string;
+}) {
+  if (!value) {
+    return null;
+  }
+
+  return <MetaItem label={label} value={value} />;
+}
+
 function getTreatmentState(
   collectionStatus: ArchiveStatus,
   documents: Document[],
@@ -294,6 +363,27 @@ function formatList(values: string[]): string {
   return values.length > 0 ? values.join(", ") : "Non renseigné";
 }
 
+function formatOptionalList(values: string[] | undefined): string | undefined {
+  return values && values.length > 0 ? values.join(", ") : undefined;
+}
+
+function formatReliabilityLevel(
+  level: ReliabilityLevel | undefined,
+): string | undefined {
+  if (!level) {
+    return undefined;
+  }
+
+  const labels: Record<ReliabilityLevel, string> = {
+    low: "Faible",
+    medium: "Moyen",
+    high: "Eleve",
+    to_verify: "A verifier",
+  };
+
+  return labels[level];
+}
+
 function displayValue(value: string | undefined): string {
   return value && value.trim().length > 0 ? value : "Non renseigné";
 }
@@ -313,5 +403,19 @@ function statusVariant(status: ArchiveStatus) {
 function unique(values: string[]): string[] {
   return [...new Set(values.filter(Boolean))].sort((a, b) =>
     a.localeCompare(b),
+  );
+}
+
+function hasV1CollectionNotes(collection: Collection): boolean {
+  return Boolean(
+    collection.archivalScope ||
+      collection.historicalContext ||
+      collection.provenanceNote ||
+      collection.processingNotes ||
+      collection.placesMentioned?.length ||
+      collection.organizationsMentioned?.length ||
+      collection.peopleMentioned?.length ||
+      collection.uncertaintyNotes ||
+      collection.reliabilityLevel,
   );
 }

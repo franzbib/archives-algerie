@@ -12,7 +12,15 @@
       "description": "Fonds de dossiers de renseignement et de syntheses territoriales relatifs au secteur de Boghari pendant la guerre d'Algerie.",
       "driveUrl": "https://drive.google.com/drive/folders/placeholder-shd-1h4382-d1",
       "status": "inventoried",
-      "documentCount": 2
+      "documentCount": 2,
+      "archivalScope": "Dossier a inventorier plus finement ; l'intitule signale des syntheses de renseignements liees au secteur de Boghari.",
+      "historicalContext": "Notice a completer. La periode et le titre rattachent ce dossier au contexte de la guerre d'Algerie, sans lecture du contenu numerise a ce stade.",
+      "provenanceNote": "Source institutionnelle indiquee dans le manifeste : Service historique de la Defense.",
+      "processingNotes": "Notice enrichie a partir du titre du dossier, de la cote et des documents deja decrits dans le manifeste ; contenu non encore OCRise.",
+      "placesMentioned": ["Boghari", "Medea", "Secteur Boghari"],
+      "organizationsMentioned": ["Service historique de la Defense"],
+      "uncertaintyNotes": "Le perimetre exact du dossier reste a verifier par consultation des documents et des images source.",
+      "reliabilityLevel": "to_verify"
     },
     {
       "id": "shd-1h1647-d1-fln-w4",
@@ -24,7 +32,15 @@
       "description": "Dossier preparatoire recensant des documents attribues au FLN, avec pieces recuperees et notes de contexte.",
       "driveUrl": "https://drive.google.com/drive/folders/placeholder-shd-1h1647-d1",
       "status": "to_inventory",
-      "documentCount": 1
+      "documentCount": 1,
+      "archivalScope": "Dossier a inventorier ; l'intitule signale des documents recuperes attribues au FLN et rattaches a la Wilaya IV.",
+      "historicalContext": "Notice preparatoire fondee sur l'intitule et les champs existants du manifeste ; aucun contenu de document n'a encore ete lu ou OCRise.",
+      "provenanceNote": "Source institutionnelle indiquee dans le manifeste : Service historique de la Defense.",
+      "processingNotes": "Priorite V1 : verifier les unites documentaires, distinguer dossier, pieces et pages avant tout OCR.",
+      "placesMentioned": ["Wilaya IV"],
+      "organizationsMentioned": ["FLN", "Service historique de la Defense"],
+      "uncertaintyNotes": "La nature exacte des pieces recuperees et leur classement interne restent a confirmer.",
+      "reliabilityLevel": "to_verify"
     },
     {
       "id": "shd-gr-9m2274-frontiere-maroc",
@@ -36,7 +52,15 @@
       "description": "Ensemble de dossiers sur la zone frontaliere, la circulation, les dispositifs militaires et les passages transfrontaliers.",
       "driveUrl": "https://drive.google.com/drive/folders/placeholder-shd-gr-9m2274",
       "status": "inventoried",
-      "documentCount": 2
+      "documentCount": 2,
+      "archivalScope": "Ensemble a decrire plus precisement ; l'intitule et les documents rattaches signalent des pieces relatives a la frontiere Algerie-Maroc.",
+      "historicalContext": "Notice prudente et provisoire. Les champs existants indiquent une periode 1955-1962 et des themes de frontiere, circulation et controle.",
+      "provenanceNote": "Source institutionnelle indiquee dans le manifeste : Service historique de la Defense.",
+      "processingNotes": "Notice enrichie sans lecture des images. Verifier les cartes, rapports et pages avant OCR ou indexation.",
+      "placesMentioned": ["Frontiere Algerie-Maroc", "Maroc", "Zone frontaliere ouest"],
+      "organizationsMentioned": ["Service historique de la Defense"],
+      "uncertaintyNotes": "La couverture geographique exacte et la typologie complete des pieces restent a verifier.",
+      "reliabilityLevel": "to_verify"
     },
     {
       "id": "microfilm-frontiere-maroc",

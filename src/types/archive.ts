@@ -8,6 +8,8 @@ export type ArchiveStatus =
 
 export type ArchiveProcessingStatus = ArchiveStatus;
 
+export type ReliabilityLevel = "low" | "medium" | "high" | "to_verify";
+
 export type DocumentType =
   | "renseignement"
   | "rapport"
@@ -37,6 +39,15 @@ export interface Collection {
   driveUrl: string;
   status: ArchiveStatus;
   documentCount: number;
+  archivalScope?: string;
+  historicalContext?: string;
+  provenanceNote?: string;
+  processingNotes?: string;
+  placesMentioned?: string[];
+  organizationsMentioned?: string[];
+  peopleMentioned?: string[];
+  uncertaintyNotes?: string;
+  reliabilityLevel?: ReliabilityLevel;
 }
 
 export interface Document {
