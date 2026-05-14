@@ -1,0 +1,57 @@
+{
+  "sourceImage": ".local/archive-sample/converted/01-20251127_104045.jpg",
+  "rawOcrTextFile": ".local/archive-sample/ocr/raw/01-20251127_104045.txt",
+  "cleanOcrTextFile": ".local/archive-sample/ocr/clean/01-20251127_104045.clean.txt",
+  "assistedReadingText": "ÉTAT-MAJOR\n\nSYNTHÈSE MENSUELLE DE [---]\nN° 1191/9/2/SYNTH.\n\nI / — PRÉAMBULE. —\n\nTant du point de vue politique que du point de vue militaire,\nla rébellion reprend au cours du mois d’août un certain dynamisme,\nque le mois de juillet avait vu se figer quelque peu.\n\nDans la nuit du 3 au 4 août, plusieurs centres comprenant une\nmajorité de Français, ou plus exactement à prépondérance française,\nsont harcelés par les H.L.L. ; en même temps, les rebelles coupent\nla route, scient les poteaux.\n\nLe 10 août, 53 poteaux téléphoniques sont sabotés à 7 km au sud\nde BOGHARI, le long de la R.N. 1.\n\nLe 15 août au soir, 2 000 moutons sont volés et emmenés par\n40 rebelles, au nord d’ARTHOR.\n\nLe 19, un ancien combattant est assassiné dans le douar de BOGHARI.\n\nLe 27 juillet, le groupe d’auto-défense de SENOUSSI est très\nsérieusement harcelé ; trois jours plus tard, les H.L.L. tentaient\nencore de s’attaquer au même groupe, sans résultat cette fois-ci.\n\nLa caractéristique commune à ces diverses actions est leur nouveauté,\nen ce sens que depuis plusieurs mois les villages n’étaient pas\nharcelés, les poteaux n’étaient pas coupés, BOGHARI connaissait un\ncalme relatif.\n\nCette recrudescence de l’activité rebelle semble correspondre aux\nrécentes consignes données par le nouveau commandement de la Wilaya VI.\nEn particulier dans le domaine politique, le F.L.N. menace les\ndélégués spéciaux, et plusieurs de […]",
+  "uncertainties": [
+    {
+      "fragment": "SYNTHÈSE MENSUELLE DE [---]",
+      "suggestion": "",
+      "issue": "mot_illisible",
+      "confidence": "low",
+      "note": "Le titre exact après “Synthèse mensuelle de” reste illisible dans la lecture assistée."
+    },
+    {
+      "fragment": "H.L.L.",
+      "suggestion": "H.L.L.",
+      "issue": "sigle_incertain",
+      "confidence": "medium",
+      "note": "Le sigle est conservé tel quel mais doit être vérifié sur l’image source."
+    },
+    {
+      "fragment": "ARTHOR",
+      "suggestion": "ARTHOR",
+      "issue": "lieu_incertain",
+      "confidence": "low",
+      "note": "Toponyme incertain ; graphie à vérifier sur l’image source."
+    },
+    {
+      "fragment": "SENOUSSI",
+      "suggestion": "SENOUSSI",
+      "issue": "nom_propre_incertain",
+      "confidence": "medium",
+      "note": "Nom conservé comme lecture probable, non validée."
+    },
+    {
+      "fragment": "Wilaya VI",
+      "suggestion": "Wilaya VI",
+      "issue": "lecture_probable",
+      "confidence": "medium",
+      "note": "Graphie Wilaya/Vilaya à vérifier sur l’image et dans la logique documentaire."
+    },
+    {
+      "fragment": "plusieurs de […]",
+      "suggestion": "",
+      "issue": "mot_illisible",
+      "confidence": "low",
+      "note": "Passage tronqué ou illisible ; ne pas compléter sans retour à l’image."
+    }
+  ],
+  "status": "assisted_unverified",
+  "humanValidation": {
+    "validated": false,
+    "validatedBy": null,
+    "validatedAt": null,
+    "notes": null
+  }
+}

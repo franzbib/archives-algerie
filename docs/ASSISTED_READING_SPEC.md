@@ -2,19 +2,42 @@
 
 ## Objectif
 
-La lecture assistee par IA est une couche hypothetique entre l'OCR nettoye
-mecaniquement et une transcription validee humainement. Elle peut proposer une
-lecture probable, mais elle ne valide pas le texte.
+La lecture assistee par IA est une couche de travail hypothetique. Elle peut
+aider a rendre un OCR bruité plus lisible, mais elle ne constitue jamais une
+transcription validee.
 
-Cette specification ne declenche aucun appel IA. Elle decrit seulement le format
-attendu pour une future sortie.
+Cette specification ne declenche aucun appel IA. Elle definit seulement le
+format attendu pour une future sortie de lecture assistee.
 
 ## Etats a distinguer
 
-- OCR brut : sortie Tesseract non modifiee.
-- OCR nettoye mecaniquement : texte avec nettoyage non interpretatif.
-- Lecture assistee : hypothese produite a partir de l'OCR fourni.
-- Transcription validee : texte relu et valide par un humain.
+### OCR brut
+
+Texte produit directement par Tesseract. Il doit etre conserve tel quel pour
+documenter les erreurs, comparer les corrections futures et garder une trace de
+la sortie primaire.
+
+### OCR nettoye mecaniquement
+
+Texte issu de nettoyages non interpretatifs: espaces, lignes vides, retours a la
+ligne. Il ne corrige pas les noms, les lieux, les dates ou le sens.
+
+### Lecture assistee
+
+Hypothese de lecture proposee a partir de l'OCR fourni. Elle peut restructurer
+une lecture probable, mais doit marquer les incertitudes et ne pas inventer de
+passages absents.
+
+### Transcription validee
+
+Texte relu et valide humainement par comparaison avec l'image source. C'est le
+seul etat qui pourra servir de transcription fiable.
+
+## Hypothese et validation
+
+Une lecture assistee reste une hypothese meme si elle est plus exploitable que
+l'OCR brut. La validation impose une relecture humaine sur l'image source,
+notamment pour les noms propres, lieux, dates, sigles et passages tronques.
 
 ## Regles
 
@@ -22,9 +45,9 @@ attendu pour une future sortie.
 - Ne pas ajouter de contexte historique externe.
 - Ne jamais inventer un passage absent ou illisible.
 - Marquer les incertitudes dans une liste dediee.
-- Verifier noms, lieux et dates sur l'image avant toute validation.
 - Conserver `status: "assisted_unverified"` tant qu'aucune validation humaine
   n'a ete faite.
+- Ne passer a une transcription validee qu'apres relecture humaine.
 
 ## Format JSON attendu
 
@@ -33,13 +56,14 @@ attendu pour une future sortie.
   "sourceImage": "...",
   "rawOcrTextFile": "...",
   "cleanOcrTextFile": "...",
-  "assistedReading": "...",
+  "assistedReadingText": "...",
   "uncertainties": [
     {
       "fragment": "...",
-      "issue": "mot illisible | nom propre incertain | date incertaine | lieu incertain",
       "suggestion": "...",
-      "confidence": "low | medium | high"
+      "issue": "mot_illisible | nom_propre_incertain | date_incertaine | lieu_incertain | sigle_incertain | lecture_probable",
+      "confidence": "low | medium | high",
+      "note": "..."
     }
   ],
   "status": "assisted_unverified",
@@ -52,8 +76,15 @@ attendu pour une future sortie.
 }
 ```
 
-## Notes de validation
+## Role de la relecture humaine
 
-Le champ `assistedReading` ne doit pas etre utilise comme transcription finale.
-Il sert a orienter la relecture. Une validation humaine devra comparer la
-lecture assistee avec l'image source, l'OCR brut et l'OCR nettoye.
+La relecture humaine doit comparer:
+
+- l'image source ;
+- l'OCR brut ;
+- l'OCR nettoye mecaniquement ;
+- la lecture assistee.
+
+Elle doit confirmer ou corriger les incertitudes, signaler les zones illisibles
+et documenter les choix de transcription. Sans cette etape, la lecture assistee
+reste non validee.

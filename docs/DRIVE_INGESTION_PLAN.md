@@ -333,6 +333,21 @@ Les etats doivent rester separes:
 - lecture assistee hypothetique ;
 - transcription validee humainement.
 
+## Lecture assistee non validee
+
+La lecture assistee non validee est utile pour rendre un OCR bruité plus
+lisible et preparer la relecture. Elle peut proposer une sequence de texte plus
+coherente, mais elle ne doit jamais etre traitee comme une transcription
+validee.
+
+Les incertitudes doivent etre conservees dans la sortie: noms propres, lieux,
+dates, sigles, mots illisibles et passages tronques. L'image scannee reste la
+source de verite. Toute lecture assistee doit donc etre comparee a l'image avant
+indexation, citation ou integration dans le manifeste principal.
+
+La validation humaine reste obligatoire avant toute exploitation comme
+transcription historique.
+
 ## Activer l'ingestion Drive reelle de niveau 1
 
 L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers
