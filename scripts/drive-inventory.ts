@@ -47,6 +47,9 @@ interface DriveInventoryFile {
     | "ready_for_conversion"
     | "to_inventory";
   probablePageNumber: number | null;
+  sampleCandidate?: boolean;
+  sampleNote?: string | null;
+  sampleOrder?: number | null;
   status: "to_inventory";
 }
 
@@ -206,6 +209,9 @@ function toInventoryFile(file: GoogleDriveFile): DriveInventoryFile {
     preparationNote: qualification.preparationNote,
     preparationStatus: qualification.preparationStatus,
     probablePageNumber: null,
+    sampleCandidate: false,
+    sampleNote: null,
+    sampleOrder: null,
     status: "to_inventory",
   };
 }

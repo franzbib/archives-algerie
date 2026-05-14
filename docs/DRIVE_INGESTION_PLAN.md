@@ -130,6 +130,24 @@ L'inventaire Drive brut ne doit pas alimenter directement le manifeste principal
 Seules les informations relues et validees humainement pourront etre reportees
 dans `src/data/archives-manifest.json`.
 
+## Echantillon pilote de conversion
+
+La conversion doit commencer sur un echantillon tres limite, idealement entre 5
+et 10 images. Cette prudence permet de tester la chaine technique sans engager
+tout le dossier Drive ni creer de faux sentiment de validation.
+
+L'echantillon pilote sert uniquement a preparer une future conversion HEIC vers
+JPG et un futur test OCR. Il ne valide ni le document, ni la page, ni l'ordre
+archivistique. Les champs `sampleCandidate`, `sampleOrder` et `sampleNote`
+peuvent marquer cette selection provisoire dans l'inventaire brut.
+
+Il ne faut pas convertir tout le dossier avant d'avoir controle visuellement un
+petit lot: qualite des images, orientation, lisibilite, ordre probable et
+rattachement page/document. Ce controle visuel doit preceder tout OCR.
+
+L'echantillon ne doit pas etre importe automatiquement dans le manifeste
+principal. Il reste une aide technique pour organiser la prochaine etape.
+
 ## Activer l'ingestion Drive reelle de niveau 1
 
 L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers
