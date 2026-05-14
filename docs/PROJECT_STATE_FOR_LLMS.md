@@ -3,9 +3,11 @@
 ## 1. Dépôt et branche
 
 - Repo : franzbib/archives-algerie
-- Branche de travail actuelle : master
-- Important : la branche main ne doit pas être utilisée pour l’instant, sauf décision explicite.
-- Le travail utile est actuellement sur master.
+- Branche officielle de travail : main
+- main est désormais la branche de référence pour Codex, Antigravity et Vercel
+- master est conservée comme branche historique ou miroir, mais ne doit plus être la branche de travail principale
+- Vercel doit déployer depuis main
+- toute nouvelle modification doit être poussée sur origin/main
 
 ## 2. Nature du projet
 
@@ -114,7 +116,7 @@ Prochaine progression recommandée :
 
 ## 9. Risques principaux
 
-- confusion entre main et master ;
+- ne pas réintroduire de divergence entre main et master ;
 - ingestion trop rapide de Google Drive ;
 - OCR de mauvaise qualité non signalé ;
 - réponses IA non sourcées ;
