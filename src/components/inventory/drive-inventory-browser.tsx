@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { ExternalLink, FolderSearch, ShieldAlert } from "lucide-react";
 import { StatusBadge } from "@/components/ui/status-badge";
+import { PipelineSteps } from "@/components/inventory/pipeline-steps";
 
 export interface DriveInventoryFile {
   conversionNeeded?: boolean;
@@ -118,6 +119,8 @@ export function DriveInventoryBrowser({ inventory }: DriveInventoryBrowserProps)
         <SummaryCard label="Prêts conversion" value={String(readyForConversionCount)} />
         <SummaryCard label="Échantillon pilote" value={String(sampleCount)} />
       </div>
+
+      <PipelineSteps />
 
       <section className="mb-8 border border-paper-border bg-paper p-6">
         <div className="flex items-start gap-3">
@@ -274,49 +277,44 @@ export function DriveInventoryBrowser({ inventory }: DriveInventoryBrowserProps)
 function FileRow({ file }: { file: DriveInventoryFile }) {
   return (
     <article
-      className={`border bg-background p-4 ${
-        isSampleCandidate(file) ? "border-warm" : "border-paper-border"
+      className={`border bg-background p-4 transition-colors ${
+        isSampleCandidate(file)
+          ? "border-warm bg-warm/5"
+          : "border-paper-border"
       }`}
     >
       <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
         <div>
-          <h3 className="font-medium text-foreground">{file.fileName}</h3>
-          <dl className="mt-3 grid gap-3 text-sm sm:grid-cols-2">
+          <h3 className="font-medium text-foreground flex items-center gap-2">
+            {file.fileName}
+            {isSampleCandidate(file) && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-widest bg-warm text-paper">
+                Échantillon pilote
+              </span>
+            )}
+          </h3>
+          <dl className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm">
             <MetaItem label="Type MIME" value={file.mimeType} />
             <MetaItem
               label="Type interprété"
               value={formatFileKind(getFileKind(file))}
             />
-            <MetaItem
-              label="Conversion"
-              value={formatConversionNeeded(getConversionNeeded(file))}
-            />
-            <MetaItem
-              label="Cible"
-              value={formatConversionTarget(getConversionTarget(file))}
-            />
-            <MetaItem
-              label="Créé le"
-              value={file.createdTime ? formatDate(file.createdTime) : "Non renseigné"}
-            />
-            <MetaItem
-              label="Modifié le"
-              value={
-                file.modifiedTime ? formatDate(file.modifiedTime) : "Non renseigné"
-              }
-            />
+            {getConversionNeeded(file) && (
+              <MetaItem
+                label="Conversion"
+                value={`Vers ${formatConversionTarget(getConversionTarget(file))}`}
+              />
+            )}
             <MetaItem
               label="Page probable"
-              value={file.probablePageNumber?.toString() ?? "Non renseigné"}
+              value={file.probablePageNumber?.toString() ?? "N/A"}
             />
-            <MetaItem
-              label="Préparation"
-              value={formatPreparationStatus(getPreparationStatus(file))}
-            />
-            <MetaItem
-              label="Ordre échantillon"
-              value={file.sampleOrder ? String(file.sampleOrder) : "Hors échantillon"}
-            />
+            {file.sampleOrder && (
+              <MetaItem
+                label="Ordre"
+                value={String(file.sampleOrder)}
+              />
+            )}
           </dl>
           {file.ingestionNote && (
             <p className="mt-3 text-sm leading-6 text-warm">{file.ingestionNote}</p>
@@ -330,15 +328,15 @@ function FileRow({ file }: { file: DriveInventoryFile }) {
             </p>
           )}
         </div>
-        <div className="flex shrink-0 flex-wrap gap-2 lg:justify-end">
+        <div className="flex shrink-0 flex-wrap items-start gap-2 lg:justify-end">
           <StatusBadge variant="neutral">À inventorier</StatusBadge>
-          <StatusBadge variant="warning">
+          <StatusBadge
+            variant={getPreparationStatus(file) === "needs_ordering" ? "warning" : "neutral"}
+          >
             {formatPreparationStatus(getPreparationStatus(file))}
           </StatusBadge>
-          {isSampleCandidate(file) && (
-            <StatusBadge variant="default">
-              Échantillon {file.sampleOrder ?? ""}
-            </StatusBadge>
+          {getConversionNeeded(file) && (
+            <StatusBadge variant="warning">Conversion requise</StatusBadge>
           )}
           <a
             className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
@@ -489,10 +487,6 @@ function formatFileKind(kind: NonNullable<DriveInventoryFile["fileKind"]>): stri
   };
 
   return labels[kind];
-}
-
-function formatConversionNeeded(value: boolean): string {
-  return value ? "Oui" : "Non";
 }
 
 function formatConversionTarget(

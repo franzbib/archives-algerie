@@ -68,22 +68,57 @@ export default function InventoryPage() {
           </div>
         </div>
 
-        <div className="mb-6 flex items-center gap-3">
-          <ClipboardList className="h-5 w-5 text-warm" />
-          <div className="flex-1">
-            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-              Tableau de suivi
-            </p>
-            <h2 className="font-serif text-2xl font-medium text-foreground">
-              Collections du manifeste
-            </h2>
+        <div className="mb-6 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <ClipboardList className="h-5 w-5 text-warm" />
+            <div className="flex-1">
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+                Tableau de suivi
+              </p>
+              <h2 className="font-serif text-2xl font-medium text-foreground">
+                Collections du manifeste
+              </h2>
+            </div>
           </div>
+        </div>
+
+        <div className="mb-10 grid gap-4 md:grid-cols-3">
           <Link
-            className="text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
             href="/inventaire-drive"
+            className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
           >
-            Inventaire Drive pilote
+            <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
+              Étape 1
+            </p>
+            <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
+              Inventaire Drive pilote
+            </h3>
+            <p className="mt-2 text-xs leading-5 text-foreground/70">
+              Aperçu brut des fichiers listés depuis Google Drive avant toute conversion ou rattachement archivistique.
+            </p>
           </Link>
+          <div className="border border-paper-border bg-paper p-5 opacity-75">
+            <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
+              Étape 2
+            </p>
+            <h3 className="mt-2 font-serif text-lg font-medium text-foreground">
+              Pipeline local pilote
+            </h3>
+            <p className="mt-2 text-xs leading-5 text-foreground/70">
+              Suivi des échantillons téléchargés, convertis en JPG, et traités par OCR brut puis nettoyés localement.
+            </p>
+          </div>
+          <div className="border border-paper-border bg-paper p-5 opacity-75">
+            <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
+              Étape 3
+            </p>
+            <h3 className="mt-2 font-serif text-lg font-medium text-foreground">
+              Lecture assistée future
+            </h3>
+            <p className="mt-2 text-xs leading-5 text-foreground/70">
+              Hypothèses de transcription basées sur l&apos;OCR, avec marquage des incertitudes, en attente de validation humaine.
+            </p>
+          </div>
         </div>
 
         <InventoryDashboard collections={collections} />
