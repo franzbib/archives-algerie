@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { Archive, ExternalLink, FileText } from "lucide-react";
 import {
+  getReliabilityLevelLabel,
   getStatusLabel,
+  hasV1Enrichment,
 } from "@/lib/archiveManifest";
 import type { Collection } from "@/types/archive";
 import { StatusBadge } from "@/components/ui/status-badge";
@@ -48,6 +50,16 @@ export function CollectionList({ collections }: CollectionListProps) {
               <StatusBadge variant={collection.status === "verified" ? "success" : "neutral"}>
                 {getStatusLabel(collection.status)}
               </StatusBadge>
+              {hasV1Enrichment(collection) && (
+                <div className="flex flex-wrap gap-2 lg:justify-end">
+                  <StatusBadge variant="neutral">Notice V1</StatusBadge>
+                  {collection.reliabilityLevel && (
+                    <StatusBadge variant="neutral">
+                      {getReliabilityLevelLabel(collection.reliabilityLevel)}
+                    </StatusBadge>
+                  )}
+                </div>
+              )}
               <a
                 href={collection.driveUrl}
                 target="_blank"

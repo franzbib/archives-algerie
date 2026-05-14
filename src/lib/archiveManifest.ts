@@ -7,6 +7,7 @@ import type {
   Collection,
   Document,
   DocumentType,
+  ReliabilityLevel,
 } from "@/types/archive";
 
 export const archiveStatuses = [
@@ -117,6 +118,31 @@ export function getDocumentTypeLabel(type: DocumentType): string {
   };
 
   return labels[type];
+}
+
+export function hasV1Enrichment(collection: Collection): boolean {
+  return Boolean(
+    collection.archivalScope ||
+      collection.historicalContext ||
+      collection.provenanceNote ||
+      collection.processingNotes ||
+      collection.placesMentioned?.length ||
+      collection.organizationsMentioned?.length ||
+      collection.peopleMentioned?.length ||
+      collection.uncertaintyNotes ||
+      collection.reliabilityLevel,
+  );
+}
+
+export function getReliabilityLevelLabel(level: ReliabilityLevel): string {
+  const labels: Record<ReliabilityLevel, string> = {
+    low: "Faible",
+    medium: "Moyen",
+    high: "Élevé",
+    to_verify: "À vérifier",
+  };
+
+  return labels[level];
 }
 
 function createEmptyStatusCounts(): Record<ArchiveStatus, number> {

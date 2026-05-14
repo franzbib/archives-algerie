@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { Filter, Search } from "lucide-react";
 import { CollectionList } from "@/components/collection-list";
-import { getStatusLabel } from "@/lib/archiveManifest";
+import { getStatusLabel, hasV1Enrichment } from "@/lib/archiveManifest";
 import type { ArchiveFacets, ArchiveStatus, Collection } from "@/types/archive";
 
 interface CollectionsBrowserProps {
@@ -17,6 +17,7 @@ interface ClientFilters {
   region: string;
   sourceInstitution: string;
   status: string;
+  v1Enrichment: string;
 }
 
 const emptyFilters: ClientFilters = {
@@ -25,6 +26,7 @@ const emptyFilters: ClientFilters = {
   region: "",
   sourceInstitution: "",
   status: "",
+  v1Enrichment: "",
 };
 
 export function CollectionsBrowser({ collections, facets }: CollectionsBrowserProps) {
@@ -111,6 +113,18 @@ export function CollectionsBrowser({ collections, facets }: CollectionsBrowserPr
             }))}
             value={filters.status}
           />
+          <SelectFilter
+            label="Notice V1"
+            name="v1-enrichment"
+            onChange={(value) => updateFilter("v1Enrichment", value)}
+            options={[
+              { label: "Toutes", value: "" },
+              { label: "Enrichies V1", value: "enriched" },
+              { label: "Non enrichies", value: "not_enriched" },
+            ]}
+            value={filters.v1Enrichment}
+            includeAllOption={false}
+          />
 
           <button
             className="w-full border border-paper-border bg-background px-3 py-2 text-sm font-medium text-foreground disabled:cursor-not-allowed disabled:opacity-50"
@@ -140,7 +154,9 @@ function SelectFilter({
   onChange,
   options,
   value,
+  includeAllOption = true,
 }: {
+  includeAllOption?: boolean;
   label: string;
   name: string;
   onChange: (value: string) => void;
@@ -162,7 +178,7 @@ function SelectFilter({
         onChange={(event) => onChange(event.target.value)}
         value={value}
       >
-        <option value="">Tous</option>
+        {includeAllOption && <option value="">Tous</option>}
         {options.map((option) => {
           const normalized =
             typeof option === "string" ? { label: option, value: option } : option;
@@ -200,9 +216,28 @@ function filterCollections(
       matches(collection.region, filters.region) &&
       matches(collection.period, filters.period) &&
       matches(collection.status, filters.status as ArchiveStatus | "") &&
+      matchesV1Enrichment(collection, filters.v1Enrichment) &&
       (!query || searchableText.includes(query))
     );
   });
+}
+
+function matchesV1Enrichment(collection: Collection, filter: string): boolean {
+  if (!filter) {
+    return true;
+  }
+
+  const enriched = hasV1Enrichment(collection);
+
+  if (filter === "enriched") {
+    return enriched;
+  }
+
+  if (filter === "not_enriched") {
+    return !enriched;
+  }
+
+  return true;
 }
 
 function matches(value: string, filter: string): boolean {
