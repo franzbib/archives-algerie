@@ -23,6 +23,10 @@
 # misc
 .DS_Store
 *.pem
+.local/
+archive-sample/
+*.heic
+*.HEIC
 
 # debug
 npm-debug.log*

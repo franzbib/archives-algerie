@@ -148,6 +148,44 @@ rattachement page/document. Ce controle visuel doit preceder tout OCR.
 L'echantillon ne doit pas etre importe automatiquement dans le manifeste
 principal. Il reste une aide technique pour organiser la prochaine etape.
 
+## Telechargement controle de l'echantillon pilote
+
+Le telechargement local doit rester limite a l'echantillon pilote. Il sert a
+preparer un futur controle visuel et une future conversion technique, sans
+engager tout le dossier Drive.
+
+Le script `scripts/download-drive-sample.ts` lit
+`data/generated/drive-inventory.pilot.json`, selectionne uniquement les fichiers
+marques `sampleCandidate: true`, puis telecharge les originaux bruts dans:
+
+```text
+.local/archive-sample/raw/
+```
+
+Il cree aussi un manifeste local de telechargement:
+
+```text
+.local/archive-sample/download-manifest.json
+```
+
+Le dossier `.local/` est ignore par Git afin d'eviter de committer des originaux
+telecharges. Les fichiers HEIC sont egalement ignores par precaution.
+
+Le script refuse de fonctionner sans `GOOGLE_DRIVE_API_KEY`, sans candidats
+d'echantillon ou sans l'option explicite `--confirm`. Cette confirmation evite
+de lancer une ecriture locale par erreur.
+
+Commande Windows PowerShell:
+
+```powershell
+$env:GOOGLE_DRIVE_API_KEY="VOTRE_CLE"
+npx.cmd tsx scripts/download-drive-sample.ts --inventory data/generated/drive-inventory.pilot.json --out .local/archive-sample/raw --limit 8 --confirm
+```
+
+Cette etape ne convertit pas les fichiers HEIC, ne lance pas d'OCR, n'appelle
+pas OpenAI et ne cree pas d'embeddings. Les fichiers telecharges ne deviennent
+pas des pages ni des documents valides sans controle humain.
+
 ## Activer l'ingestion Drive reelle de niveau 1
 
 L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers
