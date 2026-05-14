@@ -104,6 +104,39 @@ Cette methode reste un inventaire brut:
 Le snapshot manuel ne doit pas etre importe automatiquement dans
 `src/data/archives-manifest.json`.
 
+## Activer l'ingestion Drive reelle de niveau 1
+
+L'ingestion Drive reelle de niveau 1 sert uniquement a lister les fichiers
+visibles d'un dossier Drive. Elle ne telecharge pas les fichiers, ne lit pas les
+images, ne lance pas d'OCR et ne cree aucune notice validee.
+
+Pour l'activer, il faut disposer d'une cle API Google Drive et verifier que
+l'API Google Drive est activee dans le projet Google Cloud associe. La cle doit
+etre fournie uniquement en variable d'environnement locale:
+
+```powershell
+$env:GOOGLE_DRIVE_API_KEY="VOTRE_CLE"
+npx.cmd tsx scripts/drive-inventory.ts --sources scripts/drive-sources.pilot.example.json --out data/generated/drive-inventory.pilot.json --limit 50
+```
+
+Le parametre `--limit` limite le nombre de fichiers listes. Par defaut, le
+script limite deja la sortie a 50 fichiers afin d'eviter une ingestion trop
+large.
+
+La sortie de niveau 1 peut contenir:
+
+- `id` du fichier Drive ;
+- nom du fichier ;
+- type MIME ;
+- lien `webViewLink` si disponible ;
+- `createdTime` si disponible ;
+- `modifiedTime` si disponible.
+
+Elle ne doit pas contenir de transcription, de contenu d'image ou de resultat
+d'analyse. Les fichiers HEIC devront probablement etre convertis plus tard
+avant OCR. La correspondance fichier -> page -> document doit etre etablie par
+validation humaine avant toute integration au manifeste principal.
+
 ## Risques
 
 - Confondre dossier Drive, collection, dossier archivistique et document.

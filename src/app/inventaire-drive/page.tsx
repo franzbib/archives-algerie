@@ -5,10 +5,13 @@ import { ArrowLeft, ExternalLink, FolderSearch, ShieldAlert } from "lucide-react
 import { StatusBadge } from "@/components/ui/status-badge";
 
 interface DriveInventoryFile {
+  createdTime?: string;
   fileName: string;
   mimeType: string;
   driveFileId: string;
   driveUrl: string;
+  ingestionNote?: string;
+  modifiedTime?: string;
   probablePageNumber: number | null;
   status: "to_inventory";
 }
@@ -23,9 +26,12 @@ interface DriveInventorySource {
 
 interface DriveInventory {
   generatedAt: string;
+  fileCount?: number;
   mode: "drive" | "manual_snapshot" | "mock";
   sourceFile?: string;
+  sourceCount?: number;
   notes?: string[];
+  warning?: string;
   sources: DriveInventorySource[];
 }
 
@@ -80,8 +86,14 @@ export default function DriveInventoryPage() {
             label="Généré le"
             value={inventory ? formatDate(inventory.generatedAt) : "Non généré"}
           />
-          <SummaryCard label="Sources" value={String(inventory?.sources.length ?? 0)} />
-          <SummaryCard label="Fichiers listés" value={String(totalFiles)} />
+          <SummaryCard
+            label="Sources"
+            value={String(inventory?.sourceCount ?? inventory?.sources.length ?? 0)}
+          />
+          <SummaryCard
+            label="Fichiers listés"
+            value={String(inventory?.fileCount ?? totalFiles)}
+          />
         </div>
 
         <section className="mb-8 border border-paper-border bg-paper p-6">
@@ -92,6 +104,7 @@ export default function DriveInventoryPage() {
                 Avertissement méthodologique
               </p>
               <div className="mt-3 space-y-2 text-sm leading-6 text-foreground/80">
+                {inventory?.warning && <p>{inventory.warning}</p>}
                 <p>Cette page présente un inventaire brut.</p>
                 {isManualSnapshot && (
                   <p>
@@ -188,10 +201,23 @@ function FileRow({ file }: { file: DriveInventoryFile }) {
           <dl className="mt-3 grid gap-3 text-sm sm:grid-cols-2">
             <MetaItem label="Type MIME" value={file.mimeType} />
             <MetaItem
+              label="Créé le"
+              value={file.createdTime ? formatDate(file.createdTime) : "Non renseigné"}
+            />
+            <MetaItem
+              label="Modifié le"
+              value={
+                file.modifiedTime ? formatDate(file.modifiedTime) : "Non renseigné"
+              }
+            />
+            <MetaItem
               label="Page probable"
               value={file.probablePageNumber?.toString() ?? "Non renseigné"}
             />
           </dl>
+          {file.ingestionNote && (
+            <p className="mt-3 text-sm leading-6 text-warm">{file.ingestionNote}</p>
+          )}
         </div>
         <div className="flex shrink-0 flex-wrap gap-2 lg:justify-end">
           <StatusBadge variant="neutral">À inventorier</StatusBadge>

@@ -14,6 +14,9 @@ interface DriveInventory {
   generatedAt: string;
   mode: "drive" | "manual_snapshot" | "mock";
   sourceFile: string;
+  sourceCount: number;
+  fileCount: number;
+  warning: string;
   notes: string[];
   sources: DriveInventorySource[];
 }
@@ -27,17 +30,22 @@ interface DriveInventorySource {
 }
 
 interface DriveInventoryFile {
+  createdTime?: string;
   fileName: string;
   mimeType: string;
   driveFileId: string;
   driveUrl: string;
+  ingestionNote: string;
+  modifiedTime?: string;
   probablePageNumber: number | null;
   status: "to_inventory";
 }
 
 interface GoogleDriveFile {
+  createdTime?: string;
   id: string;
   mimeType: string;
+  modifiedTime?: string;
   name: string;
   webViewLink?: string;
 }
@@ -50,6 +58,7 @@ interface GoogleDriveListResponse {
 async function main() {
   const sourcePath = getArg("--sources") ?? "scripts/drive-sources.example.json";
   const outputPath = getArg("--out") ?? "data/generated/drive-inventory.json";
+  const limit = getLimit();
   const apiKey = process.env.GOOGLE_DRIVE_API_KEY;
   const sources = await readJson<DriveSource[]>(sourcePath);
 
@@ -66,6 +75,7 @@ async function main() {
   if (!apiKey) {
     notes.push(
       "Mode mock: GOOGLE_DRIVE_API_KEY est absent. Les dossiers sont listes avec files: [].",
+      "Pour activer le mode drive: definir GOOGLE_DRIVE_API_KEY puis relancer le script.",
     );
   }
 
@@ -75,9 +85,17 @@ async function main() {
     validateSource(source);
     const collectionId = getCollectionId(source);
 
-    const files = apiKey
-      ? await listDriveFolderFiles(source.driveUrl, apiKey)
-      : [];
+    let files: GoogleDriveFile[] = [];
+
+    if (apiKey) {
+      try {
+        files = await listDriveFolderFiles(source.driveUrl, apiKey, limit);
+      } catch (error) {
+        const message = formatDriveError(error);
+        notes.push(`Erreur Drive pour ${collectionId}: ${message}`);
+        console.error(`Erreur Drive pour ${collectionId}: ${message}`);
+      }
+    }
 
     inventorySources.push({
       collectionId,
@@ -92,6 +110,13 @@ async function main() {
     generatedAt: new Date().toISOString(),
     mode: apiKey ? "drive" : "mock",
     sourceFile: sourcePath,
+    sourceCount: inventorySources.length,
+    fileCount: inventorySources.reduce(
+      (total, source) => total + source.files.length,
+      0,
+    ),
+    warning:
+      "Inventaire Drive brut: fichiers listes uniquement, contenu non lu, aucune notice validee.",
     notes,
     sources: inventorySources,
   };
@@ -101,15 +126,15 @@ async function main() {
 
   console.log(`Drive inventory written: ${outputPath}`);
   console.log(`Mode: ${inventory.mode}`);
-  console.log(`Sources: ${inventorySources.length}`);
-  console.log(
-    `Files: ${inventorySources.reduce((total, source) => total + source.files.length, 0)}`,
-  );
+  console.log(`Limit: ${limit}`);
+  console.log(`Sources: ${inventory.sourceCount}`);
+  console.log(`Files: ${inventory.fileCount}`);
 }
 
 async function listDriveFolderFiles(
   driveFolderUrl: string,
   apiKey: string,
+  limit: number,
 ): Promise<GoogleDriveFile[]> {
   const folderId = extractDriveFolderId(driveFolderUrl);
   if (!folderId) {
@@ -119,15 +144,16 @@ async function listDriveFolderFiles(
   const files: GoogleDriveFile[] = [];
   let pageToken: string | undefined;
 
-  do {
+  while (files.length < limit) {
     const url = new URL("https://www.googleapis.com/drive/v3/files");
+    const remaining = limit - files.length;
     url.searchParams.set("key", apiKey);
     url.searchParams.set("q", `'${folderId}' in parents and trashed=false`);
     url.searchParams.set(
       "fields",
-      "nextPageToken,files(id,name,mimeType,webViewLink)",
+      "nextPageToken,files(id,name,mimeType,webViewLink,createdTime,modifiedTime)",
     );
-    url.searchParams.set("pageSize", "1000");
+    url.searchParams.set("pageSize", String(Math.min(remaining, 1000)));
 
     if (pageToken) {
       url.searchParams.set("pageToken", pageToken);
@@ -136,43 +162,36 @@ async function listDriveFolderFiles(
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(
-        `Google Drive API error ${response.status}: ${await response.text()}`,
+        `Google Drive API error ${response.status}: ${formatGoogleDriveApiError(
+          response.status,
+          await response.text(),
+        )}`,
       );
     }
 
     const payload = (await response.json()) as GoogleDriveListResponse;
     files.push(...(payload.files ?? []));
     pageToken = payload.nextPageToken;
-  } while (pageToken);
+    if (!pageToken) {
+      break;
+    }
+  }
 
   return files.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function toInventoryFile(file: GoogleDriveFile): DriveInventoryFile {
   return {
+    createdTime: file.createdTime,
     fileName: file.name,
     mimeType: file.mimeType,
     driveFileId: file.id,
     driveUrl: file.webViewLink ?? `https://drive.google.com/file/d/${file.id}/view`,
-    probablePageNumber: inferProbablePageNumber(file.name),
+    ingestionNote: "Fichier liste depuis Drive ; contenu non lu.",
+    modifiedTime: file.modifiedTime,
+    probablePageNumber: null,
     status: "to_inventory",
   };
-}
-
-function inferProbablePageNumber(fileName: string): number | null {
-  const patterns = [
-    /(?:^|[^a-z])p(?:age)?[-_ ]?(\d{1,4})(?:\D|$)/i,
-    /(?:^|[_ -])(\d{1,4})(?:\.[^.]+$)/,
-  ];
-
-  for (const pattern of patterns) {
-    const match = fileName.match(pattern);
-    if (match?.[1]) {
-      return Number.parseInt(match[1], 10);
-    }
-  }
-
-  return null;
 }
 
 function extractDriveFolderId(driveFolderUrl: string): string | null {
@@ -214,6 +233,34 @@ function requireString(value: unknown, field: string) {
 function getArg(name: string): string | undefined {
   const index = process.argv.indexOf(name);
   return index >= 0 ? process.argv[index + 1] : undefined;
+}
+
+function getLimit(): number {
+  const rawLimit = getArg("--limit");
+  if (!rawLimit) {
+    return 50;
+  }
+
+  const parsed = Number.parseInt(rawLimit, 10);
+  if (!Number.isFinite(parsed) || parsed < 1) {
+    throw new Error("--limit doit etre un entier positif.");
+  }
+
+  return parsed;
+}
+
+function formatDriveError(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
+function formatGoogleDriveApiError(status: number, body: string): string {
+  const commonHints: Record<number, string> = {
+    400: "requete invalide ou dossier inaccessible.",
+    403: "permission refusee, quota atteint ou API Drive non activee.",
+    404: "dossier introuvable ou non accessible avec cette cle.",
+  };
+
+  return `${commonHints[status] ?? "erreur API Drive."} Reponse: ${body}`;
 }
 
 main().catch((error: unknown) => {

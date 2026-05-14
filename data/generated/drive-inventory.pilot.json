@@ -2,6 +2,9 @@
   "generatedAt": "2026-05-14T16:30:00.000Z",
   "mode": "manual_snapshot",
   "sourceFile": "scripts/drive-sources.pilot.example.json",
+  "sourceCount": 1,
+  "fileCount": 12,
+  "warning": "Inventaire Drive brut: fichiers listes uniquement, contenu non lu, aucune notice validee.",
   "notes": [
     "Inventaire brut: ne pas importer automatiquement dans le manifeste valide.",
     "Snapshot manuel partiel fourni depuis le connecteur Drive de ChatGPT.",
@@ -21,6 +24,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1pTmKFJ9XXspDquXVDe7o6tewUostu-iW",
           "driveUrl": "https://drive.google.com/file/d/1pTmKFJ9XXspDquXVDe7o6tewUostu-iW/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -29,6 +33,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1XDxGAJapHvpyiDPoXroI3LGxxSDmJNYN",
           "driveUrl": "https://drive.google.com/file/d/1XDxGAJapHvpyiDPoXroI3LGxxSDmJNYN/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -37,6 +42,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1pxQsQsWmku-T-HreIuMVXYQCXSB1k85X",
           "driveUrl": "https://drive.google.com/file/d/1pxQsQsWmku-T-HreIuMVXYQCXSB1k85X/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -45,6 +51,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1zOB8p7eyFhGR6qRyKLIWPnQz9vkqncgO",
           "driveUrl": "https://drive.google.com/file/d/1zOB8p7eyFhGR6qRyKLIWPnQz9vkqncgO/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -53,6 +60,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1k8nhqId5PvOrNlwqbP48a2JiQ4RAR8UX",
           "driveUrl": "https://drive.google.com/file/d/1k8nhqId5PvOrNlwqbP48a2JiQ4RAR8UX/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -61,6 +69,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1hY0FAHkQuQdB8rZrX3YpiUUpkKN2q11k",
           "driveUrl": "https://drive.google.com/file/d/1hY0FAHkQuQdB8rZrX3YpiUUpkKN2q11k/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -69,6 +78,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1N402HyuJvAITBquYqo24OeIqCwTlTwpk",
           "driveUrl": "https://drive.google.com/file/d/1N402HyuJvAITBquYqo24OeIqCwTlTwpk/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -77,6 +87,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1G-4-1OgPSoIvzdHlq7IRLcJ0V_SOSZ7L",
           "driveUrl": "https://drive.google.com/file/d/1G-4-1OgPSoIvzdHlq7IRLcJ0V_SOSZ7L/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -85,6 +96,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1bzGEuzU9SJIFB2YGndkzKj8N2ntNkSv3",
           "driveUrl": "https://drive.google.com/file/d/1bzGEuzU9SJIFB2YGndkzKj8N2ntNkSv3/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -93,6 +105,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1zaE3HqtmFGWS3MdDMJzB9UT0o5voHvBa",
           "driveUrl": "https://drive.google.com/file/d/1zaE3HqtmFGWS3MdDMJzB9UT0o5voHvBa/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -101,6 +114,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1t_CToG9N-gHPHiSAZhsm74YFiVFuQ35T",
           "driveUrl": "https://drive.google.com/file/d/1t_CToG9N-gHPHiSAZhsm74YFiVFuQ35T/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         },
@@ -109,6 +123,7 @@
           "mimeType": "image/heif",
           "driveFileId": "1M1wcVNC-29hjAZIBrscMC4IbanOpCdKI",
           "driveUrl": "https://drive.google.com/file/d/1M1wcVNC-29hjAZIBrscMC4IbanOpCdKI/view?usp=drivesdk",
+          "ingestionNote": "Fichier liste depuis Drive ; contenu non lu.",
           "probablePageNumber": null,
           "status": "to_inventory"
         }
