@@ -88,3 +88,30 @@ La relecture humaine doit comparer:
 Elle doit confirmer ou corriger les incertitudes, signaler les zones illisibles
 et documenter les choix de transcription. Sans cette etape, la lecture assistee
 reste non validee.
+
+## Generation locale controlee
+
+Le script `scripts/generate-assisted-reading-sample.ts` prepare une generation
+locale de lecture assistee pour une seule page OCR nettoyee.
+
+Il doit etre lance uniquement avec `--confirm` et avec `OPENAI_API_KEY` dans
+l'environnement local. Il ecrit uniquement dans:
+
+```text
+.local/archive-sample/assisted-reading/
+```
+
+Commande type:
+
+```powershell
+npx.cmd tsx scripts/generate-assisted-reading-sample.ts --input .local/archive-sample/ocr/clean/03-20251127_104448.clean.txt --source-image .local/archive-sample/converted/03-20251127_104448.jpg --out .local/archive-sample/assisted-reading/page-03.assisted.json --model gpt-4.1-mini --confirm
+```
+
+Cette generation ne cree pas de transcription validee. Le script force toujours:
+
+- `status: "assisted_unverified"` ;
+- `humanValidation.validated: false`.
+
+Les sorties locales ne doivent pas etre commitees automatiquement dans
+`data/examples/`. Elles doivent etre relues avant toute publication ou
+integration applicative.
