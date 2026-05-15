@@ -94,6 +94,52 @@ npm.cmd run search:index:sample -- --workspace .local/archive-sample --examples 
 Le script refuse d'ecrire sans `--confirm`. La sortie reste sous `.local/`, qui
 est ignore par Git.
 
+## Recherche locale simple dans l'index
+
+Le script `scripts/search-local-index.ts` permet de chercher un mot ou une
+expression dans `search-index.json`.
+
+Cette recherche n'est pas semantique: elle ne comprend pas le sens des textes et
+ne fait aucune recherche par similarite. Elle cherche seulement dans le champ
+`text` des entrees indexees.
+
+Les resultats affichent toujours:
+
+- la couche textuelle ;
+- le niveau de confiance ;
+- le statut de validation ;
+- l'image source si elle est connue ;
+- le fichier texte source ;
+- la collection.
+
+Les resultats a faible confiance restent visibles. Ils doivent etre lus comme
+des indices de travail et verifies sur l'image avant toute citation ou
+interpretation.
+
+Exemples Windows PowerShell:
+
+```powershell
+npx.cmd tsx scripts/search-local-index.ts --index .local/archive-sample/search/search-index.json --query "BOGHARI"
+```
+
+```powershell
+npx.cmd tsx scripts/search-local-index.ts --index .local/archive-sample/search/search-index.json --query "F.L.N."
+```
+
+```powershell
+npx.cmd tsx scripts/search-local-index.ts --index .local/archive-sample/search/search-index.json --query "Wilaya" --limit 5
+```
+
+Des filtres peuvent limiter temporairement les resultats par couche ou par
+niveau de confiance:
+
+```powershell
+npx.cmd tsx scripts/search-local-index.ts --index .local/archive-sample/search/search-index.json --query "BOGHARI" --layer assisted_unverified --confidence medium
+```
+
+Une sortie JSON brute est disponible avec `--json` pour de futures verifications
+ou integrations locales. Le script ne modifie jamais l'index.
+
 ## Evolution future
 
 1. Ajouter une recherche plein texte locale sur `search-index.json`.

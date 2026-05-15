@@ -13,7 +13,8 @@
     "ocr:normalize": "tsx scripts/normalize-ocr.ts",
     "chunks:prepare": "tsx scripts/prepare-chunks.ts",
     "pipeline:pilot": "tsx scripts/run-pilot-pipeline.ts",
-    "search:index:sample": "tsx scripts/build-local-search-index.ts"
+    "search:index:sample": "tsx scripts/build-local-search-index.ts",
+    "search:local": "tsx scripts/search-local-index.ts"
   },
   "dependencies": {
     "heic-convert": "^2.1.0",
