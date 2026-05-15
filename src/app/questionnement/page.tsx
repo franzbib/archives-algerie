@@ -91,6 +91,25 @@ export default function QuestionnementPage() {
             une IA, aucun document n&apos;est OCRisé dans l&apos;application,
             aucun embedding n&apos;est créé et aucun résultat n&apos;est généré.
           </p>
+
+          <div className="mt-8 border border-foreground bg-background p-6">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+                  Avertissement
+                </p>
+                <p className="mt-2 text-sm font-medium text-foreground">
+                  La recherche sur l&apos;ensemble du corpus n&apos;est pas encore disponible.
+                </p>
+              </div>
+              <Link
+                href="/lots"
+                className="inline-flex shrink-0 items-center justify-center border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+              >
+                Consulter les archives dans /lots
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
