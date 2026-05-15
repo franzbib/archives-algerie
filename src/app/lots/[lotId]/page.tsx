@@ -148,10 +148,12 @@ function LotAssetCard({
             </h2>
           </div>
           <div className="flex flex-wrap gap-2 sm:justify-end">
-            <StatusBadge variant="warning">Non valide</StatusBadge>
-            {reviewItem?.reviewStatus === "assisted_unverified" && (
-              <StatusBadge variant="warning">Lecture assistee</StatusBadge>
+            {reviewItem?.reviewStatus === "assisted_unverified" ? (
+              <StatusBadge variant="success">Lecture assistee disponible</StatusBadge>
+            ) : (
+              <StatusBadge variant="neutral">Lecture assistee non disponible</StatusBadge>
             )}
+            <StatusBadge variant="warning">Non valide</StatusBadge>
           </div>
         </div>
       </div>
@@ -170,10 +172,10 @@ function LotAssetCard({
         <p className="text-sm leading-6 text-foreground/75">{asset.note}</p>
         <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
           <Link
-            className="inline-flex flex-1 items-center justify-center border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+            className="inline-flex flex-1 items-center justify-center gap-2 border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
             href={`/lots/${lotId}/${asset.reviewId}`}
           >
-            Voir le controle detaille
+            Revoir en detail
           </Link>
           <div className="flex flex-1 flex-wrap items-center gap-4 sm:justify-end">
             <SourceLink href={asset.publicUrl}>Image R2</SourceLink>

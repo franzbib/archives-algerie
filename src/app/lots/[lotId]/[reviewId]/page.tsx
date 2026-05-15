@@ -238,9 +238,11 @@ function AssistedReadingPanel({
           </div>
         </div>
 
-        <pre className="max-h-[640px] overflow-auto whitespace-pre-wrap border border-paper-border bg-background p-6 font-serif text-base leading-relaxed text-foreground">
-          {reading.assistedReadingText}
-        </pre>
+        <div className="mx-auto max-w-prose">
+          <pre className="max-h-[640px] overflow-auto whitespace-pre-wrap border border-paper-border bg-background p-6 font-serif text-base leading-relaxed text-foreground">
+            {reading.assistedReadingText}
+          </pre>
+        </div>
 
         <UncertaintiesList uncertainties={reading.uncertainties} />
       </div>
@@ -294,20 +296,22 @@ function UncertaintiesList({
                 {uncertainty.issue}
               </span>
             </div>
-            <p className="mt-3 font-medium text-foreground">
-              &laquo; {uncertainty.fragment} &raquo;
-            </p>
-            {uncertainty.suggestion && (
-              <p className="mt-2 text-foreground/80">
-                <span className="text-foreground/60">Suggestion :</span>{" "}
-                {uncertainty.suggestion}
+            <div className="pt-3">
+              <p className="font-medium text-foreground">
+                &laquo; {uncertainty.fragment} &raquo;
               </p>
-            )}
-            {uncertainty.note && (
-              <p className="mt-2 leading-relaxed text-foreground/70">
-                {uncertainty.note}
-              </p>
-            )}
+              {uncertainty.suggestion && (
+                <p className="mt-2 text-foreground/80">
+                  <span className="text-foreground/60">Suggestion :</span>{" "}
+                  {uncertainty.suggestion}
+                </p>
+              )}
+              {uncertainty.note && (
+                <p className="mt-2 leading-relaxed text-foreground/70">
+                  {uncertainty.note}
+                </p>
+              )}
+            </div>
           </div>
         ))}
       </div>
@@ -346,23 +350,40 @@ function MethodologyBlock({
 
 function HumanValidationPanel() {
   return (
-    <section className="border border-paper-border bg-paper p-6">
-      <div className="flex items-center gap-2">
-        <ClipboardCheck className="h-5 w-5 text-warm" />
-        <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-          C. Validation humaine future
+    <section className="border border-paper-border bg-paper">
+      <div className="border-b border-paper-border bg-background/60 px-5 py-4">
+        <div className="flex items-center gap-2">
+          <ClipboardCheck className="h-5 w-5 text-warm" />
+          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+            C. Validation humaine future
+          </p>
+        </div>
+        <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
+          A verifier sur l&apos;image
+        </h2>
+      </div>
+
+      <div className="p-5">
+        <div className="mb-4 flex flex-wrap gap-2">
+          <StatusBadge variant="warning">Non valide</StatusBadge>
+          <StatusBadge variant="neutral">Transcription non disponible</StatusBadge>
+        </div>
+
+        <p className="mb-4 text-sm leading-6 text-foreground/80">
+          Les entites suivantes doivent etre imperativement controlees avant toute citation ou indexation historique :
         </p>
+
+        <ul className="mb-6 space-y-2 text-sm font-medium text-foreground/90">
+          <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-warm"></span> Noms propres et patronymes</li>
+          <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-warm"></span> Lieux et toponymes</li>
+          <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-warm"></span> Dates et chronologie</li>
+          <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-warm"></span> Sigles et abreviations</li>
+        </ul>
+
+        <div className="border border-paper-border bg-background p-4 text-sm leading-6 text-foreground/75">
+          <p>Aucun workflow d&apos;edition n&apos;est actif dans cette etape generique.</p>
+        </div>
       </div>
-      <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
-        A verifier sur l&apos;image
-      </h2>
-      <div className="mt-4 flex flex-wrap gap-2">
-        <StatusBadge variant="warning">Non valide</StatusBadge>
-        <StatusBadge variant="neutral">Validation humaine : false</StatusBadge>
-      </div>
-      <p className="mt-4 text-sm leading-6 text-foreground/80">
-        Aucun workflow d&apos;edition n&apos;est actif dans cette etape generique.
-      </p>
     </section>
   );
 }
