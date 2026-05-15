@@ -1,6 +1,6 @@
 import publicPilotAssets from "../../data/generated/public-pilot-assets.example.json";
 import pilotReviewIndex from "../../data/generated/pilot-review-index.example.json";
-import assistedReadingPage01 from "../../data/examples/assisted-reading-page-01.example.json";
+import pilotAssistedReadings from "../../data/generated/pilot-assisted-readings.example.json";
 
 export type PilotReviewStatus = "assisted_unverified" | "image_only";
 export type PilotHumanValidationStatus = "not_validated";
@@ -38,15 +38,19 @@ export type AssistedReadingUncertainty = {
 };
 
 export type AssistedReadingExample = {
+  reviewId?: string;
+  sourceImage?: string;
   assistedReadingText: string;
   status: "assisted_unverified";
   uncertainties: AssistedReadingUncertainty[];
+  confidence?: PilotConfidence;
   humanValidation: {
     validated: boolean;
     validatedBy: string | null;
     validatedAt: string | null;
     notes: string | null;
   };
+  note?: string;
 };
 
 type PublicPilotAssetsManifest = {
@@ -55,6 +59,7 @@ type PublicPilotAssetsManifest = {
 
 const reviewItems = pilotReviewIndex as PilotReviewItem[];
 const publicAssets = (publicPilotAssets as PublicPilotAssetsManifest).assets;
+const assistedReadings = pilotAssistedReadings as AssistedReadingExample[];
 
 export function getPilotReviewItems(): PilotReviewItem[] {
   return reviewItems;
@@ -83,12 +88,8 @@ export function getPublicPilotAssetForReview(
 export function getAssistedReadingForReview(
   reviewItem: PilotReviewItem,
 ): AssistedReadingExample | null {
-  if (
-    reviewItem.assistedReadingExample ===
-    "data/examples/assisted-reading-page-01.example.json"
-  ) {
-    return assistedReadingPage01 as AssistedReadingExample;
-  }
-
-  return null;
+  return (
+    assistedReadings.find((reading) => reading.reviewId === reviewItem.reviewId) ??
+    null
+  );
 }

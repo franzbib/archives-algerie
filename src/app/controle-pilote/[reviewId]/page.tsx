@@ -201,7 +201,7 @@ function AssistedReadingPanel({
             Validation humaine : {reading.humanValidation.validated ? "oui" : "non"}
           </StatusBadge>
           <StatusBadge variant="warning">
-            Confiance : {reviewItem.confidence}
+            Confiance : {reading.confidence ?? reviewItem.confidence}
           </StatusBadge>
         </div>
 
@@ -219,6 +219,12 @@ function AssistedReadingPanel({
         <pre className="max-h-[640px] overflow-auto whitespace-pre-wrap border border-paper-border bg-background p-4 font-serif text-sm leading-7 text-foreground">
           {reading.assistedReadingText}
         </pre>
+
+        {reading.note && (
+          <p className="border border-paper-border bg-background p-3 text-sm leading-6 text-foreground/75">
+            {reading.note}
+          </p>
+        )}
 
         <UncertaintiesList uncertainties={reading.uncertainties} />
       </div>
