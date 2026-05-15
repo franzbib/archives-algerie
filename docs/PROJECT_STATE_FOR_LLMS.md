@@ -140,3 +140,13 @@ Ne pas faire l’inverse.
 - Intégration dans la fiche document : placée après "Pages référencées" et avant "Prudence documentaire".
 - Statut méthodologique : contexte éditorial, non interprétation.
 - Limites conservées : pas d'OCR, pas de glossaire, pas de lieux, pas de frise.
+
+## Harmonisation visuelle globale — V0 (Stabilisée)
+
+- Design plat (flat design) retenu, évoquant le papier et les dossiers physiques.
+- Retrait des ombres portées isolées (`shadow-sm`).
+- Standardisation des en-têtes de page (`bg-paper/60`, `border-b border-paper-border`).
+- Standardisation de la hiérarchie typographique (H1 en `font-serif text-4xl`, surtitres en `font-mono text-xs uppercase`).
+- Standardisation des conteneurs "papier" (`border border-paper-border bg-paper p-6 md:p-8`).
+- Harmonisation des liens de retour, badges (`StatusBadge`) et grilles de métadonnées.
+- Aucune modification des données, des routes ou de la logique métier.
