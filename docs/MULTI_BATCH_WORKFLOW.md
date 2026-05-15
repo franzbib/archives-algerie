@@ -51,6 +51,27 @@ type ArchiveBatch = {
 };
 ```
 
+## Lot technique, dossier d'archives et unite documentaire
+
+Un lot de traitement de 100 images est une unite technique de travail. Il sert a
+decouper une source volumineuse en ensembles manipulables pour le telechargement,
+la conversion, l'OCR, la lecture assistee, la publication R2 et la revue dans
+l'interface.
+
+Ce lot technique ne doit pas etre confondu avec:
+
+- le dossier d'archives reel, qui releve de la cote, du fonds et de la structure
+  archivistique d'origine ;
+- l'unite documentaire, qui peut couvrir une ou plusieurs images ;
+- la page archivistique validee, qui suppose un controle humain de l'ordre, du
+  rattachement et de la lisibilite.
+
+Les routes `/lots`, `/lots/[lotId]` et `/lots/[lotId]/[reviewId]` doivent donc
+afficher des identifiants de tracabilite explicites: `lotId`, `collectionId`,
+`reviewId`, nom de fichier source, position dans le lot et statut de validation.
+Ces informations aident au reperage dans les lots nombreux sans transformer les
+images publiees en documents valides.
+
 ## Conventions de nommage
 
 ### Identifiants de lots

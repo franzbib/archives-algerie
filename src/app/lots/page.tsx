@@ -3,7 +3,9 @@ import { ArrowLeft, Archive, ShieldAlert } from "lucide-react";
 import { StatusBadge } from "@/components/ui/status-badge";
 import {
   getArchiveBatches,
+  getArchiveBatchPageCount,
   getArchiveBatchSummary,
+  getArchiveBatchTypeLabel,
   isArchiveBatchReviewReady,
 } from "@/lib/archiveBatches";
 import type { ArchiveBatch } from "@/lib/archiveBatches";
@@ -88,18 +90,13 @@ function BatchCard({ batch }: { batch: ArchiveBatch }) {
       </h2>
 
       <dl className="mt-5 grid gap-3 text-sm">
+        <MetaItem label="LotId" value={batch.lotId} />
         <MetaItem label="Collection" value={batch.collectionId} />
+        <MetaItem label="Statut" value={batch.status} />
         <MetaItem label="Source" value={batch.sourceType} />
-        <MetaItem
-          label="Items"
-          value={
-            batch.itemCount !== null
-              ? String(batch.itemCount)
-              : summary.assetCount > 0
-                ? String(summary.assetCount)
-                : "Non renseigne"
-          }
-        />
+        <MetaItem label="Type de lot" value={getArchiveBatchTypeLabel(batch)} />
+        <MetaItem label="Pages" value={formatCount(getArchiveBatchPageCount(batch))} />
+        <MetaItem label="Route de revue" value={batch.reviewRoute ?? "Non renseignee"} />
         <MetaItem
           label="Lectures assistees"
           value={isReviewReady ? String(summary.assistedReadingCount) : "A venir"}
@@ -122,6 +119,10 @@ function BatchCard({ batch }: { batch: ArchiveBatch }) {
       )}
     </article>
   );
+}
+
+function formatCount(value: number): string {
+  return value > 0 ? String(value) : "Non renseigne";
 }
 
 function MetaItem({ label, value }: { label: string; value: string }) {

@@ -1,16 +1,18 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ExternalLink, ShieldAlert } from "lucide-react";
+import { ArrowLeft, ShieldAlert } from "lucide-react";
+import { LotReviewBrowser } from "@/components/lots/lot-review-browser";
 import { StatusBadge } from "@/components/ui/status-badge";
 import {
   getArchiveBatchById,
   getArchiveBatches,
-  getArchiveBatchReviewItemById,
+  getArchiveBatchPageCount,
+  getArchiveBatchReviewItems,
   getArchiveBatchSummary,
+  getArchiveBatchTypeLabel,
   getAssetsForBatch,
   isArchiveBatchReviewReady,
 } from "@/lib/archiveBatches";
-import type { ArchiveBatchAsset } from "@/lib/archiveBatches";
 
 export const dynamicParams = false;
 
@@ -31,8 +33,10 @@ export default async function LotReviewPage({
   }
 
   const assets = getAssetsForBatch(batch);
+  const reviewItems = getArchiveBatchReviewItems(batch);
   const summary = getArchiveBatchSummary(batch);
   const isReviewReady = isArchiveBatchReviewReady(batch);
+  const pageCount = getArchiveBatchPageCount(batch);
 
   return (
     <main className="min-h-screen bg-background pb-16">
@@ -70,12 +74,13 @@ export default async function LotReviewPage({
       <section className="mx-auto max-w-7xl px-6 py-10 lg:px-8">
         <div className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <SummaryCard label="Collection" value={batch.collectionId} />
-          <SummaryCard label="Items" value={String(batch.itemCount ?? assets.length)} />
+          <SummaryCard label="Pages" value={String(pageCount)} />
+          <SummaryCard label="Type de lot" value={getArchiveBatchTypeLabel(batch)} />
           <SummaryCard
             label="Lectures assistees"
             value={String(summary.assistedReadingCount)}
           />
-          <SummaryCard label="Validation" value="Non verifiee" />
+          <SummaryCard label="Validation" value="Non validee" />
         </div>
 
         <section className="mb-8 border border-paper-border bg-paper p-6">
@@ -94,16 +99,11 @@ export default async function LotReviewPage({
         </section>
 
         {assets.length > 0 ? (
-          <div className="grid gap-6 lg:grid-cols-2">
-            {assets.map((asset, index) => (
-              <LotAssetCard
-                asset={asset}
-                key={asset.r2ObjectKey}
-                lotId={batch.lotId}
-                order={index + 1}
-              />
-            ))}
-          </div>
+          <LotReviewBrowser
+            assets={assets}
+            lotId={batch.lotId}
+            reviewItems={reviewItems}
+          />
         ) : (
           <section className="border border-paper-border bg-paper p-8">
             <h2 className="font-serif text-2xl font-medium text-foreground">
@@ -121,91 +121,11 @@ export default async function LotReviewPage({
   );
 }
 
-function LotAssetCard({
-  asset,
-  lotId,
-  order,
-}: {
-  asset: ArchiveBatchAsset;
-  lotId: string;
-  order: number;
-}) {
-  const batch = getArchiveBatchById(lotId);
-  const reviewItem = batch
-    ? getArchiveBatchReviewItemById(batch, asset.reviewId)
-    : undefined;
-
-  return (
-    <article className="border border-paper-border bg-paper">
-      <div className="border-b border-paper-border bg-background/60 px-5 py-4">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-          <div>
-            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-              Item {order}
-            </p>
-            <h2 className="mt-1 break-all font-serif text-xl font-medium text-foreground">
-              {asset.localJpgFileName}
-            </h2>
-          </div>
-          <div className="flex flex-wrap gap-2 sm:justify-end">
-            {reviewItem?.reviewStatus === "assisted_unverified" ? (
-              <StatusBadge variant="success">Lecture assistee disponible</StatusBadge>
-            ) : (
-              <StatusBadge variant="neutral">Lecture assistee non disponible</StatusBadge>
-            )}
-            <StatusBadge variant="warning">Non valide</StatusBadge>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-background p-4">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          alt={`Image du lot ${lotId} - ${asset.localJpgFileName}`}
-          className="max-h-[620px] w-full border border-paper-border bg-paper object-contain"
-          loading="lazy"
-          src={asset.publicUrl}
-        />
-      </div>
-
-      <div className="space-y-4 px-5 py-5">
-        <p className="text-sm leading-6 text-foreground/75">{asset.note}</p>
-        <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
-          <Link
-            className="inline-flex flex-1 items-center justify-center gap-2 border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
-            href={`/lots/${lotId}/${asset.reviewId}`}
-          >
-            Revoir en detail
-          </Link>
-          <div className="flex flex-1 flex-wrap items-center gap-4 sm:justify-end">
-            <SourceLink href={asset.publicUrl}>Image R2</SourceLink>
-            <SourceLink href={asset.originalDriveUrl}>Drive</SourceLink>
-          </div>
-        </div>
-      </div>
-    </article>
-  );
-}
-
 function SummaryCard({ label, value }: { label: string; value: string }) {
   return (
     <div className="border border-paper-border bg-paper p-4">
       <p className="font-mono text-xs uppercase tracking-wide text-warm">{label}</p>
       <p className="mt-2 break-words text-xl font-semibold text-foreground">{value}</p>
     </div>
-  );
-}
-
-function SourceLink({ children, href }: { children: string; href: string }) {
-  return (
-    <a
-      className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
-      href={href}
-      rel="noreferrer"
-      target="_blank"
-    >
-      {children}
-      <ExternalLink className="h-3.5 w-3.5" />
-    </a>
   );
 }

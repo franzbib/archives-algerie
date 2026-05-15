@@ -1,6 +1,10 @@
 import archiveBatchesManifest from "../../data/generated/archive-batches.example.json";
 import flnW4AssistedReadings from "../../data/generated/batches/lot-fln-w4-001/assisted-readings.json";
 import flnW4PublicAssets from "../../data/generated/batches/lot-fln-w4-001/public-assets.json";
+import flnW4SecondAssistedReadings from "../../data/generated/batches/lot-fln-w4-002/assisted-readings.json";
+import flnW4SecondPublicAssets from "../../data/generated/batches/lot-fln-w4-002/public-assets.json";
+import flnW4ThirdAssistedReadings from "../../data/generated/batches/lot-fln-w4-003/assisted-readings.json";
+import flnW4ThirdPublicAssets from "../../data/generated/batches/lot-fln-w4-003/public-assets.json";
 import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
 import batchAssistedReadings from "../../data/generated/pilot-batch-assisted-readings.example.json";
 import type {
@@ -64,6 +68,8 @@ type ArchiveBatchesManifest = {
   batches: ArchiveBatch[];
 };
 
+export type ArchiveBatchType = "images" | "pdf" | "planned" | "unknown";
+
 type AssetManifest = {
   assets: RawArchiveBatchAsset[];
 };
@@ -78,11 +84,19 @@ const batches = (archiveBatchesManifest as ArchiveBatchesManifest).batches;
 const assetManifestRegistry: Record<string, AssetManifest> = {
   "data/generated/batches/lot-fln-w4-001/public-assets.json":
     flnW4PublicAssets as AssetManifest,
+  "data/generated/batches/lot-fln-w4-002/public-assets.json":
+    flnW4SecondPublicAssets as AssetManifest,
+  "data/generated/batches/lot-fln-w4-003/public-assets.json":
+    flnW4ThirdPublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
 };
 const assistedReadingManifestRegistry: Record<string, AssistedReadingExample[]> = {
   "data/generated/batches/lot-fln-w4-001/assisted-readings.json":
     flnW4AssistedReadings as AssistedReadingExample[],
+  "data/generated/batches/lot-fln-w4-002/assisted-readings.json":
+    flnW4SecondAssistedReadings as AssistedReadingExample[],
+  "data/generated/batches/lot-fln-w4-003/assisted-readings.json":
+    flnW4ThirdAssistedReadings as AssistedReadingExample[],
   "data/generated/pilot-batch-assisted-readings.example.json":
     batchAssistedReadings as AssistedReadingExample[],
 };
@@ -185,6 +199,30 @@ export function getArchiveBatchSummary(batch: ArchiveBatch) {
     assistedReadingCount,
     imageOnlyCount: reviewItems.length - assistedReadingCount,
   };
+}
+
+export function getArchiveBatchPageCount(batch: ArchiveBatch): number {
+  return batch.itemCount ?? getAssetsForBatch(batch).length;
+}
+
+export function getArchiveBatchType(batch: ArchiveBatch): ArchiveBatchType {
+  const assets = getAssetsForBatch(batch);
+
+  if (assets.length > 0) return "images";
+  if (batch.notes.toLowerCase().includes("pdf")) return "pdf";
+  if (batch.status === "planned") return "planned";
+
+  return "unknown";
+}
+
+export function getArchiveBatchTypeLabel(batch: ArchiveBatch): string {
+  const type = getArchiveBatchType(batch);
+
+  if (type === "images") return "Lot d'images publiees";
+  if (type === "pdf") return "Lot PDF a preparer";
+  if (type === "planned") return "Lot planifie";
+
+  return "Type non renseigne";
 }
 
 function normalizeArchiveBatchAsset(asset: RawArchiveBatchAsset): ArchiveBatchAsset {

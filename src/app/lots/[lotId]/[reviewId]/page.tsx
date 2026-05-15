@@ -68,6 +68,7 @@ export default async function GenericLotReviewPage({
   const humanReviewTemplate = getHumanReviewTemplate(batch.lotId, reviewItem.reviewId);
   const reviewItems = getArchiveBatchReviewItems(batch);
   const currentIndex = reviewItems.findIndex((item) => item.reviewId === reviewId);
+  const positionLabel = `Page ${currentIndex + 1} / ${reviewItems.length}`;
   const prevItem = currentIndex > 0 ? reviewItems[currentIndex - 1] : null;
   const nextItem =
     currentIndex < reviewItems.length - 1 ? reviewItems[currentIndex + 1] : null;
@@ -96,9 +97,7 @@ export default async function GenericLotReviewPage({
             ) : (
               <span className="text-foreground/30">&larr; Precedent</span>
             )}
-            <span className="text-foreground/50">
-              {currentIndex + 1} / {reviewItems.length}
-            </span>
+            <span className="text-foreground/50">{positionLabel}</span>
             {nextItem ? (
               <Link
                 href={`/lots/${batch.lotId}/${nextItem.reviewId}`}
@@ -115,9 +114,12 @@ export default async function GenericLotReviewPage({
 
       <section className="border-b border-paper-border bg-paper">
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-            Controle generique de lot
-          </p>
+          <div className="flex flex-wrap items-center gap-3">
+            <StatusBadge variant="warning">Non valide</StatusBadge>
+            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+              Controle generique de lot
+            </p>
+          </div>
           <h1 className="mt-3 font-serif text-4xl font-medium text-foreground md:text-5xl">
             {batch.title} - {formatReviewTitle(reviewItem.reviewId)}
           </h1>
@@ -126,6 +128,16 @@ export default async function GenericLotReviewPage({
             eventuelle. Elle ne valide ni la page, ni le document, ni la
             transcription.
           </p>
+          <dl className="mt-8 grid gap-4 border border-paper-border bg-background/60 p-5 text-sm sm:grid-cols-2 lg:grid-cols-4">
+            <MetaItem label="LotId" value={batch.lotId} />
+            <MetaItem label="CollectionId" value={batch.collectionId} />
+            <MetaItem label="ReviewId" value={reviewItem.reviewId} />
+            <MetaItem label="Position" value={positionLabel} />
+            <MetaItem label="Fichier source" value={asset.localJpgFileName} />
+            <MetaItem label="Statut image" value={asset.validationStatus} />
+            <MetaItem label="Statut lecture" value={reviewItem.reviewStatus} />
+            <MetaItem label="Validation" value="Non validee" />
+          </dl>
         </div>
       </section>
 
