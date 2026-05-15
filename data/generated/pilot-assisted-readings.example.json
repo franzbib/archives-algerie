@@ -2,57 +2,687 @@
   {
     "reviewId": "page-01",
     "sourceImage": "01-20251127_104045.jpg",
-    "assistedReadingText": "Ã‰TAT-MAJOR\n\nSYNTHÃˆSE MENSUELLE DE [---]\nNÂ° 1191/9/2/SYNTH.\n\nI / â€” PRÃ‰AMBULE. â€”\n\nTant du point de vue politique que du point de vue militaire,\nla rÃ©bellion reprend au cours du mois dâ€™aoÃ»t un certain dynamisme,\nque le mois de juillet avait vu se figer quelque peu.\n\nDans la nuit du 3 au 4 aoÃ»t, plusieurs centres comprenant une\nmajoritÃ© de FranÃ§ais, ou plus exactement Ã  prÃ©pondÃ©rance franÃ§aise,\nsont harcelÃ©s par les H.L.L. ; en mÃªme temps, les rebelles coupent\nla route, scient les poteaux.\n\nLe 10 aoÃ»t, 53 poteaux tÃ©lÃ©phoniques sont sabotÃ©s Ã  7 km au sud\nde BOGHARI, le long de la R.N. 1.\n\nLe 15 aoÃ»t au soir, 2 000 moutons sont volÃ©s et emmenÃ©s par\n40 rebelles, au nord dâ€™ARTHOR.\n\nLe 19, un ancien combattant est assassinÃ© dans le douar de BOGHARI.\n\nLe 27 juillet, le groupe dâ€™auto-dÃ©fense de SENOUSSI est trÃ¨s\nsÃ©rieusement harcelÃ© ; trois jours plus tard, les H.L.L. tentaient\nencore de sâ€™attaquer au mÃªme groupe, sans rÃ©sultat cette fois-ci.\n\nLa caractÃ©ristique commune Ã  ces diverses actions est leur nouveautÃ©,\nen ce sens que depuis plusieurs mois les villages nâ€™Ã©taient pas\nharcelÃ©s, les poteaux nâ€™Ã©taient pas coupÃ©s, BOGHARI connaissait un\ncalme relatif.\n\nCette recrudescence de lâ€™activitÃ© rebelle semble correspondre aux\nrÃ©centes consignes donnÃ©es par le nouveau commandement de la Wilaya VI.\nEn particulier dans le domaine politique, le F.L.N. menace les\ndÃ©lÃ©guÃ©s spÃ©ciaux, et plusieurs de [â€¦]",
+    "assistedReadingText": "ETAT-MAJOR\nSYNTHESE MENSUELLE DE\nLe 27 juillet, du point de vue politique que du point de vue militaire, la rebellion reprend au corps du mois ébauché un certain dynamisme que 16 mois de juillet avaient quelque peu figé.\nDans la nuit du 3 au 4 août, plusieurs cas comprenant une majorité de Français, ou plus exactement à prépondérance française, sont harcelés par les HL.L., en même temps les rebelles coupent la route, scient les poteaux.\nLe 10 août, 53 poteaux téléphoniques sont sabotés à 7 km au sud de BOGHAR, le long de la R.N. 1.\nLe 15 août au soir, 2 000 moutons sont volés et emmenés par 40 rebelles, au nord d'ARTHOR.\nLe 19, un ancien combattant est assassiné dans les environs de BOGHAR.\nLe 27 juillet, le groupe d'auto-défense de SENOUSSI est très sérieusement harcelé, trois jours plus tard, les HLahs tentaient encore de s'attaquer au même groupe, sans résultat cette fois-ci.\nLa caractéristique commune à ces diverses actions est leur nouveauté, en ce sens que depuis plusieurs mois les villages n'étaient pas harcelés, les poteaux n'étaient pas coupés, BOGHAR connaissait un calme relatif.\nCette recrudescence de l'activité rebelle semble correspondre aux récentes consignes données par le nouveau commandement de la Wilaya VI. En particulier dans le domaine politique, le FLN menace les délégués spéciaux, et plusieurs de ces derniers ont déjà offert leur démission.\nACTIVITE DES BANDES REBELLES.\nA/- Caractéristiques\nDans la Wilaya VI, après le desserrement causé par la liquidation des principaux chefs Kabyles, les rebelles se...",
     "uncertainties": [
       {
-        "fragment": "SYNTHÃˆSE MENSUELLE DE [---]",
-        "suggestion": "",
-        "issue": "mot_illisible",
-        "confidence": "low",
-        "note": "Le titre exact apres Synthese mensuelle de reste illisible dans la lecture assistee."
-      },
-      {
-        "fragment": "H.L.L.",
-        "suggestion": "H.L.L.",
+        "confidence": "medium",
+        "fragment": "HL.L.",
         "issue": "sigle_incertain",
-        "confidence": "medium",
-        "note": "Le sigle est conserve tel quel mais doit etre verifie sur l'image source."
+        "note": "La nature exacte de l'acronyme 'HL.L.' n'est pas claire, possible sigle pour un groupe ou unité paramilitaire.",
+        "suggestion": "HL.L."
       },
       {
-        "fragment": "ARTHOR",
-        "suggestion": "ARTHOR",
+        "confidence": "high",
+        "fragment": "BOGHART",
         "issue": "lieu_incertain",
-        "confidence": "low",
-        "note": "Toponyme incertain ; graphie a verifier sur l'image source."
+        "note": "Le lieu 'BOGHART' est probablement 'BOGHAR', d'après le contexte géographique habituel.",
+        "suggestion": "BOGHAR"
       },
       {
-        "fragment": "SENOUSSI",
-        "suggestion": "SENOUSSI",
-        "issue": "nom_propre_incertain",
         "confidence": "medium",
-        "note": "Nom conserve comme lecture probable, non validee."
+        "fragment": "ARTHOR",
+        "issue": "lieu_incertain",
+        "note": "Le lieu 'ARTHOR' est incertain, probablement un lieu proche des zones mentionnées.",
+        "suggestion": "ARTHOR"
       },
       {
-        "fragment": "Wilaya VI",
-        "suggestion": "Wilaya VI",
-        "issue": "lecture_probable",
         "confidence": "medium",
-        "note": "Graphie Wilaya/Vilaya a verifier sur l'image et dans la logique documentaire."
-      },
-      {
-        "fragment": "plusieurs de [...]",
-        "suggestion": "",
+        "fragment": "HLahs",
         "issue": "mot_illisible",
+        "note": "Le terme 'HLahs' est incertain, peut être une mauvaise lecture OCR d'un nom propre ou groupe.",
+        "suggestion": "HLahs"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "FLN",
+        "issue": "sigle_incertain",
+        "note": "L'acronyme 'FLN' est probable pour le Front de Libération Nationale, mais sans confirmation dans ce texte.",
+        "suggestion": "FLN"
+      },
+      {
         "confidence": "low",
-        "note": "Passage tronque ou illisible ; ne pas completer sans retour a l'image."
+        "fragment": "lëaouis",
+        "issue": "mot_illisible",
+        "note": "Le mot 'lëaouis' ne semble pas correct, pourrait être mal OCRisé ou mot corrompu.",
+        "suggestion": "[mot illisible]"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "SENOUSSI",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'SENOUSSI' est incertain, peut-être un nom propre ou lieu local.",
+        "suggestion": "SENOUSSI"
       }
     ],
-    "confidence": "medium",
+    "confidence": "low",
     "status": "assisted_unverified",
     "humanValidation": {
       "validated": false,
-      "validatedBy": null,
       "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-02",
+    "sourceImage": "02-20251127_104404.jpg",
+    "assistedReadingText": "AHA3IL\np.4\n- p cmipet\nE ‘ p",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "AHA3IL",
+        "issue": "mot_illisible",
+        "note": "Mot probablement incorrect ou partiellement reconnu, caractère '3' inhabituel dans ce contexte.",
+        "suggestion": "Peut-être un mot mal reconnu, à vérifier."
+      },
+      {
+        "confidence": "low",
+        "fragment": "- p cmipet",
+        "issue": "mot_illisible",
+        "note": "Partie '- p cmipet' semble incorrecte, possiblement 'p' est une abréviation ou une erreur de lecture, 'cmipet' difficile à interpréter.",
+        "suggestion": "Vérifier la partie '- p cmipet' en comparant avec l'original."
+      },
+      {
+        "confidence": "low",
+        "fragment": "E ‘ p",
+        "issue": "mot_illisible",
+        "note": "Fragment très court et illisible, présence d'une apostrophe bizarre.",
+        "suggestion": "Revoir dans l'image originale."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-03",
+    "sourceImage": "03-20251127_104448.jpg",
+    "assistedReadingText": "A\n2 = '{J{\"‘,—,£ _.\"_‘!\nÆ Ë*\"fä\nt\n, e Fat ce manifestent plus\n‘ — me ùéîrﬁà-‘g‘[ä \"%‘â ‘ \"‘_{!'Ï‘Ëé se manifestens £\ncenisent ù à6 PRRS20 %‘u ‘\n$\ne p s- GY Î us\n& 57 c dés signales sont pT17\nÏo=—vî\\ » >* vassages)u ‘ ‘ 'nuant de\nsë‘üî‘—';‘êä% eêe;îîaânt Î% ŸÎ\\£« A —touÿuâﬂaäänäâens qu'auz _\nnombr “ies ’traites”, siattaque 94 effet psycholog+que\nÊËËÊËÊÊeÈ reéî&e£chant Semble\"‘3â]”ës—%Ïwir aupI‘èËs âes pDOPU- .\n, @s dess ; en51\nË : 1e pas trop lee à semble\nÎÊÊÎÊÊÊlbëî ÊäaËgeäÊnt de tacïi?âg ÊËHÎ=ÈeNŸËÎËQÜr ; |\n8tre aû à l'epproche de la éessi ü e\nud k acuars apporte un souvien\n$ bandes dans les e ;\nîÊrËÊÉÎÊZÊ âëînts chargés de_remettre}:æ;; place l'infras\ntructure politico-administrative du F.L.N. ‘\nb/- Zones d'actièn.- !\n1/- Zone des Outsds EELLAL - Djebel LOUH, 2% É01\nä£lgÏ°ë j'interdiction de cette dons, Les rebelles\nessaient dé reprenûêre en main la population.\n‘ 2/- Zone du U'PATARS: ué à |\n, C'est uné résion devuis longtemps controlée par le\nF.L.H., æais les bandes de ta Wilaya IV y descandent |\nsouvent (recrutement }. |\n3/- Zone des Culsds ANTEUR — MONGORNO. ,\nLes rebelles la considérent toujours cénme un repère.\nÿ venÉtrant souvent\nIII/- ACTIVITE TERRORTSTE.+ '\nContrairement à celle menifestée 1e mois de u.\n100214 e 68 : vèe 18 mois\nlocalisée aux deux extrêmités Est et 0uasîeälä'tph}\"tôt |\n| Ê es5 sux abordûs de l‘eaxe BRAZZA - SOCHARI creur e\n; aoriee r ifme sont contrés, ce qui tend & prouvan p i0S\n\"Ï'æ“ca\"{ Feñgver d'exécutants en te oui ccnäen ant le F.L.N.\nrÉni e cassinet manqué du Président à 1. £ne les attèn-\nFpécigle du douer SANEG) “ Ge la délégation _\nBOGHAR y\nŒ » celme après la destruction de la\ndernier, vois ; 4\nPE p ù B2 rescg L 41 ; collulie\n-gon 383.3,Œ9 peut ê'ËI‘S V2ââl scuaer Uune é ulpe de t eïî m31\nQ\nEMN 72 n _ e “ :\nSurtout ce\nntèrée sur\nSpéciales, cont\nFrançaiseî T\nDans les dousr\nre ‘\nsenÿants de l’adäçT\némîssionné, Znce\nSont pas vanté, toutez eâel \"\"",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "A\n2 = '{J{\"‘,—,£ _.\"_‘!\nÆ Ë*\"fä\nt\n, e Fat ce manifestent plus\n‘ — me ùéîrﬁà-‘g‘[ä \"%‘â ‘ \"‘_{!'Ï‘Ëé se manifestens £\ncenisent ù à6 PRRS20 %‘u ‘\n$\ne p s- GY Î us\n& 57 c dés signales sont pT17\nÏo=—vî\\ » >* vassages)u ‘ ‘ 'nuant de\nsë‘üî‘—';‘êä% eêe;îîaânt Î% ŸÎ\\£« A —touÿuâﬂaäänäâens qu'auz _\nnombr “ies ’traites”, siattaque 94 effet psycholog+que\nÊËËÊËÊÊeÈ reéî&e£chant Semble\"‘3â]”ës—%Ïwir aupI‘èËs âes pDOPU- .\n, @s dess ; en51\nË : 1e pas trop lee à semble\nÎÊÊÎÊÊÊlbëî ÊäaËgeäÊnt de tacïi?âg ÊËHÎ=ÈeNŸËÎËQÜr ; |\n8tre aû à l'epproche de la éessi ü e\nud k acuars apporte un souvien\n$ bandes dans les e ;",
+        "issue": "mot_illisible",
+        "note": "Fragment contains many illegible words and symbols; transcription uncertain.",
+        "suggestion": "No reliable suggestion due to illegibility."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "l'infras\ntructure politico-administrative du F.L.N. ‘",
+        "issue": "sigle_incertain",
+        "note": "Possible uncertainty on sigle 'F.L.N.' due to OCR errors or unclear font.",
+        "suggestion": "Likely 'F.L.N.', standard abbreviation but verify."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "1/- Zone des Outsds EELLAL - Djebel LOUH, 2% É01",
+        "issue": "lieu_incertain",
+        "note": "Place names 'Outsds EELLAL' and 'Djebel LOUH' partially unclear, particularly 'Outsds EELLAL'.",
+        "suggestion": "Possible reading 'Outsds EELLAL' as is; verify with the original document or context."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "2/- Zone du U'PATARS: ué à |",
+        "issue": "lieu_incertain",
+        "note": "Place name 'U'PATARS' uncertain, likely OCR misinterpretation.",
+        "suggestion": "Possible reading as 'UPATARS' or similar, needs verification."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "F.L.H., æais les bandes de ta Wilaya IV y descandent",
+        "issue": "sigle_incertain",
+        "note": "The sigle 'F.L.H.' possibly a misreading, might be related to 'F.L.N.' or other organization abbreviation.",
+        "suggestion": "Could be 'F.L.N.', requires check against original document."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "3/- Zone des Culsds ANTEUR — MONGORNO.",
+        "issue": "lieu_incertain",
+        "note": "Place names 'Culsds ANTEUR' and 'MONGORNO' unclear, likely OCR errors in proper names.",
+        "suggestion": "Could be 'Culsds ANTEUR' as is or similar; 'MONGORNO' might be correct but uncertain."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "III/- ACTIVITE TERRORTSTE.+ '",
+        "issue": "mot_illisible",
+        "note": "Word 'TERRORTSTE' likely meant to be 'TERRORISTE', but OCR error present.",
+        "suggestion": "Probably 'TERRORISTE'."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "100214 e 68 : vèe 18 mois",
+        "issue": "date_incertaine",
+        "note": "Sequence '100214 e 68 : vèe 18 mois' unclear; possible date or reference code with OCR errors.",
+        "suggestion": "Uncertain, no reliable correction possible."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "l‘eaxe BRAZZA - SOCHARI",
+        "issue": "lieu_incertain",
+        "note": "Possibly 'Brazzaville - Sochari' or similar; 'SOCHARI' uncertain.",
+        "suggestion": "Likely 'Brazza' for 'Brazzaville', 'Sochari' uncertain."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Fpécigle du douer SANEG) “ Ge la délégation _\nBOGHAR y",
+        "issue": "nom_propre_incertain",
+        "note": "Personal names or titles 'SANEG', 'BOGHAR' uncertain due to OCR quality.",
+        "suggestion": "Keep as is; verify with original context."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-04",
+    "sourceImage": "04-20251127_104502.jpg",
+    "assistedReadingText": "Jlng ou àe SL BOUALER u à 70 giiaye VI}e . és 1 ‘ influence . Secteur » ; 2s POPULATIONS - e souche sen «.hs ge manife N ance poux je - v Z morale v/- REAGTIONS D Les Français € ‘ plupart - Beaucoup fgn‘s aneOïG très naæcive, leuF siogen es ; artif , : j … GÉON ÊÊSŒËÊÊŒÈ ËÏn% 1Ëæsg tous le disent, cependant Bien se réagissent. __ _ À se äîæäseÏîgnsembl% la population unen1mä rÊgre‘t‘t}e 1s ëépaæ | qu T11/20 R,I, et àe 18 c,c,s, à BOGHANT - 5é € ; rième : son GÉéB027- se pose toujouF S ; träine parfois s0 ers 1e,maquis. !Ëa_1s que tous jes jeunes hommes R oat pas fOr- sre dans l'armés, et même ûe « enooré SH 2n ; rouve 42 taiblesse - Tou tuer 1î gvivar 3 millaoas | La jeunes vrement en G 1 faut songer _ cément envie de faire cërr_ moins eRñ moinss A\\ v pas du moîn&… ‘ ? VI/— CONCLUSION. - …. AA e Ji La situation ne s'améliore pas pour nOUS, ; Ï”f Jas | da0s ja mesure escomptée. Pour Le F.2.H. non plus, aui _î_ïﬂ' = fonde l'esdentisl de sa propagande guf ure prochaine ‘ viséoire à 1'O.N.U. IL éprouve de plus, dténormes diffi- cultés de recrutement dans les dquers » # Pourtent, 1l est probable que l'errivée dans le secteur é'un Bataillon opérationnel permettra de reprendre contact | avec les populations longtemps délaissées en raison de | notre manguse àe possibilités d‘une part et la présence | âe , & ; g paräm roupes dans les chax@s pour les moissons d'autre [ P.G, le 24 Août 1957 Le Lt-Golone] LAVELLE, Comnan DESTINATAIRES : — par Intérim le . àèïä'”àﬁ«…ââäX GI - M, je Général Gât la 3,5.4. (2° B.) Ê‘ X \\vËŒ ËÂ ä.c-_äîänel Çadt Civil et Militaire - M le S/PREFET » Qdt Quartier MOUDSEBEUR = Cdt Quartier MORAND - Cdt Quartier LETOURNEUX — « Secteur MILIANA - Sècteur TENIET el HAD = Ëâ°î8ül‘ âUMALE = Secteur P.CAZELLE‘ « Cat c,c°so/2°E%bäs * 29 Bureau Eectan- cemac} sà N",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Jlng",
+        "issue": "mot_illisible",
+        "note": "Début du document difficile à lire.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "SL BOUALER",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre possiblement mal transcrit.",
+        "suggestion": "S.L. Boualer ?"
+      },
+      {
+        "confidence": "low",
+        "fragment": "giiaye VI}e . és",
+        "issue": "mot_illisible",
+        "note": "Expression floue et incohérente.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "aneOïG",
+        "issue": "mot_illisible",
+        "note": "Mot incompréhensible, possible erreur OCR.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "GÉON ÊÊSŒËÊÊŒÈ ËÏn% 1Ëæsg",
+        "issue": "mot_illisible",
+        "note": "Apparente répétition de caractères illisibles.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "BOGHANT",
+        "issue": "lieu_incertain",
+        "note": "Nom possible d'un lieu à confirmer.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "GÉéB027-",
+        "issue": "mot_illisible",
+        "note": "Fragment illisible, peut-être un code ou sigle.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "SH 2n",
+        "issue": "sigle_incertain",
+        "note": "Sigle probablement mal transcrit.",
+        "suggestion": "Possiblement \"SH 2e\" ou \"SH 20\""
+      },
+      {
+        "confidence": "low",
+        "fragment": "gvivar",
+        "issue": "mot_illisible",
+        "note": "Mot non identifiable.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "F.2.H.",
+        "issue": "sigle_incertain",
+        "note": "Sigle sans explication, possible organisation.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "guf ure prochaine ‘ viséoire à 1'O.N.U.",
+        "issue": "mot_illisible",
+        "note": "Phrase partiellement illisible avant 'viséoire à 1'O.N.U.'.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "P.G, le 24 Août 1957",
+        "issue": "date_incertaine",
+        "note": "Date probable du document, à vérifier.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lt-Golone] LAVELLE",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre mal transcrit, possiblement 'Lt-Colonel Lavelle'.",
+        "suggestion": "Lt-Colonel Lavelle"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "M, je Général Gât la 3,5.4. (2° B.)",
+        "issue": "mot_illisible",
+        "note": "Nom et grade militaire peu clairs.",
+        "suggestion": "Général Gât (?) 3.5.4. (2e B.)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Qdt Quartier MOUDSEBEUR",
+        "issue": "lieu_incertain",
+        "note": "Nom de lieu incertain, probablement un quartier.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Secteur P.CAZELLE‘",
+        "issue": "nom_propre_incertain",
+        "note": "Nom de secteur incertain.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "Cat c,c°so/2°E%bäs",
+        "issue": "mot_illisible",
+        "note": "Fragment illisible probablement code ou référence.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "Eectan- cemac} sà N",
+        "issue": "mot_illisible",
+        "note": "Fin de document difficilement lisible.",
+        "suggestion": ""
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-05",
+    "sourceImage": "05-20251127_104513.jpg",
+    "assistedReadingText": "& — Ghe£ poldsi\n' = Adjoint äm ﬁ: r‘@nae:&gme@æ‘k s ST BOTALESS\nc {xettres de mensces envayéss oux èélégu©g sgôoiaux) ‘",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Ghe£ poldsi",
+        "issue": "mot_illisible",
+        "note": "Mot probablement incorrect ou mal reconnu, présence du caractère '£' inhabituel.",
+        "suggestion": "Peut-être \"Ghépolsi\" ou autre nom propre non clair"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Adjoint äm ﬁ: r‘@nae:&gme@æ‘k s ST BOTALESS",
+        "issue": "mot_illisible",
+        "note": "Suite de caractères incohérents, probablement plusieurs mots mal reconnus.",
+        "suggestion": "Possibilité que ce soit un titre suivi d'un nom propre, ex: 'Adjoint à ... Saint Botaless'?"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ST BOTALESS",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre probablement mal orthographié, pourrait être un lieu ou un nom de personne.",
+        "suggestion": "Peut-être 'St Botaless', 'St Botales' ou similaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "{xettres de mensces envayéss oux èélégu©g sgôoiaux",
+        "issue": "mot_illisible",
+        "note": "Probablement 'Lettres de [messieurs] envoyées aux délégués sociaux', mais plusieurs mots mal reconnus.",
+        "suggestion": "Lettres de messes envoyées aux délégués sociaux"
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-06",
+    "sourceImage": "06-20251127_110158.jpg",
+    "assistedReadingText": "COMMANDANT EN CHEF DU S.P. 87.957/A  \n22 OCTOBRE 1938  \nANNEE TERRITORIALE  \nCORPS DE L'ARMEE D'ALGER  \nSECTEUR DE BOGHANI  \nN° 28209/8 MIMS  \nORDRE D'OPERATION N° B 2  \n\nI. DATE : 25 Octobre 1959  \nZone de terrain limitée :\nAu Nord par le canal 311,  \nau Sud par le parallèle 104,  \nA l'ouest par la route Tonrisciqua,  \nA l'Est par la R.N. n° ?  \n\nII. LIEU  \n\nIII. COMMANDANT D'OPERATION : Général Commandant de secteur du BOGHANI (nom incertain).  \n\nIV. RENSEIGNEMENTS : Le contrôle comporte une zone de danse et récolte pour les rebelles. Le bombardement chassera d'une opération de secteur un élément rebelle et vous poursuivrez sans cesse en D T2. Quelques jours après une unité du secteur de MEDRA (nom incertain) a observé à son tour, sensiblement dans la même région, un groupe de 19 rebelles qui parvenait à s'échapper.\n\nV. TERRAIN : Coupe moyennement boisée.\n\nVI. INTENTIONS :  \n- Boucler très rapidement la zone pour éviter toute fuite en utilisant au maximum le réseau routier.  \n- Détruire tout élément rebelle rencontré.\n- Contrôles 15 minutes maximum. Rendez-vous à la brigade, assemblée à B ? (lieu incertain).\n",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Tonrisciqua",
+        "issue": "lieu_incertain",
+        "note": "Nom de la route probablement mal reconnu, incertain.",
+        "suggestion": "Vérifier le nom exact de la route utilisée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "R.N. } . “",
+        "issue": "mot_illisible",
+        "note": "Numéro ou désignation de la route nationale illisible.",
+        "suggestion": "Possible numéro de route nationale, mais non certain."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Gal«nol G0mñàüdant",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom et le grade du commandant d'opération sont mal reconnus.",
+        "suggestion": "Peut être \"Général Commandant\" ou similaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "secteur cui BOGUNÎE",
+        "issue": "lieu_incertain",
+        "note": "Nom du secteur difficile à lire, possible 'BOGHANI'.",
+        "suggestion": "Confirmer le nom exact du secteur."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "reftge nour lés redekles. le T bc..abrn nu chuxs d'une",
+        "issue": "mot_illisible",
+        "note": "Phrase difficilement compréhensible, mots probablement erronés par OCR.",
+        "suggestion": "Le texte nécessite vérification ou correction manuelle."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "une unité Ô du Serteur de MEDRA;",
+        "issue": "lieu_incertain",
+        "note": "Nom du secteur probablement 'MEDRA', incertain.",
+        "suggestion": "Vérifier dénomination correcte du secteur."
+      },
+      {
+        "confidence": "low",
+        "fragment": "assemblé= à BR&,M",
+        "issue": "lieu_incertain",
+        "note": "Nom du lieu de rassemblement illisible.",
+        "suggestion": "Le nom pourrait commencer par 'BR', confirmation nécessaire."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-07",
+    "sourceImage": "07-20251127_110715.jpg",
+    "assistedReadingText": "YENS * / .\nsanterie * Desx convarnies\na) f 250\nDeux comparn£es F,.A.F.Me\nUne gomnagnie au 504° BoTo\nGour de MOUDS EBEUR .\n2 gsections du'Cœmaôo' du ? RoTe\nŸ 19 RoT-\n2 section d C.1./\n\\'|ll\\\\\n» ?__l_iﬂâé5 < -2/3 RSs » L peloton\n' -2/1 RS-\n/ a) Aptillorie : Une bétters (afatis ÉA) 8 E PRTSE\na) Aviation * 1 piver\n286 .\nÎk vIiie- ARTICULARTON pés MOYENS :\n19- Unités âe fouille\nDeux conpagaies F.A.FoH = Soûs les orêres de\nCapitaine Conmandant 1e afs04° B-F- offisier ûe\n}taiïisone\n—, 20 deux Compagnies du 2/2° r.1. - Sous les ordres\ndu Cavitaine Commardant broñ_soirement jie 2/2° RIs\n_Goum de MOUDIEBFUË = 2/5049 B.T. - Sots leg ordres\ndn Cavitaine Convahdaht Ve Quort£er de FQÜWBËB.\n.5°- Unit“s de bouclare * S—nuë Les ordres An Cavi tnine\nConmañdant 1e 2/1° ReSe 4\n-1 velotor u 1;/1“ Ra»\n(, -Denx gections à\" Conrando éu 1° R.%.'\n“ section éu ŸE./19 ReTe 5 »\n34 Apoul :\nArtéllerie : Position de batterie » HE 1O D 45\nIKo= Mise en nlace : Terninée pour 7 E 45 {(voir ordre de\n# ; 5 mouvement ;\np oularàd de retofnaissanée. $ Rou, r l'é e ‘\nS gy,.. .… Âlimentation : l renas sur 1‘hoäeîur v *6mü….\nLe Colonel NERT “ Cdt le 1 R.T. et le Se . >\nP.0. Le Canitaine HAMANI ËÈ<Ë@Ï—‘ËŸ”Â“ BOGHARI",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Desx convarnies",
+        "issue": "mot_illisible",
+        "note": "Le mot 'Desx' semble mal lu, probablement 'Deux'; 'convarnies' probablement 'compagnies' mais reste incertain.",
+        "suggestion": "Deux compagnies"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "comparn£es F,.A.F.Me",
+        "issue": "sigle_incertain",
+        "note": "Le sigle F,.A.F.Me est difficile à interpréter avec certitude.",
+        "suggestion": "F.A.F.Me (sigle probable)"
+      },
+      {
+        "confidence": "low",
+        "fragment": "gomnagnie au 504° BoTo",
+        "issue": "mot_illisible",
+        "note": "Le mot 'gomnagnie' semble être 'compagnie', 'BoTo' incertain, probablement 'Bataillon' abrégé.",
+        "suggestion": "compagnie au 504° B... (bataillon probable)"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Gour de MOUDS EBEUR",
+        "issue": "lieu_incertain",
+        "note": "Nom de lieu 'MOUDS EBEUR' incertain.",
+        "suggestion": "MOUDS EBEUR (lieu incertain)"
+      },
+      {
+        "confidence": "low",
+        "fragment": "2 gsections du'Cœmaôo' du ? RoTe",
+        "issue": "mot_illisible",
+        "note": "'gsections', 'Cœmaôo', '? RoTe' fragment très difficile à lire.",
+        "suggestion": "2 sections du 'Comando' du ? Rote (lecture probable)"
+      },
+      {
+        "confidence": "low",
+        "fragment": "a) Aptillorie : Une bétters (afatis ÉA) 8 E PRTSE",
+        "issue": "mot_illisible",
+        "note": "'Aptillorie' probablement 'Artillerie', 'bétters' illisible, 'afatis ÉA' incertain, 'PRTSE' aussi.",
+        "suggestion": "Artillerie : Une batterie (statut ÉA) 8 E PRTSE (probable)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "F.A.FoH",
+        "issue": "sigle_incertain",
+        "note": "Le sigle 'F.A.FoH' difficile à confirmer.",
+        "suggestion": "F.A.F. ?"
+      },
+      {
+        "confidence": "low",
+        "fragment": "afs04° B-F-",
+        "issue": "sigle_incertain",
+        "note": "'afs04° B-F-' difficile à lire, pourrait être un régiment ou bataillon.",
+        "suggestion": "...? 504° B.F."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "broñ_soirement jie 2/2° RIs",
+        "issue": "mot_illisible",
+        "note": "'broñ_soirement jie' peu clair, probablement 'provisoirement au'.",
+        "suggestion": "provisoirement au 2/2° RIs"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Goum de MOUDIEBFUË = 2/5049 B.T.",
+        "issue": "mot_illisible",
+        "note": "'Goum de MOUDIEBFUË' incertain, numéro 2/5049 B.T. semble étrange.",
+        "suggestion": "Goum de MOUDIEBFUË (nom incertain)"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Sots leg ordres",
+        "issue": "mot_illisible",
+        "note": "Probablement 'Sous les ordres' mais mal lu.",
+        "suggestion": "Sous les ordres"
+      },
+      {
+        "confidence": "low",
+        "fragment": "dn Cavitaine Convahdaht Ve Quort£er de FQÜWBËB",
+        "issue": "mot_illisible",
+        "note": " Nom et lieux très incertains.",
+        "suggestion": "du Capitaine Commandant (...) Quartier de (...) "
+      },
+      {
+        "confidence": "low",
+        "fragment": "Unit“s de bouclare",
+        "issue": "mot_illisible",
+        "note": "Peut-être 'Unités de brouclaire' (?) terme vague ici.",
+        "suggestion": "Unités de brouclaire (lecture incertaine)"
+      },
+      {
+        "confidence": "low",
+        "fragment": "S—nuë Les ordres An Cavi tnine",
+        "issue": "mot_illisible",
+        "note": "Phrase peu claire, probablement 'sous les ordres du capitaine'.",
+        "suggestion": "Sous les ordres du capitaine"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Conmañdant 1e 2/1° ReSe 4",
+        "issue": "mot_illisible",
+        "note": "'ReSe' incertain.",
+        "suggestion": "commandant le 2/1° R.S. ( ?) 4"
+      },
+      {
+        "confidence": "low",
+        "fragment": "velotor u 1;/1“ Ra»",
+        "issue": "mot_illisible",
+        "note": "Très incertain, probablement unité ou peloton.",
+        "suggestion": "peloton du 1/1° R[égiment]"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Denx gections à\" Conrando éu 1° R.%.'",
+        "issue": "mot_illisible",
+        "note": "'Denx gections' = 'Deux sections', 'Conrando' probablement 'commandé', '1° R.%.' incertain.",
+        "suggestion": "Deux sections à commandé au 1° R.%"
+      },
+      {
+        "confidence": "low",
+        "fragment": "section éu ŸE./19 ReTe 5 »",
+        "issue": "mot_illisible",
+        "note": "'RéTe' terme difficile, 'ŸE./19' incertain.",
+        "suggestion": "section au ? 19 R. ?"
+      },
+      {
+        "confidence": "low",
+        "fragment": "34 Apoul :",
+        "issue": "mot_illisible",
+        "note": "'Apoul' peut être 'Appui'.",
+        "suggestion": "Appui"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Position de batterie » HE 1O D 45",
+        "issue": "mot_illisible",
+        "note": "'HE 1O D 45' semble une localisation ou heure, peu clair.",
+        "suggestion": "Position de batterie HE 10 D 45 (probable)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Terninée pour 7 E 45",
+        "issue": "mot_illisible",
+        "note": "Probablement 'Terminée pour 7 H 45'.",
+        "suggestion": "Terminée pour 7 H 45"
+      },
+      {
+        "confidence": "low",
+        "fragment": "p oularàd de retofnaissanée",
+        "issue": "mot_illisible",
+        "note": "Mot très dégradé, probablement 'postulard de reconnaissance' ou 'point de reconnaissance'.",
+        "suggestion": "point de reconnaissance (probable)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Alimentation : l renas sur 1‘hoäeîur v *6mü…",
+        "issue": "mot_illisible",
+        "note": "Phrase dégradée, probablement 'Alimentation : un repas sur l'horaire ...'.",
+        "suggestion": "Alimentation : repas sur l'horaire ..."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le Colonel NERT “ Cdt le 1 R.T.",
+        "issue": "nom_propre_incertain",
+        "note": "Nom 'NERT' pourrait être un nom propre incertain.",
+        "suggestion": "Colonel NERT (nom incertain)"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Le Canitaine HAMANI ËÈ<Ë@Ï—‘ËŸ”Â“ BOGHARI",
+        "issue": "nom_propre_incertain",
+        "note": "Nom du capitaine et surnom ou lieu très incertains.",
+        "suggestion": "Capitaine HAMANI BOGHARI (partiellement incertain)"
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-08",
+    "sourceImage": "08-20251127_110725.jpg",
+    "assistedReadingText": "ORDRE DE MOUVEMENT\nUNITÉS\nPOINT INITIAL\nLIEU DE PASSAGE A\nLIEU DE MISE EN PLACE\nCarrefour NY... (?)\nR.N. 1 - Route touristique par le Sud\nUne compagnie du 2/20 R.I.\n2/504° B.R. - Goum HOUDJEBEUR ; Blanche\nDeux sections compagnie au quartier T. ;\nCarrefour Maison Blanche\n\nNote : Plusieurs passages sont partiellement illisibles ou incomplets.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Ë[jî RDRE DE HOUVEMSNT",
+        "issue": "mot_illisible",
+        "note": "Le titre semble être 'ORDRE DE MOUVEMENT' mais comporte des erreurs d'OCR.",
+        "suggestion": "ORDRE DE MOUVEMENT"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "NY _ (H sÀ Ë 17 R 0",
+        "issue": "lieu_incertain",
+        "note": "Le lieu 'Carrefour NY...' est partiellement illisible.",
+        "suggestion": "Carrefour NY (lecture probable)"
+      },
+      {
+        "confidence": "low",
+        "fragment": "2/20 R,I. = .ca——=efour Maison",
+        "issue": "sigle_incertain",
+        "note": "Le sigle '2/20 R,I.' est incertain, pourrait être '2/20 R.I.'",
+        "suggestion": "2/20 R.I."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Goum HOUDJEBEUR",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'HOUDJEBEUR' est douteux.",
+        "suggestion": "HOUDJEBEUR (nom propre probable)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Carrefour Maison Blanche",
+        "issue": "lieu_incertain",
+        "note": "Localisation précise incertaine, lecture probable 'Carrefour Maison Blanche'.",
+        "suggestion": "Carrefour Maison Blanche"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Deux 'sszüons Ggmpanﬂo eu qesRe T.",
+        "issue": "mot_illisible",
+        "note": "Passage très dégradé, impossible de retranscrire de façon certaine.",
+        "suggestion": ""
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
       "notes": null
     },
     "note": "Lecture assistee IA non validee ; a verifier sur l'image."
