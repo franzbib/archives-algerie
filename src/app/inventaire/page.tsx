@@ -133,6 +133,23 @@ export default function InventoryPage() {
               Hypothèses de transcription basées sur l&apos;OCR, avec marquage des incertitudes, en attente de validation humaine.
             </p>
           </div>
+        </div>
+
+        <div className="mb-6 mt-12 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <ShieldCheck className="h-5 w-5 text-warm" />
+            <div className="flex-1">
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+                Anciennes routes
+              </p>
+              <h2 className="font-serif text-2xl font-medium text-foreground">
+                Routes historiques (V0)
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           <Link
             href="/controle-pilote"
             className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
@@ -141,10 +158,10 @@ export default function InventoryPage() {
               Historique pilote
             </p>
             <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
-              ContrÃ´le des images pilotes publiÃ©es
+              Controle des images pilotes publiees
             </h3>
             <p className="mt-2 text-xs leading-5 text-foreground/70">
-              Consultation des 8 JPG pilotes publiÃ©s sur R2, sans validation page/document.
+              Consultation des 8 JPG pilotes publies sur R2, sans validation page/document.
             </p>
           </Link>
           <Link

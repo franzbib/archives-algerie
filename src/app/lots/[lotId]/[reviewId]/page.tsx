@@ -117,11 +117,11 @@ export default async function GenericLotReviewPage({
           <div className="flex flex-wrap items-center gap-3">
             <StatusBadge variant="warning">Non valide</StatusBadge>
             <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-              Controle generique de lot
+              Lot : {batch.lotId} &mdash; Collection : {batch.collectionId}
             </p>
           </div>
           <h1 className="mt-3 font-serif text-4xl font-medium text-foreground md:text-5xl">
-            {batch.title} - {formatReviewTitle(reviewItem.reviewId)}
+            {batch.title} &mdash; Fichier {currentIndex + 1} sur {reviewItems.length}
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-7 text-foreground/80">
             Cette page affiche une image publiee et sa lecture assistee
@@ -534,9 +534,6 @@ function MetaItem({ label, value }: { label: string; value: string }) {
   );
 }
 
-function formatReviewTitle(reviewId: string): string {
-  return reviewId.replace("page-", "").padStart(2, "0");
-}
 
 function getHumanReviewTemplate(lotId: string, reviewId: string): string {
   return JSON.stringify(

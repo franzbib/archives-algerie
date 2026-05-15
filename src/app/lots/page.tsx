@@ -18,11 +18,11 @@ export default function LotsPage() {
       <div className="border-b border-paper-border bg-paper/60">
         <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
           <Link
-            href="/inventaire"
+            href="/"
             className="inline-flex items-center gap-2 text-sm text-warm hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" />
-            Retour au suivi de l&apos;inventaire
+            Retour a l&apos;accueil
           </Link>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function LotsPage() {
       <section className="border-b border-paper-border bg-paper">
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-            Traitement par lots
+            Consultation publique
           </p>
           <h1 className="mt-3 font-serif text-4xl font-medium text-foreground">
             Lots d&apos;archives
