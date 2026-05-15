@@ -135,6 +135,14 @@ function PilotAssetCard({ asset, order }: { asset: PilotAsset; order: number }) 
         <p className="text-sm leading-6 text-foreground/75">{asset.note}</p>
 
         <div className="flex flex-wrap gap-3">
+          {order === 1 && (
+            <Link
+              className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
+              href="/controle-pilote/page-01"
+            >
+              Voir le controle detaille
+            </Link>
+          )}
           <a
             className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
             href={asset.publicUrl}
