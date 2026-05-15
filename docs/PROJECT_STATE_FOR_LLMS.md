@@ -131,11 +131,12 @@ Le projet doit avancer comme un instrument de recherche historique progressif :
 d’abord inventorier, puis OCRiser, puis vérifier, puis indexer, puis interroger.
 
 Ne pas faire l’inverse.
-## Repères historiques — V0
+## Repères historiques — V0 (Stabilisée)
 
-- Module séparé du manifeste principal.
+- Module séparé du manifeste principal (aucune modification du manifeste).
 - Données dans `src/data/historical-context.json`.
-- Logique dans `src/lib/historicalContext.ts`.
-- Affichage dans `HistoricalContextBox`.
-- Intégration uniquement sur la fiche document.
+- Logique dans `src/lib/historicalContext.ts` (toujours fondée uniquement sur `document.dateLabel`).
+- Affichage dans `HistoricalContextBox` (titre affiché : "Contexte chronologique", sources générales masquées par défaut dans un `<details>`).
+- Intégration dans la fiche document : placée après "Pages référencées" et avant "Prudence documentaire".
 - Statut méthodologique : contexte éditorial, non interprétation.
+- Limites conservées : pas d'OCR, pas de glossaire, pas de lieux, pas de frise.
