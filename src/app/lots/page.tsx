@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { ArrowLeft, Archive, ShieldAlert } from "lucide-react";
 import { StatusBadge } from "@/components/ui/status-badge";
-import { getArchiveBatches, getArchiveBatchSummary } from "@/lib/archiveBatches";
+import {
+  getArchiveBatches,
+  getArchiveBatchSummary,
+  isArchiveBatchReviewReady,
+} from "@/lib/archiveBatches";
 import type { ArchiveBatch } from "@/lib/archiveBatches";
 
 export default function LotsPage() {
@@ -65,14 +69,14 @@ export default function LotsPage() {
 
 function BatchCard({ batch }: { batch: ArchiveBatch }) {
   const summary = getArchiveBatchSummary(batch);
-  const isPublished = batch.status === "published_unvalidated" && batch.reviewRoute;
+  const isReviewReady = isArchiveBatchReviewReady(batch) && batch.reviewRoute;
 
   return (
     <article className="border border-paper-border bg-paper p-6">
       <div className="flex items-start justify-between gap-4">
         <Archive className="mt-1 h-5 w-5 shrink-0 text-warm" />
-        <StatusBadge variant={isPublished ? "warning" : "neutral"}>
-          {isPublished ? "Publie non valide" : "A venir"}
+        <StatusBadge variant={isReviewReady ? "warning" : "neutral"}>
+          {isReviewReady ? "Pret pour revue" : "A venir"}
         </StatusBadge>
       </div>
 
@@ -98,13 +102,13 @@ function BatchCard({ batch }: { batch: ArchiveBatch }) {
         />
         <MetaItem
           label="Lectures assistees"
-          value={isPublished ? String(summary.assistedReadingCount) : "A venir"}
+          value={isReviewReady ? String(summary.assistedReadingCount) : "A venir"}
         />
       </dl>
 
       <p className="mt-5 text-sm leading-6 text-foreground/75">{batch.notes}</p>
 
-      {isPublished ? (
+      {isReviewReady ? (
         <Link
           className="mt-6 inline-flex w-full items-center justify-center border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
           href={batch.reviewRoute ?? "#"}

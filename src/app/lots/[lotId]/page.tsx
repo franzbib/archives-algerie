@@ -8,6 +8,7 @@ import {
   getArchiveBatchReviewItemById,
   getArchiveBatchSummary,
   getAssetsForBatch,
+  isArchiveBatchReviewReady,
 } from "@/lib/archiveBatches";
 import type { ArchiveBatchAsset } from "@/lib/archiveBatches";
 
@@ -31,7 +32,7 @@ export default async function LotReviewPage({
 
   const assets = getAssetsForBatch(batch);
   const summary = getArchiveBatchSummary(batch);
-  const isPublished = batch.status === "published_unvalidated";
+  const isReviewReady = isArchiveBatchReviewReady(batch);
 
   return (
     <main className="min-h-screen bg-background pb-16">
@@ -50,8 +51,8 @@ export default async function LotReviewPage({
       <section className="border-b border-paper-border bg-paper">
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
           <div className="flex flex-wrap items-center gap-3">
-            <StatusBadge variant={isPublished ? "warning" : "neutral"}>
-              {isPublished ? "Lot publie non valide" : "Lot planifie"}
+            <StatusBadge variant={isReviewReady ? "warning" : "neutral"}>
+              {isReviewReady ? "Lot pret pour revue" : "Lot planifie"}
             </StatusBadge>
             <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
               {batch.lotId}

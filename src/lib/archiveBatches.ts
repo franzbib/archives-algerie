@@ -7,7 +7,13 @@ import type {
   PilotConfidence,
 } from "@/lib/pilotReview";
 
-export type ArchiveBatchStatus = "planned" | "published_unvalidated";
+export type ArchiveBatchStatus =
+  | "planned"
+  | "inventoried"
+  | "processed_local"
+  | "published"
+  | "review_ready"
+  | "published_unvalidated";
 export type ArchiveBatchSourceType = "google_drive" | "manual" | "unknown";
 
 export type ArchiveBatch = {
@@ -76,6 +82,15 @@ export function getArchiveBatches(): ArchiveBatch[] {
 
 export function getArchiveBatchById(lotId: string): ArchiveBatch | undefined {
   return batches.find((batch) => batch.lotId === lotId);
+}
+
+export function isArchiveBatchReviewReady(batch: ArchiveBatch): boolean {
+  return (
+    (batch.status === "review_ready" ||
+      batch.status === "published" ||
+      batch.status === "published_unvalidated") &&
+    getAssetsForBatch(batch).length > 0
+  );
 }
 
 export function getAssetsForBatch(batch: ArchiveBatch): ArchiveBatchAsset[] {

@@ -7,7 +7,7 @@
       "collectionId": "shd-1h4382-d1-boghari",
       "title": "SHD 1H4382 D1 - Syntheses de renseignements, Secteur Boghari",
       "sourceType": "google_drive",
-      "status": "published_unvalidated",
+      "status": "review_ready",
       "driveSource": {
         "driveFolderUrl": "https://drive.google.com/drive/folders/1zrEnPlBbNqaAUdbZlfvzgji-DESSIh25",
         "inventoryManifest": "data/generated/drive-inventory.pilot.json"
@@ -17,7 +17,7 @@
       "reviewRoute": "/lots/lot-boghari-001",
       "legacyReviewRoute": "/controle-batch",
       "itemCount": 41,
-      "notes": "Lot complet Boghari publie pour controle ; images et lectures assistees non validees."
+      "notes": "Lot complet Boghari pret pour revue ; images et lectures assistees non validees."
     },
     {
       "lotId": "lot-fln-w4-001",
