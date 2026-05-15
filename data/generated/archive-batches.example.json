@@ -37,6 +37,23 @@
       "notes": "Lot FLN W4 pret pour revue ; images et lectures assistees non validees."
     },
     {
+      "lotId": "lot-fln-w4-002",
+      "collectionId": "shd-1h1644-fln-w4-58-62",
+      "title": "SHD 1H1644 - Documents FLN W4, 1958-1962",
+      "sourceType": "google_drive",
+      "status": "planned",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/17BXxROaWfPsAkXasVcG1YpxDzB7t7L6d",
+        "inventoryManifest": null
+      },
+      "assetManifest": null,
+      "assistedReadingManifest": null,
+      "reviewRoute": null,
+      "legacyReviewRoute": null,
+      "itemCount": null,
+      "notes": "Source Drive identifiee par connecteur : dossier SHD 1H1644 doc FLN, W4,58-62 contenant au moins 100 images JPEG visibles dans le premier releve. Lot adapte a l'agent images existant."
+    },
+    {
       "lotId": "lot-frontiere-maroc-001",
       "collectionId": "shd-gr-9m2274-frontiere-maroc",
       "title": "SHD GR 9 M 2274 - Frontiere Maroc",
