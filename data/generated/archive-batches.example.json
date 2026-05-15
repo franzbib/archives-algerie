@@ -26,7 +26,7 @@
       "sourceType": "google_drive",
       "status": "planned",
       "driveSource": {
-        "driveFolderUrl": null,
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1sj-XM3WhKbahdV7cTbsg-ibB1l42ytWB",
         "inventoryManifest": null
       },
       "assetManifest": null,
@@ -34,7 +34,7 @@
       "reviewRoute": null,
       "legacyReviewRoute": null,
       "itemCount": null,
-      "notes": "Lot prevu ; aucun inventaire Drive public controle n'est encore integre."
+      "notes": "Source Drive identifiee par connecteur ; dossier contenant au moins 100 images JPEG visibles dans le premier releve. Inventaire controle a generer avant traitement."
     },
     {
       "lotId": "lot-frontiere-maroc-001",
