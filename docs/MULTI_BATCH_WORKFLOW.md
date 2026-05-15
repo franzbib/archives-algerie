@@ -139,6 +139,75 @@ Il ne faut pas écraser l'OCR brut ni le considérer comme une transcription.
 11. Intégrer le lot dans l'index global `archive-batches.example.json`.
 12. Vérifier l'affichage dans `/lots/<lotId>`.
 
+## Agent local de traitement de lot
+
+Le script `scripts/run-archive-batch-agent.ts` prépare une orchestration locale
+générique pour un lot déclaré dans:
+
+```text
+data/generated/archive-batches.example.json
+```
+
+Commande cible:
+
+```powershell
+npx.cmd tsx scripts/run-archive-batch-agent.ts --lot lot-fln-w4-001 --limit 100 --confirm
+```
+
+Le script travaille par défaut dans:
+
+```text
+.local/archive-batches/<lotId>/
+```
+
+Il enchaîne, quand les prérequis sont disponibles:
+
+1. inventaire Drive du lot ;
+2. téléchargement local brut dans `raw/` ;
+3. copie des JPG ou conversion HEIC vers JPG dans `converted/` ;
+4. OCR brut dans `ocr/raw/` ;
+5. normalisation mécanique dans `ocr/clean/` ;
+6. lecture assistée vision dans `assisted-reading-vision/` ;
+7. upload R2 des JPG ;
+8. génération d'un manifeste public local dans `public/`.
+
+Options de reprise:
+
+```powershell
+--skip-inventory
+--skip-download
+--skip-conversion
+--skip-ocr
+--skip-normalization
+--skip-vision
+--skip-upload
+--limit 100
+--confirm
+```
+
+Garde-fous:
+
+- le script refuse de fonctionner sans `--confirm` ;
+- il n'invente pas de source Drive: un lot `planned` sans URL Drive échoue
+  explicitement à l'étape d'inventaire ;
+- il n'appelle OpenAI que si `OPENAI_API_KEY` est disponible et si
+  `--skip-vision` n'est pas fourni ;
+- il n'upload vers R2 que si les variables R2 sont disponibles et si
+  `--skip-upload` n'est pas fourni ;
+- il s'arrête dès qu'une étape échoue ;
+- il ne modifie pas `src/data/archives-manifest.json` ;
+- il ne promeut pas automatiquement les sorties locales vers `data/generated/`.
+
+Pour préparer seulement les étapes locales sans IA ni upload:
+
+```powershell
+npm.cmd run batch:agent -- --lot lot-boghari-001 --limit 41 --skip-vision --skip-upload --confirm
+```
+
+Les sorties `.local/` restent ignorées par Git. Elles doivent être relues,
+contrôlées et promues explicitement dans une étape séparée avant toute
+intégration applicative.
+
 ## Tâches à déléguer à Codex
 
 ### 1. Généraliser les helpers de revue
