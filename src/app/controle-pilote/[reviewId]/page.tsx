@@ -47,24 +47,43 @@ export default async function PilotReviewPage({
 
   const assistedReading = getAssistedReadingForReview(reviewItem);
 
+  const reviewItems = getPilotReviewItems();
+  const currentIndex = reviewItems.findIndex((i) => i.reviewId === reviewId);
+  const prevItem = currentIndex > 0 ? reviewItems[currentIndex - 1] : null;
+  const nextItem = currentIndex < reviewItems.length - 1 ? reviewItems[currentIndex + 1] : null;
+
   return (
     <main className="min-h-screen bg-background pb-16">
       <div className="border-b border-paper-border bg-paper/60">
-        <div className="mx-auto flex max-w-7xl flex-wrap gap-4 px-6 py-4 lg:px-8">
-          <Link
-            href="/controle-pilote"
-            className="inline-flex items-center gap-2 text-sm text-warm hover:text-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Retour au controle pilote
-          </Link>
-          <Link
-            href="/inventaire"
-            className="inline-flex items-center gap-2 text-sm text-warm hover:text-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Retour au suivi de l&apos;inventaire
-          </Link>
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-6 py-4 lg:px-8">
+          <div className="flex flex-1 items-center gap-4">
+            <Link
+              href="/controle-pilote"
+              className="inline-flex items-center gap-2 text-sm text-warm hover:text-foreground"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Retour au controle pilote
+            </Link>
+          </div>
+          <div className="flex flex-1 items-center justify-end gap-6 text-sm font-medium">
+            {prevItem ? (
+              <Link href={`/controle-pilote/${prevItem.reviewId}`} className="text-foreground hover:text-warm">
+                &larr; Precedent
+              </Link>
+            ) : (
+              <span className="text-foreground/30">&larr; Precedent</span>
+            )}
+            <span className="text-foreground/50">
+              {currentIndex + 1} / {reviewItems.length}
+            </span>
+            {nextItem ? (
+              <Link href={`/controle-pilote/${nextItem.reviewId}`} className="text-foreground hover:text-warm">
+                Suivant &rarr;
+              </Link>
+            ) : (
+              <span className="text-foreground/30">Suivant &rarr;</span>
+            )}
+          </div>
         </div>
       </div>
 
@@ -99,10 +118,7 @@ export default async function PilotReviewPage({
           ) : (
             <MissingAssistedReadingPanel reviewItem={reviewItem} />
           )}
-          <HumanValidationPanel
-            assistedReading={assistedReading}
-            reviewItem={reviewItem}
-          />
+          <HumanValidationPanel />
         </aside>
       </section>
     </main>
@@ -216,9 +232,11 @@ function AssistedReadingPanel({
           </div>
         </div>
 
-        <pre className="max-h-[640px] overflow-auto whitespace-pre-wrap border border-paper-border bg-background p-4 font-serif text-sm leading-7 text-foreground">
-          {reading.assistedReadingText}
-        </pre>
+        <div className="mx-auto max-w-prose">
+          <pre className="max-h-[640px] overflow-auto whitespace-pre-wrap border border-paper-border bg-background p-6 font-serif text-base leading-relaxed text-foreground">
+            {reading.assistedReadingText}
+          </pre>
+        </div>
 
         {reading.note && (
           <p className="border border-paper-border bg-background p-3 text-sm leading-6 text-foreground/75">
@@ -270,34 +288,40 @@ function UncertaintiesList({
 }: {
   uncertainties: AssistedReadingUncertainty[];
 }) {
+  if (!uncertainties || uncertainties.length === 0) return null;
+
   return (
-    <section>
+    <section className="pt-4">
       <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-        Incertitudes principales
+        Incertitudes principales ({uncertainties.length})
       </p>
-      <div className="mt-3 space-y-3">
+      <div className="mt-4 grid gap-4 sm:grid-cols-2">
         {uncertainties.map((uncertainty) => (
           <div
-            className="border border-paper-border bg-background p-3 text-sm"
+            className="border border-paper-border bg-background p-4 text-sm"
             key={`${uncertainty.issue}-${uncertainty.fragment}`}
           >
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2 border-b border-paper-border pb-3">
               <StatusBadge variant="warning">{uncertainty.confidence}</StatusBadge>
-              <span className="font-mono text-xs uppercase tracking-widest text-warm">
+              <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
                 {uncertainty.issue}
               </span>
             </div>
-            <p className="mt-2 font-medium text-foreground">
-              {uncertainty.fragment}
-            </p>
-            {uncertainty.suggestion && (
-              <p className="mt-1 text-foreground/75">
-                Suggestion : {uncertainty.suggestion}
+            <div className="pt-3">
+              <p className="font-medium text-foreground">
+                &laquo; {uncertainty.fragment} &raquo;
               </p>
-            )}
-            <p className="mt-2 leading-6 text-foreground/75">
-              {uncertainty.note}
-            </p>
+              {uncertainty.suggestion && (
+                <p className="mt-2 text-foreground/80">
+                  <span className="text-foreground/60">Suggestion :</span> {uncertainty.suggestion}
+                </p>
+              )}
+              {uncertainty.note && (
+                <p className="mt-2 leading-relaxed text-foreground/70">
+                  {uncertainty.note}
+                </p>
+              )}
+            </div>
           </div>
         ))}
       </div>
@@ -334,39 +358,40 @@ function MethodologyBlock({
   );
 }
 
-function HumanValidationPanel({
-  assistedReading,
-  reviewItem,
-}: {
-  assistedReading: AssistedReadingExample | null;
-  reviewItem: PilotReviewItem;
-}) {
+function HumanValidationPanel() {
   return (
-    <section className="border border-paper-border bg-paper p-6">
-      <div className="flex items-start gap-3">
-        <ClipboardCheck className="mt-1 h-5 w-5 shrink-0 text-warm" />
-        <div>
+    <section className="border border-paper-border bg-paper">
+      <div className="border-b border-paper-border bg-background/60 px-5 py-4">
+        <div className="flex items-center gap-2">
+          <ClipboardCheck className="h-5 w-5 text-warm" />
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-            C. Validation humaine
+            C. Validation humaine future
           </p>
-          <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
-            Non valide
-          </h2>
-          <div className="mt-4 space-y-2 text-sm leading-6 text-foreground/80">
-            <p>Statut : {reviewItem.humanValidationStatus}</p>
-            {assistedReading && (
-              <p>
-                Lecture assistee validee :{" "}
-                {assistedReading.humanValidation.validated ? "oui" : "non"}
-              </p>
-            )}
-            <p>A verifier sur image.</p>
-            <p>
-              Les noms propres, lieux, dates et sigles doivent etre controles
-              avant toute citation ou indexation.
-            </p>
-            <p>Aucun workflow d&apos;edition n&apos;est actif dans cette etape.</p>
-          </div>
+        </div>
+        <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
+          A verifier sur l&apos;image
+        </h2>
+      </div>
+      
+      <div className="p-5">
+        <div className="mb-4 flex flex-wrap gap-2">
+          <StatusBadge variant="warning">Non valide</StatusBadge>
+          <StatusBadge variant="neutral">Transcription non disponible</StatusBadge>
+        </div>
+        
+        <p className="mb-4 text-sm leading-6 text-foreground/80">
+          Les entites suivantes doivent etre imperativement controlees avant toute citation ou indexation historique :
+        </p>
+
+        <ul className="mb-6 space-y-2 text-sm font-medium text-foreground/90">
+          <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-warm"></span> Noms propres et patronymes</li>
+          <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-warm"></span> Lieux et toponymes</li>
+          <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-warm"></span> Dates et chronologie</li>
+          <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-warm"></span> Sigles et abreviations</li>
+        </ul>
+
+        <div className="border border-paper-border bg-background p-4 text-sm leading-6 text-foreground/75">
+          <p>Aucun workflow d&apos;edition n&apos;est actif dans cette etape pilote.</p>
         </div>
       </div>
     </section>

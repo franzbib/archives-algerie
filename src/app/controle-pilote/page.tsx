@@ -42,17 +42,29 @@ export default function PilotControlPage() {
 
       <section className="border-b border-paper-border bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
-          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-            Publication R2 pilote
-          </p>
-          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground md:text-5xl">
+          <div className="flex items-center gap-3">
+            <StatusBadge variant="success">Échantillon pilote</StatusBadge>
+            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+              Publication R2
+            </p>
+          </div>
+          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground">
             Controle pilote des images publiees
           </h1>
-          <p className="mt-5 max-w-3xl text-base leading-7 text-foreground/80">
-            Cette page permet de consulter les images pilotes publiees sur R2
-            pour verifier l&apos;affichage, les liens et le rattachement a la
-            source Drive. Elle ne valide pas les pages ni les documents.
-          </p>
+          <div className="mt-5 max-w-3xl space-y-4 text-base leading-7 text-foreground/80">
+            <p>
+              Cette page permet de consulter les images pilotes publiees sur R2
+              pour verifier l&apos;affichage, les liens et le rattachement a la
+              source Drive. Elle ne valide pas les pages ni les documents.
+            </p>
+            <div className="flex items-start gap-2 border-l-2 border-warm/40 bg-warm/5 px-4 py-3 text-sm">
+              <p>
+                <strong className="font-medium text-foreground">A venir :</strong>{" "}
+                Un lot pilote complet de 41 images est en preparation pour
+                etendre cette verification locale.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -111,8 +123,12 @@ function PilotAssetCard({ asset, order }: { asset: PilotAsset; order: number }) 
             </h2>
           </div>
           <div className="flex flex-wrap gap-2 sm:justify-end">
-            <StatusBadge variant="warning">Image non validee</StatusBadge>
-            <StatusBadge variant="neutral">{asset.validationStatus}</StatusBadge>
+            {reviewItem?.assistedReadingExample ? (
+              <StatusBadge variant="success">Lecture assistee disponible</StatusBadge>
+            ) : (
+              <StatusBadge variant="neutral">Lecture assistee non disponible</StatusBadge>
+            )}
+            <StatusBadge variant="warning">Non valide</StatusBadge>
           </div>
         </div>
       </div>
@@ -137,33 +153,35 @@ function PilotAssetCard({ asset, order }: { asset: PilotAsset; order: number }) 
 
         <p className="text-sm leading-6 text-foreground/75">{asset.note}</p>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
           {reviewItem && (
             <Link
-              className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
+              className="inline-flex flex-1 items-center justify-center gap-2 border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
               href={`/controle-pilote/${reviewItem.reviewId}`}
             >
-              Voir le controle detaille
+              Revoir en detail
             </Link>
           )}
-          <a
-            className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
-            href={asset.publicUrl}
-            rel="noreferrer"
-            target="_blank"
-          >
-            Ouvrir l&apos;image R2
-            <ExternalLink className="h-3.5 w-3.5" />
-          </a>
-          <a
-            className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
-            href={asset.originalDriveUrl}
-            rel="noreferrer"
-            target="_blank"
-          >
-            Fichier Drive d&apos;origine
-            <ExternalLink className="h-3.5 w-3.5" />
-          </a>
+          <div className="flex flex-1 flex-wrap items-center gap-4 sm:justify-end">
+            <a
+              className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
+              href={asset.publicUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Ouvrir l&apos;image R2
+              <ExternalLink className="h-3.5 w-3.5" />
+            </a>
+            <a
+              className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
+              href={asset.originalDriveUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Drive d&apos;origine
+              <ExternalLink className="h-3.5 w-3.5" />
+            </a>
+          </div>
         </div>
       </div>
     </article>
