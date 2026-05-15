@@ -1,0 +1,115 @@
+[
+  {
+    "id": "avant-1830",
+    "title": "Avant la conquête française",
+    "periodLabel": "Avant 1830",
+    "dateStart": null,
+    "dateEnd": 1829,
+    "category": ["repere-chronologique", "avant-conquete"],
+    "summary": "Repère général pour les documents ou mentions antérieurs à la conquête française de l’Algérie.",
+    "keywords": ["avant 1830", "régence d’Alger", "Empire ottoman", "Algérie précoloniale"],
+    "methodologicalWarning": "Ne pas projeter les cadres administratifs coloniaux français sur les documents ou mentions antérieurs à 1830.",
+    "sourceNotes": [
+      "Repère général à consolider avec des sources historiques spécialisées.",
+      "Utiliser des références historiographiques reconnues avant tout enrichissement."
+    ]
+  },
+  {
+    "id": "1830-1870",
+    "title": "Conquête française et mise en place progressive de l’ordre colonial",
+    "periodLabel": "1830-1870",
+    "dateStart": 1830,
+    "dateEnd": 1870,
+    "category": ["repere-chronologique", "conquete", "administration-coloniale"],
+    "summary": "Période marquée par la conquête française, les résistances, les violences militaires, les débuts de l’installation coloniale et la transformation progressive des cadres administratifs.",
+    "keywords": ["1830", "conquête", "résistances", "armée française", "administration coloniale"],
+    "methodologicalWarning": "Un document daté de cette période doit être examiné selon son lieu exact, son producteur, sa nature et son statut archivistique.",
+    "sourceNotes": [
+      "FranceArchives : ressources relatives aux archives produites par les administrations d’Algérie entre 1830 et 1962.",
+      "Archives nationales d’outre-mer : ressources sur les fonds algériens.",
+      "Abderrahmane Bouchène, Jean-Pierre Peyroulou, Ouanassa Siari Tengour, Sylvie Thénault dir., Histoire de l’Algérie à la période coloniale, 1830-1962, La Découverte."
+    ]
+  },
+  {
+    "id": "1870-1914",
+    "title": "Consolidation de l’Algérie coloniale sous la Troisième République",
+    "periodLabel": "1870-1914",
+    "dateStart": 1871,
+    "dateEnd": 1914,
+    "category": ["repere-chronologique", "troisieme-republique", "administration-coloniale"],
+    "summary": "Période de consolidation administrative, juridique et sociale de l’Algérie coloniale, avec des statuts différenciés selon les populations et les territoires.",
+    "keywords": ["Troisième République", "Algérie coloniale", "statuts juridiques", "administration", "citoyenneté"],
+    "methodologicalWarning": "Les statuts juridiques et administratifs évoqués par un document doivent toujours être vérifiés dans le document original et dans son contexte précis de production.",
+    "sourceNotes": [
+      "FranceArchives : ressources relatives aux archives produites par les administrations d’Algérie entre 1830 et 1962.",
+      "Archives nationales d’outre-mer : ressources sur les fonds algériens et l’état civil.",
+      "Abderrahmane Bouchène, Jean-Pierre Peyroulou, Ouanassa Siari Tengour, Sylvie Thénault dir., Histoire de l’Algérie à la période coloniale, 1830-1962, La Découverte."
+    ]
+  },
+  {
+    "id": "1914-1945",
+    "title": "Guerres mondiales, mobilisations et transformations sociales",
+    "periodLabel": "1914-1945",
+    "dateStart": 1914,
+    "dateEnd": 1945,
+    "category": ["repere-chronologique", "guerres-mondiales", "transformations-sociales"],
+    "summary": "Période marquée par les deux guerres mondiales, les mobilisations militaires, les évolutions politiques et sociales et les tensions croissantes autour de la citoyenneté et des droits.",
+    "keywords": ["Première Guerre mondiale", "Seconde Guerre mondiale", "mobilisation", "citoyenneté", "réformes"],
+    "methodologicalWarning": "Le contexte international ou militaire ne suffit pas à déterminer la portée d’un document familial, administratif ou généalogique.",
+    "sourceNotes": [
+      "FranceArchives : ressources relatives aux archives produites par les administrations d’Algérie.",
+      "Archives nationales d’outre-mer : ressources sur les fonds algériens.",
+      "Abderrahmane Bouchène, Jean-Pierre Peyroulou, Ouanassa Siari Tengour, Sylvie Thénault dir., Histoire de l’Algérie à la période coloniale, 1830-1962, La Découverte."
+    ]
+  },
+  {
+    "id": "1945-1954",
+    "title": "Après-guerre, réformes incomplètes et montée des tensions politiques",
+    "periodLabel": "1945-1954",
+    "dateStart": 1946,
+    "dateEnd": 1954,
+    "category": ["repere-chronologique", "apres-guerre", "tensions-politiques"],
+    "summary": "Période située entre la fin de la Seconde Guerre mondiale et le déclenchement de la guerre d’indépendance algérienne, marquée par des réformes incomplètes et des tensions politiques croissantes.",
+    "keywords": ["après-guerre", "réformes", "nationalisme algérien", "citoyenneté", "tensions politiques"],
+    "methodologicalWarning": "La présence d’une date dans cette période ne suffit pas à établir un lien direct avec les mouvements nationalistes ou les violences politiques.",
+    "sourceNotes": [
+      "FranceArchives : ressources relatives aux archives produites par les administrations d’Algérie.",
+      "Abderrahmane Bouchène, Jean-Pierre Peyroulou, Ouanassa Siari Tengour, Sylvie Thénault dir., Histoire de l’Algérie à la période coloniale, 1830-1962, La Découverte.",
+      "Benjamin Stora : travaux de synthèse sur l’histoire de l’Algérie coloniale et de la guerre d’Algérie."
+    ]
+  },
+  {
+    "id": "1954-1962",
+    "title": "Guerre d’Algérie et fin de l’Algérie coloniale",
+    "periodLabel": "1954-1962",
+    "dateStart": 1954,
+    "dateEnd": 1962,
+    "category": ["repere-chronologique", "guerre-algerie", "decolonisation"],
+    "summary": "Période de guerre, de crise politique et de transformation radicale des relations entre la France et l’Algérie, jusqu’à l’indépendance de 1962.",
+    "keywords": ["guerre d’Algérie", "1954", "1962", "FLN", "armée française", "indépendance", "décolonisation"],
+    "methodologicalWarning": "Un document daté de cette période n’a pas nécessairement la guerre pour objet. Le contenu du document, son lieu, son producteur et la qualité de l’OCR restent prioritaires.",
+    "sourceNotes": [
+      "FranceArchives : ressources relatives aux archives produites par les administrations d’Algérie entre 1830 et 1962.",
+      "Archives nationales d’outre-mer : ressources sur les fonds algériens.",
+      "Benjamin Stora : travaux de synthèse sur la guerre d’Algérie.",
+      "Raphaëlle Branche : travaux sur la guerre d’Algérie.",
+      "Sylvie Thénault : travaux sur l’histoire politique, juridique et répressive de l’Algérie coloniale."
+    ]
+  },
+  {
+    "id": "apres-1962",
+    "title": "Après l’indépendance de l’Algérie",
+    "periodLabel": "Après 1962",
+    "dateStart": 1963,
+    "dateEnd": null,
+    "category": ["repere-chronologique", "apres-independance", "memoires"],
+    "summary": "Période suivant l’indépendance de l’Algérie, marquée par des recompositions politiques, administratives, familiales, migratoires et mémorielles.",
+    "keywords": ["après 1962", "indépendance", "migration", "mémoire familiale", "état civil", "rapatriement"],
+    "methodologicalWarning": "Les documents postérieurs à 1962 peuvent relever de situations très diverses : démarches administratives, mémoire familiale, migration, succession, état civil ou correspondance privée.",
+    "sourceNotes": [
+      "FranceArchives : ressources relatives au devenir et à la consultation des archives liées à l’Algérie.",
+      "Archives nationales d’outre-mer : ressources sur les fonds algériens et l’état civil.",
+      "Benjamin Stora : travaux sur l’histoire et les mémoires de la guerre d’Algérie."
+    ]
+  }
+]

@@ -131,3 +131,11 @@ Le projet doit avancer comme un instrument de recherche historique progressif :
 d’abord inventorier, puis OCRiser, puis vérifier, puis indexer, puis interroger.
 
 Ne pas faire l’inverse.
+## Repères historiques — V0
+
+- Module séparé du manifeste principal.
+- Données dans `src/data/historical-context.json`.
+- Logique dans `src/lib/historicalContext.ts`.
+- Affichage dans `HistoricalContextBox`.
+- Intégration uniquement sur la fiche document.
+- Statut méthodologique : contexte éditorial, non interprétation.

@@ -22,6 +22,8 @@ import {
   getDocumentTypeLabel,
   getStatusLabel,
 } from "@/lib/archiveManifest";
+import { getHistoricalContextForDateLabel } from "@/lib/historicalContext";
+import { HistoricalContextBox } from "@/components/historical-context-box";
 import type { ArchiveStatus } from "@/types/archive";
 
 export const dynamicParams = false;
@@ -47,6 +49,10 @@ export default async function DocumentPage({
   if (!collection) {
     notFound();
   }
+
+  const historicalContextMatch = getHistoricalContextForDateLabel(
+    document.dateLabel,
+  );
 
   return (
     <main className="min-h-screen bg-background pb-16">
@@ -177,6 +183,8 @@ export default async function DocumentPage({
               <MetaItem label="Resume" value={document.summary} />
             </div>
           </section>
+
+          <HistoricalContextBox match={historicalContextMatch} />
 
           <section className="border border-paper-border bg-paper p-6 md:p-8">
             <div className="mb-6 flex items-center gap-3">
