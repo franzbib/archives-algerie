@@ -54,6 +54,23 @@
       "notes": "Lot SHD 1H1644 FLN W4 pret pour revue ; images et lectures assistees non validees."
     },
     {
+      "lotId": "lot-fln-w4-003",
+      "collectionId": "shd-gr-1h1645-w4-traitres-executions",
+      "title": "SHD GR 1H1645 - Documents W4, executions de traitres, 1958-1962",
+      "sourceType": "google_drive",
+      "status": "planned",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1_oD2qLwvQieEHDx-h_JuMvawucyJTy90",
+        "inventoryManifest": null
+      },
+      "assetManifest": null,
+      "assistedReadingManifest": null,
+      "reviewRoute": null,
+      "legacyReviewRoute": null,
+      "itemCount": null,
+      "notes": "Source Drive identifiee par connecteur : dossier SHD GR 1H1645 doc W4(58-62), executions de traitres, contenant des images JPEG visibles dans le premier releve. Lot adapte a l'agent images existant ; contenu potentiellement sensible a afficher avec prudence documentaire."
+    },
+    {
       "lotId": "lot-frontiere-maroc-001",
       "collectionId": "shd-gr-9m2274-frontiere-maroc",
       "title": "SHD GR 9 M 2274 - Frontiere Maroc",
