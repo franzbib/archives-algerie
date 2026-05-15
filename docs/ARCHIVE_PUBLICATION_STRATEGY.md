@@ -291,6 +291,27 @@ l'affichage.
   manifeste exportable.
 - Garder les couts observables avant toute montee en volume.
 
+## Passage du sample au batch pilote
+
+Le `pilot sample` correspond aux 8 JPG pilotes deja convertis et publies pour
+tester l'affichage web. Le `pilot batch` correspond aux 41 fichiers Drive listes
+pour la collection pilote Boghari.
+
+Le passage au batch ne doit pas etre compris comme une publication de masse. Il
+doit rester une extension controlee du flux deja teste:
+
+1. verifier le manifeste `data/generated/pilot-batch-assets.example.json` ;
+2. telecharger le batch dans `.local/archive-batch/` seulement apres validation ;
+3. convertir localement les HEIC en JPG ;
+4. controler visuellement le lot ;
+5. publier eventuellement vers R2 avec un prefixe distinct, par exemple
+   `pilot/shd-1h4382-d1-boghari/batch/images` ;
+6. produire un manifeste public distinct avant toute integration applicative.
+
+Le sample de 8 images ne doit pas etre supprime: il reste le lot de reference
+pour comparer les resultats techniques, l'OCR, la lecture assistee et
+l'affichage.
+
 ## Etapes futures recommandees
 
 1. Creer un bucket R2 pilote.

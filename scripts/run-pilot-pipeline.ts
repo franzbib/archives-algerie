@@ -6,6 +6,7 @@ interface PipelineConfig {
   inventoryPath: string;
   language: string;
   limit: number;
+  mode: "sample" | "batch";
   skipConversion: boolean;
   skipDownload: boolean;
   skipInventory: boolean;
@@ -56,7 +57,10 @@ async function main() {
       ],
     },
     {
-      name: "2. Telechargement de l'echantillon",
+      name:
+        config.mode === "sample"
+          ? "2. Telechargement de l'echantillon"
+          : "2. Telechargement du lot pilote complet",
       skipped: config.skipDownload,
       args: [
         "scripts/download-drive-sample.ts",
@@ -66,6 +70,8 @@ async function main() {
         rawDirectory,
         "--limit",
         String(config.limit),
+        "--mode",
+        config.mode,
         "--confirm",
       ],
     },
@@ -133,6 +139,7 @@ function getConfig(): PipelineConfig {
     confirmed: process.argv.includes("--confirm"),
     inventoryPath: getArg("--inventory") ?? "data/generated/drive-inventory.pilot.json",
     language: getArg("--lang") ?? "fra",
+    mode: getMode(),
     limit: getLimit(),
     skipConversion: process.argv.includes("--skip-conversion"),
     skipDownload: process.argv.includes("--skip-download"),
@@ -149,6 +156,7 @@ function printIntro(config: PipelineConfig) {
   console.log(`Sources: ${config.sourcesPath}`);
   console.log(`Inventaire: ${config.inventoryPath}`);
   console.log(`Workspace local: ${config.workspacePath}`);
+  console.log(`Mode: ${config.mode}`);
   console.log(`Limite: ${config.limit}`);
   console.log(`Langue OCR: ${config.language}`);
   console.log("Ce pipeline ne lance aucune IA et ne cree aucun embedding.");
@@ -184,7 +192,7 @@ function getArg(name: string): string | undefined {
 function getLimit(): number {
   const rawLimit = getArg("--limit");
   if (!rawLimit) {
-    return 8;
+    return getMode() === "sample" ? 8 : 41;
   }
 
   const parsed = Number.parseInt(rawLimit, 10);
@@ -193,6 +201,15 @@ function getLimit(): number {
   }
 
   return parsed;
+}
+
+function getMode(): "sample" | "batch" {
+  const mode = getArg("--mode") ?? "sample";
+  if (mode !== "sample" && mode !== "batch") {
+    throw new Error('--mode doit etre "sample" ou "batch".');
+  }
+
+  return mode;
 }
 
 main().catch((error: unknown) => {

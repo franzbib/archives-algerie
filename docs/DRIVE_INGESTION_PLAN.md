@@ -148,6 +148,47 @@ rattachement page/document. Ce controle visuel doit preceder tout OCR.
 L'echantillon ne doit pas etre importe automatiquement dans le manifeste
 principal. Il reste une aide technique pour organiser la prochaine etape.
 
+## Pilot sample et pilot batch
+
+Deux perimetres doivent rester distincts:
+
+- `pilot sample`: les 8 images deja selectionnees avec `sampleCandidate: true`.
+  Ce sample sert a tester la chaine technique: telechargement local, conversion
+  HEIC -> JPG, OCR brut, normalisation, lecture assistee eventuelle et
+  publication pilote.
+- `pilot batch`: les 41 fichiers listes dans le dossier Drive pilote Boghari.
+  Ce batch prepare le passage a l'ensemble du dossier, mais il ne valide ni
+  l'ordre, ni les pages, ni les documents.
+
+Le fichier `data/generated/pilot-batch-assets.example.json` decrit ce lot
+complet comme un manifeste de preparation. Il ne signifie pas que les fichiers
+ont ete telecharges, convertis, OCRises ou publies.
+
+Les scripts locaux doivent etre lances avec un mode explicite quand on sort du
+sample:
+
+```powershell
+# Sample pilote: 8 images
+npx.cmd tsx scripts/download-drive-sample.ts --inventory data/generated/drive-inventory.pilot.json --out .local/archive-sample/raw --mode sample --limit 8 --confirm
+
+# Batch pilote complet: 41 images listees
+npx.cmd tsx scripts/download-drive-sample.ts --inventory data/generated/drive-inventory.pilot.json --out .local/archive-batch/raw --mode batch --limit 41 --confirm
+```
+
+Pour eviter de melanger les sorties, le batch complet doit utiliser un espace
+local separe, par exemple `.local/archive-batch/`, et non ecraser
+`.local/archive-sample/`.
+
+Le pipeline peut aussi etre prepare en mode batch, sans changer sa logique de
+prudence:
+
+```powershell
+npm.cmd run pipeline:pilot -- --sources scripts/drive-sources.pilot.example.json --inventory data/generated/drive-inventory.pilot.json --workspace .local/archive-batch --mode batch --limit 41 --lang fra --confirm
+```
+
+Cette commande reste a lancer seulement apres decision explicite. Elle ne lance
+aucune IA et ne cree aucun embedding.
+
 ## Telechargement controle de l'echantillon pilote
 
 Le telechargement local doit rester limite a l'echantillon pilote. Il sert a
@@ -179,7 +220,7 @@ Commande Windows PowerShell:
 
 ```powershell
 $env:GOOGLE_DRIVE_API_KEY="VOTRE_CLE"
-npx.cmd tsx scripts/download-drive-sample.ts --inventory data/generated/drive-inventory.pilot.json --out .local/archive-sample/raw --limit 8 --confirm
+npx.cmd tsx scripts/download-drive-sample.ts --inventory data/generated/drive-inventory.pilot.json --out .local/archive-sample/raw --mode sample --limit 8 --confirm
 ```
 
 Cette etape ne convertit pas les fichiers HEIC, ne lance pas d'OCR, n'appelle

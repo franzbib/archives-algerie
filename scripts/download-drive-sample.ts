@@ -28,10 +28,19 @@ interface DriveInventoryFile {
   sampleOrder?: number | null;
 }
 
+type DownloadMode = "sample" | "batch";
+
+interface DownloadCandidate {
+  batchOrder: number;
+  file: DriveInventoryFile;
+  source: DriveInventorySource;
+}
+
 interface DownloadManifest {
   downloadedAt: string;
   inventoryPath: string;
   outputDirectory: string;
+  mode: DownloadMode;
   limit: number;
   fileCount: number;
   warning: string;
@@ -45,6 +54,8 @@ interface DownloadManifestFile {
   fileName: string;
   localPath: string;
   mimeType: string;
+  batchOrder: number;
+  selectionMode: DownloadMode;
   sampleNote: string | null;
   sampleOrder: number | null;
   sizeBytes: number;
@@ -54,7 +65,8 @@ async function main() {
   const inventoryPath =
     getArg("--inventory") ?? "data/generated/drive-inventory.pilot.json";
   const outputDirectory = getArg("--out") ?? ".local/archive-sample/raw";
-  const limit = getLimit();
+  const mode = getMode();
+  const limit = getLimit(mode);
   const confirmed = process.argv.includes("--confirm");
   const apiKey = process.env.GOOGLE_DRIVE_API_KEY;
 
@@ -69,10 +81,14 @@ async function main() {
   }
 
   const inventory = await readJson<DriveInventory>(inventoryPath);
-  const candidates = getSampleCandidates(inventory).slice(0, limit);
+  const candidates = getDownloadCandidates(inventory, mode).slice(0, limit);
 
   if (candidates.length === 0) {
-    throw new Error("Aucun fichier sampleCandidate: true trouve dans l'inventaire.");
+    throw new Error(
+      mode === "sample"
+        ? "Aucun fichier sampleCandidate: true trouve dans l'inventaire."
+        : "Aucun fichier trouve dans l'inventaire pour le lot complet.",
+    );
   }
 
   await mkdir(outputDirectory, { recursive: true });
@@ -82,7 +98,7 @@ async function main() {
 
   for (const candidate of candidates) {
     const fileName = getUniqueFileName(
-      formatSampleFileName(candidate.file),
+      formatDownloadFileName(candidate),
       usedNames,
     );
     const localPath = path.join(outputDirectory, fileName);
@@ -96,6 +112,8 @@ async function main() {
       fileName: candidate.file.fileName,
       localPath,
       mimeType: candidate.file.mimeType,
+      batchOrder: candidate.batchOrder,
+      selectionMode: mode,
       sampleNote: candidate.file.sampleNote ?? null,
       sampleOrder: candidate.file.sampleOrder ?? null,
       sizeBytes: bytes.byteLength,
@@ -108,10 +126,13 @@ async function main() {
     downloadedAt: new Date().toISOString(),
     inventoryPath,
     outputDirectory,
+    mode,
     limit,
     fileCount: manifestFiles.length,
     warning:
-      "Telechargement brut de l'echantillon pilote: aucune conversion, aucun OCR, aucune notice validee.",
+      mode === "sample"
+        ? "Telechargement brut de l'echantillon pilote: aucune conversion, aucun OCR, aucune notice validee."
+        : "Telechargement brut du lot pilote complet: aucune conversion, aucun OCR, aucune notice validee.",
     files: manifestFiles,
   };
 
@@ -123,17 +144,32 @@ async function main() {
   console.log(`Download manifest written: ${manifestPath}`);
 }
 
-function getSampleCandidates(inventory: DriveInventory) {
-  return inventory.sources
-    .flatMap((source) =>
-      source.files
-        .filter((file) => file.sampleCandidate === true)
-        .map((file) => ({ file, source })),
-    )
+function getDownloadCandidates(
+  inventory: DriveInventory,
+  mode: DownloadMode,
+): DownloadCandidate[] {
+  const candidates = inventory.sources.flatMap((source) =>
+    source.files.map((file, index) => ({
+      batchOrder: index + 1,
+      file,
+      source,
+    })),
+  );
+
+  if (mode === "batch") {
+    return candidates;
+  }
+
+  return candidates
+    .filter((candidate) => candidate.file.sampleCandidate === true)
     .sort((a, b) => {
       const aOrder = a.file.sampleOrder ?? Number.MAX_SAFE_INTEGER;
       const bOrder = b.file.sampleOrder ?? Number.MAX_SAFE_INTEGER;
-      return aOrder - bOrder || a.file.fileName.localeCompare(b.file.fileName);
+      return (
+        aOrder - bOrder ||
+        a.file.fileName.localeCompare(b.file.fileName) ||
+        a.batchOrder - b.batchOrder
+      );
     });
 }
 
@@ -157,13 +193,14 @@ async function downloadDriveFile(
   return Buffer.from(await response.arrayBuffer());
 }
 
-function formatSampleFileName(file: DriveInventoryFile): string {
-  const prefix =
-    typeof file.sampleOrder === "number"
-      ? `${String(file.sampleOrder).padStart(2, "0")}-`
-      : "";
+function formatDownloadFileName(candidate: DownloadCandidate): string {
+  const order =
+    typeof candidate.file.sampleOrder === "number"
+      ? candidate.file.sampleOrder
+      : candidate.batchOrder;
+  const prefix = `${String(order).padStart(2, "0")}-`;
 
-  return `${prefix}${sanitizeFileName(file.fileName)}`;
+  return `${prefix}${sanitizeFileName(candidate.file.fileName)}`;
 }
 
 function sanitizeFileName(fileName: string): string {
@@ -200,10 +237,19 @@ function getArg(name: string): string | undefined {
   return index >= 0 ? process.argv[index + 1] : undefined;
 }
 
-function getLimit(): number {
+function getMode(): DownloadMode {
+  const mode = getArg("--mode") ?? "sample";
+  if (mode !== "sample" && mode !== "batch") {
+    throw new Error('--mode doit etre "sample" ou "batch".');
+  }
+
+  return mode;
+}
+
+function getLimit(mode: DownloadMode): number {
   const rawLimit = getArg("--limit");
   if (!rawLimit) {
-    return 8;
+    return mode === "sample" ? 8 : 41;
   }
 
   const parsed = Number.parseInt(rawLimit, 10);

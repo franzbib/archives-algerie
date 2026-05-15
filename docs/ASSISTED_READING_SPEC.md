@@ -115,3 +115,15 @@ Cette generation ne cree pas de transcription validee. Le script force toujours:
 Les sorties locales ne doivent pas etre commitees automatiquement dans
 `data/examples/`. Elles doivent etre relues avant toute publication ou
 integration applicative.
+
+## Passage au lot pilote complet
+
+Le passage du `pilot sample` de 8 images au `pilot batch` de 41 images ne change
+pas le statut des lectures assistees. Chaque lecture reste rattachee a une seule
+image et conserve `status: "assisted_unverified"` tant qu'elle n'a pas ete
+relue humainement.
+
+Le batch complet ne doit pas declencher une generation IA automatique de masse.
+Il doit d'abord passer par les memes etapes que le sample: controle visuel,
+OCR brut, normalisation mecanique, puis lecture assistee page par page si une
+decision explicite est prise.
