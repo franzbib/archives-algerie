@@ -1,6 +1,13 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { Archive, BookOpen, ClipboardList, FileText, Search } from "lucide-react";
+import {
+  Archive,
+  BookOpen,
+  ClipboardList,
+  FileText,
+  Layers3,
+  Search,
+} from "lucide-react";
 import { CollectionList } from "@/components/collection-list";
 import { StatCard } from "@/components/stat-card";
 import {
@@ -8,9 +15,25 @@ import {
   getCollections,
   getDocuments,
 } from "@/lib/archiveManifest";
+import {
+  getArchiveBatches,
+  getArchiveBatchPageCount,
+  getArchiveBatchSummary,
+  isArchiveBatchReviewReady,
+} from "@/lib/archiveBatches";
 
 export default function Home() {
   const summary = getArchiveManifestSummary();
+  const batches = getArchiveBatches();
+  const reviewReadyBatches = batches.filter(isArchiveBatchReviewReady);
+  const consultablePageCount = reviewReadyBatches.reduce(
+    (total, batch) => total + getArchiveBatchPageCount(batch),
+    0,
+  );
+  const assistedReadingCount = reviewReadyBatches.reduce(
+    (total, batch) => total + getArchiveBatchSummary(batch).assistedReadingCount,
+    0,
+  );
   const featuredCollections = getCollections().slice(0, 3);
   const pageCount = getDocuments().reduce(
     (total, document) => total + (document.pages?.length ?? 0),
@@ -26,31 +49,46 @@ export default function Home() {
               Archives historiques scannees sur l&apos;Algerie
             </p>
             <h1 className="mt-4 font-serif text-4xl font-medium tracking-tight text-foreground">
-              Explorer des fonds, cotes, dossiers et documents sans perdre le
-              contexte archivistique.
+              Explorer les lots d&apos;archives publies sans perdre le contexte
+              archivistique.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-foreground/80">
-              Cette V0 lit un manifeste local JSON pour naviguer dans des
-              collections issues de dossiers Drive. Elle prepare la consultation
-              image + OCR et une future recherche en langage naturel sourcee,
-              sans connecter encore Google Drive, OCR ou IA.
+              Les lots consultables regroupent les images publiees, leurs
+              lectures assistees non validees et les liens vers les sources. La
+              couche collections V0 reste disponible comme manifeste
+              archivistique, mais la consultation principale passe maintenant par
+              les lots.
             </p>
           </div>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <StatCard label="Collections" value={summary.collections} />
-            <StatCard label="Documents" value={summary.documents} />
-            <StatCard label="Pages V0" value={pageCount} />
-            <StatCard label="Statuts" value={Object.keys(summary.byStatus).length} />
+            <StatCard label="Lots en revue" value={reviewReadyBatches.length} />
+            <StatCard label="Pages consultables" value={consultablePageCount} />
+            <StatCard label="Lectures assistees" value={assistedReadingCount} />
+            <StatCard label="Lots suivis" value={batches.length} />
           </div>
 
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
-              href="/collections"
+              href="/lots"
               className="inline-flex items-center gap-2 border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background"
             >
+              <Layers3 className="h-4 w-4" />
+              Explorer les lots d&apos;archives
+            </Link>
+            <Link
+              href="/inventaire"
+              className="inline-flex items-center gap-2 border border-paper-border bg-background px-4 py-2 text-sm font-medium text-foreground"
+            >
+              <ClipboardList className="h-4 w-4" />
+              Suivi technique
+            </Link>
+            <Link
+              href="/collections"
+              className="inline-flex items-center gap-2 border border-paper-border bg-background px-4 py-2 text-sm font-medium text-foreground"
+            >
               <Archive className="h-4 w-4" />
-              Voir les collections
+              Manifeste V0
             </Link>
             <Link
               href="/questionnement"
@@ -58,13 +96,6 @@ export default function Home() {
             >
               <Search className="h-4 w-4" />
               Recherche future
-            </Link>
-            <Link
-              href="/inventaire"
-              className="inline-flex items-center gap-2 border border-paper-border bg-background px-4 py-2 text-sm font-medium text-foreground"
-            >
-              <ClipboardList className="h-4 w-4" />
-              Suivi inventaire
             </Link>
           </div>
         </div>
@@ -77,19 +108,24 @@ export default function Home() {
               Principe V0
             </p>
             <h2 className="mt-2 font-serif text-3xl font-medium text-foreground">
-              Une couche manifeste avant les traitements.
+              Des lots consultables, une couche manifeste conservee.
             </h2>
           </div>
           <div className="grid gap-3">
             <Principle
+              icon={<Layers3 className="h-5 w-5" />}
+              title="Consulter les lots"
+              text="Les lots publies donnent acces aux images, aux lectures assistees non validees et aux liens de source."
+            />
+            <Principle
               icon={<BookOpen className="h-5 w-5" />}
-              title="Respecter le classement"
-              text="Le fonds et la cote restent visibles avant le dossier, le document et les pages."
+              title="Distinguer le manifeste V0"
+              text="Les collections V0 decrivent les fonds et cotes ; elles ne remplacent pas les lots effectivement traites."
             />
             <Principle
               icon={<FileText className="h-5 w-5" />}
-              title="Preparer OCR et image"
-              text="Les fiches document montrent deja ou seront affiches l'image scannee et le texte OCR."
+              title="Ne pas valider automatiquement"
+              text="Une image publiee ou une lecture assistee reste non validee tant qu'une relecture humaine n'a pas eu lieu."
             />
             <Principle
               icon={<Search className="h-5 w-5" />}
@@ -106,8 +142,12 @@ export default function Home() {
                 Apercu
               </p>
               <h2 className="mt-2 font-serif text-3xl font-medium text-foreground">
-                Collections principales
+                Couche manifeste V0
               </h2>
+              <p className="mt-2 max-w-xl text-sm leading-6 text-foreground/70">
+                Ces collections restent utiles pour les cotes et notices, mais la
+                consultation des images traitees se fait dans les lots.
+              </p>
             </div>
             <Link
               href="/collections"
@@ -115,6 +155,11 @@ export default function Home() {
             >
               Tout voir
             </Link>
+          </div>
+          <div className="mb-6 grid gap-3 sm:grid-cols-3">
+            <StatCard label="Collections V0" value={summary.collections} />
+            <StatCard label="Documents V0" value={summary.documents} />
+            <StatCard label="Pages V0" value={pageCount} />
           </div>
           <CollectionList collections={featuredCollections} />
         </div>

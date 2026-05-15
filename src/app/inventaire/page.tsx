@@ -84,6 +84,20 @@ export default function InventoryPage() {
 
         <div className="mb-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           <Link
+            href="/lots"
+            className="group border border-foreground bg-paper p-5 transition-colors hover:border-warm/50"
+          >
+            <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
+              Consultation
+            </p>
+            <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
+              Lots d&apos;archives
+            </h3>
+            <p className="mt-2 text-xs leading-5 text-foreground/70">
+              Route principale pour consulter les lots publies ou planifies, sans validation automatique.
+            </p>
+          </Link>
+          <Link
             href="/inventaire-drive"
             className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
           >
@@ -124,7 +138,7 @@ export default function InventoryPage() {
             className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
           >
             <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
-              Publication
+              Historique pilote
             </p>
             <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
               ContrÃ´le des images pilotes publiÃ©es
@@ -138,27 +152,13 @@ export default function InventoryPage() {
             className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
           >
             <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
-              Batch
+              Route historique
             </p>
             <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
               Controle du lot Boghari
             </h3>
             <p className="mt-2 text-xs leading-5 text-foreground/70">
-              Consultation des 41 images publiees et de leurs lectures assistees non validees.
-            </p>
-          </Link>
-          <Link
-            href="/lots"
-            className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
-          >
-            <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
-              Lots
-            </p>
-            <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
-              Gestion multi-lots
-            </h3>
-            <p className="mt-2 text-xs leading-5 text-foreground/70">
-              Liste des lots publies ou planifies, sans validation automatique.
+              Ancien acces specialise au lot Boghari ; la consultation principale passe par /lots.
             </p>
           </Link>
         </div>

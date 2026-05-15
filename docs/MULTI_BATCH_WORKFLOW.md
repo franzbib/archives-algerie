@@ -116,11 +116,21 @@ Conserver les routes historiques :
 - `/controle-pilote`
 - `/controle-batch`
 
+Ces routes historiques restent disponibles comme routes de transition, de
+controle ou de compatibilite. Elles ne doivent plus etre presentees comme
+l'entree principale de consultation.
+
 Préparer les routes génériques :
 
 - `/lots`
 - `/lots/[lotId]`
 - `/lots/[lotId]/[reviewId]`
+
+`/lots` est desormais la route principale de consultation multi-lots. L'accueil
+et le suivi d'inventaire doivent orienter naturellement vers cette route pour
+les lots publies ou planifies. Les collections V0 restent une couche de
+manifeste local, utile pour les cotes et notices, mais elles ne doivent pas etre
+confondues avec les lots effectivement traites.
 
 Les routes historiques peuvent devenir des alias éditoriaux ou des redirections internes vers le nouveau modèle.
 
