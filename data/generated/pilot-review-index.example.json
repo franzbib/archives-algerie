@@ -1,0 +1,82 @@
+[
+  {
+    "reviewId": "page-01",
+    "assetFileName": "01-20251127_104045.jpg",
+    "publicAssetId": "pilot/shd-1h4382-d1-boghari/images/01-20251127_104045.jpg",
+    "assistedReadingExample": "data/examples/assisted-reading-page-01.example.json",
+    "reviewStatus": "assisted_unverified",
+    "humanValidationStatus": "not_validated",
+    "confidence": "medium",
+    "notes": "Premiere page pilote avec lecture assistee exemple."
+  },
+  {
+    "reviewId": "page-02",
+    "assetFileName": "02-20251127_104404.jpg",
+    "publicAssetId": "pilot/shd-1h4382-d1-boghari/images/02-20251127_104404.jpg",
+    "assistedReadingExample": null,
+    "reviewStatus": "image_only",
+    "humanValidationStatus": "not_validated",
+    "confidence": "low",
+    "notes": "Image pilote publiee ; lecture assistee non disponible."
+  },
+  {
+    "reviewId": "page-03",
+    "assetFileName": "03-20251127_104448.jpg",
+    "publicAssetId": "pilot/shd-1h4382-d1-boghari/images/03-20251127_104448.jpg",
+    "assistedReadingExample": null,
+    "reviewStatus": "image_only",
+    "humanValidationStatus": "not_validated",
+    "confidence": "low",
+    "notes": "Image pilote publiee ; lecture assistee non disponible."
+  },
+  {
+    "reviewId": "page-04",
+    "assetFileName": "04-20251127_104502.jpg",
+    "publicAssetId": "pilot/shd-1h4382-d1-boghari/images/04-20251127_104502.jpg",
+    "assistedReadingExample": null,
+    "reviewStatus": "image_only",
+    "humanValidationStatus": "not_validated",
+    "confidence": "low",
+    "notes": "Image pilote publiee ; lecture assistee non disponible."
+  },
+  {
+    "reviewId": "page-05",
+    "assetFileName": "05-20251127_104513.jpg",
+    "publicAssetId": "pilot/shd-1h4382-d1-boghari/images/05-20251127_104513.jpg",
+    "assistedReadingExample": null,
+    "reviewStatus": "image_only",
+    "humanValidationStatus": "not_validated",
+    "confidence": "low",
+    "notes": "Image pilote publiee ; lecture assistee non disponible."
+  },
+  {
+    "reviewId": "page-06",
+    "assetFileName": "06-20251127_110158.jpg",
+    "publicAssetId": "pilot/shd-1h4382-d1-boghari/images/06-20251127_110158.jpg",
+    "assistedReadingExample": null,
+    "reviewStatus": "image_only",
+    "humanValidationStatus": "not_validated",
+    "confidence": "low",
+    "notes": "Image pilote publiee ; lecture assistee non disponible."
+  },
+  {
+    "reviewId": "page-07",
+    "assetFileName": "07-20251127_110715.jpg",
+    "publicAssetId": "pilot/shd-1h4382-d1-boghari/images/07-20251127_110715.jpg",
+    "assistedReadingExample": null,
+    "reviewStatus": "image_only",
+    "humanValidationStatus": "not_validated",
+    "confidence": "low",
+    "notes": "Image pilote publiee ; lecture assistee non disponible."
+  },
+  {
+    "reviewId": "page-08",
+    "assetFileName": "08-20251127_110725.jpg",
+    "publicAssetId": "pilot/shd-1h4382-d1-boghari/images/08-20251127_110725.jpg",
+    "assistedReadingExample": null,
+    "reviewStatus": "image_only",
+    "humanValidationStatus": "not_validated",
+    "confidence": "low",
+    "notes": "Image pilote publiee ; lecture assistee non disponible."
+  }
+]

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, ExternalLink, ShieldAlert } from "lucide-react";
 import { StatusBadge } from "@/components/ui/status-badge";
+import { getPilotReviewItemByAssetFileName } from "@/lib/pilotReview";
 import pilotAssetsManifest from "../../../data/generated/public-pilot-assets.example.json";
 
 type PilotAsset = {
@@ -95,6 +96,8 @@ export default function PilotControlPage() {
 }
 
 function PilotAssetCard({ asset, order }: { asset: PilotAsset; order: number }) {
+  const reviewItem = getPilotReviewItemByAssetFileName(asset.localJpgFileName);
+
   return (
     <article className="border border-paper-border bg-paper">
       <div className="border-b border-paper-border bg-background/60 px-5 py-4">
@@ -135,10 +138,10 @@ function PilotAssetCard({ asset, order }: { asset: PilotAsset; order: number }) 
         <p className="text-sm leading-6 text-foreground/75">{asset.note}</p>
 
         <div className="flex flex-wrap gap-3">
-          {order === 1 && (
+          {reviewItem && (
             <Link
               className="inline-flex items-center gap-2 text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
-              href="/controle-pilote/page-01"
+              href={`/controle-pilote/${reviewItem.reviewId}`}
             >
               Voir le controle detaille
             </Link>

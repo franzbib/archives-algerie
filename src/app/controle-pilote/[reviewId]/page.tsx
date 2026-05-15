@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import {
   ArrowLeft,
   ClipboardCheck,
@@ -7,49 +8,45 @@ import {
   ShieldAlert,
 } from "lucide-react";
 import { StatusBadge } from "@/components/ui/status-badge";
-import pilotAssetsManifest from "../../../../data/generated/public-pilot-assets.example.json";
-import assistedReadingExample from "../../../../data/examples/assisted-reading-page-01.example.json";
+import {
+  getAssistedReadingForReview,
+  getPilotReviewItemById,
+  getPilotReviewItems,
+  getPublicPilotAssetForReview,
+} from "@/lib/pilotReview";
+import type {
+  AssistedReadingExample,
+  AssistedReadingUncertainty,
+  PilotReviewItem,
+  PublicPilotAsset,
+} from "@/lib/pilotReview";
 
-type PilotAsset = {
-  collectionId: string;
-  originalDriveFileId: string;
-  originalDriveUrl: string;
-  localJpgFileName: string;
-  r2ObjectKey: string;
-  publicUrl: string;
-  publicationStatus: "image_published_unvalidated";
-  validationStatus: "unverified";
-  note: string;
-};
+export const dynamicParams = false;
 
-type PilotAssetsManifest = {
-  assets: PilotAsset[];
-};
+export function generateStaticParams() {
+  return getPilotReviewItems().map((item) => ({ reviewId: item.reviewId }));
+}
 
-type AssistedReadingExample = {
-  assistedReadingText: string;
-  status: "assisted_unverified";
-  uncertainties: AssistedReadingUncertainty[];
-  humanValidation: {
-    validated: boolean;
-    validatedBy: string | null;
-    validatedAt: string | null;
-    notes: string | null;
-  };
-};
+export default async function PilotReviewPage({
+  params,
+}: {
+  params: Promise<{ reviewId: string }>;
+}) {
+  const { reviewId } = await params;
+  const reviewItem = getPilotReviewItemById(reviewId);
 
-type AssistedReadingUncertainty = {
-  fragment: string;
-  suggestion: string;
-  issue: string;
-  confidence: "low" | "medium" | "high";
-  note: string;
-};
+  if (!reviewItem) {
+    notFound();
+  }
 
-const firstPilotAsset = (pilotAssetsManifest as PilotAssetsManifest).assets[0];
-const assistedReading = assistedReadingExample as AssistedReadingExample;
+  const asset = getPublicPilotAssetForReview(reviewItem);
 
-export default function PilotPage01Review() {
+  if (!asset) {
+    notFound();
+  }
+
+  const assistedReading = getAssistedReadingForReview(reviewItem);
+
   return (
     <main className="min-h-screen bg-background pb-16">
       <div className="border-b border-paper-border bg-paper/60">
@@ -77,32 +74,48 @@ export default function PilotPage01Review() {
             Controle detaille pilote
           </p>
           <h1 className="mt-3 font-serif text-4xl font-medium text-foreground md:text-5xl">
-            Image pilote 01
+            Image pilote {formatReviewTitle(reviewItem.reviewId)}
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-7 text-foreground/80">
-            Cette page rapproche l&apos;image publiee sur R2 d&apos;une lecture
-            assistee exemple deja marquee comme non validee. Elle ne publie pas
-            les OCR locaux et ne valide pas la page.
+            Cette page rapproche une image publiee sur R2 d&apos;une eventuelle
+            lecture assistee exemple. Elle ne publie pas les OCR locaux et ne
+            valide ni la page ni le document.
           </p>
         </div>
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-8 px-6 py-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(360px,0.85fr)] lg:px-8">
         <section className="space-y-8">
-          <SourceVisual asset={firstPilotAsset} />
-          <MethodologyBlock />
+          <SourceVisual asset={asset} reviewItem={reviewItem} />
+          <MethodologyBlock assistedReading={assistedReading} />
         </section>
 
         <aside className="space-y-8">
-          <AssistedReadingPanel reading={assistedReading} />
-          <HumanValidationPanel reading={assistedReading} />
+          {assistedReading ? (
+            <AssistedReadingPanel
+              reading={assistedReading}
+              reviewItem={reviewItem}
+            />
+          ) : (
+            <MissingAssistedReadingPanel reviewItem={reviewItem} />
+          )}
+          <HumanValidationPanel
+            assistedReading={assistedReading}
+            reviewItem={reviewItem}
+          />
         </aside>
       </section>
     </main>
   );
 }
 
-function SourceVisual({ asset }: { asset: PilotAsset }) {
+function SourceVisual({
+  asset,
+  reviewItem,
+}: {
+  asset: PublicPilotAsset;
+  reviewItem: PilotReviewItem;
+}) {
   return (
     <section className="border border-paper-border bg-paper">
       <div className="border-b border-paper-border bg-background/60 px-5 py-4">
@@ -125,7 +138,7 @@ function SourceVisual({ asset }: { asset: PilotAsset }) {
       <div className="bg-background p-4">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          alt={`Image pilote 01 - ${asset.localJpgFileName}`}
+          alt={`Image pilote ${reviewItem.reviewId} - ${asset.localJpgFileName}`}
           className="max-h-[850px] w-full border border-paper-border bg-paper object-contain"
           src={asset.publicUrl}
         />
@@ -139,6 +152,8 @@ function SourceVisual({ asset }: { asset: PilotAsset }) {
           <MetaItem label="Objet R2" value={asset.r2ObjectKey} />
           <MetaItem label="Fichier Drive" value={asset.originalDriveFileId} />
           <MetaItem label="Nom fichier" value={asset.localJpgFileName} />
+          <MetaItem label="Statut controle" value={reviewItem.reviewStatus} />
+          <MetaItem label="Confiance" value={reviewItem.confidence} />
         </dl>
 
         <div className="border border-paper-border bg-background p-4 text-sm leading-6 text-foreground/80">
@@ -146,9 +161,9 @@ function SourceVisual({ asset }: { asset: PilotAsset }) {
             Prudence
           </p>
           <p className="mt-2">
-            Cette image pilote n&apos;est pas encore validee comme page definitive.
-            Son ordre, son rattachement documentaire et sa transcription restent
-            a verifier.
+            Cette image pilote n&apos;est pas encore validee comme page
+            definitive. Son ordre, son rattachement documentaire et sa
+            transcription restent a verifier.
           </p>
         </div>
 
@@ -161,7 +176,13 @@ function SourceVisual({ asset }: { asset: PilotAsset }) {
   );
 }
 
-function AssistedReadingPanel({ reading }: { reading: AssistedReadingExample }) {
+function AssistedReadingPanel({
+  reading,
+  reviewItem,
+}: {
+  reading: AssistedReadingExample;
+  reviewItem: PilotReviewItem;
+}) {
   return (
     <section className="border border-paper-border bg-paper">
       <div className="border-b border-paper-border bg-background/60 px-5 py-4">
@@ -180,7 +201,7 @@ function AssistedReadingPanel({ reading }: { reading: AssistedReadingExample }) 
             Validation humaine : {reading.humanValidation.validated ? "oui" : "non"}
           </StatusBadge>
           <StatusBadge variant="warning">
-            Confiance : {getOverallConfidence(reading.uncertainties)}
+            Confiance : {reviewItem.confidence}
           </StatusBadge>
         </div>
 
@@ -199,43 +220,90 @@ function AssistedReadingPanel({ reading }: { reading: AssistedReadingExample }) 
           {reading.assistedReadingText}
         </pre>
 
-        <section>
-          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-            Incertitudes principales
-          </p>
-          <div className="mt-3 space-y-3">
-            {reading.uncertainties.map((uncertainty) => (
-              <div
-                className="border border-paper-border bg-background p-3 text-sm"
-                key={`${uncertainty.issue}-${uncertainty.fragment}`}
-              >
-                <div className="flex flex-wrap items-center gap-2">
-                  <StatusBadge variant="warning">{uncertainty.confidence}</StatusBadge>
-                  <span className="font-mono text-xs uppercase tracking-widest text-warm">
-                    {uncertainty.issue}
-                  </span>
-                </div>
-                <p className="mt-2 font-medium text-foreground">
-                  {uncertainty.fragment}
-                </p>
-                {uncertainty.suggestion && (
-                  <p className="mt-1 text-foreground/75">
-                    Suggestion : {uncertainty.suggestion}
-                  </p>
-                )}
-                <p className="mt-2 leading-6 text-foreground/75">
-                  {uncertainty.note}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <UncertaintiesList uncertainties={reading.uncertainties} />
       </div>
     </section>
   );
 }
 
-function MethodologyBlock() {
+function MissingAssistedReadingPanel({
+  reviewItem,
+}: {
+  reviewItem: PilotReviewItem;
+}) {
+  return (
+    <section className="border border-paper-border bg-paper p-6">
+      <div className="flex items-start gap-3">
+        <ShieldAlert className="mt-1 h-5 w-5 shrink-0 text-warm" />
+        <div>
+          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+            B. Lecture assistee non disponible
+          </p>
+          <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
+            Image seule
+          </h2>
+          <div className="mt-4 space-y-2 text-sm leading-6 text-foreground/80">
+            <p>Aucune lecture assistee exemple n&apos;est reliee a cette image.</p>
+            <p>
+              Statut de controle : {reviewItem.reviewStatus}. Confiance :
+              {` ${reviewItem.confidence}`}.
+            </p>
+            <p>
+              L&apos;image peut etre consultee, mais elle ne doit pas etre
+              consideree comme page/document valide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function UncertaintiesList({
+  uncertainties,
+}: {
+  uncertainties: AssistedReadingUncertainty[];
+}) {
+  return (
+    <section>
+      <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+        Incertitudes principales
+      </p>
+      <div className="mt-3 space-y-3">
+        {uncertainties.map((uncertainty) => (
+          <div
+            className="border border-paper-border bg-background p-3 text-sm"
+            key={`${uncertainty.issue}-${uncertainty.fragment}`}
+          >
+            <div className="flex flex-wrap items-center gap-2">
+              <StatusBadge variant="warning">{uncertainty.confidence}</StatusBadge>
+              <span className="font-mono text-xs uppercase tracking-widest text-warm">
+                {uncertainty.issue}
+              </span>
+            </div>
+            <p className="mt-2 font-medium text-foreground">
+              {uncertainty.fragment}
+            </p>
+            {uncertainty.suggestion && (
+              <p className="mt-1 text-foreground/75">
+                Suggestion : {uncertainty.suggestion}
+              </p>
+            )}
+            <p className="mt-2 leading-6 text-foreground/75">
+              {uncertainty.note}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function MethodologyBlock({
+  assistedReading,
+}: {
+  assistedReading: AssistedReadingExample | null;
+}) {
   return (
     <section className="border border-paper-border bg-paper p-6">
       <div className="flex items-start gap-3">
@@ -247,7 +315,11 @@ function MethodologyBlock() {
           <div className="mt-3 space-y-2 text-sm leading-6 text-foreground/80">
             <p>OCR brut produit localement, mais non publie dans l&apos;application.</p>
             <p>OCR nettoye produit localement, mais non publie dans l&apos;application.</p>
-            <p>Lecture assistee fournie ici comme exemple non valide.</p>
+            <p>
+              {assistedReading
+                ? "Lecture assistee fournie ici comme exemple non valide."
+                : "Lecture assistee non disponible pour cette image pilote."}
+            </p>
             <p>Transcription validee non disponible.</p>
           </div>
         </div>
@@ -256,7 +328,13 @@ function MethodologyBlock() {
   );
 }
 
-function HumanValidationPanel({ reading }: { reading: AssistedReadingExample }) {
+function HumanValidationPanel({
+  assistedReading,
+  reviewItem,
+}: {
+  assistedReading: AssistedReadingExample | null;
+  reviewItem: PilotReviewItem;
+}) {
   return (
     <section className="border border-paper-border bg-paper p-6">
       <div className="flex items-start gap-3">
@@ -269,15 +347,19 @@ function HumanValidationPanel({ reading }: { reading: AssistedReadingExample }) 
             Non valide
           </h2>
           <div className="mt-4 space-y-2 text-sm leading-6 text-foreground/80">
-            <p>Statut : {reading.humanValidation.validated ? "Valide" : "Non valide"}</p>
+            <p>Statut : {reviewItem.humanValidationStatus}</p>
+            {assistedReading && (
+              <p>
+                Lecture assistee validee :{" "}
+                {assistedReading.humanValidation.validated ? "oui" : "non"}
+              </p>
+            )}
             <p>A verifier sur image.</p>
             <p>
               Les noms propres, lieux, dates et sigles doivent etre controles
               avant toute citation ou indexation.
             </p>
-            <p>
-              Aucun workflow d&apos;edition n&apos;est actif dans cette etape.
-            </p>
+            <p>Aucun workflow d&apos;edition n&apos;est actif dans cette etape.</p>
           </div>
         </div>
       </div>
@@ -310,16 +392,6 @@ function MetaItem({ label, value }: { label: string; value: string }) {
   );
 }
 
-function getOverallConfidence(
-  uncertainties: AssistedReadingUncertainty[],
-): "low" | "medium" | "high" {
-  if (uncertainties.some((uncertainty) => uncertainty.confidence === "low")) {
-    return "low";
-  }
-
-  if (uncertainties.some((uncertainty) => uncertainty.confidence === "medium")) {
-    return "medium";
-  }
-
-  return "high";
+function formatReviewTitle(reviewId: string): string {
+  return reviewId.replace("page-", "").padStart(2, "0");
 }
