@@ -55,7 +55,7 @@ export function CollectionsBrowser({ collections, facets }: CollectionsBrowserPr
 
   return (
     <section className="mx-auto grid max-w-6xl gap-8 px-6 py-10 lg:grid-cols-[300px_1fr] lg:px-8">
-      <aside className="border border-paper-border bg-paper p-5 shadow-sm">
+      <aside className="border border-paper-border bg-paper p-5">
         <div className="flex items-center gap-2 border-b border-paper-border pb-3">
           <Filter className="h-4 w-4 text-warm" />
           <h2 className="font-serif text-lg font-medium">Filtres</h2>

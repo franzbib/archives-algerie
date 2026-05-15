@@ -64,7 +64,7 @@ const safeguards = [
 export default function QuestionnementPage() {
   return (
     <main className="min-h-screen bg-background pb-16">
-      <div className="border-b border-paper-border bg-paper/50">
+      <div className="border-b border-paper-border bg-paper/60">
         <div className="mx-auto max-w-6xl px-6 py-4 lg:px-8">
           <Link
             href="/"
@@ -81,7 +81,7 @@ export default function QuestionnementPage() {
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
             Recherche en langage naturel - méthode future
           </p>
-          <h1 className="mt-3 max-w-4xl font-serif text-4xl font-medium text-foreground md:text-5xl">
+          <h1 className="mt-3 max-w-4xl font-serif text-4xl font-medium text-foreground">
             Préparer une interrogation sourcée des archives, sans simuler une
             recherche active.
           </h1>

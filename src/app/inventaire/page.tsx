@@ -33,7 +33,7 @@ export default function InventoryPage() {
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
             Pilotage du manifeste local
           </p>
-          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground md:text-5xl">
+          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground">
             Suivi de l&apos;inventaire
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-7 text-foreground/80">

@@ -25,7 +25,7 @@ export default function Home() {
             <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
               Archives historiques scannees sur l&apos;Algerie
             </p>
-            <h1 className="mt-4 font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
+            <h1 className="mt-4 font-serif text-4xl font-medium tracking-tight text-foreground">
               Explorer des fonds, cotes, dossiers et documents sans perdre le
               contexte archivistique.
             </h1>

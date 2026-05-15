@@ -81,7 +81,7 @@ export default async function DocumentPage({
       </div>
 
       <section className="mx-auto max-w-6xl px-6 py-12 lg:px-8">
-        <div className="border border-paper-border bg-paper p-6 shadow-sm md:p-8">
+        <div className="border border-paper-border bg-paper p-6 md:p-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-3xl">
               <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">

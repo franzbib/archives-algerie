@@ -7,7 +7,7 @@ export default function CollectionsPage() {
 
   return (
     <main className="min-h-screen bg-background">
-      <section className="border-b border-paper-border bg-paper/70">
+      <section className="border-b border-paper-border bg-paper/60">
         <div className="mx-auto max-w-6xl px-6 py-12 lg:px-8">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
             Catalogue
