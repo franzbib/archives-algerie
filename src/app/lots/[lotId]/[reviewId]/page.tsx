@@ -65,6 +65,7 @@ export default async function GenericLotReviewPage({
 
   const assistedReading = getAssistedReadingForArchiveBatchReview(batch, reviewItem);
   const humanReviewNote = getHumanReviewNote(batch.lotId, reviewItem.reviewId);
+  const humanReviewTemplate = getHumanReviewTemplate(batch.lotId, reviewItem.reviewId);
   const reviewItems = getArchiveBatchReviewItems(batch);
   const currentIndex = reviewItems.findIndex((item) => item.reviewId === reviewId);
   const prevItem = currentIndex > 0 ? reviewItems[currentIndex - 1] : null;
@@ -141,6 +142,7 @@ export default async function GenericLotReviewPage({
             <MissingAssistedReadingPanel reviewItem={reviewItem} />
           )}
           <HumanValidationPanel />
+          <CopyableHumanReviewTemplate template={humanReviewTemplate} />
           {humanReviewNote && <HumanReviewNotesPanel note={humanReviewNote} />}
         </aside>
       </section>
@@ -395,6 +397,35 @@ function HumanValidationPanel() {
   );
 }
 
+function CopyableHumanReviewTemplate({ template }: { template: string }) {
+  return (
+    <section className="border border-paper-border bg-paper">
+      <div className="border-b border-paper-border bg-background/60 px-5 py-4">
+        <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+          D. Fiche de relecture a copier
+        </p>
+        <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
+          Modele JSON non persistant
+        </h2>
+      </div>
+
+      <div className="space-y-4 p-5">
+        <div className="border border-paper-border bg-background p-4 text-sm leading-6 text-foreground/80">
+          <p>
+            Ce modele sert a preparer une proposition de relecture hors de
+            l&apos;application. Il ne sauvegarde rien, ne valide rien et ne modifie
+            pas la lecture assistee.
+          </p>
+        </div>
+
+        <pre className="max-h-[420px] overflow-auto whitespace-pre-wrap border border-paper-border bg-background p-4 font-mono text-xs leading-6 text-foreground">
+          {template}
+        </pre>
+      </div>
+    </section>
+  );
+}
+
 function HumanReviewNotesPanel({ note }: { note: HumanReviewNote }) {
   return (
     <section className="border border-paper-border bg-paper">
@@ -493,4 +524,25 @@ function MetaItem({ label, value }: { label: string; value: string }) {
 
 function formatReviewTitle(reviewId: string): string {
   return reviewId.replace("page-", "").padStart(2, "0");
+}
+
+function getHumanReviewTemplate(lotId: string, reviewId: string): string {
+  return JSON.stringify(
+    {
+      lotId,
+      reviewId,
+      status: "correction_proposed",
+      proposedTranscription: "",
+      notes: "",
+      properNamesNotes: "",
+      placesNotes: "",
+      datesNotes: "",
+      acronymsNotes: "",
+      reviewedBy: "",
+      reviewedAt: "",
+      validated: false,
+    },
+    null,
+    2,
+  );
 }
