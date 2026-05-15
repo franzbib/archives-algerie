@@ -1,4 +1,6 @@
 import archiveBatchesManifest from "../../data/generated/archive-batches.example.json";
+import flnW4AssistedReadings from "../../data/generated/batches/lot-fln-w4-001/assisted-readings.json";
+import flnW4PublicAssets from "../../data/generated/batches/lot-fln-w4-001/public-assets.json";
 import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
 import batchAssistedReadings from "../../data/generated/pilot-batch-assisted-readings.example.json";
 import type {
@@ -38,6 +40,7 @@ export type ArchiveBatchAsset = {
   collectionId: string;
   originalDriveFileId: string;
   originalDriveUrl: string;
+  localJpgFile?: string;
   localJpgFileName: string;
   r2ObjectKey: string;
   publicUrl: string;
@@ -62,14 +65,24 @@ type ArchiveBatchesManifest = {
 };
 
 type AssetManifest = {
-  assets: ArchiveBatchAsset[];
+  assets: RawArchiveBatchAsset[];
+};
+
+type RawArchiveBatchAsset = Omit<ArchiveBatchAsset, "localJpgFileName" | "reviewId"> & {
+  localJpgFile?: string;
+  localJpgFileName?: string;
+  reviewId?: string;
 };
 
 const batches = (archiveBatchesManifest as ArchiveBatchesManifest).batches;
 const assetManifestRegistry: Record<string, AssetManifest> = {
+  "data/generated/batches/lot-fln-w4-001/public-assets.json":
+    flnW4PublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
 };
 const assistedReadingManifestRegistry: Record<string, AssistedReadingExample[]> = {
+  "data/generated/batches/lot-fln-w4-001/assisted-readings.json":
+    flnW4AssistedReadings as AssistedReadingExample[],
   "data/generated/pilot-batch-assisted-readings.example.json":
     batchAssistedReadings as AssistedReadingExample[],
 };
@@ -96,7 +109,9 @@ export function isArchiveBatchReviewReady(batch: ArchiveBatch): boolean {
 export function getAssetsForBatch(batch: ArchiveBatch): ArchiveBatchAsset[] {
   if (!batch.assetManifest) return [];
 
-  return assetManifestRegistry[batch.assetManifest]?.assets ?? [];
+  return (assetManifestRegistry[batch.assetManifest]?.assets ?? []).map(
+    normalizeArchiveBatchAsset,
+  );
 }
 
 export function getAssistedReadingsForBatch(
@@ -170,4 +185,28 @@ export function getArchiveBatchSummary(batch: ArchiveBatch) {
     assistedReadingCount,
     imageOnlyCount: reviewItems.length - assistedReadingCount,
   };
+}
+
+function normalizeArchiveBatchAsset(asset: RawArchiveBatchAsset): ArchiveBatchAsset {
+  const localJpgFileName =
+    asset.localJpgFileName ?? getFileNameFromPath(asset.localJpgFile ?? asset.r2ObjectKey);
+
+  return {
+    ...asset,
+    localJpgFileName,
+    reviewId: asset.reviewId ?? getReviewIdFromFileName(localJpgFileName),
+  };
+}
+
+function getFileNameFromPath(filePath: string): string {
+  return filePath.split(/[\\/]/).pop() ?? filePath;
+}
+
+function getReviewIdFromFileName(fileName: string): string {
+  const match = fileName.match(/^(\d{1,4})[-_]/);
+  if (!match) {
+    return fileName.replace(/\.[^.]+$/, "").replace(/[^a-zA-Z0-9_-]+/g, "-");
+  }
+
+  return `page-${match[1].padStart(2, "0")}`;
 }

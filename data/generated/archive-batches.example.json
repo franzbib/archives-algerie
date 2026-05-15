@@ -24,17 +24,17 @@
       "collectionId": "shd-1h1647-d1-fln-w4",
       "title": "SHD 1H1647 D1 - Documents FLN recuperes W4",
       "sourceType": "google_drive",
-      "status": "planned",
+      "status": "review_ready",
       "driveSource": {
         "driveFolderUrl": "https://drive.google.com/drive/folders/1sj-XM3WhKbahdV7cTbsg-ibB1l42ytWB",
         "inventoryManifest": null
       },
-      "assetManifest": null,
-      "assistedReadingManifest": null,
-      "reviewRoute": null,
+      "assetManifest": "data/generated/batches/lot-fln-w4-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-fln-w4-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-fln-w4-001",
       "legacyReviewRoute": null,
-      "itemCount": null,
-      "notes": "Source Drive identifiee par connecteur ; dossier contenant au moins 100 images JPEG visibles dans le premier releve. Inventaire controle a generer avant traitement."
+      "itemCount": 100,
+      "notes": "Lot FLN W4 pret pour revue ; images et lectures assistees non validees."
     },
     {
       "lotId": "lot-frontiere-maroc-001",
