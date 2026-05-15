@@ -184,8 +184,6 @@ export default async function DocumentPage({
             </div>
           </section>
 
-          <HistoricalContextBox match={historicalContextMatch} />
-
           <section className="border border-paper-border bg-paper p-6 md:p-8">
             <div className="mb-6 flex items-center gap-3">
               <Search className="h-5 w-5 text-warm" />
@@ -228,6 +226,8 @@ export default async function DocumentPage({
               </div>
             )}
           </section>
+
+          <HistoricalContextBox match={historicalContextMatch} />
 
           <section className="border border-paper-border bg-paper p-6 md:p-8">
             <div className="flex items-start gap-3">
