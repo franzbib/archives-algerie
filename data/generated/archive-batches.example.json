@@ -43,7 +43,7 @@
       "sourceType": "google_drive",
       "status": "planned",
       "driveSource": {
-        "driveFolderUrl": null,
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1-UEhKd4GCrHot0N5TqxZw-sHRgLN7Fku",
         "inventoryManifest": null
       },
       "assetManifest": null,
@@ -51,7 +51,7 @@
       "reviewRoute": null,
       "legacyReviewRoute": null,
       "itemCount": null,
-      "notes": "Lot prevu ; le traitement ne doit pas demarrer sans inventaire controle."
+      "notes": "Source Drive identifiee par connecteur : dossier SHD GR 9 M 2274 Frontiere Maroc contenant 8 fichiers PDF visibles dans le premier releve. Ce lot est probablement un lot PDF, pas un lot JPG/HEIC ; l'agent local actuel doit etre adapte ou lance prudemment avec un traitement PDF specifique."
     }
   ]
 }
