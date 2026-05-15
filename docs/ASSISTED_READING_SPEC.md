@@ -127,3 +127,40 @@ Le batch complet ne doit pas declencher une generation IA automatique de masse.
 Il doit d'abord passer par les memes etapes que le sample: controle visuel,
 OCR brut, normalisation mecanique, puis lecture assistee page par page si une
 decision explicite est prise.
+
+## Lecture assistee V2 avec image + OCR
+
+Une V2 de lecture assistee peut utiliser simultanement:
+
+- l'image JPG locale de la page ;
+- l'OCR nettoye mecaniquement correspondant.
+
+Cette approche peut ameliorer la lecture probable en comparant directement
+l'OCR avec l'image. Elle ne change pas le statut methodologique: le resultat
+reste une hypothese non validee, avec `status: "assisted_unverified"` et
+`humanValidation.validated: false`.
+
+Le script local dedie est:
+
+```text
+scripts/generate-assisted-reading-vision.ts
+```
+
+Commande type:
+
+```powershell
+npx.cmd tsx scripts/generate-assisted-reading-vision.ts --input .local/archive-batch-boghari/ocr/clean/03-20251127_104448.clean.txt --image .local/archive-batch-boghari/converted/03-20251127_104448.jpg --out .local/archive-batch-boghari/assisted-reading-vision/page-03.vision.assisted.json --model gpt-4.1 --confirm
+```
+
+Contraintes propres a cette V2:
+
+- traiter une seule page a la fois ;
+- refuser l'execution sans `--confirm` ;
+- refuser l'execution sans `OPENAI_API_KEY` ;
+- ecrire uniquement dans `.local/archive-batch-boghari/assisted-reading-vision/` ;
+- ne pas ecraser les lectures assistees actuelles ;
+- ne pas publier automatiquement les sorties dans `data/generated/` ;
+- ne pas creer d'embeddings.
+
+La relecture humaine reste obligatoire avant toute validation, citation,
+indexation ou integration au manifeste principal.
