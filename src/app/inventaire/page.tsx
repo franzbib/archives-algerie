@@ -52,6 +52,25 @@ export default function InventoryPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
+        <div className="mb-8 border border-foreground bg-background p-6">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+                Avertissement
+              </p>
+              <p className="mt-2 text-sm font-medium text-foreground">
+                Cette page suit le traitement technique des lots.
+              </p>
+            </div>
+            <Link
+              href="/lots"
+              className="inline-flex shrink-0 items-center justify-center border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+            >
+              Consulter les archives dans /lots
+            </Link>
+          </div>
+        </div>
+
         <div className="mb-8 border border-paper-border bg-paper p-6">
           <div className="flex items-start gap-3">
             <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-warm" />

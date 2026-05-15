@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
-  ArrowLeft,
   ClipboardCheck,
   ExternalLink,
   FileWarning,
@@ -77,14 +76,18 @@ export default async function GenericLotReviewPage({
     <main className="min-h-screen bg-background pb-16">
       <div className="border-b border-paper-border bg-paper/60">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-6 py-4 lg:px-8">
-          <div className="flex flex-1 items-center gap-4">
-            <Link
-              href={`/lots/${batch.lotId}`}
-              className="inline-flex items-center gap-2 text-sm text-warm hover:text-foreground"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Retour au lot
+          <div className="flex flex-1 items-center gap-2 text-sm">
+            <Link href="/" className="text-warm hover:text-foreground">Accueil</Link>
+            <span className="text-paper-border">/</span>
+            <Link href="/lots" className="text-warm hover:text-foreground">Lots</Link>
+            <span className="text-paper-border">/</span>
+            <Link href={`/lots/${batch.lotId}`} className="text-warm hover:text-foreground truncate max-w-[120px] sm:max-w-[250px]">
+              {batch.title}
             </Link>
+            <span className="text-paper-border">/</span>
+            <span className="text-foreground/70 truncate max-w-[100px] sm:max-w-[150px]">
+              Fichier {currentIndex + 1}
+            </span>
           </div>
           <div className="flex flex-1 items-center justify-end gap-6 text-sm font-medium">
             {prevItem ? (

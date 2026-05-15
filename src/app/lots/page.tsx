@@ -12,6 +12,8 @@ import type { ArchiveBatch } from "@/lib/archiveBatches";
 
 export default function LotsPage() {
   const batches = getArchiveBatches();
+  const readyBatches = batches.filter((b) => isArchiveBatchReviewReady(b) && b.reviewRoute);
+  const plannedBatches = batches.filter((b) => !(isArchiveBatchReviewReady(b) && b.reviewRoute));
 
   return (
     <main className="min-h-screen bg-background pb-16">
@@ -59,10 +61,36 @@ export default function LotsPage() {
           </div>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-3">
-          {batches.map((batch) => (
-            <BatchCard batch={batch} key={batch.lotId} />
-          ))}
+        <div className="mb-12">
+          <h2 className="mb-6 flex items-center gap-2 font-serif text-2xl font-medium text-foreground">
+            <span className="flex h-3 w-3 rounded-full bg-warm"></span>
+            Lots consultables
+          </h2>
+          {readyBatches.length > 0 ? (
+            <div className="grid gap-6 lg:grid-cols-3">
+              {readyBatches.map((batch) => (
+                <BatchCard batch={batch} key={batch.lotId} />
+              ))}
+            </div>
+          ) : (
+            <p className="text-sm text-foreground/70">Aucun lot actuellement consultable.</p>
+          )}
+        </div>
+
+        <div>
+          <h2 className="mb-6 flex items-center gap-2 font-serif text-2xl font-medium text-foreground">
+            <span className="flex h-3 w-3 rounded-full border-2 border-paper-border bg-paper"></span>
+            Lots en preparation
+          </h2>
+          {plannedBatches.length > 0 ? (
+            <div className="grid gap-6 lg:grid-cols-3">
+              {plannedBatches.map((batch) => (
+                <BatchCard batch={batch} key={batch.lotId} />
+              ))}
+            </div>
+          ) : (
+            <p className="text-sm text-foreground/70">Aucun lot en preparation.</p>
+          )}
         </div>
       </section>
     </main>
