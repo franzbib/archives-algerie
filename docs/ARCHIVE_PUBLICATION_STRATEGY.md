@@ -305,6 +305,62 @@ l'affichage.
 8. Evaluer couts, performances, migration et risques avant publication plus
    large.
 
+## Upload pilote Cloudflare R2
+
+Le script `scripts/upload-pilot-assets-r2.ts` prepare l'upload controle des JPG
+pilotes vers Cloudflare R2. Il ne doit etre lance qu'apres verification locale
+des 8 images converties et configuration explicite des variables R2.
+
+Il lit:
+
+- les JPG dans `.local/archive-sample/converted/` ;
+- `.local/archive-sample/conversion-manifest.json` si disponible ;
+- les informations d'origine Drive presentes dans le manifeste de conversion.
+
+Il selectionne uniquement les JPG pilotes, par defaut les 8 premiers selon
+`sampleOrder`, puis les envoie vers R2 avec une cle compatible S3. Il n'upload
+pas les HEIC, n'upload pas les OCR et ne modifie pas le manifeste principal.
+
+Variables d'environnement attendues:
+
+```powershell
+$env:R2_ACCOUNT_ID="VOTRE_ACCOUNT_ID"
+$env:R2_ACCESS_KEY_ID="VOTRE_ACCESS_KEY_ID"
+$env:R2_SECRET_ACCESS_KEY="VOTRE_SECRET_ACCESS_KEY"
+$env:R2_BUCKET_NAME="VOTRE_BUCKET"
+$env:R2_PUBLIC_BASE_URL="https://votre-domaine-public-ou-r2.dev"
+```
+
+`R2_PUBLIC_BASE_URL` est optionnelle. Si elle est absente, le manifeste produit
+un champ `futurePublicUrl` a completer plus tard.
+
+Commande Windows PowerShell attendue:
+
+```powershell
+npx.cmd tsx scripts/upload-pilot-assets-r2.ts --input .local/archive-sample/converted --manifest .local/archive-sample/conversion-manifest.json --prefix pilot/shd-1h4382-d1-boghari/images --confirm
+```
+
+Le script produit un manifeste local:
+
+```text
+.local/archive-sample/public/public-pilot-assets.json
+```
+
+Chaque entree relie le JPG publie a son fichier Drive d'origine quand
+l'information est disponible:
+
+- `collectionId` ;
+- `originalDriveFileId` ;
+- `originalDriveUrl` ;
+- `localJpgFile` ;
+- `r2ObjectKey` ;
+- `publicUrl` ou `futurePublicUrl` ;
+- `publicationStatus: "image_published_unvalidated"` ;
+- `validationStatus: "unverified"`.
+
+Ce manifeste reste local et ignore par Git. Il sert a verifier la publication
+avant toute integration applicative.
+
 ## Sources tarifaires a reverifier
 
 Pages officielles consultees pour orienter la comparaison:
