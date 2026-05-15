@@ -22,6 +22,11 @@ import type {
   AssistedReadingExample,
   AssistedReadingUncertainty,
 } from "@/lib/archiveBatches";
+import {
+  getHumanReviewNote,
+  getHumanReviewStatusLabel,
+  type HumanReviewNote,
+} from "@/lib/humanReviews";
 
 export const dynamicParams = false;
 
@@ -59,6 +64,7 @@ export default async function GenericLotReviewPage({
   }
 
   const assistedReading = getAssistedReadingForArchiveBatchReview(batch, reviewItem);
+  const humanReviewNote = getHumanReviewNote(batch.lotId, reviewItem.reviewId);
   const reviewItems = getArchiveBatchReviewItems(batch);
   const currentIndex = reviewItems.findIndex((item) => item.reviewId === reviewId);
   const prevItem = currentIndex > 0 ? reviewItems[currentIndex - 1] : null;
@@ -135,6 +141,7 @@ export default async function GenericLotReviewPage({
             <MissingAssistedReadingPanel reviewItem={reviewItem} />
           )}
           <HumanValidationPanel />
+          {humanReviewNote && <HumanReviewNotesPanel note={humanReviewNote} />}
         </aside>
       </section>
     </main>
@@ -385,6 +392,77 @@ function HumanValidationPanel() {
         </div>
       </div>
     </section>
+  );
+}
+
+function HumanReviewNotesPanel({ note }: { note: HumanReviewNote }) {
+  return (
+    <section className="border border-paper-border bg-paper">
+      <div className="border-b border-paper-border bg-background/60 px-5 py-4">
+        <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+          D. Notes de relecture humaine
+        </p>
+        <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
+          Couche humaine non interactive
+        </h2>
+      </div>
+
+      <div className="space-y-5 p-5">
+        <div className="flex flex-wrap gap-2">
+          <StatusBadge variant={note.validated ? "success" : "warning"}>
+            {getHumanReviewStatusLabel(note.status)}
+          </StatusBadge>
+          <StatusBadge variant="neutral">
+            Validation explicite : {note.validated ? "oui" : "non"}
+          </StatusBadge>
+        </div>
+
+        <div className="border border-paper-border bg-background p-4 text-sm leading-6 text-foreground/80">
+          <p>
+            Ces notes constituent une couche separee de la lecture assistee IA.
+            Elles ne remplacent pas l&apos;image source et ne valident pas la
+            transcription sans statut explicite.
+          </p>
+        </div>
+
+        {note.proposedTranscription && (
+          <ReviewTextBlock
+            label="Proposition de transcription humaine"
+            value={note.proposedTranscription}
+          />
+        )}
+        {note.notes && <ReviewTextBlock label="Notes generales" value={note.notes} />}
+        {note.properNamesNotes && (
+          <ReviewTextBlock label="Noms propres" value={note.properNamesNotes} />
+        )}
+        {note.placesNotes && <ReviewTextBlock label="Lieux" value={note.placesNotes} />}
+        {note.datesNotes && <ReviewTextBlock label="Dates" value={note.datesNotes} />}
+        {note.acronymsNotes && (
+          <ReviewTextBlock label="Sigles" value={note.acronymsNotes} />
+        )}
+
+        <dl className="grid gap-4 border-t border-paper-border pt-4 text-sm">
+          <MetaItem label="Relecteur" value={note.reviewedBy ?? "Non renseigne"} />
+          <MetaItem
+            label="Derniere modification"
+            value={note.reviewedAt ?? "Non renseignee"}
+          />
+        </dl>
+      </div>
+    </section>
+  );
+}
+
+function ReviewTextBlock({ label, value }: { label: string; value: string }) {
+  return (
+    <div>
+      <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+        {label}
+      </p>
+      <div className="mt-2 whitespace-pre-wrap border border-paper-border bg-background p-4 text-sm leading-6 text-foreground/80">
+        {value}
+      </div>
+    </div>
   );
 }
 

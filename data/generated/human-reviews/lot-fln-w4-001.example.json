@@ -1,0 +1,7 @@
+{
+  "generatedAt": "2026-05-15T00:00:00.000Z",
+  "schema": "human-review-notes-v1",
+  "lotId": "lot-fln-w4-001",
+  "warning": "Modele non interactif: les notes humaines restent separees des lectures assistees et ne valident rien sans statut explicite.",
+  "reviews": []
+}
