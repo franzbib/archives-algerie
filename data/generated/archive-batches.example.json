@@ -51,7 +51,7 @@
       "reviewRoute": null,
       "legacyReviewRoute": null,
       "itemCount": null,
-      "notes": "Source Drive identifiee par connecteur : dossier SHD GR 9 M 2274 Frontiere Maroc contenant 8 fichiers PDF visibles dans le premier releve. Ce lot est probablement un lot PDF, pas un lot JPG/HEIC ; l'agent local actuel doit etre adapte ou lance prudemment avec un traitement PDF specifique."
+      "notes": "Source Drive identifiee par connecteur : dossier SHD GR 9 M 2274 Frontiere Maroc contenant 8 fichiers PDF visibles dans le premier releve. Ce lot est probablement un lot PDF, pas un lot JPG/HEIC ; le traitement doit passer par une conversion PDF vers JPG avant OCR."
     }
   ]
 }

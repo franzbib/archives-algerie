@@ -104,6 +104,7 @@ const BATCHES_MANIFEST_PATH = "data/generated/archive-batches.example.json";
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".heic", ".heif"]);
 const JPG_EXTENSIONS = new Set([".jpg", ".jpeg"]);
 const HEIC_EXTENSIONS = new Set([".heic", ".heif"]);
+const PDF_EXTENSIONS = new Set([".pdf"]);
 
 async function main() {
   const config = getConfig();
@@ -166,7 +167,7 @@ async function main() {
 
   if (!config.skipConversion) {
     await runStep("3. Copie ou conversion JPG", async () => {
-      await prepareConvertedImages(paths);
+      await prepareConvertedImages(paths, config.limit);
     });
   } else {
     printSkipped("3. Copie ou conversion JPG");
@@ -247,7 +248,7 @@ async function main() {
   console.log("Les lectures assistees restent non validees jusqu'a relecture humaine.");
 }
 
-async function prepareConvertedImages(paths: AgentPaths) {
+async function prepareConvertedImages(paths: AgentPaths, limit: number) {
   await requireDirectory(paths.rawDirectory, "dossier raw du lot");
   const rawFiles = await listFiles(paths.rawDirectory);
   const heicFiles = rawFiles.filter((filePath) =>
@@ -256,9 +257,34 @@ async function prepareConvertedImages(paths: AgentPaths) {
   const jpgFiles = rawFiles.filter((filePath) =>
     JPG_EXTENSIONS.has(path.extname(filePath).toLowerCase()),
   );
+  const pdfFiles = rawFiles.filter((filePath) =>
+    PDF_EXTENSIONS.has(path.extname(filePath).toLowerCase()),
+  );
 
-  if (heicFiles.length === 0 && jpgFiles.length === 0) {
-    throw new Error(`Aucune image HEIC/JPG trouvee dans ${paths.rawDirectory}.`);
+  if (heicFiles.length === 0 && jpgFiles.length === 0 && pdfFiles.length === 0) {
+    throw new Error(`Aucun fichier HEIC/JPG/PDF trouve dans ${paths.rawDirectory}.`);
+  }
+
+  if (pdfFiles.length > 0 && (heicFiles.length > 0 || jpgFiles.length > 0)) {
+    throw new Error(
+      "Lot mixte PDF/images detecte. Separez les PDF et les images dans deux lots pour eviter de melanger les sequences de pages.",
+    );
+  }
+
+  if (pdfFiles.length > 0) {
+    await runTsx([
+      "scripts/convert-pdf-batch-to-jpg.ts",
+      "--input",
+      paths.rawDirectory,
+      "--out",
+      paths.convertedDirectory,
+      "--manifest",
+      paths.downloadManifestPath,
+      "--limit",
+      String(limit),
+      "--confirm",
+    ]);
+    return;
   }
 
   if (heicFiles.length > 0) {
@@ -522,7 +548,11 @@ async function listFiles(directoryPath: string): Promise<string[]> {
     .map((entry) => path.join(directoryPath, entry.name))
     .filter((filePath) => {
       const extension = path.extname(filePath).toLowerCase();
-      return IMAGE_EXTENSIONS.has(extension) || extension === ".txt";
+      return (
+        IMAGE_EXTENSIONS.has(extension) ||
+        PDF_EXTENSIONS.has(extension) ||
+        extension === ".txt"
+      );
     })
     .sort();
 }

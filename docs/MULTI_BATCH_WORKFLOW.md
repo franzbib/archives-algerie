@@ -70,6 +70,10 @@ type ArchiveBatch = {
 
 Les anciens dossiers `.local/archive-sample/` et `.local/archive-batch-boghari/` peuvent rester comme historique de travail, mais les nouveaux lots doivent utiliser la convention `.local/archive-batches/<lotId>/`.
 
+Pour un lot PDF, les PDF bruts restent dans `raw/` et les JPG issus de chaque
+page sont ecrits dans `converted/`. Ces JPG restent des images techniques de
+controle: ils ne valident ni les pages, ni les documents.
+
 ### Préfixes R2
 
 - `batches/lot-boghari-001/images/`
@@ -207,6 +211,31 @@ npm.cmd run batch:agent -- --lot lot-boghari-001 --limit 41 --skip-vision --skip
 Les sorties `.local/` restent ignorées par Git. Elles doivent être relues,
 contrôlées et promues explicitement dans une étape séparée avant toute
 intégration applicative.
+
+## Lots PDF
+
+Le lot `lot-frontiere-maroc-001` est prepare comme lot PDF. Son traitement ne
+doit pas supposer qu'un PDF correspond automatiquement a un document valide, ni
+qu'une page JPG issue du PDF est deja une page archivistique controlee.
+
+La conversion PDF est preparee par:
+
+```powershell
+npx.cmd tsx scripts/convert-pdf-batch-to-jpg.ts --input .local/archive-batches/lot-frontiere-maroc-001/raw --out .local/archive-batches/lot-frontiere-maroc-001/converted --manifest .local/archive-batches/lot-frontiere-maroc-001/download-manifest.json --limit 8 --confirm
+```
+
+Le script exige un convertisseur local:
+
+- Poppler, via `pdftoppm` ;
+- ou ImageMagick, via `magick`.
+
+S'il ne trouve aucun de ces outils, il echoue clairement et ne produit aucun
+fichier. Il ne lance pas OCR, ne contacte pas OpenAI, ne cree pas d'embeddings
+et ne promeut rien dans `data/generated/`.
+
+L'agent generique detecte les PDF dans `raw/` et appelle cette conversion avant
+l'OCR. Les lots mixtes PDF/images sont refuses dans cette premiere version afin
+de ne pas melanger des sequences de pages heterogenes.
 
 ## Tâches à déléguer à Codex
 
