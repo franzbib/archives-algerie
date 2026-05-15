@@ -129,3 +129,21 @@ l'affichage et les futures réponses IA restent sourcés et prudents.
 
 Le faible niveau de confiance ne doit pas rendre un document invisible. Il doit
 rendre la prudence visible.
+
+## Recherche future dans un modele multi-lots
+
+La future recherche devra conserver l'information de lot pour chaque resultat.
+En plus des champs deja prevus, les index devront pouvoir porter:
+
+```json
+{
+  "lotId": "lot-boghari-001",
+  "assetManifest": "data/generated/public-batch-assets.example.json",
+  "assistedReadingManifest": "data/generated/pilot-batch-assisted-readings.example.json"
+}
+```
+
+Un resultat issu d'un lot planifie, publie non valide ou valide humainement devra
+afficher ce statut. Le passage au multi-lots ne doit jamais masquer la couche
+textuelle utilisee, le niveau de confiance ou la necessite de verification sur
+image.

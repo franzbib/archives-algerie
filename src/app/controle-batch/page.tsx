@@ -92,12 +92,20 @@ export default function BatchControlPage() {
           <h2 className="font-serif text-2xl font-medium text-foreground">
             Images du lot complet
           </h2>
-          <Link
-            className="text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
-            href="/controle-pilote"
-          >
-            Voir le sample de 8 images
-          </Link>
+          <div className="flex flex-wrap gap-4">
+            <Link
+              className="text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
+              href="/controle-pilote"
+            >
+              Voir le sample de 8 images
+            </Link>
+            <Link
+              className="text-sm text-warm underline decoration-paper-border underline-offset-4 hover:text-foreground"
+              href="/lots/lot-boghari-001"
+            >
+              Voir la revue generique
+            </Link>
+          </div>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-2">

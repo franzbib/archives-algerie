@@ -35,8 +35,7 @@ interface AssistedReadingUncertainty {
 }
 
 const DEFAULT_MODEL = "gpt-4.1";
-const DEFAULT_OUTPUT_DIRECTORY =
-  ".local/archive-batch-boghari/assisted-reading-vision";
+const DEFAULT_WORKSPACE = ".local/archive-batch-boghari";
 const DEFAULT_PROMPT_PATH = "prompts/ASSISTED_READING_VISION_PROMPT.md";
 
 async function main() {
@@ -55,7 +54,9 @@ async function main() {
 
   const inputPath = getRequiredArg("--input");
   const imagePath = getRequiredArg("--image");
-  const outputPath = getArg("--out") ?? getDefaultOutputPath(inputPath);
+  const workspacePath = getArg("--workspace") ?? DEFAULT_WORKSPACE;
+  const outputDirectory = path.join(workspacePath, "assisted-reading-vision");
+  const outputPath = getArg("--out") ?? getDefaultOutputPath(inputPath, workspacePath);
   const model = getArg("--model") ?? DEFAULT_MODEL;
   const promptPath = getArg("--prompt") ?? DEFAULT_PROMPT_PATH;
   const rawOcrTextFile = inferRawOcrTextFile(inputPath);
@@ -64,7 +65,7 @@ async function main() {
   await requireFile(imagePath, "image JPG");
   await requireFile(promptPath, "prompt de lecture assistee vision");
 
-  assertOutputPathAllowed(outputPath);
+  assertOutputPathAllowed(outputPath, outputDirectory);
 
   const cleanOcrText = await readFile(inputPath, "utf8");
   const promptTemplate = await readFile(promptPath, "utf8");
@@ -247,14 +248,15 @@ async function requireFile(filePath: string, label: string) {
   }
 }
 
-function assertOutputPathAllowed(outputPath: string) {
+function assertOutputPathAllowed(outputPath: string, outputDirectory: string) {
   const portableOutputPath = toPortablePath(outputPath);
+  const portableOutputDirectory = toPortablePath(outputDirectory);
   if (
-    !portableOutputPath.startsWith(`${DEFAULT_OUTPUT_DIRECTORY}/`) &&
-    portableOutputPath !== DEFAULT_OUTPUT_DIRECTORY
+    !portableOutputPath.startsWith(`${portableOutputDirectory}/`) &&
+    portableOutputPath !== portableOutputDirectory
   ) {
     throw new Error(
-      `Sortie refusee: le fichier doit etre ecrit dans ${DEFAULT_OUTPUT_DIRECTORY}.`,
+      `Sortie refusee: le fichier doit etre ecrit dans ${portableOutputDirectory}.`,
     );
   }
 }
@@ -266,9 +268,13 @@ function inferRawOcrTextFile(cleanOcrTextFile: string): string {
     .replace(/\.clean\.txt$/i, ".txt");
 }
 
-function getDefaultOutputPath(inputPath: string): string {
+function getDefaultOutputPath(inputPath: string, workspacePath: string): string {
   const baseName = path.basename(inputPath, ".txt").replace(/\.clean$/i, "");
-  return path.join(DEFAULT_OUTPUT_DIRECTORY, `${baseName}.vision.assisted.json`);
+  return path.join(
+    workspacePath,
+    "assisted-reading-vision",
+    `${baseName}.vision.assisted.json`,
+  );
 }
 
 function toPortablePath(filePath: string): string {

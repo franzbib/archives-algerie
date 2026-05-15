@@ -6,6 +6,7 @@ interface PipelineConfig {
   inventoryPath: string;
   language: string;
   limit: number;
+  lotId: string;
   mode: "sample" | "batch";
   skipConversion: boolean;
   skipDownload: boolean;
@@ -70,6 +71,8 @@ async function main() {
         rawDirectory,
         "--limit",
         String(config.limit),
+        "--lot-id",
+        config.lotId,
         "--mode",
         config.mode,
         "--confirm",
@@ -139,6 +142,7 @@ function getConfig(): PipelineConfig {
     confirmed: process.argv.includes("--confirm"),
     inventoryPath: getArg("--inventory") ?? "data/generated/drive-inventory.pilot.json",
     language: getArg("--lang") ?? "fra",
+    lotId: getArg("--lot-id") ?? "pilot-sample",
     mode: getMode(),
     limit: getLimit(),
     skipConversion: process.argv.includes("--skip-conversion"),
@@ -155,6 +159,7 @@ function printIntro(config: PipelineConfig) {
   console.log("Pipeline pilote local Archives Algerie");
   console.log(`Sources: ${config.sourcesPath}`);
   console.log(`Inventaire: ${config.inventoryPath}`);
+  console.log(`Lot: ${config.lotId}`);
   console.log(`Workspace local: ${config.workspacePath}`);
   console.log(`Mode: ${config.mode}`);
   console.log(`Limite: ${config.limit}`);

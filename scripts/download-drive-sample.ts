@@ -39,6 +39,7 @@ interface DownloadCandidate {
 interface DownloadManifest {
   downloadedAt: string;
   inventoryPath: string;
+  lotId: string;
   outputDirectory: string;
   mode: DownloadMode;
   limit: number;
@@ -65,6 +66,7 @@ async function main() {
   const inventoryPath =
     getArg("--inventory") ?? "data/generated/drive-inventory.pilot.json";
   const outputDirectory = getArg("--out") ?? ".local/archive-sample/raw";
+  const lotId = getArg("--lot-id") ?? "pilot-sample";
   const mode = getMode();
   const limit = getLimit(mode);
   const confirmed = process.argv.includes("--confirm");
@@ -106,7 +108,7 @@ async function main() {
     await writeFile(localPath, bytes);
 
     manifestFiles.push({
-      collectionId: candidate.source.collectionId,
+    collectionId: candidate.source.collectionId,
       driveFileId: candidate.file.driveFileId,
       driveUrl: candidate.file.driveUrl,
       fileName: candidate.file.fileName,
@@ -125,6 +127,7 @@ async function main() {
   const manifest: DownloadManifest = {
     downloadedAt: new Date().toISOString(),
     inventoryPath,
+    lotId,
     outputDirectory,
     mode,
     limit,

@@ -189,6 +189,39 @@ npm.cmd run pipeline:pilot -- --sources scripts/drive-sources.pilot.example.json
 Cette commande reste a lancer seulement apres decision explicite. Elle ne lance
 aucune IA et ne cree aucun embedding.
 
+## Gestion generique par lots
+
+Le pilote Boghari doit maintenant servir de modele pour des lots nommes. Un lot
+est une unite de traitement controlee, distincte du manifeste principal.
+
+Structure conceptuelle minimale:
+
+- `lotId` : identifiant stable du lot ;
+- `collectionId` : collection archivistique rattachee ;
+- `title` : titre humain du lot ;
+- `sourceType` : type de source, par exemple `google_drive` ;
+- `driveSource` : dossier Drive et inventaire brut si disponibles ;
+- `assetManifest` : manifeste public d'images publiees si le lot est publie ;
+- `assistedReadingManifest` : lectures assistees non validees si disponibles ;
+- `reviewRoute` : route applicative de revue ;
+- `itemCount` : nombre d'items connu ou `null`.
+
+L'index applicatif de demonstration est:
+
+```text
+data/generated/archive-batches.example.json
+```
+
+Les scripts doivent etre lances avec des chemins explicites de lot, par exemple:
+
+```powershell
+npm.cmd run pipeline:pilot -- --lot-id lot-boghari-001 --sources scripts/drive-sources.pilot.example.json --inventory data/generated/drive-inventory.pilot.json --workspace .local/lot-boghari-001 --mode batch --limit 41 --lang fra --confirm
+```
+
+Les futurs lots planifies, comme `lot-fln-w4-001` ou
+`lot-frontiere-maroc-001`, ne doivent pas etre traites avant inventaire Drive
+controle et validation humaine du perimetre.
+
 ## Telechargement controle de l'echantillon pilote
 
 Le telechargement local doit rester limite a l'echantillon pilote. Il sert a

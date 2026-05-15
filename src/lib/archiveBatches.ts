@@ -1,0 +1,158 @@
+import archiveBatchesManifest from "../../data/generated/archive-batches.example.json";
+import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
+import batchAssistedReadings from "../../data/generated/pilot-batch-assisted-readings.example.json";
+import type {
+  AssistedReadingExample,
+  AssistedReadingUncertainty,
+  PilotConfidence,
+} from "@/lib/pilotReview";
+
+export type ArchiveBatchStatus = "planned" | "published_unvalidated";
+export type ArchiveBatchSourceType = "google_drive" | "manual" | "unknown";
+
+export type ArchiveBatch = {
+  lotId: string;
+  collectionId: string;
+  title: string;
+  sourceType: ArchiveBatchSourceType;
+  status: ArchiveBatchStatus;
+  driveSource: {
+    driveFolderUrl: string | null;
+    inventoryManifest: string | null;
+  };
+  assetManifest: string | null;
+  assistedReadingManifest: string | null;
+  reviewRoute: string | null;
+  legacyReviewRoute: string | null;
+  itemCount: number | null;
+  notes: string;
+};
+
+export type ArchiveBatchAsset = {
+  collectionId: string;
+  originalDriveFileId: string;
+  originalDriveUrl: string;
+  localJpgFileName: string;
+  r2ObjectKey: string;
+  publicUrl: string;
+  publicationStatus: "image_published_unvalidated";
+  validationStatus: "unverified";
+  reviewId: string;
+  note: string;
+};
+
+export type ArchiveBatchReviewItem = {
+  reviewId: string;
+  assetFileName: string;
+  publicAssetId: string;
+  reviewStatus: "assisted_unverified" | "image_only";
+  humanValidationStatus: "not_validated";
+  confidence: PilotConfidence;
+  notes: string;
+};
+
+type ArchiveBatchesManifest = {
+  batches: ArchiveBatch[];
+};
+
+type AssetManifest = {
+  assets: ArchiveBatchAsset[];
+};
+
+const batches = (archiveBatchesManifest as ArchiveBatchesManifest).batches;
+const assetManifestRegistry: Record<string, AssetManifest> = {
+  "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
+};
+const assistedReadingManifestRegistry: Record<string, AssistedReadingExample[]> = {
+  "data/generated/pilot-batch-assisted-readings.example.json":
+    batchAssistedReadings as AssistedReadingExample[],
+};
+
+export type { AssistedReadingExample, AssistedReadingUncertainty, PilotConfidence };
+
+export function getArchiveBatches(): ArchiveBatch[] {
+  return batches;
+}
+
+export function getArchiveBatchById(lotId: string): ArchiveBatch | undefined {
+  return batches.find((batch) => batch.lotId === lotId);
+}
+
+export function getAssetsForBatch(batch: ArchiveBatch): ArchiveBatchAsset[] {
+  if (!batch.assetManifest) return [];
+
+  return assetManifestRegistry[batch.assetManifest]?.assets ?? [];
+}
+
+export function getAssistedReadingsForBatch(
+  batch: ArchiveBatch,
+): AssistedReadingExample[] {
+  if (!batch.assistedReadingManifest) return [];
+
+  return assistedReadingManifestRegistry[batch.assistedReadingManifest] ?? [];
+}
+
+export function getArchiveBatchReviewItems(
+  batch: ArchiveBatch,
+): ArchiveBatchReviewItem[] {
+  const readings = getAssistedReadingsForBatch(batch);
+
+  return getAssetsForBatch(batch).map((asset) => {
+    const reading = readings.find((item) => item.reviewId === asset.reviewId);
+
+    return {
+      reviewId: asset.reviewId,
+      assetFileName: asset.localJpgFileName,
+      publicAssetId: asset.r2ObjectKey,
+      reviewStatus: reading ? "assisted_unverified" : "image_only",
+      humanValidationStatus: "not_validated",
+      confidence: reading?.confidence ?? "low",
+      notes: reading
+        ? "Lecture assistee non validee disponible."
+        : "Image publiee ; lecture assistee non disponible.",
+    };
+  });
+}
+
+export function getArchiveBatchReviewItemById(
+  batch: ArchiveBatch,
+  reviewId: string,
+): ArchiveBatchReviewItem | undefined {
+  return getArchiveBatchReviewItems(batch).find((item) => item.reviewId === reviewId);
+}
+
+export function getArchiveBatchAssetForReview(
+  batch: ArchiveBatch,
+  reviewItem: ArchiveBatchReviewItem,
+): ArchiveBatchAsset | undefined {
+  return getAssetsForBatch(batch).find(
+    (asset) =>
+      asset.reviewId === reviewItem.reviewId ||
+      asset.localJpgFileName === reviewItem.assetFileName ||
+      asset.r2ObjectKey === reviewItem.publicAssetId,
+  );
+}
+
+export function getAssistedReadingForArchiveBatchReview(
+  batch: ArchiveBatch,
+  reviewItem: ArchiveBatchReviewItem,
+): AssistedReadingExample | null {
+  return (
+    getAssistedReadingsForBatch(batch).find(
+      (reading) => reading.reviewId === reviewItem.reviewId,
+    ) ?? null
+  );
+}
+
+export function getArchiveBatchSummary(batch: ArchiveBatch) {
+  const reviewItems = getArchiveBatchReviewItems(batch);
+  const assistedReadingCount = reviewItems.filter(
+    (item) => item.reviewStatus === "assisted_unverified",
+  ).length;
+
+  return {
+    assetCount: getAssetsForBatch(batch).length,
+    assistedReadingCount,
+    imageOnlyCount: reviewItems.length - assistedReadingCount,
+  };
+}

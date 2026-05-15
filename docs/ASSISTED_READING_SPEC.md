@@ -157,10 +157,34 @@ Contraintes propres a cette V2:
 - traiter une seule page a la fois ;
 - refuser l'execution sans `--confirm` ;
 - refuser l'execution sans `OPENAI_API_KEY` ;
-- ecrire uniquement dans `.local/archive-batch-boghari/assisted-reading-vision/` ;
+- ecrire uniquement dans le sous-dossier `assisted-reading-vision/` du
+  workspace local choisi, par defaut
+  `.local/archive-batch-boghari/assisted-reading-vision/` ;
 - ne pas ecraser les lectures assistees actuelles ;
 - ne pas publier automatiquement les sorties dans `data/generated/` ;
 - ne pas creer d'embeddings.
 
 La relecture humaine reste obligatoire avant toute validation, citation,
 indexation ou integration au manifeste principal.
+
+## Lectures assistees dans un modele multi-lots
+
+Dans une logique multi-lots, les lectures assistees ne doivent pas etre stockees
+dans le manifeste principal. Chaque lot peut referencer son propre manifeste de
+lectures assistees via `data/generated/archive-batches.example.json`.
+
+Les sorties locales doivent rester dans le workspace du lot, par exemple:
+
+```text
+.local/lot-boghari-001/assisted-reading-vision/
+```
+
+Le script vision accepte un `--workspace` afin d'eviter une dependance implicite
+a `.local/archive-batch-boghari/`:
+
+```powershell
+npx.cmd tsx scripts/generate-assisted-reading-vision.ts --workspace .local/lot-boghari-001 --input .local/lot-boghari-001/ocr/clean/03-20251127_104448.clean.txt --image .local/lot-boghari-001/converted/03-20251127_104448.jpg --model gpt-4.1 --confirm
+```
+
+Quel que soit le lot, le statut reste `assisted_unverified` jusqu'a validation
+humaine.

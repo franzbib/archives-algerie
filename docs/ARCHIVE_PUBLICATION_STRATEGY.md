@@ -312,6 +312,25 @@ Le sample de 8 images ne doit pas etre supprime: il reste le lot de reference
 pour comparer les resultats techniques, l'OCR, la lecture assistee et
 l'affichage.
 
+## Publication multi-lots
+
+La publication doit evoluer vers des lots nommes plutot que vers une logique
+figee `sample` / `batch`. Chaque lot publie doit conserver ses propres
+manifestes:
+
+- manifeste d'assets publics ;
+- manifeste de lectures assistees non validees ;
+- route de revue ;
+- lien vers l'inventaire Drive brut si disponible.
+
+L'index `data/generated/archive-batches.example.json` sert de table de
+correspondance legere entre les lots et leurs manifestes. Les lots planifies
+peuvent y figurer sans fichiers publies, avec `status: "planned"`.
+
+Le lot Boghari `lot-boghari-001` est le premier lot publie non valide. Les lots
+FLN W4 et Frontiere Maroc restent planifies tant qu'aucun inventaire controle,
+aucune conversion et aucune publication R2 explicite n'ont ete realises.
+
 ## Etapes futures recommandees
 
 1. Creer un bucket R2 pilote.
