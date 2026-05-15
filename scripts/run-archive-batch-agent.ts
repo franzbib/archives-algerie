@@ -472,8 +472,9 @@ function runTsx(args: string[]): Promise<void> {
     console.log(`${command} tsx ${args.join(" ")}`);
     const child = spawn(command, ["tsx", ...args], {
       env: process.env,
-      shell: false,
+      shell: process.platform === "win32",
       stdio: "inherit",
+      windowsHide: false,
     });
 
     child.on("error", reject);
