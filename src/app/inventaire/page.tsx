@@ -82,7 +82,7 @@ export default function InventoryPage() {
           </div>
         </div>
 
-        <div className="mb-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mb-10 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
           <Link
             href="/inventaire-drive"
             className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
@@ -131,6 +131,20 @@ export default function InventoryPage() {
             </h3>
             <p className="mt-2 text-xs leading-5 text-foreground/70">
               Consultation des 8 JPG pilotes publiÃ©s sur R2, sans validation page/document.
+            </p>
+          </Link>
+          <Link
+            href="/controle-batch"
+            className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
+          >
+            <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
+              Batch
+            </p>
+            <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
+              Controle du lot Boghari
+            </h3>
+            <p className="mt-2 text-xs leading-5 text-foreground/70">
+              Consultation des 41 images publiees et de leurs lectures assistees non validees.
             </p>
           </Link>
         </div>
