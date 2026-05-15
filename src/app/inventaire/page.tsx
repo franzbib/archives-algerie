@@ -82,7 +82,7 @@ export default function InventoryPage() {
           </div>
         </div>
 
-        <div className="mb-10 grid gap-4 md:grid-cols-3">
+        <div className="mb-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <Link
             href="/inventaire-drive"
             className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
@@ -119,6 +119,20 @@ export default function InventoryPage() {
               Hypothèses de transcription basées sur l&apos;OCR, avec marquage des incertitudes, en attente de validation humaine.
             </p>
           </div>
+          <Link
+            href="/controle-pilote"
+            className="group border border-paper-border bg-paper p-5 transition-colors hover:border-warm/50"
+          >
+            <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
+              Publication
+            </p>
+            <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
+              ContrÃ´le des images pilotes publiÃ©es
+            </h3>
+            <p className="mt-2 text-xs leading-5 text-foreground/70">
+              Consultation des 8 JPG pilotes publiÃ©s sur R2, sans validation page/document.
+            </p>
+          </Link>
         </div>
 
         <InventoryDashboard collections={collections} />

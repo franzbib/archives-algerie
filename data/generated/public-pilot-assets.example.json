@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-05-15T00:00:00.000Z",
+  "storageProvider": "cloudflare_r2",
+  "collectionId": "shd-1h4382-d1-boghari",
+  "publicBaseUrl": "https://pub-2e3951190f0844f9a9b360a79316535c.r2.dev",
+  "assetCount": 8,
+  "warning": "Images pilotes publiees pour consultation : pages/documents non valides, OCR non valide.",
+  "assets": [
+    {
+      "collectionId": "shd-1h4382-d1-boghari",
+      "originalDriveFileId": "1qdoCCbWnr42YeoWY2SnUaXcF6FtsdjzY",
+      "originalDriveUrl": "https://drive.google.com/file/d/1qdoCCbWnr42YeoWY2SnUaXcF6FtsdjzY/view?usp=drivesdk",
+      "localJpgFileName": "01-20251127_104045.jpg",
+      "r2ObjectKey": "pilot/shd-1h4382-d1-boghari/images/01-20251127_104045.jpg",
+      "publicUrl": "https://pub-2e3951190f0844f9a9b360a79316535c.r2.dev/pilot/shd-1h4382-d1-boghari/images/01-20251127_104045.jpg",
+      "publicationStatus": "image_published_unvalidated",
+      "validationStatus": "unverified",
+      "note": "Image pilote publiee pour consultation ; page/document non valide."
+    },
+    {
+      "collectionId": "shd-1h4382-d1-boghari",
+      "originalDriveFileId": "1N402HyuJvAITBquYqo24OeIqCwTlTwpk",
+      "originalDriveUrl": "https://drive.google.com/file/d/1N402HyuJvAITBquYqo24OeIqCwTlTwpk/view?usp=drivesdk",
+      "localJpgFileName": "02-20251127_104404.jpg",
+      "r2ObjectKey": "pilot/shd-1h4382-d1-boghari/images/02-20251127_104404.jpg",
+      "publicUrl": "https://pub-2e3951190f0844f9a9b360a79316535c.r2.dev/pilot/shd-1h4382-d1-boghari/images/02-20251127_104404.jpg",
+      "publicationStatus": "image_published_unvalidated",
+      "validationStatus": "unverified",
+      "note": "Image pilote publiee pour consultation ; page/document non valide."
+    },
+    {
+      "collectionId": "shd-1h4382-d1-boghari",
+      "originalDriveFileId": "1gvP8i7tDDHOnKxQ6kLNaxNXo-zPr0j4v",
+      "originalDriveUrl": "https://drive.google.com/file/d/1gvP8i7tDDHOnKxQ6kLNaxNXo-zPr0j4v/view?usp=drivesdk",
+      "localJpgFileName": "03-20251127_104448.jpg",
+      "r2ObjectKey": "pilot/shd-1h4382-d1-boghari/images/03-20251127_104448.jpg",
+      "publicUrl": "https://pub-2e3951190f0844f9a9b360a79316535c.r2.dev/pilot/shd-1h4382-d1-boghari/images/03-20251127_104448.jpg",
+      "publicationStatus": "image_published_unvalidated",
+      "validationStatus": "unverified",
+      "note": "Image pilote publiee pour consultation ; page/document non valide."
+    },
+    {
+      "collectionId": "shd-1h4382-d1-boghari",
+      "originalDriveFileId": "19PXEK7Qp47H0dEajdqD0seZsYZffuhsv",
+      "originalDriveUrl": "https://drive.google.com/file/d/19PXEK7Qp47H0dEajdqD0seZsYZffuhsv/view?usp=drivesdk",
+      "localJpgFileName": "04-20251127_104502.jpg",
+      "r2ObjectKey": "pilot/shd-1h4382-d1-boghari/images/04-20251127_104502.jpg",
+      "publicUrl": "https://pub-2e3951190f0844f9a9b360a79316535c.r2.dev/pilot/shd-1h4382-d1-boghari/images/04-20251127_104502.jpg",
+      "publicationStatus": "image_published_unvalidated",
+      "validationStatus": "unverified",
+      "note": "Image pilote publiee pour consultation ; page/document non valide."
+    },
+    {
+      "collectionId": "shd-1h4382-d1-boghari",
+      "originalDriveFileId": "1ENQ0XaNGq3vjdx4p1yUgbq_CQsroZNiO",
+      "originalDriveUrl": "https://drive.google.com/file/d/1ENQ0XaNGq3vjdx4p1yUgbq_CQsroZNiO/view?usp=drivesdk",
+      "localJpgFileName": "05-20251127_104513.jpg",
+      "r2ObjectKey": "pilot/shd-1h4382-d1-boghari/images/05-20251127_104513.jpg",
+      "publicUrl": "https://pub-2e3951190f0844f9a9b360a79316535c.r2.dev/pilot/shd-1h4382-d1-boghari/images/05-20251127_104513.jpg",
+      "publicationStatus": "image_published_unvalidated",
+      "validationStatus": "unverified",
+      "note": "Image pilote publiee pour consultation ; page/document non valide."
+    },
+    {
+      "collectionId": "shd-1h4382-d1-boghari",
+      "originalDriveFileId": "1WB1vIdk6eLhSct5qG6HL8mybs9eL_T3Q",
+      "originalDriveUrl": "https://drive.google.com/file/d/1WB1vIdk6eLhSct5qG6HL8mybs9eL_T3Q/view?usp=drivesdk",
+      "localJpgFileName": "06-20251127_110158.jpg",
+      "r2ObjectKey": "pilot/shd-1h4382-d1-boghari/images/06-20251127_110158.jpg",
+      "publicUrl": "https://pub-2e3951190f0844f9a9b360a79316535c.r2.dev/pilot/shd-1h4382-d1-boghari/images/06-20251127_110158.jpg",
+      "publicationStatus": "image_published_unvalidated",
+      "validationStatus": "unverified",
+      "note": "Image pilote publiee pour consultation ; page/document non valide."
+    },
+    {
+      "collectionId": "shd-1h4382-d1-boghari",
+      "originalDriveFileId": "1DznkqY_z53_JDa__uNZJ402gUifriJQe",
+      "originalDriveUrl": "https://drive.google.com/file/d/1DznkqY_z53_JDa__uNZJ402gUifriJQe/view?usp=drivesdk",
+      "localJpgFileName": "07-20251127_110715.jpg",
+      "r2ObjectKey": "pilot/shd-1h4382-d1-boghari/images/07-20251127_110715.jpg",
+      "publicUrl": "https://pub-2e3951190f0844f9a9b360a79316535c.r2.dev/pilot/shd-1h4382-d1-boghari/images/07-20251127_110715.jpg",
+      "publicationStatus": "image_published_unvalidated",
+      "validationStatus": "unverified",
+      "note": "Image pilote publiee pour consultation ; page/document non valide."
+    },
+    {
+      "collectionId": "shd-1h4382-d1-boghari",
+      "originalDriveFileId": "1pTmKFJ9XXspDquXVDe7o6tewUostu-iW",
+      "originalDriveUrl": "https://drive.google.com/file/d/1pTmKFJ9XXspDquXVDe7o6tewUostu-iW/view?usp=drivesdk",
+      "localJpgFileName": "08-20251127_110725.jpg",
+      "r2ObjectKey": "pilot/shd-1h4382-d1-boghari/images/08-20251127_110725.jpg",
+      "publicUrl": "https://pub-2e3951190f0844f9a9b360a79316535c.r2.dev/pilot/shd-1h4382-d1-boghari/images/08-20251127_110725.jpg",
+      "publicationStatus": "image_published_unvalidated",
+      "validationStatus": "unverified",
+      "note": "Image pilote publiee pour consultation ; page/document non valide."
+    }
+  ]
+}
