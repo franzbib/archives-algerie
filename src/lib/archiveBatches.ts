@@ -81,6 +81,13 @@ type RawArchiveBatchAsset = Omit<ArchiveBatchAsset, "localJpgFileName" | "review
   reviewId?: string;
 };
 
+type AssistedReadingManifest =
+  | AssistedReadingExample[]
+  | {
+      readings?: AssistedReadingExample[];
+      metadata?: unknown;
+    };
+
 const batches = (archiveBatchesManifest as ArchiveBatchesManifest).batches;
 const assetManifestRegistry: Record<string, AssetManifest> = {
   "data/generated/batches/lot-fln-w4-001/public-assets.json":
@@ -93,7 +100,7 @@ const assetManifestRegistry: Record<string, AssetManifest> = {
     flnW4FourthPublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
 };
-const assistedReadingManifestRegistry: Record<string, AssistedReadingExample[]> = {
+const assistedReadingManifestRegistry: Record<string, AssistedReadingManifest> = {
   "data/generated/batches/lot-fln-w4-001/assisted-readings.json":
     flnW4AssistedReadings as AssistedReadingExample[],
   "data/generated/batches/lot-fln-w4-002/assisted-readings.json":
@@ -136,7 +143,9 @@ export function getAssistedReadingsForBatch(
 ): AssistedReadingExample[] {
   if (!batch.assistedReadingManifest) return [];
 
-  return assistedReadingManifestRegistry[batch.assistedReadingManifest] ?? [];
+  return normalizeAssistedReadingManifest(
+    assistedReadingManifestRegistry[batch.assistedReadingManifest],
+  );
 }
 
 export function getArchiveBatchReviewItems(
@@ -239,6 +248,15 @@ function normalizeArchiveBatchAsset(asset: RawArchiveBatchAsset): ArchiveBatchAs
     localJpgFileName,
     reviewId: asset.reviewId ?? getReviewIdFromFileName(localJpgFileName),
   };
+}
+
+function normalizeAssistedReadingManifest(
+  manifest: AssistedReadingManifest | undefined,
+): AssistedReadingExample[] {
+  if (!manifest) return [];
+  if (Array.isArray(manifest)) return manifest;
+
+  return Array.isArray(manifest.readings) ? manifest.readings : [];
 }
 
 function getFileNameFromPath(filePath: string): string {

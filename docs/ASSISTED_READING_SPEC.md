@@ -47,6 +47,10 @@ notamment pour les noms propres, lieux, dates, sigles et passages tronques.
 - Marquer les incertitudes dans une liste dediee.
 - Conserver `status: "assisted_unverified"` tant qu'aucune validation humaine
   n'a ete faite.
+- Utiliser `status: "assisted_unavailable"` quand aucune lecture assistee
+  exploitable n'a pu etre produite pour une page.
+- Ne conserver un `assistedReadingText` vide que si le statut est
+  `assisted_unavailable`.
 - Ne passer a une transcription validee qu'apres relecture humaine.
 
 ## Format JSON attendu
@@ -188,3 +192,31 @@ npx.cmd tsx scripts/generate-assisted-reading-vision.ts --workspace .local/lot-b
 
 Quel que soit le lot, le statut reste `assisted_unverified` jusqu'a validation
 humaine.
+
+## Lectures indisponibles et promotion tolerante
+
+Un lot peut contenir des images sans lecture assistee exploitable: OCR vide,
+image illisible, sortie locale interrompue ou fichier manipule manuellement. Ces
+pages ne doivent pas bloquer la revue du reste du lot, mais elles ne doivent pas
+recevoir de transcription inventee.
+
+Pour une page sans lecture exploitable, la sortie locale doit utiliser:
+
+```json
+{
+  "assistedReadingText": "",
+  "status": "assisted_unavailable",
+  "humanValidation": {
+    "validated": false
+  }
+}
+```
+
+Le script `scripts/promote-assisted-readings.ts` peut etre lance avec
+`--skip-invalid` pour debloquer une promotion controlee lorsqu'un ou plusieurs
+fichiers locaux sont invalides JSON ou ne respectent pas le schema attendu. Dans
+ce mode, les fichiers invalides sont ignores, signales en console et reportes
+dans les metadonnees du manifeste genere. Ils devront etre repris plus tard.
+
+Cette tolerance ne cree aucune lecture, ne corrige aucun OCR et ne modifie pas
+les fichiers sources locaux.

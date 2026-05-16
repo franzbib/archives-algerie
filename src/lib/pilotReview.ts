@@ -60,9 +60,18 @@ type PublicPilotAssetsManifest = {
   assets: PublicPilotAsset[];
 };
 
+type AssistedReadingManifest =
+  | AssistedReadingExample[]
+  | {
+      readings?: AssistedReadingExample[];
+      metadata?: unknown;
+    };
+
 const reviewItems = pilotReviewIndex as PilotReviewItem[];
 const publicAssets = (publicPilotAssets as PublicPilotAssetsManifest).assets;
-const assistedReadings = pilotAssistedReadings as AssistedReadingExample[];
+const assistedReadings = normalizeAssistedReadingManifest(
+  pilotAssistedReadings as AssistedReadingManifest,
+);
 
 export function getPilotReviewItems(): PilotReviewItem[] {
   return reviewItems;
@@ -95,4 +104,12 @@ export function getAssistedReadingForReview(
     assistedReadings.find((reading) => reading.reviewId === reviewItem.reviewId) ??
     null
   );
+}
+
+function normalizeAssistedReadingManifest(
+  manifest: AssistedReadingManifest,
+): AssistedReadingExample[] {
+  if (Array.isArray(manifest)) return manifest;
+
+  return Array.isArray(manifest.readings) ? manifest.readings : [];
 }

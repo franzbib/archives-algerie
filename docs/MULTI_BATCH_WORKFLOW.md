@@ -159,6 +159,18 @@ Chaque lecture doit conserver :
 
 Il ne faut pas écraser l'OCR brut ni le considérer comme une transcription.
 
+Certaines pages peuvent ne pas produire de lecture assistée exploitable. Dans ce
+cas, elles doivent être conservées avec `status: assisted_unavailable`, un texte
+vide et une note claire, sans inventer de transcription. L'interface doit alors
+indiquer que la lecture assistée est indisponible pour cette page.
+
+Lors de la promotion des sorties locales, l'option `--skip-invalid` de
+`scripts/promote-assisted-readings.ts` sert uniquement à débloquer une promotion
+contrôlée si quelques fichiers locaux sont invalides JSON ou hors schéma. Les
+fichiers ignorés sont listés en console et dans les métadonnées du manifeste
+généré. Ces pages doivent être reprises plus tard ; aucune lecture n'est créée
+automatiquement.
+
 ## Ordre de traitement recommandé pour un nouveau lot
 
 1. Ajouter la source Drive du lot.

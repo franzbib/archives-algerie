@@ -45,12 +45,34 @@ interface PromotedAssistedReading {
     | "Aucune lecture assistee exploitable produite pour cette page.";
 }
 
+type SkippedFile = {
+  fileName: string;
+  reason: string;
+};
+
+type PromotionMetadata = {
+  skippedFiles: SkippedFile[];
+  warnings: string[];
+};
+
+type PromotionOutput =
+  | PromotedAssistedReading[]
+  | {
+      metadata: PromotionMetadata;
+      readings: PromotedAssistedReading[];
+    };
+
 const DEFAULT_INPUT_DIRECTORY = ".local/archive-sample/assisted-reading";
 const DEFAULT_OUTPUT_PATH = "data/generated/pilot-assisted-readings.example.json";
+const UNAVAILABLE_NOTE =
+  "Aucune lecture assistee exploitable produite pour cette page.";
+const UNVERIFIED_NOTE =
+  "Lecture assistee IA non validee ; a verifier sur l'image.";
 
 async function main() {
   const inputDirectory = getArg("--input") ?? DEFAULT_INPUT_DIRECTORY;
   const outputPath = getArg("--out") ?? DEFAULT_OUTPUT_PATH;
+  const skipInvalid = process.argv.includes("--skip-invalid");
 
   await requireDirectory(inputDirectory);
   const files = await listAssistedReadingFiles(inputDirectory);
@@ -59,16 +81,44 @@ async function main() {
     throw new Error(`Aucun fichier *.assisted.json trouve dans ${inputDirectory}.`);
   }
 
-  const promotedReadings = await Promise.all(files.map(promoteFile));
+  const promotedReadings: PromotedAssistedReading[] = [];
+  const skippedFiles: SkippedFile[] = [];
+
+  for (const file of files) {
+    try {
+      promotedReadings.push(await promoteFile(file));
+    } catch (error) {
+      if (!skipInvalid) {
+        throw error;
+      }
+
+      const reason = error instanceof Error ? error.message : String(error);
+      const fileName = path.basename(file);
+      skippedFiles.push({ fileName, reason });
+      console.warn(`Fichier ignore: ${fileName} - ${reason}`);
+    }
+  }
+
+  if (promotedReadings.length === 0) {
+    throw new Error(
+      "Aucune lecture valide a promouvoir apres filtrage des fichiers invalides.",
+    );
+  }
+
+  const output = buildPromotionOutput(promotedReadings, skippedFiles);
+
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(
     outputPath,
-    `${JSON.stringify(promotedReadings, null, 2)}\n`,
+    `${JSON.stringify(output, null, 2)}\n`,
     "utf8",
   );
 
   console.log(`Promoted assisted readings written: ${outputPath}`);
   console.log(`Readings: ${promotedReadings.length}`);
+  if (skippedFiles.length > 0) {
+    console.log(`Skipped files: ${skippedFiles.length}`);
+  }
 }
 
 async function promoteFile(filePath: string): Promise<PromotedAssistedReading> {
@@ -110,8 +160,28 @@ async function promoteFile(filePath: string): Promise<PromotedAssistedReading> {
     },
     note:
       status === "assisted_unavailable"
-        ? "Aucune lecture assistee exploitable produite pour cette page."
-        : "Lecture assistee IA non validee ; a verifier sur l'image.",
+        ? UNAVAILABLE_NOTE
+        : UNVERIFIED_NOTE,
+  };
+}
+
+function buildPromotionOutput(
+  readings: PromotedAssistedReading[],
+  skippedFiles: SkippedFile[],
+): PromotionOutput {
+  if (skippedFiles.length === 0) {
+    return readings;
+  }
+
+  return {
+    metadata: {
+      skippedFiles,
+      warnings: [
+        "Certains fichiers locaux ont ete ignores pendant la promotion controlee.",
+        "Les pages ignorees doivent etre reprises plus tard ; aucune lecture n'a ete inventee.",
+      ],
+    },
+    readings,
   };
 }
 
@@ -136,7 +206,7 @@ async function listAssistedReadingFiles(directoryPath: string): Promise<string[]
 
 async function readJson<T>(filePath: string): Promise<T> {
   const raw = await readFile(filePath, "utf8");
-  return JSON.parse(raw) as T;
+  return JSON.parse(raw.replace(/^\uFEFF/, "")) as T;
 }
 
 function getReviewId(filePath: string, sourceImage: string): string {
