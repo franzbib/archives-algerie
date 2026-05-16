@@ -59,6 +59,34 @@ Chaque entree contient:
 
 Le fichier de sortie reste dans `.local/` et ne doit pas etre committe.
 
+## Promotion controlee dans l'application
+
+Les detections linguistiques peuvent etre promues explicitement vers une couche
+controlee:
+
+```powershell
+npx.cmd tsx scripts/promote-language-detection.ts --input .local/archive-batches/lot-fln-w4-002/language-detection/language-detection.json --out data/generated/language-detection/lot-fln-w4-002.language.json
+```
+
+Cette promotion:
+
+- verifie la structure du fichier local ;
+- refuse les entrees sans `lotId` ou `reviewId` ;
+- refuse les langues ou ecritures inconnues ;
+- force `humanValidated: false` ;
+- ne lit pas les OCR bruts ou nettoyes ;
+- ne modifie pas les lectures assistees ;
+- ne modifie ni R2 ni Google Drive.
+
+Les fichiers promus dans `data/generated/language-detection/` constituent une
+couche separee des manifestes d'assets et des lectures assistees. Ils servent a
+afficher un repere discret dans `/lots/[lotId]` et une section methodologique
+dans `/lots/[lotId]/[reviewId]`.
+
+Ces detections ne valent pas validation humaine. Elles doivent rester des aides
+techniques pour preparer le choix d'un futur OCR (`fra`, `ara`, `fra+ara`), pas
+des informations archivistiques definitives.
+
 ## Principes de prudence
 
 - La detection linguistique n'est pas une transcription.

@@ -13,6 +13,7 @@ import {
   getAssetsForBatch,
   isArchiveBatchReviewReady,
 } from "@/lib/archiveBatches";
+import { getLanguageDetectionsForLot } from "@/lib/languageDetection";
 
 export const dynamicParams = false;
 
@@ -34,6 +35,7 @@ export default async function LotReviewPage({
 
   const assets = getAssetsForBatch(batch);
   const reviewItems = getArchiveBatchReviewItems(batch);
+  const languageDetections = getLanguageDetectionsForLot(batch.lotId);
   const summary = getArchiveBatchSummary(batch);
   const isReviewReady = isArchiveBatchReviewReady(batch);
   const pageCount = getArchiveBatchPageCount(batch);
@@ -101,6 +103,7 @@ export default async function LotReviewPage({
         {assets.length > 0 ? (
           <LotReviewBrowser
             assets={assets}
+            languageDetections={languageDetections}
             lotId={batch.lotId}
             reviewItems={reviewItems}
           />

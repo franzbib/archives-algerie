@@ -26,6 +26,12 @@ import {
   getHumanReviewStatusLabel,
   type HumanReviewNote,
 } from "@/lib/humanReviews";
+import {
+  getLanguageDetectionForPage,
+  getLanguageLabel,
+  getScriptLabel,
+  type PageLanguageDetection,
+} from "@/lib/languageDetection";
 
 export const dynamicParams = false;
 
@@ -63,6 +69,7 @@ export default async function GenericLotReviewPage({
   }
 
   const assistedReading = getAssistedReadingForArchiveBatchReview(batch, reviewItem);
+  const languageDetection = getLanguageDetectionForPage(batch.lotId, reviewItem.reviewId);
   const humanReviewNote = getHumanReviewNote(batch.lotId, reviewItem.reviewId);
   const humanReviewTemplate = getHumanReviewTemplate(batch.lotId, reviewItem.reviewId);
   const reviewItems = getArchiveBatchReviewItems(batch);
@@ -151,6 +158,7 @@ export default async function GenericLotReviewPage({
         </section>
 
         <aside className="space-y-8">
+          {languageDetection && <LanguageDetectionPanel detection={languageDetection} />}
           {assistedReading ? (
             <AssistedReadingPanel reading={assistedReading} reviewItem={reviewItem} />
           ) : (
@@ -162,6 +170,61 @@ export default async function GenericLotReviewPage({
         </aside>
       </section>
     </main>
+  );
+}
+
+function LanguageDetectionPanel({
+  detection,
+}: {
+  detection: PageLanguageDetection;
+}) {
+  return (
+    <section className="border border-paper-border bg-paper">
+      <div className="border-b border-paper-border bg-background/60 px-5 py-4">
+        <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+          Langue / ecriture detectee
+        </p>
+        <h2 className="mt-1 font-serif text-2xl font-medium text-foreground">
+          Couche linguistique non validee
+        </h2>
+      </div>
+
+      <div className="space-y-5 px-5 py-5">
+        <div className="flex flex-wrap gap-2">
+          <StatusBadge variant="neutral">
+            {getLanguageLabel(detection.detectedLanguages)}
+          </StatusBadge>
+          <StatusBadge variant="warning">
+            Confiance : {detection.confidence}
+          </StatusBadge>
+          <StatusBadge variant="neutral">
+            Validation humaine : {detection.humanValidated ? "oui" : "non"}
+          </StatusBadge>
+        </div>
+
+        <dl className="grid gap-4 text-sm">
+          <MetaItem
+            label="Langues"
+            value={detection.detectedLanguages.join(", ")}
+          />
+          <MetaItem
+            label="Ecritures"
+            value={detection.detectedScripts.map(getScriptLabel).join(", ")}
+          />
+          <MetaItem label="Methode" value={detection.method} />
+          <MetaItem label="Fichier source" value={detection.sourceFileName} />
+        </dl>
+
+        <div className="border border-paper-border bg-background p-4 text-sm leading-6 text-foreground/80">
+          <p>
+            Cette detection aide a preparer un futur choix OCR, par exemple fra,
+            ara ou fra+ara. Elle ne constitue pas une validation humaine et ne
+            produit aucune transcription.
+          </p>
+          {detection.notes && <p className="mt-2">{detection.notes}</p>}
+        </div>
+      </div>
+    </section>
   );
 }
 

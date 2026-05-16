@@ -5,15 +5,18 @@ import { ExternalLink, Search } from "lucide-react";
 import { useMemo, useState } from "react";
 import { StatusBadge } from "@/components/ui/status-badge";
 import type { ArchiveBatchAsset, ArchiveBatchReviewItem } from "@/lib/archiveBatches";
+import type { PageLanguageDetection } from "@/lib/languageDetection";
 
 type LotReviewBrowserProps = {
   lotId: string;
   assets: ArchiveBatchAsset[];
+  languageDetections: PageLanguageDetection[];
   reviewItems: ArchiveBatchReviewItem[];
 };
 
 type NumberedAsset = {
   asset: ArchiveBatchAsset;
+  languageDetection: PageLanguageDetection | undefined;
   order: number;
   reviewItem: ArchiveBatchReviewItem | undefined;
 };
@@ -26,9 +29,14 @@ type AssetGroup = {
 export function LotReviewBrowser({
   lotId,
   assets,
+  languageDetections,
   reviewItems,
 }: LotReviewBrowserProps) {
   const [query, setQuery] = useState("");
+  const languageDetectionById = useMemo(
+    () => new Map(languageDetections.map((item) => [item.reviewId, item])),
+    [languageDetections],
+  );
   const reviewById = useMemo(
     () => new Map(reviewItems.map((item) => [item.reviewId, item])),
     [reviewItems],
@@ -38,10 +46,11 @@ export function LotReviewBrowser({
     () =>
       assets.map((asset, index) => ({
         asset,
+        languageDetection: languageDetectionById.get(asset.reviewId),
         order: index + 1,
         reviewItem: reviewById.get(asset.reviewId),
       })),
-    [assets, reviewById],
+    [assets, languageDetectionById, reviewById],
   );
 
   const filteredAssets = useMemo(() => {
@@ -103,10 +112,11 @@ export function LotReviewBrowser({
             </div>
 
             <div className="grid gap-6 lg:grid-cols-2">
-              {group.assets.map(({ asset, order, reviewItem }) => (
+              {group.assets.map(({ asset, languageDetection, order, reviewItem }) => (
                 <LotAssetCard
                   asset={asset}
                   key={asset.r2ObjectKey}
+                  languageDetection={languageDetection}
                   lotId={lotId}
                   order={order}
                   reviewItem={reviewItem}
@@ -131,11 +141,13 @@ export function LotReviewBrowser({
 
 function LotAssetCard({
   asset,
+  languageDetection,
   lotId,
   order,
   reviewItem,
 }: {
   asset: ArchiveBatchAsset;
+  languageDetection: PageLanguageDetection | undefined;
   lotId: string;
   order: number;
   reviewItem: ArchiveBatchReviewItem | undefined;
@@ -159,6 +171,11 @@ function LotAssetCard({
               <StatusBadge variant="neutral">Lecture assistee non disponible</StatusBadge>
             )}
             <StatusBadge variant="warning">Non valide</StatusBadge>
+            {languageDetection && (
+              <StatusBadge variant="neutral">
+                {getLanguageBadgeLabel(languageDetection)}
+              </StatusBadge>
+            )}
           </div>
         </div>
       </div>
@@ -179,6 +196,12 @@ function LotAssetCard({
           <MetaItem label="Fichier source" value={asset.localJpgFileName} />
           <MetaItem label="Collection" value={asset.collectionId} />
           <MetaItem label="Validation" value={asset.validationStatus} />
+          {languageDetection && (
+            <MetaItem
+              label="Langue detectee"
+              value={`${getLanguageBadgeLabel(languageDetection)} (${languageDetection.confidence})`}
+            />
+          )}
         </dl>
         <p className="text-sm leading-6 text-foreground/75">{asset.note}</p>
         <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
@@ -196,6 +219,20 @@ function LotAssetCard({
       </div>
     </article>
   );
+}
+
+function getLanguageBadgeLabel(detection: PageLanguageDetection): string {
+  const languages = detection.detectedLanguages;
+
+  if (languages.includes("fr+ar") || (languages.includes("fr") && languages.includes("ar"))) {
+    return "francais + arabe";
+  }
+  if (languages.includes("ar")) return "arabe";
+  if (languages.includes("fr")) return "francais";
+  if (languages.includes("other")) return "autre";
+  if (languages.includes("illegible")) return "illisible";
+
+  return "langue non renseignee";
 }
 
 function groupAssetsByRange(assets: NumberedAsset[]): AssetGroup[] {
