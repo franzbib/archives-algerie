@@ -71,6 +71,23 @@
       "notes": "Lot SHD 1H1645 FLN W4 pret pour revue ; images et lectures assistees non validees. Contenu potentiellement sensible a afficher avec prudence documentaire."
     },
     {
+      "lotId": "lot-fln-w4-004",
+      "collectionId": "shd-1h1949-operations-chefs-w4",
+      "title": "SHD 1H1949 - Operations contre chefs W4",
+      "sourceType": "google_drive",
+      "status": "planned",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1JPM3Wkk1omjHmt5-eek91j1vqx2Q0IC5",
+        "inventoryManifest": null
+      },
+      "assetManifest": null,
+      "assistedReadingManifest": null,
+      "reviewRoute": null,
+      "legacyReviewRoute": null,
+      "itemCount": null,
+      "notes": "Source Drive identifiee par connecteur : dossier SHD 1H1949, Ope contre Chefs W4. Le premier releve contient des images JPEG ; lot adapte a l'agent images existant."
+    },
+    {
       "lotId": "lot-frontiere-maroc-001",
       "collectionId": "shd-gr-9m2274-frontiere-maroc",
       "title": "SHD GR 9 M 2274 - Frontiere Maroc",
