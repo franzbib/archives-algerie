@@ -59,7 +59,7 @@ export type ArchiveBatchReviewItem = {
   reviewId: string;
   assetFileName: string;
   publicAssetId: string;
-  reviewStatus: "assisted_unverified" | "image_only";
+  reviewStatus: "assisted_unavailable" | "assisted_unverified" | "image_only";
   humanValidationStatus: "not_validated";
   confidence: PilotConfidence;
   notes: string;
@@ -151,11 +151,13 @@ export function getArchiveBatchReviewItems(
       reviewId: asset.reviewId,
       assetFileName: asset.localJpgFileName,
       publicAssetId: asset.r2ObjectKey,
-      reviewStatus: reading ? "assisted_unverified" : "image_only",
+      reviewStatus: reading?.status ?? "image_only",
       humanValidationStatus: "not_validated",
       confidence: reading?.confidence ?? "low",
-      notes: reading
+      notes: reading?.status === "assisted_unverified"
         ? "Lecture assistee non validee disponible."
+        : reading?.status === "assisted_unavailable"
+          ? "Lecture assistee non disponible pour cette page."
         : "Image publiee ; lecture assistee non disponible.",
     };
   });
@@ -200,7 +202,7 @@ export function getArchiveBatchSummary(batch: ArchiveBatch) {
   return {
     assetCount: getAssetsForBatch(batch).length,
     assistedReadingCount,
-    imageOnlyCount: reviewItems.length - assistedReadingCount,
+    imageOnlyCount: reviewItems.filter((item) => item.reviewStatus === "image_only").length,
   };
 }
 

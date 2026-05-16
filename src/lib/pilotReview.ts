@@ -2,7 +2,10 @@ import publicPilotAssets from "../../data/generated/public-pilot-assets.example.
 import pilotReviewIndex from "../../data/generated/pilot-review-index.example.json";
 import pilotAssistedReadings from "../../data/generated/pilot-assisted-readings.example.json";
 
-export type PilotReviewStatus = "assisted_unverified" | "image_only";
+export type PilotReviewStatus =
+  | "assisted_unavailable"
+  | "assisted_unverified"
+  | "image_only";
 export type PilotHumanValidationStatus = "not_validated";
 export type PilotConfidence = "low" | "medium" | "high";
 
@@ -41,7 +44,7 @@ export type AssistedReadingExample = {
   reviewId?: string;
   sourceImage?: string;
   assistedReadingText: string;
-  status: "assisted_unverified";
+  status: "assisted_unavailable" | "assisted_unverified";
   uncertainties: AssistedReadingUncertainty[];
   confidence?: PilotConfidence;
   humanValidation: {

@@ -167,6 +167,8 @@ function LotAssetCard({
           <div className="flex flex-wrap gap-2 sm:justify-end">
             {reviewItem?.reviewStatus === "assisted_unverified" ? (
               <StatusBadge variant="success">Lecture assistee disponible</StatusBadge>
+            ) : reviewItem?.reviewStatus === "assisted_unavailable" ? (
+              <StatusBadge variant="neutral">Lecture assistee indisponible</StatusBadge>
             ) : (
               <StatusBadge variant="neutral">Lecture assistee non disponible</StatusBadge>
             )}

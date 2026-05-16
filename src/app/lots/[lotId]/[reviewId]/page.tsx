@@ -159,10 +159,13 @@ export default async function GenericLotReviewPage({
 
         <aside className="space-y-8">
           {languageDetection && <LanguageDetectionPanel detection={languageDetection} />}
-          {assistedReading ? (
+          {assistedReading?.status === "assisted_unverified" ? (
             <AssistedReadingPanel reading={assistedReading} reviewItem={reviewItem} />
           ) : (
-            <MissingAssistedReadingPanel reviewItem={reviewItem} />
+            <MissingAssistedReadingPanel
+              note={assistedReading?.note}
+              reviewItem={reviewItem}
+            />
           )}
           <HumanValidationPanel />
           <CopyableHumanReviewTemplate template={humanReviewTemplate} />
@@ -338,8 +341,10 @@ function AssistedReadingPanel({
 }
 
 function MissingAssistedReadingPanel({
+  note,
   reviewItem,
 }: {
+  note?: string;
   reviewItem: ArchiveBatchReviewItem;
 }) {
   return (
@@ -348,12 +353,15 @@ function MissingAssistedReadingPanel({
         B. Lecture assistee non disponible
       </p>
       <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
-        Image seule
+        Lecture assistee non disponible pour cette page
       </h2>
       <p className="mt-4 text-sm leading-6 text-foreground/80">
         Statut de controle : {reviewItem.reviewStatus}. L&apos;image peut etre
         consultee, mais elle ne doit pas etre consideree comme page/document
         valide.
+      </p>
+      <p className="mt-3 text-sm leading-6 text-foreground/80">
+        {note ?? "Aucune lecture assistee exploitable produite pour cette page."}
       </p>
     </section>
   );

@@ -3,6 +3,7 @@ import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 type ConfidenceLevel = "low" | "medium" | "high";
+type AssistedReadingStatus = "assisted_unverified" | "assisted_unavailable";
 
 interface LocalAssistedReading {
   sourceImage?: string;
@@ -32,14 +33,16 @@ interface PromotedAssistedReading {
   assistedReadingText: string;
   uncertainties: AssistedReadingUncertainty[];
   confidence: ConfidenceLevel;
-  status: "assisted_unverified";
+  status: AssistedReadingStatus;
   humanValidation: {
     validated: false;
     validatedBy: null;
     validatedAt: null;
     notes: null;
   };
-  note: "Lecture assistee IA non validee ; a verifier sur l'image.";
+  note:
+    | "Lecture assistee IA non validee ; a verifier sur l'image."
+    | "Aucune lecture assistee exploitable produite pour cette page.";
 }
 
 const DEFAULT_INPUT_DIRECTORY = ".local/archive-sample/assisted-reading";
@@ -71,8 +74,13 @@ async function main() {
 async function promoteFile(filePath: string): Promise<PromotedAssistedReading> {
   const reading = await readJson<LocalAssistedReading>(filePath);
 
-  if (reading.status !== "assisted_unverified") {
-    throw new Error(`${filePath}: status doit etre assisted_unverified.`);
+  const status = normalizeStatus(reading.status);
+  const assistedReadingText = getString(reading.assistedReadingText);
+
+  if (status === "assisted_unverified" && assistedReadingText.trim().length === 0) {
+    throw new Error(
+      `${filePath}: assistedReadingText vide avec status assisted_unverified. Utilisez assisted_unavailable.`,
+    );
   }
 
   if (reading.humanValidation?.validated !== false) {
@@ -84,20 +92,26 @@ async function promoteFile(filePath: string): Promise<PromotedAssistedReading> {
   return {
     reviewId: getReviewId(filePath, sourceImage),
     sourceImage,
-    assistedReadingText: requireString(
-      reading.assistedReadingText,
-      `${filePath}: assistedReadingText requis.`,
-    ),
-    uncertainties: normalizeUncertainties(reading.uncertainties ?? []),
-    confidence: reading.confidence ?? getOverallConfidence(reading.uncertainties ?? []),
-    status: "assisted_unverified",
+    assistedReadingText,
+    uncertainties:
+      status === "assisted_unavailable"
+        ? []
+        : normalizeUncertainties(reading.uncertainties ?? []),
+    confidence:
+      status === "assisted_unavailable"
+        ? "low"
+        : reading.confidence ?? getOverallConfidence(reading.uncertainties ?? []),
+    status,
     humanValidation: {
       validated: false,
       validatedAt: null,
       validatedBy: null,
       notes: null,
     },
-    note: "Lecture assistee IA non validee ; a verifier sur l'image.",
+    note:
+      status === "assisted_unavailable"
+        ? "Aucune lecture assistee exploitable produite pour cette page."
+        : "Lecture assistee IA non validee ; a verifier sur l'image.",
   };
 }
 
@@ -174,6 +188,24 @@ function normalizeConfidence(value: unknown): ConfidenceLevel {
   return value === "low" || value === "medium" || value === "high"
     ? value
     : "low";
+}
+
+function normalizeStatus(value: unknown): AssistedReadingStatus {
+  if (value === "assisted_unverified" || value === "assisted_unavailable") {
+    return value;
+  }
+
+  if (value === "no_text_detected" || value === "unreadable") {
+    return "assisted_unavailable";
+  }
+
+  throw new Error(
+    `status invalide: ${String(value)}. Utilisez assisted_unverified ou assisted_unavailable.`,
+  );
+}
+
+function getString(value: unknown): string {
+  return typeof value === "string" ? value : "";
 }
 
 function requireString(value: unknown, message: string): string {

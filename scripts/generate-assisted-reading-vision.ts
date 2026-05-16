@@ -3,6 +3,7 @@ import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 type ConfidenceLevel = "low" | "medium" | "high";
+type AssistedReadingStatus = "assisted_unavailable" | "assisted_unverified";
 type UncertaintyIssue =
   | "mot_illisible"
   | "nom_propre_incertain"
@@ -17,7 +18,8 @@ interface AssistedReadingOutput {
   cleanOcrTextFile: string;
   assistedReadingText: string;
   uncertainties: AssistedReadingUncertainty[];
-  status: "assisted_unverified";
+  note?: string;
+  status: AssistedReadingStatus;
   humanValidation: {
     validated: false;
     validatedBy: null;
@@ -162,8 +164,9 @@ function normalizeAssistedReadingOutput(
     rawOcrTextFile: enforced.rawOcrTextFile,
     cleanOcrTextFile: enforced.cleanOcrTextFile,
     assistedReadingText: getString(record.assistedReadingText),
+    note: getString(record.note),
     uncertainties,
-    status: "assisted_unverified",
+    status: normalizeStatus(record.status, getString(record.assistedReadingText)),
     humanValidation: {
       validated: false,
       validatedAt: null,
@@ -324,6 +327,19 @@ function normalizeConfidence(value: unknown): ConfidenceLevel {
     : "low";
 }
 
+function normalizeStatus(
+  value: unknown,
+  assistedReadingText: string,
+): AssistedReadingStatus {
+  if (value === "assisted_unavailable" || value === "assisted_unverified") {
+    return value;
+  }
+
+  return assistedReadingText.trim().length === 0
+    ? "assisted_unavailable"
+    : "assisted_unverified";
+}
+
 const assistedReadingJsonSchema = {
   additionalProperties: false,
   properties: {
@@ -341,8 +357,9 @@ const assistedReadingJsonSchema = {
       type: "object",
     },
     rawOcrTextFile: { type: "string" },
+    note: { type: "string" },
     sourceImage: { type: "string" },
-    status: { enum: ["assisted_unverified"], type: "string" },
+    status: { enum: ["assisted_unavailable", "assisted_unverified"], type: "string" },
     uncertainties: {
       items: {
         additionalProperties: false,
@@ -374,6 +391,7 @@ const assistedReadingJsonSchema = {
     "rawOcrTextFile",
     "cleanOcrTextFile",
     "assistedReadingText",
+    "note",
     "uncertainties",
     "status",
     "humanValidation",
