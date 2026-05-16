@@ -5,6 +5,7 @@ import flnW4SecondAssistedReadings from "../../data/generated/batches/lot-fln-w4
 import flnW4SecondPublicAssets from "../../data/generated/batches/lot-fln-w4-002/public-assets.json";
 import flnW4ThirdAssistedReadings from "../../data/generated/batches/lot-fln-w4-003/assisted-readings.json";
 import flnW4ThirdPublicAssets from "../../data/generated/batches/lot-fln-w4-003/public-assets.json";
+import flnW4FourthPublicAssets from "../../data/generated/batches/lot-fln-w4-004/public-assets.json";
 import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
 import batchAssistedReadings from "../../data/generated/pilot-batch-assisted-readings.example.json";
 import type {
@@ -88,6 +89,8 @@ const assetManifestRegistry: Record<string, AssetManifest> = {
     flnW4SecondPublicAssets as AssetManifest,
   "data/generated/batches/lot-fln-w4-003/public-assets.json":
     flnW4ThirdPublicAssets as AssetManifest,
+  "data/generated/batches/lot-fln-w4-004/public-assets.json":
+    flnW4FourthPublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
 };
 const assistedReadingManifestRegistry: Record<string, AssistedReadingExample[]> = {
