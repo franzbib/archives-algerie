@@ -1,0 +1,2182 @@
+[
+  {
+    "reviewId": "page-01",
+    "sourceImage": "01-20260203_101525.jpg",
+    "assistedReadingText": "1H 1949\n1. N.\nSHD\nCadre magasinier\nGR 1 H 1949\nVI27 1 3 7 D 1\nCHARENE El-Yamine\nDate limite : 02/02/2026\n11/02",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "1. N.",
+        "issue": "lecture_probable",
+        "note": "La mention manuscrite sur l’étiquette papier en haut à gauche est partiellement effacée mais semble indiquer '1. N.' ou '1. Nc.' sans certitude.",
+        "suggestion": "1. N."
+      },
+      {
+        "confidence": "high",
+        "fragment": "GR 1 H 1949",
+        "issue": "lecture_probable",
+        "note": "Lecture confirmée par plusieurs endroits sur l’image, mais possible variation mineure non détectée.",
+        "suggestion": "GR 1 H 1949"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "CHARENE El-Yamine",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre du magasinier est relativement lisible, mais des erreurs de transcription sont toujours possibles.",
+        "suggestion": "CHARENE El-Yamine"
+      },
+      {
+        "confidence": "low",
+        "fragment": "VI27 1 3 7 D 1",
+        "issue": "sigle_incertain",
+        "note": "La séquence de lettres et chiffres n'est pas explicitement lisible dans l'image et une erreur d’OCR est possible.",
+        "suggestion": "VI27 1 3 7 D 1"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Date limite : 02/02/2026\n11/02",
+        "issue": "date_incertaine",
+        "note": "La date limite imprimée sur l’étiquette est ‘02/02/2026’. ‘11/02’ apparaît en manuscrit à côté, probablement une annotation.",
+        "suggestion": "02/02/2026 ; 11/02"
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-02",
+    "sourceImage": "02-20260203_104036.jpg",
+    "assistedReadingText": "R.K./F.P. 31.3.1962\nTél. : Mogador : 39-07\n\nANALYSE : Attaque du G.A.D. de KERMET CHEHKA le 7.3.1962 et enlèvement d’armes.\n- Rapport n° 68/82/1M/5/SB/S en date du 14.3.1962 du Chef de Bataillon, Commandant le Sous-Secteur de BOGHARI,\n- Transmis n° 289/Z.S.A./2.s. en date du 18.3.1962 du Général cdt la Z.S.A. et la 20° D.I.\n\nCOMMANDEMENT SUPERIEUR DES FORCES EN ALGERIE\nCORPS D’ARMEE D’ALGER\nETAT-MAJOR - 2° BUREAU\n\nALGER, le 3 AVRIL 1962\nN° 967 / R.T./C.A.A./2.S.\nCité :\nN° 1673 / R.T./C.A.A./2.S.\nCité :\nExemplaire N° 11\n\nTRANSMIS\nà\nMonsieur le Général, Commandant le Corps d’Armée, Commandant Supérieur les Forces en ALGERIE\nETAT-MAJOR INTERARMEES - 2° BUREAU (Ex. 1/11)\n                                 - 3° BUREAU (Ex. 2/11)\n\nAVIS conforme à celui du Général, Commandant la Z.S.A. et la 20° D.I.\nLe dossier reste à l’Etude sur le plan disciplinaire.\n\nCOPIES à :\n- M. le Général, Cdt la Z.S.A. et la 20° D.I. (Ex. 3/11)\n- CHANCELLERIE R.T./C.A.A. (Ex. 4/11)\n- ARCHIVES (Ex. 5, 6, 7, 8, 9, 10, 11/11) pour 3e B.\n\nLe Général de Division de MENDIT\nCommandant la Région Territorial\net le Corps d’Armée d’ALGER\nP.o. Le Colonel CAVARD\nChef d’ETAT-MAJOR",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "de KERMET CHEHKA",
+        "issue": "nom_propre_incertain",
+        "note": "Écriture du nom propre difficile à lire sur l'image, l'OCR propose 'CHEHKA', mais le manuscrit pourrait indiquer une variation.",
+        "suggestion": "Vérifier le nom exact sur le document original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "n° 68/82/1M/5/SB/S",
+        "issue": "sigle_incertain",
+        "note": "Le numéro de rapport comporte plusieurs lettres qui peuvent être confondues, possibilité d'erreur de l'OCR.",
+        "suggestion": "Contrôle manuel recommandé sur la source."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "18.3.1962 du Général cdt la Z.S.A. et la 20° D.I.",
+        "issue": "lecture_probable",
+        "note": "La formulation exacte du commandement nécessite confirmation, quelques lettres manuscrites en surimpression.",
+        "suggestion": "Lecture à confirmer avec agrandissement."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Le Général de Division de MENDIT",
+        "issue": "nom_propre_incertain",
+        "note": "La graphie du nom semble incertaine ; difficile à valider sans contexte.",
+        "suggestion": "Vérifier l'orthographe avec la source."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "P.o. Le Colonel CAVARD",
+        "issue": "nom_propre_incertain",
+        "note": "Nom du Colonel dactylographié mais lettres tronquées, doute faible.",
+        "suggestion": "Contrôle souhaitable sur document original."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-03",
+    "sourceImage": "03-20260203_104051.jpg",
+    "assistedReadingText": "COMMANDANT SUPERIEUR DES FORCES EN ALGERIE\nREGION TERRITORIALE & CORPS D'ARMEE D'ALGER\nZ.S.A. & 20e D.I.o. - E.M.n. 2e Bureau\nN° 889/Zsh/2/5\nP.C. le 18 Mars 1962\n\nTRANSMIS A :\nMonsieur le Général de Division,\nCommandant la Région Territoriale\net le Corps d’Armée d’ALGER\nEtat-Major - 2e et 3e Bureaux\n\n- « A titre de compte-rendu » -\n\nL’attaque au G.a.D. de KERMIT CHEHA a été menée très rapidement par les rebelles qui avaient préalablement coupé ses liaisons.\n\nL’intervention des Forces de l’Ordre n’a pu donner de résultat en raison :\n- du long délai entre l’attaque du G.a.D. et la diffusion de l’alerte,\n- de l’absence, à proximité immédiate, d’éléments disponibles, à la suite des mouvements effectués dans le cadre de la réorganisation de l’ancien secteur de BOCHARI.\n\nLe Général de Brigade ROUYER\nCommandant la Z.S.A. et la 20e D.I.o.\nP.o. le Lt-Colonel LEVRAUX, Chef d’EMn\nSigné : LEVRAUX",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "KERMIT CHEHA",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom propre 'KERMIT CHEHA' semble probable mais ne peut être totalement confirmée à l'œil nu vu la qualité.",
+        "suggestion": "Conserver la graphie la plus proche de l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Z.S.A. & 20e D.I.o. - E.M.n. 2e Bureau",
+        "issue": "sigle_incertain",
+        "note": "Les sigles Z.S.A., D.I.o., E.M.n. sont reproduits sans certitude absolue sur le sens précis.",
+        "suggestion": "Transcrire tels quels sans interprétation."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "P.o. le Lt-Colonel LEVRAUX, Chef d’EMn",
+        "issue": "lecture_probable",
+        "note": "La mention 'P.o.' et la fonction du signataire sont lisibles mais non assurées à 100% de la fidélité des abréviations.",
+        "suggestion": "Mettre en évidence l’incertitude sur certains titres militaires abréviés."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "BOCHARI",
+        "issue": "lieu_incertain",
+        "note": "Le nom du secteur/lieu est lu comme 'BOCHARI', mais l'image pourrait prêter à confusion.",
+        "suggestion": "Rester prudent sur le toponyme."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-04",
+    "sourceImage": "04-20260203_104215.jpg",
+    "assistedReadingText": "Le Chef de Bataillon DE LAUDIS\nCommandant le Sous-Secteur de Boghari\n\nà\n\nMonsieur le Général, Commandant Supérieur des Forces en Algérie (Etat-Major et de Région)\n(Ex : 1,2,3,4,5,6,7,11)\nOBJET : Compte-rendu d’enlèvement d’armes\n\nRÉFÉRENCES :\nN°68/bs/2/S/31/S/S/S\nP.C. LE 14 MARS 1962\nN.P. N° 3280/CSFA/EM/I/2.0.1 du 2/9/1961\n3422/CSFA/EM/I/3\n\nPARAGRAPHE 1 :\nLe 7 mars 1962 vers 22 heures un groupe de rebelles est venu attaquer le G.A.D de Kermet Chaha n°39 F 64. Ayant encerclé la tour de garde où se rassemble le personnel, ils l’ont harcelée et les membres du G.A.D ont repoussé tant bien que mal les attaques des rebelles. Une grenade lancée par les rebelles ayant été offerte dans la cheminée, 20 personnes tentent une sortie en se couvrant par le feu de leurs armes. Un cadet du CAD et un autre homme réussirent à se sauver et à échapper aux rebelles par leurs fusils, mais un blessé. Les autres membres furent rattrapés par les E.L.O.L qui s’emparèrent de leurs armes. Un autre membre du G.A.D, KOUAL Mohamed, qui était chez lui, avec son arme, refusa de se rendre. Les rebelles mirent le feu à son mechtas. Il réussit à se sauver en tirant. Au cours de cette action, le canon de son fusil fut traversé par une balle. L’accrochage dura jusque vers 2 heures du matin. 2 H.L. furent très probablement blessés, des traces de sang très nettes ayant été relevées. Plus de 50 douilles, ainsi que cinq calibres, ont été récupérés sur le terrain.\n\nPARAGRAPHE 2 :\n- Bilan :\n  a) Un membre du CAD blessé : KOUAL M.A.H\n  b) 11 fusils de chasse calibre 16\n  c) Numéros : 74 - 22476 - 25 - 66385 - 1512 - 470 - 4385 - 42672 - 3665 - 46156\n  d) 6 grenades OF - 5 fusées blanches\n\nPARAGRAPHE 3 :\n1. Le G.A.D se trouve sur la route entre Aïn Dalia et lotoumats. Le dispositif était en pleine réorganisation, deux sections se trouvaient dans l’obscurité de ces lieux.\n2. Quelques jours avant l’attaque du G.A.D, une section était cantonnée à Kermet Chaha et quelques jours plus tôt une clé était encore implantée à Kersba Col à quelques kms et un maison. Depuis le départ, le poste était visité fréquemment. Les 4 sections étaient réparties entre Aïn Dalia, Lotoumats et les Assas.\n5. Autodéfense du village de Kermet Chaha.\n\n.../...\n",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "DE LAUDIS",
+        "issue": "nom_propre_incertain",
+        "note": "Nom du Chef de Bataillon assez lisible mais la graphie exacte reste à confirmer.",
+        "suggestion": "DE LAUDIS ou DELAUDIS"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Kermet Chaha",
+        "issue": "lieu_incertain",
+        "note": "Le nom exact du lieu est sujet à une légère hésitation graphique sur l’image.",
+        "suggestion": "Kermet Chaha"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "E.L.O.L",
+        "issue": "sigle_incertain",
+        "note": "Le sigle est peu lisible sur la source ; transcription probable.",
+        "suggestion": "E.L.O.L ou E.L.OL"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "KOUAL M.A.H",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable du nom propre du blessé. Vérification souhaitable.",
+        "suggestion": "KOUAL M.A.H ou KOUAL Mohamed"
+      },
+      {
+        "confidence": "high",
+        "fragment": "numero des fusils: 74 - 22476 - 25 - 66385 - 1512 - 470 - 4385 - 42672 - 3665 - 46156",
+        "issue": "lecture_probable",
+        "note": "Numérotation conforme aux deux supports mais alignement incertain à cause de la présentation sur l’original.",
+        "suggestion": "Répéter les valeurs avec vérif visuelle"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "lotoumats",
+        "issue": "mot_illisible",
+        "note": "Terminaison du mot local mal déterminée d’après l’image.",
+        "suggestion": "lotoumats ou lotoumatas"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Assas",
+        "issue": "lieu_incertain",
+        "note": "Nom de village ou section : orthographe incertaine.",
+        "suggestion": "Assas"
+      },
+      {
+        "confidence": "high",
+        "fragment": "…/…",
+        "issue": "mot_illisible",
+        "note": "Fin du document – marque de continuation",
+        "suggestion": "…/…"
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-05",
+    "sourceImage": "05-20260203_104404.jpg",
+    "assistedReadingText": "...\n\n1/- Le G.A.D. comprenait 14 membres qui se rassemblaient la nuit à une tour de télégraphe.\nAvant l'attaque les rebelles avaient coupé la ligne.\nChef de G.A.D. dans la nuit est allé se réfugier dans un G.A.D. voisin. Au jour est parti à pied alerter le poste d'Aïn Dalias où il est recueilli à 11h 40.\nLe Cdt de Cie était en liaison à Boghazi avec un élément d'escorte. Dès qu'il a été prévenu vers 1h, il a quitté le secteur de Nédéa avec 2 sections du 49 RT et est aussitôt mis à disposition un peloton du 18e Dragons et 2 Cies du 49 RT. Le lendemain un 2H du 49 RT était envoyé en opération pour plusieurs jours dans la région.\nPARAGRAPHE 4\n a/ Il apparaît comme très probable qu'aucune complicité intérieure n'ait existé contre un des membres du G.A.D., mais le dispositif était connu des H.L.L. ;\n b/ Les rebelles ont dû s'ordonner où se rassemblait le G.A.D. pendant la nuit. Ils l'ont lancé des grenades et des armes, c'est l'éclatement d'une d'elles qui a blessé les défenseurs.\n c/ La bande rebelle était d'une quinzaine d'hommes armés de Thomson, Mat 49, fusils et de S.A. 56, des douilles de 7,5 d'un lot récemment délivré à la P.R. laisserait supposer qu'un des appelés FSNA désarmé a été accusé avec leur S.A. 56 et ses cartouches. Cette bande a t-elle en sa possession la 453/2 dont les zones de refuge se situent vers le XY 79 87.\nPARAGRAPHE 5 et 6 :\n Accroissement du potentiel armement de cette H.L.L. -\n\n\nCOPIE à :\n\nLe Colonel, Commandant le Secteur de Médéa - S/1\nArchives : 9/11\nChronos : 10 et 11/11\n",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Le G.A.D. comprenait 14 membres qui se rassemblaient la nuit à une tour de télégraphe.",
+        "issue": "lecture_probable",
+        "note": "Le sigle et l'expression \"tour de télégraphe\" sont partiellement flous sur l'image",
+        "suggestion": "Confirmation requise pour le sigle et le lieu, mais jugé probable"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Chef de G.A.D. dans la nuit est allé se réfugier dans un G.A.D. voisin. Au jour est parti à pied alerter le poste d'Aïn Dalias où il est recueilli à 11h 40.",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du poste (Aïn Dalias) est difficilement lisible et pourrait être une autre localité similaire.",
+        "suggestion": "Vérification du toponyme nécessaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "le secteur de Nédéa",
+        "issue": "lieu_incertain",
+        "note": "Nom du secteur peu lisible, possible confusion sur l'orthographe.",
+        "suggestion": "Lecture probable mais à vérifier."
+      },
+      {
+        "confidence": "high",
+        "fragment": "douilles de 7,5 d'un lot récemment délivré à la P.R. laisserait supposer qu'un des appelés FSNA désarmé a été accusé avec leur S.A. 56 et ses cartouches.",
+        "issue": "sigle_incertain",
+        "note": "Certains sigles (FSNA, S.A. 56, P.R.) restent ambigus quant à leur signification exacte, même si leur forme est lisible.",
+        "suggestion": "Vérification des sigles mais transcription fidèle à l'image et à l'OCR."
+      },
+      {
+        "confidence": "low",
+        "fragment": "453/2 dont les zones de refuge se situent vers le XY 79 87.",
+        "issue": "lecture_probable",
+        "note": "Section numérique difficile à confirmer sur l'image (453/2, XY 79 87).",
+        "suggestion": "Lecture probable à confirmer."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Accroissement du potentiel armement de cette H.L.L.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle H.L.L. est lisible mais sa signification propre reste incertaine sans contexte.",
+        "suggestion": "Maintien en l'état, signalement de l'incertitude."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Nom et signature manuscrite",
+        "issue": "mot_illisible",
+        "note": "Le nom manuscrit en bas à droite n'est pas totalement lisible sur l'image.",
+        "suggestion": "Pas de tentative de reconstitution du nom."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-06",
+    "sourceImage": "06-20260203_104645.jpg",
+    "assistedReadingText": "OPERATION \"CORROIE\"\n\nSemaine du 18 Avril 1959 au 30 Avril 1959.\n\nOPÉRATIONS\n\n|    DATE     |         LIEU         | PERTE REBELLES TOTALES (Bandes armées) | IDENTIFICATION (avec % estimé de destruction)         | NOMS DES CHEFS REBELLES        | INFRASTRUCTURE                                 | REMARQUES                                                      |\n|-------------|----------------------|----------------------------------------|-----------------------------------------------------|--------------------------------|-----------------------------------------------|-----------------------------------------------------------------|\n|             |                      | Personnes:  Tué | Prisonnier          | ARMEMENT                                          | KATIBA   | Section détruite  | O.P.A.    |                        | Caches — Camps — Stock de ravitaillement       |                                                                 |\n| 18 AVRIL    | 5 Kms E.N.E. de      |        13    | 3 P.B.A.             | 1 F.M.   | ABDELLAOUTA | 411 à 10 %  | (1)        | (Adjudant SI HAMOUD) / Sgt-Chef MOH EL W / Tués | CAMION (armement)                   | Le pourcentage des pertes rebelles est calculé sur l’armement.   |\n|             | THIERS               |              |                      | 1 P.M.                                            |          |                   |           |                                |                                              |\n|             |                      |              |                      | 1 P.A.                                            |          |                   |           |                                |                                              |\n| 18 au 21    | 20 Kms Ouest de      |        82    | 24                   | 6 P.M.   | KOUIDRIA   | 431          | HAMIDIA 433 à 3 %   | 10 Obus                              | (1) Le pourcentage de l’OPA détruite, pour être valable, ne pourra être fournie qu’après dépouillement complet des résultats dans une quinzaine de jours. |\n| AVRIL       | MOLIERE              |              |                      | 13 F.G.  | ZOUBIRIA   | 424 à 30 %   |                              |                                              |\n|             |                      |              |                      | 10 F.C.                                            |          |(1e et 4e Stes)    |           |                                |                                              |\n| 22 AVRIL    | 10 Kms N.W. de       |        27    | 1 Mitrailleuse       | 1 F.M.   | ZOUBIRIA   | 424 à 30 %   | 2 paires de jumelles                  |                                              |\n|             | BOGHAR               |              |                      | 3 P.M.                                            |                                  |                                              |\n|             |                      |              |                      | 16 F.G.                                           |                                  |                                              |\n| 24 au 25    | 10 Kms Nord de       |        59    | 16                   | Commando 44, 8 F.G. | CHERGUIA 443/4 | HAMDANTA à 2 %          |                                              |\n| AVRIL       | MILIANA              |              |                      | 1 Carabine                                      | Station 441/35                  |                                              |\n| 25 AVRIL    | 5 Kms Nord de        |         7    | 10                   | 1 P.M., 2 F.M.   | NADJI 434/1 | à 20 %             | 21 Suspects arrêtés                      |                                              |\n|             | TROUARI TAZA         |              |                      |                                                 |                                  |                                              |\n| 27 au 28    | 20 Kms Est de        |        87    | 14                   | 3 P.M., 12 F.G., 7 F.C., 3 P.A., | MAAMRIA 543 à 20 % | DJELMOUTOU 525 à 20 % | KOUIDRIA 431 à 20 % | ELAROUCI Mmed, Service Presse W4 Prisionnier, Sgt-Chef FEKRA AMEND Prisonnier | 36 Roquettes, 30 pains de dynamite       |\n| AVRIL       | MOLIERE              |     1 rallié |                      | 2 Mitrailleuses, 2 F.M., 2 Carabines           |                                  |                                              |\n| 30 AVRIL    | 15 Kms Est de        |        34    |  9                   | 1 F.M., 1 P.M., 3 P.A., 7 F.G., | HAMIDIA 433 à 25 % |                                |                                              |\n|             | MOLIERE              |              |                      | 2 F.C.                                            |                                  |                                              |\n\nDécision N° 501267 du 23/02/2021 \n(Déclassifié par décision)    SECR E T\n",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ABDELLAOUTA / KOUIDRIA / ZOUBIRIA / CHERGUIA / NADJI / MAAMRIA / DJELMOUTOU / HAMDANTA / ELAROUCI / FEKRA / AMEND",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture des noms propres basée sur la forme la plus probable d'après l'image, mais caractères parfois peu lisibles.",
+        "suggestion": "Noms à vérifier sur l'original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "HAMIDIA 433 / 431 / 422 / 441 / 424 / 443 / 434 / 543 / 525 / 93 / 44",
+        "issue": "sigle_incertain",
+        "note": "Certains identifiants de katiba ou sections numérotées ne sont pas totalement certains, graphie parfois peu nette.",
+        "suggestion": "Confirmer les numéros précis sur l'original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Personnes Tué/Prisonnier / Armement",
+        "issue": "mot_illisible",
+        "note": "En-têtes de colonne partiellement effacés ou mal restitués à droite.",
+        "suggestion": "Vérifier la composition des intitulés sur l'original."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Décision N° 501267 du 23/02/2021",
+        "issue": "date_incertaine",
+        "note": "Date clairement lisible mais attribuée à une décision de déclassification ; le contenu du tableau se rapporte à avril 1959.",
+        "suggestion": "Vérifier si cette date s'applique ailleurs."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le pourcentage de l’OPA détruite, pour être valable, ne pourra être fournie qu’après dépouillement complet des résultats dans une quinzaine de jours.",
+        "issue": "lecture_probable",
+        "note": "Restitution la plus probable mais texte partiellement masqué dans l'image.",
+        "suggestion": "Valider cette note de bas de page sur le document physique."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-07",
+    "sourceImage": "07-20260203_104852.jpg",
+    "assistedReadingText": "COMMANDEMENT EN CHEF DES FORCES EN ALGERIE\nETAT-MAJOR INTERARMEES\nN° ___ /EMI/BEL/OPS\n\nPRINCIPAUX BILANS DE L'OPERATION \"COURROIE\"\nDU 18 AVRIL AU 28 MAI 1959\n\n--------------------------------------------------------------------------------\nDATE | LIEU | ELEMENT ACCROCHE | PERTES REBELLES | PRINCIPAUX CHEFS REBELLES HORS DE COMBAT | REMARQUES\n--------------------------------------------------------------------------------\n18/4 | 5 ENE de THIERS | Section 411 < 10 % pertes | 13 tués - 1 FM - 1 PM - 1 PA | | Pertes très faibles\n18/4 | 10 SE BLIDA | Section 423 | 6 tués - 4 prisonniers - 1 PM - 1 FG - 1 FC - Matériel divers | |\n18 au 21 Avril | 20 Kms W. de MOLIERE | Katiba 431 10 % pertes | 82 tués - 24 prisonniers - 6 PM | |\n | | 2 Sections Katiba 424 10 % pertes | 13 FG - 10 FC - 17 PA - 10 Obus | |\n | | Section 433 10 % pertes | Documents | | La Katiba 424 a été scindée en deux :\n | | | | | une partie travaillant dans l'OUARSENIS (accrochée entre le 18 et le 21.4) ; l'autre travaillant au Nord de BOGHARI\n22/4 | 10 Kms N.W. de BOGHARI | 2 Sections Katiba 424 30 % pertes | 15 tués - 3 prisonniers - 1 mitrailleuse - 1 FM - 4 PM - 16 FG | |\n24 et 25/4 | 5 Kms Nord TROLAZ-TAZA | Section 434/1 20 % pertes | 7 tués - 10 prisonniers - 21 suspects arrêtés - 1 FM - 1 PM - 4 FG - 10 FC | |\n24 au 28/4 | 10 Kms Nord MILIANA | Katiba 423 pertes < 10 % | 59 tués - 16 prisonniers - 1 FM - 3 PM - 8 FG - 15 FC - 1 PA | |\n | | 2 Sections 441/3 et 441/4 10 % pertes chacune | | |\n25 au 27/4 | 10 HE CHAMPLAIN | Katiba 422 75 % pertes | 93 tués - 19 prisonniers - 1 Mit | Adjt ABDELHAJID adjoint au Chef de Katiba tué | 1 chef de Section tué\n27 et 28/4 | 20 Kms Est de MOLIERE | Katiba 541 20 % pertes | 87 tués - 14 prisonniers - 1 rallié | ELAROUCI Mohamed, chef du service Presse de la W4, prisonnier\n | | Katiba 571 5 % pertes | 2 mitrailleuses - 2 FM - 19 FG - 18 PA - 30 roquettes et 30 pains de dynamite récupérés - documents | Katiba 541 : accrochée trois fois au cours de l'opération ORANIE a perdu au total 50 % de son potentiel initial\n | | Katiba 431 20 % pertes | | Katiba 571 : accrochée 3 fois au cours de l'opération ORANIE a perdu plus de 75 % de son potentiel initial\n | | | | Katiba 431 : accrochée le 18/4 voir ci-dessus\n--------------------------------------------------------------------------------\n",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "TROLAZ-TAZA",
+        "issue": "lieu_incertain",
+        "note": "La lecture du lieu pourrait être TROLAZ-TAZA, mais l'image est difficile à confirmer précisément. L'OCR a interprété ainsi ; une vérification manuelle serait nécessaire.",
+        "suggestion": "Vérifier l'orthographe exacte du lieu mentionné dans la ligne du 24 et 25/4."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Adjt ABDELHAJID adjoint au Chef de Katiba tué",
+        "issue": "nom_propre_incertain",
+        "note": "Il est difficile de confirmer l'orthographe exacte du nom propre à partir de l'image.",
+        "suggestion": "La lecture reste probable mais incertaine pour le nom d'adjoint et son intitulé."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ELAROUCI Mohamed, chef du service Presse de la W4, prisonnier",
+        "issue": "nom_propre_incertain",
+        "note": "Orthographe du nom et du service non pleinement confirmé visuellement.",
+        "suggestion": "Vérifier le nom et l’intitulé exacts sur l’original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Katiba 571 : accrochée 3 fois au cours de l'opération ORANIE a perdu plus de 75 % de son potentiel initial",
+        "issue": "lecture_probable",
+        "note": "Phrase complexe, certains chiffres ou mots pourraient être sujets à erreur d'interprétation.",
+        "suggestion": "Relecture recommandée sur l'original pour confirmer ce passage."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Katiba 541 : accrochée trois fois au cours de l'opération ORANIE a perdu au total 50 % de son potentiel initial",
+        "issue": "lecture_probable",
+        "note": "Passage lu de façon probable : il est difficile de garantir la fidélité à 100 % des chiffres ou du texte, confirmation utile sur original.",
+        "suggestion": "Vérifier les chiffres et le résumé dans le document original."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-08",
+    "sourceImage": "08-20260203_104911.jpg",
+    "assistedReadingText": "30/4 au 1/5 : 15 Kms Est de MOLIÈRE : Section 433 : 25 % pertes : 37 tués - 11 prisonniers - 2 PM - 4 FG - 10 FC - 7 PA : Petit atelier armurerie détruit.\nLt BOUALEM-BOUNOUADER, responsable, L & R M.2, W.4, tué\nAspirant BOUCENNA, responsable L & R Nahia 2 M.2W.4 prisonnier\n\n1/5 : 20 Kms Est de MEDEA : PC Mintaka 2-Wilaya 4-Infirmerie : 18 tués - 5 prisonniers - 3 PM : 3 FG - 10 FC - 2 PA - Munitions Médicaments - 1 tonne de ravitaillement.\nAspirant BOUCENNA, responsable L & R Nahia 2, M.2W.4 prisonnier\n\n5/5 : 8 Kms NN NELSONBOURG : PC Wilaya 4 : 13 tués - 1 PM - 2 PA - 2 FC, documents\nLt SIRACHID, responsable p.i, L & R W.4 tué, S/Lieutenant GUESMI AHMED, Chef de la N.3, MI, W 6 tué\n\n5/5 : 10 Kms S.S.E BEROUAGHIA : PC NAHIA 3 M.I W 6 : 17 tués - 9 prisonniers - 1 PM - 8 FG - 7 FC - 4 PA\nS/Lt MAHJOUD, Chef N.3, M.I.W.6 tué, SI AMAR, Aspirant, Chef Militaire tué\n\n6/5 : 8 Kms NE DRA EL MIZAN : Katiba 342 : 15 % pertes : 48 tués - 15 prisonniers - 9 FG - 3 PM - 6 FC - 9 PA - Grenades - Munitions - Ravitaillement - 7 caches dont 1 salle d'instruction détruites - Médicaments.\nAspirant REKIKA, Mouloud, Chef service presse N.4, W 3 tué\n\n11/5 : 2 Kms Est l'ARBA : 1 tué - 1 PM\nLieutenant BOUALEM, responsable militaire Mo.I. - W 4\n\n11/5 : 15 Kms N. DUPERRE : Katiba 423 : 15 % pertes : 25 tués - 3 PM - 11 FG\nAspirant ARESKI RABIA, CM Nahia 413 tué\n7 caches détruites habillement\n\n11/5 : 20 Kms NW DRA EL MIZAN : Commande sectoral (secteur 3, Nahia 3, Mintaka 1, Wilaya 4 détruit 100%) : 14 tués - 4 prisonniers - 4 arrêtés - 3 PM - 5 FG - 5 FC - 2 PA\n\n12/5 : 15 Kms NW MOLIÈRE : Katiba 541 détruit à 90% : 78 tués - 9 prisonniers - 3 FM - 2 PM - 18 FG - 8 FC - 5 PA - 3000 cartouches\nKatiba accroché les 27 et 28/4, 1 groupe électrogène\n\n14/5 : 40 N.E. MOLIÈRE : Supplétifs rebelles, PC Secteur 3 - N2 - M3 - W4 détruit - Documents récupérés : 69 tués - 8 prisonniers - 1 PM - 14 FG - 25 FC - 2 PA - 6 tonnes de ravitaillement.\n\n17 et 18/5 : Sud W de Tablat : Quelques éléments Katibas 413 et 414 Supplétifs rebelles, 4 prisonniers, 9 FG - 4 PM - 1 PA - 1 FC. Au cours de l'opération, les 2 katibas 413 et 414 groupées infligeant des pertes sérieuses à un élément du 2° Dragon: 31 tués - 16 blessés - 1 FM - 20 PM - 7 F.G.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Noms des responsables, certains titres (Lt BOUALEM-BOUNOUADER, Aspirant BOUCENNA, etc.)",
+        "issue": "nom_propre_incertain",
+        "note": "L'image permet une lecture probable mais l'orthographe précise de ces noms propres et leurs titres peuvent comporter des erreurs dues à la qualité de scan ou l'OCR.",
+        "suggestion": "Validation manuelle requise pour tous les noms propres et titres militaires."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "« PC Mintaka 2-Wilaya 4-Infirmerie » etc.",
+        "issue": "sigle_incertain",
+        "note": "OCR et image indiquent différents sigles et abréviations militaires ou administratives. Certains peuvent être interprétés de manière erronée.",
+        "suggestion": "Faire valider chaque sigle par un connaisseur du contexte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Quelques totaux de matériels : '3000 cartouches', '6 tonnes de ravitaillement', etc.",
+        "issue": "lecture_probable",
+        "note": "L'image confirme globalement les quantités mais certains chiffres, à la jonction des lignes, sont sujets à confusion.",
+        "suggestion": "Comparer avec d'autres documents pour confirmation des quantités."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Sud W de Tablat : Quelques éléments Katibas 413 et 414",
+        "issue": "lieu_incertain",
+        "note": "Le lieu exact (\"Sud W de Tablat\") est mal positionné sur la ligne et pourrait correspondre à une abréviation ou désignation incomplète.",
+        "suggestion": "Faire valider ce lieu par recoupement de sources."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Dates pour les opérations (ex : '30/4 au 1/5', '1/5', '5/5', etc.)",
+        "issue": "date_incertaine",
+        "note": "Lecture très probable sur image mais une confusion de colonne n’est pas impossible sur certains fragments.",
+        "suggestion": "Vérification croisée recommandée."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-09",
+    "sourceImage": "09-20260203_104930.jpg",
+    "assistedReadingText": "17/5       15 EST MOLIERE        Katiba 433, détruite = 15% - PC de la Nahia 3 - M 3 W 4 détruit - documents récupérés \n                                         33 tués - 4 prisonniers - 2 PM - 7 FG - 8 FC - 5 PA        Chef de la Nahia 3 tué (AISSA)\n\n19 et 20/5  23 NW MOLIERE         Commando 54 = 30% pertes\n                                         Katiba 541\n                                         PC Nahia 2 M 3 W 4 détruit - Toutes ses archives récupérées\n                                         83 tués - 8 prisonniers - 1 Mse\n                                         1 LRAC - 1 FM - 4 PM - 22 FG - 10 FC - 3 PA - Grenades\n                                         La katiba 541 peut être considérée comme entièrement détruite\n\n19/5      15 N/W HOCHE            I groupe de la Katiba 414 détruit\n                                         11 tués - 2 prisonniers - 1 PM - 4 FG - 1 FC - 1 PA\n\n20 au 22/5 20 SUD MEDEA           Katiba 424 = 20% pertes\n                                         Katiba 613 = 15% pertes\n                                         PC Wilaya 4\n                                         108 tués - 37 prisonniers\n                                         8 PM - 17 FG - 18 FC - 10 PA\n                                         1 armurerie - 1 fabrique de mines - Découverte de 2 charniers\n                                         S/Lt LAKHDAR, artificier de la Mintaka 2 W 4 tué\n                                         AHMEDARSLANE, Chef religieux de la W 4 tué\n                                         Les renseignements tirés de cette opération permettent de considérer comme certaine la mort du chef de la W 4, MHAMED\n\n25/5      10 N E Palestro         Katiba 411 = pertes < 10%\n                                         9 tués - 3 prisonniers\n                                         1 PM - 5 FG - 2 FC - 1 PA\n\n25/5      9 W Teniet el Haad      PC NAHIA 4 M 3 W 4 détruit\n                                         3 tués - 1 prisonnier - 1 FC\n\n28/5      5 Sud Camp du Maréchal  Katiba 342 = 15% pertes (1 Section)\n                                         23 tués - 10 prisonniers\n                                         1 FM - 3 PM - 9 FG - 5 FC - 5 PA\n\n(Bilan provisoire)",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Katiba 541 peut être considérée comme entièrement détruite",
+        "issue": "lecture_probable",
+        "note": "La fin de cette phrase semble bien lisible mais la position ou la ponctuation exacte peut différer.",
+        "suggestion": "Vérification du placement exact et de la formulation sur l'image originale conseillée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "S/Lt LAKHDAR, artificier de la Mintaka 2 W 4 tué",
+        "issue": "nom_propre_incertain",
+        "note": "La graphie exacte du nom et du sigle Mintaka 2 W 4 doit être confirmée sur l'original, risque de confusion avec l'OCR.",
+        "suggestion": "Contrôle sur l'image pour confirmer l'orthographe."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "AHMEDARSLANE, Chef religieux de la W 4 tué",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre restitué d'après l'image, mais graphique exacte à confirmer.",
+        "suggestion": "Vérification orthographique souhaitable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Les renseignements tirés de cette opération permettent de considérer comme certaine la mort du chef de la W 4, MHAMED",
+        "issue": "nom_propre_incertain",
+        "note": "Nom 'MHAMED' restitué avec possible incertitude dans la transcription.",
+        "suggestion": "Vérification du nom sur l'image."
+      },
+      {
+        "confidence": "low",
+        "fragment": "(Bilan provisoire)",
+        "issue": "lecture_probable",
+        "note": "Bas de page en partie coupé ou faible, lecture probable.",
+        "suggestion": "Confirmation nécessaire."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-10",
+    "sourceImage": "10-20260203_105401.jpg",
+    "assistedReadingText": "OPERATION : [COURROIE]\n\nSemaine du 29 Mai au 4 Juin 1959.\n\nTableau synthétique réparti en colonnes, voici une lecture probable du contenu principal à partir de l'image et en corrélation avec l'OCR :\n\nPremière ligne (premier bloc) :\n- Secteur : NOBOUCOU (Opérations MANIN et MICHEL)\n- Effectif opéré : 77\n- Pertes rebelles totales : 27 Prises, 2 Arrêtés\n- Armement : 8 Fus., 2 PA., 1 Hortier 81, 2 PA., 2 Fus.\n- Katiba : ZOUBIRIA + éléments locaux, 30 ou 60 hommes de personnel (lecture confuse à ce niveau)\n- Hors cas closes rebelles :\n  1 machine à coudre, Campement, Ravitaillement, Matériel divers, 1 Poste radio civil, Destruction d’un P.C. de Secteur, Grenades et Munitions, Plusieurs caches détruites.\n\nSeconde ligne (29 Mai et 31 Mai)\n- Effectif opéré : 44 Fusils de chasse\n- Pertes rebelles totales : 7 Prises, 31 Arrêtés, 1 Rallié\n- Armement : 2 Fus., 1 Mortier 82, 2 Fus., 3 PA., 16 Fusils de chasse, 15 PA.\n- Katiba : KANTBA 332, 20 fusils dont 1 PA.; KATIBA 342, 25 PA. dont 2 fusils (1).\n- Hors cas closes rebelles :\n  11 Kg 5 de Plastic, 1 bombe 30 kg, Grenades et Munitions, Chargeurs, Fome, Habillement, Matériel électrique, 26 caches détruites dont 1 infirmerie, Sacs de ciment, 1 canon de P.A.C., 1 machine à écrire, 3 machines à coudre.\n- Remarque : (1) Pertes totales de l’opération y compris la journée du 28.5.\n\n(noter que la saisie d’éléments précis dans la colonne « Katiba » et « Hors cas closes rebelles » est difficile, certains termes sont peu distincts)\n\nTroisième ligne (Région Roche et Ali Mecher) :\n- Suspects arrêtés : 13\n- 3 PC.\n\nQuatrième ligne (30 Mai, Est Oued TENS)\n- Effectif opéré : 6\n- Armement : 3 PC.\n\nCinquième ligne (Opérations diverses) :\n- Effectif opéré : 75 fusils\n- Rebelles : 20 Pris, 44 arrêtés\n- Armement : 12 armes individuelles de guerre, 23 fusils de chasse, 4 PA.\n- Katiba : 1 Groupe Katiba \"613\" 10% + locaux\n\nRésumé total colonne finale :\n- Pertes rebelles totales : 169 fusils, 56 Prisonniers, 81 arrêtés, 1 rallié, 1 Hortier 81, 2 PA., 51 armes indiv. propres de guerre, 90 fusils de chasse, 21 PA.\n\nAutres mentions dispersées (d'après la colonne la plus à droite dans l'image) :\n- Noms d’adjudants, précisions sur des saisies ou destructions, notamment : 30 kg ravitaillements, caches détruites, cantonnement.\n",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ZOUBIRIA + éléments locaux 30 ou 60 hommes de personnel",
+        "issue": "mot_illisible",
+        "note": "Impression confuse et caractères partiellement effacés sur l’image.",
+        "suggestion": "Vérifier la mention exacte (chiffre et rédaction pour les effectifs et le nom du groupe)."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "11 Kg 5 de Plastic, 1 bombe 30 kg",
+        "issue": "lecture_probable",
+        "note": "La formulation et la présence des unités de charges explosives semblent correctes mais restent à confirmer en l’absence de clarté parfaite.",
+        "suggestion": "Confirmer unités et quantités."
+      },
+      {
+        "confidence": "low",
+        "fragment": "KANTBA 332 / KATIBA 342",
+        "issue": "nom_propre_incertain",
+        "note": "Noms de groupes/fractions peu lisibles, même sur l’image, risques de confusion OCR.",
+        "suggestion": "Vérifier orthographe exacte dans la source ou une référence croisée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Adjudant Mohamed ACHOURA Chef Section Katiba 613 tubé le 1er juin.",
+        "issue": "nom_propre_incertain",
+        "note": "Noms et titres sont lisibles partiellement seulement.",
+        "suggestion": "Reprise sur l’image avec zoom et contraste pourrait améliorer, sinon stricte lecture probable."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Plusieurs caches détruites / 26 caches détruites dont 1 infirmerie",
+        "issue": "lecture_probable",
+        "note": "Le nombre exact de caches détruites varie de 26 à « plusieurs » sur différents blocs – problème de lecture et d’attribution.",
+        "suggestion": "Vérification croisée nécessaire."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Sacs de ciment, outils, médicaments",
+        "issue": "mot_illisible",
+        "note": "Mots visibles mais légèrement effacés/déformés à l’image, OCR partiellement fiable.",
+        "suggestion": "Peut nécessiter une relecture humaine fine."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-11",
+    "sourceImage": "11-20260203_105639.jpg",
+    "assistedReadingText": "— 4 —\n\nII/ - VICTIMES DES PURGES\n( pour mémoire )\n\n--------------------------------------------------------------\nNOMS - PRENOMS - ALIAS        | GRADES & FONCTIONS               | CIRCONSTANCES SOMMAIRES\n--------------------------------------------------------------\n- MUSTAPHA                        S/Lieutenant             Exécuté par le F.L.N. A/1 du 25.4-\n                                 C.P.M. 414\n- MOHAMED                         Aspirant                 Exécuté par le F.L.N. A/1 12 Mai.\n                                 C.P. 442\n- MAHMOUD                         S/Lieutenant             —d°-\n                                 C.P.M. 442\n- MUSTAPHA                        S/Lieutenant ex.         Arrêté par le F.L.N. A/1 11 Mai.\n                                 C.P.M. 441\n- DJAFFAR                         Aspirant                 —d°-\n                                 Ex. C.P. 441\nABDERZZAK Larbi Mansour          Aspirant                  Exécuté par le F.L.N. ZOA/ C/3\n                                 C.P. 432\n- BAKIR                           Médecin                  —d°-\n                                 43\n- ABBES MOUHRAOUI                S/Lieutenant              —d°-\n                                 C.P.M. 431\n- MAFHOUD                         Aspirant                 —d°-\n                                 L.R. 431\n- BACHIR                          Aspirant                 —d°-\n                                 C.P. 431\nSAOULA alias AHMED EL MADANI      S/Lieutenant             —d°-\n                                 C.P.M. 433\n--------------------------------------------------------------",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ABDERZZAK Larbi Mansour",
+        "issue": "nom_propre_incertain",
+        "note": "Le prénom/nom 'ABDERZZAK' semble mal orthographié, possible confusion avec 'ABDERREZAK'. Faible lisibilité sur l'image dans cette zone.",
+        "suggestion": "ABDERREZAK ou ABDERZAK"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "F.L.N. A/1 du 25.4-",
+        "issue": "date_incertaine",
+        "note": "L'année de la date n'apparaît pas (exécuté le '25.4-'), ce qui laisse l'année incertaine.",
+        "suggestion": "25 avril (année absente)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "F.L.N. ZOA/ C/3",
+        "issue": "sigle_incertain",
+        "note": "La sigle 'ZOA' et codage associé peut être incertain ou ambigu.",
+        "suggestion": "Confirmer la signification exacte de ZOA/C/3"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "L.R. 431",
+        "issue": "sigle_incertain",
+        "note": "Le sigle 'L.R.' peu lisible et l'OCR n'indique pas son développement.",
+        "suggestion": "Relire sur l'original ou croiser avec d'autres sources"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "—d°-",
+        "issue": "lecture_probable",
+        "note": "Le passage '—d°-' ('idem') est une convention usuelle, mais l'OCR et la mise en page pourraient rendre confus le rattachement explicite.",
+        "suggestion": "Vérifier que chaque '—d°-' se rattache bien à la circonstance précédente"
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-12",
+    "sourceImage": "12-20260203_105759.jpg",
+    "assistedReadingText": "Plan d'un poste (schéma manuscrit sur calque, superposé à un document dactylographié)\n\nLégende :\n- maison du village (hachuré)\n- Réseaux (tracés en croix)\n\nOrienté nord (flèche N vers le bas)\n\nIndications sur le plan (de gauche à droite, de haut en bas):\n- En haut gauche : maison fermée (rouge), départ (rouge)\n- Barbelés amovibles\n- Chambre de troupe enlevée\n- Chambre de troupe enlevée\n- Sgt chef Ghadjati\n- Sgt Léonard\n- Entrée du poste\n- Cuisine\n- Sentinelle FSE\n- Barbelés amovibles\n- Rez-de-chaussée : chambre de troupe, départ, des chefs\n- Sgt chef de poste\n- Cour, cour, cour\n- Rez-de-chaussée : magasin, étage peuple\n- Sentinelle FSNA\n- maison en ruines\n- maison en ruines\n- maison qui prend (illisible)\n- École\n- Portail\n- En haut droite : arrivée des rebelles (rouge)\n\nNB :\n- Le plan superposé masque le texte dactylographié, qui n'est pas lisible dans cette zone.\n\nL'OCR fourni ne correspond pas à ce plan, il semble plutôt découler du texte dactylographié en-dessous, donc inutilisable pour la lecture du schéma. Tous les termes ci-dessus viennent de la lecture directe du plan manuscrit.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "maison qui prend (illisible)",
+        "issue": "mot_illisible",
+        "note": "Le texte est difficile à lire à cet emplacement sur le plan manuscrit ; peut-être maison qui prend feu ou similaire.",
+        "suggestion": "Confirmer sur un scan meilleur ou un autre exemplaire."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Sgt chef Ghadjati ; Sgt Léonard",
+        "issue": "nom_propre_incertain",
+        "note": "Noms propres restitués selon graphie apparente, mais sans garantie orthographique.",
+        "suggestion": "Vérification orthographique nécessaire sur la source dactylographiée ou autre fiche."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "arrivée des rebelles",
+        "issue": "lecture_probable",
+        "note": "Le texte manuscrit en rouge est partiellement masqué ou flou.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "texte sous-jacent dactylographié",
+        "issue": "mot_illisible",
+        "note": "Le schéma masque une grande partie du texte original sous-jacent.",
+        "suggestion": ""
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-13",
+    "sourceImage": "13-20260203_110009.jpg",
+    "assistedReadingText": "COMMANDEMENT EN CHEF DES FORCES EN ALGÉRIE\nÉTAT-MAJOR INTERARMÉES\n3e BUREAU\nSECTION OE/IE\nANALYSE\nDate : 22-12-60\n\nOpération contre le chef de la Wilaya 4\nLettre du CAA transmettant le plan d'opération du général cdt le secteur de MEDEA (minuit)\nL'opération sera menée:\n- par un commando léger de 6 allées (P100)\n- puis commandos du G ???\n\n- Ci-joint le TO mutuelle GT 11 à la disposition du CAA.\nLa question du crédit de 60.000NF intéresse BZ.\n\nd'accord                   confirmer l'argent\n[signature illisible]",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "SECTION OE/IE",
+        "issue": "sigle_incertain",
+        "note": "Lecture du sigle confirmée graphiquement sur l'image, mais incertitude sur exactitude (écriture manuscrite au stylo dessus).",
+        "suggestion": "SECTION OE/IE probable"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "G ???",
+        "issue": "mot_illisible",
+        "note": "Le numéro ou sigle après 'commandos du G' est difficilement lisible sur l'image manuscrite.",
+        "suggestion": "Lecture probable : 'GT 11' mais à vérifier."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "[signature illisible]",
+        "issue": "mot_illisible",
+        "note": "La signature en bas de page n'est pas lisible pour identification.",
+        "suggestion": "Indiquer comme illisible."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "d'accord confirmer l'argent",
+        "issue": "lecture_probable",
+        "note": "La phrase manuscrite 'confirmer l'argent' a un doute léger sur le verbe utilisé, mais semble correcte.",
+        "suggestion": "Lecture la plus probable : 'confirmer l'argent'"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le TO mutuelle GT 11",
+        "issue": "lecture_probable",
+        "note": "Certains caractères du passage 'Le TO mutuelle GT 11' pourraient prêter à confusion (écriture manuscrite).",
+        "suggestion": "Lecture probable mais à vérifier sur l'original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "La question du crédit de 60.000NF intéresse BZ.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle 'BZ' n'est pas confirmé clairement sur l'image (peut-être autre chose).",
+        "suggestion": "Lecture probable : BZ."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-14",
+    "sourceImage": "14-20260203_110017.jpg",
+    "assistedReadingText": "ALGER, le 20 décembre 1960\n\nCOMMANDANT EN CHEF DES FORCES EN ALGÉRIE\nRÉGION TERRITORIALE ET CORPS D’ARMÉE D’ALGER\nETAT-MAJOR – 3ème BUREAU\n\nN° 240/EM/3.OPE.TS.\nN° 317/EM/2.TS.\n\nLe Général de Corps d’Armée VEZINET\nCommandant la Région Territoriale et le Corps d’Armée d’ALGER\n\nà\nMonsieur le Général Commandant en Chef les Forces en Algérie\nE.M.I. – 2ème & 3ème Bureaux\n\nOBJET : Recherche et neutralisation des chefs de la Wilaya IV.\nREFERENCE : Votre note n° 627/EMI/2.OPE du 26 novembre 1960.\n                  5129/EMI/3.OPE.\n\nPar note de référence, vous m’avez demandé d’étudier la possibilité de mener une action particulière ayant pour but la recherche et la neutralisation de MOHAMED, Chef de la Wilaya IV.\n\nLe projet d’opération ci-joint, établi d’après mes directives par le Général commandant le Secteur de MEDDA et que j’approuve, définit les modalités de l’action envisagée.\n\nL’opération débutera, en principe, le 5 janvier et mettra en oeuvre :\n    d’une part, le Commando 100 opérant dans la zone de chasse fixée (voir calque joint) et s’appuyant sur l’infrastructure amie ;\n    d’autre part, les commandos du G.M. 11 opérant simultanément sur les piémonts Nord de cette zone avec une mission de recherche active des chefs rebelles intéressés et non seulement d’interception.\n\nLe problème des moyens radio sera résolu avec les matériels en service ANPRC 10 ou TRPP 8 faute de tout autre moyen.\n\nL’attribution d’une prime en cas de succès m’apparaît déterminante, l’appât du gain constituant le mobile essentiel des membres du commando.\n\nDÉCLASSIFIÉ PAR DÉCISION\nN° 501267 du 23/02/2021",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "MOHAMED, Chef de la Wilaya IV",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom MOHAMED semble probable en se basant sur l'OCR et l'image, mais une légère ambiguïté demeure sur la graphie exacte.",
+        "suggestion": "MOHAMED"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Secteur de MEDDA",
+        "issue": "lieu_incertain",
+        "note": "Le nom 'MEDDA' pourrait présenter une ambiguïté de lecture manuscrite/typographique.",
+        "suggestion": "MEDDA (ou proche graphie)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le projet d’opération ci-joint...",
+        "issue": "lecture_probable",
+        "note": "La structure exacte de cette phrase dépend de sous-parties légèrement effacées ou peu nettes, mais le sens général est correctement restitué.",
+        "suggestion": "Lecture conservée telle que transcrite, formulation sous réserve."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Commandant la Région Territoriale et le Corps d’Armée d’ALGER",
+        "issue": "lecture_probable",
+        "note": "Une partie de la formulation officielle comporte des surlignages ou corrections manuscrites : la version proposée restitue le standard le plus probable.",
+        "suggestion": "Forme usuelle, à corriger ultérieurement si besoin."
+      },
+      {
+        "confidence": "high",
+        "fragment": "DÉCLASSIFIÉ PAR DÉCISION\nN° 501267 du 23/02/2021",
+        "issue": "lecture_probable",
+        "note": "Mention lisible et visible sur le tampon rouge.",
+        "suggestion": "Lecture considérée fiable."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-15",
+    "sourceImage": "15-20260203_110032.jpg",
+    "assistedReadingText": "J'ai l'honneur en conséquence vous demander :\n\n1°) que les 2 commandos du G.M. 11 normalement prévus pour opérer dans le cadre du G.C.C.A. à l'issue de leur période de repos, le 5 janvier 1961, soient mis à ma disposition à compter de cette date en vue de travailler au profit de la Z.N.A ;\n\n2°) qu'un crédit de 60.000 NF. soit tenu à ma disposition.\n\n[Cachet déclassifié]\nSigné : VEZINET\nLieutenant-Colonel L ARBALETRIER\nChef du 3me Bureau",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Z.N.A",
+        "issue": "sigle_incertain",
+        "note": "Sigle confirmé visuellement (majuscule et points visibles) mais sens du sigle non vérifiable sans contexte, lecture purement siglaire.",
+        "suggestion": "Transcrire uniquement \"Z.N.A\" en gardant la forme vue sans tenter d'élucider la signification."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "VEZINET",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre semble clair à l'image mais pourrait prêter à confusion selon la typographie, lecture probable.",
+        "suggestion": "Transcrire tel quel mais signaler l'incertitude sur le nom propre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "L ARBALETRIER",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture basée sur image, la police dactylographiée et le cachet rendent le nom lisible mais un doute subsiste sur la présence/absence d'espace ou les lettres exactes.",
+        "suggestion": "Transcrire en respectant la casse et les espaces, mais signaler l'incertitude."
+      },
+      {
+        "confidence": "high",
+        "fragment": "G.C.C.A.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle est visible sur l'image mais la signification est inconnue, transcription pure.",
+        "suggestion": "Ne pas interpréter, conserver la forme pure."
+      },
+      {
+        "confidence": "high",
+        "fragment": "G.M. 11",
+        "issue": "sigle_incertain",
+        "note": "Même remarque que pour G.C.C.A., sigle visible et conforme à l'image.",
+        "suggestion": "Transcrire tel quel."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Chef du 3me Bureau",
+        "issue": "lecture_probable",
+        "note": "\"3me Bureau\" est lisible mais le \"me\" pourrait prêter à confusion (orthographe ancienne), lecture confirmée par l'image.",
+        "suggestion": "Respecter la graphie \"3me\" signalée sur l'image."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-16",
+    "sourceImage": "16-20260203_110059.jpg",
+    "assistedReadingText": "ALGER, le 26 NOV. 1960\n\nCOMMANDANT EN CHEF DES FORCES EN ALGERIE\nETAT-MAJOR INTERARMÉES\n2ème et 3ème BUREAUX\n\nNOTE\npour M. le Général Commandant la R.T./C.A. d’ALGER\n-/-\nOBJET : Recherche et neutralisation des chefs de la Wilaya IV.\n\nI.- Le Chef de la Wilaya IV, MOHAMED, déploie actuellement une activité intense. Il s’efforce notamment de réorganiser la région d’ALGER.\nSes efforts en vue d’étendre son autorité à l’Ouest et au Sud, sur les Wilayas voisines, peuvent, s’ils sont couronnés de succès, faire de lui le principal chef de la rébellion de l’intérieur.\nC’est pourquoi j’attache une grande importance à la mise hors de combat de MOHAMED.\n\nII.- Je vous demande, en conséquence, d’étudier la possibilité de mener une action particulière ayant pour but la recherche et la neutralisation de MOHAMED.\nJe suis en mesure de vous accorder, pour cette opération, un renforcement en moyens spécialisés (Commandos du Gatl. II).\nVous voudrez bien me rendre compte dès que possible des résultats de votre étude en précisant le volume des moyens de renforcement nécessaires et la durée prévisible de l’opération.\n\nLe Général de Corps d’Armée CREPIN\nCommandant en Chef des Forces en Algérie\nP.O. le Général de Brigade HERITIER\nChef d’Etat-major\nSigné : HERITIER",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "MOHAMED",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable, mais le nom peut être sujet à erreur d'interprétation à cause de la typographie ou de la qualité du scan.",
+        "suggestion": "Ne pas affirmer définitivement le nom propre sans validation humaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Commandos du Gatl. II",
+        "issue": "sigle_incertain",
+        "note": "Le sigle \"Gatl.\" est incertain, difficile à lire et peut être mal retranscrit depuis l'image.",
+        "suggestion": "Confirmer l’acronyme lors d’une validation humaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "26 NOV. 1960",
+        "issue": "date_incertaine",
+        "note": "La date a été lue avec une bonne clarté sur l'image, mais il est rappelé qu'une validation humaine est nécessaire.",
+        "suggestion": "Probable, à confirmer."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-17",
+    "sourceImage": "17-20260203_110125.jpg",
+    "assistedReadingText": "N° d'enregistrement et Heure de dépôt :\n\nMESSAGE\n\nDÉCLASSIFIÉ PAR DÉCISION N° 501267 du 23/02/2021\n\nRÉSERVÉ AUX TRANSMISSIONS AU-DESSUS DE CETTE LIGNE\n\nAUTORITÉ ORIGINE : CAA/3,\nGROUPE DATE-HEURE : 20 DEC 1960\n\nAUTORITÉS DESTINATAIRES\nPOUR ACTION (TO) : Z.S.A. \nPOUR INFORMATION (INFO) : No 239\n\nOBJET - OPÉRATION B.M.C.\n\nSUITE RÉUNION 6 DÉCEMBRE AU PC ZSA DONNE ACCORD POUR DESIGNATION SECTEUR MEDEA COMME SECTEUR PILOTE - STOP - OPÉRATION SUSCEPTIBLE DEBUTER 5 JANVIER 1961 DATE A PARTIR DE LAQUELLE COMMANDOS GM II POURRONT ETRE MIS DISPOSITION ZNA - STOP - AUTORISATION ARMEMENT COMMANDO P.100 AVEC 6 PM MAT 49 ACCORDÉE - STOP - AUCUN MOYEN RADIO RÉPONDANT CONDITIONS PRÉSENTÉES ACTUELLEMENT EN SERVICE - EN CONSÉQUENCE ÉTUDIER EMPLOI TRPP 8 OU ANPRC 10 - STOP - CRÉDIT 60.000 NF DEMANDÉ GENE CHEF LEIN. FIN.\n\nDIFFUSION INTÉRIEURE :\nB2./CAA...\nEMI/B3 + litre de CR.\n\nSigné : VEZINET\nLieutenant-Colonel L'ARBALETRIER\nChef du 3e Bureau",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "CAA/3,",
+        "issue": "nom_propre_incertain",
+        "note": "Probable lecture du sigle de l'autorité d'origine, mais il y a une petite incertitude sur la lisibilité exacte du code manuscrit.",
+        "suggestion": "CAA/3,"
+      },
+      {
+        "confidence": "high",
+        "fragment": "Z.S.A.",
+        "issue": "nom_propre_incertain",
+        "note": "Petite incertitude sur le sigle à cause du manuscrit, mais correspond bien dans l'image.",
+        "suggestion": "Z.S.A."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "OPÉRATION B.M.C.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle B.M.C. est bien visible mais contexte exact incertain sans ajout externe.",
+        "suggestion": "B.M.C."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "GENE CHEF LEIN",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture du nom manuscrit possible mais à confirmer.",
+        "suggestion": "GENE CHEF LEIN"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "EMI/B3 + litre de CR.",
+        "issue": "lecture_probable",
+        "note": "Lecture du fragment manuscrit située en bas à gauche approximative : les abréviations peuvent différer légèrement.",
+        "suggestion": "EMI/B3 + litre de CR."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Signé : VEZINET\nLieutenant-Colonel L'ARBALETRIER\nChef du 3e Bureau",
+        "issue": "nom_propre_incertain",
+        "note": "Les signatures et noms manuscrits sont vraisemblables mais demanderaient confirmation.",
+        "suggestion": "Signé : VEZINET / Lieutenant-Colonel L'ARBALETRIER / Chef du 3e Bureau"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "POUR INFORMATION (INFO) : No 239",
+        "issue": "lecture_probable",
+        "note": "Numéro de diffusion semble être 239, mais à vérifier sur original.",
+        "suggestion": "No 239"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "AUCUN MOYEN RADIO RÉPONDANT CONDITIONS PRÉSENTÉES ACTUELLEMENT EN SERVICE",
+        "issue": "lecture_probable",
+        "note": "Lecture correcte mais possible petite variante dans la formulation.",
+        "suggestion": "AUCUN MOYEN RADIO RÉPONDANT CONDITIONS PRÉSENTÉES ACTUELLEMENT EN SERVICE"
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-18",
+    "sourceImage": "18-20260203_110147.jpg",
+    "assistedReadingText": "ZONE SUD ALGEROIS ET 20° D.I.\nSECTEUR DE MEDEA\nN° 31/3/QF/TS\nP.C., le 10 DEC. 1960\n\nOPERATION BMC\n\nI.- MISSION ET ORGANISATION --\n11 - L'opération B M C (BLIDA - MEDEA et Co) a pour but de s'assurer de la personne de MOHAMED - vif ou mort - et, éventuellement, de SALAH - vivant, dans toute la mesure du possible.\n12 - Cette opération sera dirigée par le secteur de MEDEA avec l'appui de la ZoNoA (Secteur de BLIDA et d'AIN TAYA).\n13 - Elle se déroulera dans une zone comprenant le ZAATIT, le TAKTOUN et les BENI MISCERA. Le calque joint indique les limites initiales de cette zone.\n\nII.- EXECUTION DE LA MISSION --\n21 - L'exécution de cette mission sera confiée à un petit commando léger, de six à huit ralliés et harkis, dont le nom conventionnel sera P 100 - Ce commando sera mis sur pied par le secteur de MEDEA.\n22 - Le P 100 opérera en chasse libre, en principe par observation des itinéraires rebelles et des déplacements d'A.L., ou à défaut par entrée dans les filières rebelles.\n23 - P 100 agira par sorties de la durée maximum compatible avec les circonstances atmosphériques et avec les besoins en ravitaillement. Il pourra se replier sur l'un des postes de recueil suivants :\n\nAIN ZAAF II/9° R.I. - MY 13 D 42\nTAKTOUN III/9° R.I. - MY 13 K 83\nCOTE 1209 112° B.I. - MY 13 K 22\nCOTE 1088 112° B.I. - MY 34 D 84\nCOTE 1450 III/117° R.I. - MY 34 D 26\nTEMMA HALIMA - MY 24 B 48\nLA PASSERELLE S.A.S. de HAMMAM MELOUANE + MY 25 K 24\nCHEKA 1/65° R.A. - MY 14 G 71\nTIZI IRIL 1/404° R.A. - MY 14 A 01\n\nDÉCLASSIFIÉ PAR DÉCISION\nN° 501267 du 23/02/2021",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "MOHAMED, SALAH",
+        "issue": "nom_propre_incertain",
+        "note": "Noms propres partiellement lisibles mais dactylographiés. L'image ne permet pas à 100% d'éliminer une méprise sur l'orthographe.",
+        "suggestion": "Lecture probable : MOHAMED et SALAH"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ZoNoA",
+        "issue": "sigle_incertain",
+        "note": "Le sigle semble être dactylographié comme 'ZoNoA' ou 'Z.N.o.A.', mais la casse et la ponctuation ne sont pas totalement claires.",
+        "suggestion": "Lecture probable : ZoNoA"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "BENI MISCERA",
+        "issue": "lieu_incertain",
+        "note": "La graphie semble correcte mais peu courante ; incertitude modérée sur l’exactitude du nom propre géographique.",
+        "suggestion": "Lecture probable : BENI MISCERA"
+      },
+      {
+        "confidence": "high",
+        "fragment": "DÉCLASSIFIÉ PAR DÉCISION N° 501267 du 23/02/2021",
+        "issue": "lecture_probable",
+        "note": "Formule bien lisible à l’image.",
+        "suggestion": "Lecture très probable."
+      },
+      {
+        "confidence": "low",
+        "fragment": "CHEKA",
+        "issue": "lieu_incertain",
+        "note": "Graphie du toponyme, peu courante, difficile à valider sans contexte.",
+        "suggestion": "Lecture probable : CHEKA"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "TAKTOUN, ZAATIT",
+        "issue": "lieu_incertain",
+        "note": "Toponymes peu fréquents, mais globalement lisibles sur l'image.",
+        "suggestion": "Lecture probable conservée."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-19",
+    "sourceImage": "19-20260203_110202.jpg",
+    "assistedReadingText": "24 – P 100, équipé en postes radio spéciaux, travaillera en liaison permanente avec une petite équipe de liaison munie d’un poste analogue et basée dans l’un des postes de recueil. Pour permettre cette permanence, le secteur de MEDEA fournira deux équipes de cette nature, qui seront déplacées de poste de recueil en poste de recueil. \n\n25 – Ces équipes de liaison auront pour mission de suivre par radio les mouvements de P 100 et de transmettre les messages entre P 100 et secteur de MEDEA : renseignements, demandes d’appui, demandes de recueil.\n\nIII. – APPUIS –\n\n31 – Deux unités du G.M. 11 seront mises à la disposition de la Z.N.A. pour opérer sur les piémonts Nord de l’ATLAS et éviter que les individus recherchés ne s’y réfugient. Ces unités ne pénétreront dans la Zone d’action de P 100 que sur accord du secteur de MEDEA.\n\nIl serait souhaitable qu’elles commencent leur action avant P 100.\n\n32 – P 100 pourra être appuyé, si nécessaire, par intervention héliportée ou à pied de l’un des commandos ci-dessus : Pardessus Blanc (6° R.I.), K 16 – Harka du I/35° R.A. – K 14\n\n33 – En cas de besoin, un ou plusieurs de ces commandos pourront être renforcés par un commando de l’Air héliporté.\n\n34 – Le secteur de MEDEA pourra être amené à demander un P.C.A. de la Z.S.A., soit des appuis feux au profit de P 100 (peu probable), soit la non intervention feux ou observation dans telle ou telle région.\n\nLe P.C.A. de la Z.S.A. en aviserait éventuellement le P.C.A. de la Z.N.A.\n\nIV. – MOYENS SUPPLEMENTAIRES NECESSAIRES –\n\n41 – Crédits : 10.000 N.F. par membre de P 100, soit 60 à 80.000 N.F.\n\nÉventuellement, un petit crédit pour achat de matériel d’équipement.\n\n42 – Armement : 6 PM MAT 49\n\n43 – Radio : 4 postes émetteurs récepteurs de faible volume, type services spéciaux.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Pardessus Blanc (6° R.I.), K 16 – Harka du I/35° R.A. – K 14",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms propres des unités et la mention 'Pardessus Blanc' peuvent prêter à confusion par mauvaise OCR ou abréviation difficile à lever sans contexte.",
+        "suggestion": "Confirmer l'intitulé exact des noms d'unités et des sigles."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "poste analogue et basée dans l’un des postes de recueil",
+        "issue": "lecture_probable",
+        "note": "Le mot 'base'/'basée' et la concordance du genre ne sont pas ultracertains du fait d’un possible artefact OCR.",
+        "suggestion": "Vérifier la formulation exacte : 'basée' ou 'base'."
+      },
+      {
+        "confidence": "high",
+        "fragment": "60 à 80.000 N.F.",
+        "issue": "lecture_probable",
+        "note": "La plage de montants est visible mais la mise en forme ('60 à 80.000') pourrait laisser place à variation.",
+        "suggestion": "Quantifier visuellement mais prudence sur la graphie exacte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Z.N.A., Z.S.A.",
+        "issue": "sigle_incertain",
+        "note": "Les sigles militaires/des zones sont très peu explicités et peuvent être sujets à méprise selon la qualité de l'image/OCR.",
+        "suggestion": "Confirmer ces sigles à la source si possible."
+      },
+      {
+        "confidence": "low",
+        "fragment": "mot écrit en marge : 'a vérifier ?'",
+        "issue": "mot_illisible",
+        "note": "La note manuscrite en marge est peu lisible et n’est pas intégrée dans le corps.",
+        "suggestion": "Laisser la mention hors texte principal ; à traiter lors d'une revue manuelle."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-20",
+    "sourceImage": "20-20260203_110217.jpg",
+    "assistedReadingText": "V.-\nRENSEIGNEMENT\n51 - Il est nécessaire que dès maintenant, tout renseignement recueilli sur MOHAMED soit transmis au Secteur de MEDEA (par l'intermédiaire de la Z.g.S.a.)\n\n52 - L'opération B M C doit, pour aboutir, conserver un caractère particulièrement secret. Ne devront être mis au courant que les Commandants de Zone ou de Secteurs intéressés, et un nombre restreint de leurs collaborateurs, ainsi que les officiers supérieurs commandant le II/6e R.I., III/69e R.I. et 1/85° R.A., puis ultérieurement, les chefs des quatre commandos ou harkas ci-dessus.\n\nVI.-\nDELAIS\n61 - La mise sur pied et le rodage de P 100 nécessitent 15 jours, soit 25 décembre.\n\n62 - L'opération sera susceptible de démarrer à partir de cette date, mais à cette époque de l'année son déroulement est étroitement dépendant des conditions atmosphériques. Basée sur l'acuité visuelle et auditive des personnels de P 100, elle n'a pas de chances de succès en périodes de neige, de pluie ou de grand froid.\n\n63 - Si les circonstances atmosphériques sont favorables, la durée à prévoir est d'un mois - en principe, une période de recherche et d'observation d'une quinzaine de jours et une période d'action de même durée.\n\n64 - Il est donc prudent de prévoir un démarrage de l'opération dès l'apparition d'une période de beau temps à partir du 25 décembre, et une durée de l'ordre de deux mois, avec interruptions probables en cas de détérioration des circonstances atmosphériques.\n\nLe Général de Brigade DRION\nCommandant le secteur de Médéa.\n\nDESTINATAIRES :\n- Z.g.S.a./3/OP (6 ex.)\n- Archives (1 ou 2)",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "MOHAMED",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom semble 'MOHAMED', mais la casse et la précision sont moins assurées sur l'image.",
+        "suggestion": "Conserver 'MOHAMED' avec réserve."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "B M C",
+        "issue": "sigle_incertain",
+        "note": "Le sigle BMC est lisible mais pourrait être différemment espacé ; la lecture correspond à l'image.",
+        "suggestion": "Garder 'B M C'."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Z.g.S.a.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle est noté ainsi dans le document d'origine.",
+        "suggestion": "Reproduire tel quel."
+      },
+      {
+        "confidence": "high",
+        "fragment": "II/6e R.I., III/69e R.I. et 1/85° R.A.",
+        "issue": "sigle_incertain",
+        "note": "La numérotation et les sigles sont lisibles sur l'image.",
+        "suggestion": "Maintenir cette formulation."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "P 100",
+        "issue": "sigle_incertain",
+        "note": "Le terme est lisible sur l'image mais pourrait être un code interne.",
+        "suggestion": "Garder la forme P 100."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "DRION",
+        "issue": "nom_propre_incertain",
+        "note": "Nom lisible comme DRION, mais la signature manuscrite rend la confirmation délicate.",
+        "suggestion": "Conserver 'DRION' avec précaution."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Le Général de Brigade DRION Commandant le secteur de Médéa.",
+        "issue": "lecture_probable",
+        "note": "La ligne a été modifiée à la machine à écrire et corrigée manuellement ('secteur de Médéa'), lecture incertaine sans certitude totale sur tout le libellé original barré.",
+        "suggestion": "Indiquer la correction manuscrite, rester prudent."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-21",
+    "sourceImage": "21-20260203_111215.jpg",
+    "assistedReadingText": "COTE 327\nREPLI\nAppui Rebelle\nJEPP\nCapitaine X\nELEMENT ASSAUT REBELLE A\nOUED el AMRI\nGMC BLINDE\n4x4 RENAULT\nS/DEVANCHELLE\nELEMENT ASSAUT REBELLE B\nREPLI\nRAÏADA",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "1a0vnad Y%\nä\n?\n2422\nIIIES\np",
+        "issue": "mot_illisible",
+        "note": "La grande majorité de l'OCR est sans rapport avec le contenu réel de l'image (qui est un croquis manuscrit). Rien n'est lisible dans l'OCR fourni par rapport à l'image.",
+        "suggestion": "Ignorer l'OCR dans ce cas, tout en signalant qu'il est non pertinent ou illisible ici."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Capitaine X",
+        "issue": "nom_propre_incertain",
+        "note": "Le 'X' peut n'être qu'un placeholder et pas un véritable nom propre.",
+        "suggestion": "Marquer ce nom comme incertain."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "S/DEVANCHELLE",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable du nom, mais le contour manuscrit laisse une incertitude.",
+        "suggestion": "Marquer ce nom comme incertain."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "RAÏADA",
+        "issue": "lieu_incertain",
+        "note": "Ce pourrait être un nom de lieu ou d'un auteur, mais l'image ne permet pas de trancher.",
+        "suggestion": "Marquer ce toponyme comme incertain."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-22",
+    "sourceImage": "22-20260203_111234.jpg",
+    "assistedReadingText": "Contigent : Grade :",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Contigent : Gréde :",
+        "issue": "lecture_probable",
+        "note": "L'image permet de lire les mots 'Contingent' et 'Grade', mais l'ordre et la ponctuation diffèrent légèrement de l'OCR nettoyé. Lecture probable mais incertaine en raison de la faible qualité de la zone centrale du document qui affecte la lisibilité.",
+        "suggestion": "Contingent : Grade :"
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-23",
+    "sourceImage": "23-20260203_113131.jpg",
+    "assistedReadingText": "- PRINCIPALES BANDES ACCROCHÉES\n\nREGIONS  | BANDES ACCROCHÉES | DATES             | PERTES EN PERSONNEL | PERTES EN ARMEMENT                              | POURCENTAGE\n         |                  |                   | NOMBRE | POURCENTAGE |                                              | ARMES COLLECTIVES | ARMES INDIVIDUELLES\n----------------------------------------------------------------------------------------------------------------------------------------------------------------\nOUARSENIS\n  Katiba 424  18.4  122.4  20.5  129.5   80    60%         1 MITR - 1 P.M. 10 F.M. - 40 F.c.                      15%                   40%\n          (autre colonne)                                  Récupérés sur les F.O.\nMONGORO\n  Katiba 431  18.4  127.4             60    80%         1 MITR - 1 P.M. - 7 F.M.                                   50%                   15%\n  Katiba 432  14.5                   20    20%         non dénombrées                                          -                     -\n  Katiba 433  12.4  130.4  17.5      65    90%         3 P.M. - 12 F.M. - 16 F.c.                                -                     40%\n  Section 434/1  24.4                14    40%         4 F.M. - 3 F.c.                                         -                     25%\n  Commando 54   19.5                 35    25%         LRAC - 1 MITR - 1 P.M. - 4 F.M. - 15 F.c.                40%                   40%\n                                                          4 affût MITR de 30\n  Katiba 543   27.4   19.5           110   90%         1 MITR - 4 F.M. - 2 P.M. - 41 F.c.\n              (compte tenu d'un renforcement de 130 à 40 indés)                                                   85%                   75%\n  Katiba 571   17.4                  15    40%         5 F.M. - 3 F.c.                                        -                     25%\n  Katiba 613   12.5                  20    40%         3 P.M. - 8 F.c.                                        -                     -",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Katiba 424 ... Récupérés sur les F.O.",
+        "issue": "lecture_probable",
+        "note": "Le commentaire sur les armes récupérées sur les F.O. est peu lisible sur l'image et la formulation pourrait varier.",
+        "suggestion": "Confirmer la totalité du commentaire manuscrit ou dactylographié s'il existe."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Katiba 432 ... non dénombrées",
+        "issue": "mot_illisible",
+        "note": "Le passage sur les pertes en armement pour Katiba 432 présente un terme peu lisible, probablement 'non dénombrées'.",
+        "suggestion": "Lecture à vérifier sur original."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Katiba 433 ... 3 P.M. - 12 F.M. - 16 F.c.",
+        "issue": "lecture_probable",
+        "note": "La liste des pertes en armement semble fidèle à l'image mais nécessite une validation attentive.",
+        "suggestion": "Vérifier les sigles armement."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Katiba 543 ... (compte tenu d'un renforcement de 130 à 40 indés)",
+        "issue": "mot_illisible",
+        "note": "Le mot 'indés' à la fin de la phrase n'est pas certain (abréviation?) car l'image n'est pas parfaitement lisible.",
+        "suggestion": "Confirmer l'abréviation et la phrase totale."
+      },
+      {
+        "confidence": "high",
+        "fragment": "pourcentages manuscrits en rouge: 40% sur Katiba 424 et Katiba 433, 75% sur Katiba 543",
+        "issue": "lecture_probable",
+        "note": "Les chiffres en rouge sont bien visibles, mais à vérifier s'il s'agit bien d'une mise à jour et de la bonne colonne.",
+        "suggestion": "Faire relire par un humain pour s'assurer du sens."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Commando 54 ... LRAC - 1 MITR - 1 P.M. - 4 F.M. - 15 F.c. ... 4 affût MITR de 30",
+        "issue": "mot_illisible",
+        "note": "Lecture fragile sur certains sigles et sur le fragment '4 affût MITR de 30'.",
+        "suggestion": "Validation du sigle et du sens des abréviations requise."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-24",
+    "sourceImage": "24-20260203_113345.jpg",
+    "assistedReadingText": "ALGER, le 30 MAI 1959.\n\nCOMMANDANT LES FORCES EN ALGERIE\nREGION TERRITORIALE ET CORPS D'ARMEE D'ALGER\nETAT-MAJOR -- 3e BUREAU\nN° 1579/CAA/3/OPÉ.\nN° 68/Ts.\n\nTRÈS SECRET\nExemplaire N° 6/16\n\nNOTE\n\npour\n- Monsieur le Général Commandant la Z.N.A. et la 7e D.I.R.\n- Monsieur le Général Commandant la Z.S.A. et la 20e D.I.\n- Monsieur le Général Commandant la Z.E.A. et la 27e D.I.A.\n- Monsieur le Général Commandant la Z.O.A. et la 9e D.I.\n- Monsieur le Général Commandant la 10e D.P.\n\nOBJET : Calendrier d'emploi des unités de réserve générale.\n\n1. Du 1er au 7 Juin inclus, le Général Commandant la 10e D.P. disposera, en plus des Unités faisant partie du Groupement OUARSENIS, du 1er R.E.P., du 3e R.E.I. et des Commandos de l'Air 20 et 40.\nPendant cette période, le Général Commandant la 10e D.P. poursuivra l'action déjà entreprise dans le DJEBEL LOUH et le LONGORNO, et effectuera éventuellement, sur renseignement, des opérations rapides dans la partie centrale ou orientale de l'OUARSENIS.\n\n2. Du 10 au 17 Juin inclus, le Général Commandant la Z.O.A. disposera des 1er R.E.P., 3e R.E.I., 3e R.P.I.Ma, Commandos de l'Air n° 20 et 40, et d'un D.I.H., à 8 H, 34.\n\n...//...\n\nDÉCLASSIFIÉ PAR DÉCISION N° 501267 du 23/02/2021",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "LONGORNO",
+        "issue": "lieu_incertain",
+        "note": "La lecture du nom de lieu 'LONGORNO' n'est pas totalement assurée, l'image montre une possible variante (lettrage peu net).",
+        "suggestion": "Vérification auprès d'autres sources nécessaire, transcription conservée mais incertaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "D.I.H., à 8 H, 34.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle 'D.I.H.' et la notation horaire restent ambigus : image peu lisible sur ce point.",
+        "suggestion": "Signalé comme probable mais à vérifier."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Commandos de l'Air 20 et 40",
+        "issue": "lecture_probable",
+        "note": "Une légère incertitude sur le lettrage exact (possibilité d’une confusion sur les numéros ou la mention).",
+        "suggestion": "Lecture conservée, mais à prendre avec précaution."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "...//...",
+        "issue": "mot_illisible",
+        "note": "Fin de page, le passage est tronqué.",
+        "suggestion": "Symboles traduits littéralement, incomplétude du texte signalée."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-25",
+    "sourceImage": "25-20260203_113357.jpg",
+    "assistedReadingText": "Pendant cette période, il poursuivra l'assainissement du BISSA et des BRAZ, notamment en recherchant pour les détruire la Katiba 442 et le Commando 44 (HAMDANIA).\n\nIII.-\nDu 10 au 17 Juin inclus, le Général Commandant la 10ème D.P. disposera des 6° R.P.I.Ma., 1° R.C.P., 13° D.B.L.E., 29° D.T.; il conservera son D.M.E., les 5° R.E.I. et 2° R.T.M.a.\nPendant cette période, il poursuivra l'assainissement de la partie centrale et orientale de l'Atlas blidéen (des BENICHERA au SOUFLET) et celui du BOUGAOUDEN, notamment en recherchant pour les détruire les Katibas 413, 414 et 611.\nIl s'entendra directement avec les Généraux Commandant les Zones intéressées par ces opérations pour la fourniture de moyens mobiles complémentaires.",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "BENICHERA au SOUFLET",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture des noms propres géographiques (BENICHERA, SOUFLET) est incertaine en raison d'une possible confusion sur l'image entre certaines lettres.",
+        "suggestion": "BENICHERA et SOUFLET semblent corrects mais la forme exacte reste à valider sur l'image originale haute résolution."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "BOUGAOUDEN",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre BOUGAOUDEN semble probable mais quelques lettres restent ambiguës sur l'image.",
+        "suggestion": "BOUGAOUDEN est proposé sous réserve de confirmation sur document original."
+      },
+      {
+        "confidence": "high",
+        "fragment": "6° R.P.I.Ma., 1° R.C.P., 13° D.B.L.E., 29° D.T.; ... 5° R.E.I., 2° R.T.M.a.",
+        "issue": "sigle_incertain",
+        "note": "Les sigles militaires dans la liste peuvent contenir des erreurs de transcription dues à l'OCR ; certains points ou lettres sont difficiles à confirmer.",
+        "suggestion": "Vérifier chaque sigle avec d'autres sources archivistiques lors de la validation."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Katiba 442, 413, 414 et 611, Commando 44 (HAMDANIA)",
+        "issue": "nom_propre_incertain",
+        "note": "Les numéros des Katibas et le nom HAMDANIA apparaissent corrects mais l'image peut générer une confusion sur certains chiffres.",
+        "suggestion": "Confirmer chiffres Katiba et HAMDANIA sur l'original papier."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Du 10 au 17 Juin inclus",
+        "issue": "date_incertaine",
+        "note": "La date du 10 au 17 Juin peut être confirmée par l'image, mais la lecture du mois pourrait être sujette à confusion selon la calligraphie.",
+        "suggestion": "Validation nécessaire sur tout extrait contenant une date manuscrite ou difficile à lire."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-26",
+    "sourceImage": "26-20260203_113507.jpg",
+    "assistedReadingText": "ALGER, le 4 Juillet 1959.\n\nLe Général de Division MASSU\nCommandant la Région Territoriale\net le Corps d'Armée d'ALGER.\n\nMonsieur le Général d'Armée Aérienne,\nCommandant en Chef des Forces en Algérie\nEtat-Major - 3e Bureau\n\nOBJET. - Bilan des Opérations en Wilaya IV.\nREFERENCE. - N° 1468/EMI/3/OPE/E. du 12.6.59.\n\n1.- J'ai l'honneur de vous envoyer ci-joint le rapport d'ensemble des Opérations \"COURROIE\", rapport demandé par votre note de référence.\nVous y trouverez tous les renseignements statistiques permettant de se faire une idée de leur déroulement et de leurs résultats.\n\n2.-   Au bilan positif de ces opérations, il y a lieu de porter:\n21.- Sur le plan purement militaire, un affaiblissement non négligeable du potentiel de l'adversaire:\n- 2,200 rebelles hors de combat (1,756 tués) dont 40 chefs,\n (3,700 rebelles hors de combat pour l'ensemble du C.A.A.)\n- 1,260 armes récupérées, dont 28 armes collectives.\n (2,053 pour l'ensemble du C.A.A.)\nCes chiffres correspondent en pratique à une diminution de l'ordre de 30% du potentiel armement des unités rebelles opérant dans la Zone traitée.\n\n22.- Sur le plan de la pacification, une extension de notre implantation dans certaines zones refus jusqu'alors très fermées des rebelles : SOUFFLAT - ZABABAR - MOUZAIA - DJEBEL LOHUE - MONGORNO - HAUTS DU CHERCHELL-TIOIS - OUARSENIS OCCIDENTAL.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Monsieur le Général d'Armée Aérienne",
+        "issue": "nom_propre_incertain",
+        "note": "Le titre et la fonction du destinataire sont vraisembablement ceux lus sur l'image, mais son nom n'apparaît pas, incertitude d'identité.",
+        "suggestion": "Ne pas attribuer un nom propre ici."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "SOFFLAT - ZABABAR - MOUZAIA - DJEBEL LOHUE - MONGORNO - HAUTS DU CHERCHELL-TIOIS - OUARSENIS OCCIDENTAL.",
+        "issue": "lieu_incertain",
+        "note": "Certains toponymes sont difficiles à certifier en l'absence de liste normalisée et la police du document est partiellement déformée à cet endroit.",
+        "suggestion": "Soufflat, Mongorno et Djebel Lohue paraissent probables mais leur graphie présenterait un doute léger."
+      },
+      {
+        "confidence": "high",
+        "fragment": "2,200 rebelles hors de combat (1,756 tués) dont 40 chefs",
+        "issue": "lecture_probable",
+        "note": "La formulation est très claire sur l'image, mais légèrement déformée dans l'OCR.",
+        "suggestion": "Retenir la version vue sur l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "OBJET. - Bilan des Opérations en Wilaya IV.",
+        "issue": "lecture_probable",
+        "note": "La formulation OCR différente du document scanné ('Wilay' au lieu de 'Wilaya IV.') a été corrigée à partir de l'image.",
+        "suggestion": "Wilaya IV."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ALGER, le 4 Juillet 1959.",
+        "issue": "date_incertaine",
+        "note": "La date est visible sur l'image, mais le mois peut parfois prêter à ambigüité selon la qualité de l'image.",
+        "suggestion": "Retenir '4 Juillet 1959', mais avec une incertitude modérée."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-27",
+    "sourceImage": "27-20260203_113524.jpg",
+    "assistedReadingText": "Cette extension se matérialise par :\n- 191 Kms. de routes et de pistes nouvelles réalisées.\n- 29 postes nouveaux prévus, par extension du quadrillage.\n\nNéanmoins, ces opérations n'ont pas pleinement atteint le but fixé, tant sur le plan de la destruction des bandes que sur celui de la pacification. En fait, on a pu constater une baisse de rendement au bout de 4 à 5 semaines d'opérations.\n\n31 - En ce qui concerne la destruction des bandes, je vois pour ma part plusieurs explications à cette baisse de rendement.\n- Le plus évident d'abord - Les bandes, pressées par la nécessité, ont été progressivement amenées à se disperser, alors que jusque là les chefs de l'intérieur avaient été assez réticents à appliquer la tactique de dispersion prônée depuis AVRIL 1959 par les Chefs de l'extérieur. Il a donc fallu procéder à la recherche systématique de ces bandes. Les éléments découverts et accrochés étant alors généralement de la valeur de la Section, voire du groupe, les résultats obtenus ont été sans commune mesure avec le volume des unités et la dépense d'énergie mise en œuvre.\n\nComme la superficie à traiter, en fonction du choix initial des objectifs, était considérable au regard du nombre des unités de Réserve Générale, ces unités ont fini par s'épuiser dans cette recherche des bandes.\n\nLeur fatigue a encore été augmentée par la chaleur particulièrement éprouvante des dernières décades et par le fait que le terrain à traiter était difficile dans l'ensemble des régions intéressées par les opérations.\n\n32 - En ce qui concerne la pacification, il importe d'abord de remarquer qu'elle est l'œuvre de l'ensemble des unités du quadrillage, et non celle de quelques spécialistes policiers ou S.A.S.\n\nLorsqu'une unité de Réserve Générale arrive dans une région elle a tendance, si le Commandement n'y prend pas garde, à attirer par osmose la plus grande partie des unités du quadrillage pour effectuer les tâches d'appoint, les bouclages notamment.\n\nDurant \"COURROIE\" le rythme opérationnel s'est ainsi très rapidement accéléré au point que, la présence des Unités de Réserve Générale s'est paradoxalement traduite par une diminution importante du nombre des unités appliquées à la pacification. D'où une certaine recrudescence des exactions.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "AVRIL 1959",
+        "issue": "date_incertaine",
+        "note": "La date est lisible mais pourrait être affectée par une incertitude de l'image ou dactylo.",
+        "suggestion": "Garder \"AVRIL 1959\" mais envisager une vérification."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "COURROIE",
+        "issue": "nom_propre_incertain",
+        "note": "Il semble s'agir du nom d'une opération. L'image est claire mais l'usage des guillemets majuscules pose question quant à un éventuel sigle ou nom de code.",
+        "suggestion": "Garder la forme, à valider lors d'une relecture attentive."
+      },
+      {
+        "confidence": "high",
+        "fragment": "S.A.S.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle est clairement écrit, mais son interprétation exacte (Service d'Action Sociale/Secteur Administratif Spécialisé, etc.) ne doit pas être affirmée sans contexte.",
+        "suggestion": "Laisser tel quel pour validation ultérieure."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "dernières décades",
+        "issue": "lecture_probable",
+        "note": "Le mot 'décades' est lisible mais son emploi pourrait représenter une approximation ou un archaïsme ; à confirmer.",
+        "suggestion": "Proposer la lecture telle quelle, à confirmer."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-28",
+    "sourceImage": "28-20260203_113535.jpg",
+    "assistedReadingText": "Par contre, dans les régions où par suite de circonstances particulières, les unités du quadrillage ont conservé leur stabilité et l'avantage de la présence presque constante des Unités de Réserve Générale la pacification a progressé et les exactions ont été en diminution.",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Signature manuscrite en bas de page",
+        "issue": "mot_illisible",
+        "note": "Présence d'une signature manuscrite non lisible à la fin du texte dactylographié, qui n'est pas transcrite car illisible.",
+        "suggestion": "Indiquer simplement [signature manuscrite illisible]"
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-30",
+    "sourceImage": "30-20260203_114837.jpg",
+    "assistedReadingText": "",
+    "uncertainties": [],
+    "confidence": "low",
+    "status": "assisted_unavailable",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page."
+  },
+  {
+    "reviewId": "page-31",
+    "sourceImage": "31-20260203_114950.jpg",
+    "assistedReadingText": "sE\n“\n£\nL\n=\nL\n=\n=\nsm0\nHESUNEME SE\nut nine e ns\n{ise\nT ITTL\nDRRRDIREUSE",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "sE “ £ L = L = = sm0 HESUNEME SE ut nine e ns {ise T ITTL DRRRDIREUSE",
+        "issue": "mot_illisible",
+        "note": "La quasi-totalité du texte OCR extrait ne permet pas une identification claire de mots ou de phrases signifiantes, ni par comparaison avec l'image qui ne présente que des armes disposées au sol. Aucun texte clairement lisible sur l'image ne permet de conforter ou corriger ce résultat.",
+        "suggestion": "Probablement bruit ou texte parasite, aucune lecture fiable possible."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-32",
+    "sourceImage": "32-20260203_115317.jpg",
+    "assistedReadingText": "OUARSENIS\n\n3e orgie (mot très incertain, raturé, voir incertitudes)\navril-juin 1959",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "3e orgie (ou 3° orgie raturé, difficile à lire)",
+        "issue": "mot_illisible",
+        "note": "Le mot manuscrit juste sous le titre principal est raturé et la lecture est très incertaine. L'OCR ne propose rien, la relecture image donne un mot proche de 'orgie' ou 'orpige', mais c'est hypothétique.",
+        "suggestion": "Suggestion de lecture probable: 3e orgie ou 3° orgie. Nécessite validation humaine attentive."
+      },
+      {
+        "confidence": "high",
+        "fragment": "OUARSENIS",
+        "issue": "lecture_probable",
+        "note": "Le titre est confirmé par l'image et l'OCR.",
+        "suggestion": "Lecture stable."
+      },
+      {
+        "confidence": "high",
+        "fragment": "avril-juin 1959",
+        "issue": "date_incertaine",
+        "note": "La période 'avril-juin 1959' manuscrite est claire mais la précision sur l'année mérite une vérification sur d’autres sources si crucial.",
+        "suggestion": "Lecture très probable, faible incertitude."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-33",
+    "sourceImage": "33-20260203_115330.jpg",
+    "assistedReadingText": "p ——\ne t> »\np æs\ne m e n e e S S E S E S S E S E vtc—n-um&….—.-…u .\"'.\nn f\nu1E E e e e en Sl",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "p ——\ne t> »\np æs\ne m e n e e S S E S E S S E S E vtc—n-um&….—.-…u .\"'.\nn f\nu1E E e e e en Sl",
+        "issue": "mot_illisible",
+        "note": "Presque la totalité de ce texte OCR est composée de fragments illisibles qui n'apparaissent nulle part évident sur l'image, laquelle ne montre aucun texte lisible. L'OCR semble provenir d'un dos de photo ou d'un texte très effacé/non apparent sur cette face.",
+        "suggestion": "La transcription repose uniquement sur l'OCR fourni ; aucune vérification possible via l'image qui ne contient pas de texte visible."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-34",
+    "sourceImage": "34-20260203_115538.jpg",
+    "assistedReadingText": "gæœm®'-*\nhile‘w‘ﬁ_\\ “\nÀ 1 A PE QRE T",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "gæœm®'-*",
+        "issue": "mot_illisible",
+        "note": "Ce fragment ne correspond à aucun mot identifiable et le texte dans l'image n'est pas distinct pour permettre une vérification.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "hile‘w‘ﬁ_\\ “",
+        "issue": "mot_illisible",
+        "note": "Ce segment ne forme aucun mot reconnaissable ; impossible de confirmer ou corriger avec l'image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "À 1 A PE QRE T",
+        "issue": "lecture_probable",
+        "note": "Texte isolé, n'a pas de signification claire. L'image ne permet pas de valider ce passage.",
+        "suggestion": ""
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-35",
+    "sourceImage": "35-20260203_115606.jpg",
+    "assistedReadingText": "",
+    "uncertainties": [],
+    "confidence": "low",
+    "status": "assisted_unavailable",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page."
+  },
+  {
+    "reviewId": "page-36",
+    "sourceImage": "36-20260203_115611.jpg",
+    "assistedReadingText": "",
+    "uncertainties": [],
+    "confidence": "low",
+    "status": "assisted_unavailable",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page."
+  },
+  {
+    "reviewId": "page-37",
+    "sourceImage": "37-20260203_115831.jpg",
+    "assistedReadingText": "",
+    "uncertainties": [],
+    "confidence": "low",
+    "status": "assisted_unavailable",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page."
+  },
+  {
+    "reviewId": "page-38",
+    "sourceImage": "38-20260203_115941.jpg",
+    "assistedReadingText": "relevé chronologique de l'activité des unités de réserve générale",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "des unités",
+        "issue": "mot_illisible",
+        "note": "La partie \"des unités\" est manuscrite de façon moins nette. Cependant, la lecture proposée semble probable mais n'est pas absolument certaine.",
+        "suggestion": "Vérifier la transcription exacte de cette portion sur l'image originale."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "de réserve générale",
+        "issue": "mot_illisible",
+        "note": "L'expression \"de réserve générale\" est clairement manuscrite mais la lecture exacte reste une hypothèse forte basée sur la forme des lettres.",
+        "suggestion": "Confirmer via relecture attentive avec l'original ou un avis humain."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-39",
+    "sourceImage": "39-20260203_120227.jpg",
+    "assistedReadingText": "OPÉRATION COURROIE\n\n18 avril au 19 juin 1959",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "OPÉRATION COURROIE",
+        "issue": "nom_propre_incertain",
+        "note": "Le terme 'COURROIE' est probablement un nom d'opération, mais la confirmation exacte dépendrait d'autres sources.",
+        "suggestion": "Lecture probable mais incertaine sur la nature exacte du nom propre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "18 avril au 19 juin 1959",
+        "issue": "date_incertaine",
+        "note": "Lecture conforme à l'image mais l'interprétation de la période exacte n'est pas certaine sans contexte supplémentaire.",
+        "suggestion": "Lecture probable des dates ; la précision des jours pourrait être vérifiée."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-40",
+    "sourceImage": "40-20260203_120311.jpg",
+    "assistedReadingText": "OPÉRATIONS DANS L'ALGÉROIS du 18-4 au 18-6 1959\nAnnexe F 4\nDESTRUCTION DES BANDES\n\n[Carte avec de nombreux cercles, chaque cercle indique un code (ex: K 431, K 591, K 414, etc.) et, pour chacun, un ou plusieurs encadrés indiquent :\n  - 1 PM 15 FNC 2 FM 1 FG\n  - des combinaisons similaires, vraisemblablement des effectifs ou du matériel]\n\nLEGENDE :\nLimite de WILAYA ———\nLimite de MINTAKA – – –\nAccrochage  [symbole de cercle plein]\nDestruction de P.C.  [cercle double]\nArmement individuel : Répartition suivant le schéma :\n  — Jaune: P.A. et revolvers\n  — Noir: FG\n  — Blanc: FM, PM, FNC\n\nPOTENTIEL REBELLE W4 ET RÉGIONS MARGINALES\nLRAC: 4\nMORTIER: 13\nMITRAILLEUSES: 50\nFM: 155\nPM: 170\nFNC: 2100\nFG: 650\nPA + REVOLVERS: 800\n\nPOTENTIEL PRIS AU COURS DE L'OPÉRATION (COURRIÈRE INCLUS)\nLRAC: 1\nMORTIER: 1\nMITRAILLEUSE: 8\nFM: 15\nPM: 65\nFNC: 640\nFG: 24\nPA + REVOLVERS: 244\n\nPOTENTIEL PRIS SUR ENSEMBLE DU CAA\nLRAC: 9\nMORTIER: 13\nMITRAILLEUSE: 87\nFM: 146\nPM: 575\nFNC: 4750 (dont 1600x modularité)\nFG: 640\nPA + REVOLVERS: 471\n\nÉvaluation approximative.\n\nCertains encadrés (exemples):\nK 431\n1 PM 15 FNC 2 FM 1 FG\n\nK 543\n1 PM 25 FNC 2 FM 1 FG\n\nS 443/3\n5 PM 5 FNC 1 FG\n\nPC WILAYA 4\n25 PM 20 FNC 3 FM 5 FG\n\nLes noms de lieux et certains chiffres correspondent à des codes ou symboles non explicités. De nombreux encadrés similaires présents sur la carte.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "K 431, K 543, S 443/3, etc.",
+        "issue": "nom_propre_incertain",
+        "note": "Dans la mesure où ces codes pourraient correspondre à des lieux ou points précis, sans certitude sur leur nature exacte. L'image montre uniquement des codes.",
+        "suggestion": "Laisser tels quels en l'absence de confirmation."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "FNC, FG, FM, PM, P.A., LRAC, etc.",
+        "issue": "sigle_incertain",
+        "note": "L'image confirme la présence de ces sigles pour désigner probablement des catégories d'armes, sans certitude sur leur signification exacte (hors contexte).",
+        "suggestion": "Reproduit tels quels."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Annexe F 4",
+        "issue": "lecture_probable",
+        "note": "Lecture assez nette sur l'image mais non totalement garantie.",
+        "suggestion": "Lecture probablement correcte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jaune, Noir, Blanc dans la légende",
+        "issue": "lecture_probable",
+        "note": "La correspondance exacte avec les catégories d'armement n'est confirmée que par le schéma couleur sur l'image.",
+        "suggestion": "Rester prudent sur la correspondance."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Dates du 18-4 au 18-6 1959",
+        "issue": "date_incertaine",
+        "note": "Lecture visuelle claire mais risque d'erreur toujours possible sur le mois représenté numériquement.",
+        "suggestion": "Inscrire la date telle qu'elle apparaît."
+      },
+      {
+        "confidence": "low",
+        "fragment": "longues séries de chiffres et codes dans chaque encadré",
+        "issue": "mot_illisible",
+        "note": "La majorité des séries sont partiellement illisibles ou recopiées avec un risque d'erreur par lecture d'image, surtout dans la partie centrale du document.",
+        "suggestion": "Faire remonter à une validation humaine si nécessaire."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-41",
+    "sourceImage": "41-20260203_120508.jpg",
+    "assistedReadingText": "OPÉRATIONS \"COURROIE\"\n18 Avril au 19 Juin 1959\nCorps d'Armée d'Alger",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "OPÉRATIONS \"COURROIE\"",
+        "issue": "lecture_probable",
+        "note": "Lecture appuyée sur l'image, nettement lisible, mais nécessite toujours validation humaine.",
+        "suggestion": "La présence des accents est confirmée sur l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "18 Avril au 19 Juin 1959",
+        "issue": "date_incertaine",
+        "note": "Lecture appuyée sur l'image, mais nécessite confirmation définitive.",
+        "suggestion": "Les dates et mois sont bien différenciés sur l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Corps d'Armée d'Alger",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre lisible sur l'image, mais nécessite validation humaine.",
+        "suggestion": "La présence de l'apostrophe et la casse semblent confirmées."
+      },
+      {
+        "confidence": "low",
+        "fragment": "e d\nh",
+        "issue": "mot_illisible",
+        "note": "Fragments OCR sans correspondance identifiable sur l'image.",
+        "suggestion": "Le texte OCR ne correspond pas au contenu lisible de l'image."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-42",
+    "sourceImage": "42-20260203_120529.jpg",
+    "assistedReadingText": "18/4 - 19/6\nCAA 1949/13\nOrdres et comptes rendus d'opérations\nnotamment opération \"COURROIE\"\n1859",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "CAA",
+        "issue": "sigle_incertain",
+        "note": "Le sigle « CAA » apparaît clairement mais sa signification ou exactitude contextuelle ne peut être validée sans contexte externe.",
+        "suggestion": "Garder tel quel, identifier comme sigle incertain."
+      },
+      {
+        "confidence": "high",
+        "fragment": "1949/13",
+        "issue": "lecture_probable",
+        "note": "La numérotation est clairement visible, mais sans certitude sur la nature (année ou registre).",
+        "suggestion": "Transcrire tel quel en mentionnant la lecture probable du format."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "opération \"COURROIE\"",
+        "issue": "nom_propre_incertain",
+        "note": "Le terme entre guillemets semble être un nom propre d'opération, la calligraphie laisse cependant un léger doute sur les majuscules et les guillemets.",
+        "suggestion": "Laisser entre guillemets et signaler l'incertitude."
+      },
+      {
+        "confidence": "low",
+        "fragment": "1859",
+        "issue": "date_incertaine",
+        "note": "La date est manuscrite et isolée, on ne peut certifier de son contexte ou de son exactitude.",
+        "suggestion": "Indiquer comme date incertaine."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-43",
+    "sourceImage": "43-20260203_120819.jpg",
+    "assistedReadingText": "COMMANDEMENT EN CHEF DES FORCES EN ALGERIE\nETAT-MAJOR INTERARMEES\nN° 7/EMI/BEL/OPS\n\nPRINCIPAUX BILANS DE L'OPERATION \"COURROIE\"\nDU 18 AVRIL AU 15 MAI 1959\n\n| DATE         | LIEU                              | ELEMENT ACCROCHE                                      | PERTES REBELLES                                                        | PRINCIPAUX CHEFS REBELLES HORS DE COMBAT                  | REMARQUES                              |\n|--------------|-----------------------------------|-------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------|----------------------------------------|\n| 18.4         | 5 Kms ENE de THIERS               | Section 411 - Pertes à 10 %                           | 13 tués - 1 FM - 1 PM - 1 PA                                            |                                                          | Pertes très faibles                    |\n| 18.4         | 10. SE BLIDA                      | Section 423                                           | 6 tués - 4 prisonniers - 1 PM - 1 FG - IFC - Matériel divers            |                                                          |                                        |\n| 18 au 21 Avril| 20 Kms N. de MOLIÈRE             | Katiba 431   10 % pertes                              | 82 tués - 24 prisonniers - 6 PM                                        |                                                          |                                        |\n|              |                                   | 2 sections Katiba 424  10 % pertes chacune           | 13 FG - 10 FC - 17 PA - 10 Obus - Documents                            |                                                          | La katiba 424 a été scindée en deux : |\n|              |                                   | Section 433                                           |                                                                        |                                                          | une partie travaillant dans l’OUARSENIS|\n|              |                                   |                                                       |                                                                        |                                                          | (accrochée entre le 18 et le 21.4) ;  |\n|              |                                   |                                                       |                                                                        |                                                          | l'autre travaillant au Nord de BOGHARI |\n| 22.4         | 10 Kms N. de BOGHARI              | 2 sections Katiba 424 30 % pertes                     | 15 tués - 3 prisonniers - 1 mitrailleuse - 1 FM - 4 PM - 16 FG          |                                                          |                                        |\n| 24 et 25.4   | 5 Kms Nord TROLARD / TAZA         | Section 434/1 20 % pertes                             | 7 tués - 10 prisonniers - 21 suspects arrêtés - 1 FM - 1 PM - 4 FG - 10 FC|                                                          |                                        |\n| 24 au 28.4   | 10 Kms Nord MILIANA               | Katiba 423                                            | 59 tués - 16 prisonniers - 1 FM - 3 PM - 8 FG - 15 FC - 7 PA            |                                                          |                                        |\n|              |                                   | 2 sections 441/3 et 441/4 : pertes à 10 % chacune     |                                                                        |                                                          |                                        |\n| 25 au 27.4   | NIE CHAMPLAIN                     | Katiba 422  75 % pertes                              | 93 tués - 19 prisonniers - 1 Mitrailleuse - 1 FM - 8 PM - 54 FG - 3 PA - 7 FC| Adjt ABDELHAJID adjoint au Chef Katiba tué, Chef de section tué |                                        |\n| 27 et 28.4   | 20 Kms SE de MOLIÈRE              | Katiba 541  20 % pertes                               | 57 tués - 14 prisonniers - 1 rallié - 2 mitrailleuses - 2 FM - 19 FG - 10 FC - 18 PA - 36 roquettes et 30 pains de dynamite récupérés - documents| ELAROUCI Mohamed, chef du service Presse de la W., 4 prisonnier | Katiba 541 : accrochée trois fois au cours de l’opération ORANIE, a perdu au total 50 % de son potentiel initial ; Katiba 571 accrochée 3 fois au cours de l’opération ORANIE, a perdu plus de 75 % de son potentiel initial ; Katiba 431 accrochée le 18/4 (voir ci-dessus). |",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Katiba 431; Katiba 541; Katiba 571; noms propres en général",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable, mais les graphies exactes de ces unités/chefs pourraient différer ou être mal décodées selon l'image ou l'OCR.",
+        "suggestion": "Vérifier la graphie des noms de katibas et chefs sur document original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "OUARSENIS, BOGHARI, MILIANA, THIERS, TROLARD, CHAMPAIN",
+        "issue": "lieu_incertain",
+        "note": "Localisations lisibles, mais certaines lettres restent peu sûres selon la typographie, risquant des confusions.",
+        "suggestion": "Vérifier toponymes auprès de sources complémentaires."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "18/4, 21.4, 27 et 28.4 (dates)",
+        "issue": "date_incertaine",
+        "note": "Les dates sont plausibles mais certains chiffres ou mois peuvent prêter à confusion sur l'image.",
+        "suggestion": "Vérifier l'exactitude des dates sur l'original."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Certains sigles: FM, PM, FG, PA, FC, IFC, Mit",
+        "issue": "sigle_incertain",
+        "note": "Lecture correcte plausible, mais le sens exact des sigles n'est pas assuré.",
+        "suggestion": "Confirmer la liste des sigles sur l'original et leur signification."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Ligne: ... 59 tués - 16 prisonniers - 1 FM ...",
+        "issue": "lecture_probable",
+        "note": "Lecture alignée à l'image, mais la séparation des unités et la correspondance exacte peuvent varier selon présentation du tableau.",
+        "suggestion": "Vérifier le découpage des pertes par section dans le tableau original."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-44",
+    "sourceImage": "44-20260203_120833.jpg",
+    "assistedReadingText": "30/4 au 1/5 | 15 Kms Est de MOLIÈRE | Section 433 | 25% pertes | 37 tués - 11 prisonniers - 2 PM - 4 FG - 10 FC - 7 PA | Petit atelier armurerie détruit | Lt BOUALEM-BOUNOUADER, responsable L & R M.2, W.4 tué | Aspirant BOUCENNA, responsable L & R Nahá 2 M.2 W.4 prisonnier\n\n1/5 | 20 Kms Est de MEDEA | PC Mintaka 2 Wilaya 4 | Infirmerie | 18 tués - 5 prisonniers - 3 PM - 1ement FC - 2 PA - Munitions Médicaments - 1 tonne de ravitaillement | Lt BOUALEM-BOUNOUADER, responsable L & R M.2, W.4 tué | Aspirant BOUCENNA, responsable L & R Nahá 2 M.2 W.4 prisonnier\n\n3/5 | 8 Kms NW NELSONBOURG | PC Wilaya 4 | 13 tués - 2 prisonniers - 1 PM - 2 PA - 2 FC - documents | Lt SIRACHID, responsable p.i., L & R W.4 tué | S/Lieutenant GUESMI AHMED, Chef de la N.3, M.I.: W.6 tué\n\n5/5 | 10 Kms S.S.E. BEBHOUGHA | PC Nahia 3 M.I. W.6 | 17 tués - 9 prisonniers - 1 PM - 8 FG - 7 FC - 4 PA | S/Lt MAHJOUD, Chef N.3 M.I. W.6 tué | SI AMAR, aspirant, Chef Militaire tué\n\n6/5 | 8 Kms NE DRA EL MIZAN | Katiba 342 | 15% pertes | 48 tués - 15 prisonniers - 9 FC - 9 PA - Grenades - Munitions - Ravitaillement - 7 caches dont 1 salle d'instruction détruites - Médicaments | Aspirant REKIKA, Mouloud Chef service presse N.4 W.3 tué\n\n11/5 | 2 Kms Est L'ARBA | | 1 tué - 1 PM | Lieutenant BOUALEM, responsables militaire M. I - W.4\n\n11/5 | 15 Kms N. DUPERRE | Katiba 423 | 15% pertes | 25 tués - 3 PM - 11 FC\n\n11/5 | 20 Kms NW DRA EL MIZAN | Commande sectoral (secteur 3, Nahia Mint... Wilaya 4 détruit 100%) | 14 tués - 9 prisonniers - 1 PM - 5 FG - 2 FC - 1 PA | Apt ARESKI RADIA, Ctr Militaire tué | 7 caches détruites - Huillement\n\n12/5 | 15 Kms NE MOLIÈRE | Katiba 541 détruit à 90% | 78 tués - 8 prisonniers - 3 FM - 2 PM - 18 FC - 8 FG - 3000 cartouches | Katiba accrochée les 27 et 28/4 - 1 groupe détruit en ligne.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Nahia Mint... Wilaya 4 détruit 100%",
+        "issue": "mot_illisible",
+        "note": "Lecture probable mais deux mots illisibles car manuscrits et partiellement masqués. L'image montre \"Nahia\" et \"Mintaqa?\" sans clarté totale.",
+        "suggestion": "Vérifier sur un tirage plus net ou document sources pour lever l'ambigüité."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lt BOUALEM-BOUNOUADER, responsable L & R M.2, W.4 tué",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom apparaît clairement, mais une possible ambiguïté existe (orthographe manuscrite).",
+        "suggestion": "Confirmer l'orthographe sur document original ou listes officielles."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Katiba accrochée les 27 et 28/4 - 1 groupe détruit en ligne.",
+        "issue": "lecture_probable",
+        "note": "Expression manuscrite à la fin, lecture partiellement incertaine, surtout sur \"groupe détruit en ligne\".",
+        "suggestion": "Nouvelle vérification sur image avec meilleures conditions de contraste."
+      },
+      {
+        "confidence": "high",
+        "fragment": "taux de pertes, nombres, matériel, et identités extraits",
+        "issue": "lecture_probable",
+        "note": "La structure chiffrée du tableau correspond bien à l’image, sauf passages manuscrits.",
+        "suggestion": "Vérifier segments manuscrits pour valider à 100%."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-45",
+    "sourceImage": "45-20260203_121216.jpg",
+    "assistedReadingText": "vs A\nD1 E5P4 d\nd\np | QT L\n=R | LRN\nA Eenrononn fs\nÀ\n\\».—,;,‘à.@,\njfarme Vs\nVs\nBont MgBrem | À€\n/fz s(| z\narat AN",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "vs A\nD1 E5P4 d\nd\np | QT L\n=R | LRN\nA Eenrononn fs\nÀ\n\\».—,;,‘à.@,\njfarme Vs\nVs\nBont MgBrem | À€\n/fz s(| z\narat AN",
+        "issue": "mot_illisible",
+        "note": "Le texte OCR correspond tres peu au contenu visuel de l'image, qui montre une carte topographique avec annotations manuscrites, codes et zones colorees ; aucun passage manuscrit n'est clairement identifiable à la lecture directe ou ne ressemble au texte OCR propose. L'ensemble du texte OCR apparait fortement bruité, et il est impossible de vérifier la présence de phrases ou noms dans l'image fournie.",
+        "suggestion": "Le contenu OCR semble non pertinent pour cette image (carte géographique), aucun texte continu ou structure claire n'est visible sur l'image pour confirmer les fragments lisibles."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "29/61, 77, 87/1M, 87/2M, 6/REI, 3/REI, 8/RIM, D1H",
+        "issue": "sigle_incertain",
+        "note": "Certains sigles circulaires apparaissent sur la carte (par ex : 29/61 bleu, 8/RIM rouge, 3/REI vert, D1H jaune, 71 noir, etc.) mais la correspondance directe avec le texte OCR est incertaine.",
+        "suggestion": "Référence visuelle d'étiquettes repérées mais leur transcription exacte ou leur signification reste conjecturale sans autre contexte."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-46",
+    "sourceImage": "46-20260203_121230.jpg",
+    "assistedReadingText": "LY MY\nLX MX",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "LY MY\nLX MX",
+        "issue": "sigle_incertain",
+        "note": "La lecture des sigles \"LY MY / LX MX\" est proposée selon l'image, où ils apparaissent clairement en violet à l'intersection des quadrillages. Cependant, leur signification n'est pas déterminable à partir de l'image seule.",
+        "suggestion": "Sigles relevés tels quels depuis l'image ; leur interprétation ou toute expansion serait spéculative sans contexte supplémentaire."
+      },
+      {
+        "confidence": "low",
+        "fragment": "A { \\ Lon Ani\nKrborr ;\\“‘\\ = ÿ G | , ‘Iwu'u/:…/u\nAN N TS «J = T\" #1 15 ) fA0 T =\n1058 N » \\ A é baaD\nCroe\n{ À. Krerba « NS, \\ { M7, &l\nD,\nl(r__'ni Z\nes es %\nA «- Gadet Oufii = Had.\n889 /\n",
+        "issue": "mot_illisible",
+        "note": "La plus grande partie du texte OCR nettoyé n'apparaît pas sur l'image fournie qui est une carte. Les fragments reconnus en OCR ne correspondent pas à un contenu visible sur cette portion de carte.",
+        "suggestion": "Délaisser ces fragments pour la transcription hypothétique car ils ne sont pas retrouvés sur l'image."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-47",
+    "sourceImage": "47-20260203_121249.jpg",
+    "assistedReadingText": "Dans l'image, les éléments les plus lisibles sont des numéros de plaques ou de zones géographiques (« 88 », « 89 », « 98 », « 99 », « 09 »), des lignes de découpage violet et rouge, ainsi que plusieurs noms géographiques assez flous ou partiellement masqués. Quelques noms semblent être : « Boghar », « Kerkera », « Bouhar », mais la plupart des inscriptions ne sont pas parfaitement lisibles ou sont partiellement masquées/abîmées par les tracés.\n\nL'OCR nettoyé (« p rrrn Ln S Ÿ Ÿ N Ï V \\ v ; , ‘ » t ») ne correspond pas du tout au contenu visible de l'image. Il s'agit d'une suite de caractères et de symboles non significatifs eu égard au contenu cartographique. Il n'est pas possible, à partir de l'image, de valider la transcription automatique proposée par l'OCR.\n\nLecture probable (partielle et incertaine, avec incertitudes sur l'exactitude de nombreux noms) :\n- ‘88’, ‘89’, ‘98’, ‘99’, ‘09’ (repères de zone)\n- Kerkerra (lecture incertaine)\n- Boghar (lecture probable)\n- Bouhar (lecture incertaine)\n- Lignes, repères et quelques altitudes visibles (ex : 1063, 1080), mais le reste est très difficilement déchiffrable.",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Kerkerra",
+        "issue": "nom_propre_incertain",
+        "note": "Nom géographique partiellement lisible, plusieurs lettres ambigües.",
+        "suggestion": "Vérifier le toponyme exact sur la carte d'origine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Boghar",
+        "issue": "nom_propre_incertain",
+        "note": "Nom relativement lisible mais pourrait être déformé ou partiellement couvert.",
+        "suggestion": "Contrôler sur un document source ou une carte de meilleure qualité."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Bouhar",
+        "issue": "nom_propre_incertain",
+        "note": "Lectures divergentes possibles, graphie faible ou masquée.",
+        "suggestion": "Relecture sur l'image originale ou recoupement par autre source."
+      },
+      {
+        "confidence": "high",
+        "fragment": "88, 89, 98, 99, 09",
+        "issue": "lecture_probable",
+        "note": "Les chiffres de zones apparaissent clairement mais leur fonction n’est pas attestée uniquement à partir de l’image.",
+        "suggestion": "Vérifier si ce sont bien des indicatifs de secteur."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Texte hors chiffres et tracés",
+        "issue": "mot_illisible",
+        "note": "La majorité des microtoponymes ou indications sont illisibles, même avec agrandissement.",
+        "suggestion": "Numérisation à plus haute résolution ou recours à la source physique requise."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-48",
+    "sourceImage": "48-20260203_121258.jpg",
+    "assistedReadingText": "Carte géographique montrant les zones numérotées 09, 19, 18, 20, 29, 28, 38, etc.\n\nQuelques éléments déchiffrables :\n- Moudiebara\n- Dj. Halala\n- Boghari\n- Moulay Abdallah\n- Sidi Djennad\n- Kherza\n- Ksar Boukhari\n- Réghaïa\n- Bordj Gheraba\n- Madaroua\n- Djebel Koudiat\n- Laghouat (incertain)\n- Rhar ed Rebâa (incertain)\n\nLes tracés épais rouges, verts et violets correspondant à des limites, peut-être administratives ou naturelles, ne sont pas identifiables avec certitude sans légende.\n\nDe nombreux toponymes apparaissent en petits caractères, certains sont difficilement lisibles en raison de la qualité de l'image ou des superpositions graphiques.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Laghouat",
+        "issue": "lieu_incertain",
+        "note": "Le toponyme est plausible selon la structure de la carte et des caractères partiellement visibles, mais n'est pas absolument certain sans zoom détaillé.",
+        "suggestion": "Présenter comme une localisation possible mais non affirmée."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Rhar ed Rebâa",
+        "issue": "lieu_incertain",
+        "note": "Lecture incertaine en raison de l'écriture manuscrite ou très fine sur la carte.",
+        "suggestion": "Ne pas affirmer le nom sans vérification supplémentaire."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Lettres manuscrites ou effacées dans les zones montagneuses, difficilement lisibles.",
+        "issue": "mot_illisible",
+        "note": "Beaucoup de petits toponymes ou indications topographiques sont indéchiffrables à cette résolution.",
+        "suggestion": "Signaler ces parties comme illisibles et ne pas les transcrire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Tracés de limites rouges, vertes et violets",
+        "issue": "lecture_probable",
+        "note": "La fonction exacte de ces tracés ne peut être déterminée sans légende.",
+        "suggestion": "Indiquer leur présence mais pas leur nature exacte."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-49",
+    "sourceImage": "49-20260203_121302.jpg",
+    "assistedReadingText": "esF R MAouna, CENAN(\n. 120177\n/\np\nE\nü # }faathr.\n74\nP* Zrane (Gne\n; ;\n(l irma, e",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "esF R MAouna, CENAN(",
+        "issue": "nom_propre_incertain",
+        "note": "La séquence d'ouverture ressemble à un regroupement de lettres et éventuellement de noms propres, mais la correspondance avec l'image, qui est une carte géographique, n'est pas nette. Incertitude sur la nature réelle des termes, probablement des artefacts d'OCR.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": ". 120177",
+        "issue": "date_incertaine",
+        "note": "L'expression pourrait être une date, un numéro ou un code. L'image étant une carte géographique, impossible d'en valider la présence ou la forme, et le contexte est absent.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "ü # }faathr.",
+        "issue": "mot_illisible",
+        "note": "Le fragment est inconnu et invérifiable, semble incohérent en l'état et non présent dans l'image consultée.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "P* Zrane (Gne",
+        "issue": "nom_propre_incertain",
+        "note": "Il pourrait s'agir d'un nom propre géographique, sur la base de la syntaxe OCR, mais non vérifiable précisément sur l'image compte tenu du contexte cartographique complexe.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "(l irma, e",
+        "issue": "mot_illisible",
+        "note": "Fragment difficilement attribuable à un mot cohérent ; ni contextuellement ni visuellement identifiable sur la carte.",
+        "suggestion": ""
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-50",
+    "sourceImage": "50-20260203_121520.jpg",
+    "assistedReadingText": "ALGER, le 23 Avril 1959.\n\n— OPERATION \"COURROIE\" —\n\n—— JOURNEE DU 22 AVRIL ——\n\n\"COURROIE – OUARSENIS\"\n\nPHYSIONOMIE GENERALE. – Dans le cadre de l'Opération OUARSENIS, une action conduite dans le Secteur de BOGHARI permet d'accrocher une forte bande rebelle.\n\nZONE NORD ALGEROIS. – Poursuite Opération Oued DJTR.\n\nPertes amies.\n1 blessé (accident).\n\nPertes rebelles.\n3 tués.\n1 prisonnier.\n10 suspects.\n3 F.G. – 2 grenades –\n1 cube 75 – 4 bombes 10 kgs., mines locales\nPièces de rechanges pour armement.\n8 caches et abris détruits.\nRavitaillement. Documents.\n\nZONE SUD ALGEROIS. – Opération aux ordres Commandant Secteur BOGHARI dans le cadre OUARSENIS – 5 Kms. Nord BOGHARI – 20 R.P.I.Ma., 1/435° R.A., K.26 –\nAccrochage d'une forte bande rebelle 8 Kms. Nord Ouest BOGHARI.\n\nPertes amies.\n4 tués dont 1 Officier.\n4 blessés.\n1 F.M. – 1 P.A.\n1 paire de jumelles.\n\nPertes rebelles.\n15 tués.\n3 blessés prisonniers.\n1 H.C.\n3 F.G. – 16 F.G.\n4 F.M. – 2 P. jumelles.\n\nZONE OUEST ALGEROIS. – Bilan journée du 21 dans Secteur CHERCHELL.\n\nPertes amies.\nnéant.\n\nPertes rebelles.\n5 fuyards tués dont 1 ravitailleur.\nMatériels divers découverts dans 2 caches.\n1 sacoche de cartouches chasse.\n6 grenades.\n100 détonateurs.\n1 révolver H.S.\n1 famille repliée.\n\nGénéral Commandant 10° R.M./B3",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "OUARSENIS",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom apparaît de façon cohérente sur l'image, mais la typographie OCR montre quelques hésitations.",
+        "suggestion": "Maintenu à partir de l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Oued DJTR",
+        "issue": "nom_propre_incertain",
+        "note": "La fin de ce nom propre n'est pas très lisible sur l'image : \"DJTR\" est une lecture probable, mais sans certitude.",
+        "suggestion": "Peut-être DJIR ou autre graphie similaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "H.C.",
+        "issue": "sigle_incertain",
+        "note": "Le sens du sigle H.C. n'est pas apparent et la forme exacte n'est pas entièrement certaine.",
+        "suggestion": "Lecture probable de la ligne."
+      },
+      {
+        "confidence": "low",
+        "fragment": "1 cube 75 — 4 bombes 10 Kgs., mines locales",
+        "issue": "lecture_probable",
+        "note": "La lecture '1 cube 75' me semble étrange ; l'image indique quelque chose de similaire mais reste difficile à déchiffrer.",
+        "suggestion": "Maintenir lecture proposée, car l'alternative n'est pas plus lisible."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "20 R.P.I.Ma., 1/435° R.A., K.26",
+        "issue": "sigle_incertain",
+        "note": "Quelques sigles militaires dont la lecture est recopiée de l'image, mais la nature exacte des unités reste sujette à caution.",
+        "suggestion": "Lecture fidèle à l'image mais à valider."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "5 fuyards tués dont 1 ravitailleur.",
+        "issue": "lecture_probable",
+        "note": "Le mot 'ravitailleur' est peu net, c'est une hypothèse raisonnable.",
+        "suggestion": "Lecture plausible selon l'image."
+      },
+      {
+        "confidence": "low",
+        "fragment": "1 famille repliée.",
+        "issue": "mot_illisible",
+        "note": "La fin de phrase est peu lisible sur l'image.",
+        "suggestion": "Lecture la plus probable compte tenu du contexte."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  }
+]
