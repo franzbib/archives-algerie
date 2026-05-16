@@ -1,0 +1,1514 @@
+{
+  "generatedAt": "2026-05-16T06:38:20.140Z",
+  "lotId": "lot-fln-w4-002",
+  "results": [
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-01",
+      "sourceFileName": "01-20260202_133520.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Page contains handwritten French text in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/01-20260202_133520.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-02",
+      "sourceFileName": "02-20260202_133808.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The visible text is in French and uses the Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/02-20260202_133808.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-03",
+      "sourceFileName": "03-20260202_135854.jpg",
+      "detectedLanguages": [
+        "ar"
+      ],
+      "detectedScripts": [
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The entire visible text is in Arabic script and language. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/03-20260202_135854.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-04",
+      "sourceFileName": "04-20260202_135954.jpg",
+      "detectedLanguages": [
+        "ar"
+      ],
+      "detectedScripts": [
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is consistently in Arabic script and language on both pages. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/04-20260202_135954.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-05",
+      "sourceFileName": "05-20260202_140008.jpg",
+      "detectedLanguages": [
+        "ar"
+      ],
+      "detectedScripts": [
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The entire text is in Arabic script and language. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/05-20260202_140008.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-06",
+      "sourceFileName": "06-20260202_140036.jpg",
+      "detectedLanguages": [
+        "ar"
+      ],
+      "detectedScripts": [
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Page contains only Arabic text in Arabic script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/06-20260202_140036.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-07",
+      "sourceFileName": "07-20260202_140049.jpg",
+      "detectedLanguages": [
+        "ar"
+      ],
+      "detectedScripts": [
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The entire page is written in Arabic script with Arabic language text. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/07-20260202_140049.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-08",
+      "sourceFileName": "08-20260202_140104.jpg",
+      "detectedLanguages": [
+        "ar"
+      ],
+      "detectedScripts": [
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is entirely in Arabic script and language with no visible presence of French or any other language. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/08-20260202_140104.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-09",
+      "sourceFileName": "09-20260202_140118.jpg",
+      "detectedLanguages": [
+        "ar",
+        "fr"
+      ],
+      "detectedScripts": [
+        "arabic",
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The left page contains French text in Latin script and the right page contains Arabic text in Arabic script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/09-20260202_140118.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-10",
+      "sourceFileName": "10-20260202_140239.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The page contains only French text written in Latin script. No Arabic or other scripts detected. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/10-20260202_140239.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-11",
+      "sourceFileName": "11-20260202_140949.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is fully in French language using Latin script. No other language or script is visible. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/11-20260202_140949.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-12",
+      "sourceFileName": "12-20260202_143532.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is entirely in French using the Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/12-20260202_143532.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-13",
+      "sourceFileName": "13-20260202_143544.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Page with clearly typed text in French, Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/13-20260202_143544.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-14",
+      "sourceFileName": "14-20260202_144303.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The handwritten and typed text is in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/14-20260202_144303.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-15",
+      "sourceFileName": "15-20260202_144326.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Page contains only French language in Latin script; text is typewritten and clear enough to identify language and script without confusion. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/15-20260202_144326.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-16",
+      "sourceFileName": "16-20260202_144344.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte clair en français avec écriture latine, bien lisible. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/16-20260202_144344.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-17",
+      "sourceFileName": "17-20260202_144614.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The visible text is in French language using Latin script. There is no Arabic or other script visible. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/17-20260202_144614.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-18",
+      "sourceFileName": "18-20260202_144621.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is a French typed text with clear Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/18-20260202_144621.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-19",
+      "sourceFileName": "19-20260202_144703.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Le texte visible sur la page est entièrement en français et écrit en alphabet latin. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/19-20260202_144703.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-20",
+      "sourceFileName": "20-20260202_144714.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is fully in French, using Latin script. There is no visible Arabic or other script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/20-20260202_144714.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-21",
+      "sourceFileName": "21-20260202_144726.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte en français utilisant l'alphabet latin. Pas d'autre langue ou script visible. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/21-20260202_144726.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-22",
+      "sourceFileName": "22-20260202_144809.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French using Latin script. Handwritten and printed text are both in French. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/22-20260202_144809.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-23",
+      "sourceFileName": "23-20260202_145248.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "La page est entièrement en français avec écriture latine. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/23-20260202_145248.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-24",
+      "sourceFileName": "24-20260202_145318.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French using the Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/24-20260202_145318.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-25",
+      "sourceFileName": "25-20260202_145347.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "La page contient uniquement du texte en français, écrit en alphabet latin. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/25-20260202_145347.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-26",
+      "sourceFileName": "26-20260202_145348.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French and entirely uses Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/26-20260202_145348.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-27",
+      "sourceFileName": "27-20260202_145359.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte clair en français avec écriture latine. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/27-20260202_145359.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-28",
+      "sourceFileName": "28-20260202_145657.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The entire text is in French language and Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/28-20260202_145657.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-29",
+      "sourceFileName": "29-20260202_145721.jpg",
+      "detectedLanguages": [
+        "ar"
+      ],
+      "detectedScripts": [
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The entire page is in Arabic script and language. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/29-20260202_145721.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-30",
+      "sourceFileName": "30-20260202_150129.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is entirely in French using the Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/30-20260202_150129.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-31",
+      "sourceFileName": "31-20260202_150159.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The entire text is in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/31-20260202_150159.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-32",
+      "sourceFileName": "32-20260202_150215.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Text is clearly typed in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/32-20260202_150215.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-33",
+      "sourceFileName": "33-20260202_150229.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is entirely in French using the Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/33-20260202_150229.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-34",
+      "sourceFileName": "34-20260202_150244.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The entire text is in French and uses the Latin script. No Arabic or other languages/scripts detected. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/34-20260202_150244.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-35",
+      "sourceFileName": "35-20260202_150745.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte entièrement en français avec écriture latine. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/35-20260202_150745.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-36",
+      "sourceFileName": "36-20260202_150802.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte en français utilisant l'alphabet latin. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/36-20260202_150802.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-37",
+      "sourceFileName": "37-20260202_150827.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Page contains only French language text in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/37-20260202_150827.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-38",
+      "sourceFileName": "38-20260202_150842.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The entire visible text is in French with Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/38-20260202_150842.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-39",
+      "sourceFileName": "39-20260202_151106.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte clairement en français avec écriture latine. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/39-20260202_151106.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-40",
+      "sourceFileName": "40-20260202_151118.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/40-20260202_151118.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-41",
+      "sourceFileName": "41-20260202_151125.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is in French and uses Latin script only. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/41-20260202_151125.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-42",
+      "sourceFileName": "42-20260202_151127.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Text is fully in French, using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/42-20260202_151127.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-43",
+      "sourceFileName": "43-20260202_151207.jpg",
+      "detectedLanguages": [
+        "fr",
+        "ar"
+      ],
+      "detectedScripts": [
+        "latin",
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The document contains both French text written in Latin script and Arabic text written in Arabic script. The combination of both languages and scripts is clearly visible in the image. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/43-20260202_151207.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-44",
+      "sourceFileName": "44-20260202_151257.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is entirely in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/44-20260202_151257.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-45",
+      "sourceFileName": "45-20260202_151903.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is entirely in French, using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/45-20260202_151903.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-46",
+      "sourceFileName": "46-20260202_151921.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is clearly in French with Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/46-20260202_151921.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-47",
+      "sourceFileName": "47-20260202_151937.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is entirely in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/47-20260202_151937.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-48",
+      "sourceFileName": "48-20260202_152124.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "La page est en français uniquement, avec écriture latine. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/48-20260202_152124.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-49",
+      "sourceFileName": "49-20260202_152145.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The entire text is in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/49-20260202_152145.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-50",
+      "sourceFileName": "50-20260202_152224.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is entirely in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/50-20260202_152224.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-51",
+      "sourceFileName": "51-20260202_152318.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French, using the Latin script, no other language or script is visible. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/51-20260202_152318.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-52",
+      "sourceFileName": "52-20260202_152327.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is entirely in French and uses Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/52-20260202_152327.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-53",
+      "sourceFileName": "53-20260202_152353.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is typed in French with Latin script, no visible Arabic or other scripts. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/53-20260202_152353.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-54",
+      "sourceFileName": "54-20260202_152442.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is in French and uses Latin script with various stamps and typewritten content. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/54-20260202_152442.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-55",
+      "sourceFileName": "55-20260202_152454.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte clair en français, écriture en alphabet latin. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/55-20260202_152454.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-56",
+      "sourceFileName": "56-20260202_152510.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The visible text is in French with Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/56-20260202_152510.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-57",
+      "sourceFileName": "57-20260202_152610.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document in French language with Latin script; no Arabic or other scripts detected. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/57-20260202_152610.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-58",
+      "sourceFileName": "58-20260202_152710.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document contains only French language written in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/58-20260202_152710.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-59",
+      "sourceFileName": "59-20260202_152723.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French and uses Latin script only. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/59-20260202_152723.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-60",
+      "sourceFileName": "60-20260202_152745.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Text is typed in French using Latin script; no Arabic or other scripts visible. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/60-20260202_152745.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-61",
+      "sourceFileName": "61-20260202_152756.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is primarily in French, using Latin script. The image is clear enough to determine the language and script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/61-20260202_152756.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-62",
+      "sourceFileName": "62-20260202_152926.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The page contains only French text written in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/62-20260202_152926.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-63",
+      "sourceFileName": "63-20260202_152938.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly typed in French using Latin script, with no visible Arabic script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/63-20260202_152938.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-64",
+      "sourceFileName": "64-20260202_152950.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is in French using Latin script only. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/64-20260202_152950.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-65",
+      "sourceFileName": "65-20260202_153526.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte clair en français sur écriture latine. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/65-20260202_153526.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-66",
+      "sourceFileName": "66-20260202_153535.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte clair en français avec écriture latine. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/66-20260202_153535.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-67",
+      "sourceFileName": "67-20260202_154720.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The visible text is in French language using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/67-20260202_154720.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-68",
+      "sourceFileName": "68-20260202_154844.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The document is in French and written in Latin script. No Arabic or other languages detected. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/68-20260202_154844.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-69",
+      "sourceFileName": "69-20260202_155106.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The document is in French language and is written in Latin script. There is no visible Arabic or other script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/69-20260202_155106.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-70",
+      "sourceFileName": "70-20260202_155114.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French with Latin script. No other languages or scripts detected. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/70-20260202_155114.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-71",
+      "sourceFileName": "71-20260202_155123.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French and written in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/71-20260202_155123.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-72",
+      "sourceFileName": "72-20260202_155339.jpg",
+      "detectedLanguages": [
+        "fr",
+        "ar"
+      ],
+      "detectedScripts": [
+        "latin",
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Image shows text clearly in both French and Arabic languages and scripts. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/72-20260202_155339.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-73",
+      "sourceFileName": "73-20260202_155451.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Page contains only French text written in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/73-20260202_155451.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-74",
+      "sourceFileName": "74-20260202_155504.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte clair en français avec écriture latine. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/74-20260202_155504.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-75",
+      "sourceFileName": "75-20260202_155635.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is in French only, using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/75-20260202_155635.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-76",
+      "sourceFileName": "76-20260202_155934.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is entirely in French using the Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/76-20260202_155934.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-77",
+      "sourceFileName": "77-20260202_160254.jpg",
+      "detectedLanguages": [
+        "ar"
+      ],
+      "detectedScripts": [
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in Arabic language and Arabic script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/77-20260202_160254.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-78",
+      "sourceFileName": "78-20260202_160304.jpg",
+      "detectedLanguages": [
+        "ar"
+      ],
+      "detectedScripts": [
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is fully in Arabic language and Arabic script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/78-20260202_160304.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-79",
+      "sourceFileName": "79-20260202_160313.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The page contains French language text typed in Latin script, with some handwritten annotations also in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/79-20260202_160313.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-80",
+      "sourceFileName": "80-20260202_160322.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte totalement en français et écrit avec characters latins. Pas d'arabe détecté. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/80-20260202_160322.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-81",
+      "sourceFileName": "81-20260202_160657.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Image contains clearly printed French text in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/81-20260202_160657.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-82",
+      "sourceFileName": "82-20260202_160706.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French and uses the Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/82-20260202_160706.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-83",
+      "sourceFileName": "83-20260202_160845.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Texte entièrement en français, utilisant l'écriture latine. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/83-20260202_160845.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-84",
+      "sourceFileName": "84-20260202_160858.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document entirely in French with Latin script. No other languages detected. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/84-20260202_160858.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-85",
+      "sourceFileName": "85-20260202_160906.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Text is clearly in French with Latin script, no other language or script detected. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/85-20260202_160906.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-86",
+      "sourceFileName": "86-20260202_161005.jpg",
+      "detectedLanguages": [
+        "fr",
+        "ar"
+      ],
+      "detectedScripts": [
+        "latin",
+        "arabic"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The page contains a French title written in Latin script and a body of text in Arabic script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/86-20260202_161005.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-87",
+      "sourceFileName": "87-20260202_161230.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is entirely in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/87-20260202_161230.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-88",
+      "sourceFileName": "88-20260202_161545.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French using Latin script, with various stamps and typewritten content in French. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/88-20260202_161545.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-89",
+      "sourceFileName": "89-20260202_161557.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Page contains only French language text written in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/89-20260202_161557.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-90",
+      "sourceFileName": "90-20260202_161607.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The document contains only French text written in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/90-20260202_161607.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-91",
+      "sourceFileName": "91-20260202_161724.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The document contains clear French text written in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/91-20260202_161724.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-92",
+      "sourceFileName": "92-20260202_161733.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The page contains clear French text typed and handwritten in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/92-20260202_161733.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-93",
+      "sourceFileName": "93-20260202_161744.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The visible text is in French language and Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/93-20260202_161744.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-94",
+      "sourceFileName": "94-20260202_161854.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The visible text is handwritten in French using the Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/94-20260202_161854.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-95",
+      "sourceFileName": "95-20260202_161945.jpg",
+      "detectedLanguages": [
+        "other"
+      ],
+      "detectedScripts": [
+        "other"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "No visible text or writing on the image, just a photograph of a rifle. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/95-20260202_161945.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-96",
+      "sourceFileName": "96-20260202_162051.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document is in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/96-20260202_162051.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-97",
+      "sourceFileName": "97-20260202_162233.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Document entirely in French and written in Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/97-20260202_162233.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-98",
+      "sourceFileName": "98-20260202_162243.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "Page handwritten entirely in French using Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/98-20260202_162243.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-99",
+      "sourceFileName": "99-20260202_162434.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French, using the Latin script. No other languages or scripts are visible. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/99-20260202_162434.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    },
+    {
+      "lotId": "lot-fln-w4-002",
+      "reviewId": "page-100",
+      "sourceFileName": "100-20260202_162516.jpg",
+      "detectedLanguages": [
+        "fr"
+      ],
+      "detectedScripts": [
+        "latin"
+      ],
+      "confidence": "high",
+      "method": "vision_language_detection",
+      "notes": "The text is clearly in French and uses the Latin script. Source image utilisee: image locale .local/archive-batches/lot-fln-w4-002/converted/100-20260202_162516.jpg. Detection linguistique uniquement ; aucune transcription produite.",
+      "humanValidated": false
+    }
+  ]
+}
