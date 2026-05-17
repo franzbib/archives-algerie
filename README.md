@@ -1,194 +1,166 @@
 # Archives Algerie
 
-Application Next.js V0 pour explorer des archives historiques scannees sur
-l'Algerie, actuellement referencees dans Google Drive.
+Archives Algerie est une application de consultation documentaire d'archives
+scannees relatives a la guerre d'Algerie. Elle sert a publier, parcourir et
+questionner prudemment des lots d'images d'archives, tout en conservant la
+trace des sources, des traitements techniques et des limites de validation.
 
-La V0 ne connecte pas Google Drive automatiquement, ne lance pas d'OCR et
-n'utilise pas d'IA. Elle pose une base stable: manifeste JSON local, pages de
-navigation, fiches collections, fiches documents et architecture prete pour OCR,
-indexation et recherche en langage naturel sourcee.
+## Etat actuel
 
-## Objectif V0
+- Environ 690 pages sont consultables dans l'application.
+- 8 lots sont integres dans la consultation par lots.
+- La consultation principale passe par `/lots`.
+- La recherche V1 est disponible dans `/questionnement`.
+- Le suivi technique du corpus est disponible dans `/inventaire`.
+- Les anciennes routes V0, notamment `/collections` et `/documents`, restent
+  conservees comme reperes de tracabilite ancienne.
 
-- Naviguer dans les collections d'archives.
-- Consulter une fiche collection.
-- Consulter une fiche document preparatoire.
-- Afficher les metadonnees utiles: cote, lieu, periode, type documentaire et statut.
-- Preparer l'affichage futur image + texte OCR.
-- Preparer une future interrogation en langage naturel fondee sur OCR + embeddings.
+## Principes methodologiques
 
-## Limites assumées
+Le projet distingue strictement les couches suivantes:
 
-- Pas encore d'OCR dans l'application web.
-- Pas encore d'IA.
-- Pas encore de connexion automatique a Google Drive.
-- Les liens Drive restent de simples URL dans le manifeste local.
-- Les filtres sont visibles comme contrat d'interface, mais pas encore dynamiques.
+- image source;
+- OCR brut;
+- OCR nettoye;
+- lecture assistee vision;
+- correction humaine;
+- transcription validee.
 
-## Stack
+Une lecture assistee n'est pas une transcription validee. Elle doit toujours
+etre lue comme une hypothese de travail non validee humainement.
 
-- Next.js App Router
-- TypeScript
-- Tailwind CSS
-- Composants reutilisables
-- Donnees dans `src/data/archives-manifest.json`
-- Types dans `src/types/archive.ts`
-- Fonctions utilitaires dans `src/lib/archiveManifest.ts`
+L'OCR peut etre fautif, incomplet ou mal segmente. Les lectures assistees vision
+peuvent etre partielles, absentes ou incertaines. L'application ne propose pas
+encore de transcription humaine complete du corpus.
 
-## Demarrage
+Toute citation, indexation historique ou interpretation doit repartir de l'image
+source et des metadonnees de tracabilite.
 
-```bash
+## Architecture
+
+- Next.js App Router, React et TypeScript.
+- Export statique de l'application.
+- Images publiques publiees sur Cloudflare R2.
+- Donnees controlees dans `data/generated/`.
+- Donnees locales de travail dans `.local/`, jamais commitees.
+- Scripts d'ingestion et de preparation dans `scripts/`.
+- Documentation de methode, pipeline et architecture dans `docs/`.
+
+Les fichiers de `data/generated/` sont des manifestes controles. Ils ne doivent
+pas etre modifies sans intention explicite. Les fichiers de `.local/` servent au
+travail local: telechargements, conversions, OCR, lectures assistees et rapports
+temporaires.
+
+## Routes principales
+
+- `/lots`: consultation principale des lots d'archives.
+- `/lots/[lotId]`: detail d'un lot, pages disponibles et etat de traitement.
+- `/lots/[lotId]/[reviewId]`: consultation d'une image/page technique, avec
+  lecture assistee eventuelle et avertissements de validation.
+- `/questionnement`: recherche V1 et exploration prudente du corpus.
+- `/inventaire`: tableau de bord technique et etat du corpus.
+- `/collections`: repere V0 conserve pour la tracabilite ancienne.
+
+## Pipeline de lots
+
+Le pipeline local sert a preparer un lot avant son integration dans `/lots`.
+Le flux general est:
+
+1. Ajouter ou verifier le lot dans le registre controle.
+2. Lancer l'agent local de lot.
+3. Telecharger les fichiers sources autorises.
+4. Convertir les images ou pages PDF en JPG de consultation.
+5. Produire OCR brut puis OCR nettoye separement.
+6. Produire des lectures assistees vision quand c'est possible.
+7. Publier les images preparees vers R2.
+8. Promouvoir les manifestes controles.
+9. Verifier l'integration dans `/lots`.
+
+Les sorties locales restent dans `.local/archive-batches/<lotId>/` et ne doivent
+jamais etre commitees. Les lectures assistees produites par le pipeline restent
+non validees humainement.
+
+## Recherche V1
+
+La recherche V1 de `/questionnement` fonctionne sans appel OpenAI et sans
+embeddings. Elle interroge les lectures assistees disponibles et renvoie vers
+les pages de revue.
+
+Cette recherche est simple, non exhaustive et non validee historiquement. Elle
+sert a reperer des fragments possibles, pas a etablir une transcription fiable
+ou une conclusion historique.
+
+La page `/questionnement` contient aussi une frise chronologique legere. Cette
+frise ne produit pas d'interpretation automatique.
+
+## Notes humaines
+
+Le projet prepare un modele de notes humaines et de relecture, visible sur les
+pages de revue de lots. La persistance n'est pas encore active.
+
+Les zones de relecture actuelles ne sauvegardent pas d'annotation dans une base
+de donnees et ne valident pas les lectures assistees. Elles preparent une future
+fonctionnalite de correction humaine persistante.
+
+## Developpement local
+
+Installation:
+
+```powershell
 npm install
-npm run dev
 ```
 
-Ouvrir ensuite `http://localhost:3000`.
+Serveur de developpement:
 
-## Pages
-
-- `/` : accueil et presentation du principe archivistique.
-- `/collections` : liste des collections avec filtres prevus.
-- `/collections/[id]` : fiche collection et documents rattaches.
-- `/documents/[id]` : fiche document preparatoire, avec zone image et zone OCR futures.
-- `/questionnement` : placeholder de recherche future.
-
-## Modele minimal
-
-`Collection`
-
-- `id`
-- `title`
-- `sourceInstitution`
-- `archiveReference`
-- `region`
-- `period`
-- `description`
-- `driveUrl`
-- `status`
-- `documentCount`
-
-`Document`
-
-- `id`
-- `collectionId`
-- `title`
-- `documentType`
-- `dateLabel`
-- `place`
-- `peopleMentioned`
-- `keywords`
-- `driveUrl`
-- `ocrStatus`
-- `summary`
-
-Statuts autorises:
-
-- `to_inventory`
-- `inventoried`
-- `ocr_pending`
-- `ocr_done`
-- `indexed`
-- `verified`
-
-Le modele conserve la logique archivistique: fonds, cote, dossier, document,
-page. Les images ne sont pas le modele principal; elles seront rattachees a des
-pages appartenant a des documents.
-
-## Scripts web
-
-```bash
-npm run dev
-npm run build
-npm run lint
+```powershell
+npm.cmd run dev
 ```
 
-## Scripts de preparation hors application
+Verification lint:
 
-Les scripts du dossier `scripts/` sont independants de l'application web. Ils
-servent a preparer les sources avant ingestion. Ils n'utilisent pas OpenAI et ne
-connectent pas l'API Google Drive.
-
-```bash
-npm run manifest:build
-npm run manifest:validate
-npm run ocr:local
-npm run ocr:normalize
-npm run chunks:prepare
+```powershell
+npm.cmd run lint
 ```
 
-### Construire le manifeste
+Build statique:
 
-```bash
-copy scripts\archive-sources.example.json scripts\archive-sources.json
-npm run manifest:build -- --config scripts/archive-sources.json --out src/data/archives-manifest.json
+```powershell
+npm.cmd run build
 ```
 
-Le script lit une liste locale de collections/documents et produit le manifeste
-JSON stable utilise par l'application.
+## Verifications avant commit
 
-Pour verifier le manifeste courant:
+Avant de committer, lancer:
 
-```bash
-npm run manifest:validate
+```powershell
+npm.cmd run lint
+npm.cmd run build
+git diff --check
+git status
 ```
 
-### OCR local
+Verifier aussi:
 
-```bash
-npm run ocr:local -- --input C:\archives\images --out C:\archives\ocr --lang fra+ara
-```
+- aucun fichier `.local/` n'est suivi par Git;
+- aucun secret n'apparait dans le diff;
+- aucun nouveau lot n'a ete ajoute sans decision explicite;
+- aucune lecture assistee n'est presentee comme transcription validee;
+- aucun embedding n'a ete cree.
 
-Prerequis:
+## Limites actuelles
 
-- Tesseract disponible dans le `PATH`.
-- Pour les PDF: Poppler avec `pdftoppm` disponible dans le `PATH`.
+- Les lectures assistees sont partielles et non validees.
+- Certains documents sont multilingues, notamment en francais et en arabe.
+- La detection linguistique est partielle et ne vaut pas validation humaine.
+- Le traitement des lots PDF reste a stabiliser.
+- La recherche V1 reste simple et prudente.
+- Les notes humaines ne sont pas encore persistantes.
+- Le pipeline d'ingestion a ete rendu plus robuste, notamment pour la reprise et
+  les rapports locaux, mais il reste perfectible.
 
-Sorties:
+## Documentation utile
 
-- `*.txt` pour le texte OCR brut.
-- `ocr-metadata.json` pour les metadonnees de traitement.
-
-### Normalisation OCR
-
-```bash
-npm run ocr:normalize -- --input C:\archives\ocr --out C:\archives\normalized
-```
-
-Le script conserve toujours le texte brut original dans `.raw.txt` et cree un
-texte nettoye separe dans `.clean.txt`.
-
-### Preparation des chunks
-
-```bash
-npm run chunks:prepare -- --input C:\archives\normalized --out C:\archives\chunks.json --size 900 --overlap 120
-```
-
-Le script decoupe les textes en passages courts pour une future etape
-d'embeddings. Il ne calcule aucun embedding.
-
-## Structure
-
-```text
-src/
-  app/              Routes App Router
-  components/       Composants d'interface
-  data/             Manifeste local JSON
-  lib/              Fonctions de lecture du manifeste
-  types/            Types TypeScript du domaine archives
-docs/
-  ARCHITECTURE.md
-  ROADMAP.md
-scripts/
-  build-manifest.ts
-  validate-manifest.ts
-  ocr-local.ts
-  normalize-ocr.ts
-  prepare-chunks.ts
-```
-
-## Verification
-
-```bash
-npm run lint
-npm run build
-```
+- `docs/ARCHITECTURE.md`: architecture et routes.
+- `docs/MULTI_BATCH_WORKFLOW.md`: workflow multi-lots.
+- `docs/BATCH_AGENT_RECOVERY.md`: reprise de l'agent de lots.
+- `docs/ASSISTED_READING_SPEC.md`: statut des lectures assistees.
