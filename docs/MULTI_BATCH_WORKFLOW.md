@@ -410,3 +410,56 @@ Une fois les routes génériques créées :
 Le prochain jalon attendu est :
 
 > `/lots` affiche les lots disponibles et planifiés ; `lot-boghari-001` réutilise les 41 images et lectures assistées vision déjà intégrées ; les prochains lots apparaissent comme planifiés.
+---
+
+## Rapport de diagnostic local d'un lot
+
+### Objectif
+
+Le script `scripts/generate-batch-report.ts` produit un rapport d'état complet
+d'un lot traité localement, sans appel réseau (ni OpenAI, ni Google Drive, ni R2).
+
+Il sert à :
+
+- vérifier qu'un lot est complet avant de le promouvoir dans `data/generated/` ;
+- identifier les pages manquantes (JPG absent, OCR absent, lecture invalide) ;
+- détecter les lectures assistées vides ou JSON invalides ;
+- confirmer la présence du manifeste `public-assets.json` local et généré ;
+- confirmer la présence de `assisted-readings.json` promu.
+
+Le rapport est en lecture seule. Il ne modifie aucun fichier existant.
+
+### Commande
+
+```powershell
+npx.cmd tsx scripts/generate-batch-report.ts --lot lot-gouas-zaouias-001
+```
+
+Remplacer `lot-gouas-zaouias-001` par l'identifiant du lot à diagnostiquer.
+
+### Sortie
+
+Le rapport est écrit dans :
+.local/archive-batches/<lotId>/batch-report.json
+
+Ce fichier ne doit jamais être committé (`.local/` est dans `.gitignore`).
+
+### Codes d'issue par page
+
+| Code | Signification |
+|---|---|
+| `missing_jpg` | Aucun fichier JPG trouvé pour cette page |
+| `missing_ocr_raw` | OCR brut absent |
+| `missing_ocr_clean` | OCR nettoyé absent |
+| `missing_assisted_vision` | Lecture assistée vision absente |
+| `invalid_assisted_json` | Fichier JSON de lecture assistée invalide ou non parsable |
+| `empty_assisted_text` | `assistedReadingText` présent mais vide |
+| `not_in_public_assets` | Page absente du manifeste `public-assets.json` local |
+
+### Quand l'utiliser
+
+Lancer ce script **après** chaque exécution de l'agent ou après une promotion
+partielle, avant de committer les manifestes dans `data/generated/`.
+
+Il remplace les vérifications manuelles et permet de savoir précisément combien
+de pages sont prêtes, partielles ou défaillantes.
