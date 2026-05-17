@@ -241,9 +241,29 @@ Garde-fous:
   `--skip-vision` n'est pas fourni ;
 - il n'upload vers R2 que si les variables R2 sont disponibles et si
   `--skip-upload` n'est pas fourni ;
-- il s'arrête dès qu'une étape échoue ;
+- il s'arrête dès qu'une étape structurante échoue, sauf pour les echecs
+  ponctuels de lecture assistee vision ;
 - il ne modifie pas `src/data/archives-manifest.json` ;
 - il ne promeut pas automatiquement les sorties locales vers `data/generated/`.
+
+### Tolérance des lectures assistées vision
+
+L'étape 6 traite les pages une par une. Si une page échoue pendant la lecture
+assistée vision, l'agent n'invente aucune lecture et n'écrit aucun JSON de
+lecture pour cette page. Il ajoute l'échec dans un rapport local :
+
+```text
+.local/archive-batches/<lotId>/assisted-reading-vision/vision-errors.json
+```
+
+Chaque entrée du rapport conserve `reviewId`, OCR clean concerné, image locale
+si disponible, raison de l'échec et `status: vision_failed_to_retry`. L'agent
+continue ensuite les pages suivantes et peut atteindre l'étape d'upload R2 afin
+de produire le manifeste public des images déjà converties.
+
+Les pages signalées dans ce rapport doivent être reprises plus tard. Elles ne
+sont pas des lectures indisponibles validées et ne doivent pas être promues dans
+`data/generated/` sans contrôle.
 
 Pour préparer seulement les étapes locales sans IA ni upload:
 

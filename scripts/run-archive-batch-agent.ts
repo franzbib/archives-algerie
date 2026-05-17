@@ -100,6 +100,22 @@ interface DownloadManifestFile {
   sizeBytes: number;
 }
 
+interface VisionFailure {
+  cleanOcrTextFile: string;
+  failedAt: string;
+  imagePath: string | null;
+  reason: string;
+  reviewId: string;
+  status: "vision_failed_to_retry";
+}
+
+interface VisionFailureReport {
+  generatedAt: string;
+  lotId: string;
+  note: string;
+  failures: VisionFailure[];
+}
+
 const BATCHES_MANIFEST_PATH = "data/generated/archive-batches.example.json";
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".heic", ".heif"]);
 const JPG_EXTENSIONS = new Set([".jpg", ".jpeg"]);
@@ -397,34 +413,93 @@ async function generateVisionReadings(config: AgentConfig, paths: AgentPaths) {
   }
 
   await mkdir(paths.assistedReadingDirectory, { recursive: true });
+  const failures: VisionFailure[] = [];
 
   for (const cleanTextFile of cleanTextFiles.slice(0, config.limit)) {
     const imagePath = findMatchingJpg(cleanTextFile, paths.convertedDirectory);
+    const reviewId = toReviewId(cleanTextFile);
+
     if (!imagePath) {
-      throw new Error(
-        `Image JPG correspondante introuvable pour ${cleanTextFile} dans ${paths.convertedDirectory}.`,
-      );
+      failures.push({
+        cleanOcrTextFile: cleanTextFile,
+        failedAt: new Date().toISOString(),
+        imagePath: null,
+        reason: `Image JPG correspondante introuvable dans ${paths.convertedDirectory}.`,
+        reviewId,
+        status: "vision_failed_to_retry",
+      });
+      await writeVisionFailureReport(config, paths, failures);
+      console.warn(`[VISION WARNING] ${reviewId}: image JPG introuvable. Page a reprendre.`);
+      continue;
     }
 
-    const reviewId = toReviewId(cleanTextFile);
     const outputPath = path.join(
       paths.assistedReadingDirectory,
       `${reviewId}.vision.assisted.json`,
     );
 
-    await runTsx([
-      "scripts/generate-assisted-reading-vision.ts",
-      "--workspace",
-      path.dirname(paths.assistedReadingDirectory),
-      "--input",
-      cleanTextFile,
-      "--image",
-      imagePath,
-      "--out",
-      outputPath,
-      "--confirm",
-    ]);
+    try {
+      await runTsx([
+        "scripts/generate-assisted-reading-vision.ts",
+        "--workspace",
+        path.dirname(paths.assistedReadingDirectory),
+        "--input",
+        cleanTextFile,
+        "--image",
+        imagePath,
+        "--out",
+        outputPath,
+        "--confirm",
+      ]);
+    } catch (error) {
+      const reason = error instanceof Error ? error.message : String(error);
+      failures.push({
+        cleanOcrTextFile: cleanTextFile,
+        failedAt: new Date().toISOString(),
+        imagePath,
+        reason,
+        reviewId,
+        status: "vision_failed_to_retry",
+      });
+      await writeVisionFailureReport(config, paths, failures);
+      console.warn(
+        `[VISION WARNING] ${reviewId}: lecture assistee vision echouee. Page a reprendre. ${reason}`,
+      );
+    }
   }
+
+  if (failures.length > 0) {
+    console.warn(
+      `[VISION WARNING] ${failures.length} page(s) en echec. L'agent continue vers les etapes suivantes.`,
+    );
+    console.warn(
+      `Rapport local: ${getVisionFailureReportPath(paths)}`,
+    );
+  }
+}
+
+async function writeVisionFailureReport(
+  config: AgentConfig,
+  paths: AgentPaths,
+  failures: VisionFailure[],
+) {
+  const report: VisionFailureReport = {
+    failures,
+    generatedAt: new Date().toISOString(),
+    lotId: config.lotId,
+    note:
+      "Rapport local des lectures assistees vision echouees. Aucune lecture n'a ete inventee ; ces pages doivent etre reprises plus tard.",
+  };
+
+  await writeFile(
+    getVisionFailureReportPath(paths),
+    `${JSON.stringify(report, null, 2)}\n`,
+    "utf8",
+  );
+}
+
+function getVisionFailureReportPath(paths: AgentPaths): string {
+  return path.join(paths.assistedReadingDirectory, "vision-errors.json");
 }
 
 function getAgentPaths(config: AgentConfig): AgentPaths {
