@@ -139,6 +139,23 @@
       "notes": "Lot SHD 1H1491 Obus chinois, Gouas, Zaouias pret pour revue ; images publiees et lectures assistees partielles non validees."
     },
     {
+      "lotId": "lot-pam-cim-liberes-001",
+      "collectionId": "shd-gr-1h5086-pam-assignes-cim-liberes",
+      "title": "SHD GR 1H5086 - PAM assignes dans les CIM et liberes",
+      "sourceType": "google_drive",
+      "status": "planned",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1HSJaucqdU0UFbkd0mBdQlZBgwyJS4EG8",
+        "inventoryManifest": null
+      },
+      "assetManifest": null,
+      "assistedReadingManifest": null,
+      "reviewRoute": null,
+      "legacyReviewRoute": null,
+      "itemCount": null,
+      "notes": "Source Drive identifiee par inventaire leger local : dossier SHD GR 1H5086 PAM assignes dans les CIM et liberes. Le releve contient environ 36 fichiers JPG visibles ; lot pilote simple planifie pour une prochaine vague. Aucune ingestion, aucun OCR et aucune lecture assistee n'ont encore ete produits."
+    },
+    {
       "lotId": "lot-fln-w4-005",
       "collectionId": "shd-gr-1h1646-lettres-directives-fln-wilaya4",
       "title": "SHD GR 1H1646 - Lettres et directives FLN Wilaya 4",
