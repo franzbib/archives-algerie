@@ -122,6 +122,23 @@
       "notes": "Lot SHD 1H2581 FLN redditions, ralliements, tracts et affiches pret pour revue ; images et lectures assistees non validees."
     },
     {
+      "lotId": "lot-gouas-zaouias-001",
+      "collectionId": "shd-1h1491-obus-chinois-gouas-zaouias",
+      "title": "SHD 1H1491 - Obus chinois, Gouas, Zaouias",
+      "sourceType": "google_drive",
+      "status": "planned",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1TdZCqBHq32gki8Hly-OBaI1Kg6yuAFi7",
+        "inventoryManifest": null
+      },
+      "assetManifest": null,
+      "assistedReadingManifest": null,
+      "reviewRoute": null,
+      "legacyReviewRoute": null,
+      "itemCount": null,
+      "notes": "Source Drive identifiee par connecteur : dossier SHD 1H1491, obus chinois, Gouas, Zaouias. Le premier releve contient des images JPEG ; lot adapte a l'agent images existant."
+    },
+    {
       "lotId": "lot-fln-w4-005",
       "collectionId": "shd-gr-1h1646-lettres-directives-fln-wilaya4",
       "title": "SHD GR 1H1646 - Lettres et directives FLN Wilaya 4",
