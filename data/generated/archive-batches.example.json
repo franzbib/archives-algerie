@@ -105,6 +105,23 @@
       "notes": "Lot SHD 1H4027 Tiaret Zaouias pret pour revue ; images et lectures assistees non validees."
     },
     {
+      "lotId": "lot-fln-w4-005",
+      "collectionId": "shd-gr-1h1646-lettres-directives-fln-wilaya4",
+      "title": "SHD GR 1H1646 - Lettres et directives FLN Wilaya 4",
+      "sourceType": "google_drive",
+      "status": "planned",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1dfGNItgzsNbnzKbECPLl5lLWKlLuC9W-",
+        "inventoryManifest": null
+      },
+      "assetManifest": null,
+      "assistedReadingManifest": null,
+      "reviewRoute": null,
+      "legacyReviewRoute": null,
+      "itemCount": null,
+      "notes": "Source Drive identifiee par connecteur : dossier SHD GR 1H1646 Lettres et directives FLN Wilaya4. Le premier releve contient des images JPEG ; lot adapte a l'agent images existant."
+    },
+    {
       "lotId": "lot-frontiere-maroc-001",
       "collectionId": "shd-gr-9m2274-frontiere-maroc",
       "title": "SHD GR 9 M 2274 - Frontiere Maroc",
