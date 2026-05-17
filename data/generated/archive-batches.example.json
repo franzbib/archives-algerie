@@ -105,6 +105,23 @@
       "notes": "Lot SHD 1H4027 Tiaret Zaouias pret pour revue ; images et lectures assistees non validees."
     },
     {
+      "lotId": "lot-fln-ralliements-001",
+      "collectionId": "shd-1h2581-redditions-ralliements-fln-tracts-affiches",
+      "title": "SHD 1H2581 - Redditions, ralliements FLN ; tracts et affiches",
+      "sourceType": "google_drive",
+      "status": "planned",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/16gu0tuRNxEV-6w5WeYnNT-tmZ-QF4jsO",
+        "inventoryManifest": null
+      },
+      "assetManifest": null,
+      "assistedReadingManifest": null,
+      "reviewRoute": null,
+      "legacyReviewRoute": null,
+      "itemCount": null,
+      "notes": "Source Drive identifiee par connecteur : dossier SHD 1H2581 D1 redditions et ralliements FLN, D2 tracts et affiches. Le premier releve contient des images JPEG ; lot adapte a l'agent images existant."
+    },
+    {
       "lotId": "lot-fln-w4-005",
       "collectionId": "shd-gr-1h1646-lettres-directives-fln-wilaya4",
       "title": "SHD GR 1H1646 - Lettres et directives FLN Wilaya 4",
@@ -119,7 +136,7 @@
       "reviewRoute": null,
       "legacyReviewRoute": null,
       "itemCount": null,
-      "notes": "Source Drive identifiee par connecteur : dossier SHD GR 1H1646 Lettres et directives FLN Wilaya4. Le premier releve contient des images JPEG ; lot adapte a l'agent images existant."
+      "notes": "Source Drive identifiee par connecteur : dossier SHD GR 1H1646 Lettres et directives FLN Wilaya4. Le premier releve contient des images JPEG ; lot adapte a l'agent images existant. Telechargement local temporairement bloque par une erreur Google Drive 403 / quota ; a reprendre plus tard."
     },
     {
       "lotId": "lot-frontiere-maroc-001",
