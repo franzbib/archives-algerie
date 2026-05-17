@@ -8,6 +8,8 @@ import flnW4ThirdPublicAssets from "../../data/generated/batches/lot-fln-w4-003/
 import flnW4FourthPublicAssets from "../../data/generated/batches/lot-fln-w4-004/public-assets.json";
 import flnRalliementsAssistedReadings from "../../data/generated/batches/lot-fln-ralliements-001/assisted-readings.json";
 import flnRalliementsPublicAssets from "../../data/generated/batches/lot-fln-ralliements-001/public-assets.json";
+import gouasZaouiasAssistedReadings from "../../data/generated/batches/lot-gouas-zaouias-001/assisted-readings.json";
+import gouasZaouiasPublicAssets from "../../data/generated/batches/lot-gouas-zaouias-001/public-assets.json";
 import tiaretZaouiasAssistedReadings from "../../data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json";
 import tiaretZaouiasPublicAssets from "../../data/generated/batches/lot-tiaret-zaouias-001/public-assets.json";
 import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
@@ -104,6 +106,8 @@ const assetManifestRegistry: Record<string, AssetManifest> = {
     flnW4FourthPublicAssets as AssetManifest,
   "data/generated/batches/lot-fln-ralliements-001/public-assets.json":
     flnRalliementsPublicAssets as AssetManifest,
+  "data/generated/batches/lot-gouas-zaouias-001/public-assets.json":
+    gouasZaouiasPublicAssets as AssetManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/public-assets.json":
     tiaretZaouiasPublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
@@ -117,6 +121,8 @@ const assistedReadingManifestRegistry: Record<string, AssistedReadingManifest> =
     flnW4ThirdAssistedReadings as AssistedReadingExample[],
   "data/generated/batches/lot-fln-ralliements-001/assisted-readings.json":
     flnRalliementsAssistedReadings as AssistedReadingManifest,
+  "data/generated/batches/lot-gouas-zaouias-001/assisted-readings.json":
+    gouasZaouiasAssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json":
     tiaretZaouiasAssistedReadings as AssistedReadingManifest,
   "data/generated/pilot-batch-assisted-readings.example.json":
@@ -145,9 +151,7 @@ export function isArchiveBatchReviewReady(batch: ArchiveBatch): boolean {
 export function getAssetsForBatch(batch: ArchiveBatch): ArchiveBatchAsset[] {
   if (!batch.assetManifest) return [];
 
-  return (assetManifestRegistry[batch.assetManifest]?.assets ?? []).map(
-    normalizeArchiveBatchAsset,
-  );
+  return normalizeArchiveBatchAssets(assetManifestRegistry[batch.assetManifest]?.assets ?? []);
 }
 
 export function getAssistedReadingsForBatch(
@@ -166,7 +170,7 @@ export function getArchiveBatchReviewItems(
   const readings = getAssistedReadingsForBatch(batch);
 
   return getAssetsForBatch(batch).map((asset) => {
-    const reading = readings.find((item) => item.reviewId === asset.reviewId);
+    const reading = findReadingForAsset(readings, asset);
 
     return {
       reviewId: asset.reviewId,
@@ -207,9 +211,13 @@ export function getAssistedReadingForArchiveBatchReview(
   batch: ArchiveBatch,
   reviewItem: ArchiveBatchReviewItem,
 ): AssistedReadingExample | null {
+  const asset = getArchiveBatchAssetForReview(batch, reviewItem);
+
   return (
-    getAssistedReadingsForBatch(batch).find(
-      (reading) => reading.reviewId === reviewItem.reviewId,
+    findReadingForAsset(
+      getAssistedReadingsForBatch(batch),
+      asset,
+      reviewItem.reviewId,
     ) ?? null
   );
 }
@@ -251,15 +259,52 @@ export function getArchiveBatchTypeLabel(batch: ArchiveBatch): string {
   return "Type non renseigne";
 }
 
-function normalizeArchiveBatchAsset(asset: RawArchiveBatchAsset): ArchiveBatchAsset {
+function normalizeArchiveBatchAssets(
+  assets: RawArchiveBatchAsset[],
+): ArchiveBatchAsset[] {
+  const inferredReviewIds = assets.map((asset) =>
+    asset.reviewId ?? getReviewIdFromFileName(getAssetFileName(asset)),
+  );
+  const hasDuplicateReviewIds =
+    new Set(inferredReviewIds).size !== inferredReviewIds.length;
+
+  return assets.map((asset, index) =>
+    normalizeArchiveBatchAsset(
+      asset,
+      hasDuplicateReviewIds && !asset.reviewId ? getReviewIdFromIndex(index) : undefined,
+    ),
+  );
+}
+
+function normalizeArchiveBatchAsset(
+  asset: RawArchiveBatchAsset,
+  fallbackReviewId?: string,
+): ArchiveBatchAsset {
   const localJpgFileName =
-    asset.localJpgFileName ?? getFileNameFromPath(asset.localJpgFile ?? asset.r2ObjectKey);
+    asset.localJpgFileName ?? getAssetFileName(asset);
 
   return {
     ...asset,
     localJpgFileName,
-    reviewId: asset.reviewId ?? getReviewIdFromFileName(localJpgFileName),
+    reviewId: asset.reviewId ?? fallbackReviewId ?? getReviewIdFromFileName(localJpgFileName),
   };
+}
+
+function findReadingForAsset(
+  readings: AssistedReadingExample[],
+  asset?: ArchiveBatchAsset,
+  fallbackReviewId?: string,
+): AssistedReadingExample | undefined {
+  if (!asset) {
+    return readings.find((reading) => reading.reviewId === fallbackReviewId);
+  }
+
+  return readings.find(
+    (reading) =>
+      getFileNameFromPath(reading.sourceImage ?? "") === asset.localJpgFileName ||
+      reading.reviewId === asset.reviewId ||
+      reading.reviewId === fallbackReviewId,
+  );
 }
 
 function normalizeAssistedReadingManifest(
@@ -275,6 +320,10 @@ function getFileNameFromPath(filePath: string): string {
   return filePath.split(/[\\/]/).pop() ?? filePath;
 }
 
+function getAssetFileName(asset: RawArchiveBatchAsset): string {
+  return getFileNameFromPath(asset.localJpgFile ?? asset.r2ObjectKey);
+}
+
 function getReviewIdFromFileName(fileName: string): string {
   const match = fileName.match(/^(\d{1,4})[-_]/);
   if (!match) {
@@ -282,4 +331,8 @@ function getReviewIdFromFileName(fileName: string): string {
   }
 
   return `page-${match[1].padStart(2, "0")}`;
+}
+
+function getReviewIdFromIndex(index: number): string {
+  return `page-${String(index + 1).padStart(2, "0")}`;
 }
