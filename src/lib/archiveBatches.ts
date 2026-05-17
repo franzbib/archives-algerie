@@ -6,6 +6,8 @@ import flnW4SecondPublicAssets from "../../data/generated/batches/lot-fln-w4-002
 import flnW4ThirdAssistedReadings from "../../data/generated/batches/lot-fln-w4-003/assisted-readings.json";
 import flnW4ThirdPublicAssets from "../../data/generated/batches/lot-fln-w4-003/public-assets.json";
 import flnW4FourthPublicAssets from "../../data/generated/batches/lot-fln-w4-004/public-assets.json";
+import flnRalliementsAssistedReadings from "../../data/generated/batches/lot-fln-ralliements-001/assisted-readings.json";
+import flnRalliementsPublicAssets from "../../data/generated/batches/lot-fln-ralliements-001/public-assets.json";
 import tiaretZaouiasAssistedReadings from "../../data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json";
 import tiaretZaouiasPublicAssets from "../../data/generated/batches/lot-tiaret-zaouias-001/public-assets.json";
 import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
@@ -100,6 +102,8 @@ const assetManifestRegistry: Record<string, AssetManifest> = {
     flnW4ThirdPublicAssets as AssetManifest,
   "data/generated/batches/lot-fln-w4-004/public-assets.json":
     flnW4FourthPublicAssets as AssetManifest,
+  "data/generated/batches/lot-fln-ralliements-001/public-assets.json":
+    flnRalliementsPublicAssets as AssetManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/public-assets.json":
     tiaretZaouiasPublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
@@ -111,6 +115,8 @@ const assistedReadingManifestRegistry: Record<string, AssistedReadingManifest> =
     flnW4SecondAssistedReadings as AssistedReadingExample[],
   "data/generated/batches/lot-fln-w4-003/assisted-readings.json":
     flnW4ThirdAssistedReadings as AssistedReadingExample[],
+  "data/generated/batches/lot-fln-ralliements-001/assisted-readings.json":
+    flnRalliementsAssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json":
     tiaretZaouiasAssistedReadings as AssistedReadingManifest,
   "data/generated/pilot-batch-assisted-readings.example.json":
