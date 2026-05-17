@@ -37,6 +37,16 @@ Statuts:
 
 ## Organisation
 
+La navigation publique actuelle privilegie les lots:
+
+- `/lots`: consultation documentaire principale par lots;
+- `/lots/[lotId]` et `/lots/[lotId]/[reviewId]`: revue image + lecture assistee non validee;
+- `/questionnement`: recherche V1 prudente et frise legere;
+- `/inventaire`: tableau de bord technique et etat du corpus.
+
+Les routes V0 restent disponibles comme reperes de tracabilite, mais ne sont
+plus la consultation principale.
+
 ```text
 src/app
 ```
@@ -44,10 +54,14 @@ src/app
 Routes App Router:
 
 - `/`
+- `/lots`
+- `/lots/[lotId]`
+- `/lots/[lotId]/[reviewId]`
+- `/questionnement`
+- `/inventaire`
 - `/collections`
 - `/collections/[id]`
 - `/documents/[id]`
-- `/questionnement`
 
 ```text
 src/components

@@ -502,6 +502,10 @@ function CopyableHumanReviewTemplate({ template }: { template: string }) {
             l&apos;application. Il ne sauvegarde rien, ne valide rien et ne modifie
             pas la lecture assistee.
           </p>
+          <p className="mt-3">
+            Les annotations ne sont pas encore enregistrees. Cette zone prepare
+            une future fonctionnalite de relecture persistante.
+          </p>
         </div>
 
         <pre className="max-h-[420px] overflow-auto whitespace-pre-wrap border border-paper-border bg-background p-4 font-mono text-xs leading-6 text-foreground">

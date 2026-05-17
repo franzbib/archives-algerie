@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Archives Algerie",
   description:
-    "Prototype d'inventaire archivistique pour collections, dossiers, documents et pages.",
+    "Consultation documentaire par lots, recherche prudente et suivi technique du corpus.",
 };
 
 export default function RootLayout({
@@ -48,28 +48,28 @@ export default function RootLayout({
                 className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
               >
                 <Layers3 className="h-4 w-4 stroke-[2]" />
-                Lots
-              </Link>
-              <Link
-                href="/inventaire"
-                className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
-              >
-                <ClipboardList className="h-4 w-4 stroke-[2]" />
-                Inventaire
-              </Link>
-              <Link
-                href="/collections"
-                className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
-              >
-                <Archive className="h-4 w-4 stroke-[2]" />
-                Manifeste V0
+                Lots d&apos;archives
               </Link>
               <Link
                 href="/questionnement"
                 className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
               >
                 <Search className="h-4 w-4 stroke-[2]" />
-                Recherche
+                Recherche V1
+              </Link>
+              <Link
+                href="/inventaire"
+                className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
+              >
+                <ClipboardList className="h-4 w-4 stroke-[2]" />
+                Etat du corpus
+              </Link>
+              <Link
+                href="/collections"
+                className="flex items-center gap-2 border-l border-paper-border pl-4 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground sm:pl-6"
+              >
+                <Archive className="h-4 w-4 stroke-[2]" />
+                Reperes V0
               </Link>
             </nav>
           </div>
