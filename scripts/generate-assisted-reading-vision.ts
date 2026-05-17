@@ -1,5 +1,5 @@
 import { existsSync } from "node:fs";
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { open, mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 type ConfidenceLevel = "low" | "medium" | "high";
@@ -39,6 +39,7 @@ interface AssistedReadingUncertainty {
 const DEFAULT_MODEL = "gpt-4.1";
 const DEFAULT_WORKSPACE = ".local/archive-batch-boghari";
 const DEFAULT_PROMPT_PATH = "prompts/ASSISTED_READING_VISION_PROMPT.md";
+const DEFAULT_MAX_OCR_CHARS = 60_000;
 
 async function main() {
   const confirmed = process.argv.includes("--confirm");
@@ -61,6 +62,7 @@ async function main() {
   const outputPath = getArg("--out") ?? getDefaultOutputPath(inputPath, workspacePath);
   const model = getArg("--model") ?? DEFAULT_MODEL;
   const promptPath = getArg("--prompt") ?? DEFAULT_PROMPT_PATH;
+  const maxOcrChars = getPositiveIntegerArg("--max-ocr-chars", DEFAULT_MAX_OCR_CHARS);
   const rawOcrTextFile = inferRawOcrTextFile(inputPath);
 
   await requireFile(inputPath, "OCR nettoye");
@@ -69,11 +71,16 @@ async function main() {
 
   assertOutputPathAllowed(outputPath, outputDirectory);
 
-  const cleanOcrText = await readFile(inputPath, "utf8");
+  const cleanOcrInput = await readCleanOcrTextForPrompt(inputPath, maxOcrChars);
+  if (cleanOcrInput.truncated) {
+    console.warn(cleanOcrInput.note);
+  }
+
   const promptTemplate = await readFile(promptPath, "utf8");
   const prompt = buildPrompt({
-    cleanOcrText,
+    cleanOcrText: cleanOcrInput.text,
     cleanOcrTextFile: inputPath,
+    ocrInputNote: cleanOcrInput.note,
     promptTemplate,
     rawOcrTextFile,
     sourceImage: imagePath,
@@ -88,6 +95,7 @@ async function main() {
   });
   const output = normalizeAssistedReadingOutput(generated, {
     cleanOcrTextFile: inputPath,
+    ocrInputNote: cleanOcrInput.note,
     rawOcrTextFile,
     sourceImage: imagePath,
   });
@@ -150,6 +158,7 @@ function normalizeAssistedReadingOutput(
   value: unknown,
   enforced: {
     cleanOcrTextFile: string;
+    ocrInputNote: string;
     rawOcrTextFile: string;
     sourceImage: string;
   },
@@ -164,7 +173,7 @@ function normalizeAssistedReadingOutput(
     rawOcrTextFile: enforced.rawOcrTextFile,
     cleanOcrTextFile: enforced.cleanOcrTextFile,
     assistedReadingText: getString(record.assistedReadingText),
-    note: getString(record.note),
+    note: mergeNotes(getString(record.note), enforced.ocrInputNote),
     uncertainties,
     status: normalizeStatus(record.status, getString(record.assistedReadingText)),
     humanValidation: {
@@ -190,6 +199,7 @@ function normalizeUncertainty(value: unknown): AssistedReadingUncertainty {
 function buildPrompt(options: {
   cleanOcrText: string;
   cleanOcrTextFile: string;
+  ocrInputNote: string;
   promptTemplate: string;
   rawOcrTextFile: string;
   sourceImage: string;
@@ -198,7 +208,60 @@ function buildPrompt(options: {
     .replaceAll("{{sourceImage}}", options.sourceImage)
     .replaceAll("{{rawOcrTextFile}}", options.rawOcrTextFile)
     .replaceAll("{{cleanOcrTextFile}}", options.cleanOcrTextFile)
+    .replaceAll("{{ocrInputNote}}", options.ocrInputNote)
     .replaceAll("{{cleanOcrText}}", options.cleanOcrText);
+}
+
+async function readCleanOcrTextForPrompt(
+  filePath: string,
+  maxChars: number,
+): Promise<{ note: string; text: string; truncated: boolean }> {
+  const fileStat = await stat(filePath);
+  const maxBytesToRead = maxChars * 4;
+
+  if (fileStat.size <= maxBytesToRead) {
+    const text = await readFile(filePath, "utf8");
+    if (text.length <= maxChars) {
+      return { note: "", text, truncated: false };
+    }
+
+    return {
+      note: getTruncationNote(filePath, maxChars, fileStat.size),
+      text: text.slice(0, maxChars),
+      truncated: true,
+    };
+  }
+
+  const file = await open(filePath, "r");
+  try {
+    const buffer = Buffer.alloc(maxBytesToRead);
+    const result = await file.read(buffer, 0, maxBytesToRead, 0);
+    const text = buffer.subarray(0, result.bytesRead).toString("utf8");
+
+    return {
+      note: getTruncationNote(filePath, maxChars, fileStat.size),
+      text: text.slice(0, maxChars),
+      truncated: true,
+    };
+  } finally {
+    await file.close();
+  }
+}
+
+function getTruncationNote(filePath: string, maxChars: number, sizeBytes: number): string {
+  return [
+    `OCR nettoye tronque pour la lecture assistee vision: ${path.basename(filePath)}.`,
+    `Seuls les ${maxChars} premiers caracteres environ ont ete fournis au modele.`,
+    `Taille du fichier source: ${sizeBytes} octets.`,
+    "Le fichier OCR local original n'a pas ete modifie.",
+  ].join(" ");
+}
+
+function mergeNotes(generatedNote: string, enforcedNote: string): string {
+  if (!enforcedNote) return generatedNote;
+  if (!generatedNote) return enforcedNote;
+
+  return `${generatedNote} ${enforcedNote}`;
 }
 
 async function readImageAsDataUrl(imagePath: string): Promise<string> {
@@ -291,6 +354,18 @@ function getRequiredArg(name: string): string {
   }
 
   return value;
+}
+
+function getPositiveIntegerArg(name: string, fallback: number): number {
+  const value = getArg(name);
+  if (!value) return fallback;
+
+  const parsed = Number.parseInt(value, 10);
+  if (!Number.isFinite(parsed) || parsed < 1) {
+    throw new Error(`${name} doit etre un entier positif.`);
+  }
+
+  return parsed;
 }
 
 function getArg(name: string): string | undefined {

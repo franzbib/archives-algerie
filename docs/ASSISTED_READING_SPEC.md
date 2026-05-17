@@ -167,6 +167,20 @@ Contraintes propres a cette V2:
 - ne pas ecraser les lectures assistees actuelles ;
 - ne pas publier automatiquement les sorties dans `data/generated/` ;
 - ne pas creer d'embeddings.
+- limiter l'OCR nettoye injecte dans le prompt afin qu'un fichier anormalement
+  volumineux ou corrompu ne bloque pas tout le lot.
+
+Par defaut, `scripts/generate-assisted-reading-vision.ts` ne fournit au modele
+qu'un extrait borne de l'OCR nettoye si le fichier depasse la limite configuree.
+Le fichier OCR local original n'est jamais modifie. La sortie doit conserver une
+note de troncature, et la lecture reste une hypothese non validee a verifier sur
+l'image.
+
+La limite peut etre ajustee localement avec:
+
+```powershell
+--max-ocr-chars 60000
+```
 
 La relecture humaine reste obligatoire avant toute validation, citation,
 indexation ou integration au manifeste principal.

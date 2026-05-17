@@ -29,6 +29,7 @@ Le resultat est une transcription hypothetique non validee.
   "sourceImage": "{{sourceImage}}",
   "rawOcrTextFile": "{{rawOcrTextFile}}",
   "cleanOcrTextFile": "{{cleanOcrTextFile}}",
+  "ocrInputNote": "{{ocrInputNote}}",
   "cleanOcrText": "{{cleanOcrText}}"
 }
 ```
@@ -50,6 +51,9 @@ Le resultat est une transcription hypothetique non validee.
    - `lecture_probable`
 7. Utilise seulement `low`, `medium` ou `high` pour `confidence`.
 8. Mets toujours `humanValidation.validated` a `false`.
+9. Si `ocrInputNote` indique une troncature, conserve cette information dans
+   le champ `note` de sortie et appuie-toi d'abord sur l'image pour les zones
+   non couvertes par l'extrait OCR.
 
 ## Format de sortie obligatoire
 
@@ -59,6 +63,7 @@ Le resultat est une transcription hypothetique non validee.
   "rawOcrTextFile": "{{rawOcrTextFile}}",
   "cleanOcrTextFile": "{{cleanOcrTextFile}}",
   "assistedReadingText": "",
+  "note": "{{ocrInputNote}}",
   "uncertainties": [
     {
       "fragment": "",
