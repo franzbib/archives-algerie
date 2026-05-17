@@ -1,0 +1,1407 @@
+[
+  {
+    "reviewId": "page-01",
+    "sourceImage": "01-20260203_164558.jpg",
+    "assistedReadingText": "BULLETIN DE RÉSERVATION DE DOCUMENTS D'ARCHIVES\nService historique de la Défense (SHD)\nChâteau de Vincennes, salle de lecture Louis XIV\nDate de séance de consultation : 23/02/26\n\nLECTEUR\nNom, Prénom : ... CHARÈNE Elyamine ... Numéro de lecteur : 83751\nTéléphone : 06.79.97.73.80 ... Courriel : ...\nARTICLES À RÉSERVER (attention 5 articles par lecteur et par séance de consultation)\n\n☑ TERRE   ☐ AIR   ☐ MARINE   ☐ GENDARMERIE\n1H 1645 + (1H026, 1H647)\n\n☑ TERRE   ☐ AIR   ☐ MARINE   ☐ GENDARMERIE\n1H 1646\n\n☑ TERRE   ☐ AIR   ☐ MARINE   ☐ GENDARMERIE\n1H 1647\n\n☑ TERRE   ☐ AIR   ☐ MARINE   ☐ GENDARMERIE\n1H 3421\n\n☑ TERRE   ☐ AIR   ☐ MARINE   ☐ GENDARMERIE\n1H 3422\n\nDate et signature du lecteur\n03/02/26  [signature Charène]\n\nENREGISTREMENT\nEnregistrement BO [ ] Date enregistrement : ...............\nN° Thot : ............... Nombre fiches manuelles : _______ Agent : ...............",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "CHARÈNE Elyamine",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom et prénom sont manuscrits et leur lecture peut être incertaine.",
+        "suggestion": "Transcription manuscrite vraisemblable, mais non certaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "83751",
+        "issue": "mot_illisible",
+        "note": "Le numéro de lecteur est manuscrit et le dernier chiffre pourrait prêter à confusion.",
+        "suggestion": "Lecture probable : 83751."
+      },
+      {
+        "confidence": "high",
+        "fragment": "23/02/26",
+        "issue": "date_incertaine",
+        "note": "La date sur la première ligne est manuscrite, le format correspond mais la lecture du siècle (26 ou 2026) peut poser question.",
+        "suggestion": "Lecture probable : 23/02/26."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Courriel : l.am.char@wanadoo.fr",
+        "issue": "mot_illisible",
+        "note": "Certains caractères du courriel ne sont pas d’une lisibilité parfaite.",
+        "suggestion": "Lecture probable : l.am.char@wanadoo.fr"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "1H 1645 + (1H026, 1H647)",
+        "issue": "lecture_probable",
+        "note": "La parenthèse n’est pas parfaitement claire entre les références.",
+        "suggestion": "Lecture probable avec variantes possibles sur la seconde référence."
+      },
+      {
+        "confidence": "low",
+        "fragment": "[signature Charène]",
+        "issue": "mot_illisible",
+        "note": "La signature manuscrite est illisible, seul le nom de famille est supposé.",
+        "suggestion": "Indiquer ‘[signature Charène]’."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-02",
+    "sourceImage": "02-20260204_095846.jpg",
+    "assistedReadingText": "1°/- En ce qui concerne la position à prendre à l'égard des confréries musulmanes.-\n\n    Une vieille expérience d'Officier des affaires indigènes qui a vu évoluer très rapidement l'opinion des masses musulmanes, me permet d'avancer qu'il ne faut en aucun cas, quels que soient les services qu'elles aient pu rendre à la France dans le passé, laisser entendre que notre politique apporte son soutien aux activités des confréries musulmanes et recherche leur appui.\n\n    Les confréries, en effet, apparaissent de plus en plus aux yeux des évolués qui en cela, il faut en convenir, ne s'écartent guère de la vérité, comme des organismes dépositaires d'un vieux fonds de superstitions totalement étranger à toute religion digne de ce nom, grâce auquel elles abusent de la crédulité de populations arriérées. Les confréries religieuses seront tôt ou tard, si elles ne le sont déjà, totalement discréditées en Algérie comme elles le sont déjà ailleurs. Ce serait donc une erreur grave que de soutenir dans leurs efforts de survie, ces représentants d'un passé périmé, une erreur aussi grave que celle qui a consisté et consiste encore trop souvent à croire à la pérennité de l'influence des grandes familles dans ce pays, sur une masse qui aspire confusément encore, mais réellement sans aucun doute, à une évolution vers des formes de vie modernes.\n\n2°/- Autorisation de réunion demandée par Mr. GAOUAS\n\n    Monsieur GAOUAS demande l'autorisation de tenir une réunion de propagande pour provoquer des adhésions à sa confrérie et à l'U.S.R.A.F. et sollicite le patronage des autorités. Ce patronage doit sans aucun doute lui être refusé. Il faut en outre lui faire comprendre que la propagande en faveur du \"Oui au référendum\" constitue la seule activité à laquelle s'intéressent les autorités.\n\n    Enfin s'il est vrai que l'U.S.R.A.F a choisi le chef d'une confrérie musulmane comme représentant il faut intervenir auprès de ce groupement politique pour lui faire valoir au nom des arguments invoqués au paragraphe précédent tous les inconvénients d'un choix semblable.\n\nx\nx\n",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "des grandes familles dans ce pays",
+        "issue": "lecture_probable",
+        "note": "Le passage OCR \"familles déas ce pays\" est illisible sur image, mais l'image laisse deviner le mot 'dans'. Lecture probable.",
+        "suggestion": "Lire 'familles dans ce pays'"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "U.S.R.A.F.",
+        "issue": "sigle_incertain",
+        "note": "La présence de points dans le sigle n'est pas certaine à 100%, mais l'image semble l'attester.",
+        "suggestion": "Conserver la graphie U.S.R.A.F. avec points"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "x x",
+        "issue": "lecture_probable",
+        "note": "La signification des 'x x' en fin de page est incertaine (signature, mention manuscrite ou juste un marqueur de page).",
+        "suggestion": "Transcrire littéralement comme sur la source"
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-03",
+    "sourceImage": "03-20260204_100718.jpg",
+    "assistedReadingText": "YS/GJ.\n67 686, le 1 AVR 1958\nCORPS D'ARMEE D'ORAN\nZONE SUD ORANAIS\nETAT-MAJOR - 2e BUREAU\nTél.: PROGRES N° 20\nN° 632 / ZSO/2/SC\nCIt. : [illisible] G5V\n\nNOTE DE RENSEIGNEMENTS\nOBJET : Création de l'association dite \"Confrérie religieuse des Aïssaoua\".\nREFERENCE : - Note de renseignements n° 1 272/PRG TIARET du 24 Mars 1958\n             - Note n° 268/230/2/50 du 28 Mars 1958\n             - Note n° 1068/AIT/ de la S.S.D.N./F.A.G. 4° DIM du 29-3-58\n\nLa note de 2° référence est à compléter avec les renseignements d'archives ci-dessous :\n\nI - RENSEIGNEMENTS D'ARCHIVES :\n\na) - SAHLI Kaddour\n     - demeurant à TIARET, 6, rue Solférino\n     - adjudant en retraite.\n\nb) - SAHLI Bennouceur.\n\nc) - SEGHIER Abdelkader.\n      - Né en 1885 à MERISSA.\n      - Mokaddem de la Secte HAMDAOUA du Djebel NADOR.\n\nII - RENSEIGNEMENTS PROPREMENT DITS.\n\nOrigine : Poste SSDHRA/G. Z.S.O.\nSource  : Archives.\nDate    : 3 Avril 1956.\n\nSAHLI Kaddour (a) ferait actuellement pression sur les anciens combattants de TIARET pour qu'ils aillent manifester devant la Sous-Préfecture afin d'obtenir l'annulation de la décision préfectorale ayant prescrit le retrait des cartes de circulation des 6 chauffeurs de taxis. A deux beaux-frères U.D.M.A. (Djebel NADOR).\n\nOrigine : Poste SSDNPA/Z.S.O.\nSource  : Archives (Bureau Militaire TIARET)\nDate    : 13 Avril 1956.\n\nSAHLI Kaddour (*) par une propagande basée sur des slogans religieux, incite les Anciens Combattants à ne plus\n",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "CIt. : [illisible] G5V",
+        "issue": "mot_illisible",
+        "note": "Signature ou code en haut à droite difficilement lisible sur l'image comme dans l'OCR.",
+        "suggestion": "Fragment possiblement administratif ou un sigle, non identifiable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "A deux beaux-frères U.D.M.A. (Djebel NADOR).",
+        "issue": "lecture_probable",
+        "note": "Le raccord syntaxique de la phrase n'est pas clair, aussi bien sur l'image que dans l'OCR.",
+        "suggestion": "Lecture probable du contexte administratif militaire."
+      },
+      {
+        "confidence": "high",
+        "fragment": "SEGHIER Abdelkader.",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre confirmé par l'image, mais orthographe à traiter avec réserve d'usage.",
+        "suggestion": "Nom laissé tel quel, à vérifier lors d'une validation humaine."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-04",
+    "sourceImage": "04-20260204_104519.jpg",
+    "assistedReadingText": "SF 86             le 28 Septembre 1959\n\n                               46e DIVISION D'INFANTERIE MOTORISEE\n                               ---------------------------\n                               SECTEUR DE TIARET\n                               QUARTIER AUTONOME DU TGUIOUEST\n                                                        N° 296/S.C./O.R.\n\n                         NOTE SUR MONSIEUR GHLAMALLAH Chlamallah,\n                         (CHEIKH DE LA ZAOUIA DE SIDI ADDA (OULED-LAKRED))\n                         ------------------------\n\nLe Cheikh GHLAMALLAH est le Chef de l'importante confrérie maraboutique DERKAOUA - CIADOULIA, dont l'influence spirituelle, politique et matérielle s'étend directement aux douars du Nord-Est du Secteur de TIARET et, par des alliances, à une partie de la plaine du CHELIF, jusqu'à MOSTAGANEM.\n\nCette confrérie possède une importante ZAQUIA dans le douar OULED LAKRED, sur le flanc du djebel MAHANOU en 1K 95 D 4. Cette ZAQUIA est plus connue sous le nom de ZAOUIA DE SIDI ADDA, en souvenir du fondateur, GHLAMALLAH, SIDI ADDA, qui fut, vers 1840, un notable musulman. Suivant l'exemple de ce saint homme, la famille GHLAMALLAH s'est, pendant plus d'un siècle, semble-t-il, vouée à faciliter, dans la mesure toutefois, l'influence de la puissance française, voire, contribué à asseoir son influence et sa fortune.\n\nDepuis le début des « événements », les GHLAMALLAH ont été dans la nécessité, par contre, de donner des gages à la rébellion, sous l'influence de plusieurs facteurs que leur « patriotisme » n'a pu équilibrer:\n  - isolement de la ZAQUIA à proximité du \"djebel\" et des bandes rebelles,\n  - déclin du \"maraboutisme\" au profit d’une religion pure et de particularités locales prêchée par le F.L.N.,\n  - nécessité de composer avec les idées nouvelles (émancipation des jeunes - indépendance nationale etc...),\n  - perte d’une partie des revenus de la famille, qui revaient autrefois la forme de dons à l’occasion de Pélerinages désor... (suite coupée visible sur la page)\n\nC'est ainsi qu'en s'assurant toujours une façade française se en la personne de GHLAMALLAH Menouar (Ex. délégué à l'Assemblée Algérienne), GHLAMALLAH Moulay Larbi (Ex. Caid d'Ouled Lakred), ...\n\n/....\n",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "1K 95 D 4",
+        "issue": "mot_illisible",
+        "note": "Ligne sur la localisation de la Zaouia dans le douar OULED LAKRED : la suite exacte, en particulier '1K 95 D 4', est peu lisible sur l'image et la signification de ces termes reste incertaine.",
+        "suggestion": "Maintenir l'expression telle quelle, sans certitude sur la signification précise."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "vers 1840, un notable musulman.",
+        "issue": "date_incertaine",
+        "note": "La date '1840' semble correcte sur l'image mais le contexte exact est à confirmer.",
+        "suggestion": "Conservation prudente de la date, mais marquer l'incertitude."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "DERKAOUA - CIADOULIA",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms propres de confrérie sont confirmés par l'image et le contexte, mais pourraient être sujets à interprétation selon la typographie et l'OCR.",
+        "suggestion": "Restituer tels quels."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "flanc du djebel MAHANOU",
+        "issue": "lieu_incertain",
+        "note": "Nom du djebel touché par une possible confusion typographique sur l'image.",
+        "suggestion": "Maintenir la lecture 'MAHANOU' en l'état avec incertitude."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Pélerinages désor...",
+        "issue": "mot_illisible",
+        "note": "La fin du mot 'désor...' (probablement 'désormais' ou 'désorganisés') est coupée et illisible sur la page et l'OCR.",
+        "suggestion": "Indiquer la coupure sans tenter de compléter."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-05",
+    "sourceImage": "05-20260204_104616.jpg",
+    "assistedReadingText": "FICHE\nau sujet : Famille GHLAMALLAH\n\nI - Ils appartiennent à la famille des Oulad Sidi Bouabdallah établie depuis cinq siècles dans la Vallée du Bas-Chéliff (INKERMANN).\n    Cette famille à double vocation religieuse et administrative occupait une place prépondérante dans la région du Chéliff.\n\nII - Lors de l’occupation de l’Algérie, elle se soumit à la France et usa de son influence politique et religieuse pour faciliter la pénétration des troupes françaises.\n\n21.- La branche religieuse avait pour chef, le CHEIKH Si ADDA ben Ghlamallah qui venant du Chéliff fonda en 1840 la Zaouia dite aujourd’hui de Sidi Adda (KX 95 D 4)\n\n    Ce saint homme, était vénérable de la Confrérie des Chadli (1).\n    Les chefs de la Zaouia depuis sa fondation ont été les suivants :\n    - Sidi Adda ben Ghlamallah - le fondateur (décédé en 1880)\n    - Sidi Hadj Ahmed (1840-1895) son fils\n    - Ghlamallah Si Mohamed neveu de Hadj Ahmed (1878-1943)\n        qui cumula autorité religieuse : Cheikh de la Zaouia\n        autorité politico-administrative : Conseiller Municipal\n            Conseiller Général, délégué financier de TIARET.\n            Créateur de W. ROUSSEAU - Membre du Haut Comité Méditerranéen\n    - Ghlamallah Hadj Mohamed - fils de Hadj Ahmed (1880-1950)\n        qui fut aussi le chef politique et religieux de la famille. Il fut élu Conseiller Général de Renault. À sa mort en 1950, la séparation des pouvoirs fut accomplie\n    - Ghlamallah Hadj Ghlamallah - Cheikh de la Zaouia depuis cette date, devint le chef spirituel de la famille\n    - Ghlamallah Menouar, son oncle, se réserva la direction temporelle. Il fut élu en 1951, délégué à l’Assemblée Algérienne.\n\n(1) - doctrine soufite - mouvement mystique.",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "W. ROUSSEAU",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'W. ROUSSEAU' est difficilement attribuable avec certitude à partir de l'image et de l'OCR. Il est possible qu'il s'agisse d'une autre formulation ou d'une abréviation.",
+        "suggestion": "Relecture minutieuse requise sur document original ou consultation d'autres sources."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Conseiller Général de Renault",
+        "issue": "lieu_incertain",
+        "note": "'Renault' pourrait être mal transcrit ; le terme exact reste incertain d'après l'image.",
+        "suggestion": "Vérifier sur document original le nom exact du lieu ou entité."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-06",
+    "sourceImage": "06-20260204_104643.jpg",
+    "assistedReadingText": "En fait oncle et neveu sont très unis.\n\nLa Zaouia recevait avant les évènements de 700 à 900 000 Fr d’offrandes, et entretenait de façon permanente 80 étudiants en droit musulman et 30 élèves plus jeunes. Chaque année au mois de Septembre de nombreux fidèles de l’arrondissement de TIARET et d’INKERMANN se réunissaient à l’occasion d’un grand \"Moussem\" qui avait lieu au mausolée de Sidi Adda aux Oulad Lakred.\n\nDe par sa double vocation, la famille Ghlamallah représentait donc une force spirituelle mais aussi temporelle tirée des mandats électifs et des fonctions de Commandement. Cette puissance s’augmentait en outre de celle, due aux alliances contractées avec la famille Laribi, branche administrative des Bouabdallah.\n\n22 - Branche administrative des Bouabdallah :\n\nElle est issue de Sidi Mohamed b/Abdellah ben Ouali b/Sidi Laribi, de qui descendent les Laribi.\n\nEn récompense des services rendus à la France, il fut nommé Khalifa du Maréchal Bugeaud et fait Grand Croix de la Légion d’Honneur.\n\nSes descendants luttèrent aux côtés des troupes françaises et plusieurs furent tués à nos côtés.\n\nPar le jeu des alliances, les Laribi sont parents du Bachaga Mahieddine (TREZEL), du Caïd Ben Feghloul (TIARET), du Caïd Ferhat (NADOR)\n\nIII - ACTIVITES\n\n31 - La famille Ghlamallah a traditionnellement collaboré avec l’administration.\n\n32 - Sa vocation religieuse, l’a amenée à s’opposer au Mouvement des Oulemas Réformistes soutien spirituel du Nationalisme. Cette opposition s’est ralentie entre 1945 et 1947. Mais la puissance religieuse de la famille a diminué. Ce déclin est dû : à l’indolence des Chioukh, mais aussi au phénomène irréversible, dans tout le monde Musulman, du déclin des confréries.\n\nGhlamallah Menouar a été amené à vouloir regagner sur le plan politique, le terrain perdu sur le plan religieux. En 1951, il fut élu Membre de l’Assemblée Algérienne, contre Boutarène Kada, candidat U.D.M.A.\n\n33 - Les évènements de Novembre 1954, ne devaient pas manquer de créer dans ce complexe familial, de profonds remous. Si d’un côté l’appui traditionnel apporté à l’Administration ne fait pas défaut lors de la mise en place de la Délégation Spéciale des Oulad Lakred, présidée par un Laribi, d’un autre côté, ...",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "du Nationalisme",
+        "issue": "lecture_probable",
+        "note": "Dans la phrase 'l’a amenée à s’opposer au Mouvement des Oulemas Réformistes soutien spirituel du Nationalisme', le mot 'Nationalisme' apparaît après une zone raturée sur l'image. Il est possible que ce terme soit correct, mais la rature rend la lecture moins évidente.",
+        "suggestion": "Mentionner que la lecture du mot raturé est incertaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "présidée par un Laribi, d’un autre côté, ...",
+        "issue": "mot_illisible",
+        "note": "Le texte après 'd’un autre côté, ...' n'est pas lisible ni sur l'image ni dans l'OCR, la phrase semble incomplète.",
+        "suggestion": "Indiquer qu'une fin de phrase est manquante et la lecture s'arrête là."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-07",
+    "sourceImage": "07-20260204_104746.jpg",
+    "assistedReadingText": "Or, une série de renseignements, dont tous ne sont d'ailleurs pas encore recoupés, en même temps que l'étude de la situation aux confins Sud du Douar Maacem, mettent de nouveau en cause le loyalisme de l'ensemble de la famille Ghlamallah.\n\nNotamment, l'O.P.A. des Ouled Lakred, désorganisée par nous en Janvier, est actuellement remise en place. À sa tête se trouveraient, vraisemblablement :\n- Ghlamallah Adda Ould Moktar, frère du Cheikh actuel, qui en serait le chef.\n- Le Cheikh actuel, Ghlamallah Ould Moktar, serait membre du comité des 5, où il exercerait les fonctions de Cadi.\n- Ghlamallah Hadj Tahar Ould Moulay Larbi, Tissal.\n\nEn outre, les personnalités suivantes sont plus ou moins suspectes :\n- Ghlamallah Moktar Ould Hadj Mohamed : identifié de façon certaine en fin Décembre 1957 comme le chef de l'O.P.A. d'Ouled Lakred, ravitailleur et collecteur d'impôt. Son arrestation a été manquée. Est actuellement en fuite. Il avait été aperçu dans le Djebel Guedal, vêtu en H.L.L. et portant le nom de Si Mokhtar, au début de Février 1958.\n- Ghlamallah Noureddine Ould Moulay Larbi ; fils du précédent. Connu comme collecteur de fonds d'Ouled Lakred. En fuite. Serait H.L.L. depuis 7 à 8 semaines.\n\nLa Zaouïa, elle-même, apparaît de plus en plus aux yeux du Cdt du Sous-Secteur de l'Oued Rhiou comme à la fois un PC avancé occasionnel et un relai sur la filière rebelle et la chaîne de ravitaillement conduisant de la région de Tiaret à l'Ouarsenis par le Maacem. C'est ainsi que l'écoute clandestine de sa ligne téléphonique révélait dès Janvier 1958 des conversations de caractère équivoque, telles que les suivantes, recueillies par l'O.R. : \"Dépêchez-vous de fournir ce qu'on vous a demandé. Nous sommes bien au chaud, mais nous pensons à ceux qui sont là-bas et qui ont froid.\" \"Viens demain, il y a une réunion, etc...\"\n\nL'emplacement de la Zaouïa, sis au Nord du Sous-Secteur, à l'extrémité de la route goudronnée conduisant de ce Centre Religieux à Waldeck-Rousseau et Tiaret ; sa position au centre d'un vide de 20 kilomètres entre la 6e Cie du 31e G.C.P. à Kéria et l'unité la plus proche du Secteur de Vialar ; la couverture d'honorabilité offerte par la réputation de loyalisme maintenant centenaire de la famille Ghlamallah et la faveur des Pouvoirs dont elle bénéficie, apparemment jusqu'à nouvel ordre ; l'influence que cette dynastie exerce encore sur la population, expliquent aisément son utilisation par les rebelles.\n\nCertes, l'essentiel de cet état de choses est depuis longtemps connu des Autorités aux échelons élevés.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Ghlamallah Adda Ould Moktar, frère du Cheikh actuel, qui en serait le chef.",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre donné par l'OCR a été confirmé mais reste dépendant d'une lecture manuelle, la qualité de l'image permettant une lecture probable mais non certaine.",
+        "suggestion": "Vérifier le nom en cas d'accès à une source mieux résolue."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Ghlamallah Moktar Ould Hadj Mohamed",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture du nom probable mais non totalement garantie : les capitales peuvent prêter à confusion.",
+        "suggestion": "Confirmer avec un examen d'image à meilleure résolution."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Ghlamallah Noureddine Ould Moulay Larbi",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable mais reste à valider.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "l'O.P.A. d'Ouled Lakred",
+        "issue": "sigle_incertain",
+        "note": "Le sigle O.P.A. est utilisé mais sans certitude sur sa signification exacte dans ce contexte.",
+        "suggestion": "Le sigle doit être validé par une expertise ou une source connexe."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "H.L.L.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle H.L.L. est lisible mais son sens est hypothétique sans élément contextuel.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "fin Décembre 1957",
+        "issue": "date_incertaine",
+        "note": "Date probable mais à confirmer si d'autres éléments sont disponibles.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "début de Février 1958",
+        "issue": "date_incertaine",
+        "note": "Date probable mais la mention dans l'image reste à vérifier formellement.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "l'Oued Rhiou",
+        "issue": "lieu_incertain",
+        "note": "Lecture du toponyme incertaine : la typographie dactylographiée peut comporter ambiguïtés entre le O et le Rhiou.",
+        "suggestion": ""
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-08",
+    "sourceImage": "08-20260204_111346.jpg",
+    "assistedReadingText": "== FICHE DE RENSEIGNEMENTS ==\n------------------------------\nconcernant STAMBOULI Abderrazak\n\nI. - PREUVE LITTERALE -\n\n    Une lettre en date du 14 Janvier 1958, de l'A.L.N.A., récupérée au cours d'une opération militaire, contient d'une part, un compte-rendu sur la situation financière de Décembre 1957, et d'autre part, met directement en cause STAMBOULI; celui-ci, dans une lettre arrivée le 14 Janvier 1958, au matin, au chef rebelle, donne son acceptation de former une cellule à la Préfecture, envoie comme gage de sa bonne foi quelques balles de 7,65 mm, dénonce deux adversaires de la rébellion; dans cette même lettre STAMBOULI dit encore son projet d'envoyer à la rébellion cartes d'Etat-Major et des cartes de la région de TIARET, et avertit de l'intention formée par l'autorité militaire de saisir les grains chez les fellahs.\n\nII. - PREUVES TESTIMONIALES -\n\na) - Par enquêtes ... (illisible sur la photo)\n\n    Dans son audition du 21 Août 1958, le nommé ZIANE-CHERIF Abdelkad[er?] indique que STAMBOULI lui a révélé être chargé de la constitution d'une cellule du F.L.N à la Préfecture, et que ce dernier lui a confié, au cours d'entretiens ultérieurs, ses projets sur la formation de cette cellule. ZIANE-CHERIF Abdelkad[er?] soupçonne en outre STAMBOULI d'être celui qui a fait parvenir au F.L.N une liste des chefs de services de la Préfecture, liste de noms accompagnés des attributions de chacun, et reconnaît sur une partie de cette liste l'écriture de STAMBOULI. ZIANE-CHERIF indique encore avoir vu STAMBOULI en conversation avec son frère Abdelhamid, agissant du F.L.N parti au maquis mi-décembre 1957.\n\n    Dans son audition du 21 Août 1958, OUNES Djilali, Brigadier de police chef à TIARET, condamné pour activité à la Sûreté Extérieure de l'Etat, a indiqué qu'un nommé ARBAOUT, rebelle connu, que STAMBOULI avait donné toutes indications utiles pour l'attaque à FRENDA du convoi dans ...\n\n[fin visible du document]",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "PREUVE LITTERALE",
+        "issue": "mot_illisible",
+        "note": "Certaines majuscules accentuées et sigles dans l'OCR, par ex. 'A.L.N.A.', sont partiellement confirmés par l'image ; lecture restée prudente.",
+        "suggestion": "Confirmer sur d'autres pages si possible la signification exacte des sigles."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "d'une opération militaire, contient d'une part, un compte-rendu sur la situation financière de Décembre 1957, et d'autre part, met directement en cause STAMBOULI; celui-ci, dans une lettre arrivée le 14 Janvier 1958, au matin, au chef rebelle, donne son acceptation de former une cellule à la Préfecture, envoie comme gage de sa bonne foi quelques balles de 7,65 mm, dénonce deux adversaires de la rébellion.",
+        "issue": "lecture_probable",
+        "note": "Le contenu est cohérent avec le texte visible ; ponctuation et alignement peuvent varier légèrement selon l'image.",
+        "suggestion": "Vérifier au besoin sur tirage original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "des cartes de la région de TIARET",
+        "issue": "lieu_incertain",
+        "note": "Lecture du toponyme basée sur la meilleure interprétation disponible de l'image.",
+        "suggestion": "Confirmer le lieu exact s'il existe des variantes ou de possibles lectures concurrentes."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Par enquêtes ... (illisible sur la photo)",
+        "issue": "mot_illisible",
+        "note": "Impossible de restituer le passage masqué sous le tampon 'SECRET' et/ou affaibli sur l'image.",
+        "suggestion": "Consultation du document original souhaitable pour lever le doute."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ZIANE-CHERIF Abdelkad[er?]",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom est visible mais la fin exacte du prénom peut être déduite avec doute selon la résolution et contraste de l'image.",
+        "suggestion": "Vérification sur d'autres pièces relatives à cette personne."
+      },
+      {
+        "confidence": "low",
+        "fragment": "activité à la Sûreté Extérieure de l'Etat, a indiqué qu'un nommé ARBAOUT, rebelle connu, que STAMBOULI avait donné toutes indications utiles pour l'attaque à FRENDA du convoi dans ...",
+        "issue": "mot_illisible",
+        "note": "Fin de la phrase tronquée ou manquante sur la portion visible.",
+        "suggestion": "Demander consultation du verso ou autre page."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-09",
+    "sourceImage": "09-20260204_111359.jpg",
+    "assistedReadingText": "lequel se trouvait Mr. FAUSSEMAGNE, Préfet de TIARET.\n\nDans son audition du 4 Septembre 1958, BOUDALI Ahmed, collecteur de fonds du F.L.N. indique que la chaîne des relations entre TIARET et l'armée rebelle, et vice versa, avait pour maillon STAMBOULI, secrétaire de \"Préfecture ou de Sous-Préfecture\".\n\nDeux lettres anonymes postées à OUJDA, sous double enveloppe, l'intermédiaire étant le receveur des postes de TIARET, la première adressée à la date du 8 Juin 1958 à Mr. FAUSSEMAGNE, Préfet à TIARET, la deuxième adressée à la date du 23 Août 1958 à Mr. le Colonel de l'État-Major de TIARET, lettres qui ont le même auteur non identifié, révèlent également l'appartenance de STAMBOULI au F.L.N. Dans la première lettre, STAMBOULI est accusé d'être un agent du service de renseignements de la rébellion et d'avoir notamment, par ses renseignements, permis l'attaque à FRENDA d'un convoi où se trouvait le Préfet FAUSSEMAGNE. STAMBOULI est encore suspecté d'entretenir des contacts avec une infirmière du centre de Santé de TIARET affiliée à la rébellion.\n\nDans une seconde lettre, STAMBOULI est accusé encore une fois d'être un agent de renseignements au service de la rébellion et d'avoir permis, par ses renseignements, l'attaque du convoi où était Mr. FAUSSEMAGNE. D'autres agents du F.L.N. ont été également dénoncés dans ces deux lettres.\n\nb) Par renseignements divers.\n\nDans une note de renseignements de source sûre, la filière entre TIARET d'une part et l'armée rebelle de l'autre, est démontée. STAMBOULI reçoit à TIARET le courrier provenant de la rébellion, les lettres adressées à des épouses de combattants sont remises par STAMBOULI à sa propre épouse qui se charge de les porter à destination. De plus, STAMBOULI est chargé par son mari de verser les primes aux épouses de combattants. De même, STAMBOULI et son épouse reçoivent et font suivre vers l'armée rebelle, le courrier destiné aux combattants de celle-ci.\n\nDans une note de renseignements de source très sûre, STAMBOULI apparaît comme étant visé par la rébellion pour un éventuel contact d'utilisation par celle-ci.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "STAMBOULI, secrétaire de \"Préfecture ou de Sous-Préfecture\"",
+        "issue": "lecture_probable",
+        "note": "L'expression est assez lisible sur l'image, mais la structure précise des guillemets et l'expression exacte restent à confirmer.",
+        "suggestion": "Vérifier si la citation est complète."
+      },
+      {
+        "confidence": "high",
+        "fragment": "FRENDA",
+        "issue": "lieu_incertain",
+        "note": "La lecture du toponyme 'FRENDA' est probable et assez bien lisible, mais demande confirmation par une relecture humaine.",
+        "suggestion": "Confirmer le nom du lieu 'FRENDA' lors de la validation."
+      },
+      {
+        "confidence": "high",
+        "fragment": "BOUDALI Ahmed",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom semble correct sur l'image mais une vérification humaine est nécessaire.",
+        "suggestion": "Confirmer l'orthographe exacte lors de la validation."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "STAMBOULI et son épouse reçoivent et font suivre vers l'armée rebelle, le courrier destiné aux combattants de celle-ci.",
+        "issue": "lecture_probable",
+        "note": "Le passage est lisible mais la ponctuation et l’agencement des phrases pourraient être améliorés lors d'une validation ultérieure.",
+        "suggestion": "Relire ce fragment sur la version originale."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "\"Dans une note de renseignements de source très sûre, STAMBOULI apparaît comme étant visé par la rébellion pour un éventuel contact d'utilisation par celle-ci.\"",
+        "issue": "lecture_probable",
+        "note": "La formulation finale de ce passage semble probable mais une relecture minutieuse de l’original s’impose.",
+        "suggestion": "Relire le dernier paragraphe pour traquer toute omission ou inversion."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-10",
+    "sourceImage": "10-20260204_112508.jpg",
+    "assistedReadingText": "OI/SE\nCORPS D'ARMEE D'ORAN\nZONE EST ORANAIS\nSECTEUR DE TIARET\nN° 750/SEC.TIARET/B.2\nP.C. le 3 OCT. 1959\n\nTransmis en retour\nau Général Commandant la Z.E.O et la D.I.M.\n(ETAT-MAJOR - 2° BUREAU)\n\"Avec avis défavorable\"\n\nLe Colonel ROGOLLE\nCommandant le Secteur de Tiaret\nExerçant les Pouvoirs Civils dans l'Arrondissement de Tiaret\nP/O le Chef d’Escadrons GUINARD\nChef d’Etat-Major\n\n[Nombreux tampons et annotations manuscrites, partiellement illisibles :\n- Proposition : Avison Tedjini\n- Considérer qu’il ne sera réintégré qu’après gest... partiel (manque manuscrit illisible)\n- Vu par Ch. D.\n- Vu par col AD. 12 vol.\n- Adresser lettre au général pour attention en anglais\n- Télégin reçu sur le grill le 14 octobre matin\n- Envoyer une lettre au général.]\n\nTampon : 4e DI - 2e Bureau ARRIVEE 4 OCT 1959, N° 1832",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "ROGOLLE",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du Colonel semble être 'ROGOLLE' mais nécessite vérification sur l'image manuscrite.",
+        "suggestion": "Nom conforme à l'image tapuscrite."
+      },
+      {
+        "confidence": "high",
+        "fragment": "GUINARD",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du Chef d’Escadrons est lu 'GUINARD', nécessite une vérification sur base des autres documents s'il y a doute.",
+        "suggestion": "Nom conforme à l'image tapuscrite."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Avison Tedjini",
+        "issue": "nom_propre_incertain",
+        "note": "La proposition manuscrite d'un nom propre est difficilement lisible.",
+        "suggestion": "Lire ‘Avison Tedjini’ ou approche similaire, mais incertitude sur la graphie."
+      },
+      {
+        "confidence": "low",
+        "fragment": "\"Considérer qu’il ne sera réintégré qu’après gest...\"",
+        "issue": "mot_illisible",
+        "note": "Fin de la phrase coupée et passage manuscrit illisible.",
+        "suggestion": "Impossible de compléter la suggestion sans meilleur scan."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Adresser lettre au général pour attention en anglais",
+        "issue": "mot_illisible",
+        "note": "Le passage manuscrit est en partie altéré, certains mots ne sont pas certains.",
+        "suggestion": "Lecture probable mais à confirmer."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Télégin reçu sur le grill le 14 octobre matin",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre manuscrit probable, orthographe pourrait varier.",
+        "suggestion": "Présumé correct ; vérifier dans les registres."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-100",
+    "sourceImage": "100-20260204_135107.jpg",
+    "assistedReadingText": "A.XVIII     Collecte de chez Mohamed\nAïbout        Mohamed     4 000   2 500\nAmar          Bey        1 000\nIl leur faut des preuves\n                  19 050\n                 2 000\n                 2 000\n                 1 000\n                 1 000\n                 1 000\n                   300\n                   250\n                 1 000\n          8 550      3 000\n                    11 550\n\nA.XIX    F.L.N.    1961\nChaliamalah au frère C.P.\nSalutations. Je te fais savoir la part de Dieu et la collecte:\n               Part de Dieu   collecte\nBelmoughazi    3 000\nEl Alami       2 500\nMohamed        900\nBélarbi        3 900\nChaliamalah    7 000\nAhmed          4 700\n                900\n         22 900    14 000\n                  36 900\n\nA.XX    Ahmed Seghier nous demandons qu'il vienne comme P[ai]n[?] rech. de Am[?]lia\n        il n'a pas voulu venir.           C.P.\n\nA.XXI    Liste de Hosni à Bouhenni\nAdda              Bakhti           8\nAhmed             8\nChérif            10\nZaddour           3\nHattabi           5\nAhmed Beldjilali  10\nSi Amri Prad      10\nAbdellah          5\nO Adda            10\nAgued             3\n",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "P[ai]n[?] rech. de Am[?]lia",
+        "issue": "mot_illisible",
+        "note": "Le passage sur le rôle/l'intitulé resté partiellement illisible et son abréviation dans la phrase sur Ahmed Seghier n'est pas totalement certain.",
+        "suggestion": "Mot à lire dans l'image semble comporter des abréviations ou des sigles difficiles à restituer exactement (ex: 'Pain rech. de Am[?]lia')."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Si Amri Prad",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre 'Si Amri Prad' nécessite confirmation.",
+        "suggestion": "Possible erreur ou variation orthographique provenant de l'OCR."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Chaliamalah",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre 'Chaliamalah' apparaît sans certitude absolue sur la base d'une lecture image + OCR.",
+        "suggestion": "Demande vérification humaine pour orthographe exacte."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Dates (1961), listes de montants",
+        "issue": "lecture_probable",
+        "note": "Chiffres et colonnes confirmés par l'image mais toujours sous réserve sans validation humaine finale.",
+        "suggestion": "Lecture probable fiable mais statut non validé, nécessitant relecture manuelle."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-11",
+    "sourceImage": "11-20260204_112541.jpg",
+    "assistedReadingText": "40e DIVISION D'INFANTERIE MOTORISÉE\n1er RÉGIMENT D'INFANTERIE MOTORISÉ\nN° 1574 / 1er RIM / OR / S.\nP.C., le 25 Septembre 1959\n\nMonsieur le Général, Commandant P.I. la 4ème DIVISION D'INFANTERIE MOTORISÉE\nExerçant p.i. les pouvoirs civils dans le Département de TIARET\nSous-Couvert du Colonel Commandant de TIARET\n\nEn réponse à votre note 419/ZMO/2 du 22/9/1959, j'ai l'honneur de vous rendre compte de ce que je pense qu'il serait prématuré de réintégrer Monsieur TEDJINI Kouider dans l'administration.\n\nSans avoir de preuves formelles, j'ai lieu de supposer qu'il est encore en contact avec la rébellion.\nIl est en particulier désigné comme agresseur désigné de ALLAL Laoumir (atenté et coauteur du meurtre de BAGHA du douar) le beau-frère de CHIKHAOUI Madaoui, capitaine SASSI bénéfice de notre indulgence.\nTEDJINI voyait fréquemment ce dernier.\n\nSi en outre rien ne peut être retenu de façon formelle à son passif, rien non plus n'est à porter à son actif. Il ne nous a apporté aucune aide.\n\nCeux des Musulmans qui nous soutiennent, et ils sont rares, comme la masse passive de la population, considéreraient comme une nouvelle preuve de notre incohérente indulgence la réintégration de ce personnage dans l'administration.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "N° 1574 / 1er RIM / OR / S.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle (RIM / OR / S) est correctement lisible, mais l'interprétation des sigles n'est pas certaine sans contexte, respecter la consigne.",
+        "suggestion": "Maintenir la lecture brute des sigles."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "note 419/ZMO/2 du 22/9/1959",
+        "issue": "sigle_incertain",
+        "note": "Le code (ZMO) pourrait prêter à confusion, confirmé par l'image mais le sens ou la lecture n'est pas attestée sans autre source.",
+        "suggestion": "Garder la notation telle quelle."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Monsieur TEDJINI Kouider",
+        "issue": "nom_propre_incertain",
+        "note": "La graphie TEDJINI Kouider apparait claire à l'image mais la consigne demande de ne pas affirmer les noms propres si incertains.",
+        "suggestion": "Lecture plausible d'après l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ALLAL Laoumir",
+        "issue": "nom_propre_incertain",
+        "note": "Noms propres lisibles mais toujours à considérer comme incertains (ALLAL Laoumir, BAGHA, CHIKHAOUI Madaoui, SASSI).",
+        "suggestion": "Lecture fidèle à l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "atenté",
+        "issue": "mot_illisible",
+        "note": "Le mot paraît déformé, possiblement 'attentat' mais la forme exacte sur l'image semble 'atenté', rendant la compréhension incertaine.",
+        "suggestion": "Conserver la lecture telle qu'apparente."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Il est en particulier désigné comme agresseur désigné de ALLAL Laoumir (atenté et coauteur du meurtre de BAGHA du douar) le beau-frère de CHIKHAOUI Madaoui, capitaine SASSI bénéfice de notre indulgence.",
+        "issue": "lecture_probable",
+        "note": "La ponctuation et la construction de cette phrase sont ambiguës, mais la lecture suit la ligne du texte tel que visible.",
+        "suggestion": "Lecture prudente sans interprétation supplémentaire."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-12",
+    "sourceImage": "12-20260204_113153.jpg",
+    "assistedReadingText": "V/- ORGANISATION DES KATYBA EN MINAQA VII-\n\n1°) NAHIA I-\nChef de Katyba : \"YAHIA\"\nEffectif : 90 hommes répartis en 3 Sections de 30\nArmement : 1 M.G. 34 - 1 M.G. 42 - F.M. Tchèque\nIntendance : BELARBI Belkacem (Frère de DJAFFAR)\n1ère Section : KALLI\n2ème Section : BEKHERDI doit passer A.M. de la N.I\n3ème Section : ?\nCommando : TEFFAH (JQ. hommes)\nGroupe de transport : BOUZIANE Mohamed et BELARBI Belkacem\nSecrétaire : BELARBI A.E.K.\nLes armes sont déposées en Mitrajo IV par un certain BERAI, et BQIV IV.\n\n2°) NAHIA II\ni\nChef de Cie : SLIMANE\nEffectif : 00 hommes\nArmement : 4 pièces : 2 M.G. - 1 F.M. Bar et une autre pièce.\n1 moitien de 31 est attendu dans le courant du mois (v. document récupéré)\n\n3°) NAHIA III\nChef de Cie : DEMOUCHE\nEffectif : Luc hommes répartis en 3 sections\nArmement : 3 pièces : 2 M.G. 42 - 1 russe (?) - 1 F.M. Bar - 1 F.M. Baen\n\n4°) NAHIA IV\nPas de Katyba régionale, mais une dizaine de Djonouds qui sont chargés de la protection des chefs.",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "TEFFAH (JQ. hommes)",
+        "issue": "mot_illisible",
+        "note": "Le nombre d'hommes n'a pas pu être confirmé sur l'image, la chaîne de caractère 'JQ.' venant de l'OCR est très probablement incorrecte.",
+        "suggestion": "Nombre d'hommes illisible à l'image. Le nom propre TEFFAH semble correct."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "BERAI, et BQIV IV",
+        "issue": "mot_illisible",
+        "note": "La lecture des noms liés au dépôt des armes est incertaine.",
+        "suggestion": "Lecture probable : BERAI, BQIV IV. Vérifier ces noms propres sur l'original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Luc hommes répartis en 3 sections",
+        "issue": "mot_illisible",
+        "note": "'Luc' est une lecture d'OCR probablement erronée ; le chiffre du nombre d'hommes est illisible.",
+        "suggestion": "Fragment imprécis pour le nombre d'hommes."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "1 russe (?)",
+        "issue": "lecture_probable",
+        "note": "Arme d'origine 'russe' à confirmer, un point d'interrogation apparait dans la dactylographie.",
+        "suggestion": "Probablement '1 russe', à confirmer sur exemplaire original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "1 F.M. Baen",
+        "issue": "mot_illisible",
+        "note": "'Baen' est vraisemblablement une lecture défectueuse de l'OCR. L'image n'apporte pas une certitude sur ce modèle d'arme.",
+        "suggestion": "'Baen' à vérifier, il s'agit sans doute d'un autre modèle."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-13",
+    "sourceImage": "13-20260204_113327.jpg",
+    "assistedReadingText": "- 21 -\n\nLe tissal qui transporte un message a toujours sur lui des allumettes avec lesquelles il doit brûler les papiers qu’il transporte s’il voit qu’il va être capturé. S’il ne peut le faire, il doit avaler le message.\n\nCes messages portent le plus souvent deux cachets : un de couleur rouge et l’autre de couleur verte, placés tous les deux au bas de la feuille.\n\n- DIVERS -\n\nI/ - Organisation en réserve -\n\nIl n’a jamais été question de créer des organisations de réserve pour remplacer celles qui seraient éventuellement détruites et détectées. La rébellion a déjà beaucoup de mal à mettre en place une organisation. De plus, celle qui est détruite ne trouve difficilement une remplaçante.\n\nII/ - Trafic d’armes -\n\nEn Algérie même TEDJINI ne connaît aucune organisation étrangère de trafic d’armes. Les armes circulent grâce aux groupes de transport soit de la Zone, soit de la Wilaya. Ces derniers traversent la frontière près de FIGUIG (P.C. de la M. VIII). Ces compagnies de transport suivent les filières normales et sont guidées par un tissal de la filière considérée.\n\nLa dernière compagnie de transport que TEDJINI a vue, est passée vers Janvier - Février. Elle laissait à la Zone 4 une MG42, des munitions et 2 postes ANGRC/9 (1 fut pris en Avril 1958).\n\nDes bruits de parachutages d’armes avaient circulé chez les rebelles, mais rien ne permet de penser qu’il y en aura un jour.\n\nIII/ - PARTI COMMUNISTE ALGERIEN\n\nL’individu assure qu’il ne connaît aucun lien entre le parti communiste algérien et le F.L.N. Tous les chefs sympathisants communistes auraient été soit exécutés, soit envoyés à l’extérieur après l’affaire MAILLOT.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "TEDJINI",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre TEDJINI est lisible sur l'image mais pourrait comporter une incertitude liée à la typographie.",
+        "suggestion": "Le mot semble bien être TEDJINI mais pourrait varier."
+      },
+      {
+        "confidence": "high",
+        "fragment": "FIGUIG",
+        "issue": "nom_propre_incertain",
+        "note": "FIGUIG apparaît clairement sur l'image.",
+        "suggestion": "Lecture très probable ; peu d'incertitude."
+      },
+      {
+        "confidence": "high",
+        "fragment": "MG42",
+        "issue": "sigle_incertain",
+        "note": "Le sigle MG42 pour une mitrailleuse est lisible sur l'image.",
+        "suggestion": "Lecture très probable, peu d'incertitude."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ANGRC/9",
+        "issue": "sigle_incertain",
+        "note": "Le sigle des postes radios ANGRC/9, d'après l'image, est plausible mais la lecture du 'G' pourrait être incertaine.",
+        "suggestion": "Lecture probable mais une confusion dans la lettre est possible."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Avril 1958",
+        "issue": "date_incertaine",
+        "note": "La date mentionnée sur l'image est lisible mais petite.",
+        "suggestion": "Il s'agit probablement de 'Avril 1958'."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "MAILLLOT",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom MAILLOT, évoqué à la fin, semble correct sur l'image.",
+        "suggestion": "Lecture probable, orthographe à confirmer."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-14",
+    "sourceImage": "14-20260204_113508.jpg",
+    "assistedReadingText": "BENAMAR\n    - serait BERQUADJI ben Amar\n      Lieutenant en Mintaqa IV\nBOUCIF\n    - en réalité : BELHADI Boucif né le 15.5.1928 à Sebdou (Géryville)\n      - chef de la N.3 - M. VII\n      actuellement A.P. de la M. VII\nBOUMEDIENE\n    (HOUAR) chef de la Wilaya V\nBOUZIANE\n    - dit \"ZIOUAOUI\" - ex-Adjoint Liaison-renseignements dans la Kasma 1 - N.3 – M.VII\n      actuellement chef de la Kasma 2 – N.I\nBOUZIANE Mohamed\n    - ex-caporal d’ordinaire de la Cie N.I\n      actuellement Sergent-Chef du groupe de transport de la Katiba N.I – M.7\nCHALLAG Mimouna\n    - fille de A.e.k. et de MAFIR Madjouba\n      née le 11.2.1940 à Tiaret\n      Domiciliée 27 Rue Cambon Tiaret\n      Djoundjette en N.I – envoyée au Maroc (note incertaine)\nDEMAUCHE\n    - serait originaire de Géryville\n      Cdt de Cie en N.I\nDJAFEAR\n    - en réalité BOUKHALA LAABIT fils de A.e.k. et de KHALADI Aïcha né le 19.1.1928 à Sougueur, actuellement au Village Curelli\n      ex-adjoint militaire de la N.I – M.7\n      actuellement adjoint Liaisons-renseignements de la Mintaqa\nDRESS\n    (BOUKHALA Bouzouf)\n      ex-adjoint L.R. de la M. VII\n      actuellement Adjt-Militaire de la M. 7\nFATIMA\n    - fille de KEMISSI A.e.k.\n      Djoundjette en N.I – M. VII\nFEGHLOULI Nefissa\n    - fille de Abdelkader et de Brahim Fatma bent Hadj Ahmed né le 5.3.1940 à O/ Lakred (Tiaret)\n      domiciliés 15 Rue Thiers à Tiaret\n      Djoundjette en N.I – M.7\nHADJI A.E.K.\n    - adjoint militaire de la Kasma 1 – N.I – M.7 et des mousselines de la N.I\nHAMZA A.E.K.\n    - adjoint politique de la N.I\nHADJACHE\n    - Chef de la Kasma 2 – N.I – M.7\n      muté en N.2 – M.7",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "envoyée au Maroc (ligne DJOUNDJETTE CHALLAG Mimouna)",
+        "issue": "lecture_probable",
+        "note": "Le tampon masque partiellement ce passage sur l'image, OCR imprécis, interprétation probable mais non certaine.",
+        "suggestion": "Vérification sur l'image originale ou une autre source serait nécessaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "\"chef de la N.3 - M. VII\" et \"A.P. de la M. VII\" (ligne BOUCIF)",
+        "issue": "sigle_incertain",
+        "note": "Le sigle exact est difficile à lire, la lecture M. VII est probable d'après l'image, sans certitude totale.",
+        "suggestion": "Mentionner explicitement que la signification de M. VII reste à vérifier."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "nom propre \"BOUMEDIENE\" suivi de (HOUAR)",
+        "issue": "nom_propre_incertain",
+        "note": "La correspondance entre BOUMEDIENE et (HOUAR) nécessite validation, transcription probable selon l'image.",
+        "suggestion": "Une validation externe serait nécessaire pour confirmer l'identité exacte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "dates de naissance associées à BOUCIF, DJAFEAR, FEGHLOULI",
+        "issue": "date_incertaine",
+        "note": "Bien que l'image permette une lecture probable, la qualité de l'impression pourrait entraîner des erreurs sur les chiffres.",
+        "suggestion": "Vérifier de nouveau sur image à plus haute définition si disponible."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Dénomination de certaines unités : N.3 - M. VII, N.I, M. 7, etc.",
+        "issue": "sigle_incertain",
+        "note": "Il n'est pas certain que la lecture des sigles soit exacte car plusieurs sont peu lisibles ou peu clairs.",
+        "suggestion": "Nécessite confirmation via documentation d'époque."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-15",
+    "sourceImage": "15-20260204_113606.jpg",
+    "assistedReadingText": "N° 686, le 16 Août 1958.\nCORPS D’ARMEE D’ORAN\nZONE – SUD ORANAIS\nETAT-MAJOR 2e BUREAU\nTél. : PROGRÈS N°20\nN° 1 848/ZSO/2/S\nCit. : B.R. DOP\n\n--oo BULLETIN de RENSEIGNEMENT oo--\n\nORIGINE : DOP-ZSO (B.R. 925) du 13 Août 58\nSOURCE : TEDJINI Koudier, fait prisonnier au P.C. de la Mintaqa VII le 4 Août 58 en KK 77 (Opération \"FLECHE\")\nVALEUR : C/3\nDATE RECUEILLIE : 5 au 8 Août 58\n\nDÉCLASSIFIÉ\n\nOBJET : Mintaqa 7 – Juillet 57 à Août 58\n\nDiffusion déjà faite : B.E. N° 18 B.R./4e D.I./ZSO/2 du 15.8.58\n\nLe Général DODELIER\nCommandant la 4e Division d’Infanterie Motorisée et la Zone Sud Oranais\nP.o. le Lt-Colonel de MECQUENEM\nChef d’Etat-major\n\nDESTINATAIRES :\n- M. le Général Cdt la 5e D.B. (E.M. – 293,) (3 ex.)\n- M. le Général Cdt la 9e D.I. (E.M. – 293,) (1 ex.)\n- M. le Colonel Cdt le S.O. de SAIDA (1 ex.)\n- M. le Colonel Cdt le Secteur d’AFLOU (1 ex.)\n- M. le Colonel Cdt le 319 G.U.P. (1 ex.)\n- M. le Chef du B.3/4e D.I.M. (1 ex.)\n- M. le Chef du B.5/4e D.I.M. (1 ex.)\n- M. le Colonel Chef de l’Échelon des A.A. (Préfecture) (1 ex.)\n- M. le Colonel Cdt le P.C.A. 70/540 (1 ex.)\n- Section Interprétariat (1 ex.)\n- Le Capitaine Chef du S.D.N.F.A.O./4e D.I.M. (1 ex.)",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "N° 686, le 16 Août 1958.",
+        "issue": "date_incertaine",
+        "note": "La date semble confirmée mais la résolution du début du numéro et la ponctuation pourraient inquiéter en cas d’examen rigoureux.",
+        "suggestion": "Comparer à d’autres documents pour valider la présentation du numéro de série."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "TEDJINI Koudier, fait prisonnier au P.C. de la Mintaqa VII le 4 Août 58 en KK 77 (Opération \"FLECHE\")",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom TEDJINI Koudier est vraisemblable mais pas totalement assuré sans autre source.",
+        "suggestion": "Vérification croisée recommandée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "B.E. N° 18 B.R./4e D.I./ZSO/2 du 15.8.58",
+        "issue": "sigle_incertain",
+        "note": "Certains sigles pourraient contenir des erreurs de lecture ; la forme de 'B.E.' et 'ZSO' sont plausibles mais non garanties.",
+        "suggestion": "Vérifier l’usage des sigles internes avec d’autres documents."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "G.U.P.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle G.U.P. n’est pas clairement lu, possibilité d’erreur de l’OCR ou du manuscrit original.",
+        "suggestion": "Comparer avec d’autres correspondances similaires."
+      },
+      {
+        "confidence": "high",
+        "fragment": "N° 1 848/ZSO/2/S",
+        "issue": "lecture_probable",
+        "note": "Le numéro paraît complet mais un doute subsiste sur la lisibilité du passage et la séparation exacte des champs.",
+        "suggestion": "L’examen de l’original peut lever les doutes."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Commandant la 4e Division d’Infanterie Motorisée et la Zone Sud Oranais\nP.o. le Lt-Colonel de MECQUENEM",
+        "issue": "nom_propre_incertain",
+        "note": "Nom du colonel de MECQUENEM à confirmer par une meilleure lecture ou une comparaison externe.",
+        "suggestion": "Comparer avec signatures ou listes d’état-major."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-16",
+    "sourceImage": "16-20260204_113637.jpg",
+    "assistedReadingText": "S.P. 97.686, le 15 FEV 1959\n\nLe Général de Division DODELIER\nCommandant la 4° D.I.M. et la Z.S.O\nExerçant les Pouvoirs Civils dans le Département de TIARET.\n\nà\nMonsieur le Général de Corps d’Armée\nCommandant le Corps d’Armée d’ORAN\nExerçant les Pouvoirs Civils dans le Groupe de Départements d’ORAN\n\nOBJET : Assignation à résidence à ORAN de TEDJINI KOUIDER.\n\n\nCapturé au cours d’une opération dans l’Ouarsenis le 4 Août 1958, le nommé TEDJINI KOUIDER était à l’époque secrétaire du chef rebelle de la Mintaqa 7. Ancien instituteur puis secrétaire de la Commune Mixte de TIARET, cet individu longuement questionné et sondé tant par mon 2° que mon 5° Bureau depuis six mois, m’apparaît tout à fait récupérable. Je suis donc décidé à le faire bénéficier d’une mesure de clémence.\n\nÉtant donné toutefois sa personnalité et la position qu’il occupait à TIARET avant les événements, il ne me semble pas opportun de l’autoriser actuellement à résider dans cette ville ni dans aucune des agglomérations voisines.\n\nTEDJINI KOUIDER ayant de la famille à ORAN (M. TIFFOUS Mohamed, 2 Impasse Eckmühl, Avenue Jules Ferry) j’attacherai du prix à pouvoir l’assigner à résidence dans cette ville.\n\nJ’ai l’honneur de vous demander en conséquence de bien vouloir me faire connaître votre décision sur une telle assignation à résidence.\n\nSigné : DODELIER\n\nDÉCLASSIFIÉ PAR DÉCISION N° 505620 de 12/11/2020",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "4° D.I.M. et la Z.S.O",
+        "issue": "sigle_incertain",
+        "note": "Lecture probable mais possible confusion dans l'OCR sur la ponctuation ou l'espacement dans les sigles militaires. Confirmation visuelle OK.",
+        "suggestion": "4° D.I.M. et la Z.S.O"
+      },
+      {
+        "confidence": "high",
+        "fragment": "Mintaqa 7",
+        "issue": "nom_propre_incertain",
+        "note": "La transcription de 'Mintaqa 7' semble correcte, mais l'OCR ne distingue pas toujours entre l ou t, confirmation par l'image probable.",
+        "suggestion": "Mintaqa 7"
+      },
+      {
+        "confidence": "high",
+        "fragment": "TIFFOUS Mohamed, 2 Impasse Eckmühl, Avenue Jules Ferry",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable ; image suffisamment lisible mais noms propres toujours sujet à réserve.",
+        "suggestion": "TIFFOUS Mohamed, 2 Impasse Eckmühl, Avenue Jules Ferry"
+      },
+      {
+        "confidence": "high",
+        "fragment": "Signé : DODELIER",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre clairement identifié dans la signature manuscrite mais réserve usuelle pour une hypothèse non validée.",
+        "suggestion": "DODELIER"
+      },
+      {
+        "confidence": "high",
+        "fragment": "N° 505620 de 12/11/2020",
+        "issue": "date_incertaine",
+        "note": "Date de déclassement claire mais toujours à traiter avec prudence.",
+        "suggestion": "12/11/2020"
+      }
+    ],
+    "confidence": "high",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-17",
+    "sourceImage": "17-20260204_114355.jpg",
+    "assistedReadingText": "GO/JO\nCORPS D'ARMEE D'ORAN\nZONE SUD ORANAIS\nSECTEUR DE TIARET\nETAT MAJOR 2e BUREAU\nNo 323/S/B2/S.T\nP.C., le 11 FEV. 1959\n\nLe Colonel MOREL DEVILLE\nCommandant le secteur de Tiaret exerçant les pouvoirs civils dans l'arrondissement de Tiaret nord\n\nà\nM. le Général de Division Commandant la 4e DI\nEtat-Major, 5e Bureau\n\nOBJET : Assignation à résidence de TEDJINI Kouider\n\nJ'ai l'honneur de vous demander que le nommé TEDJINI Kouider soit, à la libération, provisoirement assigné à résidence à ORAN.\n\nEtant donné la personnalité et l'influence de l'intéressé, il ne semble pas opportun, pour des raisons d'ordre psychologique, de l'autoriser actuellement à séjourner à Tiaret ville où il fut successivement instituteur puis secrétaire de la commune mixte.\n\nL'intéressé a de la famille à Oran et a manifesté le désir de se retirer dans cette ville.\n\nPIECES JOINTES\n— Proposition d'assignation en 4 ex\n— Notice de renseignement en 4 ex\n\nDECLASSIFIÉ PAR DÉCISION\nN° 505620 du 12/11/2020",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "323/S/B2/S.T",
+        "issue": "sigle_incertain",
+        "note": "Lecture du sigle conforme à l'image mais possibilité d'une autre lecture selon la typographie manuscrite.",
+        "suggestion": "Vérification sur original conseillé pour certitude."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "P.C., le 11 FEV. 1959",
+        "issue": "date_incertaine",
+        "note": "La date semble correcte, mais le '11' pourrait être une autre valeur de jour, image partiellement obstruée par un cachet.",
+        "suggestion": "Valider avec source originale sans tampon."
+      },
+      {
+        "confidence": "high",
+        "fragment": "TEDJINI Kouider",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre recopié de l'image, mais toute confirmation suppose relecture par expert.",
+        "suggestion": "Vérifier si variation orthographique possible."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-18",
+    "sourceImage": "18-20260204_114418.jpg",
+    "assistedReadingText": "ANNEXE I\n\nDEPARTEMENT DE TIARET                                            NOTICE DE RENSEIGNEMENTS\n\nDésignation de l’Unité ou du service ayant procédé à l’arrestation :\n29e B.T.A. au cours d’un ratissage en KX 77 E 42 le 4.8.58\n\nCirconstances de l’arrestation\nAlors que l’intéressé se trouvait au P.C. de la N.I. M.7 a appris l’arrivée des Forces de l’Ordre. A tenté de suivre ses compagnons mais s’est foulé la cheville en chemin. A tenté de se cacher, mais a été trouvé par les troupes du 29ème B.T.A. en KX 77 E 42 le 4.8.58 au cours du ratissage.\n\nNom & prénom : TEDJINI Kouider\nFiliation : O/Tayab O/ Mohamed (décédé) et LAINECH Fatma bent el Habib (décédée)\nÂge : 44 ans  nationalité : Française\nLieu de naissance : Aïn Maâdi (ex commune mixte de Laghouat)\nDate : 25 mars 1915\nSituation de famille : marié\nDomicile habituel : Tiaret route de Trezel\nProfession : Secrétaire de commune mixte\n\nFaits reprochés :\nIndividu ayant rejoint les rangs rebelles – secrétaire du chef de la mintaka 7\n\nSignalement de l’intéressé :\nTaille : 1 m68                           Yeux : verts\ncheveux : grisonnant                  barbe : néant\nnez : rectiligne                           front : bombé dégarni\nforme du visage : ovale              signes particuliers : néant\n\nSanction proposée : assignation à résidence à Oran chez M. TIFFOUS Mohamed, 2 impasse Eckmühl avenue Jules Ferry\n\nDestination provisoire : Centre de Transit de Tiaret\n\nLe Général Cdt la 4e DIM et la ZSO exerçant les pouvoirs civils dans le département de Tiaret.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "mintake 7 / mintaka 7",
+        "issue": "mot_illisible",
+        "note": "La mention manuscrite ou la frappe n'est pas parfaitement nette, et la lecture exacte du mot (mintake/mintaka) ne peut pas être totalement assurée.",
+        "suggestion": "Lecture probable : mintaka 7"
+      },
+      {
+        "confidence": "high",
+        "fragment": "O/Tayab O/ Mohamed (décédé)",
+        "issue": "nom_propre_incertain",
+        "note": "La structure 'O/' pour le prénom/père pourrait prêter à une incertitude sur la manière correcte de segmenter/prononcer ce type de filiation.",
+        "suggestion": "Lecture probable mais à confirmer."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Aïn Maâdi (ex commune mixte de Laghouat)",
+        "issue": "lieu_incertain",
+        "note": "Le nom du lieu semble bien identifié sur l'image, mais peut prêter à confusion avec d'autres toponymes de transcription voisine.",
+        "suggestion": "Lecture probable."
+      },
+      {
+        "confidence": "high",
+        "fragment": "ZSO",
+        "issue": "sigle_incertain",
+        "note": "Le sigle ZSO est ainsi écrit sur la source, mais toute signification ou développement reste hors contexte.",
+        "suggestion": "Lecture du sigle ZSO conforme à l'image."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-19",
+    "sourceImage": "19-20260204_114528.jpg",
+    "assistedReadingText": "TIARET, le 11 Décembre 19..\n\n-o- NOTE DE RENSEIGNEMENTS -o-\n\nOBJET     : A/s de TEDJINI Kouider.\nSOURCE    : Vincent.\nVALEUR    : C/3.\nDATE RECUEIL : Actuelle.\n\nLe nommé TEDJINI Kouider Ould Tayeb, né le 25 Mars 1915 à Aïn-Mahdi (LAGHOUAT) serait le secrétaire du Chef rebelle NASSER, Commandant la Zone VII.\n\nL'intéressé fut secrétaire à la Commune Mixte de TIARET durant de nombreuses années et Conseiller Municipal U.D.M.A.\n\nTitulaire du 1° Certificat de licence en droit, il a été nommé courant janvier 1957 inspecteur de la main d'oeuvre à ORAN et a rejoint les rangs de la rébellion au cours de l'été.\n\nLe Commissaire de Police\nChef du S.D.R.G.\nCAMY L.\n\nDESTINATAIRES :\n\nS.P. 87 686, le 17 DEC 1957\n\n--=o COPIE CONFORME TRANSMISE o=--\n\nà\n- M. le Colonel Cdt le Secteur de FRENDA.\n- M. le Colonel Cdt le Secteur de TIARET.\n- M. le Colonel Cdt le Sds. A. de TREZEL.\n\n\"Pour information et recoupement éventuel\".\n\nCORPS D'ARMEE D'ORAN\nZONE SUD ORANAIS\nETAT-MAJOR 2° BUREAU\nTél. : PROGRES N° 20\nN° 262/230/2\nCLT. 523 G 6. N\n\nLe Général DODELIER\nCommandant la 4° Division d'Infanterie Motorisée et la Zone Sud Oranais\nLe Chef d'Escadrons JACOB\nChef du 2° Bureau",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "TIARET, le 11 Décembre 19..",
+        "issue": "date_incertaine",
+        "note": "Le dernier chiffre de l'année est tronqué/illisible sur l'image en haut à droite et dans l'OCR. La date ci-dessous (17 DEC 1957) laisse supposer que c'est 1957 mais il n'est pas possible de l'affirmer strictement.",
+        "suggestion": "Le texte originel semble '1957', mais certitude faible sur le dernier chiffre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "TEDJINI Kouider Ould Tayeb",
+        "issue": "nom_propre_incertain",
+        "note": "Confusion fréquente entre TEDJINI et VEDJINI dans l'OCR, Ould Tayeb partiellement masqué en OCR, lisible sur l'image mais possible fluctuation d'orthographe.",
+        "suggestion": "Lecture de l'image privilégie 'TEDJINI Kouider Ould Tayeb', mais sans garantie absolue."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Chef rebelle NASSER",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre bien lu mais besoin de marquer l'incertitude sur l'exactitude de l'orthographe selon la source.",
+        "suggestion": "Transcrire comme sur l'image mais notifier l'incertitude."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "U.D.M.A.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle est probable selon l'image mais une lettre peut être incertaine, l'espacement aussi.",
+        "suggestion": "Lecture comme 'U.D.M.A.'."
+      },
+      {
+        "confidence": "low",
+        "fragment": "CAMY L.",
+        "issue": "nom_propre_incertain",
+        "note": "Signature abrégée, nom du commissaire lisible sur document mais sans pleine certitude.",
+        "suggestion": "Recopier tel quel."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Le Général DODELIER",
+        "issue": "nom_propre_incertain",
+        "note": "Nom manuscrit mais écrit lisiblement sur l'image. Marque incertitude minimale.",
+        "suggestion": "Transcrire exactement comme sur l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le Chef d'Escadrons JACOB.",
+        "issue": "nom_propre_incertain",
+        "note": "Texte imprimé mais l'OCR alterne parfois avec 'J'ACOB'. L'image indique 'JACOB'.",
+        "suggestion": "Adopter 'JACOB' avec incertitude sur l'apostrophe."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-20",
+    "sourceImage": "20-20260204_114724.jpg",
+    "assistedReadingText": "- FICHE -\nau sujet de ALI AMMAR, dit \"MUSTAPHA\"\n\nREFERENCES :\n  • Transmis n° 83/ZEO/2/s du 30 Janvier 1960\n  • Transmis n° 189/ZEO/2/s du 26 Février 1960\n  • Documents récupérés le 2.1.1960 en BX 67 D,64\n\nALI AMMAR est un kabyle, l'organisation F.L.N. de la Région CHELLALA-REIBELL (R.3 - Z.1 - W.6) a été montée par des kabyles, le Sous-Préfet MAKYOU, kabyle, était en contact étroit avec eux.\n\nAu cours de la conversation ALI AMMAR s'est coupé plusieurs fois ne pouvant pas supposer que je connaissais l'histoire de la rébellion de cette région.\n\nCet individu devrait être passé à la Compagnie de Recherche de la Z.S.A. qui possède toute la documentation permettant de l'interroger utilement et le 583ème Bataillon du C.A.A. possède une section kabyle capable d'éclairer ses activités en Europe.\n\nLe Capitaine GAUTHIER\nP.O. signé illisible.\n\n[DÉCLASSIFIÉ PAR DÉCISION N° 505620 du 12/11/2020]",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "CHELLALA-REIBELL (R.3 - Z.1 - W.6)",
+        "issue": "lieu_incertain",
+        "note": "Relecture fidèle à l'image mais les noms de lieux ou sigles de zones restent hautement techniques.",
+        "suggestion": "Lecture conforme à l'image, mais toute identification devrait rester prudente."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Sous-Préfet MAKYOU, kabyle",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable confirmée par l'image, néanmoins le nom MAKYOU pourrait être sujet à variation selon les graphies locales.",
+        "suggestion": "À vérifier lors de la validation méta."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "le 583ème Bataillon du C.A.A.",
+        "issue": "sigle_incertain",
+        "note": "Lecture conforme à l'image mais le sigle C.A.A. ne peut être garanti.",
+        "suggestion": "Sigle à vérifier sur d'autres documents officiels."
+      },
+      {
+        "confidence": "high",
+        "fragment": "P.O. signé illisible.",
+        "issue": "mot_illisible",
+        "note": "La signature est clairement marquée comme illisible sur l'image.",
+        "suggestion": "Mention conforme au document, aucune invention."
+      },
+      {
+        "confidence": "high",
+        "fragment": "DÉCLASSIFIÉ PAR DÉCISION N° 505620 du 12/11/2020",
+        "issue": "lecture_probable",
+        "note": "Le tampon est bien visible, lecture fiable.",
+        "suggestion": ""
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-21",
+    "sourceImage": "21-20260204_114917.jpg",
+    "assistedReadingText": "N° d’Enregistrement et Heure de dépôt : 13476/A   2130 Z    MESSAGE     Ex. N° 1 / 12\nATTENTION ! MESSAGE CHIFFRE, NON DEMARQUE\nNe pas DIFFUSER tel quel — Ne pas DECLASSER le degré du secret\nCentre de Transmissions : 4e D.I.M.    Poste : 75 CHIFFRE/\nTéléphone : PROGRES    Référence à rappeler N°: URGENT\nRENSEIGNEMENTS\nAUTORITÉ ORIGINE : Z.S.A.\nGROUPE DATE-HEURE : 22 1710 Z\nAUTORITES DESTINATAIRES :\nPOUR ACTION (TO) : CDT 11e* CIE 58 Bl\nPOUR INFORMATION (INFO) : ZE°/2\nNUMÉRO : 1157 / ZSA/2/8 DU 22 MAI 1960\nDÉCLASSIFIÉ PAR DÉCISION N° 505620 du 12/11/2020\n\nALI MAMAR, DIT MUSTAPHA, INSTITUTEUR À VICTOR HUGO ET MEMBRE OPA A ÉTÉ APPRÉHENDÉ PAR F.O. LE 21 FÉVRIER 60 ET REMIS LE 18 MARS 60 AVEC DOSSIER LE CONCERNANT PORTANT N° 2/RER/2/Q DU 18 MARS 60 À ADJUDANT JAMIN DE LA 11e* CIE STOP. INTÉRESSÉ SERAIT DE RETOUR À VICTOR HUGO DEPUIS LE 20 AVRIL 60 STOP SUITE À DEMANDE RENSEIGNEMENTS DE L’INSPECTION ENSEIGNEMENT ET DE LA ZEO, RENDRE COMPTE DANS PLUS BREFS DÉLAIS SUITE DONNÉE À CETTE AFFAIRE.\n\nDiffusé à :\n22 2212 Z\n\n(1) En cas de double urgence, la plus faible s’applique aux destinataires pour information.\n\nLe Chef d’Equipe,\nSGT BONHOMME.",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "N° d’Enregistrement et Heure de dépôt : 13476/A   2130 Z",
+        "issue": "lecture_probable",
+        "note": "Lecture très probable à partir de l'image, l'OCR est cohérent.",
+        "suggestion": "Confirmation visuelle de numérotation et heure."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "CDT 11e* CIE 58 Bl",
+        "issue": "sigle_incertain",
+        "note": "Le sigle ou abréviation 'CIE 58 Bl' est peu lisible sur l'image, la lecture de l'OCR semble probable mais l’astérisque sur '11e*' n'est pas clairement visible.",
+        "suggestion": "Vérification future sur le contenu du sigle."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ZE°/2",
+        "issue": "sigle_incertain",
+        "note": "La destination 'ZE°/2' paraît correcte mais le caractère après 'ZE' est ambigu.",
+        "suggestion": "Relire sur copie haute résolution."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "2/RER/2/Q",
+        "issue": "sigle_incertain",
+        "note": "L'OCR donne '2/RER/2/Q', l’image pourrait comporter d’autres caractères ou des césures ; ambiguïté de lecture.",
+        "suggestion": "Relecture au besoin sur document original."
+      },
+      {
+        "confidence": "high",
+        "fragment": "ADIJAM JAMIN",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du destinataire de la 11e CIE est difficile à lire ; 'ADJUDANT JAMIN' est la lecture la plus probable mais la partie 'JAMIN' n’est pas parfaitement distincte sur l'image.",
+        "suggestion": "Valider le patronyme par recoupement."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "SGT BONHOMME.",
+        "issue": "nom_propre_incertain",
+        "note": "'SGT BONHOMME' se lit clairement, mais la signature manuscrite empêche une confirmation absolue.",
+        "suggestion": "Lecture dactylographiée probable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "21 FÉVRIER 60",
+        "issue": "date_incertaine",
+        "note": "L'OCR et l'image convergent, mais une légère altération du document près de cette date introduit une incertitude minime.",
+        "suggestion": "Recalibrer au besoin."
+      },
+      {
+        "confidence": "high",
+        "fragment": "22 MAI 1960",
+        "issue": "date_incertaine",
+        "note": "Date lue sur l'image, semble certaine mais présence d'autres tampons avec des dates proches ('23 MAI 1960').",
+        "suggestion": "Mentionner l’existence de deux dates proches pour l’analyse."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "VICTOR HUGO",
+        "issue": "lieu_incertain",
+        "note": "Le texte mentionne 'VICTOR HUGO' à plusieurs reprises ; ambiguïté sur la nature exacte (lieu, école, quartier, autre).",
+        "suggestion": "Documenter comme possible lieu."
+      },
+      {
+        "confidence": "low",
+        "fragment": "OPA",
+        "issue": "sigle_incertain",
+        "note": "Le terme 'OPA' est visible mais sa signification n'est pas explicitée.",
+        "suggestion": "Consigner tel quel."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-22",
+    "sourceImage": "22-20260204_115140.jpg",
+    "assistedReadingText": "DOCUMENT RECUPERE LE 21.1.60 EH MX 07 D 64\n\n[Cachet ARRIVEE : 27 JANV 1960, N° 283/239]\n\nLe 25 Sept 1959\n\nDu militant Mustapha au frère Si Abdallah\n\nAprès mes fraternelles et patriotiques salutations je porte à votre glorieuse connaissance les faits suivants dont, d'ailleurs, le frère Si Atmane vous en a parlé le 13 mai ;\nDe toute façon puisque l'occasion se présente, permettez cher frère de vous le rappeler.\nAyant été à l'extérieur il y a 1 année pendant les vacances, j'ai contacté comme il était de mon devoir de servir, là où je me trouve, les frères d'Allemagne qui m'ont dirigé sur l'Italie. Là, les frères m'ont conseillé de revenir ici, dans l'Algérie, n'étant pas nécessaire en Tunisie. Sur ces conseils, j'ai rejoint l'Algérie par la Suisse après avoir constitué un dossier de demande de bourse aux frères de l'U.O.H.A. (étudiants). J'ai laissé cette demande et suis rentré en Algérie. Là, j'ai recontacté au mois de décembre les frères de la W.5 dans la zone de Tiaret et Frenda pour verser mes cotisations - que j'ai versées jusqu'au mois de juin 1959. Là, le frère Si Atmane (Hachati) m'a contacté et m'a remis, avec votre consentement et celui de Si Boualem, la responsabilité des villages de Victor Hugo et Hardy Lefoucault. Seulement je vous demanderai une attestation pour la présenter aux frères de la W.5 - comme quoi je sers sous vos ordres.\n\nVous avez donné rendez-vous aux frères Si Atmane (Hachati) ainsi que Si Madir qui désire vous voir. Si Souslan m'a chargé de vous demander de lui fixer rendez-vous au lieu où vous vous êtes vus l'an dernier. Je désire assister ...\nRendez-vous afin de vous expliquer certains faits. De toute manière vous n'en verrez pas ...\n\nLe frère Si Atmane vous rappelle qu'il vous a signalé les traîtres de Reibell depuis le 13 du mois de Mai. Avez-vous reçu cette lettre ?\n... qui est de la dernière lettre que vous n'avez pas comprise, vous savez fort bien que je ne donne pas ma confiance au premier venu. Quant à l'autre question, c'est le frère représentant Chabounia qui vous versera ainsi que 84.000 f. remis aussi par moi-même (à Athmane) ; cette dernière somme est le montant des cotisations.\n\nAprès Si Atmane vous a expédié 1 tondeuse 1300 f. + 2 stylos 700 f. + colle carnets ... Ici je n'ai pas touché un sou de Griveza à Sahmounet que j'ai désigné pour Reibell. Pour les médicaments le monsieur est en vacances.\n\n---\nDe ma part Mustapha.\nFrère, je vous informe que les frères de la W.4 ont exigé des militants de Hardy le versement de leurs cotisations. Ces militants ont demandé une attestation comme quoi qu'ils versent leur cotisation à la W.6. Il en est de même pour le militant de la W.4.",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "[Cachet ARRIVEE : 27 JANV 1960, N° 283/239]",
+        "issue": "lecture_probable",
+        "note": "La mention en rouge dans le carré en haut à gauche est interprétée comme un cachet d'arrivée avec les données visibles en image.",
+        "suggestion": "Demander validation pour la date et numéro exacts lus dans le cachet."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Si Abdallah",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom Si Abdallah est d'après la structure mais reste à valider sur l'image car peu lisible.",
+        "suggestion": "Confirmer la lecture du nom propre 'Si Abdallah'."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "W.5 / W.4 / W.6",
+        "issue": "sigle_incertain",
+        "note": "Lecture des sigles relative correcte mais demande confirmation selon conventions internes.",
+        "suggestion": "Confirmer la signification des sigles (W.5, W.4, W.6)."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Griveza à Sahmounet que j'ai désigné pour Reibell.",
+        "issue": "mot_illisible",
+        "note": "La toponymie exacte (Griveza, Sahmounet) demande vérification car peu claire sur l'image.",
+        "suggestion": "Vérifier les noms de lieu et leur transcription."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "... avez reçu cette lettre ? ... qui est de la dernière lettre que vous n'avez pas comprise ...",
+        "issue": "mot_illisible",
+        "note": "Passage tronqué ou difficilement lisible, phrase mal découpée.",
+        "suggestion": "Demander une confirmation de la formulation exacte sur l'original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le 25 Sept 1959",
+        "issue": "date_incertaine",
+        "note": "Lecture probable mais demande confirmation (Sept pour septembre est plausible).",
+        "suggestion": "Valider la date exacte (25 septembre 1959)."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-23",
+    "sourceImage": "23-20260204_115323.jpg",
+    "assistedReadingText": "S.P. 87.121 le 3-3-1960.\n\n4e DIVISION D'INFANTERIE MOTORISE\n110e REGIMENT D'INFANTERIE MOTORISE\n-SECTEUR DE VIALAR-\nN° 104 / 110° RIM / 2B.- C.R.A.\n\nBULLETIN DE RENSEIGNEMENTS\n\nOBJET : Identification de \"SI - BOUALEM\"\n\nI. - RENSEIGNEMENTS D'ARCHIVES :\n   - Nom : IDIR\n   - Prénom : Mebarek\n   - Fils de : SAID Ben Hocine\n   et de : OUKACI Messaouda\n   - Né à : BURDEAU\n   - le : 8 Octobre 1914\n   - Domicile : BURDEAU\n   - Profession : Tailleur d'habits\n   - Fonction : Membre O.P.A. important de la Région 613.\n\nII. - RENSEIGNEMENTS PROPREMENT DITS :\n   Le nommé \"BOUALEM\" qui s'identifie à I D I R Mebarek a quitté son domicile le 21 Janvier 1960, en disant à sa famille qu'il se rendait à TIZI-OUZOU, et n'a pas reparu depuis.\n\nIII. - RENSEIGNEMENTS COMPLEMENTAIRES :\n   BOUALEM a quitté BURDEAU tout de suite après l'arrestation de \"MUSTAPHA\" qui s'identifie à ALI-ANNAR fils de SAADI ben Ahmed, et qui était responsable des Villes de BURDEAU - HARDY - VICTOR-HUGO, pour le compte de la Région 613.\n\nLe Capitaine POULICHET\nChef du 2° Bureau et du C.R.A. du Secteur de VIALAR\nP.O. Le S/Lt. GOYADIN\nO.R. Adjoint du 2° Bureau-C.R.A.",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "O.P.A.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle O.P.A. est présent, mais sa signification n'est pas explicitée dans l'image ou l'OCR.",
+        "suggestion": "Lecture conforme à l'image, abréviation conservée telle quelle."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Région 613",
+        "issue": "nom_propre_incertain",
+        "note": "Le numéro de région est clairement tapé sur l'image, mais il s'agit d'une désignation administrative interne ; vérification du contexte impossible.",
+        "suggestion": "Lecture du numéro conservée, incertitude administrative."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "MUSTAPHA qui s'identifie à ALI-ANNAR fils de SAADI ben Ahmed",
+        "issue": "nom_propre_incertain",
+        "note": "Ces noms propres sont identifiables sur l'image, mais il n'est pas certain que leur orthographe soit totalement fidèle ; typographie originale respectée.",
+        "suggestion": "Lecture probable, à confirmer par seconde vérification."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Signature manuscrite",
+        "issue": "mot_illisible",
+        "note": "La signature manuscrite en bas de page n'est pas lisible.",
+        "suggestion": "Mention de la présence d'une signature sans transcription."
+      }
+    ],
+    "confidence": "medium",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-24",
+    "sourceImage": "24-20260204_115337.jpg",
+    "assistedReadingText": "REPUBLIQUE FRANÇAISE\n\nDEMANDE DE CERTIFICAT DE RECENSEMENT\n\nNo [490?]\n\n[Photographie d'identité] [Empreintes : Index gauche / Index droit]\n\nCERTIFICAT DE RECENSEMENT\n\nEmargement du bénéficiaire : [signature]\n\n[Zone manuscrite très difficile à lire, lecture probable partielle :]\nIDIK\n[prénom illisible, probable : Miloud]\nSaïd ben Hocine\nCercle : [illisible]\nBourdan\n3 Octobre 1914\nBourdan\n[titre ou profession, lecture incertaine : tailleur d'habit]\n\n35 3166\nvu à Bourdan\n9 août 1955\npar le Cdt de Cercle Bourdan",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "[prénom illisible, probable : Miloud]",
+        "issue": "nom_propre_incertain",
+        "note": "Le prénom en manuscrit est très difficile à lire, seule la première lettre et la terminaison sont à peu près identifiables.",
+        "suggestion": "Miloud"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Cercle : [illisible]",
+        "issue": "lieu_incertain",
+        "note": "Le toponyme du cercle semble partiellement effacé ou apposé sur une tache.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Bourdan",
+        "issue": "lieu_incertain",
+        "note": "Ce toponyme revient deux fois, la deuxième instance est assez lisible, la première est sujette à interprétation.",
+        "suggestion": "Bourdan"
+      },
+      {
+        "confidence": "low",
+        "fragment": "[titre ou profession, lecture incertaine : tailleur d'habit]",
+        "issue": "mot_illisible",
+        "note": "Texte partiellement taché et peu contrasté, difficile à lire.",
+        "suggestion": "tailleur d'habit"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "35 3166",
+        "issue": "lecture_probable",
+        "note": "Numéro manuscrit lisible, sans garantie de contexte.",
+        "suggestion": "35 3166"
+      },
+      {
+        "confidence": "low",
+        "fragment": "par le Cdt de Cercle Bourdan",
+        "issue": "mot_illisible",
+        "note": "Signature/nom du commandant pratiquement indéchiffrable.",
+        "suggestion": ""
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-25",
+    "sourceImage": "25-20260204_115804.jpg",
+    "assistedReadingText": "S.P. 88.497, le 28 Juillet 1961\n\nCORPS D'ARMEE D'ORAN\nZONE : EST - ORANAIS\nSECTEUR DE TIARET\nETAT-MAJOR 2° BUREAU\nN° 1925/B.2./S.T.\n\n--- COPIE DE DOCUMENT ---\n\nOBJET : Document récupéré le 16.7.61 en HX 80 B 1 sur le cadavre de SI MOSTEPHA par le secteur de SAIDA\n\nREFERENCE : Transmis N° I.101/S.S.a./2B/S du 17 Juillet 1961\n\nF.L.N.A.              REPUBLIQUE ALGERIENNE            A.L.N.A.\nW.5.-Z.7.-R.3.-S.2.\nEx. : Chef Militaire BENHALIMA\nDest. : SI MUSTAFA, Chef Militaire Z.6. R.2.\n\nFrère de lutte,\n\nJe t'informe que nous sommes tous en excellente santé et j'espère que vous serez de même \"Inchallah\". Tous les frères qui sont présents avec moi vous envoient le bonjour.\n\nPour les effets militaires, fait ton possible de nous les envoyer avec les jumelles. Si vous avez quelques armes de chasse envoyez-nous une ou deux.\n\nAu sujet de Ex-Capitaine de la Zone 7 Région 1, le nommé DJAFAR du nom de guerre et Larbi prénom, original de Tiaret, je te fais savoir qu'il ferait partie du complot et c'est un rallié, dernièrement il a échappé à un attentat, ordre donné par le capitaine de Zone, il est condamné par l'A.L.N. et le F.L.N.. S'il y a le moyen, fait le descendre.\n\nEnvoie-moi quelques munitions d'arme de chasse N° 20 et 24.\n\nSalutations fraternelles et patriotiques.\n\nNote au verso : Nous avons un frère spécialiste mineur, alors envoyez-nous le nécessaire ou bien venez faire quelques travaux avec lui.\n\nLe Sous-Lieutenant DE COUCHARIERE,\nPvt Chef 2ème Bureau\n\nDESTINATAIRES :\nM. le Général, Cdt la 4° DIM & ZEO\nEtat-Major - 2° Bureau\nChrono.",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "BENHALIMA",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre partiellement flou sur l'image mais probable d'après la structure du document.",
+        "suggestion": "Vérifier l'orthographe exacte lors d'une validation humaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "SI MUSTAFA",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du destinataire est plausible mais la lisibilité de la zone dans l'image est partiellement entravée par une annotation manuscrite.",
+        "suggestion": "A confirmer ultérieurement."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "DJAFAR du nom de guerre et Larbi prénom, original de Tiaret",
+        "issue": "nom_propre_incertain",
+        "note": "Difficulté à départager nom/prénom/noms de guerre, la ligne contenant plusieurs majuscules et éléments peu distincts.",
+        "suggestion": "Vérifier la formulation exacte lors d'une validation experte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "A.L.N. et le F.L.N.",
+        "issue": "sigle_incertain",
+        "note": "Les sigles semblent nets mais la présence d'un point sur le premier sigle laisse un doute sur l'écriture exacte.",
+        "suggestion": "Relire la ligne originale pour lever l'ambiguïté."
+      },
+      {
+        "confidence": "low",
+        "fragment": "sous-lieutenant DE COUCHARIERE",
+        "issue": "nom_propre_incertain",
+        "note": "Signature illisible ; le nom dactylographié est difficile à distinguer sur l'image, il est proposé selon l'OCR et la disposition.",
+        "suggestion": "Nom du signataire à vérifier formellement sur l'original."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-26",
+    "sourceImage": "26-20260204_115805.jpg",
+    "assistedReadingText": "S.P. 88.497, le 28 Juillet 1961\n\nCORPS D'ARMEE D'ORAN\nZONE - EST - ORANAIS\nSECTEUR DE TIARET\nETAT-MAJOR - 2° BUREAU\nN° 1985/B.2./S.T.\n\n--- COPIE DE DOCUMENT ---\n\nOBJET : Document récupéré le 16.7.61 en HX 80 B 1 sur le cadavre de SI MOSTEPHA par le secteur de SAIDA\n\nREFERENCE : Transmis N° I.101/S.S.a./2B/S du 17 Juillet 1961\n\nF.L.N.A — REPUBLIQUE ALGERIENNE — A.L.N.A. : 21878\nW.5. - Z.7. - R.3. - S.2.\nEx. : Chef Militaire BENHALIMA\nDest. : SI MUSTAFA, Chef Militaire Z.6. R.2.\n\nFrère de lutte,\n\nJe t'informe que nous sommes tous en excellente santé et j'espère que vous serez de même \"Inchallah\". Tout les frères qui sont présent avec moi vous envoient le bonjour.\n\nPour les effets militaires, fais ton possible de nous les envoyer avec les jumelles. Si vous avez quelques armes de chasse envoyez nous une ou deux.\n\nAu sujet de Ex-Capitaine de la Zone 7 Région 1, le nommé DJAFAR du nom de guerre et Larbi prénom, original de Tiaret, je te fais savoir qu'il ferait partie du complot et c'est un rallié, dernièrement il a échappé à un attentat, ordre donné par le capitaine de Zone, il est condamné par l'A.L.N. et le F.L.N.. S'il y a le moyen, fais le descendre.\n\nEnvoie moi quelques munitions d'arme de chasse N° 20 et 24.\n\nSalutations fraternelles et patriotiques.\n\nNote au verso : Nous avons un frère spécialiste mineur, alors envoyez-nous le nécessaire ou bien venez faire quelques travaux avec lui.\n\nDESTINATAIRES :\nM. le Général, Cdt la 4° DIM & ZEO\nEtat-Major - 2° Bureau (2 ex.)\nChrono.\n\nLe Sous-Lieutenant DE COUCHARRIERE,\nPvt Chef du 2ème Bureau",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "N° 1985/B.2./S.T.",
+        "issue": "sigle_incertain",
+        "note": "Les numéros et sigles sont difficiles à lire, mais cette lecture est probable.",
+        "suggestion": "Confirmer la numérotation exacte sur une image de meilleure qualité."
+      },
+      {
+        "confidence": "high",
+        "fragment": "DJAFAR du nom de guerre et Larbi prénom... qu'il ferait partie du complot et c'est un rallié",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom DJAFAR et Larbi sont assez clairs sur l'image, mais la position exacte du prénom et de l'appellation (nom de guerre/prénom) pourrait prêter à confusion.",
+        "suggestion": "Demander confirmation de l'ordre des noms si usage administratif."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "\"Inchallah\"",
+        "issue": "mot_illisible",
+        "note": "Ponctuation incertaine selon l'image.",
+        "suggestion": "Évaluer la ponctuation exacte lors d'une relecture humaine."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Zone 7 Région 1, le nommé DJAFAR",
+        "issue": "lecture_probable",
+        "note": "Le découpage de la phrase (zone, région, numérotation) pourrait comporter des ambiguïtés.",
+        "suggestion": "Recouper avec d'autres documents similaires si possible."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Nous avons un frère spécialiste mineur, alors envoyez-nous le nécessaire ou bien venez faire quelques travaux avec lui.",
+        "issue": "lecture_probable",
+        "note": "Lecture probable conforme, mais la mention \"spécialiste mineur\" doit être confirmée (mineur comme métier technique ou autre sens).",
+        "suggestion": "À confirmer selon contexte administratif ou technique."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le Sous-Lieutenant DE COUCHARRIERE",
+        "issue": "nom_propre_incertain",
+        "note": "L'orthographe de ce nom est difficile à lire ; \"DE COUCHARRIERE\" reste la lecture la plus plausible.",
+        "suggestion": "Vérifier sur documents initiaux pour confirmer le nom exact."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  }
+]
