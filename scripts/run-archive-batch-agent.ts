@@ -53,6 +53,7 @@ interface AgentPaths {
   downloadManifestPath: string;
   inventoryPath: string;
   publicManifestPath: string;
+  reportsDirectory: string;
   rawDirectory: string;
   rawOcrDirectory: string;
   sourcesPath: string;
@@ -114,7 +115,39 @@ interface VisionFailureReport {
   generatedAt: string;
   lotId: string;
   note: string;
+  reportType: "assisted-reading-errors";
   failures: VisionFailure[];
+}
+
+interface BatchSummaryReport {
+  generatedAt: string;
+  lotId: string;
+  collectionId: string;
+  reportType: "batch-summary";
+  note: string;
+  workspacePath: string;
+  reports: {
+    downloadErrors: string;
+    assistedReadingErrors: string;
+  };
+  counts: {
+    rawFiles: number;
+    convertedImages: number;
+    cleanOcrFiles: number;
+    assistedReadingFiles: number;
+    downloadSkippedFiles: number;
+    assistedReadingFailures: number;
+  };
+  status: {
+    publicManifestExists: boolean;
+    conversionManifestExists: boolean;
+    downloadManifestExists: boolean;
+  };
+  resumeHints: string[];
+}
+
+interface DownloadErrorReport {
+  skippedFiles?: unknown[];
 }
 
 const BATCHES_MANIFEST_PATH = "data/generated/archive-batches.example.json";
@@ -261,6 +294,7 @@ async function main() {
   }
 
   console.log("\nAgent de lot termine.");
+  await writeBatchSummary(config, batch, paths);
   console.log("Sorties locales uniquement: aucun manifeste principal modifie.");
   console.log("Les lectures assistees restent non validees jusqu'a relecture humaine.");
 }
@@ -490,8 +524,10 @@ async function writeVisionFailureReport(
     lotId: config.lotId,
     note:
       "Rapport local des lectures assistees vision echouees. Aucune lecture n'a ete inventee ; ces pages doivent etre reprises plus tard.",
+    reportType: "assisted-reading-errors",
   };
 
+  await mkdir(path.dirname(getVisionFailureReportPath(paths)), { recursive: true });
   await writeFile(
     getVisionFailureReportPath(paths),
     `${JSON.stringify(report, null, 2)}\n`,
@@ -500,10 +536,12 @@ async function writeVisionFailureReport(
 }
 
 function getVisionFailureReportPath(paths: AgentPaths): string {
-  return path.join(paths.assistedReadingDirectory, "vision-errors.json");
+  return path.join(paths.reportsDirectory, "assisted-reading-errors.json");
 }
 
 function getAgentPaths(config: AgentConfig): AgentPaths {
+  const reportsDirectory = path.join(config.workspacePath, "reports");
+
   return {
     assistedReadingDirectory: path.join(
       config.workspacePath,
@@ -515,6 +553,7 @@ function getAgentPaths(config: AgentConfig): AgentPaths {
     downloadManifestPath: path.join(config.workspacePath, "download-manifest.json"),
     inventoryPath: path.join(config.workspacePath, "drive-inventory.json"),
     publicManifestPath: path.join(config.workspacePath, "public", "public-assets.json"),
+    reportsDirectory,
     rawDirectory: path.join(config.workspacePath, "raw"),
     rawOcrDirectory: path.join(config.workspacePath, "ocr", "raw"),
     sourcesPath: path.join(config.workspacePath, "drive-sources.json"),
@@ -732,6 +771,95 @@ function getConfig(): AgentConfig {
   };
 }
 
+async function writeBatchSummary(
+  config: AgentConfig,
+  batch: ArchiveBatch,
+  paths: AgentPaths,
+) {
+  const downloadErrors = await readOptionalJson<DownloadErrorReport>(
+    getDownloadErrorReportPath(paths),
+  );
+  const assistedReadingErrors = await readOptionalJson<VisionFailureReport>(
+    getVisionFailureReportPath(paths),
+  );
+  const downloadSkippedFiles = downloadErrors?.skippedFiles?.length ?? 0;
+  const assistedReadingFailures = assistedReadingErrors?.failures?.length ?? 0;
+  const summary: BatchSummaryReport = {
+    collectionId: batch.collectionId,
+    counts: {
+      assistedReadingFailures,
+      assistedReadingFiles: await countFilesWithExtension(
+        paths.assistedReadingDirectory,
+        ".json",
+        (fileName) => fileName.endsWith(".vision.assisted.json"),
+      ),
+      cleanOcrFiles: await countFilesWithExtension(paths.cleanOcrDirectory, ".txt"),
+      convertedImages: await countFilesWithExtension(
+        paths.convertedDirectory,
+        [".jpg", ".jpeg"],
+      ),
+      downloadSkippedFiles,
+      rawFiles: await countFiles(paths.rawDirectory),
+    },
+    generatedAt: new Date().toISOString(),
+    lotId: config.lotId,
+    note:
+      "Resume local du lot. Les images publiees, OCR et lectures assistees restent des etats techniques distincts ; aucune lecture assistee n'est une transcription validee.",
+    reportType: "batch-summary",
+    reports: {
+      assistedReadingErrors: getVisionFailureReportPath(paths),
+      downloadErrors: getDownloadErrorReportPath(paths),
+    },
+    resumeHints: buildResumeHints(config.lotId, downloadSkippedFiles, assistedReadingFailures),
+    status: {
+      conversionManifestExists: existsSync(paths.conversionManifestPath),
+      downloadManifestExists: existsSync(paths.downloadManifestPath),
+      publicManifestExists: existsSync(paths.publicManifestPath),
+    },
+    workspacePath: config.workspacePath,
+  };
+
+  await mkdir(paths.reportsDirectory, { recursive: true });
+  await writeFile(
+    getBatchSummaryReportPath(paths),
+    `${JSON.stringify(summary, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(`Rapport local de synthese: ${getBatchSummaryReportPath(paths)}`);
+}
+
+function getDownloadErrorReportPath(paths: AgentPaths): string {
+  return path.join(paths.reportsDirectory, "download-errors.json");
+}
+
+function getBatchSummaryReportPath(paths: AgentPaths): string {
+  return path.join(paths.reportsDirectory, "batch-summary.json");
+}
+
+function buildResumeHints(
+  lotId: string,
+  downloadSkippedFiles: number,
+  assistedReadingFailures: number,
+): string[] {
+  const hints = [
+    `npm.cmd run batch:agent -- --lot ${lotId} --publish-assets-only --limit 100 --confirm`,
+  ];
+
+  if (downloadSkippedFiles > 0) {
+    hints.push(
+      `npm.cmd run batch:agent -- --lot ${lotId} --skip-inventory --limit 100 --confirm`,
+    );
+  }
+
+  if (assistedReadingFailures > 0) {
+    hints.push(
+      `npx.cmd tsx scripts/promote-assisted-readings.ts --input .local/archive-batches/${lotId}/assisted-reading-vision --out data/generated/batches/${lotId}/assisted-readings.json --skip-invalid`,
+    );
+  }
+
+  return hints;
+}
+
 function getLimit(): number {
   const rawLimit = getArg("--limit");
   if (!rawLimit) {
@@ -749,6 +877,36 @@ function getLimit(): number {
 async function readJson<T>(filePath: string): Promise<T> {
   const raw = await readFile(filePath, "utf8");
   return JSON.parse(raw) as T;
+}
+
+async function readOptionalJson<T>(filePath: string): Promise<T | null> {
+  if (!existsSync(filePath)) return null;
+
+  return readJson<T>(filePath);
+}
+
+async function countFiles(directoryPath: string): Promise<number> {
+  if (!existsSync(directoryPath)) return 0;
+
+  const entries = await readdir(directoryPath, { withFileTypes: true });
+  return entries.filter((entry) => entry.isFile()).length;
+}
+
+async function countFilesWithExtension(
+  directoryPath: string,
+  extension: string | string[],
+  predicate?: (fileName: string) => boolean,
+): Promise<number> {
+  if (!existsSync(directoryPath)) return 0;
+
+  const extensions = new Set(Array.isArray(extension) ? extension : [extension]);
+  const entries = await readdir(directoryPath, { withFileTypes: true });
+  return entries.filter((entry) => {
+    if (!entry.isFile()) return false;
+    if (!extensions.has(path.extname(entry.name).toLowerCase())) return false;
+
+    return predicate ? predicate(entry.name) : true;
+  }).length;
 }
 
 function toPortablePath(filePath: string): string {

@@ -62,6 +62,34 @@ interface DownloadManifestFile {
   sizeBytes: number;
 }
 
+interface DownloadErrorReport {
+  generatedAt: string;
+  inventoryPath: string;
+  lotId: string;
+  outputDirectory: string;
+  reportType: "download-errors";
+  note: string;
+  skippedFiles: DownloadSkippedFile[];
+}
+
+interface DownloadSkippedFile {
+  batchOrder: number;
+  collectionId: string;
+  driveFileId: string;
+  driveUrl: string;
+  fileName: string;
+  failedAt: string;
+  httpStatus: number;
+  reason: string;
+  status: "skipped_download_403" | "skipped_download_429";
+}
+
+class SkippableDriveDownloadError extends Error {
+  constructor(message: string, readonly httpStatus: number) {
+    super(message);
+  }
+}
+
 async function main() {
   const inventoryPath =
     getArg("--inventory") ?? "data/generated/drive-inventory.pilot.json";
@@ -96,6 +124,7 @@ async function main() {
   await mkdir(outputDirectory, { recursive: true });
 
   const manifestFiles: DownloadManifestFile[] = [];
+  const skippedFiles: DownloadSkippedFile[] = [];
   const usedNames = new Set<string>();
 
   for (const candidate of candidates) {
@@ -104,11 +133,39 @@ async function main() {
       usedNames,
     );
     const localPath = path.join(outputDirectory, fileName);
-    const bytes = await downloadDriveFile(candidate.file.driveFileId, apiKey);
+    let bytes: Buffer;
+
+    try {
+      bytes = await downloadDriveFile(candidate.file.driveFileId, apiKey);
+    } catch (error) {
+      if (!(error instanceof SkippableDriveDownloadError)) {
+        throw error;
+      }
+
+      skippedFiles.push({
+        batchOrder: candidate.batchOrder,
+        collectionId: candidate.source.collectionId,
+        driveFileId: candidate.file.driveFileId,
+        driveUrl: candidate.file.driveUrl,
+        failedAt: new Date().toISOString(),
+        fileName: candidate.file.fileName,
+        httpStatus: error.httpStatus,
+        reason: error.message,
+        status:
+          error.httpStatus === 429
+            ? "skipped_download_429"
+            : "skipped_download_403",
+      });
+      console.warn(
+        `[DOWNLOAD WARNING] ${candidate.file.fileName}: ${error.message}. Fichier ignore, aucune image ni contenu invente.`,
+      );
+      continue;
+    }
+
     await writeFile(localPath, bytes);
 
     manifestFiles.push({
-    collectionId: candidate.source.collectionId,
+      collectionId: candidate.source.collectionId,
       driveFileId: candidate.file.driveFileId,
       driveUrl: candidate.file.driveUrl,
       fileName: candidate.file.fileName,
@@ -145,6 +202,30 @@ async function main() {
   );
   await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
   console.log(`Download manifest written: ${manifestPath}`);
+
+  if (skippedFiles.length > 0) {
+    const reportPath = path.join(
+      path.dirname(outputDirectory),
+      "reports",
+      "download-errors.json",
+    );
+    await writeDownloadErrorReport({
+      inventoryPath,
+      lotId,
+      outputDirectory,
+      reportPath,
+      skippedFiles,
+    });
+    console.warn(
+      `[DOWNLOAD WARNING] ${skippedFiles.length} fichier(s) ignores. Rapport local: ${reportPath}`,
+    );
+  }
+
+  if (manifestFiles.length === 0) {
+    throw new Error(
+      "Aucun fichier n'a ete telecharge. Consultez le rapport local de telechargement avant de reprendre le lot.",
+    );
+  }
 }
 
 function getDownloadCandidates(
@@ -188,12 +269,63 @@ async function downloadDriveFile(
 
   const response = await fetch(url);
   if (!response.ok) {
+    const body = await response.text();
+    const bodyPreview = compactBodyPreview(body);
+    if (isSkippableDriveResponse(response.status, body)) {
+      throw new SkippableDriveDownloadError(
+        `Telechargement Drive ignore (${response.status}) pour ${driveFileId}: ${bodyPreview}`,
+        response.status,
+      );
+    }
+
     throw new Error(
-      `Erreur telechargement Drive ${response.status} pour ${driveFileId}: ${await response.text()}`,
+      `Erreur telechargement Drive ${response.status} pour ${driveFileId}: ${bodyPreview}`,
     );
   }
 
   return Buffer.from(await response.arrayBuffer());
+}
+
+async function writeDownloadErrorReport(input: {
+  inventoryPath: string;
+  lotId: string;
+  outputDirectory: string;
+  reportPath: string;
+  skippedFiles: DownloadSkippedFile[];
+}) {
+  const report: DownloadErrorReport = {
+    generatedAt: new Date().toISOString(),
+    inventoryPath: input.inventoryPath,
+    lotId: input.lotId,
+    note:
+      "Rapport local des telechargements Drive ignores. Les fichiers listes n'ont pas ete telecharges et aucun contenu n'a ete invente.",
+    outputDirectory: input.outputDirectory,
+    reportType: "download-errors",
+    skippedFiles: input.skippedFiles,
+  };
+
+  await mkdir(path.dirname(input.reportPath), { recursive: true });
+  await writeFile(input.reportPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+}
+
+function isSkippableDriveResponse(status: number, body: string): boolean {
+  if (status === 403 || status === 429) {
+    return true;
+  }
+
+  const normalizedBody = body.toLocaleLowerCase("fr");
+  return (
+    normalizedBody.includes("downloadquotaexceeded") ||
+    normalizedBody.includes("userratelimitexceeded") ||
+    normalizedBody.includes("ratelimitexceeded") ||
+    normalizedBody.includes("quota") ||
+    normalizedBody.includes("abuse")
+  );
+}
+
+function compactBodyPreview(body: string): string {
+  const compact = body.replace(/\s+/g, " ").trim();
+  return compact.length > 500 ? `${compact.slice(0, 500)}...` : compact;
 }
 
 function formatDownloadFileName(candidate: DownloadCandidate): string {

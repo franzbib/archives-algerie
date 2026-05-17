@@ -195,6 +195,13 @@ générique pour un lot déclaré dans:
 data/generated/archive-batches.example.json
 ```
 
+La reprise apres interruption, les erreurs Drive 403/quota et les lectures
+assistees absentes sont detaillees dans:
+
+```text
+docs/BATCH_AGENT_RECOVERY.md
+```
+
 Commande cible:
 
 ```powershell
@@ -254,7 +261,7 @@ assistée vision, l'agent n'invente aucune lecture et n'écrit aucun JSON de
 lecture pour cette page. Il ajoute l'échec dans un rapport local :
 
 ```text
-.local/archive-batches/<lotId>/assisted-reading-vision/vision-errors.json
+.local/archive-batches/<lotId>/reports/assisted-reading-errors.json
 ```
 
 Chaque entrée du rapport conserve `reviewId`, OCR clean concerné, image locale
@@ -265,6 +272,19 @@ de produire le manifeste public des images déjà converties.
 Les pages signalées dans ce rapport doivent être reprises plus tard. Elles ne
 sont pas des lectures indisponibles validées et ne doivent pas être promues dans
 `data/generated/` sans contrôle.
+
+Les erreurs Drive recuperables, notamment 403/quota/anti-abus, sont tracees
+dans:
+
+```text
+.local/archive-batches/<lotId>/reports/download-errors.json
+```
+
+Le resume local du lot est ecrit dans:
+
+```text
+.local/archive-batches/<lotId>/reports/batch-summary.json
+```
 
 ### Publier les images sans lectures complètes
 
