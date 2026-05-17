@@ -34,6 +34,7 @@ interface AgentConfig {
   language: string;
   limit: number;
   lotId: string;
+  publishAssetsOnly: boolean;
   skipConversion: boolean;
   skipDownload: boolean;
   skipInventory: boolean;
@@ -692,6 +693,9 @@ function printIntro(config: AgentConfig, batch: ArchiveBatch, paths: AgentPaths)
   console.log(`Inventaire local: ${paths.inventoryPath}`);
   console.log(`Limite: ${config.limit}`);
   console.log(`Langue OCR: ${config.language}`);
+  if (config.publishAssetsOnly) {
+    console.log("Mode reprise: publication des assets uniquement.");
+  }
   console.log("Aucune promotion automatique vers data/generated.");
   console.log(
     "Aucune modification de Drive, R2 ou du manifeste principal hors etapes explicitement configurees.",
@@ -704,18 +708,25 @@ function getConfig(): AgentConfig {
     throw new Error("--lot est requis.");
   }
 
+  const publishAssetsOnly = process.argv.includes("--publish-assets-only");
+  if (publishAssetsOnly && process.argv.includes("--skip-upload")) {
+    throw new Error("--publish-assets-only ne peut pas etre combine avec --skip-upload.");
+  }
+
   return {
     confirmed: process.argv.includes("--confirm"),
     language: getArg("--lang") ?? "fra",
     limit: getLimit(),
     lotId,
-    skipConversion: process.argv.includes("--skip-conversion"),
-    skipDownload: process.argv.includes("--skip-download"),
-    skipInventory: process.argv.includes("--skip-inventory"),
-    skipNormalization: process.argv.includes("--skip-normalization"),
-    skipOcr: process.argv.includes("--skip-ocr"),
+    publishAssetsOnly,
+    skipConversion: publishAssetsOnly || process.argv.includes("--skip-conversion"),
+    skipDownload: publishAssetsOnly || process.argv.includes("--skip-download"),
+    skipInventory: publishAssetsOnly || process.argv.includes("--skip-inventory"),
+    skipNormalization:
+      publishAssetsOnly || process.argv.includes("--skip-normalization"),
+    skipOcr: publishAssetsOnly || process.argv.includes("--skip-ocr"),
     skipUpload: process.argv.includes("--skip-upload"),
-    skipVision: process.argv.includes("--skip-vision"),
+    skipVision: publishAssetsOnly || process.argv.includes("--skip-vision"),
     workspacePath:
       getArg("--workspace") ?? path.join(".local", "archive-batches", lotId),
   };

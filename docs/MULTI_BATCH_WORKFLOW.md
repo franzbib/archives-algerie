@@ -228,6 +228,7 @@ Options de reprise:
 --skip-normalization
 --skip-vision
 --skip-upload
+--publish-assets-only
 --limit 100
 --confirm
 ```
@@ -264,6 +265,39 @@ de produire le manifeste public des images déjà converties.
 Les pages signalées dans ce rapport doivent être reprises plus tard. Elles ne
 sont pas des lectures indisponibles validées et ne doivent pas être promues dans
 `data/generated/` sans contrôle.
+
+### Publier les images sans lectures complètes
+
+Si un lot a déjà été téléchargé et converti mais que les lectures assistées
+vision sont partielles ou bloquées, il est possible de reprendre seulement
+l'étape 7 pour produire le manifeste public local des images :
+
+```powershell
+npm.cmd run batch:agent -- --lot lot-gouas-zaouias-001 --publish-assets-only --limit 100 --confirm
+```
+
+Cette commande saute inventaire, téléchargement, conversion, OCR, normalisation
+et lecture assistée vision. Elle utilise les JPG déjà présents dans :
+
+```text
+.local/archive-batches/lot-gouas-zaouias-001/converted/
+```
+
+et le manifeste de conversion :
+
+```text
+.local/archive-batches/lot-gouas-zaouias-001/conversion-manifest.json
+```
+
+La sortie attendue est :
+
+```text
+.local/archive-batches/lot-gouas-zaouias-001/public/public-assets.json
+```
+
+Les variables R2 restent requises, aucune lecture assistée n'est générée et
+aucun OCR n'est modifié. Les lectures partielles déjà promues restent séparées
+du manifeste public des images.
 
 Pour préparer seulement les étapes locales sans IA ni upload:
 
