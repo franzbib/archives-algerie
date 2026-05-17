@@ -1,0 +1,74 @@
+[
+  {
+    "id": "toussaint-rouge-1954",
+    "date": "1954-11-01",
+    "title": "Toussaint rouge",
+    "summary": "Debut coordonne d'actions insurrectionnelles revendiquees par le FLN.",
+    "category": "repere-historique",
+    "sourceNote": "Repere general a consolider par des references historiographiques."
+  },
+  {
+    "id": "congres-soummam-1956",
+    "date": "1956-08-20",
+    "title": "Congres de la Soummam",
+    "summary": "Reorganisation politique et militaire du FLN/ALN pendant la guerre d'Algerie.",
+    "category": "repere-historique",
+    "sourceNote": "Repere general a consolider par des references historiographiques."
+  },
+  {
+    "id": "bataille-alger-1957",
+    "date": "1957-01-07",
+    "title": "Bataille d'Alger",
+    "summary": "Debut conventionnellement retenu de la sequence dite de la bataille d'Alger.",
+    "category": "repere-historique",
+    "sourceNote": "Repere chronologique general ; la datation exacte depend des definitions retenues."
+  },
+  {
+    "id": "retour-de-gaulle-1958",
+    "date": "1958-06-01",
+    "title": "Retour du general de Gaulle au pouvoir",
+    "summary": "Changement politique majeur en France dans le contexte de la guerre d'Algerie.",
+    "category": "repere-historique",
+    "sourceNote": "Repere general a consolider par des references historiographiques."
+  },
+  {
+    "id": "gpra-1958",
+    "date": "1958-09-19",
+    "title": "Proclamation du GPRA",
+    "summary": "Creation du Gouvernement provisoire de la Republique algerienne.",
+    "category": "repere-historique",
+    "sourceNote": "Repere general a consolider par des references historiographiques."
+  },
+  {
+    "id": "barricades-1960",
+    "date": "1960-01-24",
+    "title": "Semaine des barricades",
+    "summary": "Crise politique a Alger autour de l'avenir de l'Algerie francaise.",
+    "category": "repere-historique",
+    "sourceNote": "Repere general a consolider par des references historiographiques."
+  },
+  {
+    "id": "putsch-alger-1961",
+    "date": "1961-04-21",
+    "title": "Putsch d'Alger",
+    "summary": "Tentative de putsch militaire a Alger contre la politique algerienne du pouvoir francais.",
+    "category": "repere-historique",
+    "sourceNote": "Repere general a consolider par des references historiographiques."
+  },
+  {
+    "id": "accords-evian-1962",
+    "date": "1962-03-18",
+    "title": "Accords d'Evian",
+    "summary": "Signature des accords ouvrant la voie au cessez-le-feu et a l'independance.",
+    "category": "repere-historique",
+    "sourceNote": "Repere general a consolider par des references historiographiques."
+  },
+  {
+    "id": "independance-1962",
+    "date": "1962-07-05",
+    "title": "Independance de l'Algerie",
+    "summary": "Proclamation de l'independance de l'Algerie.",
+    "category": "repere-historique",
+    "sourceNote": "Repere general a consolider par des references historiographiques."
+  }
+]

@@ -11,6 +11,8 @@ import {
   Search,
   ShieldCheck,
 } from "lucide-react";
+import { ArchiveTimeline } from "@/components/timeline/archive-timeline";
+import { getArchiveTimelineData } from "@/lib/timeline";
 
 const exampleQuestions = [
   "Quels documents mentionnent Boghari entre 1958 et 1960 ?",
@@ -62,6 +64,8 @@ const safeguards = [
 ];
 
 export default function QuestionnementPage() {
+  const timeline = getArchiveTimelineData();
+
   return (
     <main className="min-h-screen bg-background pb-16">
       <div className="border-b border-paper-border bg-paper/60">
@@ -172,6 +176,8 @@ export default function QuestionnementPage() {
               ))}
             </div>
           </section>
+
+          <ArchiveTimeline timeline={timeline} />
 
           <section className="border border-paper-border bg-paper p-6 md:p-8">
             <div className="mb-6">
