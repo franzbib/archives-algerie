@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { FormEvent, useState } from "react";
+import { AlertTriangle, Search as SearchIcon } from "lucide-react";
 import type { ArchiveSearchDocument, ArchiveSearchResult } from "@/lib/searchIndex";
 
 type ArchiveSearchProps = {
@@ -35,92 +36,110 @@ export function ArchiveSearch({ documents }: ArchiveSearchProps) {
   }
 
   return (
-    <section className="border border-paper-border bg-paper p-6 md:p-8">
-      <div className="mb-6">
+    <section className="border border-paper-border bg-paper p-6 md:p-10">
+      <div className="mb-8 max-w-3xl">
         <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
           Recherche V1
         </p>
-        <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
+        <h2 className="mt-2 font-serif text-3xl font-medium text-foreground">
           Chercher dans les lectures assistées publiées
         </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-foreground/75">
-          Recherche textuelle simple, sans embeddings et sans IA. Elle interroge
-          les lectures assistées des lots prêts pour revue, ainsi que les titres
-          de lots, identifiants et noms de fichiers. Index V1 chargé :{" "}
-          {documents.length} lecture(s).
+        <p className="mt-4 text-base leading-7 text-foreground/80">
+          Cette recherche textuelle simple n&apos;utilise aucune IA. Elle interroge
+          directement les lectures assistées des lots prêts pour revue. Index
+          actuel : <strong className="font-medium text-foreground">{documents.length}</strong> fiches.
         </p>
       </div>
 
-      <form className="grid gap-3 sm:grid-cols-[1fr_auto]" onSubmit={handleSubmit}>
-        <input
-          aria-label="Recherche dans les lectures assistées"
-          className="w-full border-2 border-paper-border bg-background px-4 py-3 text-base text-foreground placeholder:text-warm/50"
-          onChange={(event) => setQuery(event.target.value)}
-          placeholder="Ex: Boghari, Wilaya, ralliements, Tiaret..."
-          type="search"
-          value={query}
-        />
-        <button
-          className="border border-foreground bg-foreground px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
-          type="submit"
-        >
-          Rechercher
-        </button>
+      <form className="relative max-w-4xl" onSubmit={handleSubmit}>
+        <div className="relative flex items-center">
+          <SearchIcon className="absolute left-5 h-6 w-6 text-warm" />
+          <input
+            aria-label="Recherche dans les lectures assistées"
+            className="w-full border-2 border-paper-border bg-background py-5 pl-14 pr-32 font-serif text-lg text-foreground placeholder:text-warm/50 focus:border-foreground focus:outline-none"
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Ex: Boghari, Wilaya, ralliements, Tiaret..."
+            type="search"
+            value={query}
+          />
+          <button
+            className="absolute right-2 top-2 bottom-2 bg-foreground px-6 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+            type="submit"
+          >
+            Chercher
+          </button>
+        </div>
+        <p className="mt-4 flex items-center gap-2 text-sm text-warm">
+          <AlertTriangle className="h-4 w-4" />
+          Les résultats doivent toujours être vérifiés sur l&apos;image source.
+        </p>
       </form>
 
-      <p className="mt-3 text-xs leading-5 text-warm">
-        Les résultats proviennent de lectures assistées non validées humainement.
-        Ils doivent toujours être vérifiés sur l&apos;image.
-      </p>
-
       {results ? (
-        <div className="mt-6">
-          <div className="mb-4 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-            <p className="font-mono text-xs uppercase tracking-widest text-warm">
-              {results.length} résultat(s)
-            </p>
-            <p className="text-xs leading-5 text-warm">{warning}</p>
+        <div className="mt-12">
+          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between border-b border-paper-border pb-4">
+            <h3 className="font-serif text-xl font-medium text-foreground">
+              {results.length > 0 ? `${results.length} résultat(s) pour “${searchedQuery}”` : "Aucun résultat"}
+            </h3>
+            <p className="text-sm font-medium text-amber-700">{warning}</p>
           </div>
 
           {results.length > 0 ? (
-            <div className="space-y-3">
+            <div className="space-y-6">
               {results.map((result) => (
                 <article
-                  className="border border-paper-border bg-background p-4"
+                  className="group relative border border-paper-border bg-background transition-colors hover:border-warm/50"
                   key={result.id}
                 >
-                  <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-                    <div>
-                      <p className="font-mono text-[10px] uppercase tracking-widest text-warm">
-                        {result.lotId} · {result.reviewId}
-                      </p>
-                      <h3 className="mt-1 font-serif text-lg font-medium text-foreground">
-                        {result.lotTitle}
-                      </h3>
+                  <div className="p-6">
+                    <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
+                            {result.lotId}
+                          </span>
+                          <span className="text-warm/50">•</span>
+                          <span className="font-mono text-[10px] uppercase tracking-widest text-warm/80">
+                            {result.sourceFileName || "Fichier inconnu"}
+                          </span>
+                        </div>
+                        <h4 className="font-serif text-lg font-medium text-foreground">
+                          {result.lotTitle}
+                        </h4>
+                      </div>
+                      <Link
+                        className="inline-flex shrink-0 items-center justify-center border border-paper-border bg-paper px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-foreground hover:bg-foreground hover:text-background"
+                        href={result.href}
+                      >
+                        Consulter la fiche
+                      </Link>
                     </div>
-                    <Link
-                      className="w-fit border border-foreground px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
-                      href={result.href}
-                    >
-                      Ouvrir
-                    </Link>
+
+                    <div className="mt-6 border-l-2 border-warm/30 pl-4">
+                      <p className="font-serif text-base leading-7 text-foreground/90 italic">
+                        &laquo; {result.excerpt} &raquo;
+                      </p>
+                    </div>
                   </div>
 
-                  <p className="mt-3 text-sm leading-6 text-foreground/75">
-                    {result.excerpt}
-                  </p>
-                  <p className="mt-3 text-xs leading-5 text-warm">
-                    Fichier : {result.sourceFileName || "Non renseigné"} · Lecture
-                    assistée non validée · Champs : {result.matchedFields.join(", ")}
-                  </p>
+                  <div className="border-t border-paper-border bg-paper/30 px-6 py-3">
+                    <p className="text-xs text-warm">
+                      Correspondance trouvée dans : <span className="font-medium text-foreground/70">{result.matchedFields.join(", ")}</span>
+                      {" "}· <span className="text-amber-700">Lecture non validée</span>
+                    </p>
+                  </div>
                 </article>
               ))}
             </div>
           ) : (
-            <p className="border border-paper-border bg-background px-4 py-3 text-sm text-warm">
-              Aucun résultat ne correspond à “{searchedQuery}” dans les lectures
-              assistées publiées.
-            </p>
+            <div className="border border-paper-border bg-paper p-8 text-center">
+              <p className="text-base text-foreground/80">
+                Aucun résultat ne correspond à la recherche <strong className="font-medium text-foreground">“{searchedQuery}”</strong>.
+              </p>
+              <p className="mt-2 text-sm text-warm">
+                Essayez d&apos;autres termes ou un nom de lot (ex: boghari).
+              </p>
+            </div>
           )}
         </div>
       ) : null}
@@ -139,10 +158,10 @@ function searchDocuments(
 
   for (const document of documents) {
     const fields = {
-      lotTitle: document.lotTitle,
-      reviewId: document.reviewId,
-      sourceFileName: document.sourceFileName,
-      text: document.assistedReadingText,
+      "Titre du lot": document.lotTitle,
+      "ID de revue": document.reviewId,
+      "Nom du fichier": document.sourceFileName,
+      "Lecture assistée": document.assistedReadingText,
     };
     const matchedFields = Object.entries(fields)
       .filter(([, value]) => {

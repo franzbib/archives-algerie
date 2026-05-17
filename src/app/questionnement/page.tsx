@@ -102,23 +102,23 @@ export default function QuestionnementPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-8 px-6 py-12 lg:grid-cols-[1fr_340px] lg:px-8">
-        <div className="space-y-8">
-          <section className="grid gap-4 md:grid-cols-2">
-            {currentState.map((item) => (
-              <InfoCard
-                icon={item.icon}
-                key={item.title}
-                text={item.text}
-                title={item.title}
-              />
-            ))}
-          </section>
+      <section className="mx-auto max-w-6xl space-y-12 px-6 py-12 lg:px-8">
+        <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {currentState.map((item) => (
+            <InfoCard
+              icon={item.icon}
+              key={item.title}
+              text={item.text}
+              title={item.title}
+            />
+          ))}
+        </section>
 
-          <ArchiveSearch documents={searchDocuments} />
+        <ArchiveSearch documents={searchDocuments} />
 
-          <ArchiveTimeline timeline={timeline} />
+        <ArchiveTimeline timeline={timeline} />
 
+        <div className="grid gap-8 md:grid-cols-2">
           <section className="border border-paper-border bg-paper p-6 md:p-8">
             <div className="mb-6 flex items-center gap-3">
               <Layers3 className="h-5 w-5 text-warm" />
@@ -145,47 +145,47 @@ export default function QuestionnementPage() {
               ))}
             </div>
           </section>
-        </div>
 
-        <aside className="h-fit space-y-6">
-          <section className="border border-paper-border bg-paper p-6 md:p-8">
-            <div className="flex items-start gap-3">
-              <AlertTriangle className="mt-1 h-5 w-5 shrink-0 text-warm" />
-              <div>
-                <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-                  Garde-fous
-                </p>
-                <h2 className="mt-1 font-serif text-xl font-medium text-foreground">
-                  Ce que la page ne fait pas
-                </h2>
+          <div className="space-y-6">
+            <section className="border border-paper-border bg-paper p-6 md:p-8">
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="mt-1 h-5 w-5 shrink-0 text-warm" />
+                <div>
+                  <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+                    Garde-fous
+                  </p>
+                  <h2 className="mt-1 font-serif text-xl font-medium text-foreground">
+                    Ce que la page ne fait pas
+                  </h2>
+                </div>
               </div>
-            </div>
-            <div className="mt-5 space-y-3">
-              {safeguards.map((rule) => (
-                <p
-                  className="border border-paper-border bg-background px-4 py-3 text-sm leading-6 text-foreground/80"
-                  key={rule}
-                >
-                  {rule}
-                </p>
-              ))}
-            </div>
-          </section>
+              <div className="mt-5 space-y-3">
+                {safeguards.map((rule) => (
+                  <p
+                    className="border border-paper-border bg-background px-4 py-3 text-sm leading-6 text-foreground/80"
+                    key={rule}
+                  >
+                    {rule}
+                  </p>
+                ))}
+              </div>
+            </section>
 
-          <section className="border border-paper-border bg-paper p-6 md:p-8">
-            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-              Prochaine étape
-            </p>
-            <h2 className="mt-2 font-serif text-xl font-medium text-foreground">
-              Vers une recherche sourcée
-            </h2>
-            <p className="mt-3 text-sm leading-6 text-foreground/75">
-              La suite logique consiste a consolider les corrections humaines,
-              distinguer les niveaux de confiance, puis seulement ensuite
-              preparer une recherche semantique citee et verifiable.
-            </p>
-          </section>
-        </aside>
+            <section className="border border-paper-border bg-paper p-6 md:p-8">
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+                Prochaine étape
+              </p>
+              <h2 className="mt-2 font-serif text-xl font-medium text-foreground">
+                Vers une recherche sourcée
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-foreground/75">
+                La suite logique consiste a consolider les corrections humaines,
+                distinguer les niveaux de confiance, puis seulement ensuite
+                preparer une recherche semantique citee et verifiable.
+              </p>
+            </section>
+          </div>
+        </div>
       </section>
     </main>
   );
@@ -205,7 +205,7 @@ function InfoCard({
       <div className="flex items-start gap-3">
         <div className="text-warm">{icon}</div>
         <div>
-          <h2 className="font-serif text-xl font-medium text-foreground">
+          <h2 className="font-serif text-lg font-medium text-foreground">
             {title}
           </h2>
           <p className="mt-2 text-sm leading-6 text-foreground/75">{text}</p>
