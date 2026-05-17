@@ -88,6 +88,23 @@
       "notes": "Lot SHD 1H1949 W4 pret pour revue ; images publiees non validees. Lectures assistees attendues dans le manifeste controle du lot."
     },
     {
+      "lotId": "lot-tiaret-zaouias-001",
+      "collectionId": "shd-1h4027-zaouias-fln-collabos-tiaret-laghouat-aflou",
+      "title": "SHD 1H4027 - Zaouias, FLN et collabos, Tiaret, Laghouat, Aflou",
+      "sourceType": "google_drive",
+      "status": "planned",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1kyMpV78IZbzW9bcRM7-fqY9SoCuCspys",
+        "inventoryManifest": null
+      },
+      "assetManifest": null,
+      "assistedReadingManifest": null,
+      "reviewRoute": null,
+      "legacyReviewRoute": null,
+      "itemCount": null,
+      "notes": "Source Drive identifiee par connecteur : dossier SHD 1H4027, Zaouias, FLN et collabos, Tiaret, Laghouat, Aflou. Le premier releve contient des images JPEG ; lot adapte a l'agent images existant."
+    },
+    {
       "lotId": "lot-frontiere-maroc-001",
       "collectionId": "shd-gr-9m2274-frontiere-maroc",
       "title": "SHD GR 9 M 2274 - Frontiere Maroc",
