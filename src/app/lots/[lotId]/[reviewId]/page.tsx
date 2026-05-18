@@ -6,6 +6,7 @@ import {
   FileWarning,
   ShieldAlert,
 } from "lucide-react";
+import { DocumentAnnotations } from "@/components/document-annotations";
 import { StatusBadge } from "@/components/ui/status-badge";
 import {
   getArchiveBatchAssetForReview,
@@ -168,6 +169,7 @@ export default async function GenericLotReviewPage({
             />
           )}
           <HumanValidationPanel />
+          <DocumentAnnotations lotId={batch.lotId} reviewId={reviewItem.reviewId} />
           <CopyableHumanReviewTemplate template={humanReviewTemplate} />
           {humanReviewNote && <HumanReviewNotesPanel note={humanReviewNote} />}
         </aside>

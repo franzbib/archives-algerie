@@ -19,6 +19,7 @@
     "search:local": "tsx scripts/search-local-index.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.105.4",
     "heic-convert": "^2.1.0",
     "lucide-react": "^1.14.0",
     "next": "16.2.6",
