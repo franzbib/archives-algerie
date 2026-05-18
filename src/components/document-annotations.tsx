@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { supabaseClient } from "@/lib/supabaseClient";
 
 const ANNOTATION_TYPES = [
@@ -35,8 +35,17 @@ export function DocumentAnnotations({
   const [authorName, setAuthorName] = useState("");
   const [body, setBody] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [adminPassword, setAdminPassword] = useState("");
+  const [adminError, setAdminError] = useState<string | null>(null);
+  const [adminMessage, setAdminMessage] = useState<string | null>(null);
+  const [isAdminLoading, setIsAdminLoading] = useState(false);
+  const [publishingAnnotationId, setPublishingAnnotationId] = useState<
+    string | null
+  >(null);
+  const [pendingAnnotations, setPendingAnnotations] = useState<
+    DocumentAnnotation[]
+  >([]);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
   const annotationTypeLabels = useMemo(
@@ -47,16 +56,11 @@ export function DocumentAnnotations({
     [],
   );
 
-  useEffect(() => {
-    let isCurrent = true;
-
-    async function loadPublishedAnnotations() {
+  const loadPublishedAnnotations = useCallback(
+    async (isCurrent: () => boolean = () => true) => {
       if (!supabaseClient) {
         return;
       }
-
-      setIsLoading(true);
-      setError(null);
 
       const { data, error: loadError } = await supabaseClient
         .from("document_annotations")
@@ -66,21 +70,50 @@ export function DocumentAnnotations({
         .eq("status", "published")
         .order("created_at", { ascending: false });
 
-      if (!isCurrent) {
+      if (!isCurrent()) {
         return;
       }
 
       if (loadError) {
-        setError("Impossible de charger les annotations publiees.");
+        setError(
+          `Impossible de charger les annotations publiées. ${loadError.message}`,
+        );
         setAnnotations([]);
       } else {
         setAnnotations((data ?? []) as DocumentAnnotation[]);
       }
+    },
+    [lotId, reviewId],
+  );
 
-      setIsLoading(false);
+  useEffect(() => {
+    let isCurrent = true;
+
+    if (!supabaseClient) {
+      return;
     }
 
-    loadPublishedAnnotations();
+    supabaseClient
+      .from("document_annotations")
+      .select("id, annotation_type, author_name, body, created_at")
+      .eq("lot_id", lotId)
+      .eq("review_id", reviewId)
+      .eq("status", "published")
+      .order("created_at", { ascending: false })
+      .then(({ data, error: loadError }) => {
+        if (!isCurrent) {
+          return;
+        }
+
+        if (loadError) {
+          setError(
+            `Impossible de charger les annotations publiées. ${loadError.message}`,
+          );
+          setAnnotations([]);
+        } else {
+          setAnnotations((data ?? []) as DocumentAnnotation[]);
+        }
+      });
 
     return () => {
       isCurrent = false;
@@ -119,7 +152,9 @@ export function DocumentAnnotations({
       });
 
     if (insertError) {
-      setError("L'annotation n'a pas pu etre enregistree.");
+      setError(
+        `L'annotation n'a pas pu être enregistrée. ${insertError.message}`,
+      );
     } else {
       setAuthorName("");
       setBody("");
@@ -130,6 +165,107 @@ export function DocumentAnnotations({
     }
 
     setIsSubmitting(false);
+  }
+
+  async function handleLoadPendingAnnotations(
+    event: React.FormEvent<HTMLFormElement>,
+  ) {
+    event.preventDefault();
+
+    if (!supabaseClient) {
+      return;
+    }
+
+    const trimmedPassword = adminPassword.trim();
+    if (!trimmedPassword) {
+      setAdminError("Mot de passe requis.");
+      setAdminMessage(null);
+      setPendingAnnotations([]);
+      return;
+    }
+
+    setAdminError(null);
+    setAdminMessage(null);
+    setIsAdminLoading(true);
+
+    const { data, error: rpcError } = await supabaseClient.rpc(
+      "list_pending_document_annotations",
+      {
+        admin_password: trimmedPassword,
+        page_lot_id: lotId,
+        page_review_id: reviewId,
+      },
+    );
+
+    if (rpcError) {
+      if (isMissingRpcError(rpcError)) {
+        setAdminError(
+          "Le module de validation n'est pas encore activé dans Supabase.",
+        );
+      } else {
+        setAdminError(
+          `Impossible de charger les annotations en attente. ${rpcError.message}`,
+        );
+      }
+      setPendingAnnotations([]);
+    } else {
+      const pendingRows = (data ?? []) as DocumentAnnotation[];
+      setPendingAnnotations(pendingRows);
+      setAdminMessage(
+        pendingRows.length > 0
+          ? `${pendingRows.length} annotation(s) en attente.`
+          : "Aucune annotation en attente pour cette page, ou mot de passe incorrect.",
+      );
+    }
+
+    setIsAdminLoading(false);
+  }
+
+  async function handlePublishAnnotation(annotationId: string) {
+    if (!supabaseClient) {
+      return;
+    }
+
+    const trimmedPassword = adminPassword.trim();
+    if (!trimmedPassword) {
+      setAdminError("Mot de passe requis.");
+      setAdminMessage(null);
+      return;
+    }
+
+    setAdminError(null);
+    setAdminMessage(null);
+    setPublishingAnnotationId(annotationId);
+
+    const { data, error: rpcError } = await supabaseClient.rpc(
+      "publish_document_annotation",
+      {
+        admin_password: trimmedPassword,
+        annotation_id: annotationId,
+      },
+    );
+
+    if (rpcError) {
+      if (isMissingRpcError(rpcError)) {
+        setAdminError(
+          "Le module de validation n'est pas encore activé dans Supabase.",
+        );
+      } else {
+        setAdminError(
+          `Impossible de publier cette annotation. ${rpcError.message}`,
+        );
+      }
+    } else if (data === true) {
+      setPendingAnnotations((current) =>
+        current.filter((annotation) => annotation.id !== annotationId),
+      );
+      await loadPublishedAnnotations();
+      setAdminMessage("Annotation publiée comme proposition de relecture.");
+    } else {
+      setAdminError("Publication refusée ou annotation déjà traitée.");
+    }
+
+    setPublishingAnnotationId(null);
   }
 
   if (!supabaseClient) {
@@ -159,11 +295,7 @@ export function DocumentAnnotations({
 
       <div className="space-y-6 p-5">
         <div className="space-y-4">
-          {isLoading ? (
-            <p className="text-sm text-foreground/70">
-              Chargement des annotations publiées...
-            </p>
-          ) : annotations.length > 0 ? (
+          {annotations.length > 0 ? (
             annotations.map((annotation) => (
               <article
                 className="border border-paper-border bg-background p-4 text-sm"
@@ -273,6 +405,86 @@ export function DocumentAnnotations({
             {isSubmitting ? "Enregistrement..." : "Proposer l'annotation"}
           </button>
         </form>
+
+        <section className="border-t border-paper-border pt-5">
+          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+            Relecture administrateur
+          </p>
+          <p className="mt-2 text-sm leading-6 text-foreground/70">
+            Publier une annotation la rend visible comme proposition de
+            relecture. Cela ne valide pas une transcription.
+          </p>
+
+          <form className="mt-4 flex flex-col gap-3" onSubmit={handleLoadPendingAnnotations}>
+            <label
+              className="font-mono text-xs font-semibold uppercase tracking-widest text-warm"
+              htmlFor="annotation-admin-password"
+            >
+              Mot de passe
+            </label>
+            <input
+              className="border border-paper-border bg-background px-3 py-2 text-sm text-foreground"
+              id="annotation-admin-password"
+              onChange={(event) => setAdminPassword(event.target.value)}
+              type="password"
+              value={adminPassword}
+            />
+            <button
+              className="self-start border border-paper-border bg-background px-3 py-2 text-sm font-semibold text-foreground transition hover:border-warm disabled:cursor-not-allowed disabled:opacity-60"
+              disabled={isAdminLoading}
+              type="submit"
+            >
+              {isAdminLoading ? "Verification..." : "Voir les annotations en attente"}
+            </button>
+          </form>
+
+          {adminError && <p className="mt-3 text-sm text-red-700">{adminError}</p>}
+          {adminMessage && (
+            <p className="mt-3 text-sm font-medium text-foreground">
+              {adminMessage}
+            </p>
+          )}
+
+          {pendingAnnotations.length > 0 && (
+            <div className="mt-4 space-y-3">
+              {pendingAnnotations.map((annotation) => (
+                <article
+                  className="border border-paper-border bg-background p-4 text-sm"
+                  key={annotation.id}
+                >
+                  <div className="flex flex-wrap items-center gap-2 border-b border-paper-border pb-3">
+                    <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">
+                      {annotationTypeLabels.get(annotation.annotation_type) ??
+                        annotation.annotation_type}
+                    </span>
+                    <span className="text-foreground/40">/</span>
+                    <span className="text-foreground/60">
+                      {formatAnnotationDate(annotation.created_at)}
+                    </span>
+                  </div>
+                  <p className="mt-3 whitespace-pre-wrap leading-6 text-foreground/85">
+                    {annotation.body}
+                  </p>
+                  {annotation.author_name && (
+                    <p className="mt-3 text-xs font-medium text-foreground/60">
+                      Proposé par {annotation.author_name}
+                    </p>
+                  )}
+                  <button
+                    className="mt-4 border border-warm px-3 py-2 text-sm font-semibold text-warm transition hover:bg-warm hover:text-paper disabled:cursor-not-allowed disabled:opacity-60"
+                    disabled={publishingAnnotationId === annotation.id}
+                    onClick={() => handlePublishAnnotation(annotation.id)}
+                    type="button"
+                  >
+                    {publishingAnnotationId === annotation.id
+                      ? "Publication..."
+                      : "Publier cette annotation"}
+                  </button>
+                </article>
+              ))}
+            </div>
+          )}
+        </section>
       </div>
     </section>
   );
@@ -283,4 +495,12 @@ function formatAnnotationDate(value: string): string {
     dateStyle: "medium",
     timeStyle: "short",
   }).format(new Date(value));
+}
+
+function isMissingRpcError(error: { code?: string; message?: string }): boolean {
+  return (
+    error.code === "PGRST202" ||
+    error.code === "42883" ||
+    error.message?.toLowerCase().includes("could not find the function") === true
+  );
 }

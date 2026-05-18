@@ -161,15 +161,21 @@ export default async function GenericLotReviewPage({
         <aside className="space-y-8">
           {languageDetection && <LanguageDetectionPanel detection={languageDetection} />}
           {assistedReading?.status === "assisted_unverified" ? (
-            <AssistedReadingPanel reading={assistedReading} reviewItem={reviewItem} />
+            <AssistedReadingPanel
+              lotId={batch.lotId}
+              reading={assistedReading}
+              reviewId={reviewItem.reviewId}
+              reviewItem={reviewItem}
+            />
           ) : (
             <MissingAssistedReadingPanel
+              lotId={batch.lotId}
               note={assistedReading?.note}
+              reviewId={reviewItem.reviewId}
               reviewItem={reviewItem}
             />
           )}
           <HumanValidationPanel />
-          <DocumentAnnotations lotId={batch.lotId} reviewId={reviewItem.reviewId} />
           <CopyableHumanReviewTemplate template={humanReviewTemplate} />
           {humanReviewNote && <HumanReviewNotesPanel note={humanReviewNote} />}
         </aside>
@@ -291,10 +297,14 @@ function SourceVisual({
 }
 
 function AssistedReadingPanel({
+  lotId,
   reading,
+  reviewId,
   reviewItem,
 }: {
+  lotId: string;
   reading: AssistedReadingExample;
+  reviewId: string;
   reviewItem: ArchiveBatchReviewItem;
 }) {
   return (
@@ -336,6 +346,7 @@ function AssistedReadingPanel({
           </pre>
         </div>
 
+        <DocumentAnnotations lotId={lotId} reviewId={reviewId} />
         <UncertaintiesList uncertainties={reading.uncertainties} />
       </div>
     </section>
@@ -343,10 +354,14 @@ function AssistedReadingPanel({
 }
 
 function MissingAssistedReadingPanel({
+  lotId,
   note,
+  reviewId,
   reviewItem,
 }: {
+  lotId: string;
   note?: string;
+  reviewId: string;
   reviewItem: ArchiveBatchReviewItem;
 }) {
   return (
@@ -365,6 +380,9 @@ function MissingAssistedReadingPanel({
       <p className="mt-3 text-sm leading-6 text-foreground/80">
         {note ?? "Aucune lecture assistee exploitable produite pour cette page."}
       </p>
+      <div className="mt-6">
+        <DocumentAnnotations lotId={lotId} reviewId={reviewId} />
+      </div>
     </section>
   );
 }
