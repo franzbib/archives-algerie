@@ -111,10 +111,41 @@ $$;
 comment on function public.list_pending_document_annotations(text, text, text) is
   'Lists pending document annotation proposals for manual review only. These proposals are not validated transcriptions.';
 
+create or replace function public.delete_document_annotation(
+  annotation_id uuid,
+  admin_password text
+)
+returns boolean
+language plpgsql
+security definer
+set search_path = public, extensions
+as $$
+declare
+  deleted_count integer;
+begin
+  if not public.verify_annotation_admin_password(admin_password) then
+    return false;
+  end if;
+
+  delete from public.document_annotations
+  where id = annotation_id
+    and status in ('pending', 'published');
+
+  get diagnostics deleted_count = row_count;
+
+  return deleted_count = 1;
+end;
+$$;
+
+comment on function public.delete_document_annotation(uuid, text) is
+  'Deletes pending or published document annotation proposals only. These annotations are not validated transcriptions.';
+
 revoke all on function public.publish_document_annotation(uuid, text) from public;
 revoke all on function public.list_pending_document_annotations(text, text, text) from public;
+revoke all on function public.delete_document_annotation(uuid, text) from public;
 grant execute on function public.publish_document_annotation(uuid, text) to anon;
 grant execute on function public.list_pending_document_annotations(text, text, text) to anon;
+grant execute on function public.delete_document_annotation(uuid, text) to anon, authenticated;
 
 -- Example initialization. Replace the placeholder locally in Supabase SQL Editor.
 -- Do not commit a real password.

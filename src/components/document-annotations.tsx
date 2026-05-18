@@ -40,6 +40,10 @@ export function DocumentAnnotations({
   const [adminError, setAdminError] = useState<string | null>(null);
   const [adminMessage, setAdminMessage] = useState<string | null>(null);
   const [isAdminLoading, setIsAdminLoading] = useState(false);
+  const [isAdminVerified, setIsAdminVerified] = useState(false);
+  const [deletingAnnotationId, setDeletingAnnotationId] = useState<
+    string | null
+  >(null);
   const [publishingAnnotationId, setPublishingAnnotationId] = useState<
     string | null
   >(null);
@@ -205,6 +209,60 @@ export function DocumentAnnotations({
     setAdminMessage(null);
     setIsAdminLoading(true);
 
+    const isVerified = await verifyAdminPassword(trimmedPassword);
+    if (!isVerified) {
+      setIsAdminVerified(false);
+      setAdminError("Mot de passe incorrect ou vérification impossible.");
+      setPendingAnnotations([]);
+      setIsAdminLoading(false);
+      return;
+    }
+
+    setIsAdminVerified(true);
+    await loadPendingAnnotations(trimmedPassword);
+    setIsAdminLoading(false);
+  }
+
+  async function verifyAdminPassword(trimmedPassword: string): Promise<boolean> {
+    if (!supabaseClient) {
+      return false;
+    }
+
+    try {
+      const { data, error: rpcError } = await supabaseClient.rpc(
+        "verify_annotation_admin_password",
+        {
+          admin_password: trimmedPassword,
+        },
+      );
+
+      if (rpcError) {
+        setAdminError(
+          formatSupabaseError(
+            "Impossible de vérifier le mot de passe administrateur",
+            rpcError,
+          ),
+        );
+        return false;
+      }
+
+      return data === true;
+    } catch (rpcError) {
+      setAdminError(
+        formatSupabaseError(
+          "Impossible de vérifier le mot de passe administrateur",
+          rpcError,
+        ),
+      );
+      return false;
+    }
+  }
+
+  async function loadPendingAnnotations(trimmedPassword: string) {
+    if (!supabaseClient) {
+      return;
+    }
+
     try {
       const { data, error: rpcError } = await supabaseClient.rpc(
         "list_pending_document_annotations",
@@ -240,8 +298,6 @@ export function DocumentAnnotations({
       setAdminError(formatSupabaseError("Impossible de charger les annotations en attente", rpcError));
       setPendingAnnotations([]);
     }
-
-    setIsAdminLoading(false);
   }
 
   async function handlePublishAnnotation(annotationId: string) {
@@ -296,6 +352,66 @@ export function DocumentAnnotations({
     setPublishingAnnotationId(null);
   }
 
+  async function handleDeleteAnnotation(annotationId: string) {
+    if (!supabaseClient) {
+      return;
+    }
+
+    const confirmed = window.confirm(
+      "Supprimer cette annotation ? Cette action est irréversible.",
+    );
+    if (!confirmed) {
+      return;
+    }
+
+    const trimmedPassword = adminPassword.trim();
+    if (!trimmedPassword) {
+      setAdminError("Mot de passe requis.");
+      setAdminMessage(null);
+      return;
+    }
+
+    setAdminError(null);
+    setAdminMessage(null);
+    setDeletingAnnotationId(annotationId);
+
+    try {
+      const { data, error: rpcError } = await supabaseClient.rpc(
+        "delete_document_annotation",
+        {
+          admin_password: trimmedPassword,
+          annotation_id: annotationId,
+        },
+      );
+
+      if (rpcError) {
+        setAdminError(
+          formatSupabaseError("Impossible de supprimer cette annotation", rpcError),
+        );
+      } else if (data === true) {
+        setAnnotations((current) =>
+          current.filter((annotation) => annotation.id !== annotationId),
+        );
+        setPendingAnnotations((current) =>
+          current.filter((annotation) => annotation.id !== annotationId),
+        );
+        await loadPublishedAnnotations();
+        if (isAdminVerified) {
+          await loadPendingAnnotations(trimmedPassword);
+        }
+        setAdminMessage("Annotation supprimée.");
+      } else {
+        setAdminError("Suppression refusée ou annotation déjà traitée.");
+      }
+    } catch (rpcError) {
+      setAdminError(
+        formatSupabaseError("Impossible de supprimer cette annotation", rpcError),
+      );
+    }
+
+    setDeletingAnnotationId(null);
+  }
+
   if (!supabaseClient) {
     return (
       <section className="border border-paper-border bg-paper p-5">
@@ -347,6 +463,18 @@ export function DocumentAnnotations({
                   <p className="mt-3 text-xs font-medium text-foreground/60">
                     Proposé par {annotation.author_name}
                   </p>
+                )}
+                {isAdminVerified && (
+                  <button
+                    className="mt-3 text-xs font-semibold text-foreground/50 underline decoration-paper-border underline-offset-4 transition hover:text-red-700 disabled:cursor-not-allowed disabled:opacity-60"
+                    disabled={deletingAnnotationId === annotation.id}
+                    onClick={() => handleDeleteAnnotation(annotation.id)}
+                    type="button"
+                  >
+                    {deletingAnnotationId === annotation.id
+                      ? "Suppression..."
+                      : "Supprimer"}
+                  </button>
                 )}
               </article>
             ))
@@ -461,7 +589,12 @@ export function DocumentAnnotations({
             <input
               className="border border-paper-border bg-background px-3 py-2 text-sm text-foreground"
               id="annotation-admin-password"
-              onChange={(event) => setAdminPassword(event.target.value)}
+              onChange={(event) => {
+                setAdminPassword(event.target.value);
+                setIsAdminVerified(false);
+                setPendingAnnotations([]);
+                setAdminMessage(null);
+              }}
               type="password"
               value={adminPassword}
             />
@@ -513,16 +646,28 @@ export function DocumentAnnotations({
                       Proposé par {annotation.author_name}
                     </p>
                   )}
-                  <button
-                    className="mt-4 border border-warm px-3 py-2 text-sm font-semibold text-warm transition hover:bg-warm hover:text-paper disabled:cursor-not-allowed disabled:opacity-60"
-                    disabled={publishingAnnotationId === annotation.id}
-                    onClick={() => handlePublishAnnotation(annotation.id)}
-                    type="button"
-                  >
-                    {publishingAnnotationId === annotation.id
-                      ? "Publication..."
-                      : "Publier cette annotation"}
-                  </button>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <button
+                      className="border border-warm px-3 py-2 text-sm font-semibold text-warm transition hover:bg-warm hover:text-paper disabled:cursor-not-allowed disabled:opacity-60"
+                      disabled={publishingAnnotationId === annotation.id}
+                      onClick={() => handlePublishAnnotation(annotation.id)}
+                      type="button"
+                    >
+                      {publishingAnnotationId === annotation.id
+                        ? "Publication..."
+                        : "Publier cette annotation"}
+                    </button>
+                    <button
+                      className="border border-paper-border px-3 py-2 text-sm font-semibold text-foreground/70 transition hover:border-red-700 hover:text-red-700 disabled:cursor-not-allowed disabled:opacity-60"
+                      disabled={deletingAnnotationId === annotation.id}
+                      onClick={() => handleDeleteAnnotation(annotation.id)}
+                      type="button"
+                    >
+                      {deletingAnnotationId === annotation.id
+                        ? "Suppression..."
+                        : "Supprimer"}
+                    </button>
+                  </div>
                 </article>
               ))}
             </div>
