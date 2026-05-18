@@ -1,7 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim();
 const validatedSupabaseUrl = validateSupabaseUrl(supabaseUrl);
 const validatedSupabaseAnonKey = validateSupabaseAnonKey(supabaseAnonKey);
 
@@ -19,14 +19,16 @@ export const supabaseClient = isSupabaseConfigured
   : null;
 
 function validateSupabaseUrl(value: string | undefined): string | null {
-  const trimmedValue = value?.trim();
+  if (!value) {
+    return null;
+  }
 
-  if (!trimmedValue) {
+  if (!value.startsWith("http://") && !value.startsWith("https://")) {
     return null;
   }
 
   try {
-    const url = new URL(trimmedValue);
+    const url = new URL(value);
     if (url.protocol !== "http:" && url.protocol !== "https:") {
       return null;
     }
@@ -38,7 +40,5 @@ function validateSupabaseUrl(value: string | undefined): string | null {
 }
 
 function validateSupabaseAnonKey(value: string | undefined): string | null {
-  const trimmedValue = value?.trim();
-
-  return trimmedValue || null;
+  return value || null;
 }

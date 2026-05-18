@@ -62,25 +62,32 @@ export function DocumentAnnotations({
         return;
       }
 
-      const { data, error: loadError } = await supabaseClient
-        .from("document_annotations")
-        .select("id, annotation_type, author_name, body, created_at")
-        .eq("lot_id", lotId)
-        .eq("review_id", reviewId)
-        .eq("status", "published")
-        .order("created_at", { ascending: false });
+      try {
+        const { data, error: loadError } = await supabaseClient
+          .from("document_annotations")
+          .select("id, annotation_type, author_name, body, created_at")
+          .eq("lot_id", lotId)
+          .eq("review_id", reviewId)
+          .eq("status", "published")
+          .order("created_at", { ascending: false });
 
-      if (!isCurrent()) {
-        return;
-      }
+        if (!isCurrent()) {
+          return;
+        }
 
-      if (loadError) {
-        setError(
-          `Impossible de charger les annotations publiées. ${loadError.message}`,
-        );
+        if (loadError) {
+          setError(formatSupabaseError("Impossible de charger les annotations publiées", loadError));
+          setAnnotations([]);
+        } else {
+          setAnnotations((data ?? []) as DocumentAnnotation[]);
+        }
+      } catch (loadError) {
+        if (!isCurrent()) {
+          return;
+        }
+
+        setError(formatSupabaseError("Impossible de charger les annotations publiées", loadError));
         setAnnotations([]);
-      } else {
-        setAnnotations((data ?? []) as DocumentAnnotation[]);
       }
     },
     [lotId, reviewId],
@@ -93,26 +100,34 @@ export function DocumentAnnotations({
       return;
     }
 
-    supabaseClient
-      .from("document_annotations")
-      .select("id, annotation_type, author_name, body, created_at")
-      .eq("lot_id", lotId)
-      .eq("review_id", reviewId)
-      .eq("status", "published")
-      .order("created_at", { ascending: false })
+    void Promise.resolve(
+      supabaseClient
+        .from("document_annotations")
+        .select("id, annotation_type, author_name, body, created_at")
+        .eq("lot_id", lotId)
+        .eq("review_id", reviewId)
+        .eq("status", "published")
+        .order("created_at", { ascending: false }),
+    )
       .then(({ data, error: loadError }) => {
         if (!isCurrent) {
           return;
         }
 
         if (loadError) {
-          setError(
-            `Impossible de charger les annotations publiées. ${loadError.message}`,
-          );
+          setError(formatSupabaseError("Impossible de charger les annotations publiées", loadError));
           setAnnotations([]);
         } else {
           setAnnotations((data ?? []) as DocumentAnnotation[]);
         }
+      })
+      .catch((loadError) => {
+        if (!isCurrent) {
+          return;
+        }
+
+        setError(formatSupabaseError("Impossible de charger les annotations publiées", loadError));
+        setAnnotations([]);
       });
 
     return () => {
@@ -140,28 +155,30 @@ export function DocumentAnnotations({
     setError(null);
     setSuccessMessage(null);
 
-    const { error: insertError } = await supabaseClient
-      .from("document_annotations")
-      .insert({
-        annotation_type: annotationType,
-        author_name: trimmedAuthorName || null,
-        body: trimmedBody,
-        lot_id: lotId,
-        review_id: reviewId,
-        status: "pending",
-      });
+    try {
+      const { error: insertError } = await supabaseClient
+        .from("document_annotations")
+        .insert({
+          annotation_type: annotationType,
+          author_name: trimmedAuthorName || null,
+          body: trimmedBody,
+          lot_id: lotId,
+          review_id: reviewId,
+          status: "pending",
+        });
 
-    if (insertError) {
-      setError(
-        `L'annotation n'a pas pu être enregistrée. ${insertError.message}`,
-      );
-    } else {
-      setAuthorName("");
-      setBody("");
-      setAnnotationType("note");
-      setSuccessMessage(
-        "Annotation enregistrée. Elle devra être relue avant publication.",
-      );
+      if (insertError) {
+        setError(formatSupabaseError("L'annotation n'a pas pu être enregistrée", insertError));
+      } else {
+        setAuthorName("");
+        setBody("");
+        setAnnotationType("note");
+        setSuccessMessage(
+          "Annotation enregistrée. Elle devra être relue avant publication.",
+        );
+      }
+    } catch (insertError) {
+      setError(formatSupabaseError("L'annotation n'a pas pu être enregistrée", insertError));
     }
 
     setIsSubmitting(false);
@@ -188,34 +205,37 @@ export function DocumentAnnotations({
     setAdminMessage(null);
     setIsAdminLoading(true);
 
-    const { data, error: rpcError } = await supabaseClient.rpc(
-      "list_pending_document_annotations",
-      {
-        admin_password: trimmedPassword,
-        page_lot_id: lotId,
-        page_review_id: reviewId,
-      },
-    );
+    try {
+      const { data, error: rpcError } = await supabaseClient.rpc(
+        "list_pending_document_annotations",
+        {
+          admin_password: trimmedPassword,
+          page_lot_id: lotId,
+          page_review_id: reviewId,
+        },
+      );
 
-    if (rpcError) {
-      if (isMissingRpcError(rpcError)) {
-        setAdminError(
-          "Le module de validation n'est pas encore activé dans Supabase.",
-        );
+      if (rpcError) {
+        if (isMissingRpcError(rpcError)) {
+          setAdminError(
+            "Le module de validation n'est pas encore activé dans Supabase.",
+          );
+        } else {
+          setAdminError(formatSupabaseError("Impossible de charger les annotations en attente", rpcError));
+        }
+        setPendingAnnotations([]);
       } else {
-        setAdminError(
-          `Impossible de charger les annotations en attente. ${rpcError.message}`,
+        const pendingRows = (data ?? []) as DocumentAnnotation[];
+        setPendingAnnotations(pendingRows);
+        setAdminMessage(
+          pendingRows.length > 0
+            ? `${pendingRows.length} annotation(s) en attente.`
+            : "Aucune annotation en attente pour cette page, ou mot de passe incorrect.",
         );
       }
+    } catch (rpcError) {
+      setAdminError(formatSupabaseError("Impossible de charger les annotations en attente", rpcError));
       setPendingAnnotations([]);
-    } else {
-      const pendingRows = (data ?? []) as DocumentAnnotation[];
-      setPendingAnnotations(pendingRows);
-      setAdminMessage(
-        pendingRows.length > 0
-          ? `${pendingRows.length} annotation(s) en attente.`
-          : "Aucune annotation en attente pour cette page, ou mot de passe incorrect.",
-      );
     }
 
     setIsAdminLoading(false);
@@ -237,32 +257,34 @@ export function DocumentAnnotations({
     setAdminMessage(null);
     setPublishingAnnotationId(annotationId);
 
-    const { data, error: rpcError } = await supabaseClient.rpc(
-      "publish_document_annotation",
-      {
-        admin_password: trimmedPassword,
-        annotation_id: annotationId,
-      },
-    );
-
-    if (rpcError) {
-      if (isMissingRpcError(rpcError)) {
-        setAdminError(
-          "Le module de validation n'est pas encore activé dans Supabase.",
-        );
-      } else {
-        setAdminError(
-          `Impossible de publier cette annotation. ${rpcError.message}`,
-        );
-      }
-    } else if (data === true) {
-      setPendingAnnotations((current) =>
-        current.filter((annotation) => annotation.id !== annotationId),
+    try {
+      const { data, error: rpcError } = await supabaseClient.rpc(
+        "publish_document_annotation",
+        {
+          admin_password: trimmedPassword,
+          annotation_id: annotationId,
+        },
       );
-      await loadPublishedAnnotations();
-      setAdminMessage("Annotation publiée comme proposition de relecture.");
-    } else {
-      setAdminError("Publication refusée ou annotation déjà traitée.");
+
+      if (rpcError) {
+        if (isMissingRpcError(rpcError)) {
+          setAdminError(
+            "Le module de validation n'est pas encore activé dans Supabase.",
+          );
+        } else {
+          setAdminError(formatSupabaseError("Impossible de publier cette annotation", rpcError));
+        }
+      } else if (data === true) {
+        setPendingAnnotations((current) =>
+          current.filter((annotation) => annotation.id !== annotationId),
+        );
+        await loadPublishedAnnotations();
+        setAdminMessage("Annotation publiée comme proposition de relecture.");
+      } else {
+        setAdminError("Publication refusée ou annotation déjà traitée.");
+      }
+    } catch (rpcError) {
+      setAdminError(formatSupabaseError("Impossible de publier cette annotation", rpcError));
     }
 
     setPublishingAnnotationId(null);
@@ -502,5 +524,37 @@ function isMissingRpcError(error: { code?: string; message?: string }): boolean 
     error.code === "PGRST202" ||
     error.code === "42883" ||
     error.message?.toLowerCase().includes("could not find the function") === true
+  );
+}
+
+function formatSupabaseError(context: string, error: unknown): string {
+  if (isFailedFetchError(error)) {
+    return `${context}. Connexion Supabase impossible (Failed to fetch). Vérifiez NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY dans Vercel, et la connectivité du projet Supabase.`;
+  }
+
+  if (isSupabaseError(error) && error.message) {
+    return `${context}. ${error.message}`;
+  }
+
+  if (error instanceof Error && error.message) {
+    return `${context}. ${error.message}`;
+  }
+
+  return `${context}. Erreur Supabase inconnue.`;
+}
+
+function isFailedFetchError(error: unknown): boolean {
+  return (
+    error instanceof TypeError &&
+    error.message.toLowerCase().includes("failed to fetch")
+  );
+}
+
+function isSupabaseError(error: unknown): error is { message: string } {
+  return (
+    typeof error === "object" &&
+    error !== null &&
+    "message" in error &&
+    typeof error.message === "string"
   );
 }
