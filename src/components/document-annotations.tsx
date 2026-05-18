@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { supabaseClient } from "@/lib/supabaseClient";
+import { supabaseClient, supabaseDiagnostics } from "@/lib/supabaseClient";
 
 const ANNOTATION_TYPES = [
   { label: "Note de lecture", value: "note" },
@@ -300,6 +300,7 @@ export function DocumentAnnotations({
           Les annotations persistantes ne sont pas encore activées sur cette
           installation.
         </p>
+        <SupabaseDiagnosticDetails />
       </section>
     );
   }
@@ -414,7 +415,12 @@ export function DocumentAnnotations({
             />
           </div>
 
-          {error && <p className="text-sm text-red-700">{error}</p>}
+          {error && (
+            <div>
+              <p className="text-sm text-red-700">{error}</p>
+              <SupabaseDiagnosticDetails />
+            </div>
+          )}
           {successMessage && (
             <p className="text-sm font-medium text-foreground">{successMessage}</p>
           )}
@@ -460,7 +466,12 @@ export function DocumentAnnotations({
             </button>
           </form>
 
-          {adminError && <p className="mt-3 text-sm text-red-700">{adminError}</p>}
+          {adminError && (
+            <div className="mt-3">
+              <p className="text-sm text-red-700">{adminError}</p>
+              <SupabaseDiagnosticDetails />
+            </div>
+          )}
           {adminMessage && (
             <p className="mt-3 text-sm font-medium text-foreground">
               {adminMessage}
@@ -556,5 +567,30 @@ function isSupabaseError(error: unknown): error is { message: string } {
     error !== null &&
     "message" in error &&
     typeof error.message === "string"
+  );
+}
+
+function SupabaseDiagnosticDetails() {
+  return (
+    <dl className="mt-3 grid gap-1 text-xs leading-5 text-foreground/60">
+      <div>
+        <dt className="inline font-semibold">Supabase configuré : </dt>
+        <dd className="inline">
+          {supabaseDiagnostics.configured ? "oui" : "non"}
+        </dd>
+      </div>
+      <div>
+        <dt className="inline font-semibold">Domaine Supabase détecté : </dt>
+        <dd className="inline">
+          {supabaseDiagnostics.hostname ?? "non détecté"}
+        </dd>
+      </div>
+      <div>
+        <dt className="inline font-semibold">URL invalide : </dt>
+        <dd className="inline">
+          {supabaseDiagnostics.invalidUrl ? "oui" : "non"}
+        </dd>
+      </div>
+    </dl>
   );
 }
