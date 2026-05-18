@@ -418,7 +418,9 @@ export function DocumentAnnotations({
           {error && (
             <div>
               <p className="text-sm text-red-700">{error}</p>
-              <SupabaseDiagnosticDetails />
+              <SupabaseDiagnosticDetails
+                technicalMessage={getShortTechnicalMessage(error)}
+              />
             </div>
           )}
           {successMessage && (
@@ -469,7 +471,9 @@ export function DocumentAnnotations({
           {adminError && (
             <div className="mt-3">
               <p className="text-sm text-red-700">{adminError}</p>
-              <SupabaseDiagnosticDetails />
+              <SupabaseDiagnosticDetails
+                technicalMessage={getShortTechnicalMessage(adminError)}
+              />
             </div>
           )}
           {adminMessage && (
@@ -570,9 +574,13 @@ function isSupabaseError(error: unknown): error is { message: string } {
   );
 }
 
-function SupabaseDiagnosticDetails() {
+function SupabaseDiagnosticDetails({
+  technicalMessage,
+}: {
+  technicalMessage?: string | null;
+}) {
   return (
-    <dl className="mt-3 grid gap-1 text-xs leading-5 text-foreground/60">
+    <dl className="mt-3 grid gap-1 border border-paper-border bg-background p-3 text-xs leading-5 text-foreground/70">
       <div>
         <dt className="inline font-semibold">Supabase configuré : </dt>
         <dd className="inline">
@@ -591,6 +599,19 @@ function SupabaseDiagnosticDetails() {
           {supabaseDiagnostics.invalidUrl ? "oui" : "non"}
         </dd>
       </div>
+      <div>
+        <dt className="inline font-semibold">Message technique court : </dt>
+        <dd className="inline">{technicalMessage ?? "aucun"}</dd>
+      </div>
     </dl>
   );
+}
+
+function getShortTechnicalMessage(message: string): string {
+  if (message.toLowerCase().includes("failed to fetch")) {
+    return "TypeError: Failed to fetch";
+  }
+
+  const [, technicalMessage] = message.split(". ");
+  return technicalMessage?.trim() || message;
 }
