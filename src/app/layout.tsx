@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
-import { Archive, ClipboardList, Layers3, Library, Search } from "lucide-react";
+import {
+  Archive,
+  ClipboardCheck,
+  ClipboardList,
+  Layers3,
+  Library,
+  Search,
+} from "lucide-react";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -63,6 +70,13 @@ export default function RootLayout({
               >
                 <ClipboardList className="h-4 w-4 stroke-[2]" />
                 Etat du corpus
+              </Link>
+              <Link
+                href="/relecture"
+                className="flex items-center gap-2 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
+              >
+                <ClipboardCheck className="h-4 w-4 stroke-[2]" />
+                Relecture
               </Link>
               <Link
                 href="/collections"
