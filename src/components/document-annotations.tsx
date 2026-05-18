@@ -218,7 +218,10 @@ export function DocumentAnnotations({
       if (rpcError) {
         if (isMissingRpcError(rpcError)) {
           setAdminError(
-            "Le module de validation n'est pas encore activé dans Supabase.",
+            formatSupabaseError(
+              "Fonction RPC introuvable ou signature incompatible côté Supabase",
+              rpcError,
+            ),
           );
         } else {
           setAdminError(formatSupabaseError("Impossible de charger les annotations en attente", rpcError));
@@ -269,7 +272,10 @@ export function DocumentAnnotations({
       if (rpcError) {
         if (isMissingRpcError(rpcError)) {
           setAdminError(
-            "Le module de validation n'est pas encore activé dans Supabase.",
+            formatSupabaseError(
+              "Fonction RPC introuvable ou signature incompatible côté Supabase",
+              rpcError,
+            ),
           );
         } else {
           setAdminError(formatSupabaseError("Impossible de publier cette annotation", rpcError));
@@ -548,7 +554,7 @@ function formatSupabaseError(context: string, error: unknown): string {
   }
 
   if (isSupabaseError(error) && error.message) {
-    return `${context}. ${error.message}`;
+    return `${context}. ${formatSupabaseTechnicalDetails(error)}`;
   }
 
   if (error instanceof Error && error.message) {
@@ -565,13 +571,22 @@ function isFailedFetchError(error: unknown): boolean {
   );
 }
 
-function isSupabaseError(error: unknown): error is { message: string } {
+function isSupabaseError(
+  error: unknown,
+): error is { code?: string; message: string } {
   return (
     typeof error === "object" &&
     error !== null &&
     "message" in error &&
     typeof error.message === "string"
   );
+}
+
+function formatSupabaseTechnicalDetails(error: {
+  code?: string;
+  message: string;
+}): string {
+  return error.code ? `${error.code}: ${error.message}` : error.message;
 }
 
 function SupabaseDiagnosticDetails({
