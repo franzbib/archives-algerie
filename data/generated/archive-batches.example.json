@@ -258,6 +258,40 @@
       "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees. Lot editorialement sensible a controler humainement avec prudence documentaire."
     },
     {
+      "lotId": "lot-histoire-algerie-francaise-tome-1-001",
+      "collectionId": "histoire-algerie-francaise-leynadier-clausel-tome-1",
+      "title": "Histoire de l'Algerie francaise - Leynadier et Clausel, tome 1",
+      "sourceType": "google_drive",
+      "status": "review_ready",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1JNdgkMl0BPhph9uQRruh-f3Y51hCGJCH",
+        "inventoryManifest": null
+      },
+      "assetManifest": "data/generated/batches/lot-histoire-algerie-francaise-tome-1-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-histoire-algerie-francaise-tome-1-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-histoire-algerie-francaise-tome-1-001",
+      "legacyReviewRoute": null,
+      "itemCount": 75,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
+    },
+    {
+      "lotId": "lot-titteri-1h1216-001",
+      "collectionId": "shd-1h1216-titteri",
+      "title": "SHD 1H1216 - Titteri",
+      "sourceType": "google_drive",
+      "status": "review_ready",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1yKtPIksZVAJrmzyopPniMVR8TtN2hyzE",
+        "inventoryManifest": null
+      },
+      "assetManifest": "data/generated/batches/lot-titteri-1h1216-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-titteri-1h1216-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-titteri-1h1216-001",
+      "legacyReviewRoute": null,
+      "itemCount": 86,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
+    },
+    {
       "lotId": "lot-fln-w4-005",
       "collectionId": "shd-gr-1h1646-lettres-directives-fln-wilaya4",
       "title": "SHD GR 1H1646 - Lettres et directives FLN Wilaya 4",
