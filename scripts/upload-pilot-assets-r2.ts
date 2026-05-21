@@ -209,20 +209,42 @@ async function putObjectToR2(options: {
     )}`,
   });
 
-  const response = await fetch(url, {
-    body: new Uint8Array(options.body),
-    headers: {
-      ...headers,
-      authorization,
-    },
-    method: "PUT",
-  });
+  let response: Response;
+
+  try {
+    response = await fetch(url, {
+      body: new Uint8Array(options.body),
+      headers: {
+        ...headers,
+        authorization,
+      },
+      method: "PUT",
+    });
+  } catch (error) {
+    throw new Error(
+      `Erreur reseau upload R2 pour ${options.objectKey}: ${formatFetchFailure(error)}`,
+    );
+  }
 
   if (!response.ok) {
     throw new Error(
       `Erreur upload R2 ${response.status} pour ${options.objectKey}: ${await response.text()}`,
     );
   }
+}
+
+function formatFetchFailure(error: unknown): string {
+  if (!(error instanceof Error)) {
+    return "erreur inconnue avant reponse HTTP.";
+  }
+
+  const cause = error.cause as { code?: unknown; name?: unknown } | undefined;
+  const code = typeof cause?.code === "string" ? cause.code : null;
+  const name = typeof cause?.name === "string" ? cause.name : error.name;
+
+  return code
+    ? `${error.message} (${name}, ${code})`
+    : `${error.message} (${name})`;
 }
 
 function signRequest(options: {
@@ -295,7 +317,7 @@ function sha256Hex(value: string | Buffer): string {
 }
 
 function getR2Config(): R2Config {
-  const accountId = requireEnv("R2_ACCOUNT_ID");
+  const accountId = normalizeR2AccountId(requireEnv("R2_ACCOUNT_ID"));
   const accessKeyId = requireEnv("R2_ACCESS_KEY_ID");
   const secretAccessKey = requireEnv("R2_SECRET_ACCESS_KEY");
   const bucketName = requireEnv("R2_BUCKET_NAME");
@@ -309,13 +331,29 @@ function getR2Config(): R2Config {
   };
 }
 
+function normalizeR2AccountId(value: string): string {
+  const hostLikeValue = value
+    .replace(/^https?:\/\//i, "")
+    .replace(/\/.*$/, "")
+    .replace(/\.r2\.cloudflarestorage\.com$/i, "");
+
+  if (!hostLikeValue || hostLikeValue.includes(".")) {
+    throw new Error(
+      "R2_ACCOUNT_ID doit contenir l'identifiant de compte Cloudflare ou l'endpoint R2 du compte.",
+    );
+  }
+
+  return hostLikeValue;
+}
+
 function requireEnv(name: string): string {
   const value = process.env[name];
-  if (!value) {
+  const trimmedValue = value?.trim();
+  if (!trimmedValue) {
     throw new Error(`${name} est requise pour l'upload R2.`);
   }
 
-  return value;
+  return trimmedValue;
 }
 
 async function requireDirectory(directoryPath: string, label: string) {

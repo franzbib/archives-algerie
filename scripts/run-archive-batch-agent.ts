@@ -610,10 +610,19 @@ function printSkipped(name: string) {
 function runTsx(args: string[]): Promise<void> {
   return new Promise((resolve, reject) => {
     const command = process.platform === "win32" ? "npx.cmd" : "npx";
-    console.log(`${command} tsx ${args.join(" ")}`);
-    const child = spawn(command, ["tsx", ...args], {
+    const childArgs = ["tsx", ...args];
+    const displayArgs = [command, ...childArgs].map(quoteShellArg).join(" ");
+    console.log(displayArgs);
+    const child = process.platform === "win32"
+      ? spawn("cmd.exe", ["/d", "/s", "/c", displayArgs], {
+          env: process.env,
+          shell: false,
+          stdio: "inherit",
+          windowsHide: false,
+        })
+      : spawn(command, childArgs, {
       env: process.env,
-      shell: process.platform === "win32",
+      shell: false,
       stdio: "inherit",
       windowsHide: false,
     });
@@ -628,6 +637,12 @@ function runTsx(args: string[]): Promise<void> {
       reject(new Error(`Etape echouee avec le code ${code}. Agent interrompu.`));
     });
   });
+}
+
+function quoteShellArg(arg: string): string {
+  if (!/[\s"'&()^<>|]/.test(arg)) return arg;
+
+  return `"${arg.replace(/"/g, '\\"')}"`;
 }
 
 async function requireDirectory(directoryPath: string, label: string) {
