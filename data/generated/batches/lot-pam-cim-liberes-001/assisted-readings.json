@@ -1,0 +1,1682 @@
+[
+  {
+    "reviewId": "page-01",
+    "sourceImage": "01-20260311_130710.jpg",
+    "assistedReadingText": "SHD    Fiche\nCadre magasinier\nGR 1 H 5086\nVI13 2 1 39 2 6\nCHARENE El-Yamine\n09/03/2026",
+    "uncertainties": [
+      {
+        "fragment": "CHARENE El-Yamine",
+        "suggestion": "Confirmer l'exactitude du nom propre dans l'image source.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "La mise en majuscule du patronyme et la typographie laissent peu de doute, mais la reconnaissance du tiret et de la graphie exacte dépend de l'image. Il pourrait exister de minimes variations typographiques."
+      },
+      {
+        "fragment": "09/03/2026",
+        "suggestion": "Revérifier la date visuellement pour garantir l'exactitude.",
+        "issue": "date_incertaine",
+        "confidence": "medium",
+        "note": "La date semble clairement indiquée sur l'image, mais la lisibilité des deux derniers chiffres peut prêter à confusion selon la résolution ou un défaut de collage/masquage."
+      },
+      {
+        "fragment": "VI13 2 1 39 2 6",
+        "suggestion": "Confirmer que le code est bien \"VI13 2 1 39 2 6\" tel que lu sur l'image.",
+        "issue": "sigle_incertain",
+        "confidence": "high",
+        "note": "La composition de ce code nécessite validation quant à sa structure (lettres/chiffres) et à la présence éventuelle d'espaces ou de symboles."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-02",
+    "sourceImage": "02-20260311_131156.jpg",
+    "assistedReadingText": "C/EM n° 209.S.61.\nCOMMANDANT SUPERIEUR DES FORCES EN ALGERIE.\nRÉGION TERRITORIALE N°1 CORPS D’ARMÉE D’ALGER.\nÉ.M. - 20e D.I.\nÉTAT-MAJOR – 2e Bureau.\nNo 2291 /EM/23B/2.\nP.C. le 22 AOUT 1961\n\nANALYSE\n- Extrait du rapport n° 254/I.C.I. du 29.7.61 du Général, Président de la Commission d’Inspection des Centres de détention administrative.\nOBJET: Inspection du C.A.... et de la Transmission n° 2.226/fr/C.A./2 du 10.8.1961.\n\nSECRET/CONFIDENTIEL\n\nTRANSMIS\nà\n- M. le Colonel, commandant le Secteur de MÉDÉA.\n- M. le Colonel, commandant le Secteur de BOUGARA/PAUL CAZIER.\n- M. le Colonel, commandant le Secteur d’AFNADA.\n- M. le Colonel, commandant le Secteur de SOU SAADA.\n- le Commandant du Cdo. de BOUGARA.\n\npour information\nSuite à transmission n° 2.272/23B/2. du 11.8.1961.\n\nLe Général de Brigade ROUHET,\nCommandant la Z.S.A. et la 20e D.I.\n\nP.O. Le Colonel OBIER\nAdjoint au Général Cdt la Z.S.A. et la 20e D.I.\n\n[Cachet]\n20e DIVISION D'INFANTERIE\nLe Général\n\n[Signature]",
+    "uncertainties": [
+      {
+        "fragment": "C.A....",
+        "suggestion": "Probablement 'Corps d’Armée', mais la lecture n'est pas assurée.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "Le nom complet du centre ou unité inspecté est partiellement masqué/illisible dans l'image."
+      },
+      {
+        "fragment": "ROUHET",
+        "suggestion": "Général ROUHET (à vérifier).",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Lecture probable du nom du Général signataire, difficile à confirmer sans certitude absolue."
+      },
+      {
+        "fragment": "OBIER",
+        "suggestion": "OBIER.",
+        "issue": "nom_propre_incertain",
+        "confidence": "high",
+        "note": "Le nom du Colonel adjoint est clair sur l'image mais doit être confirmé par vérification externe."
+      },
+      {
+        "fragment": "[Signature manuscrite]",
+        "suggestion": "",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "Impossible de lire clairement la signature manuscrite en bas à droite."
+      },
+      {
+        "fragment": "[Cachet] 20e DIVISION D'INFANTERIE Le Général",
+        "suggestion": "20e DIVISION D'INFANTERIE Le Général",
+        "issue": "lecture_probable",
+        "confidence": "high",
+        "note": "Le cachet est lisible mais abrégé ici, certain à propos de la division et du titre."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-03",
+    "sourceImage": "03-20260311_131205.jpg",
+    "assistedReadingText": "ANNEXE :\n- Extrait du rapport n° 254/F.C.I. du 29.7.1961 du Général Président de la Commission d’Inspection des Centres de Détention administrative.\nOBJET :\n- Inspection du C.T.I. et des C.T.A. de la R.T.A.\n\nCOMMANDEMENT SUPÉRIEUR DES FORCES EN ALGÉRIE\nRÉGION TERRITORIALE & CORPS D’ARMÉE D’ALGER\nÉTAT-MAJOR – 2e BUREAU\nALGER, le 15 Août 1961\nN° 2.226/2e Br/CAB/B2/CTR.\nCité à C.T.A.\n\n// TRANSMIS\n\nÀ :\n- le Général, commandant la R.T.A. & la 20e D.I.\n- [ligne partiellement illisible]\n- pour information à :\n\nIl est rappelé que la durée d’assignation à résidence dans les C.T.A. demeure fixée à six mois maximum pour tous les individus NE faisant PAS l’objet d’un ordre de poursuite émanant du Procureur de la République ou ne pouvant être poursuivis devant les tribunaux civils ou militaires. (rappel de la circulaire déjà établie par le Général commandant la Zone d’Organisation Urbaine un C.I.E. ou dans un C.T.A. (lettre n° 727/c/s. en date du 24 Juillet 1961).\n\nCependant, l’arrêté d’assignation à résidence temporaire doit être signé par le Sous-Préfet sur proposition du Commandant du secteur pour une durée maximum de trois mois (Mémento n° 63/cab/J.S. du 12 avril 1960, Chapitre V, § 3).\n\nLe Général de Division de MENTEUSE\nCommandant la Région Territoriale et le C.A., ALGER\nP.o. Le Colonel GAVARD,\nChef d’État-major.\n\nsigné : GAVARD.",
+    "uncertainties": [
+      {
+        "fragment": "MENTEUSE",
+        "suggestion": "Vérifier sur sources complémentaires ou relecture attentive.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le nom du Général Commandant la Région apparait difficilement lisible (MENTEUSE ou similaire). Une vérification visuelle ne permet pas d’établir le nom avec une haute certitude."
+      },
+      {
+        "fragment": "le Général, commandant la R.T.A. & la 20e D.I.",
+        "suggestion": "Laisser ouvert à révision.",
+        "issue": "lecture_probable",
+        "confidence": "medium",
+        "note": "La formulation du destinataire comporte une abréviation (R.T.A.) et l’ajout '& la 20e D.I.' qui reste à valider avec une lecture plus attentive ou recoupement de sources."
+      },
+      {
+        "fragment": "[ligne partiellement illisible après destinataire]",
+        "suggestion": "Relecture nécessaire pour établir une transcription plus sûre.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "L’image montre après le bloc \"À:\" une ligne difficilement lisible dans les copies, susceptible de contenir un ou plusieurs noms propres."
+      },
+      {
+        "fragment": "C.T.I., C.T.A., R.T.A.",
+        "suggestion": "Garder la lecture des sigles telle quelle sans développement.",
+        "issue": "sigle_incertain",
+        "confidence": "high",
+        "note": "Plusieurs sigles apparaissent dans le texte. Leur lecture visuelle est correcte, mais leur signification exacte ne doit pas être affirmée sans contexte externe."
+      },
+      {
+        "fragment": "lettre n° 727/c/s. en date du 24 Juillet 1961",
+        "suggestion": "Conserver la date mais rappeler l’incertitude.",
+        "issue": "date_incertaine",
+        "confidence": "high",
+        "note": "La date mentionnée apparaît claire sur l'image, mais en l’absence de relecture humaine, il reste une incertitude imposée par la méthodologie."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-04",
+    "sourceImage": "04-20260311_131248.jpg",
+    "assistedReadingText": "DELEGATION GENERALE EN ALGERIE\n\nCABINET DU DELEGUE GENERAL\n\nn° 727/C.C./s\n\nREPUBLIQUE FRANCAISE\n\nALGER, le 24 JUILLET 1961\n\nLE DELEGUE GENERAL EN ALGERIE\n\na - Monsieur le GENERAL Commandant Supérieur des Forces en Algérie\n- Messieurs les Préfets Inspecteurs Généraux Régionaux d'ALGER - d'ORAN - de CONSTANTINE\n- Messieurs les Préfets de Police d'ALGER et d'ORAN\n- Messieurs les Préfets des Départements Algériens\n- Monsieur le Procureur Général près la Cour d'Appel d'ORAN, Président de la Commission d'Inspection des Centres de Détention Administrative\n- Monsieur le Préfet, Directeur du Service Central des Centres d'Hébergement.\n\nO B J E T : Assignations à résidence surveillée\n\nREFERENCE : Instruction n° 10.772/CC du 7 Décembre 1960\nT.O. n° 1299 à 1303 du 18 Mai 1961.\n\nConformément aux directives gouvernementales, une diminution substantielle des effectifs des internés administratifs a été obtenue depuis le 20 Mai 1961.\n\nIl importe de maintenir le courant des allègements ainsi réalisés en appliquant les mesures définies ci-dessous :\n\nI. - CENTRES DE TRIAGE ET DE TRANSIT (C.T.T.)\nLa durée d'assignation à résidence dans les C.T.T. demeure fixée à un mois maximum pour tous les individus ne faisant pas l'objet d'un ordre d'arrestation du Procureur Militaire, d'un ordre de poursuite devant les Tribunaux Civils ou Militaires ou d'une proposition déjà établie par le Général Commandant la Zone, de transfert dans un Centre d'Hébergement (C.H.) ou dans un Camp Militaire d'Internés (C.M.I.).\n\n.../...",
+    "uncertainties": [
+      {
+        "fragment": "n° 727/C.C./s",
+        "suggestion": "Probable n° 727 plutôt que le fragment illisible dans l'OCR.",
+        "issue": "lecture_probable",
+        "confidence": "medium",
+        "note": "Le numéro et le sigle semblent corrects mais une vérification attentive sur l'image suggère une possible confusion entre le chiffre 7 et le caractère OCR. Lecture visuelle majoritairement confirmée."
+      },
+      {
+        "fragment": "GENERAL Commandant Supérieur",
+        "suggestion": "Conserver la forme générique relevée.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom ou la désignation exacte du général est omise dans la source image, d'où une incertitude."
+      },
+      {
+        "fragment": "ALGER, le 24 JUILLI; ! 1961",
+        "suggestion": "Lecture probable : 24 JUILLET 1961.",
+        "issue": "date_incertaine",
+        "confidence": "low",
+        "note": "OCR très déformé sur le mois. L'image semble indiquer 24 JUILLET 1961."
+      },
+      {
+        "fragment": "CENTRES DE TRIAGE ET DE TRANSIT (C.T.T.)",
+        "suggestion": "Garder la double écriture développée + sigle.",
+        "issue": "sigle_incertain",
+        "confidence": "high",
+        "note": "Le sigle est confirmé sur l'image, mais reste à signaler en toutes lettres car il apparait aussi en version abrégée."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-05",
+    "sourceImage": "05-20260311_131302.jpg",
+    "assistedReadingText": "II. - CENTRES D'HÉBERGEMENT (C.H.)\n\nL'assignation à résidence surveillée dans un C.H. doit être limitée aux cas exceptionnels où les individus en cause ne peuvent être poursuivis devant les Tribunaux mais doivent, en raison du danger qu'ils représentent pour la sécurité et l'ordre publics, être maintenus hors d'état de nuire.\n\nD'autre part, les Commissions Consultatives Départementales et la Commission Centrale d'Examen des Assignations à Résidence continueront leurs travaux, afin de poursuivre la déflation des C.H. L'attention des Commissions portera particulièrement sur les individus âgés, malades, chargés de famille ainsi que sur les assignés les plus anciens.\n\nIII. - CAMPS MILITAIRES D'INTERNÉS (C.M.I.I.)\n\nLe courant des libérations entrepris doit être maintenu de façon à diminuer d'environ 1.000 assignés dans un délai de 3 mois, les effectifs de ces Camps. Ces libérations seront réalisées suivant les instructions que donnera le Général Commandant Supérieur des Forces en Algérie.\n\nIV. - TRADUCTION DEVANT LES TRIBUNAUX MILITAIRES\n\nLa limitation à un mois de la durée d'internement dans les C.T.T., le caractère exceptionnel de l'assignation en C.H. imposent l'obligation pour les Procureurs Militaires de poursuivre devant les Tribunaux Militaires tous les individus prévenus de crimes ou de délits même s'ils ne sont susceptibles que d'encourir, devant ces juridictions, des peines légères.\n\nVous voudrez bien, le cas échéant, me rendre compte des difficultés que vous pourriez rencontrer dans l'exécution de ces mesures.\n\nLe Délégué Général en Algérie\nSigné : Jean NORIN",
+    "uncertainties": [
+      {
+        "fragment": "Signé : Jean NORIN",
+        "suggestion": "Vérifier sur l'image si le manuscrit correspond bien exactement à ce nom.",
+        "issue": "nom_propre_incertain",
+        "confidence": "high",
+        "note": "La signature Jean NORIN apparait clairement manuscrite, mais la certitude absolue sur la totalité du patronyme est réservée, car la lecture d'une signature implique toujours une part d'interprétation."
+      },
+      {
+        "fragment": "C.M.I.I.",
+        "suggestion": "Confirmer par une relecture humaine attentive du sigle exact utilisé dans l'image.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle C.M.I.I. provient d'une probable lecture de l'image, l'OCR a des erreurs notables à cet endroit. Confirmation nécessaire par inspection."
+      },
+      {
+        "fragment": "C.T.T.",
+        "suggestion": "Confirmer ultérieurement la correspondance exacte de ce sigle avec la réalité administrative de ce type de document.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle C.T.T. est lisible dans l'image mais l'OCR propose des variantes avec des erreurs ; il semble correct, mais prudence."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-06",
+    "sourceImage": "06-20260311_131532.jpg",
+    "assistedReadingText": "N° 2041 /ZSA/2/S en date du 18 AOU 1960\n\nOBJET : P.A.M. SANS ARRETES ASSIGNATION.\n\nPRIERE ADRESSER EN COMMUNICATION DANS MEILLEURS DELAIS POUR REGULARISATION SITUATION DOSSIERS DES P.A.M. :\n\n- SNP ALI NE EN 1940 AU DOUAR M’LILLAH (DJELFA) FILS DE AMAR BEN MOHAMED ET DE FATMA BEN SAMI EN PROVENANCE C.T.T. BENI MESSOUS LE 13.8.1959.\n\n- TENOU DAHMANE NE EN 1918 AU DOUAR AIN BED OU AIN MASBED (DJELFA) FILS DE BACHIR BEN ARBI ET DE GRINA ZOHRA BEN KHORINA EN PROVENANCE DU C.T.T. DE BENI MESSOUS LE 28.8.1959.\n\nP.O. Le Lieutenant-Colonel DEVI VAISE\nChef d'Etat-Major\n\nSECRET/CONFIDENTIEL\n\n(Certains éléments manuscrits et tampons sont présents, non entièrement retranscrits ici, comme les annotations rouges et grises sur la marge.)",
+    "uncertainties": [
+      {
+        "fragment": "M’LILLAH (DJELFA)",
+        "suggestion": "Vérification sur image et relecture par un humain à privilégier.",
+        "issue": "lieu_incertain",
+        "confidence": "high",
+        "note": "La lecture du nom de douar est corroborée par l'image, mais la typographie pourrait prêter à confusion."
+      },
+      {
+        "fragment": "GRINA ZOHRA BEN KHORINA",
+        "suggestion": "Vérifier sur l'original si l'écriture ne prêterait pas à d'autres interprétations.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "L'OCR et l'image convergent, mais les majuscules et la disposition laissent subsister un léger doute sur l'exactitude complète du nom."
+      },
+      {
+        "fragment": "Chef d'Etat-Major",
+        "suggestion": "Confirmer avec d'autres documents similaires si nécessaire.",
+        "issue": "lecture_probable",
+        "confidence": "high",
+        "note": "La lecture du grade et titre n'est pas explicitement notée en toutes lettres, mais très probable selon la mise en page."
+      },
+      {
+        "fragment": "Signature manuscrite illisible sous le tampon du chef d'état-major",
+        "suggestion": "Signaliser comme non-lisible : transcription impossible ici.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "La signature manuscrite n'est pas lisible sur l'image."
+      },
+      {
+        "fragment": "Date du cachet manuscrit '20 AOUT 1960'",
+        "suggestion": "Confirmer contexte de cette date (réception ? transmission ?).",
+        "issue": "date_incertaine",
+        "confidence": "medium",
+        "note": "Présence d'une date manuscrite en plus de la date imprimée – manque de certitude sur sa portée."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-07",
+    "sourceImage": "07-20260311_131559.jpg",
+    "assistedReadingText": "S.P. 87 957/A le 10 Août 1960\n\nCOMMANDEMENT EN CHEF DES F.A.\nREGION TERRITORIALE ET C.A.A.\nZ.S.A. ET 20° D.I.\n\nSECTEUR DE BOGHARI\nETAT-MAJOR - 2° BUREAU\nNo 18353/B.2/SB/S.\nClt: [illisible] \n\nRÉFÉRENCE : No 1862/ZSA/2/S en date du 2 Août 1960\nOBJET : Lettre n° 4056 /GM du 21.6.1960 du général C.O.F.A. et transmission n° 1957/RI/CAA/2.C.T.75 du C.A.A. en date du 27.7.1960 // assignation à résidence surveillée.\n\nTRANSMIS :\n- Mr le Sous Préfet de l’Arrondissement de BOGHARI - 1ex -\n- Mr le Cne cdt le C.M.I. de BOGHARI - 1ex -\n- Archives\n- Chrono\n\nLe Colonel: NERI Commandant\nLe Secteur de BOGHARI\nP.O. Le Capitaine MARENGO\nO.R. du Secteur.\n",
+    "uncertainties": [
+      {
+        "fragment": "Clt: [illisible]",
+        "suggestion": "Zone manuscrite, lecture impossible sur l'image. A vérifier sur l'original.",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "Le champ Cit: situé sous la cote, manuscrit, est difficile à lire sur l'image et n'était pas restitué de façon exploitable par l'OCR."
+      },
+      {
+        "fragment": "Lettre n° 4056 /GM du 21.6.1960 du général C.O.F.A.",
+        "suggestion": "A confirmer sur d'autres documents administratifs similaires si possible.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle C.O.F.A. est transcrit selon ce qui semble lisible, mais il reste possible qu'il soit lu autrement selon l'image source."
+      },
+      {
+        "fragment": "transmission n° 1957/RI/CAA/2.C.T.75 du C.A.A.",
+        "suggestion": "A recouper avec d'autres documents administratifs du même fonds.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Plusieurs sigles peuvent prêter à confusion (RI/CAA/2.C.T.75, CAA). Garder à l'esprit la difficulté de lecture typographique."
+      },
+      {
+        "fragment": "NERI, MARENGO",
+        "suggestion": "Vérifier sur les autres pièces du dossier pour confirmer l'exactitude.",
+        "issue": "nom_propre_incertain",
+        "confidence": "high",
+        "note": "Noms propres issus de la signature manuscrite ou du dactylographié. L'image et l'OCR convergent, mais risque d'erreur orthographique mineure."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-08",
+    "sourceImage": "08-20260311_131650.jpg",
+    "assistedReadingText": "",
+    "uncertainties": [],
+    "confidence": "low",
+    "status": "assisted_unavailable",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page."
+  },
+  {
+    "reviewId": "page-09",
+    "sourceImage": "09-20260311_131708.jpg",
+    "assistedReadingText": "——— NOTE DE SERVICE ——\n\nOBJET : Transfert en C.M.I.\n\n1.— Le nommé (identité complète) .............................................. arrêté par les armes à la main, assigné à résidence au Centre Militaire d’Internés de [nom propre incertain] par arrêté du Préfet du département de [lieu incertain] et actuellement au Centre de [lieu incertain], sera transféré au C.M.I. de [lieu incertain], à partir de [date incertaine].\n\n2.— Le Commandant de [sigle incertain] ............................................. est chargé de l’exécution du transfert.\n\n3.— Le Commandant du C.M.I. de [lieu incertain] rendra compte au Général Commandant la Zone (s/c. 2e Bureau) de la date d’arrivée de l’intéressé en C.M.I.\n\nLe Général ARQUILLIACH Commandant la R.A.A. et la 20e D.I.A.\n\nDESTINATAIRES :\n— Préfet de [illisible] (3 ex.)\n— Cdt du Secteur/Zone (2 ex.)\n— Cdt C.M.I. (1 ex.)\n— Cdt Groupement de Gendarmerie (1 ex.)\n",
+    "uncertainties": [
+      {
+        "fragment": "Centre Militaire d’Internés de [nom propre incertain]",
+        "suggestion": "Relevé partiel possible avec une image de meilleure qualité.",
+        "issue": "nom_propre_incertain",
+        "confidence": "low",
+        "note": "Le nom du centre d'internement n'est pas distinct, à cause d'une surimpression et d'un léger flou."
+      },
+      {
+        "fragment": "arrêté du Préfet du département de [lieu incertain]",
+        "suggestion": "Seule la mention 'département' est lisible, le nom exact du département reste indéterminé.",
+        "issue": "lieu_incertain",
+        "confidence": "medium",
+        "note": "Lieu du département mentionné non clairement lisible."
+      },
+      {
+        "fragment": "actuellement au Centre de [lieu incertain]",
+        "suggestion": "Autre consultation documentaire souhaitable ; la structure de phrase est toutefois lisible.",
+        "issue": "lieu_incertain",
+        "confidence": "medium",
+        "note": "Dénomination du centre partiellement effacée."
+      },
+      {
+        "fragment": "sera transféré au C.M.I. de [lieu incertain], à partir de [date incertaine]",
+        "suggestion": "Vérifier sur l'original ou dans d'autres documents liés.",
+        "issue": "date_incertaine",
+        "confidence": "low",
+        "note": "Date de transfert non visible."
+      },
+      {
+        "fragment": "Le Commandant de [sigle incertain]",
+        "suggestion": "Laisser ouvert à la validation future.",
+        "issue": "sigle_incertain",
+        "confidence": "low",
+        "note": "Le sigle ou nom exact de l'unité n'est pas sûr ici, l'image reste incertaine."
+      },
+      {
+        "fragment": "Le Commandant du C.M.I. de [lieu incertain]",
+        "suggestion": "Identification précise impossible sans source complémentaire.",
+        "issue": "lieu_incertain",
+        "confidence": "medium",
+        "note": "Le lieu du C.M.I. de destination non explicite."
+      },
+      {
+        "fragment": "Préfet de [illisible] (3 ex.)",
+        "suggestion": "Impossible à relire de façon certaine sur la base de l'image actuelle.",
+        "issue": "mot_illisible",
+        "confidence": "high",
+        "note": "Mot totalement effacé ou dactylographié sous un filigrane/tampon."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-10",
+    "sourceImage": "10-20260311_131956.jpg",
+    "assistedReadingText": "COMMANDEMENT EN CHEF DES F.A.\nR.T. et C.A.A.\nZ.S.A. et 20° D.I.\nSECTEUR DE BOGHARI\nC.M.I. de BOGHARI\n\nJe soussigné, Adjudant VAUCHER Marc\nde la 70° Cie de Q.G. certifie avoir pris en compte les P.A.M. dont\nles noms suivent :\n\n843 MAKLOUFI Mohamed              831 SNP AHMED ben Mohamed\n802 GROUNI Ali                     846 DJEDI Abdelkader\n836 SAID Amor                      829 CHENAG Mohamed\n490 MOULOUDI Amar                  828 ZIGHEB Attia\n579 ZERROUKI Abdelkader            455 SAHRAOUI Mohamed\n\nA S.P. 89144 le 21 février 1961\nLe ODL MARIAN\n[signature manuscrite]\n\n[Signes manuscrits dans la marge gauche :]\nP. ?\nle 1-4-61\nA fini les travaux\n[bas gauche]\n\n[Écriture manuscrite, bas droite :]\n2594/257/2.5\nOler 17-10-60",
+    "uncertainties": [
+      {
+        "fragment": "C.M.I. de BOGHARI",
+        "suggestion": "Maintenir cette lecture avec incertitude modérée.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Lecture du sigle C.M.I. incertaine à cause de la qualité de l'image et de la typographie, mais plausible."
+      },
+      {
+        "fragment": "SNP AHMED ben Mohamed",
+        "suggestion": "Conserver la mention SNP avec incertitude sur le sigle.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "SNP est un sigle dont la lecture semble correcte mais la signification précise est hors contexte. La transcription du nom propre paraît correcte mais normalement à vérifier."
+      },
+      {
+        "fragment": "Le ODL MARIAN",
+        "suggestion": "Ne pas affirmer l'identité du signataire. Préciser lecture probable.",
+        "issue": "lecture_probable",
+        "confidence": "medium",
+        "note": "Écriture manuscrite, signature mal déchiffrée (probablement MARIAN mais non certaine)."
+      },
+      {
+        "fragment": "[P. ? le 1-4-61 ... A fini les travaux]",
+        "suggestion": "Indiquer la présence d'une annotation manuscrite illisible.",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "La mention manuscrite en bas à gauche est difficilement lisible, particulièrement le nom ou la signature. Interprétation incertaine."
+      },
+      {
+        "fragment": "Oler 17-10-60",
+        "suggestion": "Mentionner la lecture incertaine de ce mot manuscrit.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "Le mot 'Oler' ou éventuellement une abréviation reste incertain."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-11",
+    "sourceImage": "11-20260311_132012.jpg",
+    "assistedReadingText": "Je soussigné, Adjudant VAUCHER Marc de la 70° Cie de Q.G.\ncertifie avoir pris en compte les P.A.M. dont les noms suivent:\n- 160 SMAHI Moussa\n- 190 BOUDINA Brahim\n- 565 LAICHAOUI Rabah\n- 835 SAID Abdellhaziz\n- 852 CHELLALI AMAR\n- 853 YOUNIS Moktar\n- S.N.P. Ali ben Aissa (861)\n- 862 BOUDALI Lakhdar\n- 866 S.N.P. Abdelkader\n- 868 DRAIDI Ali\n\nA S.P. 89144 le 9 janvier 1961\nLe Maréchal des logis [signature manuscrite]\nVAUCHER\n\n[Annotation manuscrite à gauche : Postaudit 21-2-61]",
+    "uncertainties": [
+      {
+        "fragment": "Le Maréchal des logis [signature manuscrite] MARIAN ou VAUCHER ?",
+        "suggestion": "Mentionner simplement [signature manuscrite] sans affirmer le nom.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "La signature manuscrite n'est pas parfaitement lisible. L'OCR suggère 'Marian', mais cela pourrait être autre chose."
+      },
+      {
+        "fragment": "- S.N.P. Ali ben Aissa (861)",
+        "suggestion": "Garder la mention de manière prudente.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom/nom et sigle sont plausibles mais pourraient présenter une confusion entre 'ben' et 'bena' ou différents usages d'orthographes selon la police et la qualité d'image."
+      },
+      {
+        "fragment": "S.P. 89144 le 9 janvier 1961",
+        "suggestion": "Transcrire tel que sur l'image, signaler incertitude sur la localisation effective.",
+        "issue": "lieu_incertain",
+        "confidence": "high",
+        "note": "La localité exacte (S.P. 89144) n'est pas universalement explicite."
+      },
+      {
+        "fragment": "[Annotation manuscrite à gauche : Postaudit 21-2-61]",
+        "suggestion": "Indiquer l'information entre crochets.",
+        "issue": "lecture_probable",
+        "confidence": "medium",
+        "note": "Lecture partiellement certaine de l'annotation manuscrite, pourrait être une autre date ou mention."
+      },
+      {
+        "fragment": "Le Maréchal des logis [signature manuscrite] VAUCHER",
+        "suggestion": "Rester neutre dans la référence.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Distinguer entre la fonction (Maréchal des logis) et le nom (signature difficile à lire), doute sur l'association du nom à la fonction."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-12",
+    "sourceImage": "12-20260311_132034.jpg",
+    "assistedReadingText": "P.A.M. détachés au DIRAH à compter du 12 novembre 1960\n\n103  HABIB Messaoud\n149  SAHMADI Mohamed\n328  BOURARSBAL Yahia\n344  MADANI Saad\n408  MAKHLOUF Madani\n330  KHELIFA Abdelkader\n167  NEGGAZI Mohamed\n171  MENDEJ Mohamed\n99   BELMADANI Mohamed\nS.N.P. KADDOUR\n6  DIEB Said\n\n10e REGION MILITAIRE\nZONE SUD ALGEROIS\n70e Q.G. de MEDEA\n\nJe soussigné Adjudant VAUCHER Marc de la 70e Cie de Q.G.\nde MEDEA certifie avoir reçu ce jour du C.M.I. de BOGHARI les PAM dont les\nnoms suivent :\n284  ZAHAF Bouziane\n502  BENNAMRA Larbi\n537  DOUI Mohamed\n650  AMIRI Kouider\n796  ALLAL Messaoud\n490  MOULOUDI Amar\n531  OURHANE Ahmed\n530  SELTI Abdelkader\n666  YOUNSI Mohamed\n798  SNP Mohamed [illisible]\nA S.P. 8661 le 23 novembre 1960\n[signature]",
+    "uncertainties": [
+      {
+        "fragment": "S.N.P. KADDOUR",
+        "suggestion": "Lecture probable du sigle, mais incertitude sur l'exactitude et la signification.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "La signification du sigle S.N.P. n'est pas certaine."
+      },
+      {
+        "fragment": "798  SNP Mohamed [illisible]",
+        "suggestion": "Lecture probable : 'Mohamed [Am] Mohamed', mais du manuscrit rend la partie finale incertaine.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom après 'Mohamed' est manuscrit et partiellement illisible."
+      },
+      {
+        "fragment": "A S.P. 8661 le 23 novembre 1960",
+        "suggestion": "Lecture telle qu'elle apparaît, mais la fonction exacte du sigle reste incertaine.",
+        "issue": "lecture_probable",
+        "confidence": "high",
+        "note": "La date est lisible mais la mention 'A S.P.' reste une lecture probable d'un sigle."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-13",
+    "sourceImage": "13-20260311_132053.jpg",
+    "assistedReadingText": "X° REGION MILITAIRE\nZONE SUD ALGEROIS\nSECTEUR DE BOGHARI\nC.M.I.\n\nJe soussigné, Adjudant VAUCHER Marc de la 70° Cie de Q.G.\ncertifie avoir pris en compte ce jour les P.A.M. dont les noms suivent :\n\n   — 723   DJENANE Aïssa               — 753   DJILLALI Rabah\n   — 115   ZOUAOUI Ahmed               — 683   ZOUBIR Ben Yagoub\n   — 557   ATTAT Messaoud             — 578   AFNAOUI Tayeb\n   — 528   MAKHLOUF Ahmed             — 651   AMIRI Mansour\n   — 128   REKKAB Mohamed             — 718   NAICHI Messaoud.\n\nA S.P. 89.144, le 25 octobre 1960.",
+    "uncertainties": [
+      {
+        "fragment": "VAUCHER Marc",
+        "suggestion": "IAU à vérifier sur d'autres documents ou au registre.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "La lecture du patronyme et prénom de l'adjudant est probable, mais une confusion typographique dans 'Marc'/'Mare' dans l'OCR incite à maintenir une réserve légère."
+      },
+      {
+        "fragment": "S.P. 89.144",
+        "suggestion": "Vérifier la formulation sur d'autres documents similaires.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle ou indicateur de localisation/numéro militaire n'est pas explicité et la lecture mécanique aurait pu confondre le format (points, chiffres). Supposition que 'A S.P.' est correct ici."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-14",
+    "sourceImage": "14-20260311_132055.jpg",
+    "assistedReadingText": "",
+    "uncertainties": [],
+    "confidence": "low",
+    "status": "assisted_unavailable",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page."
+  },
+  {
+    "reviewId": "page-15",
+    "sourceImage": "15-20260311_132127.jpg",
+    "assistedReadingText": "P.A.M. détachés au DIRAH à compter du 12 novembre 1960\n\n103 HABIB Messaoud\n149 SAHMADI Mohamed\n328 BOURARBAL Yahia\n344 MADANI Saad\n408 MAKHLOUF Madani\n137 RABAH Djillali\n461 MEZIR Ali\n346 FODILI Dahmana\n347 DAMOU Aek\n403 BABAALI Hamza\n806 SAMMI Saïd\n232 TOUZOUT Ahmed\n\n330 KHELIFA Abdelkader\n167 NEGGAZI Mohamed\n171 MENDJER Mohamed\n99 BELMADANI Mohamed\n97 S.N.P. KADOUR\n6 DIEB Said\n9 HAMIDOUCHE Ibrahim\n36 BENALLEL Mohamed\n37 BOUATGU Abderrahmane\n33 HASNOUI Ahmed\n2 CHABLAOUI Rémici\n5 BOUGUESSA Ali\n\n+ 122 TEKFI Mohamed\n+ 44 Boukhari Ali\n\n10e REGION MILITAIRE\nZONE SUD ALGEROIS\nSecteur de Boghari\n\nJe, soussigné Sergent BRUNET du Secteur d'Aumale certifie avoir reçu du C.M.I. de BOGHARI, 25 P.A.M. pour effectuer des travaux au DIRAH. (Ref. MjN°2791/ZSH/2/s.)\n\nA S.P. 84 le 12 novembre 1960\n[signature]\n",
+    "uncertainties": [
+      {
+        "fragment": "S.N.P. KADOUR",
+        "suggestion": "'S.N.P.' est probablement un sigle, mais non vérifiable sans contexte.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "La signification de 'S.N.P.' n'est pas claire sur l'image, et l'OCR ne donne aucune indication supplémentaire."
+      },
+      {
+        "fragment": "SAMMI Saïd",
+        "suggestion": "Lecture probable mais incertitude sur l'orthographe exacte du prénom.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom 'Saïd' (SAMMI Saïd) est partiellement couvert dans l'image par un cachet manuscrit qui pourrait laisser place à interprétation."
+      },
+      {
+        "fragment": "A S.P. 84 le 12 novembre 1960",
+        "suggestion": "Recopier tel quel, contexte du lieu non certain.",
+        "issue": "lieu_incertain",
+        "confidence": "high",
+        "note": "Le lieu 'S.P. 84' apparait à la fois sur l'image et l'OCR ; cependant, sa localisation précise n'est pas déterminable sur ce document seul."
+      },
+      {
+        "fragment": "BRUNET (signature manuscrite)",
+        "suggestion": "Lecture basée sur la forme du manuscrit et l'OCR concordant.",
+        "issue": "lecture_probable",
+        "confidence": "medium",
+        "note": "Le nom du soussigné semble être 'BRUNET' mais est manuscrit ; la lecture est toutefois probable."
+      },
+      {
+        "fragment": "Secteur d'Aumale",
+        "suggestion": "Lecture adoptée faute de contradiction visible.",
+        "issue": "lieu_incertain",
+        "confidence": "medium",
+        "note": "Lecture cohérente grâce à l'image ; le mot 'Aumale' est lisible mais pourrait comporter une légère incertitude graphique."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-16",
+    "sourceImage": "16-20260311_132157.jpg",
+    "assistedReadingText": "P.A.M. DÉTACHÉS AU DIRAH REMIS AU C.M.I. DE BOGHARI LE 21 Décembre 1960\n---------------------------------------------------------\n• HABIB Messaaoud\n• SAHMADI Mohamed\n• MADANI Saïd\n• MAKHLOUF Madani\n• RABAH Djillali\n• MEZIR Ali\n• FODILI Dahmane\n• DAMOU A.Ek.\n• BABA ALI Hamza\n• SELMI Saïd\n• TOUZOUT Ahmed\n• KHELIFA A.Ek.\n• HEGUAZI Mohamed\n\n• MEDJEL Mohamed\n• BELMADANI Mohamed\n• S.N.P. Kaddour\n• DIEB Saïd\n• HAMIDOUCHE Brahim\n• BENALLEL Mohamed\n• BOUATOU Abderrahmane\n• HASNOUI Ahmed\n• CHABLAOUI Remici\n• BOUGUESSA Ali\n• TEKFI Mohamed\n• BOUKHARI Ali\n\n10e RÉGION MILITAIRE\nZ.S.A\nSECTEUR D'AUMALE\n\nJe soussigné .......................................... Commandant le C.M.I.\nde BOGHARI certifie avoir reçu du Secteur d'AUMALE, 25 P.A.M.\ndétachés pour travaux au DIRAH.\n\nA S.P.87.714, le 21 Décembre 1960",
+    "uncertainties": [
+      {
+        "fragment": "21 Décembre 1960",
+        "suggestion": "Le jour pourrait être 21 mais exigerait vérification sur une image de meilleure qualité.",
+        "issue": "date_incertaine",
+        "confidence": "medium",
+        "note": "Le numéro du jour semble être 21, mais n'est pas parfaitement lisible sur l'image."
+      },
+      {
+        "fragment": "A.Ek.",
+        "suggestion": "Conserver le sigle tel quel, indiquer incertitude.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle A.Ek. apparaît pour deux noms, il est possible que la lecture soit correcte mais la signification reste incertaine sans contexte."
+      },
+      {
+        "fragment": "S.N.P.",
+        "suggestion": "Ne pas interpréter le sigle, signaler simplement sa présence.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle S.N.P. précède 'Kaddour', une lecture qui paraît probable visuellement."
+      },
+      {
+        "fragment": "soussigné .......................................... Commandant le C.M.I.",
+        "suggestion": "Conserver les pointillés et la fonction sans compléter le nom.",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "Le nom du signataire n’est pas visible/saisi ni sur l'image ni par l'OCR, pointillé seulement."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-17",
+    "sourceImage": "17-20260311_132301.jpg",
+    "assistedReadingText": "P A M détachés au DIRRAH à /C du 8.10.1960\n\n768 ANTRI Ali\n792 BAFFOU Mohamed\n700 SAIDANI Benziane\n801 KAIOUL Lakdar\n756 KEHOUEL Aïssa\n830 ADALA Mohamed\n559 KABCHA Mohamed\n298 GOUZI Zizouche\n222 MAIZA Messaoud\n543 DJELLOUL Cherif\n791 AMAR-CHERIF Mohamed\n431 CANA Bouzid\n765 QURIHANE Ahmed\n717 BELAOUARI Hamed\n275 ZITA Ahmed\n839 CHEIKH Saad\n992 MADAH Ahmed\n802 GROUNT Ali\n\n772 BOUZIANE Moussa\n768 KORBA Aek\n769 AZZOUD Mohamed\n767 ZENDAGUI Djemaoui\n746 ALLAL Messaoud\n793 TAÏF Abdelhafid\n593 CHAIBI Mohamed\nS N P Ahmed ben Mohamed\n797 AYACHE Said\n760 AZIZI Slimane\n767 MABROUKI Ahmed\n776 ATHMANI Mohamed ben Aek\n776 NOURINE Belkacem\nS N P Brahim ben Melkout\n558 BOURAHLA Said\n302 ARABI Ahmed\n409 HELIAL Hadj\n\n447 MEZIANE Kaddour\n",
+    "uncertainties": [
+      {
+        "fragment": "S N P Ahmed ben Mohamed",
+        "suggestion": "Vérifier le sens de S N P dans le contexte.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "La signification du sigle 'S N P' reste incertaine, reproduction conforme à l'image."
+      },
+      {
+        "fragment": "447 MEZIANE Kaddour",
+        "suggestion": "Confirmer le numéro et l'orthographe par une source croisée si possible.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Lecture du nom et numéro relativement claire mais manuscrite, légère incertitude."
+      },
+      {
+        "fragment": "DJELLOUL Cherif",
+        "suggestion": "Vérifier l'orthographe par comparaison à d'autres sources.",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "Le prénom/nom peut être sujet à confusion du fait de la qualité de frappe, doute sur la séparation."
+      },
+      {
+        "fragment": "ATHMANI Mohamed ben Aek",
+        "suggestion": "Relire avec matériel de meilleure qualité ou expertise paléographique.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "La fin du nom (ben Aek) n’est pas parfaitement lisible sur l’image, possible lecture erronée."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-18",
+    "sourceImage": "18-20260311_132333.jpg",
+    "assistedReadingText": "Liste des P.A.M.\nDetaillés au Dech. réunis le 12 Novembre 1960\nau C.M.I de Boghari\n\nAmi Ali\nBaflou Mohamed\nJifou Mohamed\nSaidani Bouziane\nKaïdoul Lakhdar\nKehail Aïssa\nAdada Mahamed\nKatcha Mahamed\nGouija Zouache\nMaya Mahamed\nDjihoul Cherif\nAmar Cherif Mohamed\nCana Bouzid\nAurikani Ahmed\nBelaouari Mahamed\nRich Ahmed\nMir Ahmed\nZatta Chamel\nCheikh Saad\nMadad Ahmed\nGrouni Ali\n\nBouziane Moussa\nKolba A.-E.-K\nAzzoug Mohamed\nZindagui Demouai\nAllal Mohamed\nToufi Abdelhafid\nChaïbou Mahamed\nS.R.P Ahmed ben Mahamed\nAyuche Said\nAzzizi Slimane\n\nMabrouki Ahmed\nHamani Mohamed ben Ahmed\nAtmani Mohamed ben A.-E.-K\nNouine Belkacem\nSNP Brahim ben Melloufi\nBouahla Said\nHamidi Yacoub\nArabi Ahmed\nHellal Hacè\nMeziane Reddoune (Responsable)",
+    "uncertainties": [
+      {
+        "fragment": "Kolba A.-E.-K",
+        "suggestion": "Possible lecture: initiales pour un prénom composé",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "La graphie exacte et la signification des initiales sont incertaines."
+      },
+      {
+        "fragment": "S.R.P Ahmed ben Mahamed",
+        "suggestion": "Vérifier l'origine du sigle",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle S.R.P avant le nom peut prêter à confusion; non confirmé."
+      },
+      {
+        "fragment": "Hellal Hacè",
+        "suggestion": "Vérifier dans d'autres sources ou listes",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom ou nom \"Hacè\" est difficilement lisible, peut différer"
+      },
+      {
+        "fragment": "Responsable",
+        "suggestion": "Lecture très probable étant donné la lisibilité",
+        "issue": "lecture_probable",
+        "confidence": "high",
+        "note": "Mention entre parenthèses après Meziane Reddoune interprétée comme \"Responsable\"."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-19",
+    "sourceImage": "19-20260311_132413.jpg",
+    "assistedReadingText": "10e REGION MILITAIRE\nZONE SUD ALGEROIS\n70e Q.G. de MEDEA\n\nJe soussigné Adjudant VAUCHER Marc de la 70e Cie de Q.G. de MEDEA certifie avoir reçu ce jour du C.M.I. de BOGHAR les PAM dont les noms suivent : \n\n284 ZAHAF Bouzi ane\n502 BENNAMRA Larbi\n537 DOURI Mohamed\n650 AMIRI Kouider\n796 ALLAL Messaoud\n490 MOULOUDI Amar\n531 OURIHANE Ahmed\n530 SELTI Abdelkader\n666 YOUNSI Mohamed\n798 SNP Mohamed (corrigé à la main: Amr Mohamed)\n\nA S.P. 86861 le 23 novembre 1960\n(signatures manuscrites)\n\nL’unité qui emploie les P.A.M. est responsable d’eux à tous points de vue (garde, logement, nourriture, discipline, évasion).\n\nLes gardes de sécurité doivent être commandées par un gradé FSE. Leur effectif doit être au minimum d’un homme pour trois P.A.M. et ne pas comprendre un pourcentage de musulmans supérieur à 30%.\n\nUn homme de garde sur trois doit être doté d’un P.M.",
+    "uncertainties": [
+      {
+        "fragment": "Larbi (BENNAMRA Larbi 1 ou Larb 1)",
+        "suggestion": "Larbi semble le plus probable d'après l'image, malgré la fin tronquée par le pli du feuillet.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom ou surnom de BENNAMRA comporte peut-être une faute ou abréviation illisible sur l'image."
+      },
+      {
+        "fragment": "798 SNP Mohamed (amendé à la main)",
+        "suggestion": "Lecture probable 'Amr Mohamed' ou voisin, selon annotation manuscrite.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "La correction manuscrite laisse place à une incertitude sur le nom complet du dernier PAM."
+      },
+      {
+        "fragment": "86861",
+        "suggestion": "86861 paraît correct, mais la graphie laisse un léger doute.",
+        "issue": "lecture_probable",
+        "confidence": "medium",
+        "note": "Le numéro après 'A S.P.' est manuscrit et pourrait être mal interprété."
+      },
+      {
+        "fragment": "Je soussigné Adjudant VAUCHER Marc de la 70e Cie de Q.G. de MEDEA certifie avoir reçu ce jour du C.M.I. de BOGHAR les PAM dont les noms suivent",
+        "suggestion": "Transcription fidèle à l'image.",
+        "issue": "lecture_probable",
+        "confidence": "high",
+        "note": "Le début de la phrase est parfaitement lisible."
+      },
+      {
+        "fragment": "le texte sous-jacent tapé en bas de l'image (début partiellement masqué par la page principale)",
+        "suggestion": "Ne pas compléter sans visibilité claire.",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "Le début du texte sur le feuillet inférieur, masqué, n'est pas transcrit car il n'est pas totalement visible."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-20",
+    "sourceImage": "20-20260311_132431.jpg",
+    "assistedReadingText": "X° REGION MILITAIRE\nZONE SUD ALGEROIS\nSECTEUR DE BOGHARI\nC.M.I.\n\nJe soussigné, Adjudant VAUCHER Marc de la 70e Cie de Q.G.\ncertifie avoir pris en compte ce jour les P.A.M. dont les noms suivent :\n\n    723  DJENANE Aissa               753  DJILLALI Rabah\n    115  ZOUAOUÏ Ahmed               683  ZOUBIR Ben Yagoub\n    557  ATTAT Messaoud              578  AFNAOUI Tayeb\n    528  MAKHLOUF Ahmed              651  AMIRI Mansour\n    128  REKKAB Mohamed              718  NAICHI Messaoud.\n\nA S.P. 89 144, le 25 octobre 1960.\n(Signature manuscrite)\n\n\nTexte du feuillet inférieur (incomplet) :\n... au Centre Militaire d'Internés de BOCHAR (2) ou à la 70e Cie. de Q.G., les prendre en charge dans les conditions réglementaires de sécurité qui sont rappelées ci-dessous :\n   - L'unité qui emploie les P.A.M. est responsable d'eux à tous points de vue (garde, logement, nourriture, discipline, évasion).\n   - Les gardes de sécurité doivent être commandées par un gradé FSE. Le ... effectif doit être au minimum d'un homme pour trois P.A.M. et ne pas compr...dre un pourcentage de musulmans supérieur à 30%.\n   - Un homme de garde sur trois doit être doté d'un P.A.M.\n\n3... Le transport et la surveillance des P.A.M. sont à la charge de la 70e Cie. de Q.G.",
+    "uncertainties": [
+      {
+        "fragment": "VAUCHER Marc",
+        "suggestion": "S'appuie sur la clarté du texte dactylographié conjointement à la signature, mais prudence sur l'orthographe exacte.",
+        "issue": "nom_propre_incertain",
+        "confidence": "high",
+        "note": "La signature manuscrite confirme la lecture, mais elle reste de lecture probable."
+      },
+      {
+        "fragment": "AFNAOUI Tayeb",
+        "suggestion": "Lecture basée sur le texte, à valider sur d'autres listes si possible.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le 'I' final d'AFNAOUI n'est pas clairement visible, ni sur l'image ni dans l'OCR."
+      },
+      {
+        "fragment": "ZOUAOUÏ Ahmed",
+        "suggestion": "Lecture probable, accent à confirmer.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le I accentué sur l'image n'est pas net, l'OCR ne le reproduit pas mais il semble présent."
+      },
+      {
+        "fragment": "578 AFNAOUI Tayeb / 683 ZOUBIR Ben Yagoub",
+        "suggestion": "Lecture dissociée, mais risque d'association erronée des numéros.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le doublet de noms sur une même ligne ajoute de la confusion."
+      },
+      {
+        "fragment": "au Centre Militaire d'Internés de BOCHAR (2) ou à la 70e Cie.",
+        "suggestion": "Lecture partielle et possiblement lacunaire ; se référer à l'original pour compléter.",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "La coupure et la dégradation du feuillet inférieur rendent cette partie partiellement illisible."
+      },
+      {
+        "fragment": "A S.P. 89 144, le 25 octobre 1960.",
+        "suggestion": "Lecture probablement correcte, mais nature exacte de 'A S.P. 89 144' à confirmer.",
+        "issue": "lieu_incertain",
+        "confidence": "medium",
+        "note": "'A S.P. 89 144' correspond à un code (probablement une localisation postale militarisée), à confirmer."
+      },
+      {
+        "fragment": "Signature",
+        "suggestion": "Difficile à relever formellement en transcription.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "Indiquée 'signature manuscrite' car elle est peu lisible, non confirmée."
+      },
+      {
+        "fragment": "3... Le transport et la surveillance des P.A.M. sont à la charge de la 70e Cie. de Q.G.",
+        "suggestion": "Fin du document impossible à vérifier.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "En-tête tronqué, texte coupé en bas."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-21",
+    "sourceImage": "21-20260311_132519.jpg",
+    "assistedReadingText": "P A M détachés au DIRRAH à /C du 8.10.1960\n\n168 ANTRI Ali\n702 BAFFOU Mohamed\n700 SAIDANI Benziane\n801 KAIOUI Lakdar\n806 KEHOUEL Ahmed\n855 ADALA Mohamed\n809 KABCHA Mohamed\n599 GOUTZI Zitouni\n123 MAIZA Messaoud\n400 DJELLOUL Cherif\n295 AMARA CHERIF Mohamed\n231 CAN A. Bouzid\n804 OURHANE Ahmed\n717 BELAOUARI Mohamed\n765 RIGH Ahmed\n175 ZATTA Chared\n893 CHEIKS Saad\n799 MADAD Ahmed\n802 GOURI Ali\n\n772 BOUZIANE Moussa\n581 KORBA Aek\n769 AZZOUD Mohamed\n896 ZENDAGUI Djemous\n796 ALLAL Messaoud\n793 TAIF Abdelhafid\n595 CHAIB Mohamed\n789 S N P Ahmed ben Mohamed\n797 AYACHE Said\n760 AZIZI Slimane\n767 MABROUKI Ahmed\n777 ATMANI Mohamed ben Ahmed\n776 ATMANI Mohamed ben Aek\n110 NOURINE Belkacem\n758 S N P Brahim ben Melkout\n858 BOURAHLA Said\n607 HAVDI Yagoub\n602 ARABI Ahmed\n350 HELLAL Hadj\n\n447 MEZIANE Kaddour",
+    "uncertainties": [
+      {
+        "fragment": "P A M détachés au DIRRAH à /C du 8.10.1960",
+        "suggestion": "DIRRAH à /C lu selon la typographie visible ; d'autres lectures pour DIRRAH pourraient exister.",
+        "issue": "sigle_incertain",
+        "confidence": "high",
+        "note": "Le sigle DIRRAH est difficile à confirmer parfaitement, mais la lecture semble probable."
+      },
+      {
+        "fragment": "S N P Ahmed ben Mohamed",
+        "suggestion": "Potentiellement un sigle ou une abréviation interne ; nécessite confirmation ultérieure.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Doute sur la signification exacte de 'S N P' qui précède deux noms."
+      },
+      {
+        "fragment": "ATMANI Mohamed ben Aek / ATMANI Mohamed ben Ahmed",
+        "suggestion": "Lecture possible des deux comme noms distincts, mais à vérifier.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Difficulté à distinguer clairement si les prénoms finaux sont bien 'Aek' et 'Ahmed', car l'OCR a fusionné les lignes."
+      },
+      {
+        "fragment": "BELAOUI Mohamed",
+        "suggestion": "Lecture priorisée à partir de l’image.",
+        "issue": "nom_propre_incertain",
+        "confidence": "high",
+        "note": "Le prénom 'Mohamed' pour le matricule 717 est lu avec une forte probabilité, mais l’OCR donne des caractères perturbés, notamment autour des guillemets."
+      },
+      {
+        "fragment": "KAIOUI Lakdar",
+        "suggestion": "À confirmer lors d’une prochaine vérification humaine.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Possible confusion sur la première lettre du nom de famille (K ou autre) à cause de la qualité du scan."
+      },
+      {
+        "fragment": "MAIZA Messaoud",
+        "suggestion": "Lecture proposée, à vérifier.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom ‘Messaoud’ n'est pas parfaitement clair, possible variation minime non décisive."
+      },
+      {
+        "fragment": "CHEIKS Saad",
+        "suggestion": "Lecture proposée selon image, à confronter à l'original papier.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le patronyme CHEIKS pourrait être mal retranscrit par l’OCR (CHEIKS ou CHEIKH)."
+      },
+      {
+        "fragment": "NOURINE Belkacem / S N P Brahim ben Melkout",
+        "suggestion": "Lecture séparée selon la disposition de l’image.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "L’enchaînement rapide rend difficile la séparation de la ligne ; noms et mentions à confirmer."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-22",
+    "sourceImage": "22-20260311_132628.jpg",
+    "assistedReadingText": "BRAHIMI Brahim\nMEGRAOUI Abderrahmane\nYOUNSI Mohamed\nBEN - HAROUSSI Ahmed\nKHALDI Benyoussef\nSNP Ahmed Ben Ali\nTARAFI Lakhdar\nSNP OMRI Ben Ahmed\nMAZIDI Mohamed\nFILSI Ben Larbi\nBENKIMA Tahar\nCHERIH Amar\nMAKHLOUF Ahmed\nAZIB Benyoussef\nARAB Ahmed\nEL-AFFAF Ahmed\nJAFFAR Cherif",
+    "uncertainties": [
+      {
+        "fragment": "SNP Ahmed Ben Ali / SNP OMRI Ben Ahmed",
+        "suggestion": "Recopier tel quel, car il figure dans la source image.",
+        "issue": "sigle_incertain",
+        "confidence": "high",
+        "note": "Le sigle 'SNP' est difficile à interpréter sans contexte."
+      },
+      {
+        "fragment": "BENKIMA Tahar",
+        "suggestion": "BENKIMA",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Lecture 'BENKIMA' incertaine car l'image semble un peu floue à cet endroit."
+      },
+      {
+        "fragment": "MAKHLOUF Ahmed",
+        "suggestion": "MAKHLOUF Ahmed",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "La ligne de ce nom est partiellement barrée mais reste lisible."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-23",
+    "sourceImage": "23-20260311_132706.jpg",
+    "assistedReadingText": "AUMALE, le 7 Octobre 1960\n\nLISTE DES P.A.M. REMIS AU C.M.I.\n\nDE BOGHARI LE 8 Octobre 1960\n\n-ooo-\n\nP.a.M. venant du DIRAH : 37\nBAYASSI Mohamed\nSHAH Moussa\nSKSIT Abdelkader\nDRISS Bouayad\nBENCHAHANE Mansour\nMESBA Amar\nBOUFIRA Ahmed\nDJELLAI Rabah\nMAAZOUZ Moustah\nCHAFI Amar\nALELI Mohamed\nLAZRIG Nordine\nCHOUICHA Tayeb\nDAHANE Djillali\nGOUACH Charef\nBOUCHENA Bachir\nMERROUCHE Benyoussef\nRAFIK Mansour\nBOULID Boulansour\nBRAHMI Brahim\nMEGRAOUI Abderrahmane\nYOUNSI Mohamed\nBEN-HAROUSSI Ahmed\nKHALDI Benyoussef\nS.A.P. Ahmed ben Ali\nTAFARI Lakhdar\nMALIDI Mohamed\nFITISI Ahmed ben Larbi\nBEKIMA Tahar\nCHERIKI Amar\nMAKHOUF Ahmed\nAZIZ Benyoussef\nARAB Ahmed\nFERNANE Mohamed\nEL-KAF Ahmed\nALTAT Messaoud\nJAFAR Cherif\n\nP.a.M. venant du C.T.T.de.A. : 3\nADJALI Mohamed\nBEN-EMBAREK Tahar\nSo.N.Po. Ouri ben Ahmed\n\nP.a.M. évadés du DIRAH : 2\nMEZIANI Ali\nABDELAH Boumediène\n\nTOTAL DES P.A.M. REMIS AU C.M.I.: 42\n\nLe Commandant du C.M.I.                Le Directeur du C.T.T.de.A.",
+    "uncertainties": [
+      {
+        "fragment": "S.A.P. Ahmed ben Ali",
+        "suggestion": "Déchiffré avec prudence.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle S.A.P. est difficile à lire, mais semble apparaître clairement sur l'image. L'abréviation n'est pas explicitée."
+      },
+      {
+        "fragment": "So.N.Po. Ouri ben Ahmed",
+        "suggestion": "Lecture fidèle au document.",
+        "issue": "sigle_incertain",
+        "confidence": "high",
+        "note": "Le sigle So.N.Po. est présent sur l'image et semble correctement lu, sans certitude sur sa signification."
+      },
+      {
+        "fragment": "Abdelah Boumediène / ABDELAH Boumediène",
+        "suggestion": "Garder la graphie telle qu'elle apparaît, rester prudent sur l'exactitude.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom peut être un diminutif ou une variante. L'orthographe varie parfois, lecture fidèle à l'image."
+      },
+      {
+        "fragment": "MAAZOUZ Moustah",
+        "suggestion": "Recopier strictement la mention du document.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom Moustah, tel que lu sur l'image, est inhabituel et pourrait résulter d'une erreur ou d'une difficulté de lecture."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-24",
+    "sourceImage": "24-20260311_132809.jpg",
+    "assistedReadingText": "AUMALE, le 9 Septembre 1960\n\n- o - o - o - o - o - o - o -\n\nLISTE DES P.A.M. Remis au C.M.I. DE\nBOGHARI le 10. Septembre 1960\n\n- o - o - o - o - o - o - o -\n\n1. venant du DIRAH : 31\n\nS A O U         Benazouda\nBENZEKHROUFA   Ahmed\nCHENTITI        Larbi\nHARAOUI         Abdallah\nHENNICH         Zoubir\nMOUKRABLI      Tayeb\nMERDAD          Salah\nDADJ            Djelloul\nKHOMIRI         Dahmane\nSLIMI           Bouadi\nGUELAB          Benazouz\nKHALDI          Abderrahmane\nBEKAI           Ahmed\nBOUKHTICHE      Benyoucef\nZEGHAM          Mohamed\nAMARA           Amar\nBEN-SAID        Ali\nMEHOUDI         Laid\nBENHLIMA        Yahia\nKHERBA          Ali\nMEZIANE         Mohamed\nABDLEKADER      Mohamed\nSAHRAOUI        Mohamed\nBOUZIDI         Saïd\nCHAIB BACHA     Ahmed\nBAROUDI         Ahmed\nGUERINA         Abdallah\nAGUOUN          Saad\nBELLAISSI       Mohamed\nMAHIDI          Ali\n\nP.A.M. venant du C.T.T.A. : 10\n\nGUERMITI        Saad\nAMIRI           Mansour\nGACEM           Aïssa\nBELKHEIRA       Mohamed\nMAHMOUDI        Meliani\nMANSOURI        Omrane\nAFERNAOUT       Tayeb\nTAMIRI          Saad\nAMIRI           Kouider\nLARGUAT         Ahmed\n\nLe Commandant du C.M.I.\n\nListes des P.A.M. évadés du DIRAH\n\n- o - o - o - o - o - o - o -\n\nFELLAGUE        Lakhdar\nHAMOUCHE        Mohamed\nMAAMRI          Kaddour\nMAYOUF          Ali\nHORFATI         Slimane\nLARBI           Aïssa\nOUCHENE         Embarek\nMEZIANI         Aji\nABDALLAH        Boumediène\n\n2 évadés ont été repris, sont actuellement gardés à la disposition du Secteur d'AUMALE\n\nMEZIANI         ALI\nABDALLAH        Boumediène\n\n- o - o - o - o - o - o - o -\n\nLe Directeur du C.T.T.A.\n(signature, cachet)\n",
+    "uncertainties": [
+      {
+        "fragment": "BOUKHTICHE Benyoucef",
+        "suggestion": "BOUKHTICHE Benyoucef",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le nom pourrait aussi se lire BOUKHTICHE ou une variante très proche, mais l'image donne une lecture probable, l'OCR était incorrect."
+      },
+      {
+        "fragment": "GUERINA Abdallah",
+        "suggestion": "GUERINA Abdallah",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Nom propre confirmé par l'image mais pas clairement restitué par l'OCR."
+      },
+      {
+        "fragment": "LERBI Aïssa",
+        "suggestion": "LARBI Aïssa",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Lecture de LARBI Aïssa préférée sur l'image, l'OCR donne 'LERBI' ; l'image n'est pas parfaitement nette sur ce point."
+      },
+      {
+        "fragment": "MAYOUF ali",
+        "suggestion": "MAYOUF Ali",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "OCR donne 'MAYOUF ali', image donne 'MAYOUF Ali' (majuscule probable)."
+      },
+      {
+        "fragment": "MEHOUDI Laid",
+        "suggestion": "MEHOUDI Laid",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "MEHOUDI Laid ou Laïd ? L'image ne permet pas de trancher parfaitement sur l'accentuation."
+      },
+      {
+        "fragment": "9 Septembre 1960",
+        "suggestion": "9 Septembre 1960",
+        "issue": "date_incertaine",
+        "confidence": "high",
+        "note": "La date de la lettre est '9 Septembre 1960', confirmée visuellement, mais parfois OCR mal séparée."
+      },
+      {
+        "fragment": "BOGHARI le 10. Septembre 1960",
+        "suggestion": "BOGHARI le 10. Septembre 1960",
+        "issue": "date_incertaine",
+        "confidence": "medium",
+        "note": "La date de Boghari lisible mais points/espaces sont peu nets."
+      },
+      {
+        "fragment": "C.T.T.A.",
+        "suggestion": "C.T.T.A.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "La nature exacte du sigle n'est pas explicitée ici."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-25",
+    "sourceImage": "25-20260311_132919.jpg",
+    "assistedReadingText": "LISTE DES P.A.M. Tirmis au C.M.T DE BOGHARI le 10 septembre 1960.\n\nSAOU Benmalek Ahmed 28-8 10-9 Bon Travailleur.\nBENZEKROUFA Ahmed 10-9 Moyen Travailleur.\nCHENITI Laidi 9-8 10-9 Bon Travailleur.\nTAHRAOUI Abdelkader 10-9 Moyen Travailleur.\nHENNICHE Zoubir 10-9 Bon Travailleur.\nMOUKRABI Faouzi 10-9 Moyen Travailleur.\nMERADA Said 8-9 10-9 Bon Travailleur.\nDADI Ahmed 10-9 Moyen Travailleur.\nKIMIRI Daoud 5-9 10-9 moyen Travailleur (Bon chef d'équipe).\nSULEAB Bouzid 2-9 10-9 Bon Travailleur.\nBEKHALDI Abdelkader 10-9 Moyen Travailleur.\nDEKAI Ahmed 10-9 Moyen Travailleur.\nBOUKHETCHE Bouguemaz 10-9 Bon Travailleur.\nTEGHAR Ahmed 10-9 Moyen Travailleur.\nKHEMIMA Amar 10-9 moyen Travailleur.\nMERABA Ali 8-8 10-9 Bon Travailleur.\nSAFI Yahia 25-8 10-9 Bon Travailleur.\nYAGOUB Laid 25-8 10-9 Moyen Travailleur.\nMERAS Mohamed 25-8 10-9 Bon Travailleur.\nREBELKADER Amara 25-8 10-9 moyen Travailleur.\nBOUADJ Ahmed 25-8 10-9 moyen Travailleur.\nKHAID-BACHA Ahmed 25-8 10-9 moyen Travailleur.\nSERADJI Said 25-8 10-9 moyen Travailleur.\nKERKINA Abdallah 25-8 10-9 moyen Travailleur.\nYOUBOUN Said 25-8 10-9 Bon Travailleur.\nSEGHIRI Mohamed 16-9 10-9 Moyen Travailleur.\nMIAOUI Ali 16-8 10-9 Bon Travailleur.\n\nLE CAPITAINE DE GUIBERT\nChef Miroir au DI/RMH.\n(signature)\n",
+    "uncertainties": [
+      {
+        "fragment": "C.M.T DE BOGHARI",
+        "suggestion": "Lecture probable basée sur image.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Sigle manuscrit, probable mais nécessite validation."
+      },
+      {
+        "fragment": "Chef Miroir au DI/RMH",
+        "suggestion": "Lecture à confirmer.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Lecture du titre soumise à incertitude sur l'image, DI/RMH peut être un sigle incertain."
+      },
+      {
+        "fragment": "J. de Guibert (signature)",
+        "suggestion": "Lecture probable mais nécessite confirmation paléographique.",
+        "issue": "nom_propre_incertain",
+        "confidence": "high",
+        "note": "Le nom propre est lu depuis la signature manuscrite, mais toute identification reste incertaine."
+      },
+      {
+        "fragment": "Dates de naissance (colonne 3) et la date 10-9",
+        "suggestion": "Lecture à confirmer selon le contexte.",
+        "issue": "date_incertaine",
+        "confidence": "medium",
+        "note": "Les dates paraissent être des dates de naissance ou d'admission et de sortie, mais la signification exacte est incertaine à la seule lecture."
+      },
+      {
+        "fragment": "Certains noms propres (p.ex. TEGHAR, DEKAI, YOUOUN)",
+        "suggestion": "Validation requise.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Noms propres difficiles à lire manuellement, mais lecture très probable."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-26",
+    "sourceImage": "26-20260311_135145.jpg",
+    "assistedReadingText": "A SP. 89.144, le 1er Mai 1960.\nR.T. et C.A. d'ALGER\nZone Sud Algérois\nCMI de Boghari\nNo 590 / C.M.I.\n\nADDITIF LISTE N° 569/CMI DU 28 AVRIL 1960.\n\nLISTE DES INTERNES PROPOSES POUR LA LIBERATION.\n\n| Nom et prénom | Date d'entrée au C.M.I. | Motif de l'internement | APPRECIATION |\n| — | — | — | — |\n| SAHIRI Ahmed Ben Boukou Faya | 10/12/58 | Prisonnier les armes à la main | — Depuis 14 mois dans la section d’engagés de laquelle il avait été évincé pour indiscipline. S’est considérablement amélioré et mérite toute notre confiance. Son père, employé dans une S.A.S., vient d’être blessé par les rebelles. |\n| LATRECHE Mohamed ben Ahmed | 10/12/58 | Prisonnier les armes à la main | — Depuis 14 mois dans la section d’engagés. Ajourné pour raisons médicales. Elément très sérieux et consciencieux. Est entièrement gagné à notre cause. |\n| BARRA Abd-el-Kader Ben Mohamed | 26/1/59 | Prisonnier les armes à la main | — Depuis 14 mois dans la section d’engagés. Elément dynamique et courageux. Voudrait entrer à la S.A.S. où son père y est employé. |\n| TARAOUT Ben Benyaminat Hadj | 12/12/58 | Prisonnier les armes à la main | — Depuis 14 mois dans la section d’engagés. Marié. Autoritaire. Personnalité affirmée. Travailleur et consciencieux. Entièrement acquis à notre cause. |\n| ZOUAOUI Mohamed Ben Abd-el-Kader | 12/12/58 | Prisonnier les armes à la main | — Depuis 14 mois dans la section d’engagés. Marié, 2 enfants. Timide, réservé, serviable. |\n| TAYEBI Mohamed Ben Khoudri | 20/2/59 | Prisonnier les armes à la main | — Depuis 9 mois dans la section d’engagés. Marié sans enfant. Fait preuve de bonne volonté et discipliné. |\n| DAMI Abd-el-Kader Ben Ahmed | 16/5/59 | Prisonnier les armes à la main | — Depuis 9 mois dans la section d’engagés. Marié, 4 enfants. Travailleur et discipliné. Un des éléments les plus appréciés de la section. |\n| OUALI Boualem Ben Mohamed | 16/5/59 | Prisonnier les armes à la main M.N.A. | — Depuis 9 mois dans la section d’engagés. Marié, 5 enfants. Calme et pondéré pour son âge. Très discipliné. Mérite notre confiance. |",
+    "uncertainties": [
+      {
+        "fragment": "SAHIRI Ahmed Ben Boukou Faya",
+        "suggestion": "Présenter la transcription comme probable, demander relecture manuelle.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le prénom du père semble être 'Boukou' ou similaire, mais reste sujet à vérification par lecture humaine."
+      },
+      {
+        "fragment": "OUALI Boualem Ben Mohamed",
+        "suggestion": "Vérification utile sur le nom complet.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "La ligne est partiellement obstruée, quelques caractères du nom peuvent être incertains."
+      },
+      {
+        "fragment": "Prisonnier les armes à la main M.N.A.",
+        "suggestion": "A vérifier si ce sigle est correct.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Sur la dernière ligne, la mention 'M.N.A.' est lisible mais le contexte ou le sigle exact pourrait nécessiter confirmation."
+      },
+      {
+        "fragment": "Ajourné pour raisons médicales",
+        "suggestion": "Lecture fidèle mais demander relecture humaine définitive.",
+        "issue": "lecture_probable",
+        "confidence": "high",
+        "note": "Lecture correcte, confirmé par comparaison image/OCR, mais limite typographique."
+      },
+      {
+        "fragment": "Dates d'entrée (ex : 10/12/58)",
+        "suggestion": "Présenter les dates comme très probables.",
+        "issue": "date_incertaine",
+        "confidence": "medium",
+        "note": "Les dates semblent être 10/12/58, 12/12/58, 26/1/59, 20/2/59, 16/5/59, mais pour chaque ligne, une relecture humaine est conseillée."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-27",
+    "sourceImage": "27-20260311_135213.jpg",
+    "assistedReadingText": "Mohamed Ben         16/5/59    Prisonnier les armes à la main M.N.A.      - Depuis 9 mois dans la section d’engagés - marié sans enfant - sérieux et discipliné - gagné à notre cause\n\nAli Ben Boulaid     13/12/58  Capturé les armes à la main                      - Depuis 9 mois dans la section d’engagés - marié - 2 enfants - Très bon élément - n’a jamais démérité -\n\nLe dénommé BOUKKIT Said entré au CMI le 17/2/1959 fait partie de la section d’engagés depuis 14 mois. Il ne désire pas être libéré dans l’immédiat. Diminué physiquement, il préfère rester encore au C.M.I.\n\nEn ce qui concerne les dix internés pré-cités ils étaient candidats à l’engagement, mais pour la plupart mariés, ils n’ont pu avoir satisfaction. Proposés pour être harkis, ils ont dû renoncer également par suite du manque de places disponibles.\n\nDESTINATAIRE :\n- Z.S.A. – E.M. – 2° Bureau –\n\nLe Lieutenant DELESTRE,\nCommandant provisoirement le CMI de Boghari\nP.I. le Lieutenant MIRD O.D.",
+    "uncertainties": [
+      {
+        "fragment": "M.N.A.",
+        "suggestion": "Laisser M.N.A. en l'état ; ne pas tenter d'interprétation.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle M.N.A. est lisible sur l'image, mais son interprétation hors contexte n'est pas certaine."
+      },
+      {
+        "fragment": "P.I. le Lieutenant MIRD O.D.",
+        "suggestion": "Ne pas affirmer l'orthographe exacte du nom/initiales.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le nom 'MIRD O.D.' est difficile à lire dans le tampon/signature sur l'image, possible mauvaise lecture."
+      },
+      {
+        "fragment": "13/12/58 ; 16/5/59 ; 17/2/1959",
+        "suggestion": "Laisser sous cette forme.",
+        "issue": "date_incertaine",
+        "confidence": "high",
+        "note": "Les dates semblent correctes sur l'image, mais une erreur de frappe ou d'interprétation reste possible."
+      },
+      {
+        "fragment": "section d’engagés ; section d’engagés",
+        "suggestion": "Adopter la version la plus directement lisible sans modification.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "L'expression est lisible mais le terme précis pour 'section d’engagés' pourrait fluctuer selon la mise en page."
+      },
+      {
+        "fragment": "n’a jamais démérité",
+        "suggestion": "Gardé tel quel, avec prudence.",
+        "issue": "lecture_probable",
+        "confidence": "medium",
+        "note": "Lecture confirmée par l'image mais la typographie pourrait laisser place à une légère variation."
+      },
+      {
+        "fragment": "Boukkit Said",
+        "suggestion": "Laisser sous cette forme.",
+        "issue": "nom_propre_incertain",
+        "confidence": "high",
+        "note": "Le nom propre est lisible sur l'image mais demande confirmation ultérieure."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-28",
+    "sourceImage": "28-20260311_135331.jpg",
+    "assistedReadingText": "MESSAGE POSTALIER\n\nRÉSERVÉ AUX TRANSMISSIONS AU-DESSUS DE CETTE LIGNE\nAUTORITÉ ORIGINE: Commandant C.M.I de Boghari   GROUPE: 14  ADRESSE: II - 59\nAUTORITÉS DESTINATAIRES\nPOUR ACTION (TO): M. le Général Cdt la ZSA E.M. 5e Bureau\nPOUR INFORMATION (INFO): Secteur de Boghari\nN° 650/CMI    OBJET : État physique P.A.M.\nRéférence : TO n° 1689/ZSA/5 du 31-10-59\n\nPRIMÉ : 39\nNOUAL Youssef – MRAH AEK – BERKACH Tahar – BOUABDALLAH Ali – MEFTA Ahmed – DEBIEB Omari – MUSTAPHA Mohamed – ARBAOUI Randan – ZERFA Mohamed – TCHINA Said – KHELIFA Maamar – BARKI Mohamed – BENHAMOUDA Boualem – AMAR Ramdan – SOUIL AEK – BREK Aisse – BOUHAMIDI Ahmed – FOURA Mohamed – SNP MESSAOUD – SIDIMOU Kouider – DEROULL Mohamed – ALLAL All – YOUNST Ahmed – MESSAOUD Maira – BABAALI Naïr – RADJA Ali – DJEDDI Ab.éli\n\nKALI Koudder – KALOUN Mohamed – BABAALI Hamza – BELHADJ – ZERRANI Amar – DALLAL Ahmed – BOULBOUR AEK – GHOU. Rabah – BECHARADE Ali – ZERKANI Amar – BOUCHICH Rachid – SAHADJI Mohamed\n\nSECONDO : 6\nNOUAL Youssef – MEFTA Ahmed – ARBAOUI Randan – AMAR Ramdan – SOUIL AEK – BREK Aisse\n\nTERTIO : 19\nNOUAL Youssef – MRAH AEK – BERKACH Tahar – BOUABDALLAH Ali – MEFTA Ahmed – DEBIEB Omari – MUSTAPHA Mohamed – ARBAOUI Randan – ZERFA Mohamed – TCHINA Said – KHELIFA Maamar – BARKI Mohamed – BENHAMOUDA Boualem – AMAR Ramdan – SOUIL AEK – BREK Aisse – BOUHAMIDI Ahmed – FOURA Mohamed – SNP Messaoud\n\nQUARTO : 6\nBAHOUSS Nagguali (Hôpital Civil BENI-JESSOUS)\nHADJ ALI Djilali (Hôpital Maillot)\nBELKACEMI Ahmed (Hôpital Maillot)\nBOUKKIT Said (Hôpital Maillot)\nBOUSBA Djenddi (déposé H. M. J. RISS MEDEA)\nKAIDI Kaddour (déposé H. M. J. RISS MEDEA)\n\nINSTRUCTIONS A NE PAS TRANSMETTRE\nINSTRUCTIONS POUR LE MESSAGE\nNOM et Signature du Rédacteur ou de l'Opérateur\nTÉLÉPHONE\nSIGNATURE DU CHEF DE SERVICE\n(1) En cas de double urgence le plus faible s'applique aux destinataires pour information.",
+    "uncertainties": [
+      {
+        "fragment": "NOUAL Youssef, BERKACH Tahar, BOUABDALLAH Ali, MRAH AEK, ZERFA Mohamed, TCHINA Said, KHELIFA Maamar, SNP MESSAOUD, SIDIMOU Kouider, DEROULL Mohamed, ALLAL All, YOUNST Ahmed, MESSAOUD Maira, BABAALI Naïr, DJEDDI Ab.éli, KALI Koudder, KALOUN Mohamed, BABAALI Hamza, BELHADJ, ZERRANI Amar, DALLAL Ahmed, BOULBOUR AEK, GHOU. Rabah, BECHARADE Ali, ZERKANI Amar, BOUCHICH Rachid, SAHADJI Mohamed",
+        "suggestion": "Vérification supplémentaire nécessaire sur l'image originale haute résolution pour chaque nom propre.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Certains noms propres sont difficiles à lire sur l'image ou peu distincts dans l'OCR ; la correspondance a été tentée mais sans certitude pour tous, en particulier sur la lettre initiale ou des accents."
+      },
+      {
+        "fragment": "Référence : TO n° 1689/ZSA/5 du 31-10-59",
+        "suggestion": "Double vérification sur document original recommandée.",
+        "issue": "date_incertaine",
+        "confidence": "medium",
+        "note": "La date semble correcte, cependant certains éléments manuscrits ou frappés à la machine pourraient ne pas être lisibles avec certitude sur l'image."
+      },
+      {
+        "fragment": "BAHOUSS Nagguali (Hôpital Civil BENI-JESSOUS)",
+        "suggestion": "Nouvelle lecture à haute résolution si possible.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Le nom BAHOUSS Nagguali peut comporter des variantes orthographiques."
+      },
+      {
+        "fragment": "INSTRUCTIONS A NE PAS TRANSMETTRE INSTRUCTIONS POUR LE MESSAGE",
+        "suggestion": "Consultation du document non plié ou non abîmé.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "Certains mots dans la section inférieure sont en partie effacés ou pliés, ne permettant pas une lecture parfaite."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-29",
+    "sourceImage": "29-20260311_135720.jpg",
+    "assistedReadingText": "CETTE\nTRÈS SECRET\nSECRET\nSECRET-CONF.\nDIFFUS. REST.\nNON CLASSÉ\nLIGNE _\nFLASH\nEXTRÊME URGENT\nURGENT OPÉR[ations?]\nURGENT\nROUTINE\nDIFFÉRÉ\n(Biffer les mentions inutiles)\n\"81-2271,— PARIS, LIMOGES, NANCY, — 53 5900\nNOM°\net signature\nou de l’opérateur\ndu rédacteur\nDU CHEF\nDE SERVICE\nIMPR. CHARLES-LAVAUZELLE ET O[ie]\n[Numéro de note manuscrite :] n° 641/CH/E/7014\n[Phrase manuscrite peu lisible :] meilleur aller auprès juge tribunal\n[Autre manuscrit :] rophe? [et / ou ?] vis",
+    "uncertainties": [
+      {
+        "fragment": "\"81-2271,— PARIS, LIMOGES, NANCY, — 53 5900",
+        "suggestion": "\"81-2271,— PARIS, LIMOGES, NANCY, — 53 5900\"",
+        "issue": "lieu_incertain",
+        "confidence": "medium",
+        "note": "OCR propose plusieurs villes, difficile de confirmer l'exactitude de toutes les localisations à partir de l'image seulement."
+      },
+      {
+        "fragment": "IMPR. CHARLES-LAVAUZELLE ET O[ie]",
+        "suggestion": "IMPR. CHARLES-LAVAUZELLE ET O[?]",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "La fin du nom de l'imprimeur n'est pas parfaitement lisible."
+      },
+      {
+        "fragment": "meilleur aller auprès juge tribunal",
+        "suggestion": "meilleur aller auprès juge tribunal (lecture probable, valider sur original)",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "Écriture manuscrite difficilement lisible dans l'image."
+      },
+      {
+        "fragment": "rophe? [et / ou ?] vis",
+        "suggestion": "rophe? [et / ou ?] vis",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "Fragment manuscrit en bas à droite incompréhensible."
+      },
+      {
+        "fragment": "URGENT OPÉR[ations?]",
+        "suggestion": "URGENT OPÉR[ations?]",
+        "issue": "lecture_probable",
+        "confidence": "high",
+        "note": "Abréviation OPÉRens probablement pour opérations."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-30",
+    "sourceImage": "30-20260311_135815.jpg",
+    "assistedReadingText": "ALGER, le 1 décembre 1959\n\nLe Général d'Armée Aérienne CHALLE\nCommandant en Chef les Forces en Algérie\nà\nMonsieur le Général Commandant\nLa Région Territoriale et le 1er Corps d’Armée d’ORAN — 5e Bureau\n\n- OBJET : Conduite à tenir vis-à-vis des ressortissants étrangers arrêtés par les Forces de l'ordre.\n- RÉFÉRENCE : Titre n° 1998/RT/CAO/5/ORG du 2 Novembre 1959.\n\nEn réponse à votre correspondance citée en référence, j'ai l'honneur de vous confirmer les dispositions à prendre au sujet des ressortissants étrangers arrêtés comme suspects membres de l'O.P.A. ou rebelles pris les armes à la main.\n\n1°/ Le Général Commandant en Chef en Algérie, ayant reçu délégation pour l'application des mesures relatives au maintien de l'ordre, a prescrit, par la note 2.021C1 en date du 21 avril 1959, que les ressortissants étrangers pris ici armes à la main doivent être remis aux autorités judiciaires compétentes aux fins de poursuite.\nCette mesure est également applicable aux sujets étrangers présumés coupables de crimes ou de délits.\n\n2°/ Les ressortissants étrangers non poursuivis par les Autorités judiciaires ou ceux ayant accompli une peine de prison, acquittés ou ayant bénéficié d’un non-lieu, doivent être en principe expulsés.\n\n3°/ Cependant les ressortissants étrangers qui seraient estimés susceptibles de revenir sur notre territoire et d’y constituer un danger pour la sécurité et l’ordre publics pourront être assignés à résidence surveillée dans les mêmes conditions que les citoyens français. Ces cas particuliers seront soumis à ma décision sous le présent timbre.\n\nsigné : CHALLE (cachet)",
+    "uncertainties": [
+      {
+        "fragment": "O.P.A.",
+        "suggestion": "Conserver O.P.A. mais à vérifier.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle O.P.A. est lu sur l'image, mais son exactitude dépend de la qualité de l'image et du contexte absent."
+      },
+      {
+        "fragment": "2.021C1",
+        "suggestion": "Lecture probable à vérifier sur document original.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "Le numéro de note (2.021C1) bien que probable reste à confirmer."
+      },
+      {
+        "fragment": "Le Général d'Armée Aérienne CHALLE",
+        "suggestion": "Lecture probable : CHALLE.",
+        "issue": "nom_propre_incertain",
+        "confidence": "high",
+        "note": "Le nom propre correspond à la signature et au texte tapé mais l'orthographe doit être vérifiée sur la source."
+      },
+      {
+        "fragment": "Commandant en Chef les Forces en Algérie",
+        "suggestion": "Lecture à confirmer.",
+        "issue": "lecture_probable",
+        "confidence": "medium",
+        "note": "Une partie des titres peut être sujette à de légères variantes orthographiques non lisibles avec totale certitude."
+      },
+      {
+        "fragment": "les ressortissants étrangers arrêtés comme suspects membres de l'O.P.A. ou rebelles pris les armes à la main",
+        "suggestion": "Lecture du passage à vérifier.",
+        "issue": "lecture_probable",
+        "confidence": "low",
+        "note": "Phrase longue avec quelques parties peu lisibles à cause de l'impression ou du scan."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-31",
+    "sourceImage": "31-20260311_135830.jpg",
+    "assistedReadingText": "ALGER, le 22 Mars 1960\n\nCOMMANDANT EN CHEF DES F.A.\nR.T. ET CORPS D’ARMEE D’ALGER\nETAT-MAJOR – 2e BUREAU\nN° [illisible]/R./CAA/2/CMI.\nEXEMPLAIRE N° 2/8\n\nLe Général de Corps d’Armée CREPIN\nCommandant la R.T. et la C.A. d’ALGER\nà\nMonsieur le Général Commandant\nla Z.S.A. et la 20ème D.I.\nEtat-Major – 2e Bureau\n\nOBJET : Conduite à tenir vis-à-vis des ressortissants étrangers arrêtés par les Forces de l’Ordre.\n\nREFERENCE : Lettre n° 7073/CML du 1.12.1959 du Général Cdt. en Chef des F.A., notifiée le 17.12.1959, sous le n° 5613/RF/CAA/5/AD\n\nSECRET\n\nPar transmission n° 399/ZSA/5/S du 3 Mars 1960, vous m’avez fait parvenir la liste des P.A.M. internés au C.M.I. de BOGHARI lors de leur capture, hors du territoire du Corps d’Armée d’ALGER.\n\nCertains de ces P.A.M. – § II de la liste n° 203/CCMI – semblent non seulement domiciliés au MAROC, mais également originaires de ce pays.\n\nJe vous prie donc de bien vouloir faire procéder à une enquête aux fins de déterminer la nationalité des intéressés – citoyens français nés au Maroc ou sujets marocains – et au cas où ils seraient des ressortissants étrangers, appliquer à leur encontre les dispositions prévues par la note de service citée en référence.\n\nP.o. Le Lt.-Colonel de JACQUELOT S/Chef \"Opérations\"\nSignature illisible (cachet).",
+    "uncertainties": [
+      {
+        "fragment": "N° [illisible]/R./CAA/2/CMI.",
+        "suggestion": "Recourir à une version plus lisible du document pour confirmer le numéro.",
+        "issue": "mot_illisible",
+        "confidence": "low",
+        "note": "Numéro de dossier partiellement masqué/incomplet sur l’image et dans l’OCR."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-32",
+    "sourceImage": "32-20260311_135841.jpg",
+    "assistedReadingText": "BC/JL - 8.8.60\nCOMMANDEMENT EN CHEF DES FORCES EN ALGERIE\nREGION TERRITORIALE ET C.A.A. ZONE SUD ALGEROIS ET 20e D.I.\nETAT-MAJOR – 2e BUREAU\nNo 1927 /ZSA/2.S\nClt. : 2372/02\nP.C., le 9 AOU 1960\n\nLe Général de Brigade ARFOUILLOUX,\nCommandant la Z.S.A. et la 20e D.I.\n\nà Monsieur le Général de Corps d’Armée,\nCommandant la Région Territoriale et\nle Corps d’Armée d’Alger\nEtat-Major – 2e Bureau\n\nOBJET : Sujets marocains internés au Centre Militaire d’Internés de BOGHAR.\nREFER. : Note de service no 2749/EM1/I/EFF du 7.7.1960 transmise sous no 1630/RT/CAA/2/CTT du 16.7.1960.\n- Ma lettre no 1757/ZSA/2/S du 23.7.1960.\nP.J. : - Copie des déclarations des sujets marocains.\n- Copie des notices individuelles établies par le C.M.I.\n\nLa note de service de 1ère référence a prescrit d’offrir aux 4 sujets marocains actuellement internés au Centre Militaire d’Internés la possibilité de contracter un engagement ou un rengagement dans un Régiment de Tirailleurs Marocains stationné en métropole.\n\nLes intéressés ont refusé, ainsi qu’en témoignent leurs déclarations dont les copies sont jointes en annexe.\n\nIl semble maintenant possible d’adopter à leur égard l’une des trois attitudes suivantes (1) :\n– les remettre aux autorités judiciaires compétentes aux fins de poursuites (2)\n– les expulser\n– les maintenir au Centre Militaire d’Internés, la décision appartenant dans ce dernier cas au Général Commandant en Chef.\n\n(1) en application des dispositions de la lettre no 7073/CM du 1.12.1959 transmise sous no 5613/RT/CAA du 7.12.1959.\n\n(2) ma lettre no 71/ZSA/2 du 31.5.1960 vous a rendu compte des démarches faites auprès du tribunal d’instance de BOGHAR et des difficultés rencontrées à l’époque.",
+    "uncertainties": [
+      {
+        "fragment": "ARFOUILLOUX",
+        "suggestion": "ARFOUILLOUX",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "L’image suggère ce patronyme, mais la lisibilité n’est pas parfaite."
+      },
+      {
+        "fragment": "BOGHAR/BOGHARI",
+        "suggestion": "BOGHAR probablement correct, BOGHARI pour la mention du tribunal",
+        "issue": "lieu_incertain",
+        "confidence": "medium",
+        "note": "Le lieu BOGHAR est bien identifié, mais une mention en note pour la graphie BOGHARI (tribunal d’instance) apparaît moins claire."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-33",
+    "sourceImage": "33-20260311_135852.jpg",
+    "assistedReadingText": "Algérien de Parents Marocain.\nMohamed B./A.E.K -\n\nMarocains de Parents Algériens.\nIssad Quali -\nBennai: Nouara -\n---Khelfi Tayeli---\nAmara Ahmed\n\nMarocain 100/100\nMAJANI Ben Brachin,\nDriss Ben Ayad - S.N.R. Mohamed\n\n(assignations ?...)",
+    "uncertainties": [
+      {
+        "fragment": "Bennai: Nouara -\n---Khelfi Tayeli---",
+        "suggestion": "Vérifier avec d'autres sources la forme exacte des noms.",
+        "issue": "nom_propre_incertain",
+        "confidence": "low",
+        "note": "Lecture des noms propres incertaine, écriture manuscrite difficile, possible déformation de noms ou prénoms."
+      },
+      {
+        "fragment": "assignations ?...",
+        "suggestion": "Confirmer le sens du fragment difficilement lisible en marge inférieure.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "Le mot 'assignations' suit une abréviation ou note peu claire."
+      },
+      {
+        "fragment": "Marocain 100/100",
+        "suggestion": "Vérifier la normalisation de cette formule.",
+        "issue": "lecture_probable",
+        "confidence": "medium",
+        "note": "Formule manuscrite inhabituelle, à confirmer sur document original."
+      },
+      {
+        "fragment": "S.N.R. Mohamed",
+        "suggestion": "Vérifier la signification du sigle dans le contexte du dossier.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle S.N.R. n’est pas interprété, absence de contexte dans l’extrait."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-34",
+    "sourceImage": "34-20260311_135909.jpg",
+    "assistedReadingText": "Liste des Ressortissants Marocains présents au C.M.I à la date du 4.7.60\nRéference n° 1469/2.S.A/U.I.S.C. du 4.7.60.\nObjet : Ressortissants Marocains\n\nNom et Prénoms               Sujets Marocains              Autorité ayant présenté l'assignation\n- S.N.? Mohamed B/Ahmed      -                             Gendarme de Brigade Roy - Cdt Ca 2.S.A et Rado D.I\nMADANI Ben Brahim            -                             -\nDriss Bou Ayad               -                             -\nMohamed Ben A.E.K.           -                             -\n\n---\n\nNom et Prénoms                       Sujets Marocains de Parents Algériens        Autorité ayant présenté l'assignation\n\nAMRANI Ahmed B/Mohamed                -                                           Gendarme de Brigade Roy - Cdt Ca 2.S.A et Rado D.I\n(issa) Ouali B/Hamnou                 -                                           Gendarme de Brigade HUET. Cdt Ca 2 N.A.\nBENNAI Ahmed B/Ahmed                  -                                           -\nEL KHELIFI Tayeb B/Lakhdar            -                                           Préfecture d'Orleansville",
+    "uncertainties": [
+      {
+        "fragment": "S.N.? Mohamed B/Ahmed",
+        "suggestion": "Laisser S.N.? ou abréviation incertaine pour la première entrée.",
+        "issue": "nom_propre_incertain",
+        "confidence": "low",
+        "note": "Le premier nom sur la liste pourrait être S.N.I. ou une autre abréviation manuscrite difficile à déchiffrer. L'image reste peu lisible à cet endroit."
+      },
+      {
+        "fragment": "Réference n° 1469/2.S.A/U.I.S.C.",
+        "suggestion": "Conserver la transcription exacte observée sans garantir l'exactitude des sigles.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Les sigles exacts sont manuscrits et partiellement peu lisibles."
+      },
+      {
+        "fragment": "Mohamed Ben A.E.K.",
+        "suggestion": "Note de prudence : retranscrire uniquement la forme visible.",
+        "issue": "nom_propre_incertain",
+        "confidence": "low",
+        "note": "Le troisième prénom comporte des initiales incertaines (A.E.K.) manuscrites."
+      },
+      {
+        "fragment": "Préfecture d'Orleansville",
+        "suggestion": "Laisser ‘Orleansville’ tout en signalant l’incertitude.",
+        "issue": "lieu_incertain",
+        "confidence": "medium",
+        "note": "Le nom du lieu est manuscrit, la lecture probable est ‘Orleansville’ mais l’écriture laisse place à un doute."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-35",
+    "sourceImage": "35-20260311_135951.jpg",
+    "assistedReadingText": "ALGER, le 27 Juin 1960\n\nCOPIE\n\nANALYSE:\n- Dossiers concernant les P.A.M.\nBENAI Ahmed\nISSAD Ouali\n\nCOMMANDANT EN CHEF DES FORCES EN ALGERIE\nREGION TERRITORIALE et C.A. d'ALGER\nETAT-MAJOR - 2° BUREAU\nN° 1.472/RT/CAA/2 S\n\nTRANSMIS\nà\nMonsieur le Général Commandant la Z.S.A.\net la 20° D.I.\n\n\"EN RETOUR\"\n\nArrêtés les armes à la main dans la région de RELIZANE, ces P.A.M. ont été mis à la disposition du D.O.P. de MITIDJA.\n\nSur prescriptions du Général commandant en chef des Forces en Algérie, en date du 9 août 1958, ils ont été assignés à résidence dans un C.H. par le Général commandant la Zone Nord Algérois.\n\nEn exécution des prescriptions du T.O. n° 5630/RT/CAA/5/AD du 9.10.1959 (dont la Zone Sud a été destinataire), ils ont été assignés en C.M.I. de BOGHAR le 19 décembre 1959 avec le nommé KHALEF Mustapha, P.A.M. également capturé en Oranie et actuellement au C.M.I. de BOGHAR (transmission n° 399/ZSA/5/S du 8 mars 1960).\n\n1°/ - si les individus en cause sont citoyens nés au Maroc, leur situation au C.M.I. de BOGHAR doit être considérée comme régulière,\n\n2°/ - si ce sont des ressortissants marocains, non citoyens français, leur situation au C.M.I. de BOGHAR doit être considérée comme irrégulière, en application des prescriptions du paragraphe 6 de la note n° 7073/CM du 1.12.1959 notifiée le 17.12.1959 sous le n° 5613/RT/CAA/5/AD et rappelée par note de service n° 1288/RT/CAA/2/CTM du 8.6.1960.\n\nLe Général de Corps d'Armée VEZINET Commandant la Région Territoriale et le Corps d'Armée d'Alger\nLe Colonel MAULDON d'ARBAUMONT Chef d'Etat-Major\n\nSigné : illisible    CACHET",
+    "uncertainties": [
+      {
+        "fragment": "BENAI Ahmed\nISSAD Ouali",
+        "suggestion": "Lecture probable d'après image, vérifier orthographe.",
+        "issue": "nom_propre_incertain",
+        "confidence": "high",
+        "note": "Noms propres seems lisibles mais sont toujours à considérer avec réserve en l'absence de validation humaine."
+      },
+      {
+        "fragment": "C.H.",
+        "suggestion": "Vérifier ce sigle lors d'une validation ultérieure.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sigle C.H. n'est pas explicitement développé dans le document."
+      },
+      {
+        "fragment": "KHALEF Mustapha",
+        "suggestion": "Vérifier la graphie exacte lors de la validation.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "Nom propre lisible mais toujours incertain."
+      },
+      {
+        "fragment": "9 août 1958",
+        "suggestion": "Date à valider.",
+        "issue": "date_incertaine",
+        "confidence": "high",
+        "note": "La date est lisible mais toujours à prendre avec précaution."
+      },
+      {
+        "fragment": "9.10.1959",
+        "suggestion": "Date à valider.",
+        "issue": "date_incertaine",
+        "confidence": "high",
+        "note": "Date lisible mais nécessite validation."
+      },
+      {
+        "fragment": "17.12.1959",
+        "suggestion": "Date à valider.",
+        "issue": "date_incertaine",
+        "confidence": "high",
+        "note": "Date lisible mais nécessite validation."
+      },
+      {
+        "fragment": "8.6.1960",
+        "suggestion": "Date à valider.",
+        "issue": "date_incertaine",
+        "confidence": "high",
+        "note": "Date lisible mais nécessite validation."
+      },
+      {
+        "fragment": "D.O.P. de MITIDJA",
+        "suggestion": "Développer/expliciter à la validation.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Le sens exact de D.O.P. n'est pas explicité dans le document."
+      },
+      {
+        "fragment": "Signé : illisible",
+        "suggestion": "Aucune lecture possible.",
+        "issue": "mot_illisible",
+        "confidence": "medium",
+        "note": "Signature impossible à lire sur l'image."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  },
+  {
+    "reviewId": "page-36",
+    "sourceImage": "36-20260311_141712.jpg",
+    "assistedReadingText": "R.B./A.A. - 10.2.1962\nTél : Megador : 39-70\n\nCOMMANDEMENT SUPERIEUR DES FORCES EN ALGERIE\nCORPS D’ARMEE D’ALGER\nETAT-MAJOR – 2° BUREAU\n\nNOTE DE SERVICE\n\nALGER, le 16 MARS 1962\nNo 736 /R.T./C.A.A./2.C.T.T.\n\nOBJET : Habillement des P.A.M. libérés du C.M.I.\nREFERENCE : Lettre No 641/CSFA/EMI/MA Non notifiée.\n\nPar Note de Service citée en référence, il a été décidé que les P.A.M. ne pouvant être libérés revêtus de la tenue militaire perçue au camp, ceux d’entre eux ne possédant pas d’autres effets d’habillement seraient dotés de vêtements civils au moment de leur départ du C.M.I.\n\nAfin que ces prescriptions puissent être appliquées sans difficulté, en particulier dans l’hypothèse d’un cessez-le-feu imposant des mesures de libération importantes et hâtives, il y a lieu de constituer dès maintenant des stocks de vêtements civils nécessaires.\n\nLe prix d’achat de ces effets, qui pourraient consister en des articles de friperie convenables, ne devra pas, en principe, excéder 30 N.F. par assigné.\n\nLe Commandant du C.M.I. fera connaître sous le présent timbre, par retour du courrier le nombre de P.A.M. présents actuellement au C.M.I. et ne pouvant disposer d’aucun vêtement civil personnel en cas de libération.\n\nDESTINATAIRES :\n- C.M.I. BOCHART – pour exécution\n- ZONE SUD ALGEROIS – Pour information",
+    "uncertainties": [
+      {
+        "fragment": "No 736 /R.T./C.A.A./2.C.T.T.",
+        "suggestion": "Maintenir la lecture proposée, mais considérer ce point comme incertain.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "Les sigles exacts sont difficiles à identifier avec certitude. L'image indique 'R.T./C.A.A./2.C.T.T.', mais la lisibilité des sigles demeure moyenne."
+      },
+      {
+        "fragment": "Lettre No 641/CSFA/EMI/MA Non notifiée.",
+        "suggestion": "Lecture respectée, incertitude sur le décodage des sigles.",
+        "issue": "sigle_incertain",
+        "confidence": "medium",
+        "note": "La désignation complète des sigles 'CSFA/EMI/MA' reste sujette à interprétation, car les lettres peuvent prêter à confusion."
+      },
+      {
+        "fragment": "C.M.I. BOCHART",
+        "suggestion": "Lecture recommandée : BOCHART, mais étiqueter comme incertain.",
+        "issue": "nom_propre_incertain",
+        "confidence": "medium",
+        "note": "La lecture du nom propre 'BOCHART' est probable, toutefois un doute subsiste à cause de la qualité de l'image et de la frappe."
+      },
+      {
+        "fragment": "ZONE SUD ALGEROIS",
+        "suggestion": "Lecture probable : ZONE SUD ALGEROIS.",
+        "issue": "lieu_incertain",
+        "confidence": "medium",
+        "note": "La zone géographique mentionnée semble correcte à la lecture, mais une marge d’incertitude demeure sur les termes exacts employés."
+      }
+    ],
+    "confidence": "low",
+    "status": "assisted_unverified",
+    "humanValidation": {
+      "validated": false,
+      "validatedBy": null,
+      "validatedAt": null,
+      "notes": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image."
+  }
+]
