@@ -173,6 +173,40 @@
       "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees. Lot editorialement sensible a controler humainement avec prudence documentaire."
     },
     {
+      "lotId": "lot-renseignements-dz-1964-001",
+      "collectionId": "shd-1h2733-renseignements-dz-1964",
+      "title": "SHD 1H2733 - Renseignements sur DZ 1964",
+      "sourceType": "google_drive",
+      "status": "review_ready",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/18zOpPLHYjlcq07Z4Xf2xlwYbgKzBKtMY",
+        "inventoryManifest": null
+      },
+      "assetManifest": "data/generated/batches/lot-renseignements-dz-1964-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-renseignements-dz-1964-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-renseignements-dz-1964-001",
+      "legacyReviewRoute": null,
+      "itemCount": 77,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
+    },
+    {
+      "lotId": "lot-boghari-visite-fiches-liaison-1959-001",
+      "collectionId": "shd-gr-1h1895-boghari-cr-visite-fiches-liaison-1959",
+      "title": "SHD GR 1H1895 - Boghari CR visite, fiches liaison 1959",
+      "sourceType": "google_drive",
+      "status": "review_ready",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1dSOLAAPlb05Hxy2FmFVg5oDPJDp4ix3u",
+        "inventoryManifest": null
+      },
+      "assetManifest": "data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-boghari-visite-fiches-liaison-1959-001",
+      "legacyReviewRoute": null,
+      "itemCount": 78,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
+    },
+    {
       "lotId": "lot-fln-w4-005",
       "collectionId": "shd-gr-1h1646-lettres-directives-fln-wilaya4",
       "title": "SHD GR 1H1646 - Lettres et directives FLN Wilaya 4",

@@ -14,6 +14,10 @@ import pamCimLiberesAssistedReadings from "../../data/generated/batches/lot-pam-
 import pamCimLiberesPublicAssets from "../../data/generated/batches/lot-pam-cim-liberes-001/public-assets.json";
 import lotBleuiteFlnW3Amirouche001AssistedReadings from "../../data/generated/batches/lot-bleuite-fln-w3-amirouche-001/assisted-readings.json";
 import lotBleuiteFlnW3Amirouche001PublicAssets from "../../data/generated/batches/lot-bleuite-fln-w3-amirouche-001/public-assets.json";
+import lotRenseignementsDz1964001AssistedReadings from "../../data/generated/batches/lot-renseignements-dz-1964-001/assisted-readings.json";
+import lotRenseignementsDz1964001PublicAssets from "../../data/generated/batches/lot-renseignements-dz-1964-001/public-assets.json";
+import lotBoghariVisiteFichesLiaison1959001AssistedReadings from "../../data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/assisted-readings.json";
+import lotBoghariVisiteFichesLiaison1959001PublicAssets from "../../data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/public-assets.json";
 import tiaretZaouiasAssistedReadings from "../../data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json";
 import tiaretZaouiasPublicAssets from "../../data/generated/batches/lot-tiaret-zaouias-001/public-assets.json";
 import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
@@ -116,6 +120,10 @@ const assetManifestRegistry: Record<string, AssetManifest> = {
     pamCimLiberesPublicAssets as AssetManifest,
   "data/generated/batches/lot-bleuite-fln-w3-amirouche-001/public-assets.json":
     lotBleuiteFlnW3Amirouche001PublicAssets as AssetManifest,
+  "data/generated/batches/lot-renseignements-dz-1964-001/public-assets.json":
+    lotRenseignementsDz1964001PublicAssets as AssetManifest,
+  "data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/public-assets.json":
+    lotBoghariVisiteFichesLiaison1959001PublicAssets as AssetManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/public-assets.json":
     tiaretZaouiasPublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
@@ -135,6 +143,10 @@ const assistedReadingManifestRegistry: Record<string, AssistedReadingManifest> =
     pamCimLiberesAssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-bleuite-fln-w3-amirouche-001/assisted-readings.json":
     lotBleuiteFlnW3Amirouche001AssistedReadings as AssistedReadingManifest,
+  "data/generated/batches/lot-renseignements-dz-1964-001/assisted-readings.json":
+    lotRenseignementsDz1964001AssistedReadings as AssistedReadingManifest,
+  "data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/assisted-readings.json":
+    lotBoghariVisiteFichesLiaison1959001AssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json":
     tiaretZaouiasAssistedReadings as AssistedReadingManifest,
   "data/generated/pilot-batch-assisted-readings.example.json":
