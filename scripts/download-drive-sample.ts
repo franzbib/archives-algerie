@@ -1,5 +1,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import {
+  applyDriveAuth,
+  describeDriveAuth,
+  type DriveAuth,
+  getRequiredDriveAuth,
+} from "./drive-auth";
 
 interface DriveInventory {
   generatedAt?: string;
@@ -98,11 +104,7 @@ async function main() {
   const mode = getMode();
   const limit = getLimit(mode);
   const confirmed = process.argv.includes("--confirm");
-  const apiKey = process.env.GOOGLE_DRIVE_API_KEY;
-
-  if (!apiKey) {
-    throw new Error("GOOGLE_DRIVE_API_KEY est requise pour telecharger l'echantillon.");
-  }
+  const driveAuth = await getRequiredDriveAuth("Le telechargement Drive");
 
   if (!confirmed) {
     throw new Error(
@@ -112,6 +114,7 @@ async function main() {
 
   const inventory = await readJson<DriveInventory>(inventoryPath);
   const candidates = getDownloadCandidates(inventory, mode).slice(0, limit);
+  console.log(`Authentification Drive: ${describeDriveAuth(driveAuth)}`);
 
   if (candidates.length === 0) {
     throw new Error(
@@ -136,7 +139,7 @@ async function main() {
     let bytes: Buffer;
 
     try {
-      bytes = await downloadDriveFile(candidate.file.driveFileId, apiKey);
+      bytes = await downloadDriveFile(candidate.file.driveFileId, driveAuth);
     } catch (error) {
       if (!(error instanceof SkippableDriveDownloadError)) {
         throw error;
@@ -259,15 +262,14 @@ function getDownloadCandidates(
 
 async function downloadDriveFile(
   driveFileId: string,
-  apiKey: string,
+  driveAuth: DriveAuth,
 ): Promise<Buffer> {
   const url = new URL(
     `https://www.googleapis.com/drive/v3/files/${encodeURIComponent(driveFileId)}`,
   );
   url.searchParams.set("alt", "media");
-  url.searchParams.set("key", apiKey);
 
-  const response = await fetch(url);
+  const response = await fetch(url, applyDriveAuth(url, {}, driveAuth));
   if (!response.ok) {
     const body = await response.text();
     const bodyPreview = compactBodyPreview(body);

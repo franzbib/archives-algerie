@@ -1,5 +1,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import {
+  applyDriveAuth,
+  describeDriveAuth,
+  type DriveAuth,
+  getOptionalDriveAuth,
+} from "./drive-auth";
 
 interface DriveSource {
   collectionId?: string;
@@ -71,7 +77,7 @@ async function main() {
   const sourcePath = getArg("--sources") ?? "scripts/drive-sources.example.json";
   const outputPath = getArg("--out") ?? "data/generated/drive-inventory.json";
   const limit = getLimit();
-  const apiKey = process.env.GOOGLE_DRIVE_API_KEY;
+  const driveAuth = await getOptionalDriveAuth();
   const sources = await readJson<DriveSource[]>(sourcePath);
 
   if (!Array.isArray(sources)) {
@@ -84,11 +90,13 @@ async function main() {
     "Aucun OCR, aucun appel OpenAI, aucun embedding.",
   ];
 
-  if (!apiKey) {
+  if (!driveAuth) {
     notes.push(
-      "Mode mock: GOOGLE_DRIVE_API_KEY est absent. Les dossiers sont listes avec files: [].",
-      "Pour activer le mode drive: definir GOOGLE_DRIVE_API_KEY puis relancer le script.",
+      "Mode mock: aucune authentification Drive. Les dossiers sont listes avec files: [].",
+      "Pour activer le mode drive: definir GOOGLE_SERVICE_ACCOUNT_KEY_PATH, GOOGLE_APPLICATION_CREDENTIALS ou GOOGLE_DRIVE_API_KEY puis relancer le script.",
     );
+  } else {
+    notes.push(`Authentification Drive: ${describeDriveAuth(driveAuth)}.`);
   }
 
   const inventorySources: DriveInventorySource[] = [];
@@ -99,9 +107,9 @@ async function main() {
 
     let files: GoogleDriveFile[] = [];
 
-    if (apiKey) {
+    if (driveAuth) {
       try {
-        files = await listDriveFolderFiles(source.driveUrl, apiKey, limit);
+        files = await listDriveFolderFiles(source.driveUrl, driveAuth, limit);
       } catch (error) {
         const message = formatDriveError(error);
         notes.push(`Erreur Drive pour ${collectionId}: ${message}`);
@@ -120,7 +128,7 @@ async function main() {
 
   const inventory: DriveInventory = {
     generatedAt: new Date().toISOString(),
-    mode: apiKey ? "drive" : "mock",
+    mode: driveAuth ? "drive" : "mock",
     sourceFile: sourcePath,
     sourceCount: inventorySources.length,
     fileCount: inventorySources.reduce(
@@ -145,7 +153,7 @@ async function main() {
 
 async function listDriveFolderFiles(
   driveFolderUrl: string,
-  apiKey: string,
+  driveAuth: DriveAuth,
   limit: number,
 ): Promise<GoogleDriveFile[]> {
   const folderId = extractDriveFolderId(driveFolderUrl);
@@ -159,7 +167,6 @@ async function listDriveFolderFiles(
   while (files.length < limit) {
     const url = new URL("https://www.googleapis.com/drive/v3/files");
     const remaining = limit - files.length;
-    url.searchParams.set("key", apiKey);
     url.searchParams.set("q", `'${folderId}' in parents and trashed=false`);
     url.searchParams.set(
       "fields",
@@ -171,7 +178,7 @@ async function listDriveFolderFiles(
       url.searchParams.set("pageToken", pageToken);
     }
 
-    const response = await fetch(url);
+    const response = await fetch(url, applyDriveAuth(url, {}, driveAuth));
     if (!response.ok) {
       throw new Error(
         `Google Drive API error ${response.status}: ${formatGoogleDriveApiError(
