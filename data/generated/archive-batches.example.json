@@ -156,6 +156,23 @@
       "notes": "Lot SHD GR 1H5086 PAM assignes dans les CIM et liberes pret pour revue ; images publiees et lectures assistees non validees. Deux pages restent sans lecture assistee exploitable et doivent etre controlees sur image."
     },
     {
+      "lotId": "lot-bleuite-fln-w3-amirouche-001",
+      "collectionId": "shd-gh-1h3421-d1-bleuite-fln-abattus-w3-amirouche",
+      "title": "SHD GH 1H3421 D1 - Bleuite, FLN abattus W3, lettre d'Amirouche",
+      "sourceType": "google_drive",
+      "status": "planned",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1scxkOKKKmCKpwBuiF1wLTdv736pwItZH",
+        "inventoryManifest": null
+      },
+      "assetManifest": null,
+      "assistedReadingManifest": null,
+      "reviewRoute": null,
+      "legacyReviewRoute": null,
+      "itemCount": null,
+      "notes": "Source Drive identifiee par inventaire leger local : dossier SHD GH 1H3421 D1 Bleuite, FLN abattus W3, lettre d'Amirouche. Lot JPG de premiere vague, techniquement simple mais editorialement sensible ; aucune ingestion, aucun OCR, aucune lecture assistee et aucun upload n'ont encore ete produits."
+    },
+    {
       "lotId": "lot-fln-w4-005",
       "collectionId": "shd-gr-1h1646-lettres-directives-fln-wilaya4",
       "title": "SHD GR 1H1646 - Lettres et directives FLN Wilaya 4",
