@@ -207,6 +207,57 @@
       "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
     },
     {
+      "lotId": "lot-exemples-amicale-genealogistes-shd-001",
+      "collectionId": "exemples-amicale-genealogistes-shd",
+      "title": "Exemples Amicale Genealogistes SHD",
+      "sourceType": "google_drive",
+      "status": "review_ready",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1EIp3TnhQfpT1rL5Kg9xJnfQuXRdpzycP",
+        "inventoryManifest": null
+      },
+      "assetManifest": "data/generated/batches/lot-exemples-amicale-genealogistes-shd-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-exemples-amicale-genealogistes-shd-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-exemples-amicale-genealogistes-shd-001",
+      "legacyReviewRoute": null,
+      "itemCount": 63,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
+    },
+    {
+      "lotId": "lot-general-durand-1h1239-001",
+      "collectionId": "shd-1h1239-general-durand",
+      "title": "SHD 1H1239 - General Durand",
+      "sourceType": "google_drive",
+      "status": "review_ready",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1OgJulwfhsMAw-x3IqO-q4aR7wSgTu0mw",
+        "inventoryManifest": null
+      },
+      "assetManifest": "data/generated/batches/lot-general-durand-1h1239-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-general-durand-1h1239-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-general-durand-1h1239-001",
+      "legacyReviewRoute": null,
+      "itemCount": 48,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
+    },
+    {
+      "lotId": "lot-juifs-algeriens-lutte-anticoloniale-001",
+      "collectionId": "juifs-algeriens-lutte-anticoloniale-lefoll-luciani",
+      "title": "Les Juifs algeriens dans la lutte anticoloniale - P.-J. LeFoll-Luciani",
+      "sourceType": "google_drive",
+      "status": "review_ready",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1pTZxMGpqHO3EpKw7A10xDHk7SMH7jfQK",
+        "inventoryManifest": null
+      },
+      "assetManifest": "data/generated/batches/lot-juifs-algeriens-lutte-anticoloniale-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-juifs-algeriens-lutte-anticoloniale-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-juifs-algeriens-lutte-anticoloniale-001",
+      "legacyReviewRoute": null,
+      "itemCount": 38,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees. Lot editorialement sensible a controler humainement avec prudence documentaire."
+    },
+    {
       "lotId": "lot-fln-w4-005",
       "collectionId": "shd-gr-1h1646-lettres-directives-fln-wilaya4",
       "title": "SHD GR 1H1646 - Lettres et directives FLN Wilaya 4",

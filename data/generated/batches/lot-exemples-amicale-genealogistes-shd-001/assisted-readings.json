@@ -1,0 +1,3046 @@
+[
+  {
+    "assistedReadingText": "MINISTÈRE DES PENSIONS.\nSERVICES DE L'ÉTAT CIVIL ET DES SÉPULTURES MILITAIRES. 8, Rue Oudinot, 8, Paris.\n\nParis, le 4 Octobre 1919\n\nLE MINISTRE DES PENSIONS\nà Monsieur le Maire de [Birkadem] [Algérie]\n\nJ'ai l'honneur de vous rappeler que la Loi du 25 Octobre 1919, a ordonné le dépôt au Panthéon de registres contenant les noms des militaires Morts pour la FRANCE pendant la guerre 1914-1918. Cette loi a également prévu la remise à chaque commune de FRANCE, d’un « LIVRE D’OR » de ces militaires qui sont nés dans cette commune ou qui y résidaient à la mobilisation.\n\nMon Administration Centrale ayant terminé les travaux préparatoires que nécessitait l’application de cette Loi, il me paraît utile, avant d’établir ces registres, de vous communiquer la liste des militaires de votre Commune qui doivent y être inscrits.\n\nJ’appelle votre attention sur ce fait, que seuls les noms des militaires morts au cours de la guerre, c’est-à-dire entre le 2 août 1914 et le 24 octobre 1919 et dans les conditions prévues par la Loi du 28 février 1922, qui règle le droit à la mention « Mort pour la FRANCE », sont appelés à figurer sur cette liste.\n\nPour le cas où il vous apparaîtrait qu’elle présentât des erreurs ou des lacunes, je vous serais très obligé de vouloir bien me la renvoyer, avec vos observations, accompagnées des considérations particulières qui vous sembleraient de nature à les justifier.\n\nSi au contraire cette liste ne devait pas comporter d’observations, il vous suffirait de me le faire connaître en me la renvoyant.\n\nPour le Ministre et par son ordre :\nL’Intendant Militaire Chef des Services\nr. O.\n\n[Cachet : MINISTÈRE DES PENSIONS]\n[Date tamponnée : 7 DÉC 1920]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-01",
+    "sourceImage": "01-20260115_143115.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Birkadem",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de la commune mentionnée ('Birkadem') présente des difficultés de lecture manuscrite, possibilité d'erreur de lecture.",
+        "suggestion": "Possible lecture : Birkadem, à vérifier sur d'autres documents."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Algérie",
+        "issue": "lieu_incertain",
+        "note": "Le mot situé sous le nom de la commune ressemble à 'Algérie', mais l'écriture manuscrite ne permet pas de confirmer avec certitude.",
+        "suggestion": "Vérification géographique recommandée."
+      },
+      {
+        "confidence": "high",
+        "fragment": "4 Octobre 1919",
+        "issue": "date_incertaine",
+        "note": "La date manuscrite en haut à droite semble être « 4 Octobre 1919 », mais l'écriture est cursive et un doute subsiste sur le mois (« Octobre » peut être ambigu selon l'écriture).",
+        "suggestion": "Recouper avec d'autres courriers similaires du même dossier."
+      },
+      {
+        "confidence": "low",
+        "fragment": "r. O.",
+        "issue": "mot_illisible",
+        "note": "À la fin, les initiales ou abréviations (« r. O. ») ne peuvent être confirmées ni interprétées à partir de l'image.",
+        "suggestion": "Laisser en l'état, à valider par expertise supplémentaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Armée de Portugal     Empire Français\n2e Division\nN° 1587 26 X\nA Villanova le 28 Août 1811.\nP. Coste, Colonel commandant le 59e Régiment de ligne,\nA Son Excellence Monseigneur le Duc de Feltre Ministre de la guerre\n\nMonseigneur,\n\nJ'ai l'honneur de transmettre à Votre Excellence un mémoire de proposition d'avancement en faveur de Monsieur Davies Chef de Bataillon au 59e Régiment.\nJe supplie très instamment Son Excellence de vouloir bien être favorable à cet Officier supérieur qui mérite, par sa connaissance, ses bons et longs services, la bienveillance de Sa Majesté.\nJe suis avec le plus profond respect,\nDe Votre Excellence\nMonseigneur\nLe très humble et très obéissant serviteur\nCoste",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-02",
+    "sourceImage": "02-20260210_123340.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "P. Coste, Colonel",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du colonel semble bien être 'Coste', mais la forme exacte de la signature reste soumise à l'interprétation.",
+        "suggestion": "Lecture probable : 'Coste'."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Davies Chef de Bataillon",
+        "issue": "nom_propre_incertain",
+        "note": "Le patronyme 'Davies' apparaît manuscrit de façon lisible mais il reste une possibilité d'erreur ou de variante graphique.",
+        "suggestion": "Lecture probable : 'Davies'."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "le Duc de Feltre",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable d'après l'image, mais une petite incertitude sur la graphie exacte subsiste.",
+        "suggestion": "Lecture probable : 'Feltre'."
+      },
+      {
+        "confidence": "high",
+        "fragment": "A Villanova le 28 Août 1811.",
+        "issue": "date_incertaine",
+        "note": "La date est bien lisible mais tout manuscrit peut comporter une ambiguïté graphique minime.",
+        "suggestion": "Lecture probable : '28 Août 1811'."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Villanova",
+        "issue": "lieu_incertain",
+        "note": "Le nom du lieu paraît lisible, mais toute lecture géographique manuscrite doit garder une marge d'incertitude.",
+        "suggestion": "Lecture probable : 'Villanova'."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Bayonne le 20 novembre 1811\n\nN° 22\n\nLes Membres composant le Comité d'Administration du 3e Bataillon du 69e régiment de Ligne\n\nA Son Excellence M. le Duc de feltre Ministre de la guerre\n\nA Monseigneur\n\nLe comte Montrion aide major général a dû adresser à Votre Excellence un demande d’une création de croix, à la date du 18 octobre, en faveur de M. David, chef du Bataillon commandant audit bataillon. Il y est attesté d’ailleurs que les motifs qui lui ont été envoyés à ce dernier. Nous venons de notre côté vous faire la même demande, à laquelle nous avons l’honneur de solliciter bien vouloir bien accorder cette grâce à cet officier supérieur, le commandant qui a su se signaler et de se faire distinguer, et dont vous ne pouvez douter de la bonne conduite et du mérite à la suite de tant d’années de service. Cet homme de cœur habile pour le traitement d’une affaire qui lui a été obligée.\n\nAgréez, Monseigneur, l’hommage de tout sentiment d’estime et de respect.\nPour fait, avoir délibéré.\n\nDesjal Cap.n\nNormand  \nCollin",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-03",
+    "sourceImage": "03-20260210_124228.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "David, chef du Bataillon",
+        "issue": "nom_propre_incertain",
+        "note": "L'écriture du nom propre (David) demande vérification ; lecture fortement probable d'après l'image.",
+        "suggestion": "Vérifier le nom et la fonction exacte dans d'autres documents du même fichier."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Montrion aide major général",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom Montrion est probable mais reste incertain, à confirmer.",
+        "suggestion": "Vérifier orthographe exacte de ce nom propre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Duc de feltre Ministre de la guerre",
+        "issue": "nom_propre_incertain",
+        "note": "L'expression 'Duc de feltre' doit être vérifiée, possible incertitude liée à la majuscule ou au titre exact.",
+        "suggestion": "Consulter si ce titre correspond bien au ministre en poste à la date indiquée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Normand, Collin",
+        "issue": "nom_propre_incertain",
+        "note": "Les signatures des membres restent difficiles à lire, lecture probable mais incertaine.",
+        "suggestion": "Confirmer orthographe exacte des noms des signataires."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "à la date du 18 octobre",
+        "issue": "date_incertaine",
+        "note": "La date 18 octobre lue mais à confirmer avec d'autres sources.",
+        "suggestion": "Rechercher la présence du document correspondant."
+      },
+      {
+        "confidence": "high",
+        "fragment": "le corps du texte (hors formules de politesse et signatures)",
+        "issue": "lecture_probable",
+        "note": "La majeure partie du corps du texte est lisible à l'image, mais revoir en détails pour les noms propres.",
+        "suggestion": "Lecture complète côté image ; attention points de détail sur la syntaxe manuscrite."
+      },
+      {
+        "confidence": "low",
+        "fragment": "L'OCR nettoyé",
+        "issue": "mot_illisible",
+        "note": "Presque toute la sortie OCR est inexploitée, mots incompréhensibles, ne correspond pas à l'image.",
+        "suggestion": "S'appuyer exclusivement sur l'image manuscrite."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "2e DIVISION.\nBUREAU de l’Infanterie.\n\nMINISTÈRE DE LA GUERRE.\nRAPPORT FAIT AU MINISTRE le 10 Décembre 1811.\n\n59e Régiment d’Infanterie de ligne. 3e Bataillon, à Bayonne.\n\nM. le général comte de Montlon transmet une demande formée par M. Davie, chef du 3e bataillon, pour obtenir un congé de convalescence de trois mois.\n\nCet officier annonce qu’il est atteint de douleurs rhumatismales dans toute la partie gauche du corps, par suite des fatigues de la guerre.\n\nIl produit un certificat délivré par les officiers de santé de l’hospice de Bayonne, constatant qu’il a éprouvé peu de soulagement du stage de cause, et qu’il lui faudrait un peu de repos avant de pouvoir reprendre son service.\n\nMonseigneur est prié de vouloir bien faire connaître si son intention est d’accorder à M. Davie un congé de convalescence de trois mois autorisé.\n\nMaillard  Tabaris  Lavalée",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-04",
+    "sourceImage": "04-20260210_124249.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Montlon",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du général (Montlon ?) manuscrit difficile, reconstitué grâce à l'image mais non garanti.",
+        "suggestion": "Confirmer après validation paléographique."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Davie",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de l’officier solliciteur (‘Davie’) peut prêter à confusion avec d’autres variantes de lecture manuscrite.",
+        "suggestion": "Confirmer après revue du registre ou autres courriers."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Bayonne",
+        "issue": "lieu_incertain",
+        "note": "Le lieu (‘Bayonne’) semble probable mais nécessite relecture améliorée du document.",
+        "suggestion": "Vérifier par d’autres pièces du même dossier."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Maillard Tabaris Lavalée",
+        "issue": "nom_propre_incertain",
+        "note": "Signatures manuscrites peu lisibles, propositions hypothétiques.",
+        "suggestion": "Analyse paléographique recommandée."
+      },
+      {
+        "confidence": "low",
+        "fragment": "datation précise ‘10 Décembre 1811’",
+        "issue": "date_incertaine",
+        "note": "Bien lisible mais toujours à reconfirmer avant validation officielle.",
+        "suggestion": "Comparer à d'autres sources pour vérification."
+      },
+      {
+        "confidence": "high",
+        "fragment": "souffre de douleurs rhumatismales... suite des fatigues de la guerre",
+        "issue": "lecture_probable",
+        "note": "Phrase très lisible sur l'image manuscrite, confirmation vraisemblable.",
+        "suggestion": "Lecture acceptée dans ce contexte."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "2 ?e 10101/\nDARIEUSE Louis\nou DUCIUEUSE Louis\nné le 3 mai 1771 à DREUX (Eure et Loir)\n23 août 1792 ou 1793\n- 123e 1/2 Brigade de ligne\n- Passé à la 99e Brigade 1/2 de ligne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-05",
+    "sourceImage": "05-20260210_125344.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "2 ?e 10101/",
+        "issue": "mot_illisible",
+        "note": "Le premier caractère après '2' est difficilement lisible, pourrait être '7', 'Y', ou autre. Idem pour le nombre '10101/' : signification ou exactitude douteuse.",
+        "suggestion": "2 ?e 10101/"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "DARIEUSE Louis ou DUCIUEUSE Louis",
+        "issue": "nom_propre_incertain",
+        "note": "Le second nom, après 'ou', commence par 'D', pourrait être 'DUCIEUSE', 'DUCIEUSE' ou 'DUCIUEUSE', l'écriture n'est pas certaine.",
+        "suggestion": "DUCIUEUSE ou DUCIUEUSE"
+      },
+      {
+        "confidence": "high",
+        "fragment": "3 mai 1771",
+        "issue": "date_incertaine",
+        "note": "L'année est probablement 1771, mais nécessite confirmation documentaire.",
+        "suggestion": "3 mai 1771"
+      },
+      {
+        "confidence": "high",
+        "fragment": "23 août 1792 ou 1793",
+        "issue": "date_incertaine",
+        "note": "L'année 1792 ou 1793 n'est pas tranchée selon l'image.",
+        "suggestion": "23 août 1792 ou 1793"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "123e 1/2 Brigade de ligne",
+        "issue": "lecture_probable",
+        "note": "Le chiffre et la mention '1/2 Brigade' sont clairement visibles mais la formulation exacte mérite confirmation.",
+        "suggestion": "123e 1/2 Brigade de ligne"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "99e Brigade 1/2 de ligne",
+        "issue": "lecture_probable",
+        "note": "Lecture probablement correcte mais légère incertitude sur la formulation exacte.",
+        "suggestion": "99e Brigade 1/2 de ligne"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "26 Nbre an 11e\nSecrétariat général\nBureaux des Lois.\n\nLiberté.\nEgalité.\n\nAmpliation.\n\nNo ___\n\nAu nom du Peuple Français.\n\nDu ___ misfyier l’an 11e de la République.\n\nBonaparte, premier Consul de la République,\nVu le rapport du Ministre de la Guerre, arrête :\n\nArt. 1er.\nLe citoyen Danguyand, fusilier à la 31e demi-brigade de ligne, est autorisé à se retirer pour cause d’invalidité dans sa famille.\n\nLe Ministre de la Guerre est chargé de l’exécution du présent arrêté.\n\nPour ampliation,\nL’Inspecteur aux revues\nSecrétaire général\n\nCollationné:\nLe chef du Bur. des Lois\n___\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-06",
+    "sourceImage": "06-20260210_130738.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "26 Nbre an 11e",
+        "issue": "date_incertaine",
+        "note": "Le mois et l'année sont manuscrits et partiellement abréviés, lecture incertaine.",
+        "suggestion": "26 [Novembre?] an 11"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Du ___ misfyier l’an 11e de la République.",
+        "issue": "mot_illisible",
+        "note": "Mot manuscrit avant \"l’an 11e\" illisible.",
+        "suggestion": "mot à vérifier sur l’original"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "citoyen Danguyand",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre manuscrit pouvant prêter à confusion.",
+        "suggestion": "Danguyand [ou autre nom proche, manuscrit non certain]"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "31e demi-brigade de ligne",
+        "issue": "lecture_probable",
+        "note": "Lecture conforme à l’image mais à confirmer.",
+        "suggestion": "31e demi-brigade"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Signatures finales",
+        "issue": "nom_propre_incertain",
+        "note": "Les signatures sont difficiles à déchiffrer.",
+        "suggestion": "Vérifier les patronymes exacts sur l’original"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "L’Inspecteur aux revues",
+        "issue": "lecture_probable",
+        "note": "Lecture probable mais la formulation pourrait être légèrement différente.",
+        "suggestion": "L’Inspecteur aux Revue"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Secrétaire général",
+        "issue": "lecture_probable",
+        "note": "Lecture probable mais à confirmer.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Collationné: Le chef du Bur. des Lois",
+        "issue": "lecture_probable",
+        "note": "Lecture probable, la signature est incertaine.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "DEPARTEMENT DE L’AISNE.\n1ère Direction\nBureau de la Justice Criminelle\nRépondu à une lettre du 9 8bre 1821.\n\nN° 10328\nLaon, le 16 Octobre 1821.\n\nLe Maire de la Ville de Laon,\nA Son Excellence le Ministre Secrétaire d’Etat au Département de la Guerre\n\nMonsieur,\n\nVotre Excellence trouvera jointe à la présente un paquet à son adresse que m’a remis le Sr Dainjean, sous-lieutenant en retraite à la résidence de Laon. Ce paquet contient les pièces que cet ancien officier annonce comme intéressant l’administration. Il voulait, avant de clore le paquet, que je prisse connaissance de ces pièces, ce à quoi je me suis refusé. La lettre de Votre Excellence, sous la date du 9 de ce mois, ne m’autorisait qu’à le recevoir pour cachet.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-07",
+    "sourceImage": "07-20260210_131012.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Dainjean",
+        "issue": "nom_propre_incertain",
+        "note": "le nom du sous-lieutenant transmis dans la lettre est difficile à lire, pourrait aussi être Daingan ou proche",
+        "suggestion": "Dainjean (ou graphie proche)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "9 8bre 1821",
+        "issue": "date_incertaine",
+        "note": "L'image indique un 9 Octobre 1821, mais le mois est abrégé et peut prêter à confusion.",
+        "suggestion": "9 Octobre 1821"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Ministre Secrétaire d’Etat au Département de la Guerre",
+        "issue": "sigle_incertain",
+        "note": "Le titre exact du ministre pourrait différer. L'écriture manuscrite laisse une ambiguïté sur le rôle/titre formel dans la formulation.",
+        "suggestion": "Ministre Secrétaire d’Etat au Département de la Guerre"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Un paquet à son adresse",
+        "issue": "lecture_probable",
+        "note": "Lecture fidèle à l'image mais certains mots dans les lignes concernées restent en partie difficiles à lire.",
+        "suggestion": "Un paquet à son adresse"
+      },
+      {
+        "confidence": "low",
+        "fragment": "épilepsie très caractérisée",
+        "issue": "mot_illisible",
+        "note": "La fin du texte visible évoque une pathologie, mais la lisibilité rend la lecture incertaine.",
+        "suggestion": "épilepsie très caractérisée"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "attendu et dans les intérêts et les audiences se renouvelons à différentes fois rapprochées.\n\nVotre Excellence me fait l'honneur de me demander des renseignements sur la position morale et physique du S. Darigand ; elle trouvera satisfaction à cet égard dans les explications qui précèdent.\n\nJe suis avec respect, \n\nMonseigneur, \n\nDe Votre Excellence,\n\nLe très humble et très obéissant serviteur J. [nom illisible]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-08",
+    "sourceImage": "08-20260210_131026.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "du S. Darigand",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable du nom propre d'après l'image manuscrite, doute sur la forme exacte.",
+        "suggestion": "S. Darigand semble plausible, nécessite confirmation."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Votre Excellence, ... Le très humble et très obéissant serviteur J. [nom illisible]",
+        "issue": "mot_illisible",
+        "note": "La signature manuscrite en bas est difficilement lisible ; impossible de valider le nom exact.",
+        "suggestion": "Mentionner seulement l'initiale J. et signaler l'illisibilité."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Donne d'Italie\nPorté le 20 thermidor an 9 de la République française\n\nLes officiers soussignés de la 34e Demi-brigade Dupin de ligne\n\nAu Général qui seule commande les troupes stationnées à Port Maurizio, Cezen, ...\nCitoyen général,\nNous avons l’honneur de vous adresser copie d’une lettre que nous avons portée au Ministre de la guerre, les motifs qui nous ont portés d’... vous paraitront sans doute semblables trop souvent les officiers produisaient des suggestions. C’est pour les prévenir que nous croyons devoir et pour ... qu’il était de ses devoirs de témoigner au ministre de la guerre le désir sincère qu’ils ont que la conduite de ceux qui ... ordre qui doit rester dans un corps soit connue et que les lois seules subsistent contre eux.\nL’intérêt, Citoyen général, que nous profitons de cette occasion de nous féliciter auprès de vous, de l’avantage que nous avons de nous trouver sous vos ordres. Nous tacherons toujours par notre conduite de mériter et votre confiance, et votre bienveillance.\nRecevez l'assurance de notre profond respect et de la considération avec laquelle\n\nNous avons l’honneur d’être ...\n(Signatures)\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-09",
+    "sourceImage": "09-20260210_131213.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Dupin",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de la demi-brigade est difficile à déchiffrer sur l'image, la lecture 'Dupin' n'est pas certaine.",
+        "suggestion": "Nom du commandant ou du régiment peu lisible, à vérifier."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Port Maurizio, Cezen, ...",
+        "issue": "lieu_incertain",
+        "note": "Les noms de lieux sont très difficiles à lire et l'OCR ne permet pas de les valider.",
+        "suggestion": "Port Maurizio et un autre lieu, lecture non certaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "la conduite de ceux qui ... ordre qui doit rester dans un corps soit connue et que les lois seules subsistent contre eux.",
+        "issue": "mot_illisible",
+        "note": "Une partie de la phrase est mal lisible, a été interprétée avec incertitude à partir de l'image.",
+        "suggestion": "...la conduite de ceux qui [texte lacunaire] ordre qui doit rester dans un corps..."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Signatures",
+        "issue": "mot_illisible",
+        "note": "Les signatures sont pour la plupart difficilement transcrites, seules quelques-unes sont partiellement lisibles, sans certitude.",
+        "suggestion": "Signatures multiples officiers, difficile à distinguer précisément."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "année, date",
+        "issue": "date_incertaine",
+        "note": "La date '20 thermidor an 9' semble correcte par rapport à l'image, mais pourrait prêter à confusion en l'absence d'autres indications.",
+        "suggestion": "Probablement 20 thermidor an 9, à confirmer."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Suite du fragment de ...\n\n[suit une page principalement constituée de très nombreuses signatures manuscrites, majoritairement difficilement lisibles, dont l'identification exacte reste incertaine — voir détails en incertitudes]\n\nQuelques lectures probables de signatures figurant sur la page :\n- ... (?)\n- ... (?)\n- Dumat(?)\n- ... (?)\n- Halbert(?)\n- ... (?)\n- Furet(?)\n- ... (?)\n- Nevis(?)\n\n[De nombreux autres noms propres manuscrits partiellement indéchiffrables, souvent suivis d'abréviations ou indications de grade ou de fonction (ex : \"Cap.e\", \"Lt\", \"Cap. de frég.\", etc.), apparaissent sur le document]\n\n---\nNote : La page se compose principalement de signatures manuscrites, dont beaucoup ne sont pas certaines en l’absence d’un OCR structuré ou d’une lecture autographique experte. Les suggestions ci-dessus mentionnent quelques lectures probables, très incertaines.\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-10",
+    "sourceImage": "10-20260210_131221.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "[toutes signatures manuscrites]",
+        "issue": "nom_propre_incertain",
+        "note": "La majorité des signatures sont difficiles à lire et leur identification exacte reste incertaine en l’absence d’éléments supplémentaires.",
+        "suggestion": "Lecture des signatures hautement incertaine, nécessiterait une expertise paléographique."
+      },
+      {
+        "confidence": "low",
+        "fragment": "[abréviations ou grades associés aux signatures]",
+        "issue": "sigle_incertain",
+        "note": "Nombreuses abréviations possiblement de grades, titres ou fonctions non formellement lisibles.",
+        "suggestion": "Lecture des abréviations à confirmer; certains sigles comme 'Cap.e', 'Lt', etc., sont des suppositions probables."
+      },
+      {
+        "confidence": "low",
+        "fragment": "[texte d’en-tête, ligne 1]",
+        "issue": "mot_illisible",
+        "note": "La première ligne de texte courant (hors signatures) semble comporter des mots partiellement effacés ou stylisés de façon peu lisible.",
+        "suggestion": "Lecture probable : 'Suite du fragment de ...', non certaine au-delà."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Dumat / Halbert / Furet / Nevis",
+        "issue": "nom_propre_incertain",
+        "note": "Ces noms sont des lectures probables à partir de la forme des signatures, mais l’écriture manuscrite reste difficile à déchiffrer.",
+        "suggestion": "Suggestions à confirmer par expertise."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "RÉCLAMATION\nA Son Excellence le Ministre de la Guerre, par Pierre-Edme-Ambroise-Sophie Darigand, Officier pensionné, résidant au Cateau, Département du Nord.\n\nEXCELLENCE,\n\nOn me doit justice : je serais un lâche ; et je croirais démentir la conduite honorable que j'ai toujours tenue pendant ma longue carrière militaire, si je ne vous la demandais avec les instances les plus vives et les plus respectueuses. D'après une dénonciation portée en l'an 11, par MM. Mazas, actuellement Colonel du 14e Régiment de ligne, et Lapelène, Commandant d'armes de la place de Longwy ; après trente-trois ans de service effectif, sans avoir été puni une fois ; onze campagnes et des blessures ; m'honorant de toutes les actions de ma vie, et connu par la circonspection de mes discours, j'ai été arrêté, outragé, menacé d’être fusillé ; enfermé dans un château fort, ensuite, destitué de mon emploi militaire, et envoyé sous la surveillance de la Municipalité du Cateau, petite ville où je suis né accidentellement, et où je n'avais certainement aucune raison d’aller, ni de rester ; n’y ayant aucune connaissance, et ne possédant, dans cet endroit comme ailleurs, ni biens, ni ressources. Ainsi, EXCELLENCE, au lieu de cette récompense honorable et nécessaire, à laquelle, vu mon âge, mon ancienneté de service et mes blessures, je devais infailliblement m’attendre, je n’ai reçu qu’outrages, éprouvé qu’injustice et ai été abandonné, pendant long-temps, et malgré mes nombreuses réclamations, à la misère et au plus affreux désespoir !\n\nCalomnier lâchement un honnête homme, tromper l’autorité sur son compte ; égarer, par de bas et absurdes mensonges, un Gouvernement toujours grand, juste et sage, au point de lui faire prendre, contre un vieux soldat, des mesures qui compromettent sa dignité, font douter de sa justice ; enfin, avec une audace incroyable, l’employer, ce Gouvernement, comme un instrument propre",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-11",
+    "sourceImage": "11-20260210_132001.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Pierre-Edme-Ambroise-Sophie Darigand",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre du pétitionnaire a été reconstitué à partir de l'image, mais certains caractères ne sont pas parfaitement nets sur l'original.",
+        "suggestion": "Lecture probable à confirmer par une vérification supplémentaire de l'image de meilleure qualité."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lapelène",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre difficile à lire ; lecture probable sur l'image mais reste incertaine.",
+        "suggestion": "Vérification manuelle nécessaire sur original ou autre source."
+      },
+      {
+        "confidence": "high",
+        "fragment": "an 11",
+        "issue": "date_incertaine",
+        "note": "La date (an 11) est lisible sur l'image mais reste sujette à vérification pour éviter confusion avec d'autres dates révolutionnaires.",
+        "suggestion": "Adopter 'an 11' mais confirmer si possible."
+      },
+      {
+        "confidence": "high",
+        "fragment": "14e Régiment de ligne",
+        "issue": "sigle_incertain",
+        "note": "La formulation du régiment lue comme '14e Régiment de ligne' est hautement probable mais une confirmation manuelle, notamment pour l’abréviation et le numéro, serait préférable.",
+        "suggestion": "Lecture probable."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "à servir de méprisables passions. Tels sont les délits graves dont se sont rendus coupables Messieurs Mazas et Lavelèle. Je baisse, comme je le dois, un front soumis devant les raisons supérieures qui détournent, de dessus leur tête, le glaive de la justice; mais je crois ne pouvoir me dispenser, vu la position où ils m'ont réduit par leurs calomnies, et sur-tout encouragé, dans cet objet, par l’équité connue du Gouvernement, et par celle, MONSEIGNEUR, qui vous caractérise, de demander que Messieurs Mazas et Lavelène, soient au moins tenus de me compter en partie la somme de six mille livres, pour réparer en partie les pertes et dommages que m’a fait éprouver leur dénonciation (*). Je puis assurer qu’ils ne réclameront jamais contre la décision de VOTRE EXCELLENCE, qui fera effectuer, à cet effet, une retenue sur leurs appointemens. Ils sentiront trop le danger imminent qu’il y aurait pour eux à courir, d’appeler, par une imprudente réclamation, un examen un peu approfondi de l’affaire qu’ils m’ont suscitée.\n\nC’est l’honneur, en quelque sorte, qui m’a entraîné dans ma première jeunesse sous les drapeaux : toujours il fut mon guide durant le cours de ma longue carrière militaire. Les maximes et les lois de cet honneur vous sont trop connues, EXCELLENCE, pour que vous blâmiez la juste sensibilité que je témoigne en ce moment : le Général FÉRINO, actuellement Sénateur, et le Général SAINTE-SUSANNE, Conseiller d’Etat, tous deux sans me connaître, prévenus sans doute par des rapports infidèles qu’ils n’ont pas eu le temps de vérifier, m’ont outragé. Je demande encore, enhardi par mon intime persuasion de l’élévation de leur caractère, qu’il soit indiqué, à ces deux Officiers-Généraux, l’erreur dans laquelle ils sont tombés à mon égard : ils trouveront, sans doute, dans la grandeur de leur ame, les moyens de la réparer.\n\nJe ne cesserai, EXCELLENCE, de faire des vœux pour la conservation des jours précieux de SA MAJESTÉ, et pour votre gloire.\n\nDARIGRAND.\n\n(*) Sans préjudicier à la réclamation particulière que je fais au Gouvernement, des sommes qui me sont dues pour les routes qu’il m’a contraint de faire sans indemnité ; pour l’année que j’ai passée en surveillance sans aucun traitement, et pour la suivante, où je n’ai touché qu’un traitement, qui, vu mon ancienneté de service, ne m’était point du tout applicable.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-12",
+    "sourceImage": "12-20260210_132008.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Mazas et Lavelèle / Lavelène",
+        "issue": "nom_propre_incertain",
+        "note": "L'image ne rend pas absolument certain le nom du second. L'orthographe \"Lavelèle\" ou \"Lavelène\" possible selon l'œil.",
+        "suggestion": "Lecture probable mais nom propre non certain"
+      },
+      {
+        "confidence": "high",
+        "fragment": "six mille livres",
+        "issue": "lecture_probable",
+        "note": "Bien lisible sur l'image mais l'OCR était bruité",
+        "suggestion": "On lit bien la somme mais la source OCR était incorrecte"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "FÉRINO",
+        "issue": "nom_propre_incertain",
+        "note": "La forme accentuée (FÉRINO) n’est pas totalement sûre, mais probable.",
+        "suggestion": "Vérifier orthographe exacte"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "SAINTE-SUSANNE",
+        "issue": "nom_propre_incertain",
+        "note": "L’image rend le nom probable, mais la casse est à confirmer.",
+        "suggestion": "Lecture probable, à valider"
+      },
+      {
+        "confidence": "high",
+        "fragment": "DARIGRAND",
+        "issue": "nom_propre_incertain",
+        "note": "Signature paraissant claire mais demander confirmation.",
+        "suggestion": "Lecture probable, signature non validée"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "No 3208\n\nEXTRAIT MORTUAIRE.\nCOMMUNE de Strasbourg     HÔPITAL de Sébastian militaire\nDu Registre des Décès de la dite commune il a été extrait ce qui suit :\n8e BATAILLON, de l'Ain Compagnie 2\nLe Citoyen Joseph Marie Panigot, au service militaire de la République, dans le corps & compagnie ci-dessus désignés en qualité de sous lieutenant natif de Geran, District de Voutiau (?) Département de l'Ain, est entré audit Hôpital le vingt un Fructidor du mois de l'an 2 de la République française, & y est décédé le vingt trois Fructidor de la dite année, Janvier.\nAprès la date du décès, expliquez le genre de maladie ou de blessure dont il est mort.\nJe soussigné officier public de la commune de Strasbourg certifie le présent extrait véritable & conforme au Registre des décès de cette dite commune. FAIT à Strasbourg le trois du mois de Fructidor, l'an 2 de la République. Jean Henri Heitz, offic. publ.\nNous officiers Municipaux de la Commune de Strasbourg certifions que la signature ci-dessus est celle du Cit. Jean Henri Heitz & que foi doit y être ajoutée.\nFAIT à Strasbourg le trois du mois de Fructidor, l'an 2 de la République française, une & indivisible. Reinhard[], Waumbuguer[]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-13",
+    "sourceImage": "13-20260210_143118.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Geran, District de Voutiau (?)",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms des lieux de naissance (Geran, Voutiau) sont difficiles à assurer à cause de l’écriture cursive manuscrite.",
+        "suggestion": "Vérifier l’orthographe exacte sur l’image en haute résolution ou avec expertise paléographique."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Reinhard[], Waumbuguer[]",
+        "issue": "nom_propre_incertain",
+        "note": "Les signatures en bas du document sont difficiles à lire et leur graphie exacte est incertaine.",
+        "suggestion": "Avis d’un lecteur paléographe conseillé ou image de meilleure qualité."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "le vingt trois Fructidor de la dite année, Janvier.",
+        "issue": "date_incertaine",
+        "note": "\"Janvier\" pourrait être un mot inapproprié ici, peut-être une confusion de l’OCR ou une interpolation de lecture manuscrite.",
+        "suggestion": "Relire sur l’image ou croiser avec d’autres documents similaires."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "District de Voutiau (?)",
+        "issue": "mot_illisible",
+        "note": "Le nom du district pourrait être mal lu, la cursive rend difficile une vérification certaine.",
+        "suggestion": "Recourir à comparaison avec autres listes administratives d’époque."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "N° 25 Extrait du registre                 Maison Militaire du Roi\n                        Gardes du Corps de Monsieur\n\nEtat des services et campagnes de M. Darius (Prénard Dominique?) garde de la compagnie d'Escars\n\nServices.                                                 Campagnes.\n\nEntré au service au Régiment de Dragons le 19 nivose an 12.\nBrigadier le 28 mars 1807.\nBrigadier fourrier le 24 mars 1807.\nParti pour congé de réforme le 21 août 1814.\nGarde du corps de Monsieur le 23 juillet 1816.\nBreveté sous-lieutenant le 23 juillet 1816.\n\nA fait les campagnes des ans 12 et 13 à l'armée des Côtes, outre les grandes armées 1806 et 1807 en Prusse et Pologne, 1808 et 1809 à l'armée d'Espagne.\n\nCertifié véritable le présent état des services par nous membres du Conseil d'administration. Paris le 10 may 1819\nSigné le Comte de Dampierre\nSigné le Comte d'Escars\n\nEn pour la légalisation des signatures des M. membres du Conseil d'administration des gardes du corps de Monsieur Le S. Inspecteur aux Revues adjoint signé secrétaire par lepie conforme Darius\n\nDonné à Monsieur le 24 juillet 1819.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-14",
+    "sourceImage": "14-20260210_143659.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Darius (Prénard Dominique?)",
+        "issue": "nom_propre_incertain",
+        "note": "Le prénom Dominic ? et nom sont difficiles à lire, la graphie n’est pas certaine.",
+        "suggestion": "Vérifier le nom exact et le(s) prénom(s) sur l’original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "lepie conforme",
+        "issue": "mot_illisible",
+        "note": "La signature 'lepie conforme' n'est pas totalement claire. Lecture probable par forme manuscrite.",
+        "suggestion": "Contrôler le nom et la formule sur la source."
+      },
+      {
+        "confidence": "high",
+        "fragment": "dates (19 nivose an 12, 28 mars 1807, etc.)",
+        "issue": "date_incertaine",
+        "note": "Les dates semblent correctes mais pourraient être mal interprétées, notamment pour les années révolutionnaires.",
+        "suggestion": "Vérifier la concordance des dates."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "En pour la légalisation des signatures ... par lepie conforme Darius",
+        "issue": "lecture_probable",
+        "note": "Certaines formulations sont peu standardisées et peuvent avoir été mal interprétées.",
+        "suggestion": "Relecture attentive sur document original recommandée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Compagnie d'Escars",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'Escars' pour la compagnie demande confirmation manuscrite.",
+        "suggestion": "Vérification sur autres sources (ex : registres originaux)."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "SHD\nCadre magasinier\nGR 2 YE 1010\nVI09 1 1 37 12 5\nGADMER Marc\n06/01/2026",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-15",
+    "sourceImage": "15-20260210_144813.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "VI09 1 1 37 12 5",
+        "issue": "sigle_incertain",
+        "note": "Il s'agit probablement d'une référence interne ou d'un code de localisation ; lecture selon l'image.",
+        "suggestion": "VI09 1 1 37 12 5"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "GADMER Marc",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est lisible mais ne peut être confirmé avec certitude ; lecture probable.",
+        "suggestion": "GADMER Marc"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "06/01/2026",
+        "issue": "date_incertaine",
+        "note": "La date semble claire sur l'image, mais il pourrait s'agir d'une échéance administrative ou d'un autre usage ; contexte non précisé.",
+        "suggestion": "06/01/2026"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Sous-offr. 13e Cie 46e de Chasseurs\n\nJ. Darnat (Jean)\nNé le 8 Xbre 1768.\nEntré dans les logis dans les\nsupérieurs du Médecin 15 9bre 1792.\nSorti aux 1res réformes de la Brigade de la Légion (?)\n(Place vacante pour tenir des qualifications.)",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-16",
+    "sourceImage": "16-20260212_145106.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "13e Cie 46e de Chasseurs",
+        "issue": "sigle_incertain",
+        "note": "Lecture probable de l'unité, certaines lettres difficilement confirmables.",
+        "suggestion": "Cie = Compagnie ? Chasseurs confirmé mais pas garanti par l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "J. Darnat (Jean)",
+        "issue": "nom_propre_incertain",
+        "note": "Nom probable mais manuscrit légèrement stylisé.",
+        "suggestion": "Nom propre à vérifier sur autre source."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Né le 8 Xbre 1768",
+        "issue": "date_incertaine",
+        "note": "Le mois est abrégé (Xbre), probablement décembre mais nécessite vérification contextuelle.",
+        "suggestion": "Vérifier l'abréviation Xbre pour la date."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Entré dans les logis dans les supérieurs du Médecin 15 9bre 1792.",
+        "issue": "mot_illisible",
+        "note": "Le passage sur 'Entré dans les logis ...' est peu lisible et peut être fautif.",
+        "suggestion": "À relire sur original avec loupe."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Sorti aux 1res réformes de la Brigade de la Légion (?)",
+        "issue": "mot_illisible",
+        "note": "Le mot 'Légion' ou peut-être 'Oys.' n'est pas parfaitement lisible.",
+        "suggestion": "Mot exact à valider sur document plus net."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "(Place vacante pour tenir des qualifications.)",
+        "issue": "lecture_probable",
+        "note": "Dernière ligne manuscrite partiellement difficile à lire, lecture probable.",
+        "suggestion": "Relecture conseillée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Extrait des registres des sépultures, mariages et baptêmes de l’église paroissiale de la ville Martel, diocèse de [lieu illisible].\n\nL’an mil sept cent soixante-huit et le huitième jour du mois de mars a été baptisé par moi, vicaire soussigné, Jean de la selle du légitime mariage de Pierre Darnaud, marchand, et de Marie Semblat, mariés de cette paroisse, le parrain a été Jean Seguret, notaire, et la marraine [nom illisible], tous de cette paroisse, lesquels ont signé avec nous le registre.\n\nJe soussigné, vicaire de la susdite paroisse, certifie que le présent extrait est conforme au registre.\n\nFait le vingt-cinq mars mil sept cent quatre-vingt-cinq.\n\nSigné : Louis Marc [nom peu lisible], vicaire, par la grâce d[ieu?]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-17",
+    "sourceImage": "17-20260212_145109.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "ville Martel, diocèse de [lieu illisible]",
+        "issue": "lieu_incertain",
+        "note": "Le diocèse n’est pas déchiffrable sur l’image.",
+        "suggestion": "Texte du diocèse laissé en blanc ou à préciser par un expert."
+      },
+      {
+        "confidence": "low",
+        "fragment": "et la marraine [nom illisible]",
+        "issue": "nom_propre_incertain",
+        "note": "Nom de la marraine difficile à lire dans la ligne correspondante.",
+        "suggestion": "Nom propre à compléter si possible lors d'une validation experte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Louis Marc [nom peu lisible], vicaire, par la grâce d[ieu?]",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom après 'Louis Marc' n’est pas clairement lisible.",
+        "suggestion": "Nom du signataire à revérifier sur original."
+      },
+      {
+        "confidence": "high",
+        "fragment": "lecture du texte principal",
+        "issue": "lecture_probable",
+        "note": "Le corps du texte est lisible mais certains détails peuvent échapper sans expertise paléographique.",
+        "suggestion": "Vérification par spécialiste recommandée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "(O D As à rrr n d\n00es 2 M",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-18",
+    "sourceImage": "18-20260212_145123.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "(O D As à rrr n d\n00es 2 M",
+        "issue": "mot_illisible",
+        "note": "Le fragment est très probablement erroné par OCR, il ne correspond pas à une lecture textuelle reconnaissable sur l'image.",
+        "suggestion": "Aucun mot identifiable ni segment sûr. Nécessite reprise de l'OCR ou vérification humaine sur l'image originale."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Département du Lot — Canton de Martel\n2e Bataillon de Martel\nNous Commandants du Bataillon n° 2 du Canton de Martel, soussignés, certifions à tous ceux qu’il appartiendra que le dit [nom du soldat illisible] a servi dans les gardes nationales de Martel. Le service en qualité de soldat dans les gardes nationales de la dite Ville, qu’il s’est toujours comporté en brave citoyen.\nEn foy de quoi nous avons délivré le présent certificat pour lui servir et valoir ainsi que de droit.\nLe 15 avril 1792.\n[Signatures lisibles partiellement: Boni..., Madebos Commandant en chef, Ruynere Adjudant]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-19",
+    "sourceImage": "19-20260212_145145.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "[nom du soldat illisible]",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du soldat destinataire du certificat n’est pas lisible sur l’image.",
+        "suggestion": "Laisser une case vide ou signaler l’incertitude dans toute réutilisation"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Signatures : Boni..., Madebos, Ruynere",
+        "issue": "nom_propre_incertain",
+        "note": "Les signatures sont en partie lisibles, mais l’orthographe exacte peut prêter à confusion.",
+        "suggestion": "Vérifier sur d’autres documents pour confirmer les noms exacts."
+      },
+      {
+        "confidence": "high",
+        "fragment": "15 avril 1792",
+        "issue": "date_incertaine",
+        "note": "La date est lisible mais la mention du jour n’est pas totalement nette.",
+        "suggestion": "Confirmer visuellement la date sur l’original lors d’une vérification humaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Bataillon n°2 du canton de Martel",
+        "issue": "lecture_probable",
+        "note": "Cette information semble correcte mais résulte d’une lecture manuscrite difficile à la plume.",
+        "suggestion": "Valider l’intitulé exact auprès d’autres pièces de la même série."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Ruynere Adjudant",
+        "issue": "nom_propre_incertain",
+        "note": "L’écriture du nom étant ornementée, une lecture alternative est possible.",
+        "suggestion": "Demander une validation palaeographique."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Département du Var.\nArrondissement de Draguignan.\n12e Division.\n1er Bureau de la Mairie.\nGrimaud, le 15 Décembre 1820.\nLes Maire de la commune de Grimaud\nà\nSon Excellence\nMonseigneur le Ministre secrétaire d'État de la Guerre à Paris.\nN° 1526.\nEnvoi de la pétition de Carlu Auguste Coussin, ex chef de Bataillon de la 5ème 1/2 brigade de ligne d'Italie.\nMonseigneur,\nJ'ai l'honneur de vous adresser sous ce pli une pétition qui vous est présentée par le Sr Carlu (auguste cousin).",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-20",
+    "sourceImage": "20-20260212_145542.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Carlu Auguste Coussin",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture des noms propres du pétitionnaire appuyée sur l'image mais l'écriture manuscrite suscite une incertitude.",
+        "suggestion": "Prévoir vérification sur d'autres sources ou pages."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "5ème 1/2 brigade de ligne d'Italie",
+        "issue": "lecture_probable",
+        "note": "La dénomination de l'unité militaire semble juste en lecture, mais nécessite confirmation dans d'autres contextes.",
+        "suggestion": "Valider sur d'autres pages ou inventaires."
+      },
+      {
+        "confidence": "high",
+        "fragment": "N° 1526",
+        "issue": "lecture_probable",
+        "note": "Numéro repéré sur l'image, lecture plausible.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "15 Décembre 1820",
+        "issue": "date_incertaine",
+        "note": "Date lue directement sur l'image, mais les chiffres manuscrits incitent à la prudence.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page.",
+    "reviewId": "page-21",
+    "sourceImage": "21-20260212_145555.jpg",
+    "status": "assisted_unavailable",
+    "uncertainties": []
+  },
+  {
+    "assistedReadingText": "Département du Var,\nArrondissement de Draguignan,\nCanton de Grimaud,\nCommune de Grimaud.\n\nMinistère de la Guerre.\nBureau des Pensions.\nSolde de Retraite.\n\nDemande qu'il soit ordonné le paiement de ses appointements ou accordé une pension de retraite.\n\nÀ Son Excellence Monseigneur Le Ministre secrétaire d'État de la Guerre à Paris.\n\nMonseigneur,\n\nDarluc (Auguste-Toussaint),\ndomicilié à Grimaud, ex Chef de Bataillon à la ci-devant 33e 1/2 Brigade de Ligne dans l'Armée d'Italie.\n\nL'honneur d'exposer, à Son Excellence, que par suite des fatigues de la guerre qu'il a endurées depuis 1792, il tomba malheureusement malade au commencement de l'an 7 au point que les officiers de santé de l'armée estimèrent qu'il devait se rendre dans ses foyers, à Grimaud, département du Var.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-22",
+    "sourceImage": "22-20260212_145625.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "33e 1/2 Brigade de Ligne",
+        "issue": "lecture_probable",
+        "note": "La fraction manuscrite (1/2) est interprétée d'après l'image mais reste difficile à confirmer parfaitement.",
+        "suggestion": "Vérifier la fraction et le numéro exact de la brigade sur la source originale."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Darluc (Auguste-Toussaint)",
+        "issue": "nom_propre_incertain",
+        "note": "Le prénom et nom sont lisibles, mais l'écriture manuscrite pourrait laisser place à une autre interprétation.",
+        "suggestion": "Vérifier l'orthographe exacte sur d'autres sources si indispensable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Département du Var, Arrondissement de Draguignan, Canton de Grimaud, Commune de Grimaud.",
+        "issue": "lieu_incertain",
+        "note": "Ces toponymes sont lisibles mais pourraient être affectés par des abréviations ou formes anciennes.",
+        "suggestion": "Confirmer l'exactitude par comparaison avec d'autres archives ou documents contemporains."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "au commencement de l'an 7",
+        "issue": "date_incertaine",
+        "note": "La date révolutionnaire est lue ainsi, l'an 7, mais la formulation exacte pourrait prêter à confusion selon la calligraphie.",
+        "suggestion": "Contrôler la formule sur la source papier pour s'assurer du chiffre romain/complet."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Demande qu'il soit ordonné le paiement de ses appointements ou accordé une pension de retraite.",
+        "issue": "lecture_probable",
+        "note": "Le texte est globalement lisible, mais la ponctuation ou les liaisons exactes pourraient varier.",
+        "suggestion": "Relire attentivement le manuscrit pour s'assurer de la fidélité de la transcription."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Pour exprimer le besoin de l’air vital, ainsi que l’on porte pour la certitude le physi, j’ai l’honneur de vous entretenir du sort malheureux de ces infortunés de son Corps. Depuis son établissement général des établissements de l’administration en maladie et jusqu’à ce que fût adoptée, il a un caractère vraiment inusité. \n\nDans l’état des sujets acquittés, qui n’est, sous ce point, que de l’existence, pour les autres, quelque soit la destinée, la nécessité, il est, Monseigneur, à satisfaire vos bontés paternelles et votre Excellence pour qu’ils daignent avoir la bonté de l’étendre pour la plus grande châtelaine et la faire désirer avec ardeur. \n\nJe sais, et j’ose prendre en sollicitude, pour vous, le détail de sa situation qui est l’asile hospitalier du Seigneur pour la charité de l’humanité. Je suis content de la décision, et j’espère la suite de vos ordres. \n\nCet acte de bienfaisance et de justice, Monseigneur, sera non seulement un exemple absolu et approprié, mais il aura la sublimité des soins d’un père âgé de 77 ans, de dix neuf neuf enfants, âgés de 6 ans, qui ont des traitements normaux. Je les supplante, ose espérer, Monseigneur, qu’une demande aussi. \n\nJe suis, avec le plus profond respect, de votre grandeur, assis sur le trône et la majesté de Louis XVIII. Dans cette heure, au moment d’un grand éclat de l’auguste famille, par des dignes neveux, Votre Excellence voudra bien se rendre sensible au besoin qui m’est aura encore plus sensible, que j’en suis anéanti par la tristesse du décès de Bordeaux. J’ose, Monseigneur, le supplier, qu’il daigne votre Excellence recevoir l’hommage le plus sincère de son profond respect avec le plus parfait honneur. \n\nA Monseigneur, \nDe votre Excellence,\nGrimaud le 13 décembre 1820. \nLe très humble et obéissant serviteur, \nDarluc et c...",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-23",
+    "sourceImage": "23-20260212_145637.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Darluc et c...",
+        "issue": "nom_propre_incertain",
+        "note": "La signature à la fin est lisible en partie seulement, l'identité exacte reste incertaine.",
+        "suggestion": "Possiblement 'Darluc et cie' mais sans certitude."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Grimaud le 13 décembre 1820",
+        "issue": "date_incertaine",
+        "note": "La date est assez lisible mais la localité initiale ('Grimaud') est plausible sans certitude absolue.",
+        "suggestion": "Vérifier 'Grimaud' sur l'image pour confirmation."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Bordeaux",
+        "issue": "lieu_incertain",
+        "note": "Le mot semble être 'Bordeaux', mais la lecture n'est pas certaine à 100% sans meilleure résolution.",
+        "suggestion": "Lieu mentionné dans un contexte de tristesse ou de décès."
+      },
+      {
+        "confidence": "low",
+        "fragment": "l’auguste famille, par des dignes neveux, Votre Excellence...",
+        "issue": "lecture_probable",
+        "note": "La phrase est complexe et certains mots sont possiblement détériorés ou peu lisibles, lecture par déduction.",
+        "suggestion": "Relire minutieusement sur document original."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Cet acte de bienfaisance et de justice...",
+        "issue": "mot_illisible",
+        "note": "Quelques mots ou groupes de mots restent hypothétiques dans la phrase, effacés ou peu nets.",
+        "suggestion": "Pas d'invention, vérifier sur la source papier si possible."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Par la présente, le besoin de l’air natal ainsi qu’il résulte par le certificat ci-joint et le défaut de toute autre ressource, la position éminemment honorable de son Corps, et qui est adossée à l’épreuve de sa longue carrière et l’autorité de sa maladie auprès que sa probité, l’ont de tant de caractères vraiment honorables.\n\nDans un état de regrets aussi pénibles et privés, le cœur de la famille reste sensible, mais impuissant quant au secours et à la nécessité de ses moyens. Monseigneur, la voix de votre Excellence, que daigne avoir la bonté de jeter un regard sur la pénible situation, en vue d’user de son autorité puissante pour donner l’appui de son État à son ancien, que le regret des privations suffira de douleur à la famille, il réclame pour le seul but de sa vie.\n\nCas de Bienfaisance et de Justice. Monseigneur sera non seulement d’une société absolue au supérieur maintenue, et d’aider à subvenir aux besoins d’un père âgé de 77 ans et d’une mère infirme, et qui, ainsi qu’il peut, emploie tous tous les moyens pour l’établissement de leur très infortune.\n\nSuppliant, ose espérer Monseigneur, qu’une demande aussi légitime, portée, par Votre Grandeur, devant le trône de S. M. et S. Majesté Louis XVIII dans cette heureuse circonstance, ne nous sera pas refusée, que votre Excellence daigne prononcer la digne mesure propre à faire procéder, dans une administration qui ne peut en voir se trouver aucune part plus remarquable, car le respect de la charte nationale, des Rois, de Bordeaux, le sauveur de la France, le soutien de nos familles et sujets, notre plus tendre amour.\n\nDaignez, souffrez, Monseigneur, qu’il s’y joigne Votre Excellence, recevez l’hommage le plus sincère de son profond respect avec lequel il a l’honneur d’être,\n\nA Monseigneur,\nDe Votre Excellence,\nLe très humble et obéissant serviteur,\nDarluc etc.\n\nGrimaud le 15 Décembre 1820.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-24",
+    "sourceImage": "24-20260212_145638.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Darluc",
+        "issue": "nom_propre_incertain",
+        "note": "Apparaît en signature mais l'écriture pourrait permettre une autre lecture (notamment la lettre initiale et médiane).",
+        "suggestion": "Darluc (lecture probable, à confirmer)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Louis XVIII",
+        "issue": "nom_propre_incertain",
+        "note": "Nom du souverain, l'écriture est typique mais la courbe du chiffre XVIII reste peu nette sur l'image.",
+        "suggestion": "Louis XVIII (lecture probable, à confirmer)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Bordeaux",
+        "issue": "lieu_incertain",
+        "note": "Mentionné avec 'le sauveur de la France', donc probable mais à valider.",
+        "suggestion": "Bordeaux (lecture probable, à confirmer)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Grimaud le 15 Décembre 1820",
+        "issue": "date_incertaine",
+        "note": "Date et lieu en fin de lettre, lecture généralement probable mais certains chiffres pourraient prêter à confusion.",
+        "suggestion": "15 Décembre 1820 (lecture probable, à confirmer)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "De Votre Excellence, Le très humble et obéissant serviteur,",
+        "issue": "lecture_probable",
+        "note": "La formule de clôture est typique mais une partie de la phrase pourrait être interprétée différemment.",
+        "suggestion": "De Votre Excellence, Le très humble et obéissant serviteur"
+      },
+      {
+        "confidence": "low",
+        "fragment": "Texte en haut à gauche (début de la lettre), diverses portions",
+        "issue": "mot_illisible",
+        "note": "Certaines portions du texte, notamment des mots isolés ou des caractères, restent difficiles à déchiffrer même à l'image.",
+        "suggestion": "Conserver les passages en l’état ou signaler l’illisibilité lors de la relecture humaine."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "DÉPARTEMENT DU VAR.\nCOMMUNE DE GRIMAUD.\nDivision.\nN°. 215\nLIBERTÉ.                    ÉGALITÉ.\n[cachet : RÉPUBLIQUE FRANÇAISE]\nGRIMAUD, le 12 Brumaire an 10e de la République française, une et indivisible.\nLe MAIRE de la Commune de Grimaud,\n\nAu citoyen ministre de la Guerre\n\nLe citoyen Auguste Joseph Darles de cette commune de Grimaud, à peine âgé de vingt un ans, militaire non moins distingué par son courage que par sa valeur, puisqu'il a acquis glorieusement sur le champ de bataille la grade honorable de chef de bataillon, mérite à juste titre, citoyen ministre, toute l'ardeur de vos soins et étendue de votre justice.\n\nCe recommandable défenseur de la liberté hait.... [le reste du texte manuscrit n'est pas entièrement lisible sur l'image fournie]\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-25",
+    "sourceImage": "25-20260212_145714.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "12 Brumaire an 10",
+        "issue": "date_incertaine",
+        "note": "La date révolutionnaire est lisible mais la lisibilité du chiffre d'année et du mois peut entraîner une confusion. Lecture majoritairement confirmée par l'image.",
+        "suggestion": "Vérifier la date sur le document original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Auguste Joseph Darles",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom manuscrit semble correct mais l'écriture pourrait permettre d'autres lectures.",
+        "suggestion": "Vérifier l'orthographe du nom propre sur l'original."
+      },
+      {
+        "confidence": "low",
+        "fragment": "[fin du texte manuscrit]",
+        "issue": "mot_illisible",
+        "note": "La suite du texte manuscrit (après la mention relative à la défense de la liberté) est difficilement lisible, présence de mots ou parties ambigües.",
+        "suggestion": "Lecture détaillée ou grossissement de l'image nécessaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "d'une guerre pénible qu'il l'honneur d'avoir servie. \nLe défaut de moyens ajoute à son infortune. Son état d'infirmité a qu'il fut reproché. Il ne lui est resté désormais que dans l'espoir de la reconnaissance nationale. En vain. \nIl réclama plusieurs fois, depuis son obtention de l'armée, jamais il n'a obtenu la moindre partie du traitement afférent à son grade. \nLe recours à votre équité ne sera point illusoire, citoyen Ministre, pour vos acquies, la loyauté favorisera assurée d'avance et interposera mon infortune, défenseur de ses droits, la récompense qu'il mérite. \nJe vous adresse en conséquence toutes les pièces qui constatent l'état d'infirmité dudit citoyen, dont le titre et le droit qu'il a acquis à la justice du gouvernement. \nSalut et respect \n[signature illisible]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-26",
+    "sourceImage": "26-20260212_145719.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "[signature illisible]",
+        "issue": "mot_illisible",
+        "note": "La signature en bas du document est difficilement lisible sur l'image.",
+        "suggestion": "Gabelys ou similaire, mais lecture incertaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "vos acquies, la loyauté favorisera assurée d'avance et interposera mon infortune",
+        "issue": "lecture_probable",
+        "note": "Plusieurs mots manuscrits dans cette phrase sont d'une lecture incertaine à cause du style.",
+        "suggestion": "Relire sur une version améliorée de l'image ou consulter un expert en paléographie."
+      },
+      {
+        "confidence": "high",
+        "fragment": "jamais il n'a obtenu la moindre partie du traitement afférent à son grade.",
+        "issue": "lecture_probable",
+        "note": "Bien que bien lisible, la tournure pourrait être légèrement différente à certains endroits.",
+        "suggestion": "Vérifier la fidélité au mot manuscrit exact."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "SHD\nCadre magasinier\nGR 2 YE 1012\nVI09 1 1 37 12 5\nGADMER Marc",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-27",
+    "sourceImage": "27-20260217_092417.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Cadre magasinier",
+        "issue": "mot_illisible",
+        "note": "Le texte \"Cadre magasinier\" sous SHD apparaît bien sur l'image mais peut être partiellement masqué par des reflets ou la qualité d'image.",
+        "suggestion": "Lecture probable : Cadre magasinier"
+      },
+      {
+        "confidence": "high",
+        "fragment": "VI09 1 1 37 12 5",
+        "issue": "lecture_probable",
+        "note": "La ligne contenant \"VI09 1 1 37 12 5\" pourrait aussi être lue comme \"V109 1 1 37 12 5\" selon la typographie. OCR donne \"v109 11 37125\" mais l'image précise une séparation par espaces.",
+        "suggestion": "Lecture probable : VI09 1 1 37 12 5"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Département\nd’Indre et Loire.\n\nMairie de Tours.\n\nNous Maire de la ville de Tours,\nChevalier officier de la Légion d’honneur,\nCertifions que M. Nicolas François Paul\nDada, militaire retraité, demeurant\nen cette ville, est un homme conduit\net nous prions qu’on ne doute que\nsur bons renseignements a donné les\nbonnes confirmations.\nEn foi de quoi, nous avons délivré\nle présent Certificat pour servir et\nvaloir ce que de droit.\nTours le 29 novembre 1834\nLe maire de la Ville,\n(signé) Poivotte\n\nVu par l’Administrateur de l’arrondissement\nde Tours pour légalisation de la signature de M. Poivotte maire de la Ville de Tours.\nTours, le 29 novembre 1834\nLe Conseiller de Préfecture Renf. Gir.\n(signé) Chambrel",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-28",
+    "sourceImage": "28-20260217_143308.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Nicolas François Paul Dada",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre difficile à lire ; l'image donne une lecture probable mais l'orthographe exacte reste incertaine.",
+        "suggestion": "Orthographe du nom à valider sur d'autres sources ou avec une lecture experte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Poivotte",
+        "issue": "nom_propre_incertain",
+        "note": "La signature du maire est manuscrite et partiellement lisible, lecture la plus probable.",
+        "suggestion": "À confirmer avec d'autres documents de la même main."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Chambrel",
+        "issue": "nom_propre_incertain",
+        "note": "La signature \"Chambrel\" du conseiller de préfecture n'est pas absolument certaine.",
+        "suggestion": "Vérifier par confrontation avec d'autres signatures ou actes similaires."
+      },
+      {
+        "confidence": "high",
+        "fragment": "29 novembre 1834",
+        "issue": "date_incertaine",
+        "note": "La date est bien lisible mais peut être affectée par l'écriture manuscrite.",
+        "suggestion": "Lecture confirmée, incertitude faible."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Tours",
+        "issue": "lieu_incertain",
+        "note": "Lieu clairement indiqué, mais possibilité de confusion avec une autre ville au nom proche dans des contextes différents.",
+        "suggestion": "Lecture confirmée, incertitude faible."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "1ère DIVISION.\nMINISTÈRE DE LA GUERRE.\nBUREAU\nde l’État Civil et Militaire\nRAPPORT FAIT AU MINISTRE le 18 Février 1812.\n\nM. Garrou, juge au Tribunal Civil de l’arrondissement de Bayonne, informe le Ministre que M. Darzac, capitaine au 7e léger, d’après les commandants du corps, a momentanément quitté Bayonne et son corps dans l’intention, dit-elle, de proposer de demander à Son Excellence de l’autoriser à épouser une nièce de M. Garrou.\nCe magistrat prie le Ministre de ne point accueillir cette demande, ajoutant qu’il vient de découvrir que M. Darzac est marié suivant le rite catholique, depuis 12 à 13 ans avec une Demoiselle Dey dont il a deux enfants et qu’il a ensuite abandonné, la laissant absolument sans secours.\nLa demande de M. Darzac n’en joue encore parvenue, mais comme sa présence à Bayonne devient extrêmement inquiétante pour la famille de M. Garrou, on propose au Ministre de signer la lettre ci-jointe pour le Gal Commandant la 11e Division Militaire à l’effet de faire donner l’ordre à M. Darzac de partir de suite pour l’Espagne, avec un détachement de son corps ou d’aller rejoindre le Bataillon de guerre, sinon pour Strasbourg où se trouve le dépôt général du Régiment 7e.\n\nLe Chef de Bureau\nsigné\n9 Fév[rier]\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-29",
+    "sourceImage": "29-20260217_152232.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "M. Garrou",
+        "issue": "nom_propre_incertain",
+        "note": "L'écriture manuscrite du nom pourrait être autre chose.",
+        "suggestion": "M. Garrou"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "M. Darzac",
+        "issue": "nom_propre_incertain",
+        "note": "Nom manuscrit ambigu, semble être 'Darzac' mais sans certitude absolue.",
+        "suggestion": "M. Darzac"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Dey",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de la 'Demoiselle Dey' n'est pas parfaitement clair.",
+        "suggestion": "Dey"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Strasbourg",
+        "issue": "lieu_incertain",
+        "note": "Lecture probable du nom de la ville.",
+        "suggestion": "Strasbourg"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "le 18 Février 1812",
+        "issue": "date_incertaine",
+        "note": "La date est manuscrite, la lecture est très probable mais pas absolument certaine.",
+        "suggestion": "le 18 Février 1812"
+      },
+      {
+        "confidence": "high",
+        "fragment": "le dépôt général du Régiment 7e.",
+        "issue": "lecture_probable",
+        "note": "La mention du numéro du régiment ('7e') est très probable mais reste à confirmer.",
+        "suggestion": "Régiment 7e"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le Chef de Bureau",
+        "issue": "mot_illisible",
+        "note": "La signature manuscrite est difficile à transcrire précisément.",
+        "suggestion": "Le Chef de Bureau"
+      },
+      {
+        "confidence": "high",
+        "fragment": "9 Fév[rier]",
+        "issue": "date_incertaine",
+        "note": "La date jointe à la signature est très probable mais la mention manuscrite complète n'est pas totalement claire.",
+        "suggestion": "9 Fév[rier]"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "MINISTÈRE DE LA GUERRE. 9e DIVISION.\nMINUTE DE LA LETTRE ÉCRITE par le Ministre\nDigne 27 Juin 1814.\n\nNo 141\n5 Juin\nDarnay\nMonsieur le 5 Juin\n\nMonsieur,\nJ’ai l’honneur d’entrer sous le couvert de votre recommandation l’honneur du Capitaine du 20e régiment d’infanterie légère ; que cet officier porte l’honnêteté et la régularité à leur comble du point de vue moral et privé, dont les convictions restent jusque-là irréprochables ; que cet homme est sans religion, il s’en faut, au point que mon contentement aussi bien de mes (services?) à Digne. Sa tenue jamais amoindrie, en la tournant en instruction de sa profession, la pratique de notre religion et de leur expérience des nuances de l’esprit. Et j’ai pour avoir, parfois, la certitude très admirable remontant à de saints avis donnés à Votre Excellence. Satisfaite pour les disciples sérieux qui suivent notre aumônier de la même façon, et appartient (troupes ?)\nComme j’entre en quartier, officier de rematériaux et que la commission militaire est heureusement abolie, j’ai supplie Votre Excellence de lui donner l’ordre de rejoindre son corps qui est à Strasbourg.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-30",
+    "sourceImage": "30-20260217_152326.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "honneur du Capitaine du 20e régiment d’infanterie légère",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom ou matricule du capitaine précis n'est pas parfaitement lisible sur l'image.",
+        "suggestion": "Capitaine du 20e régiment d’infanterie légère"
+      },
+      {
+        "confidence": "low",
+        "fragment": "qu’il est sans religion il s’en faut",
+        "issue": "mot_illisible",
+        "note": "La formulation n'est pas claire, difficulté de lecture manuscrite.",
+        "suggestion": "qu’il est sans religion, il s’en faut"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "à Digne. Sa tenue jamais amoindrie, en la tournant en instruction de sa profession...",
+        "issue": "lecture_probable",
+        "note": "Syntaxe et présence d’abbréviations manuscrites rendent le passage incertain.",
+        "suggestion": "Sa tenue jamais amoindrie, en la tournant en instruction de sa profession..."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "l’ordre de rejoindre son corps qui est à Strasbourg",
+        "issue": "lieu_incertain",
+        "note": "Strasbourg est évoqué mais l’image rend le mot final peu lisible.",
+        "suggestion": "son corps qui est à Strasbourg"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Du septième département.\nAyant fait part de cette malheureuse affaire et de l'affliction dans laquelle elle plonge toute une famille, j'ai appris que MM. les officiers supérieurs chargés de la réorganisation, ajoutent des ordres d'après lesquels ils étaient tenus de reprendre les lap dans qui se trouve curé ils avaient que la mission fut terminée depuis rien de tout, dans la 110e régiment devenu présents dans ce corps et déjà plusieurs officiers jaloux d'une solangé inattendue (qui donnait tant de désirs journé) fut ainsi. J'ai fait à l'instar de la première compagnie qui naturellement sont restés dignes. \nIl n'y a donc plus de recours que dans l'autorité et le zèle de l'ordre excellent que je fais supplier, Monsieur, d'abrévierions sommes et gémis pour toutes ces misères de département et je crois avec les plus grandes confiances, Hommageux. Je vous aussi, Sigrand et la presse. Qu'un prêtre fut obligé de rendre les fonds qui ont traversé la orage. Sa dévotion ne sera que leur fortune cultive et trouve la moindre attestation de zèle ou d'esprit pontueux, religieux et pour leur légitime pauvreté, la probité et l'attachement utilité vous rend. \nVoilà, Monsieur, que je suis obligé de vous adresser que le suis le malheureux père d'un perfum qui a succombé à la punition usif.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-31",
+    "sourceImage": "31-20260217_152337.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "lap dans qui se trouve curé ils avaient que la mission fut terminée",
+        "issue": "mot_illisible",
+        "note": "Le sens est obscur et le mot 'lap' semble une lecture fautive ; écriture difficile à déchiffrer à cet endroit.",
+        "suggestion": "mot possiblement mal retranscrit ou incomplet"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "dans la 110e régiment devenu présents dans ce corps",
+        "issue": "lecture_probable",
+        "note": "La formulation peut refléter une mauvaise analyse de la syntaxe manuscrite.",
+        "suggestion": "potentiellement 'dans le 110e régiment, de nouveaux présents dans ce corps'"
+      },
+      {
+        "confidence": "low",
+        "fragment": "d'une solangé inattendue (qui donnait tant de désirs journé) fut ainsi.",
+        "issue": "mot_illisible",
+        "note": "Mot 'solangé' probablement incorrect. Passage ambigu malgré recoupement image/OCR.",
+        "suggestion": "relecture attentive ou meilleur scan requis"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "abrévierions sommes et gémis pour toutes ces misères de département",
+        "issue": "mot_illisible",
+        "note": "Possiblement phrase mal segmentée ou termes erronés.",
+        "suggestion": "à clarifier avec une lecture experte"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Hommageux. Je vous aussi, Sigrand et la presse.",
+        "issue": "nom_propre_incertain",
+        "note": "Nom 'Sigrand' incertain, le manuscrit est difficile à lire à cet endroit.",
+        "suggestion": "prénom ou patronyme incertain"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "un perfum qui a succombé à la punition usif.",
+        "issue": "mot_illisible",
+        "note": "Le mot 'perfum' ne semble pas correct ; passage final peu lisible.",
+        "suggestion": "munition ? raison ? doute sur le substantif."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "MONISTÈRE DE LA GUERRE. 7e DIVISION.\nMINUTE DE LA LETTRE ÉCRITE par le Min[istre]\n\nDoux et Père Excellent, vous voyez bien combien il m'importe d'empêcher que mes petits-enfants soient également pervertis et dans leur religion et dans leurs mœurs. Il n'y a que votre autorité qui puisse me délivrer des peines, ni les réparations ni la voix salutaire paraissent dans la maison de ma fille, n'y peuvent rien. Il n'y a pas de jour que je n'y fus rendu, parce que j'ai appris que là aussi j'y portais habituellement. J'ai eu trouvé enfans [illisible] Je leur ai fait vivement la morale, inutilement. J'ai ordonné à Adrien et Sophie pour n'y plus mettre les pieds, et s'il s'oppose une résistance audacieuse et qu'il ait continué [illisible] la religion dans la maison, avec la mère et les trois jeunes filles. L'affrontée et l'opiniâtreté de ces offices me peusent que cause quelques fâcheuses catastrophes. J'espère que la sagesse de Votre Excellence s'opposera à tous les malheurs. La religion, les mœurs et le repos d'une famille honnête. Soir des motifs, qui ne donnent la plus grande profondeur, parce que Votre Excellence fait la appréciée.\nJ'ai l'honneur d'être avec un profond respect\nMonseigneur\nDe Votre Excellence\n\nVotre très humble et très obéissant serviteur, [Signature manuscrite illisible] Vice-président du Tribunal civil de Dijon",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-32",
+    "sourceImage": "32-20260217_152341.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "[illisible] Je leur ai fait vivement la morale, inutilement.",
+        "issue": "mot_illisible",
+        "note": "Ligne manuscrite difficile à lire dans cette portion, certains mots illisibles.",
+        "suggestion": "Mot ou passage manquant, mots adjacents reconstitués d'après le contexte général."
+      },
+      {
+        "confidence": "low",
+        "fragment": "qu'il ait continué [illisible] la religion dans la maison",
+        "issue": "mot_illisible",
+        "note": "Un ou plusieurs mots restent indéchiffrables dans ce passage.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "[Signature manuscrite illisible] Vice-président du Tribunal civil de Dijon",
+        "issue": "nom_propre_incertain",
+        "note": "La signature ne peut pas être lue avec certitude, et n'est pas retranscrite.",
+        "suggestion": "Nom du signataire vice-président impossible à restituer ici."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "MINUTE DE LA LETTRE ÉCRITE par le Min[istre]",
+        "issue": "lecture_probable",
+        "note": "Lecture déduite de la formulation officielle malgré un mot manuscrit peu lisible.",
+        "suggestion": "Le mot ajouté en manuscrit semble être 'Ministre', sans certitude absolue."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Votre Excellence",
+        "issue": "nom_propre_incertain",
+        "note": "Titre d'adresse, le destinataire précis n'est pas identifiable ici.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "MINISTÈRE DE LA GUERRE.\n7e DIVISION.\nBUREAU d'adm.\n\nMINUTE DE LA LETTRE ÉCRITE par le Ministre\nà Mr le Lieutenant Général commandant la 7e Division militaire\nLe 25 Juillet 1814.\n\nMonsieur, Je suis informé que Mr Daruse, capitaine au 7e régiment d'infanterie légère, qui était employé au Monténars, sur la ligne des Hautes Alpes, n'a point manqué ce en rejoignant son régiment. L'absence est justifiée, la docteur autorisation à Digne avait été accordée, une note sur la santé rapportant les troubles dans une famille respectable de cette ville.\n\nLe ministre vous prie bien vouloir donner des ordres pour que cet officier quitte de suite Champ à (mot illisible) Régiment d'infanterie légère auquel il est attaché, et qu'en se rendant à Givet, où doit être dirigée la santé du 7e régiment d'infanterie légère, il vous invite à faire veiller à ce qu'il ne s'arrête aucun instant sans les ordres... (fin de phrase difficile à déchiffrer)\n\n(Signature illisible)",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-33",
+    "sourceImage": "33-20260217_152404.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Daruse",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture du nom propre basée sur l'image, peu certaine.",
+        "suggestion": "Daruse ou Darnse ou Darase."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Champ à (mot illisible) Régiment d'infanterie légère",
+        "issue": "mot_illisible",
+        "note": "Mot entre Champ à et Régiment illisible.",
+        "suggestion": "Lecture impossible sur ce mot."
+      },
+      {
+        "confidence": "low",
+        "fragment": "fin de la lettre (phrase finale, signature)",
+        "issue": "mot_illisible",
+        "note": "La fin de la lettre contient des mots ou des passages entiers non interprétables.",
+        "suggestion": "Non lisible."
+      },
+      {
+        "confidence": "high",
+        "fragment": "25 Juillet 1814",
+        "issue": "date_incertaine",
+        "note": "La date est lisible mais doit être considérée comme probable en transcription assistée.",
+        "suggestion": "Probable : 25 Juillet 1814"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Givet",
+        "issue": "lieu_incertain",
+        "note": "Nom de lieu assez lisible, mais pourrait être une autre orthographe.",
+        "suggestion": "Lecture probable : Givet"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "14e Division N°\nMonsieur Delage\n14e Division\nBureau d'Etat Civil, etc.\nN° 838\nDavras\nA Monseigneur\nJ'ai l'honneur d'accuser à votre Excellence la réception de la lettre qu'elle m'a fait l'honneur de m'adresser relative au passage du Capitaine Davras du 14e d'infanterie. Je viens de lui donner l'ordre de continuer sa route pour Strasbourg. Ces ordres me lui permettant pour ses retours en Espagne. Cet officier ne demande en ... point de jour.\nJ'ai l'honneur d'être avec respect,\nMonseigneur,\nde votre Excellence,\nle très humble serviteur,\nLe pr. criminel présid. et Coll. Dresde\nBaron Shultheiss",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-34",
+    "sourceImage": "34-20260217_152414.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Capitaine Davras",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture du nom propre difficilement certaine à cause du style manuscrit.",
+        "suggestion": "Le nom pourrait différer légèrement."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "14e d'infanterie",
+        "issue": "sigle_incertain",
+        "note": "Doute sur la lecture exacte du régiment.",
+        "suggestion": "Confirmer en contexte ou avec d'autres sources."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Le pr. criminel présid. et Coll. Dresde",
+        "issue": "lecture_probable",
+        "note": "Signature et titulature difficiles à interpréter précisément.",
+        "suggestion": "Lecture partiellement plausible sur la base de la forme, mais peu assurée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Baron Shultheiss",
+        "issue": "nom_propre_incertain",
+        "note": "Nom de signature potentiellement incertain, style cursif.",
+        "suggestion": "À vérifier sur documents comparatifs."
+      },
+      {
+        "confidence": "low",
+        "fragment": "en ... point de jour",
+        "issue": "mot_illisible",
+        "note": "Fragment illisible dû à une rature ou lettre effacée.",
+        "suggestion": "Impossible de compléter sans extrapoler."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Rayoum le 28 févriér 1842.",
+        "issue": "lieu_incertain",
+        "note": "Lecture partiellement probable, manuscrit ancien difficile à déchiffrer.",
+        "suggestion": "Lieu à confirmer."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "J. P. Parson, Juge au Tribunal Civil de l'Arrondissement de Bayonne\nA Son Excellence le Ministre de la Guerre.\n\nMonseigneur,\n\nLe Sr Darrac, Capitaine dans la 17e d’infanterie légère, commandant accidentellement en celui déposé en cette place, a écrit à Mr. Favre, son Major à Strasbourg, pour l’espoir de solliciter de Votre Excellence la permission de se marier avec une de mes nièces, dont l’esprit enjoué exalté sympathie avec celui de son prétendant. Afin d’éviter le malheur inévitable pour l’un et l’autre de ces deux personnes, dont ma sœur tire au nom de qui je paye l’homme indigente à nourrir, ma nièce vivait à ma charge, accoutumée à faire acte d’orpheline, sans d’autre perspective que celle de ses droits de succession de son père, mort en Amérique en leur ennemie. La Guerre ont réduit sa fortune et presque à chose, même bien difficile à réaliser et transmettre en Europe.\nJ’ai dû écrire à Mr. le Major Favre pour l’instruction de l’état vrai des choses, afin d’en informer Votre Excellence.\n\nMais, depuis cette époque, je viens d’acquérir la preuve d’un fait qui caractérise l’invraisemblable...",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-35",
+    "sourceImage": "35-20260217_152454.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "J. P. Parson, Juge au Tribunal Civil",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du juge semble bien être \"Parson\", mais l’écriture laisse place à doute.",
+        "suggestion": "Vérifier le nom propre exact sur d’autres sources manuscrites."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Sr Darrac... 17e d’infanterie légère",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de l’officier pourrait être \"Darrac\", cependant, la lecture reste incertaine (écriture manuscrite peu lisible sur ce nom).",
+        "suggestion": "Revue croisée recommandée avec registre militaire."
+      },
+      {
+        "confidence": "high",
+        "fragment": "\"17e d’infanterie légère\"",
+        "issue": "lecture_probable",
+        "note": "Lecture assez certaine au vu de la clarté sur l’image, mais la graphie du nombre pourrait encore prêter à confusion.",
+        "suggestion": "Confirmer le chiffre par confrontation avec documents similaires."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Mr. Favre, son Major à Strasbourg",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom \"Favre\" est probable, mais non parfaitement assuré (écriture peu lisible).",
+        "suggestion": "Vérifier sur autres correspondances éventuellement conservées."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Ma nièce vivait à ma charge...",
+        "issue": "mot_illisible",
+        "note": "Certaines parties sur les charges familiales présentent des mots difficiles à déchiffrer avec précision.",
+        "suggestion": "Relecture agrandie et éventuellement consultation d'un paléographe."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "mort en Amérique en leur ennemie.",
+        "issue": "lecture_probable",
+        "note": "L’expression \"en leur ennemie\" est difficile à interpréter, et pourrait être une erreur de lecture.",
+        "suggestion": "Comparer d'autres lettres contemporaines pour confirmer le sens."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "l’état vrai des choses",
+        "issue": "mot_illisible",
+        "note": "\"l’état vrai\" est probable mais la formulation exacte sur le manuscrit est difficile à trancher.",
+        "suggestion": "Relecture spécialisée recommandée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "la preuve d’un fait qui caractérise l’invraisemblable...",
+        "issue": "mot_illisible",
+        "note": "Dernière ligne incomplète et, par endroits, partiellement illisible.",
+        "suggestion": "Relecture directe sur l’original à la loupe."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ou Monsieur la demande de ce capitaine Danac. C’est qu’il y a 12 ans qu’il a épousé une fille de retraité, d’après ce que m’en écrive de monsieur ??? a dans sa Patrie, une fort honnête famille, une tonquerre. Il a eu deux enfants dont il a été comme le père pour écrire lui-même depuis longtemps sans secours, ce qui a obligé cette infortunée femme de s’adresser au Général, ??? Commandant notre place, afin d’obliger son mary a se rappeller de ses devoirs. C’est dans une telle situation, Monseigneur, que le S. Danac ose solliciter de Votre Excellence la permission de retourner vers sa malheureuse et honnête famille qu’il est forcé par d’autres ... Il s’est permis même, de dire que, si la permission lui était refusée, ou qu’on voulait l’obliger à aller joindre son corps en Espagne avant d’avoir rempli son but, il demanderait de suite sa démission pour se fixer icy.\nJe m’abstiens, Monseigneur, de toute réflexion sur la Conduite irréprochable de cet officier, bien persuadé qu’il aura satisfait d’instruire Votre Excellence de toutes ces faits dont je garantis l’exactitude, pour le ramener à son devoir et rendre à une famille honnête la paix et la tranquillité dont toutes les Romaci sont …",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-36",
+    "sourceImage": "36-20260217_152505.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "une tonquerre",
+        "issue": "mot_illisible",
+        "note": "Le terme \"une tonquerre\" est difficilement lisible sur l'image et ne semble pas connu.",
+        "suggestion": "terme potentiellement mal retranscrit"
+      },
+      {
+        "confidence": "low",
+        "fragment": "monsieur ??? a dans sa Patrie",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre illisible ou absent sur l'image à cet emplacement.",
+        "suggestion": "nom propre à confirmer"
+      },
+      {
+        "confidence": "low",
+        "fragment": "??? Commandant notre place",
+        "issue": "nom_propre_incertain",
+        "note": "Nom ou terme devant \"Commandant notre place\" indéchiffrable.",
+        "suggestion": "nom propre à vérifier"
+      },
+      {
+        "confidence": "high",
+        "fragment": "toutes les Romaci sont …",
+        "issue": "mot_illisible",
+        "note": "Dernier mot ou passage non déchiffré ni sur image ni OCR.",
+        "suggestion": "fin du mot/sens illisible"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "pour se fixer icy",
+        "issue": "lecture_probable",
+        "note": "La formulation et le mot \"icy\" semblent conformes à la graphie ancienne mais demande confirmation.",
+        "suggestion": "\"icy\" probable pour \"ici\""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "… avoir à finir sous la Protection et la Justice\nde notre Auguste Empereur.\nJ'ai l'honneur d'être avec respect\nMonseigneur,\nde Votre Excellence,\nLe très humble Serviteur\nS. P. Garros\n\nBayonne le 30 Janvier 1812.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-37",
+    "sourceImage": "37-20260217_152508.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "S. P. Garros",
+        "issue": "nom_propre_incertain",
+        "note": "La signature manuscrite est difficile à lire, la transcription est approximative.",
+        "suggestion": "Signature à vérifier"
+      },
+      {
+        "confidence": "high",
+        "fragment": "Bayonne le 30 Janvier 1812",
+        "issue": "date_incertaine",
+        "note": "Lecture possible, mais la date manuscrite pourrait prêter à confusion entre le chiffre 1 et 7.",
+        "suggestion": "Relire la date à partir de l'original"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Digne 18 mai 1814\n\nN° 119\nS. Jannin\n\nMonsieur\n\nJ’ai quitté le département des Basses Alpes pour venir présenter à sa majesté l’hommage du respect et de la fidélité de mes concitoyens. J’ai eu pour épée ce qui me reste pour votre excellence de vice-président du tribunal de première instance de Digne, et j’ai à supplié de vous l’adresser.\n\nTout ce qui contient cette lettre, relativement au sieur Delmas, est un malheurs aussi trop suivi, j'ai tâché à la portée de conduire sa conduite, sous le rapport de l’humanité, sans pouvoir donner lieu à des scènes fâcheuses que votre sagesse interprétera si sérieusement, il s'est plaint pendant un an, fonction de capitaine de contumace. Il a quitté son épée depuis quelque temps, et la contradiction est de lui faire porter dans le Basses Alpes, près de Requista, dans la capitale parce qu'on croit que la conscription recommencera. Toute la moitié de l'Empire s'est émue. Monsieur, je prie que cet officier soit renvoyé à son corps.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-38",
+    "sourceImage": "38-20260217_152544.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "S. Jannin",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre apposé sous 'N° 119' est manuscrit et peut prêter à interprétation.",
+        "suggestion": "Lecture probable mais pas certaine du nom : 'S. Jannin'"
+      },
+      {
+        "confidence": "low",
+        "fragment": "sa conduite, sous le rapport de l’humanité",
+        "issue": "lecture_probable",
+        "note": "Passage manuscrit partiellement effacé/estompé.",
+        "suggestion": "Lecture d'après image, formulation à confirmer par contrôle expert."
+      },
+      {
+        "confidence": "low",
+        "fragment": "près de Requista, dans la capitale parce qu'on croit que la conscription recommencera",
+        "issue": "mot_illisible",
+        "note": "Mot 'Requista' difficilement lisible sur l'image.",
+        "suggestion": "Demander vérification par un expert manuscrit."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Je n'entrerai point dans des détails, qui seraient dégoûtants pour Votre Excellence ; mais, j'ai pensé que le devoir d'un Militaire étoant de servir le Roi et la patrie plutot que de suivre dans une si chère division, à donner l'exemple de la désobéissance en vain. \n\nVoici cependant, rationnellement, Monsieur, telle opinion et, en obtenant le réunion de cet officier par les motifs que j'ai eu l'honneur de vous exposer, j'ose croire avoir bien servi le mon pays, et de vous même.\n\nJe suis avec respect,\nMonsieur,\nDe Votre Excellence\n\nLettre humble très obéissant serviteur\n[Nom propre incertain]\nParis, 3 juillet 1810.\nRue St Honoré Lumière",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-39",
+    "sourceImage": "39-20260217_152554.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "[Nom propre incertain]",
+        "issue": "nom_propre_incertain",
+        "note": "La signature manuscrite apparaît difficilement lisible sur l'image même en grossissant.",
+        "suggestion": "Lecture potentielle : Jours ?"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Rue St Honoré Lumière",
+        "issue": "mot_illisible",
+        "note": "Le nom de la rue à la dernière ligne n'est pas totalement clair, difficulté de lecture sur l'image.",
+        "suggestion": "Lecture alternative possible : Rue St Honoré ..."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lettre humble très obéissant serviteur",
+        "issue": "lecture_probable",
+        "note": "La formulation exacte de la politesse pourrait varier selon l'interprétation des lettres manuscrites.",
+        "suggestion": "Formule de politesse corrigible selon lecture experte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "le devoir d'un Militaire étoant de servir le Roi et la patrie...",
+        "issue": "lecture_probable",
+        "note": "Certains mots pourraient différer légèrement selon les tracés manuscrits. La tournure \"étoant\" semble être une ancienne forme ou une variante manuscrite.",
+        "suggestion": "Confirmer orthographe (étoant/étant) et formulation exacte."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Paris, 3 juillet 1810.",
+        "issue": "date_incertaine",
+        "note": "La date est lisible mais demanderait confirmation pour éliminer toute ambigüité sur l'année ou le mois.",
+        "suggestion": "Lecture préférée : 3 juillet 1810."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Digne 18 juin 1814\n\nMonseigneur\n\nL’objet d’une demande d’un honnête habitant (nom illisible) m’a encore engagé à m’adresser respectueusement à votre Grandeur. Il s’agit en effet d’un capitaine du 17e régiment d’infanterie légère dont le séjour est à Strasbourg. Cet officier porte le trouble et le déshonneur à leur comte en persécutant une mère de famille, sous les yeux même de son enfant. C’est un homme sans religion et sans frein qui ne fera pas cesser le scandale et le marasme qu’il cause et qui pour la troisième fois force l’intervention de Votre Grandeur et de la laisser dans la division des (mot incertain) qu’y étaient restés à Digne surtout au moins dans ce département (Basses Alpes ?). Il était ici comme officier de recrutement pour la prescription militaire ; sa mission étant terminée, puisqu’il n’y a plus de conscriptions...",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-40",
+    "sourceImage": "40-20260217_152602.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Digne 18 juin 1814",
+        "issue": "date_incertaine",
+        "note": "La date est lisible sur l'image mais nécessite validation pour certitude.",
+        "suggestion": "Probablement correcte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "d’un honnête habitant (nom illisible)",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre du demandeur n’est pas lisible sur l’image.",
+        "suggestion": "Nom du demandeur non identifiable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "(mot incertain) qu’y étaient restés à Digne",
+        "issue": "mot_illisible",
+        "note": "Un mot dans l’avant dernière ligne du second paragraphe n’est pas clairement lisible.",
+        "suggestion": "Relecture à la loupe recommandée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "(Basses Alpes ?)",
+        "issue": "lieu_incertain",
+        "note": "Le département semble être Basses Alpes mais la formulation n’est pas parfaitement lisible.",
+        "suggestion": "A vérifier avec un expert géographique ou une autre source."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Monsieur,\n\nJe supplie Votre Autorité de lui donner l'ordre de rejoindre son corps, où il se retire indistinctement. La plainte que j'en vous adresse Monseigneur, intéresse les mœurs, la religion et le repos d'une famille honnête et à ces titres je ne doute nullement qu'elle ne soit favorablement accueillie. J'ai l'honneur d'être avec respect\n\nMonseigneur\n\nVotre très humble et très obéissant serviteur\n(Signature difficilement lisible, probablement Rontagne, Président du...)",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-41",
+    "sourceImage": "41-20260217_152611.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Votre Autorité",
+        "issue": "lecture_probable",
+        "note": "L'expression semble correcte mais pourrait contenir une légère variation manuscrite.",
+        "suggestion": "Lecture guidée par la structure habituelle, mais le manuscrit reste interprétable."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Monseigneur",
+        "issue": "nom_propre_incertain",
+        "note": "L'adresse à 'Monseigneur' apparaît claire, mais sans certitude du destinataire précis.",
+        "suggestion": "Conserver la forme générale sans affirmer un nom propre précis."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Signature (probablement Rontagne, Président ...)",
+        "issue": "mot_illisible",
+        "note": "La signature est difficilement lisible aussi bien sur l'image que dans l'OCR.",
+        "suggestion": "Indiquer l'incertitude sur le nom du signataire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Président du ... l'intendant à signer",
+        "issue": "mot_illisible",
+        "note": "La fonction semble être précisée mais le manuscrit n'est pas pleinement distinct.",
+        "suggestion": "Mentionner l'incertitude sans compléter."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "MINISTÈRE DE LA GUERRE.\n    DIVISION.\n        BUREAU\n\nMINUTE DE LA LETTRE ÉCRITE\npar [illisible, probable nom ou sigle]\nà [illisible, probable fonction ou nom d’officier, incertitude sur \"M. le Prefet\" mentionné]\nLe 4 Juin 1846\n\nMonsieur, il a été transmis au Ministère une demande pour un poste de maréchal au nom de Mr Darroze, Capitaine retiré dans la Légion de Landes, pour occuper Mr Ech..., Mr Chavy, municipal de Sabres, énumérait et [incompréhensible] le Maire certifie que cette dame qu'il s'agit de donner l’avantage à avoir sur le poste de cet état. Il est important mais non indispensable d’agir promptement. D’autres promotions peuvent être faites. Autre point est l’avenir à fixer [...] cette union comme peu convenable. En attendant, avant de prendre une décision finale, il s'agit que le poste reste en attente, jusqu’à toute communication du Ministre. Je les charge de bien vouloir faire prendre à cet égard les renseignements les plus précis et à faire de suite toutes les pétitions possibles le résultat avec votre avis sur les convenances et exigences de ce mariage.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-42",
+    "sourceImage": "42-20260217_152946.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "par [illisible, probable nom ou sigle]",
+        "issue": "mot_illisible",
+        "note": "Le nom/signature manuscrit en haut n’est pas clairement lisible même sur l’image, l’OCR n’apporte rien.",
+        "suggestion": "Laisser un blanc ou indiquer mot illisible"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "à [illisible, probable fonction ou nom d’officier, incertitude sur \"M. le Prefet\"]",
+        "issue": "nom_propre_incertain",
+        "note": "La mention manuscrite présente une forme de M. le Prefet ou équivalente, mais la ligne est partiellement couverte et sujette à doute sur l’image comme dans l’OCR.",
+        "suggestion": "\"M. le Prefet\" est probable mais non assuré."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Mr Ech..., Mr Chavy, municipal de Sabres, énumérait et [incompréhensible]",
+        "issue": "mot_illisible",
+        "note": "La succession de noms propres, et particulièrement le passage après Ech... reste difficile à établir précisément ; l’OCR comme l’image montrent des ratures et une graphie ambigüe.",
+        "suggestion": "Indiquer marque d’incertitude ou mot illisible."
+      },
+      {
+        "confidence": "high",
+        "fragment": "[incompréhensible] le Maire certifie que cette dame qu'il s'agit de donner l’avantage à avoir sur le poste de cet état.",
+        "issue": "lecture_probable",
+        "note": "Le sens général reste compréhensible, mais un passage (avant 'le Maire certifie que...') n’est pas restitué de manière certaine.",
+        "suggestion": "Transcription probable, à noter comme telle."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "autre point est l’avenir à fixer [...] cette union comme peu convenable.",
+        "issue": "mot_illisible",
+        "note": "La suite entre « avenir à fixer » et « cette union comme peu convenable » est très peu lisible sur l’image.",
+        "suggestion": "Signaler interruption par illisible."
+      },
+      {
+        "confidence": "high",
+        "fragment": "en attendant, avant de prendre une décision finale, il s'agit",
+        "issue": "lecture_probable",
+        "note": "Phrase correcte sur l’image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "le poste reste en attente, jusqu’à toute communication du Ministre.",
+        "issue": "lecture_probable",
+        "note": "Le manuscrit semble indiquer ce sens mais présence de rayures manuscrites.",
+        "suggestion": "Lecture plausible."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Ségur des Landes\n\nMonsieur,\n\nJ'ai eu l'honneur de vous envoyer une demande de congé pour Mr. Dumes (Bernard?) capitaine à la Légion, depuis des explications qui me sont parvenues je crois que ce congé n'est pas concevable, je prie Votre Excellence de regarder cette demande comme non avenue, et donc de ne pas la permettre, ainsi que cet officier me demandait et obtient sa retraite ne serait donnée dans la possibilité de le faire. Daignez agréer l'hommage du profond respect avec lequel j'ai l'honneur d'être,\n\nDe Votre Excellence,\n\nMonsieur,\n\nSigné?\n\nBeyonne le 19 septembre 1812\n\nA Son Excellence le ministre de la guerre\n\nLe Lieutenant Colonel et très obéissant serviteur, le Colonel Delabruge (?)\nCne (?) Légion",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-43",
+    "sourceImage": "43-20260217_152956.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Dumes (Bernard?)",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du capitaine semble être 'Dumes', mais la lecture 'Bernard' entre parenthèses n'est pas certaine à cause de l'écriture manuscrite.",
+        "suggestion": "Dumes ou autre nom similaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Beyonne le 19 septembre 1812",
+        "issue": "lieu_incertain",
+        "note": "Le nom du lieu ('Beyonne') est incertain, l’écriture manuscrite peut aussi être lue différemment, la date paraît probable.",
+        "suggestion": "Bayonne ?"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le Colonel Delabruge (?)",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom est difficile à lire, il pourrait aussi s'agir d'une variante ('Delabrugère', etc.).",
+        "suggestion": "Delabruge, Delabrugère, autre variante proche."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Cne (?) Légion",
+        "issue": "sigle_incertain",
+        "note": "'Cne' n'est pas certain, il s'agit probablement d'une abréviation manuscrite pour le corps/unité.",
+        "suggestion": "Cne (capitaine) ou une autre abréviation de la Légion."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Ministère\nPermission de Mariage\n\nLignes du bande [mot illisible]\n\nApprouvé le ... [date illisible] / Le Colonel [signature illisible]\n\nN° 9 C. 797\n\nMonsieur, \nJ’ai l’honneur de vous demander la permission de le marier pour un jeune homme (ayant une situation / une jeune ... [mot illisible] propriétaire d’une ... [mot illisible] ... , ses qualités et surtout par la certitude que j’en ai eue d’après les explications que j’ai prises, elle joint à une fortune de ... une éducation tout en meilleur qui d’aucune autre.\n\nJe fais cette requête pour rappeler à votre excellence que cet officier qui fait partie ... a agi avec ... depuis le 10 ... 1797 jusqu’à finir à ... où [mot illisible] de ... et faire immédiatement partie de l’armée de ... ... à la comte ... il se serait instruit à ... des armées ... depuis qu’il a toujours ... ... la ...\n ... défendre le ... ... pour ... ... du comte de ... qui vous ... ... [suite illisible]\n\nSoyez persuadé, Monseigneur, des sentiments de votre excellence très humble et très dévoué serviteur / [titre et signature illisibles]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-44",
+    "sourceImage": "44-20260217_153019.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Lignes du bande [mot illisible]",
+        "issue": "mot_illisible",
+        "note": "Mot suivant 'Lignes du bande' est imprécis, peu lisible sur l'image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "Approuvé le ... [date illisible] / Le Colonel [signature illisible]",
+        "issue": "mot_illisible",
+        "note": "La date et la signature sont manuscrites et difficilement lisibles.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ayant une situation / une jeune ... [mot illisible] propriétaire d’une ... [mot illisible]",
+        "issue": "mot_illisible",
+        "note": "Plusieurs mots manuscrits incertains ou peu lisibles dans cette phrase.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "finir à ... où [mot illisible] de ...",
+        "issue": "mot_illisible",
+        "note": "La terminaison du passage est très difficile à distinguer à partir de l'image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "à la comte ... il se serait instruit à ...",
+        "issue": "mot_illisible",
+        "note": "Le nom et le verbe sont incertains et imprécis.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "pour ... ... du comte de ... qui vous ... ... [suite illisible]",
+        "issue": "mot_illisible",
+        "note": "Fin du passage, ligne extrêmement difficile à lire.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "titre et signature illisibles",
+        "issue": "mot_illisible",
+        "note": "Signature et titre du signataire incomplets.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Permission de Mariage\n\nMINISTÈRE DE LA GUERRE.\n5e DIVISION.\nBUREAU de L'ÉTAT CIVIL ET MILITAIRE DE L'ARMÉE.\n\nParis, le [juillet?] 1816\n\nLE SOUS-INSPECTEUR AUX REVUES, Chef de la 5e Division du Ministère de la guerre,\n\nA Monsieur le Lieut Colonel Commandant la Légion des Landes à Bayonne\n\nMONSIEUR, le Ministre, après avoir examiné les pièces que vous lui avez envoyées au sujet de M. Darney, Capitaine dans la Légion que vous commandez,\n\nqui a sollicité l'autorisation de contracter mariage avec Mme Lesclaux, née Liraty,\na bien voulu y donner son adhésion; et Son Excellence m'a, en conséquence, chargé de vous adresser, à cet effet, la permission ci-jointe, dont cet Officier a besoin. Je vous prie de la lui transmettre sans délai.\n\nRecevez, Monsieur, l'assurance de ma parfaite considération.\n\n[Signature manuscrite]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-45",
+    "sourceImage": "45-20260217_153028.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "[juillet?] 1816",
+        "issue": "date_incertaine",
+        "note": "Le mois manuscrit en haut à droite est difficile à lire, lecture probable: juillet, mais incertitude.",
+        "suggestion": "Relecture par un humain recommandée pour l'identification du mois."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lieut Colonel Commandant la Légion des Landes à Bayonne",
+        "issue": "nom_propre_incertain",
+        "note": "La dénomination manuscrite et la localité pourraient prêter à erreur, bien que la lecture soit probable.",
+        "suggestion": "Vérification sur l'image ou d'autres documents souhaitable pour confirmer les noms propres."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "M. Darney, Capitaine dans la Légion",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom Darney apparaît manuscrit mais reste à confirmer.",
+        "suggestion": "Lecture correcte au vu de l'image, authenticité à vérifier."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Mme Lesclaux, née Liraty",
+        "issue": "nom_propre_incertain",
+        "note": "L'écriture manuscrite du nom de famille 'Liraty' ne donne pas une certitude absolue sur l'orthographe.",
+        "suggestion": "Confirmer l'identité complète du nom de jeune fille."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "[Signature manuscrite]",
+        "issue": "mot_illisible",
+        "note": "La signature n'est pas lisible en clair.",
+        "suggestion": "Consultation d'un expert si identification nécessaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Ministère de la Guerre.\n5e Division.\nBureau de l'État civil et militaire de l'armée.\n\nPermission de Mariage.\n\nLe Ministre Secrétaire d'Etat de la Guerre,\nd'après les renseignements qui lui ont été donnés sur la famille et sur la personne de Mlle Catherine Pedelacq\nX--- Lhary\nque Mr. bernard Barracy Capitaine à la Légion des Laudes\ndésire épouser, autorise ce mariage et a signé la présente Permission, en exécution du Décret du 16 juin 1808.\n\nCette Permission n'aura d'effet que pendant un an; et qu'autant que toutes les dispositions du Code civil relatives au mariage auront été remplies.\n\nA Paris le 27 7bre (septembre) 1816\nLe M.d. de Feltes\n\n\nNote. Conformément à l'article ; du Décret du 16 juin 1808, cette Permission devra être remise à l'Officier de l'État civil, et jointe à l'acte de célébration du mariage.\n\nAux termes de l'ordonnance du Roi du 6 février 1815, cette permission est assujettie à un droit du Sceau de 10 francs, au profit de la Caisse des invalides de la guerre.\nLes Inspecteurs aux revues sont chargés de faire opérer la retenue de cette somme.\n\nPour son Excellence:\nLe Chef de la 5e Division,\nMoulton",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-46",
+    "sourceImage": "46-20260217_153038.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Prénoms et orthographe exacte de 'Catherine Pedelacq', 'Lhary', 'bernard Barracy', 'Légion des Laudes'",
+        "issue": "nom_propre_incertain",
+        "note": "L'image manuscrite rend difficile la lecture précise des noms; la lecture proposée se rapproche de l'écriture visible, mais une incertitude demeure sur l'orthographe exacte.",
+        "suggestion": "Demander vérification paléographique pour chaque nom propre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "(le nom du signataire: 'Le M.d. de Feltes' / 'Moulton')",
+        "issue": "nom_propre_incertain",
+        "note": "La signature manuscrite n'est pas entièrement claire et l'attribution du nom est incertaine.",
+        "suggestion": "Comparer avec d'autres documents pour confirmer le nom du signataire."
+      },
+      {
+        "confidence": "high",
+        "fragment": "La date: '27 7bre 1816'",
+        "issue": "date_incertaine",
+        "note": "La date manuscrite est probablement '27 septembre 1816', mais l'abréviation '7bre' mérite confirmation.",
+        "suggestion": "Vérifier que '7bre' correspond traditionnellement à septembre dans ce type de documents."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Libellé exact du lieu",
+        "issue": "lieu_incertain",
+        "note": "Le lieu 'A Paris' semble probable d'après le texte imprimé, mais l'absence d'autres éléments manuscrits lève une incertitude minime.",
+        "suggestion": "Vérifier d'autres exemplaires du formulaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lignes \"X--- Lhary\" et positionnement sur la page",
+        "issue": "mot_illisible",
+        "note": "La correspondance des lignes de prénom/nom, et la manière dont sont disposés les mots autour des ornements manuscrits, restent approximatives.",
+        "suggestion": "Examiner une version en meilleure définition pour préciser ces lignes."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "DÉPARTEMENT DES BASSES-PYRÉNÉES.\nVILLE DE BAYONNE.\n\nNous Maire de la Ville de Bayonne,\n\nCertifions à qui il appartiendra que la Dame Catherine ? Podelag veuve du feu sieur Jean ? Thary, rentière habitante de la présente ville, Est de bonne vie et moeurs et que nous n’avons que les meilleurs témoignages à rendre sur sa conduite.\nCertifions de plus qu’elle est propriétaire foncier à Bayonne et cotisée au Rôle des Contributions à la somme de quatre vingt un francs quatre vingt trois centimes. En foi de quoi nous avons signé le présent certificat.\n\nFait à Bayonne, à l’hôtel-de-ville, le Dix septembre mil huit cent [illisible/mot-illisible].\n\nLe Maire de Bayonne,\n[signature]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-47",
+    "sourceImage": "47-20260217_153100.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Catherine ? Podelag",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de famille après 'Catherine' est difficile à lire, il pourrait aussi être 'Pedelary' ou s'approcher d'une forme similaire.",
+        "suggestion": "Podelag ou Pedelary"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jean ? Thary",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du mari semble être 'Thary', mais cela reste incertain.",
+        "suggestion": "Thary ou nom proche"
+      },
+      {
+        "confidence": "low",
+        "fragment": "mil huit cent [illisible]",
+        "issue": "date_incertaine",
+        "note": "L'année indiquée à la fin est illisible sur l'image manuscrite.",
+        "suggestion": "première moitié du 19e siècle"
+      },
+      {
+        "confidence": "high",
+        "fragment": "signature",
+        "issue": "mot_illisible",
+        "note": "La signature manuscrite du maire n'est pas lisible pour identification.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Sous-série GR 2 Ye\nRépertoire alphabétique\n\nDARTIGNOLLES Jean\nDARTIGUELONGUE Jean-Baptiste\nDARTIGUELONGUE Alexandre Jérôme\nDARTRON Jean-Baptiste\nDARTRON François Félix\nDARTOUS DU POUSSOUY Jean-Baptiste\nDARTEIN (DE) Armand Théodore\nDARTEIN (DE) Charles Herminie Louis Honoré\nDARTEN Jérémie Jacques Joseph\nDARTHET QUINIEZ Christophe Jacques\nDARTOIS Jean Gilbert\nDARTOIS François dit DARTOIS\nDARTRON Jean Jacques\nDARTRON Félix\n\n\n--- Noms, prénoms et lieux (lecture probable du tableau sous réserve) ---\n\n| Nom                               | Prénom(s)                   | Date et lieu de naissance             | Observations (lieutenances, postes, régiments, grades, etc.)            |\n|------------------------------------|-----------------------------|--------------------------------------|--------------------------------------------------------------------------|\n| DARTIGNOLLES                      | Jean                        | 00/00/1749, Ronanne / Rhône-et-Loire | 05/02/1793 Paris / Seine, Strasbourg / Bas-Rhin Lieutenant              |\n| DARTIGUELONGUE                    | Jean-Baptiste               | 02/02/1758, Schiestadt / Bas-Rhin    | Strasbourg / Bas-Rhin                                                    |\n| DARTIGUELONGUE                    | Alexandre Jérôme            | 01/04/1795, Namur / Sambre-et-Meuse  | Belgique                                                                 |\n| DARTRON                           | Jean-Baptiste               | 16/11/1764, Castelnau / Hautes-Pyrénées | Felletin / Creuse, Auch / Gers                                     |\n| DARTRON                           | François Félix              | 19/09/1799, Barbaste / Lot-et-Garonne | Saint-Laune / Hautes-Pyrénées                                           |\n| DARTOUS DU POUSSOUY               | Jean-Baptiste               | 07/08/1789, Bellocq / Basses-Pyrénées | Toulouse / Haute-Garonne, Pontacq / Basses-Pyrénées                    |\n| DARTEIN (DE)                      | Armand Théodore             | 03/03/1776, Montpellier / Hérault     | --                                                                       |\n| DARTEIN (DE)                      | Charles Herminie Louis Honoré| 14/11/1774, Issoudun / Indre         | --                                                                       |\n| DARTEN                            | Jérémie                     | 21/08/1770, Méusiett / Tarn (?)       | Officiers supérieurs et subalternes                                      |\n| DARTHET QUINIEZ                   | Christophe Jacques          | 18/11/1791, --                        | --                                                                       |\n| DARTOIS                           | Jean Gilbert                | --                                    | --                                                                       |\n| DARTOIS                           | François dit DARTOIS        | --                                    | --                                                                       |\n| DARTRON                           | Jean Jacques                | --                                    | --                                                                       |\n| DARTRON                           | Félix                       | --                                    | --                                                                       |\n\nGrades/observations notés dans la partie droite du tableau (lecture possible avec incertitude sur certains sigles ou unités) :\n- Sous-lieutenant\n- Lieutenant\n- Lieutenant-colonel\n- Chef de bataillon\n- 14e régiment d'infanterie de ligne\n- 109e demi-brigade d’infanterie de ligne\n- Tué au siège de Tarragone le 15/06/1811\n- 24e demi-brigade d’infanterie de ligne\n- 2e régiment de cavalerie\n- Garde d’honneur à cheval\n- Place de Soissons\n- Corps de cavalerie, corps du génie\n- 25e demi-brigade d’infanterie de ligne\n- 108e régiment d’infanterie de ligne\n\nNote : Certaines cases et mentions manuscrites restent difficilement lisibles, notamment pour les prénoms composés, les dates quelques fois tronquées, voire des mentions sur les affectations précises.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-48",
+    "sourceImage": "48-20260219_124823.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Méusiett / Tarn (?)",
+        "issue": "lieu_incertain",
+        "note": "Le nom du lieu ne paraît pas clair sur l'image et n'est pas certain dans l'OCR.",
+        "suggestion": "Vérification manuelle recommandée sur le toponyme."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "DARTEIN (DE) Charles Herminie Louis Honoré",
+        "issue": "nom_propre_incertain",
+        "note": "Le deuxième prénom ou nom composé est ambigu manuscritement et incertain dans l’OCR.",
+        "suggestion": "Relecture attentive ou confrontation à une autre source."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Dates de naissance (00/00/1749, etc.)",
+        "issue": "date_incertaine",
+        "note": "Certaines dates sont incomplètes ou partiellement illisibles dans le tableau.",
+        "suggestion": "Croiser avec les registres originaux."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Sigles et abréviations (ex : 2e régiment, 14# régiment, etc.)",
+        "issue": "sigle_incertain",
+        "note": "Certains chiffres/sigles demeurent incertains selon l’image (ex : # pour n°).",
+        "suggestion": "Consulter un spécialiste des unités militaires pour lever l’ambiguïté."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Grade/Observations (ex : Chef de bataillon, Sous-lieutenant, etc.)",
+        "issue": "mot_illisible",
+        "note": "Quelques cases du tableau présentent des ratures ou une illisibilité partielle.",
+        "suggestion": "Approfondir avec une image de meilleure qualité ou l’original."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Mentions manuscrites sur la droite (ex : Mort TAP Harkis ...)",
+        "issue": "lecture_probable",
+        "note": "Grosse incertitude due à l’écriture cursive rapide, texte peu vérifiable.",
+        "suggestion": "Soumettre la zone manuscrite à expertise paleographique."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "GR 2 YE 1031\nV/09 1 1 37 13 2\nGADMER Marc\n17/03/2026",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-49",
+    "sourceImage": "49-20260319_092420.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "GR 2 YE 1031",
+        "issue": "lecture_probable",
+        "note": "L'image est nette et ce fragment est lisible.",
+        "suggestion": "Lecture confirmée de l'image malgré absence totale dans l'OCR."
+      },
+      {
+        "confidence": "high",
+        "fragment": "V/09 1 1 37 13 2",
+        "issue": "lecture_probable",
+        "note": "Le code a été mal reconstruit dans l'OCR (absence du '/'), mais l'image permet une lecture fiable.",
+        "suggestion": "Lecture probable V/09 1 1 37 13 2 à la place de VIO9 11 27."
+      },
+      {
+        "confidence": "high",
+        "fragment": "GADMER Marc",
+        "issue": "lecture_probable",
+        "note": "Ce nom propre est bien lisible sur l'image.",
+        "suggestion": "Lecture très probable."
+      },
+      {
+        "confidence": "high",
+        "fragment": "17/03/2026",
+        "issue": "lecture_probable",
+        "note": "Date très lisible.",
+        "suggestion": "Lecture certaine."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Ministère de la guerre\nStrasbourg le 21 août 1830\n...\nMonsieur le maréchal de camp, chef d’état-major supérieur\n...\nLe soussigné ancien capitaine de chasseurs à pied, certifie contre fidélité ... (mot illisible) ministre de la guerre.\n\nEn conséquence, je soussigné atteste, monsieur le maréchal de camp, que j’ai\nsubi les persécutions les plus continuelles de la part des subdélégués, au nombre de gens que nous savons que jamais je ne devins et qui m’ont exclus de l’armée de la loi. Me fut licencié comme j’étais en Suisse où Malherbe, général français, me remplaça. Ma brigade en Suisse par la gendarmerie de Lucerne ; envoyé à l’ancien chaudron, ensuite demeuré plusieurs années dans la cuisine de travail (moyenne) et enfin obligé de me retirer pour la Suisse où j’ai vécu au moins dix neuf ans. J’ai pu cependant, mais en vertu de la loi des suspects reprise en octobre 1815 et rigoureusement appliquée à tous ceux dont le sentiment généraux ...\nIl m’aura le plus péniblement et sans liberté pour peuple français, en particulier, et pour lui, autre grand général, ayant aimé et fait donner des preuves autrement que par des paroles et des écrits.\nIl est véritablement un noble exemple du général Lafayette que j’imitais quoique de loin ; car pour lui, il respecte ses principes et fait visiter. Je rentrais en décembre 1819 à Paris, sous longtemps officier en Chili. Solde et effets conservés, mon bras et mon épée au service de la République de Buenos Aires, où se trouvait déjà M. lieutenant-général Brayer (aujourd’hui ... surintendant de la force lois militaires), Argañilas où je commandais, compagnie déshabillée, compagnie de chasseurs à pied vierge, puis une compagnie de cavalerie montée de cieux, et dont je ne quittai le territoire du pays que l’état et celui du Chili furent entièrement affranchis et purgés de leurs tyrans sanguinaires.\nDans le courant de 1819 où de retour en France, je me mettais à l’audace et de mettre au jour la constitution Buenos Ayrienne dont sur la légal Lafayette Brayer alors accepté le Dédicace,\n\n... Si une connaissance profonde du service militaire, de sa partie administrative, de même que des devoirs du soldat et des droits de mes concitoyens, si cette connaissance, dis-je, jointe au dévouement ...\n\nC.L.L.P.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-50",
+    "sourceImage": "50-20260319_124146.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "(mot illisible) ministre de la guerre.",
+        "issue": "mot_illisible",
+        "note": "Le mot précédent 'ministre de la guerre' n'est pas déchiffrable sur l'image comme sur l'OCR.",
+        "suggestion": "Probablement ‘à’ ou ‘au’, mais non certain."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ancienne chaudron, ensuite demeuré plusieurs années dans la cuisine de travail (moyenne)",
+        "issue": "lecture_probable",
+        "note": "La lecture des termes ‘chaudron’ et ‘cuisine de travail (moyenne)’ est sujette à caution, difficulté de décryptage manuscrit.",
+        "suggestion": "Peut-être ‘château’ ou ‘atelier’."
+      },
+      {
+        "confidence": "low",
+        "fragment": "compagnie déshabillée",
+        "issue": "lecture_probable",
+        "note": "Doute en raison de l’écriture manuscrite et du vocabulaire peu usité dans ce contexte.",
+        "suggestion": "Peut-être ‘compagnie de chasseurs’ ou ‘compagnie d’habillement’."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Buenos Ayrienne",
+        "issue": "nom_propre_incertain",
+        "note": "Doute sur la forme exacte du nom propre manuscrit ; lecture probable, sans certitude.",
+        "suggestion": "Probablement ‘Buenos Ayrienne’ pour ‘Buenos Ayresienne’ ou ‘Buenos Aires’."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "C.L.L.P.",
+        "issue": "sigle_incertain",
+        "note": "Les initiales à la fin sont manuscrites et non confirmées par l’OCR.",
+        "suggestion": "Peut-être une signature ou un sigle de fin."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Strasbourg le 21 août 1830",
+        "issue": "date_incertaine",
+        "note": "La date semble 21 août 1830, mais la lecture du mois pourrait être discutée.",
+        "suggestion": "Vérifier sur l’original."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "le plus absolu que j porte aux institutions de mon pays et pour l'affermissement de la conquête des droits j'ai eu l'honneur de payer de ma personne et d'assiter dans les mémorables journées des 27, 28 et 29 juillet dernier, dont les titres à la bienveillance du Gouvernement actuel qui ne reléve plus de privilèges, mais des droits. Aile en même tems qu'un caractère de dévouement pour la chose publique. Je vous prier, Monsieur le ministre, de vouloir bien m'employer dans la Garde municipale destinée à remplacer l'ancienne Gendarmerie de Paris.\n\nJ'ai l'honneur de me dire,\nMonsieur le ministre,\nVotre très humble et très\nobéissant serviteur,\nDavier de Saintivy\n\n- Ex élève de St Cyr, officier de l'ancienne armée au 142e de ligne, revenu successivement 33e puis 36e régts de la même Armée jusqu'au licenciement en 1815 ;\nAujourd'hui rentier, renté, père de famille, âgé de 34 ans, domicilié à Paris Aux Petites Ecuries N°9.\n\nJe n'ai point voulu réclamer ici l'appui du Lieutenant Général, connu la bon militaire, m'a assuré qu'il m'honore de son amitié et qui à ce titre que je suis à Strasbourg. En effet, je pense que la meilleure recommandation est son propre mérite joint à un grand dévouement à la sainte cause nationale. Or, le ministre trouve non seulement prouvé par ma conduite dans les trois jours de combat en juillet dernier à Paris, mais encore par la démarche que je fis à la suite et le 30 du même mois, près de M. le lieutenant général Pajol qui alors se trouvait sur la terrasse du jardin Simon la tête où je lui parlais et où il me conseilla d'aller au général Lobau et à l'arc de triomphe des Champs Élysées. Ce dévouement se trouve de plus prouvé par mon inscription immédiate 1° à la garde nationale mobile du 2e arrondissement de Paris, 2° par celle à la même mairie, au bureau des officiers de l'ancienne armée, 3° enfin par celle des anciens officiers.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-51",
+    "sourceImage": "51-20260319_124158.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Davier de Saintivy",
+        "issue": "nom_propre_incertain",
+        "note": "La signature manuscrite est d'une lecture probable, le nom pourrait varier légèrement selon l'interprétation.",
+        "suggestion": "Vérifier orthographe exacte du nom."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Aux Petites Ecuries N°9",
+        "issue": "lieu_incertain",
+        "note": "L'adresse n'est pas parfaitement lisible ; lecture probable mais pourrait varier.",
+        "suggestion": "Confirmer le nom de la rue/adresse par recoupement."
+      },
+      {
+        "confidence": "high",
+        "fragment": "27, 28 et 29 juillet dernier",
+        "issue": "date_incertaine",
+        "note": "La mention des dates est lisible mais le contexte exact (année précise) n'est pas confirmé dans ce passage.",
+        "suggestion": "Vérifier l'année dans le contexte général du dossier."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "jardin Simon la tête",
+        "issue": "mot_illisible",
+        "note": "L'expression 'jardin Simon la tête' est une lecture incertaine du manuscrit.",
+        "suggestion": "Examiner la formulation exacte ; une relecture pourrait corriger la référence au lieu."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "général Lobau et à l'arc de triomphe des Champs Élysées",
+        "issue": "lecture_probable",
+        "note": "Lecture raisonnablement probable du manuscrit, mais passage manuscrit légèrement altéré/raturé.",
+        "suggestion": "À confirmer sur image originale ou recoupements externes."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "la même mairie, au bureau des officiers de l'ancienne armée",
+        "issue": "lecture_probable",
+        "note": "Lecture du passage sur l'inscription à la mairie et au bureau manuscrite, nécessite confirmation.",
+        "suggestion": "Vérifier ce passage sur l'original papier pour s'assurer de la bonne compréhension."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "à l'état-major de la place de paris, où partout je ne réclame qu'une place, celle d'étranger.\n[signature] Davié de Santi[y?] [fin de signature]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-52",
+    "sourceImage": "52-20260319_124201.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Davié de Santi[y?]",
+        "issue": "nom_propre_incertain",
+        "note": "La fin du nom propre est difficile à déchiffrer sur l'image manuscrite. Le \"y\" final et sa lisibilité posent question.",
+        "suggestion": "Gardez la terminaison \"y?\" comme incertaine pour ce nom propre."
+      },
+      {
+        "confidence": "high",
+        "fragment": "[signature]",
+        "issue": "lecture_probable",
+        "note": "Il s'agit très vraisemblablement d'une signature manuscrite. Le reste du texte est cependant plus lisible.",
+        "suggestion": "Mentionner s'agit d'une signature manuscrite illisible en partie."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "2 Ye - Que mettre dans la colonne Observation\n\nRUBY-NOUGARET Donatienne <donatienne.ruby-nougaret@intradef.gouv.fr>\nA: gérard bouan; Jean Chanton; Didier HASCHER; fanny augarde; Gérard; alain.klein56@numericable.fr\nCc: BOSQUIER-BRITTEN Cecile; Martine Larroque\n\nBonjour à tous,\nA la demande de certains et afin d’harmoniser nos pratiques, nous avons créé une petite fiche (ci-joint) récapitulant ce qu’il est utile ou non de mettre dans la colonne « observation » pour recenser les dossiers des officiers de la sous-série 2 Ye.\nL’idée est que cette fiche pourra vous servir et vous simplifier la tâche.\nNous espérons qu’elle vous sera utile et attendons de vos remarques.\nN’hésitez pas\nBien cordialement,\nDonatienne Ruby-Nougaret\nAdjointe au Chef de la division Guerre et armée de Terre\nService historique de la Défense / Département des fonds d’archives historiques de la Défense\ndonatienne.ruby-nougaret@intradef.gouv.fr tel. 01 41 93 20 26\n\n2 Ye - Comment utiliser la colonne « observations » ?\n\nL’utilité de cette colonne est d’apporter des indications supplémentaires pour faciliter les recherches du lecteur ; il n’est pas obligatoire de la remplir, et il n’est pas nécessaire d’indiquer toutes les informations contenues dans le dossier, ou de retracer la carrière complète de l’individu.\n\nInformations qui peuvent être reportées dans la colonne « observations » :\n- les dates et lieux de décès ou de lieu de naissance s’ils ne sont pas certains\n- des précisions sur la date ou le lieu de naissance (qui permet de rechercher son dossier de la Légion d’honneur)\n- les décorations (légion d’honneur notamment, qui permet de rechercher son dossier de la Légion d’honneur)\n- le nom de l’épouse\n- le renvoi à un père ou des frères qui ont également un dossier dans cette série\n- la nature de la demande (demande de place, de sous-lieutenance, de pension…)\n- s’il a appartenu à une armée d’émigrés. En revanche, s’il a seulement été émigré, ne pas l’indiquer.\nOn peut mettre cette information dans la colonne « unité », si aucune autre information n’a pu être mise dans cette dernière colonne.\n- la mention d’un document particulier contenu dans le dossier (« contient un acte de naissance/un mémoire sur… »)\n- des précisions permettant de le rattacher à un personnage célèbre (« aide de camp du général untel »)\nOn peut mettre cette information dans la colonne « unité », si aucune autre information n’a pu être mise dans cette dernière colonne.\n- s’il a servi dans une armée étrangère\n- s’il a été reçu à l’Hôtel des invalides, en précisant bien « Hôtel ». La mention « invalide » n’est pas assez précise.\n\nInformations qui doivent être reportées d’autres colonnes :\n- dans la colonne « unité » :\nLe nom de la compagnie (notamment pour les Gardes du corps du roi) :\n    Ex. : « Gardes du corps du roi, compagnie de Luxembourg »\nUniquement s’il n’y a pas d’autre unité indiquée, reporter dans la colonne « unité » :\n- La mention d’une compagnie de invalides, ou d’un régiment de vétéran.\n- La mention « a servi dans des vétérans » n’est pas assez informative.\n- La mention d’une armée d’émigrés\n- Les places (ex. « Place du Havre »)\n- La fonction (« aide de camp du maréchal Untel », « état-major de ... »),\nNB : « Garde nationale (école militaire de Saint-Cyr) »\n- Ex. « Dossier suivi d’un nom de ville ou de département :\n- dans la colonne « nom » :\nUne autre orthographe du nom ou un autre nom : Ex. BARTHOUT ou BARTOUT\nAttention !\nDans l’outil informatique, la colonne « observation » sera reportée dans une partie « notes » qui sera visuellement détachée du dossier, donc incompréhensible. C’est pourquoi une date ou un lieu seul (« En 1814 » ou « A Strasbourg »), pris en dehors de leur contexte, deviennent imprécis. S’il faut vraiment les indiquer, précisez de quoi il retourne : Ex. « Dossier suivi de Strasbourg », « Dossier suivi de Ajaccio »\nNotamment, les règles de nommage des autres colonnes s’appliquent aussi à la colonne « observation »\n- Dates au format en début de ligne\n- Dates au format consigné (JJ/MM/AAAA). Si la date est au format révolutionnaire : An III (majuscule à « An », date en chiffres romains)\n- Pas d’abréviations\n- ex. Plutôt que « St », indiquer : « saint »\n- Pas de points de suspensions.\n- ex. Plutôt que « demande vétérans », indiquer : « demande de place chez les vétérans »\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-53",
+    "sourceImage": "53-20260319_131230.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "BOSQUIER-BRITTEN Cecile; Martine Larroque",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms propres peuvent contenir des légères ambiguïtés dues à la typographie ou à l'OCR.",
+        "suggestion": "Vérifier à la source."
+      },
+      {
+        "confidence": "low",
+        "fragment": "demande de place, de sous-lieutenance, de pension…",
+        "issue": "mot_illisible",
+        "note": "La présence de points de suspension dans l'OCR signale un mot ou passage possiblement tronqué.",
+        "suggestion": "Vérifier sur l'image si d'autres mots ne sont pas manquants."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "La mention d’une compagnie de invalides, ou d’un régiment de vétéran.",
+        "issue": "lecture_probable",
+        "note": "Formulation légèrement incertaine (\"compagnie de invalides\").",
+        "suggestion": "Vérifier le genre et la syntaxe."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Edition du 19/03/03 – Annule et remplace l'édition précédente\n\nAMICALE DES GENEALOGISTES\n\nCLASSEMENT DU FONDS 2 Y° 1791 – 1847\n\nGENERALITES\n\nUne convention définit les conditions auxquelles le SHAT confie le classement et l'inventaire de la sous-série 2 Y° (officiers supérieurs et subalternes rayés des contrôles de 1791 à 1847) à l'Amicale des Généalogistes.\n\nLe SHAT met à la disposition de l'amicale tous les moyens nécessaires à l'accomplissement de sa mission et veille à la bonne marche du programme. Il assure le suivi scientifique du travail exécuté par l'équipe de bénévoles de l'amicale.\n\nLes bénévoles de l'Amicale assurent l'identification et le classement alphabétique des dossiers individuels de la sous-série 2 Y°. Ils travaillent en relation étroite avec la division des archives historiques (M. GIBIAT) et la division Communication du SHAT (Mmes GENET-ROUFFIAC et EINHORN-HEISER).\n\nL'interface est assurée par Mme MEYER, secrétaire de l'Amicale, responsable du recrutement des bénévoles, de leur formation, de l'orientation des activités et de l'encadrement.\n\nMme MEYER remet un compte rendu d'activités mensuel au chef de la division Communication, sur lequel est mentionné le nombre de cartons traités, et le cas échéant les difficultés rencontrées.\n\nORGANISATION DES ACTIVITES DES BENEVOLES\n\nChaque vendredi, en fonction de l'avancement du travail de classement, Mme MEYER demande la mise à disposition d'un certain nombre de cartons pour la semaine suivante. Ces cartons sont pré-positionnés à l'étage et mis à la disposition des membres de l'amicale au fur et à mesure de leur besoin.\n\nDans le classeur de l'amicale, le bénévole remplit deux rubriques :\n1ère rubrique – Avancement du classement : le bénévole inscrit la date, son nom, le carton qu'il traite et l'avancement du travail (début, suite, fin)\n2ème rubrique – Contenu du carton : le bénévole inscrit le numéro du carton, et au crayon, les noms figurant sur le premier et le dernier dossier contenus dans ce carton et cela dès le commencement du classement du carton.\n\nUn bénévole prend en charge un carton et le traite entièrement. Par expérience, il faut entre 15 et 20 heures pour inventorier et classer un carton.\n\nLe travail consiste à regrouper les documents concernant une même personne dans une chemise (les chemises de conservation sont mises à disposition par le SHAT).",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-54",
+    "sourceImage": "54-20260319_131312.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "SHAT (M. GIBIAT)... (Mmes GENET-ROUFFIAC et EINHORN-HEISER)",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture confirmée par image mais orthographe des noms propres toujours sujette à caution, surtout sur des noms longs ou composés.",
+        "suggestion": "Vérifier contre des sources indépendantes pour valider l'orthographe exacte de ces noms."
+      },
+      {
+        "confidence": "high",
+        "fragment": "2 Y° (officiers supérieurs et subalternes rayés des contrôles de 1791 à 1847)",
+        "issue": "lecture_probable",
+        "note": "Le symbole ° pour la sous-série est une lecture du texte formaté de l'image ; l'OCR a parfois des variantes sur ce point.",
+        "suggestion": "Confirmer l'usage du symbole dans les autres documents similaires du fonds."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Annexe 4/5\n\nTRAITEMENT DES DOSSIERS DE LA SOUS-SÉRIE 2 Yᵉ (OFFICIERS 1791-1847)\n\nLes unités\n\nPrincipe général :\nTout soldat appartient à une unité.\nL’unité sert une arme ou un corps.\nUne arme peut être composée de subdivisions d’armes.\n\nOrganigramme sommaire des unités :\n\n                ARMÉE\n                DIVISION\n                BRIGADE\n                DEMI-BRIGADE\n                LÉGION\n                RÉGIMENT\n                BATAILLON\n                COMPAGNIE / ESCADRON\n\nListe des armes :\nINFANTERIE\nCAVALERIE\nARTILLERIE\nGÉNIE\nTRAIN DES ÉQUIPAGES\nINTENDANCE\n\nUn régiment sert toujours une arme. Il faut toujours déterminer « de quoi » est le 54ᵉ régiment : d’infanterie de ligne ? de cavalerie ? de dragons ?\n\nListe des subdivisions d’armes :\n\nINFANTERIE\nInfanterie de ligne\nInfanterie légère\nChasseurs à pied\nZouaves\nTirailleurs\nInfanterie légère d’Afrique\n\nCAVALERIE\nDragons\nCarabiniers\nHussards\nChasseurs à cheval\nCuirassiers\nLanciers\nSpahis\n\nARTILLERIE\nArtillerie à pied\nArtillerie à cheval\nArtillerie de forteresse\nOuvriers\nMineurs\nPontonniers\n\nIl n’existe pas de subdivision d’arme pour le génie, le train des équipages et l’intendance.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-55",
+    "sourceImage": "55-20260319_131621.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Rélec LTN\nLA -",
+        "issue": "mot_illisible",
+        "note": "Le passage en haut à droite de l'OCR (\"Rélec LTN\\nLA -\") est absent de l'image ou résulte d'une mauvaise lecture OCR.",
+        "suggestion": "Ce fragment semble erroné et n'apparaît pas sur l'image ; il ne doit pas être inclus dans la transcription probable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "sou£ SÉRIE 2 Y” (OFFICIERS 17911 847)",
+        "issue": "mot_illisible",
+        "note": "La ligne du titre extraite par l'OCR est déformée par des caractères erronés ; la lecture correcte est : \"LA SOUS-SÉRIE 2 Yᵉ (OFFICIERS 1791-1847)\".",
+        "suggestion": "Remplacer le fragment OCR par la lecture conforme à l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Il faut toujours déterminer « de ; | e quoi » est = alerie ? de dragons ? ï *",
+        "issue": "mot_illisible",
+        "note": "La phrase est mal reconstruite par l'OCR ; la version confirmée par l'image est : \"Il faut toujours déterminer « de quoi » est le 54ᵉ régiment : d’infanterie de ligne ? de cavalerie ? de dragons ?\"",
+        "suggestion": "Utiliser la version visible sur l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Chasseurs à pied Carabiniers N Zouaves Hussards Artilleri Tie à cheval Tirailleurs Chasseurs à cheval se de_f°fœœSse Inf. légère d’Afrique Cuirassiers Ouvriers Lanciers Mineurs Spahis Pontonniers ;",
+        "issue": "mot_illisible",
+        "note": "La liste des subdivisions d'armes (ligne longue ininterrompue dans l'OCR) doit être reconstruite comme un tableau à colonnes à partir de l'image.",
+        "suggestion": "Structurer selon l'image : Infanterie, Cavalerie, Artillerie. Corriger les titres selon la disposition lisible."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Edition du 19/03/03 – Annule et remplace l'édition précédente\n\nAMICALE DES GENEALOGISTES\n\nAnnexe 2\nCorrespondance entre les grades militaires\n\n--------------------------------------------------------------\n    ARMEE MODERNE                   Marine                    ARMEE ANCIEN REGIME\nArmées de Terre et Armée de l'Air\n\nOfficiers Généraux\nGénéral d'Armée                 Amiral                    Lieutenant Général\nGénéral de Corps d'Armée   Vice-Amiral d'Escadre         Maréchal de Camp\nGénéral de Division         Vice-Amiral                   Brigadier (1688-1788)\nGénéral de Brigade          Contre-Amiral\n\nOfficiers Supérieurs\nColonel                      Capitaine de Vaisseau        Colonel\n                                                         Chef de Brigade\n                                                         Mestre de Camp\nLieutenant-Colonel           Capitaine de Frégate         Lieutenant-Colonel\nCommandant                   Capitaine de Corvette        Commandant\nChef de Bataillon                                        Chef de Bataillon\nChef d'Escadrons                                         Chef d'Escadrons\n\nOfficiers Subalternes\nCapitaine                    Lieutenant de Vaisseau       Capitaine\nChef d'Escadron              -                            Chef d'Escadron\nLieutenant                   Enseigne de Vaisseau 1re classe Lieutenant\nSous-Lieutenant              Enseigne de Vaisseau 2e classe Sous-Lieutenant\nAspirant                     Aspirant                     Enseigne\n                                                         Cornette\n\nSous-Officiers Supérieurs\nMajor                        Major                        Major\nAdjudant-Chef                Maître Principal             Adjudant\nAdjudant                     Premier Maître\n\nSous-Officiers Subalternes\nSergent-Major                Maître                       Sergent-Major\nSergent-Chef                                              Fourrier\nMaréchal des Logis-Chef                                   Quartier-Maître\nSergent                      Second-Maître                Sergent\nMaréchal des Logis                                        Maréchal des Logis\n\nMilitaires du Rang\nCaporal-Chef                 Quartier-Maître de 1re classe  Caporal\nBrigadier-Chef               -                            Brigadier\nCaporal                      Quartier-Maître de 2e classe  Anspessade\nBrigadier                    Matelot Breveté              Appointé\nSoldat de 1re classe         -\nSoldat                       Matelot\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-56",
+    "sourceImage": "56-20260319_131713.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Brigadier (1688–1788)",
+        "issue": "lecture_probable",
+        "note": "La présence des années est lisible mais la parenthèse ou la manière de l'intégrer pourrait varier selon l'image.",
+        "suggestion": "Vérifier la formulation exacte pour la période entre parenthèses."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Capitaine de Frégate / Capitaine de Corvette",
+        "issue": "lecture_probable",
+        "note": "Ordre de présentation cohérent sur image, mais l'OCR mélange certains retours.",
+        "suggestion": "Ordre à confirmer pour la fidélité tabulaire."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Quartier-Maître de 2e Classe / Matelot Breveté",
+        "issue": "lecture_probable",
+        "note": "Bonne lisibilité mais agencement des colonnes à confirmer pour la verticalité exacte.",
+        "suggestion": "Relire à partir de l'image pour valider l'agencement dans la colonne."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Sous-Officiers Supérieurs / Sous-Officiers Subalternes",
+        "issue": "mot_illisible",
+        "note": "Les titres de sections sont nettes sur image mais pourraient prêter à confusion si exploité hors image.",
+        "suggestion": "Bien distinguer à la relecture."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Chef d'Escadron (Officiers Subalternes colonne Terre/Air et Ancien Régime)",
+        "issue": "lecture_probable",
+        "note": "Fragment présent deux fois dans colonnes différentes, cohérence de positionnement à confirmer.",
+        "suggestion": "Vérifier la disposition tabulaire sur original."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "SAISIE INFORMATIQUE DU FONDS 2 Ye\n\nDes bénévoles de l’Amicale assurent la saisie informatique des fiches récapitulatives du contenu des cartons sous tableur EXCEL suivant une grille définie avec le SHAT.\n\nCes fichiers seront intégrés dans la base de données ACCESS du Fonds 2 Ye.\n\nAfin de faciliter ce travail, nous vous remercions de bien vouloir utiliser cette grille et de procéder à la saisie des fiches récapitulatives comme suit :\n\nFormat                       : à l’italienne\nPolice de caractère : Arial\nNom                           : en majuscule\nPrénom                      : en minuscule\nDate de naissance      : sous la forme ../../..\n                                  : si le jour et/ou le mois inconnu 00/00/…\nLieu de naissance      : mettre des traits d’union entre les éléments du nom (ex : Illeville-sur-Montfort)\nDépartement              : en toutes lettres, mettre des traits d’union entre les éléments du nom (ex : Puy-de-Dôme)\nGrade                         : en toutes lettres (ex : Sous-Lieutenant)\nUnité                           : en toutes lettres (ex : 124e Régiment d’Infanterie de Ligne ; 12e Demi-Brigade d’Infanterie Légère)\n\n(Ne pas oublier les majuscules)\n\nJe pourrais vous adresser par courriel cette grille Excel.\n\n> voir nouvelles règles (mars 2011)",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-57",
+    "sourceImage": "57-20260319_131825.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Je pourrais vous adresser par courriel cette grille Excel.",
+        "issue": "lecture_probable",
+        "note": "La phrase manuscrite en bas : '> voir nouvelles règles (mars 2011)' : la lecture du mois est probable, il existe toutefois une petite incertitude liée à l'écriture manuscrite, mais le contexte la rend très vraisemblable.",
+        "suggestion": "Relire le passage manuscrit pour confirmer la transcription du mois ('mars')."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "À Son Excellence, Monseigneur le Duc de Feltre, Pair de France, Ministre de la Guerre \n\nMonseigneur, \n\nMadame Rosalie de Selles, veuve du feu Monsieur David, Major du 13e Régiment d’Infanterie de ligne, mort à la bataille de Sombray en face, a l’honneur d’exposer à Votre Excellence qu’elle est restée avec trois enfants en bas âge et qu’étant, au moment de cette épreuve, dans la plus grande misère, elle... (suite difficile à lire) a fait plusieurs demandes dans le bureau de Votre Excellence la dernière en date du mois d’août dernier, par laquelle elle sollicitait la pension que le fonds de Sa Majesté accorde aux veuves de militaires morts à l’armée, sans avoir jusqu’à présent pu l’obtenir. Elle n’a pu produire son extrait de Baptême ni son contract de mariage – ainsi que tous ses papiers ont été perdus lors de la mort de son mari et qu’elle n’a pu les avoir de son pays, le village de La Cibal, ayant été brûlé dans la guerre d’Espagne ainsi que les archives. En remplacement de ce qui a été _ (mot manquant) _ une déclaration du seul officier supérieur qui ait assisté et confirmé la déclaration de son mariage et qui fut témoin de la mort de son mari, ainsi que les pièces extraites des registres et papiers...",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-58",
+    "sourceImage": "58-20260319_134248.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Feltre",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du duc apparaît bien mais la lecture pourrait prêter à confusion compte tenu des couches d'encre.",
+        "suggestion": "Feltre (lecture probable)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Sombray",
+        "issue": "lieu_incertain",
+        "note": "Nom de lieu difficile à lire dans le texte manuscrit.",
+        "suggestion": "Sombray ou semblable"
+      },
+      {
+        "confidence": "low",
+        "fragment": "La Cibal",
+        "issue": "lieu_incertain",
+        "note": "La graphie du village n'est pas formelle.",
+        "suggestion": "La Cibal (lecture incertaine)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Brûlé dans la guerre d’Espagne",
+        "issue": "mot_illisible",
+        "note": "Le segment comporte des raccords difficilement lisibles.",
+        "suggestion": "Brûlé dans la guerre d’Espagne (lecture probable)"
+      },
+      {
+        "confidence": "low",
+        "fragment": "… (suite difficile à lire) …",
+        "issue": "mot_illisible",
+        "note": "Phrase incomplète, présence de ratures ou manques.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "déclaration du seul officier supérieur qui ait assisté",
+        "issue": "lecture_probable",
+        "note": "Formulation interprétée, le segment est en partie ambigu.",
+        "suggestion": "déclaration du seul officier supérieur qui ait assisté"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Quant à son extrait de baptême elle a reçu plusieurs lettres au curé de la paroisse vieilles et n'eut sans pouvoir obtenir aucune réponse, La suppliante ne peut attribuer le silence du curé qu'à la haine que les Espagnols ont semée dans le coeur des femmes qui se sont oubliées des premiers devoirs. \nVotre Excellence voit en même temps que pour une raison aussi peu fondée la veuve et les enfants d'un officier supérieur aussi distingué que l'était Monsieur Daviet ne doivent pas être privés de la bienfaisance de sa Majesté. En attendant qu'on ait statué sur son sort, la suppliante prie Votre Excellence de lui accorder un secours quel qu'il soit. \nElle a l'honneur d'être, Monseigneur, \n\nDe Votre Excellence \n\nLa position de Madame Daviet est si malheureuse qu'elle n'existe que par les soins de quelques personnes qui ont connu feu son mari. Elle a deux enfants qui avec elle sont souvent sur près vingt-quatre heures sans manger. \nNous que je plus bas mon honneur certifient. \nLe prêtre de la Paroisse (chef de Bon Secours depuis six mois) De Britto\n\nLa Cité Possière? et obéissante servante Dme Daviet\nRue Faubourg Monmartre 1821",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-59",
+    "sourceImage": "59-20260319_134300.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "La Cité Possière?",
+        "issue": "mot_illisible",
+        "note": "Le mot avant 'et obéissante servante' est peu lisible, probable erreur de lecture.",
+        "suggestion": "Le mot semble commencer par 'Cité', mais la suite n’est pas certaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "De Britto",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du prêtre signataire est difficile à confirmer avec certitude, bien que la graphie paraisse ainsi.",
+        "suggestion": "Possible 'De Britto', à vérifier."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Rue Faubourg Monmartre 1821",
+        "issue": "lieu_incertain",
+        "note": "Le nom de rue paraît correct mais pourrait être sujet à une variation de graphie manuscrite.",
+        "suggestion": "Semble être 'Rue Faubourg Montmartre'."
+      },
+      {
+        "confidence": "high",
+        "fragment": "[points de suspension en haut de page]",
+        "issue": "mot_illisible",
+        "note": "Des points de suspension apparaissent après '... quel il conque', sans suite lisible.",
+        "suggestion": "Pas de correction possible, mais noter leur présence."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Votre Excellence voit en même temps que pour une raison aussi peu fondée la veuve et les enfants d'un officier supérieur aussi distingué que l'était Monsieur Daviet",
+        "issue": "lecture_probable",
+        "note": "La phrase est longue et la structure manuscrite la rend parfois ambiguë. Relecture contextualisée possible mais prudence sur la structure exacte.",
+        "suggestion": "Lecture probable mais à valider sur document original."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Mémoire de proposition de nomination à (...)\nBernay, département de l’Eure, ce 28 8bre 1811.\nN° 13438   28 8bre \nLes 16 9bre 1811.\nRéponds quelqu’y nous place...(? illisible)\nA Monseigneur,\nMonsieur,\n\nM. David le 24 nov. 1811...\nJe prends la liberté de m’adresser à votre Excellence, pour savoir ce qu’est devenu mon fils (...nom propre incertain : Pierre Bauré?), élève de l’École Spéciale impériale de Fontainebleau, parti aux armées d’Espagne il y a près de 4 ans, en qualité de sous-lieutenant dans le 45e régiment d’infanterie, 2e bataillon, 2e compagnie, n’ayant aucunement entendu parler de lui depuis le 30 mars, qu’il m’a écrit d’(... lieu incertain, motif illisible), je présume qu’il aura péri au siège de Tarragone ou qu’il aura été fait prisonnier. Dans ce dernier cas, je désirerais savoir où son secour...(mot illisible) Monseigneur, me tirer de l’anxiété que me cause le long soupçon de mon fils, et me procurer une prompte révélation de lui. J’ai pris la liberté d’écrire le 9 août et le 2...(date incertaine)... mais, le Monsieur le Colonel de son régiment, qui probablement...",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-60",
+    "sourceImage": "60-20260319_142537.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "(...nom propre incertain : Pierre Bauré?)",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de l'élève (fils de l'auteur) est difficile à lire, pourrait se lire Pierre ou autre prénom, le nom de famille est peu lisible mais ressemble à Bauré.",
+        "suggestion": "Pierre Bauré (?)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "d’(...lieu incertain, motif illisible)",
+        "issue": "lieu_incertain",
+        "note": "Le lieu d'écriture de la lettre du fils n'est pas certain, lecture très difficile dans la zone concernée.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "...Réponds quelqu’y nous place...(?)",
+        "issue": "mot_illisible",
+        "note": "Passe non clairement identifiable à l’image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "secour...(mot illisible)",
+        "issue": "mot_illisible",
+        "note": "Fin du mot non déchiffrable avec certitude dans le contexte de la phrase.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "le 2...(date incertaine)...",
+        "issue": "date_incertaine",
+        "note": "Le mois ou l'année n'est pas certain après 'le 2'.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Mémoire de proposition de nomination à...\n\nn'a pas reçu ma lettre puisque je n'ai pas reçu de réponse. \nDaignez, Monseigneur, prendre la bonne part à l'inquiétude d'un père sur le sort de son enfant qui dans tous les temps s'est rendu digne de ma sollicitude. Agréez le profond respect que j'éprouve.\n\nÀ Votre Excellence\nVotre très humble et très obéissant serviteur\nBaviel",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-61",
+    "sourceImage": "61-20260319_142549.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Mémoire de proposition de nomination à...",
+        "issue": "mot_illisible",
+        "note": "Le haut de la page est partiellement couvert par une autre feuille, ce qui empêche de confirmer le titre en entier.",
+        "suggestion": "Lecture retenue d'après les éléments visibles : 'Mémoire de proposition de nomination à', la suite reste masquée."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Baviel",
+        "issue": "nom_propre_incertain",
+        "note": "La signature manuscrite semble être 'Baviel,' mais la graphie n'est pas absolument certaine.",
+        "suggestion": "Lecture probable à confirmer par recoupement ou expertise paléographique."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "NOM         | PRENOM        | DATE DE NAISSANCE | LIEU DE NAISSANCE     | GRADE                   | REGIMENT\n----------------------------------------------------------------------------------------------\nDANIEL      |              |                   |                       | chef bataillon          | 47e Reg.t d. l. d. ligne\nDANIEL      | Etienne      | 12/03/1779        | Metz                  | Capitaine               | 138e Rgt de ligne\nDANIEL      | Jacques      | 20/2/1763         | Grasse                | Capitaine               | 36e Rgt de ligne\nDANIEL      |              |                   | Vleta                 |                        | 3e Rgt d'infanterie de ligne\nDANIEL      | Jean Bapt. Abel| 15/09/1774      |                       | lieutenant              | Eleve du génie Lisbonne (illisible en partie)\nDANIEL de la MAIZIERE | Jules Edouard | 23/01/1799 | Beaumont et Roger | lieutenant              | 105e Rgt de ligne\nDANIELS de Delaintivy | Théodore Maurice | 6/21/1799 | Château Gonthier | major                   | 47e Rgt de ligne\nDANIEL      | John Henry  |                   | Maurice (illisible)    |                        |               \nDANIET      | J.F. François André | 31/01/1773 | Paris/Seine           | major                   | 136e Rgt de ligne (?)\nDANICT      | Louis       |                   |                       | lieutenant              | 256e Rgt de légion\nDANIGNEAU   | Alexis      | 22/01/1799        | Auxerre               | Adjt major              | 18e Rgt de ligne\nDANIGUON    | Jean Manuel | 16/01/1793        | Paris                  | capitaine               | Chasseurs à pied\nDANIGUON    |             |                   |                       | maître                   | légion sicilienne\nDANICOU     | Felix       | 6/2/1793          | Faugères               | lieutenant              | Fédérés des vétérans\nDANILARE    | Jean Pierre |                   |                       | lieutenant              | Régiment perm. d’Italie\nDANIELLES   |             | 25/05/1769        | STAL (?)               | adjudant chef           | 43e Rgt\nDANIN       | Claude François | 17/05/1769   | St Quentin             | s/lieutenant            | 61e Rgt\nDANIN       | François Hyacinthe | 25/11/1772 | Paris de Neuve        | capitaine               | 17e léger 11e brigade infanterie\nDANIN       | Jean Louis  | 1791              | Fumay                  | s/lieutenant            |               \nDANIN       | Joseph Jean |                   |                       |                         |               \nDANIN       | Adèle       | 24/10/1767        | Sige                   | lieutenant              | 57e brigade de ligne\nDANIN       | Louis François| 29/04/1754       | St Quentin            | capitaine               | bataillon de volontaires national\nDANIN       | Pucheux     |                   | St Quentin            | capitaine               | 79e Rgt de ligne\nDANIVES     | Jean Barthelémy | 16/12/1779   | Baroche                | major                   | 31e RBS (?)\nDANOIN      | Jean Baptiste | 23/07/1791      | Nouvelle Navarre (?)   | lieutenant              | 54e Rgt de ligne\nDANOIN      | Clovis      |                   |                       | adjudant                | 9e artillerie\nDANOIN      | Paul        | 26/01/1766        | Datieville (?)         | capitaine               | 36e Rgt de ligne\nDANOIN      | Joseph      | 1798              | Goumin                 | lieutenant              | Armées royales\nDANOIN      | Nicolas     |                   | Paris                   | adjudant                | Garde nationale de Paris\nDANOIN      | Louis       |                   |                       |                         |               \nDANOIN      | Jacques     |                   | Quincey                | lieutenant              | 40e brigade\nDANOINE     | Antoine     | 19/03/1793        | Livay                  | lieutenant              | 64e Rgt de ligne\nDANOIS      | Jean François| 16/04/1794       | Livay                  | lieutenant              | 64e Rgt de ligne\nDAVID       | Nicolas Pierre René| 2/1/1794   | Heyes                  | capitaine               | 18e cuirassiers\nDAVID       | Pierre Louis| 16/11/1774        | Rigny                  | capitaine               | 56e Rgt de ligne\nDANIOT      | Antoine     | 19/03/1793        | Livay                  | lieutenant              | 62e Rgt de ligne\nDANON       | Auguste Marie| 24/12/1878       | Bordeaux               | lieutenant              | cavalerie\nDANON       | Joseph Marie|                   |                       |                         |               \n\nNote bas de page :\n3 = né à Thillou, arr. Doche (Eure)\nDANET : Major 136e Rgt de ligne | Capitaine / Chef bataillon 2e g. gard municipale ...\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-62",
+    "sourceImage": "62-20260319_142653.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Vleta",
+        "issue": "lieu_incertain",
+        "note": "Le lieu de naissance est difficile à lire sur l'image, l'OCR propose 'Vleta', ce qui semble peu probable.",
+        "suggestion": "Lecture probable à confirmer par un relecteur."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Lisbonne",
+        "issue": "mot_illisible",
+        "note": "Élève du génie Lisbonne, mot final difficile à discerner sur l'image comme à l'OCR.",
+        "suggestion": "Non confirmé sans expertise paléographique."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Maurice (illisible)",
+        "issue": "lieu_incertain",
+        "note": "Le lieu Maurice est suivi d'un mot difficilement lisible.",
+        "suggestion": "Relecture nécessaire à la source."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "J.F. François André | 31/01/1773 | Paris/Seine | major | 136e Rgt de ligne (?),",
+        "issue": "lecture_probable",
+        "note": "La ligne est plausible d'après le contexte général, mais plusieurs éléments (nom, grade, régiment) sont à vérifier.",
+        "suggestion": "Nécessite confirmation sur l'original."
+      },
+      {
+        "confidence": "low",
+        "fragment": "STAL",
+        "issue": "lieu_incertain",
+        "note": "Ce toponyme n'est pas clairement lisible et saisi par l'OCR; pourrait être erroné.",
+        "suggestion": "Lecture à réévaluer par recoupement."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Garde nationale de Paris",
+        "issue": "lecture_probable",
+        "note": "Texte plausible au vu de la ligne et du contexte dans la colonne grade-régiment.",
+        "suggestion": "À confirmer."
+      },
+      {
+        "confidence": "low",
+        "fragment": "note bas de page – Chef bataillon 2e g. gard municipale",
+        "issue": "mot_illisible",
+        "note": "Les intitulés en fin de page sont peu lisibles; lecture très incertaine.",
+        "suggestion": "Vérification nécessaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "FONDS 1791-1847    CARTON N°. 918.2\n\n| NOM                    | PRENOM               | DATE DE NAISSANCE | LIEU DE NAISSANCE  | GRADE                        | REGIMENT                         |\n|------------------------|----------------------|-------------------|--------------------|-------------------------------|----------------------------------|\n| DAVON de Collonge      | Léopold gal. Alp.    | 26.01.1766        | Cadeuet            | Capitaine                     | Cavalerie                        |\n| DAVOUT                 | Cailloux             |                   |                    | Voir classement y pasuille hier|                                  |\n| DAVOUT                 | Jacques              |                   |                    | s/l ieut 46e 1/2 brig. infanterie|\n| DAVOUT S               | François Pine        | 30/12/1779        | Paris              | chef escadron                 | 11e Rgt. dragons                 |\n| DAVOUT-DESNOES         | Jean Henry           | 20/6/1740         |                    | Capitaine                     | Garde noble                      |\n| DAVOUST                |                      |                   |                    | Colonel                       | 5e Rgt. Hussards                 |\n| DAVOUST                | Jean                 |                   | Angers             | s/l ieut                      | 7e Rgt. legére Voltigeurs        |\n| DAVOUST                | Louis                | 30/01/1765        | Baigneville        | Capitaine                     | 25e Rgt. S. de ligne             |\n| DAVOUST de Langotre    | Louis                | 26/05/1791        | Au Mans            | Lieutenant                    | 68e R. infanterie                |\n| DAVOUT                 | Claude               |                   |                    | Lieutenant                    | 1er Rgt. de chasseurs            |\n| DAVOUT                 | François Charles     | 29/09/1784        | Etivey              |                               |                                   |\n| DAVOUT                 | François              | 30/01/1769        | Montaroublie        | Sous-lieut                    |                                   |\n| DAVOUT                 | Jacques              | 18/09/1777        | Paris ou l'ile      | Capitaine                     | 17e Rgt. S. de ligne             |\n| DAVOUT                 | Louis                | 26/04/1795        | Hendon              | Capitaine                     | Dragoons Rgt. de dodo ou dragoons|\n| DAVOUT                 | Louis                | 30/04/1740        |                    | Capitaine                     |                                   |\n| DAVOUT                 | Sébastien François   | 18/08/1768        | Paris               | Capitaine                     | 29e Rgt. d'infanterie            |\n| DAVAUX                 | Mathieu              |                   |                    | soldat                        | 16-17 brigade d'infanterie       |\n| D'AVOUT                | Antoine Fleur        |                   |                    | Capitaine                     | Ema. major gal.                  |\n| D'AVOUT                | Jean Henry           | 22/01/1748        | Annoax              | Capitaine                     | 2e Rgt. de hussards              |\n\n++ Voir aussi classement D'AV....\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-63",
+    "sourceImage": "63-20260319_142709.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "DAVON de Collonge ... Cadeuet",
+        "issue": "lieu_incertain",
+        "note": "L'écriture du lieu de naissance est difficile à déchiffrer sur l'image, 'Cadeuet' est probable mais non certain.",
+        "suggestion": "Vérifier sur document original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Capitaine Cavalerie",
+        "issue": "lecture_probable",
+        "note": "L'OCR et l'image semblent converger, mais la calligraphie autorise plusieurs interprétations.",
+        "suggestion": "Confirmer sur l'original."
+      },
+      {
+        "confidence": "high",
+        "fragment": "DAVOUST",
+        "issue": "nom_propre_incertain",
+        "note": "Plusieurs graphies proches sur l'image ('DAVOUST', 'DAVOUT'). L'image confirme l'utilisation.",
+        "suggestion": "Bien vérifier les variantes orthographiques sur la totalité du registre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "François Pine ... 11e Rgt. dragons",
+        "issue": "lecture_probable",
+        "note": "Lecture plausible avec hésitation sur le prénom et le régiment, l'image montre 'François Pine' mais la graphie rend l'interprétation difficile.",
+        "suggestion": "Vérification recommandée."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Montaroublie",
+        "issue": "lieu_incertain",
+        "note": "Lieu de naissance mal déchiffré, faible certitude sur ce toponyme.",
+        "suggestion": "Comparer au contexte global du registre."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Claude / Capitaine / 1er Rgt. de chasseurs",
+        "issue": "lecture_probable",
+        "note": "Lecture partielle possible mais présence de ratures ou effacements sur la ligne.",
+        "suggestion": "Appuyer la transcription finale sur l'original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Annoax",
+        "issue": "lieu_incertain",
+        "note": "Le lieu de naissance 'Annoax' pourrait être une lecture fautive due à la graphie.",
+        "suggestion": "Vérifier sur registre original ou par recoupement."
+      },
+      {
+        "confidence": "high",
+        "fragment": "++ Voir aussi classement D'AV....",
+        "issue": "lecture_probable",
+        "note": "La mention finale apparaît clairement sur l'image.",
+        "suggestion": "À signaler dans toute transcription."
+      }
+    ]
+  }
+]

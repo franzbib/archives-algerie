@@ -1,0 +1,1939 @@
+[
+  {
+    "assistedReadingText": "SHD\nCadre magasinier\nGR 1 H 1239\nVI27 1 3 4 B 1\nCHARENE El-Yamine\nMISE EN RÉSERVE\nDate limite : 05/01/2026\n1H1239\nD/1",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-01",
+    "sourceImage": "01-20260108_105748.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "CHARENE El-Yamine",
+        "issue": "nom_propre_incertain",
+        "note": "Nom manuscrit : lecture probable mais une incertitude subsiste sur l’orthographe exacte.",
+        "suggestion": "CHARENE El-Yamine (ou variante proche selon l’écriture manuscrite)."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Date manuscrite à côté de \"Date limite :\"",
+        "issue": "date_incertaine",
+        "note": "La date ajoutée à la main semble être 22/01/26, mais l'écriture laisse planer un doute.",
+        "suggestion": "22/01/26 (lecture probable, à vérifier sur original)."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Le Général de Division DURAND Aimé\nCOMMANDANT EN CHEF DES FORCES EN ALGÉRIE\nCabinet\n\nFICHE\n\nSoumis à lecture de gal [Killemt ?]\nIl s’agit du rapport de la commission présidée par le gal Durand.\nEn fine, ce gal demande si le général chef est d’accord sur l’action entreprise – le gal Famillez n’a rien dit. Qu’il ne dit mot consent…\nJe pense cependant que le gal Killemt devrait lire ce rapport, en faire ses observations éventuelles, ou peut être même voir le gal Durand –\n\n31/5\n[signature illisible]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-02",
+    "sourceImage": "02-20260108_105834.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "gal Killemt",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom du général (Killemt ou similaire) soumis à lecture n’est pas certaine.",
+        "suggestion": "gal Killemt"
+      },
+      {
+        "confidence": "low",
+        "fragment": "gal Famillez",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom ‘Famillez’ n’est pas confirmée, graphie manuscrite ambiguë.",
+        "suggestion": "gal Famillez"
+      },
+      {
+        "confidence": "low",
+        "fragment": "signature",
+        "issue": "mot_illisible",
+        "note": "La signature est illisible en bas de page.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "date 31/5",
+        "issue": "date_incertaine",
+        "note": "La date n’est pas introduite explicitement comme telle et il pourrait s’agir d’autre chose.",
+        "suggestion": "31/5"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "DELEGATION GENERALE EN ALGERIE\n\nCOMMISSION D'INSPECTION DES CENTRES DE DETENTION ADMINISTRATIVE\n\nN° 20 / IC1\n\n[cachet SECRETI]\n\nCABINET DU GENERAL\nARRIVÉ LE : 27.5.61\nClasse : 3324\n\nALGER, le 26 MAI 1961\n\nLe Général de Division DURAND Aimé\nPrésident de la Commission d'Inspection des Centres de Détention Administrative\n\nMonsieur LE DELEGUE GENERAL EN ALGERIE — Cabinet —\nMonsieur le GENERAL d'ARMEE Commandant en Chef les Forces en Algérie — Cabinet —\n\nOBJET : Fonctionnement de la Commission d'Inspection des Centres de Détention Administrative.\n\nJ'ai l'honneur de vous rendre compte des activités de la Commission d'Inspection des Centres de Détention Administrative au cours des six mois écoulés depuis l'arrivée en Algérie de son Président, le 21 Novembre 1960.\n\nLa Commission n'a été réunie au complet qu'à partir du 9 Janvier 1961, date d'entrée en fonctions de MM. LAROCQUE Martial, Conseiller à la Cour et ARNULF Raoul, Contrôleur Général de la Sûreté Nationale. Mais auparavant, le Président avait préparé la mise en marche de la Commission et avait effectué seul une première série d'inspections de Centres.\n\nLes activités de la Commission ont revêtu quatre aspects principaux qui sont exposés dans les chapitres suivants :\n\n1° — Inspection des Centres de Détention, lieux d'interrogatoire, etc...\n\n2° — Participation à l'élaboration de la réglementation de l'assignation à résidence surveillée et du régime intérieur des Centres, ainsi qu'à la mise en place et au fonctionnement des Organismes consultatifs.\n\n3° — Coopération à l'œuvre de la Commission de Sauvegarde des Droits Individuels et de la Justice Militaire.\n\n4° — Déflation des effectifs des Centres.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-03",
+    "sourceImage": "03-20260108_105845.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "N° 20 / IC1",
+        "issue": "lecture_probable",
+        "note": "Le numéro est très lisible sur l'image, mais le dernier caractère ('IC1') est moins sûr. L'OCR l'avait mal restitué.",
+        "suggestion": "Confirmer la graphie exacte du code (dernier caractère)."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "CABINET DU GENERAL, ARRIVÉ LE : 27.5.61, Classe : 3324",
+        "issue": "lecture_probable",
+        "note": "Quelques chiffres et lettres peuvent prêter à confusion à cause de la qualité du tampon ; lecture vérifiée visuellement mais devrait être contrôlée.",
+        "suggestion": "Valider la date d'arrivée et le numéro de classe."
+      },
+      {
+        "confidence": "high",
+        "fragment": "ALGER, le 26 MAI 1961",
+        "issue": "date_incertaine",
+        "note": "La date est manuscrite mais bien lisible, hormis le dernier 1 qui pourrait prêter à confusion avec un trait.",
+        "suggestion": "Vérifier la date exacte à la lecture experte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le Général de Division DURAND Aimé",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre reconnu, mais la lisibilité sur copie carbone est moyenne pour « Aimé ».",
+        "suggestion": "Confirmer le prénom."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "LAROCQUE Martial, Conseiller à la Cour et ARNULF Raoul, Contrôleur Général de la Sûreté Nationale",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms propres peuvent être sujets à variation dans la transcription (p. ex. 'Raoul' vs autre orthographe), à confirmer.",
+        "suggestion": "Valider l’orthographe exacte des noms propres."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Déflation des effectifs des Centres",
+        "issue": "mot_illisible",
+        "note": "Le mot 'déflation' est probable mais la frappe altère la lecture. Fort probable sur contexte.",
+        "suggestion": "À contrôler sur original."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Il y a lieu de distinguer dans l'exécution des inspections des différents Centres, de leurs annexes, des Centres de Passage et des divers Lieux de détention et d'interrogatoire, trois périodes :\n\na) Avant l'arrivée de la mission du Comité International de la Croix-Rouge (25 Janvier 1961). Au cours de cette période, les membres de la Commission se sont essentiellement attachés à préparer cette visite.\n\nLes inspections ont donc porté principalement sur les camps dont l'installation ou le régime avait donné lieu, dans le passé, à des observations défavorables et également sur ceux qui avaient les plus forts effectifs de détenus. Il a été ainsi possible de porter remède à certaines déficiences, de redresser diverses erreurs, en particulier concernant l'application de la réglementation et d'apporter en temps voulu des améliorations sensibles à des installations matérielles trop sommaires.\n\n24 Centres de Triage et de Transit,\n5 Camps Militaires d'Internés,\n7 Centres d'Hébergement\nont été visités.\n\nb) Au cours de l'exécution de la mission du Comité International de la Croix-Rouge (du 25 Janvier au 20 Février), les membres de la Commission ont, à tour de rôle, accompagné les délégués.\n\nIls se sont attachés à aider le Comité International dans l'accomplissement de sa mission, à l'éclairer sur les difficultés rencontrées et à mettre en valeur l'effort réalisé dans toutes les catégories de Centres et à tous les échelons pour traiter les détenus des camps d'internement avec le maximum d'humanité et dans l'esprit des Conventions de Genève et des résolutions du Premier Congrès des Nations Unies de 1955.\n\nAu cours de cette période :\n31 Centres de Triage et de Transit,\n5 Camps Militaires d'Internés,\n4 Centres d'Hébergement,\n6 Hôpitaux\nont été visités.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-04",
+    "sourceImage": "04-20260108_105902.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "mettre en valeur l'effort réalisé dans toutes les catégories de Centres et à tous les échelons pour traiter les détenus des camps d'internement",
+        "issue": "lecture_probable",
+        "note": "La formulation de cette phrase est difficile à déchiffrer sur l'image à cause de la qualité et de légers flous ; l'interprétation retenue s'appuie majoritairement sur le fil du texte OCR, corrigé selon la structure repérée sur l'image.",
+        "suggestion": "Lecture probable, à vérifier sur l'original physique."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "dans l'esprit des Conventions de Genève et des résolutions du Premier Congrès des Nations Unies de 1955.",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms propres, notamment 'Premier Congrès des Nations Unies de 1955', sont retranscrits par cohérence avec ce que montre l'image, mais mériteraient confirmation sur document original.",
+        "suggestion": "Vérifier l'exactitude de la mention du Congrès et l'année."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "6 Hôpitaux",
+        "issue": "lecture_probable",
+        "note": "Le chiffre est visible mais léger flou sur l'image ; sa distinction reste probable.",
+        "suggestion": "Vérification d'usage recommandée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "- 3 -\n\nc) Depuis le 20 Février, la Commission a poursuivi sa tâche et compte tenu de l'expérience acquise au cours des premiers mois, s'est efforcée de voir plus en détail qu'elle n'avait pu le faire jusque là, les lieux de détention annexes ainsi que les locaux d'interrogatoire.\n\n42 Centres de Triage et de Transit,\n2 Camps Militaires d'Internés,\n5 Centres d'Hébergement,\n\nont été visités au cours de cette troisième période.\n\n* * *\n\nEn résumé, la Commission a, en six mois, effectué 131 inspections de Centres et diverses annexes, compte non tenu des visites au cours desquelles un de ses représentants accompagnait un membre de la Commission de Sauvegarde en mission.\n\nTous les Centres militaires ou civils, ont été visités, certains à plusieurs reprises.\n\nLe jugement qu'elle peut porter est le suivant :\n\na) centres d'Hébergement : Ces Centres sont bien tenus, bien administrés, bien installés, le régime des internés est très humain, parfois même d'un libéralisme qui n'est pas sans inconvénient, les internés les plus irréductibles risquant de prendre en main les plus dociles et par là même de retarder leur libération.\n\nOn doit cependant constater que la durée de la détention dans les Centres d'Hébergement est parfois trop longue et sans commune mesure avec les motifs qui ont entraîné originairement la mesure d'assignation à résidence, particulièrement lorsqu'elle s'applique à des individus internés dès le début de la rébellion pour leurs activités antérieures, à des vieillards, ou à des infirmes. L'oisiveté forcée à laquelle les internés sont soumis en effet, au delà d'un certain délai, entraîne une rééducation. La Commission s'est efforcée de signaler aux Commissions Consultatives et à l'Autorité Préfectorale les cas les plus dignes d'intérêt.\n\nEnfin, la question de la garde des Centres d'Hébergement a soulevé divers problèmes tenant à la composition des unités de surveillance que la Commission a signalé aux autorités responsables tant civiles",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-05",
+    "sourceImage": "05-20260108_105913.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "rééducation. La Commission s'est efforcée de signaler aux Commissions Consultatives et à l'Autorité Préfectorale les cas les plus dignes d'intérêt.",
+        "issue": "lecture_probable",
+        "note": "La présence du mot 'rééducation' est douteuse, la mise en page, la linéarité du texte et certains caractères ne permettent pas une parfaite certitude. La fin de la ligne pourrait aussi prêter à une lecture alternative.",
+        "suggestion": "Vérifier soigneusement la fin de la phrase autour de 'rééducation' sur l'original."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Enfin, la question de la garde des Centres d'Hébergement a soulevé divers problèmes tenant à la composition des unités de surveillance que la Commission a signalé aux autorités responsables tant civiles",
+        "issue": "lecture_probable",
+        "note": "La phrase est interrompue en fin de page (marque de coupure \"/.../\"). La continuité sur la page suivante est à vérifier.",
+        "suggestion": "Compléter avec la page suivante pour vérification de l'intégralité de la phrase."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "que militaires et qui sont en voie de solution.\n\nb) Camps Militaires d'Internés sont correctement installés, à l'exception d'un seul, bien tenus et bien administrés, une discipline ferme y est appliquée ; en un cas, cette fermeté a été jugée excessive et il en a été rendu compte au Commandement ; des mesures seront prises pour porter remède à cette situation.\n\nNéanmoins et là encore la présence dans les Camps Militaires de grands blessés, d'invalides ou d'infirmes a été parfois constatée. L'application libérale de la nouvelle réglementation applicable aux C.M.I. doit pourvoir dans l'avenir à la disparition de ces situations anormales.\n\nc) Centres de Triage et de Transit :\n\nIl existe une très grande diversité dans l'organisation de ces Centres, tenant à la fois à l'étendue du territoire algérien (particularités géographiques et climatiques), aux conditions d'implantation locales et à l'esprit plus ou moins organisateur des Commandants de Secteur ; c'est ce qui frappe dès l'abord.\n\nLes Centres sont, en majorité, convenables. Ils sont presque tous bien tenus du point de vue administratif. Le régime auquel sont soumis les internés est partout très humain, sauf ce qui sera dit ci-après du régime cellulaire et des conditions de \"l'exploitation opérationnelle\".\n\nDans divers Centres, les locaux cellulaires sont mal conçus, trop exigus ou surpeuplés et ne répondent pas aux normes indispensables qui sont définies dans le Mémento du 12 Avril 1961. Certains détenus incarcérés portaient des menottes, mesure qui a été immédiatement proscrite par nos soins. Enfin, la Commission a eu le regret de découvrir, dans des lieux d'interrogatoire annexes, des dispositifs d'encellulement inacceptables, dont elle a demandé la désaffectation ou même la destruction sans délai.\n\nD'autre part, la présence dans les quartiers cellulaires de chiens policiers dressés à l'attaque ou à la défense et dont l'emploi ne peut se justifier pour des raisons de sécurité, a été parfois constatée. L'emploi de ces animaux devrait être limité (et seulement si c'est nécessaire) à la garde extérieure des Centres.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-06",
+    "sourceImage": "06-20260108_105925.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "(C.M.I.)",
+        "issue": "sigle_incertain",
+        "note": "L'OCR donne un sigle difficile à distinguer visuellement dans l'image. Sa lecture est probable, mais incertaine.",
+        "suggestion": "Lecture probable : C.M.I., à confirmer."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "du régime cellulaire et des conditions de \"l'exploitation opérationnelle\".",
+        "issue": "lecture_probable",
+        "note": "Le passage entre guillemets est lisible mais la fin des guillemets peut prêter à confusion selon l'image.",
+        "suggestion": "Vérifier la présence exacte des guillemets et la formulation dans le document original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Centres de Triage et de Transit",
+        "issue": "mot_illisible",
+        "note": "La mention exacte de l’intitulé du paragraphe est confirmée par l'image mais était fortement déformée dans l'OCR.",
+        "suggestion": "Lecture rétablie grâce à l'image, incertitude sur la saisie exacte en raison de la qualité typographique."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "- 5\nLa Commission sur ces divers points a proposé des règles précises au Général Commandant en Chef.\nElles ont été en général incluses dans la nouvelle réglementation concernant l'Assignation à Résidence Surveillée approuvée le 12 Avril 1961 par ses soins. Leur stricte application doit faire cesser les anomalies constatées.\nDe plus, au cours de ses visites, la Commission s'est attachée à chercher à connaître les conditions dans lesquelles les individus étaient traités au cours des interrogatoires et à vérifier que les ordres donnés sur ce sujet, en particulier par le Premier Ministre dans sa lettre 15.171 du 20 Juin 1960, étaient bien respectés.\nElle est convaincue que, - à quelques exceptions près au sujet desquelles d'ailleurs des enquêtes ont été faites sur sa demande -, les internés détenus et interrogés dans les C.T.T. et dans les organismes de recherche des échelons supérieurs (2° Bureaux des Zones et Secteurs) sont humainement traités.\nElle ne peut malheureusement pas être aussi affirmative pour ce qui touche le stade initial des arrestations aux postes et quartiers, en cours d'opérations ou en exploitation opérationnelle.\nDes sévices ou brutalités, des décès et des suicides suspects, des tentatives ou prétendues tentatives d'évasion trop souvent sanctionnées par une mort violente, ont été parfois portés à sa connaissance sur lesquels la pleine lumière n'a que rarement été faite. En particulier, les enquêtes ont été souvent rendues vaines parce que les certificats médicaux fournis se sont bornés à porter la seule indication \"mort naturelle\" qui ne correspondait pas toujours aux probabilités telles qu'il était possible de les déduire des éléments extrinsèques.\nLes irrégularités dont il s'agit ne pourront totalement cesser que si la responsabilité des Commandants de Secteurs nettement affirmée par les textes se traduit dans les faits.\nL'action de la Commission, qui ne peut se rendre inopinément dans les zones opérationnelles ou dans les quartiers et postes isolés, ne pourra que rarement faire sanctionner les abus.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-07",
+    "sourceImage": "07-20260108_105936.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Assignation à Résidence Surveillée approuvée le 12 Avril 1961",
+        "issue": "date_incertaine",
+        "note": "La date (12 Avril 1961) semble bien lisible, mais comme il s'agit d'un point de vigilance, la date reste à confirmer.",
+        "suggestion": "Vérifier la date exacte à partir d'une source primaire ou officielle."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "C.T.T.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle C.T.T. semble correct d'après l'image mais sa signification exacte demeure incertaine sans contexte.",
+        "suggestion": "Confirmer la signification de ce sigle avec d'autres documents à disposition."
+      },
+      {
+        "confidence": "low",
+        "fragment": "des éléments extrinsèques",
+        "issue": "lecture_probable",
+        "note": "La fin de la page pourrait comporter des variantes ou coupures selon la présence de texte masqué ou rogné au bas de l'image.",
+        "suggestion": "Contrôler la page suivante pour une éventuelle suite ou complément."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "sa lettre 15.171 du 20 Juin 1960",
+        "issue": "date_incertaine",
+        "note": "La date 20 Juin 1960 et la référence pourraient être sujettes à interprétation selon la qualité du document.",
+        "suggestion": "Confirmer la référence exacte de la lettre."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "- 6 -\n\nElle s'efforce, par contacts directs avec les diverses autorités et par ses contrôles, de les prévenir.\n\n*\n*\n*\nAu cours de toutes ses inspections, la Commission a pris contact avec les Avocats Généraux de Zone et les Procureurs Militaires des Secteurs. Elle s'est tenue, en outre, en contact étroit avec le Procureur Général Militaire et avec le Général, Inspecteur des Services de la Justice. Ces liaisons ont grandement facilité le règlement de diverses questions touchant le fonctionnement de la Justice Militaire dans le cadre des Centres de Détention.\n\nII. – PARTICIPATION À LA MISE AU POINT DE LA RÉGLEMENTATION\n\nLa Commission a participé en liaison avec les Cabinets Civil et Militaire du Délégué Général ainsi qu'avec le Cabinet du Général Commandant en Chef et le Directeur du Service Central des Camps d'Hébergement à la rédaction des instructions diverses données en exécution des prescriptions de la lettre 19.509 du 29 Octobre 1960 de M. le Premier Ministre touchant la réglementation des Détentions Administratives.\n\nDe plus, elle a été amenée à proposer diverses mesures ou mises au point qui ont fait l'objet de directives ou d'instructions données soit par le Délégué Général, soit par le Général Commandant en Chef.\n\nSa tâche a été largement facilitée par la collaboration active, intelligente et dévouée qu'elle a trouvée chez les deux officiers du Cabinet Militaire chargés des questions de Détention Administrative : le Colonel SAINT MARTIN et le Commandant GUYARD, auxquels elle tient à rendre hommage.\n\nL'ensemble de la documentation qu'elle a participé à rédiger ou à mettre à jour comprend :\n- Instruction 10.772/CC du Délégué Général du 7.12.60 sur le Régime des Détentions Administratives.\n- Instruction 3.443 du Délégué Général du 9.2.61 sur l'Organisation des Centres d'Hébergement.\n- Mémento concernant l'Assignation à Résidence Surveillée approuvé le 12 Avril 1961 par le Général Commandant en Chef.\n\n/.../…",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-08",
+    "sourceImage": "08-20260108_105946.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Procureur Général Militaire et avec le Général, Inspecteur des Services de la Justice.",
+        "issue": "nom_propre_incertain",
+        "note": "L'image semble claire mais l'identité précise peut dépendre d'autres pages.",
+        "suggestion": "Procureur Général Militaire et Inspecteur des Services de la Justice semblent corrects mais à valider."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Colonel SAINT MARTIN et le Commandant GUYARD",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms sont lisibles sur l'image mais validation sur d'autres documents serait préférable.",
+        "suggestion": "Lecture probable des noms propres mais à vérifier."
+      },
+      {
+        "confidence": "high",
+        "fragment": "la lettre 19.509 du 29 Octobre 1960",
+        "issue": "date_incertaine",
+        "note": "La date semble correspondre à l'image, mais toute affectation de contexte relève d'une validation supérieure.",
+        "suggestion": "Date lue conforme à l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Instruction 10.772/CC du Délégué Général du 7.12.60",
+        "issue": "lecture_probable",
+        "note": "Les instructions listées sont clairement lisibles mais la concordance peut dépendre de l'ensemble du dossier.",
+        "suggestion": "Lecture du numéro et de la date d'instruction correcte selon l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "…/…",
+        "issue": "mot_illisible",
+        "note": "Fragment terminal du document indique une troncature ou suite sur une autre page.",
+        "suggestion": "Aucune lecture possible, probablement suite."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "                                                   - 7 -\n\n- Règlement du Régime Intérieur des Camps Militaires d'Internés approuvé le 17 Avril 1961 par le Général Commandant en Chef.\n\n- Note concernant la responsabilité de l'état sanitaire des détenus 164/CM du 12.1.61 du Général Commandant en Chef.\n\n- Situation des individus mis en liberté par les Autorités Judiciaires (571/CM du 6.1.61) du Général Commandant en Chef.\n\n- Régime des Internés Administratifs hospitalisés 2141/CC du Délégué Général en date du 6.3.61.\n\n*  *  *\n\nLa situation des européens assignés à Résidence Surveillée pour activités dangereuses pour la sécurité publique a fait l'objet d'études et de propositions de la Commission, car l'expérience a montré que la réglementation et le régime de détention prévus pour des individus impliqués dans la rébellion ne pouvaient pas leur être appliqués sans modifications.\n\nCertaines des dispositions proposées ont été retenues et sont appliquées, les autres demeurent à l'étude.\n\n*  *  *\n\nIII.- COOPERATION AVEC LA COMMISSION DE SAUVEGARDE ET LA JUSTICE\n\nBien que s'étant assigné dès le début un rôle préventif et non répressif, la Commission n'en a pas moins contribué, dans la mesure de ses moyens, à l'œuvre poursuivie tant par la Commission de Sauvegarde des Droits Individuels que par la Justice civile ou militaire.\n\nChaque fois que des faits constituant des excès, sévices ou irrégularités graves ont été portés à sa connaissance, soit dans l'exercice de sa mission d'inspection, soit par la Commission de Sauvegarde elle-même, soit encore par des particuliers, elle s'est attachée à prescrire des enquêtes, dont les résultats n'ont pas été négligeables.\n\nElle a tenu à cet égard, à diverses reprises, des conférences avec le Procureur Général Militaire et le Général Inspecteur des Services de la Justice.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-09",
+    "sourceImage": "09-20260108_105959.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Régime des Internés Administratifs hospitalisés 2141/CC du Délégué Général en date du 6.3.61.",
+        "issue": "sigle_incertain",
+        "note": "Les sigles et la référence du document sont lisibles mais toujours délicats, à confirmer sur l'original à cause d'éventuelles confusions typographiques.",
+        "suggestion": "La séquence de chiffres et sigles correspond à la lecture la plus probable à partir de l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Commission de Sauvegarde des Droits Individuels",
+        "issue": "nom_propre_incertain",
+        "note": "L'intitulé de la Commission est très probablement exact, mais l'absence de majuscules accentuées et les fluctuations du texte dactylographié invitent à la prudence.",
+        "suggestion": "Lecture probable, à corroborer par croisement."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Enfin, elle a toujours mis un de ses membres à la disposition des délégués de la Commission de Sauvegarde pour permettre à ceux-ci d'accomplir au mieux les tâches qu'ils s'étaient fixées.\n\nIV. – DEFLATION DES EFFECTIFS DES CENTRES DE DETENTION\n\n       La Commission a reçu mission de M. le Délégué Général de remplir le rôle de pilote pour mener à bien la déflation des effectifs des Centres de Détention prescrite par le Gouvernement.\n\n       Cette déflation ne pouvait résulter que, d'une part, d'une accélération du rythme des libérations ; d'autre part, d'une limitation plus stricte des admissions dans les Centres.\n\n       L'action de la Commission s'est exercée en orientant dans ce sens l'activité des différentes autorités et des divers organismes qui avaient à en connaître.\n\n       En particulier, elle a activé la mise sur pied des Commissions Consultatives Départementales, dont la mission est double, tant pour l'internement que pour les libérations dans les Centres d'Hébergement.\n\n       Son action dans ce but, en particulier les nombreux contacts qu'elle a été amenée à prendre tant avec les Hautes Autorités Judiciaires qu'avec les Préfets des divers départements, a permis la mise en route des Commissions dans des délais réduits.\n\n       Elle a fait hâter également les opérations des Commissions d'Examen des Assignations à Résidence dans les C.M.I., Commissions créées à l'initiative du Délégué Général en Algérie.\n\n       Enfin, par contacts personnels au cours des inspections qu'elle effectuait, elle s'est efforcée de faire comprendre à tous la nécessité de procéder à l'allègement prescrit.\n\n       Les résultats obtenus sont les suivants :\n       – Effectifs des Centres Civils et Militaires\n            au 31 Décembre 1960 ......... 20.500\n            au 20 Mai 1961 ............... 17.000 (environ)",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-10",
+    "sourceImage": "10-20260108_110014.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle apparaît clairement sur l'image, mais sa signification ne peut être affirmée sans contexte.",
+        "suggestion": "Relever comme probable, à valider."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Délégué Général en Algérie",
+        "issue": "nom_propre_incertain",
+        "note": "L'identité du Délégué Général n'est pas explicite sur la page.",
+        "suggestion": "Ne pas supposer le nom propre."
+      },
+      {
+        "confidence": "high",
+        "fragment": "20.500 / 17.000 (environ)",
+        "issue": "lecture_probable",
+        "note": "Chiffres très lisibles, effectivement appariés et datés, mais arrondis.",
+        "suggestion": "Lecture reconnue comme très probable."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "- 9 -\n\nLa Commission va avoir à suivre au cours des prochaines semaines la mise en œuvre des mesures qui amèneront la libération de 6.000 détenus qui vient d'être décidée par le Gouvernement.\n\n***\n\nDans le cadre des directives de M. le Premier Ministre en date des 24 Mai, 20 Juin et 20 Octobre 1960 ainsi que de celle de M. le Délégué Général (Instruction du 7 Décembre 1960), la Commission d'Inspection s'est donc efforcée de remplir, au mieux, la mission qui lui a été confiée et elle vous demande de bien vouloir lui faire connaître si son activité des six mois écoulés a rencontré votre approbation.\n\nElle envisagerait, dans cette éventualité et compte tenu d'une évolution prévisible de la conjoncture actuelle, de poursuivre et même d'intensifier, sur les mêmes bases, son action.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-11",
+    "sourceImage": "11-20260108_110024.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "signature manuscrite en bas de page",
+        "issue": "mot_illisible",
+        "note": "La signature manuscrite est partiellement lisible visuellement mais ne peut être transcrite ici avec certitude.",
+        "suggestion": "(signature manuscrite illisible)"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "nom du Délégué Général",
+        "issue": "nom_propre_incertain",
+        "note": "Il est fait mention de 'M. le Délégué Général', l'instruction associée est datée du 7 décembre 1960. Aucun nom explicite n'apparaît.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "EXTRAIT DU RECUEIL DES ACTES ADMINISTRATIFS N° 102 du 16 Décembre 1960\n\nCentres de détention administrative en Algérie.\n\nArrêté du 8 Décembre 1960 portant création d'une Commission d'Inspection des centres de détention administrative en Algérie.\n\nLe Délégué Général en Algérie,\n\nVU la loi n° 47-1853 du 20 Septembre 1947 portant statut organique de l'Algérie ;\nVU le décret n° 56-274 du 17 Mars 1956 relatif aux mesures exceptionnelles tendant au rétablissement de l'ordre, à la protection des personnes et des biens et à la sauvegarde du territoire en Algérie ;\nVU le décret n° 58-1233 du 16 Décembre 1958 relatif à l'exercice de leurs pouvoirs par les autorités civiles et militaires en Algérie ;\nVU le décret n° 60-157 du 20 Février 1960 sur l'exercice des attributions par les autorités civiles et militaires en Algérie ;\nVU le décret n° 60-120 du 13 Février 1960 instituant un comité des affaires algériennes ;\nVU le décret du 23 Novembre 1960 portant nomination du Délégué Général en Algérie ;\nSur la décision du Comité des Affaires Algériennes du 5 Octobre 1960.\n\nArrête :\n\nArticle 1er. - Il est créé auprès du Délégué Général en Algérie et du Commandant en Chef des Forces en Algérie une commission d’inspection des centres de détention administrative en Algérie.\n\nArticle 2. - La Commission est composée d’un officier général président, d’un magistrat et d’un haut fonctionnaire de la Sûreté nationale.\n\nArticle 3. - La commission effectue toutes inspections, enquêtes et contrôles relatifs aux conditions de détention et aux méthodes d’interrogatoire. Elle veille à ce que les dispositions légales et réglementaires s’y rapportant soient rigoureusement observées. Elle s’assure notamment que tous les fonctionnaires civils et tous les militaires observent strictement les dispositions des articles 3 des Conventions de Genève du 12 Août 1949 ratifiées par la loi n° 51-161 du 16 Février 1951 et publiées par le décret n° 52-253 du 28 Février 1952.\n\nLe président de la commission se tient en liaison en tant que de besoin avec les autres services d’inspection spécialement aux attributions desquels les dispositions du présent arrêté n’apportent aucune restriction.\n\n.../...\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-12",
+    "sourceImage": "12-20260108_110731.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "\"Le président de la commission se tient en liaison... aucune restriction.\"",
+        "issue": "lecture_probable",
+        "note": "Texte clairement lisible sur l'image. Faible incertitude.",
+        "suggestion": "Aucune correction nécessaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Article 4 - Dans l'exercice de leurs attributions, les membres de la commission d'inspection des centres de détention administrative ont accès en tout temps dans les centres d'hébergement, les centres de triage et de transit, les camps militaires d'internés et d'une façon générale en tous lieux où des individus sont retenus, interrogés ou détenus.\n\nLa commission est en droit de se faire communiquer et délivrer copie de toutes pièces et documents qu'elle jugerait nécessaires à l'accomplissement de sa mission.\n\nArticle 5 - Le président de la commission rend compte des missions de la commission au Délégué Général en Algérie et au Général Commandant en Chef des Forces en Algérie.\n\nIl apporte toutes suggestions tendant à améliorer le fonctionnement des services inspectés et propose tous aménagements de nature à harmoniser les instructions en vigueur et les procédures d'application.\n\nArticle 6 - Les autorités civiles et militaires, les directeurs et chefs de services intéressés accorderont toutes facilités aux membres de la commission dans l'accomplissement de la mission de la dite commission.\n\nArticle 7 - Le Général Commandant en chef des forces en Algérie, le directeur du cabinet du Délégué Général en Algérie, les préfets inspecteurs généraux régionaux, les préfets sont chargés, chacun en ce qui le concerne, de l'exécution du présent arrêté qui sera publié au recueil des actes administratifs de la Délégation générale en Algérie.\n\nFait à ALGER, le 8 Décembre 1960\n\nLe Délégué Général en Algérie\nSigné : J. MORIN",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-13",
+    "sourceImage": "13-20260108_110741.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Fait à ALGER, le 8 Décembre 1960",
+        "issue": "date_incertaine",
+        "note": "La date semble lisible dans l'image mais pourrait contenir des incertitudes mineures liées à la qualité du scan.",
+        "suggestion": "Lecture probable mais la date doit être vérifiée sur original si usage juridique."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Signé : J. MORIN",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre 'J. MORIN' apparait clairement mais toute signature manuscrite n'est pas présente.",
+        "suggestion": "Lecture probable du nom mais signature à vérifier sur original."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ALGER, le 19 DECEMBRE 1960\n\nDELEGATION GENERALE ET COMMANDEMENT\nEN CHEF DES FORCES EN ALGERIE.\n\nCABINET MILITAIRE\n\n- LETTRE DE SERVICE -\n\n1.- En exécution des prescriptions de l’Arrêté du 8 Décembre 1960 de Monsieur le Délégué Général en Algérie, le Général de Division DURAND Aimé, du cadre de Réserve, a été désigné pour prendre les fonctions de Président de la Commission d’Inspection des Centres de détention administrative en Algérie.\n\n2.- Dans l’exercice de cette fonction, il a qualité pour effectuer en tous temps, tous contrôles et enquêtes relatifs à l’application des dispositions légales et réglementaires en ce qui concerne les procédures d’interrogatoire et les conditions d’internement et de détention.\n\nIl peut demander accès en tous lieux où des individus sont retenus, interrogés ou détenus. Il est en droit de se faire communiquer et délivrer copie de toute pièce ou document qu’il jugerait nécessaire à l’accomplissement de sa mission.\n\n3.- Les autorités civiles et militaires qui ont à connaître des questions touchant les attributions de la Commission d’Inspection des Centres de détention administrative accorderont toutes facilités et toute l’aide nécessaire au Général de Division DURAND dans l’exercice de sa mission.\n\nLe Délégué Général en Algérie\nSigné : Jean MORIN\n\nLe Général de Corps d’Armée\nCommandant en Chef les Forces en Algérie\nSigné : Jean CREPIN.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-14",
+    "sourceImage": "14-20260108_110809.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "19 DECEMBRE 1960",
+        "issue": "date_incertaine",
+        "note": "La date paraît clairement '19 DECEMBRE 1960' sur l'image, alors que l'OCR indique 'IO DECEMBRE 1960'. La lecture d'image privilégie '19', mais nécessite confirmation manuscrite.",
+        "suggestion": "19 DECEMBRE 1960"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jean MORIN",
+        "issue": "nom_propre_incertain",
+        "note": "Le patronyme 'Jean MORIN' est lisible mais pourrait encore demander validation, en raison de légères imprécisions de l'image à cet endroit.",
+        "suggestion": "Jean MORIN"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jean CREPIN",
+        "issue": "nom_propre_incertain",
+        "note": "Le patronyme 'Jean CREPIN' est plausible et conforme à la typographie de l'image, mais demande confirmation définitive.",
+        "suggestion": "Jean CREPIN"
+      },
+      {
+        "confidence": "high",
+        "fragment": "ALGER, le 19 DECEMBRE 1960 ... Général de Corps d’Armée ... Commandant en Chef les Forces en Algérie ...",
+        "issue": "lecture_probable",
+        "note": "Tout le reste du texte est hautement lisible et sans ambiguïté notable à l'œil nu sur l'image.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "RR/GB – 10/11\nSP 87.000, le 12 Novembre 1961\n\nCOMMANDANT SUPERIEUR DES FORCES EN ALGERIE\nETAT-MAJOR INTERARMEES\n\nNo 2.053 / CSFA/EM/1A\n\n- BORDERAU D’ENVOI COLLECTIF -\n\nOBJET : Commission d’Inspection des Centres de Détention Administrative\n\n1) Arrêté n° 9.755/C.C. du 4 Novembre 1961 mettant fin aux fonctions du Général Durand en qualité de Président de la CICDA.\n2) Arrêté n° 9.737/C.C. du 4 Novembre 1961 nommant le Colonel Saint-Martin Secrétaire Général de la CICDA.\n\n| DESTINATAIRES                                                          | NOMBRE | OBSERVATIONS                                |\n|-----------------------------------------------------------------------|--------|---------------------------------------------|\n| - M. le Général Commandant la R.T. et le C.A. ALGER                   | 80     | Pour Information et diffusion à l’échelon    |\n|                                                                       |        | Secteur - C.T.T. - C.M.I.                   |\n| - M. le Général Commandant la R.T. et le C.A. d’ORAN                  | 80     | Pour Information et diffusion à l’échelon    |\n|                                                                       |        | Secteur - C.T.T. - C.M.I.                   |\n| - M. le Général Commandant la R.T. et le C.A. de CONSTANTINE          | 90     | Pour Information et diffusion à l’échelon    |\n|                                                                       |        | Secteur - C.T.T. - C.M.I.                   |\n| - M. le Général Commandant Interarmées au SAHARA                      | 15     |                                             |\n| - M. le Magistrat Général Inspecteur des Juridictions Militaires       | 1      |                                             |\n|   en Algérie                                                          |        |                                             |\n| - M. le Général Procureur Général Militaire                           | 1      | Pour Information                            |\n| - M. le Général Commandant la Gendarmerie en Algérie                  | 20     |                                             |\n| - M. le Général C.S.F.A. (Cabinet)                                   | 1      |                                             |\n| - M. le Général Chef de l’E.M.I., 2°, 3°, 4° Bureaux                  | 5      |                                             |\n\nCABINET DU GENERAL\nARRIVE le : 13 NOV. 1961\nClassé : 6178\n\nLes attributions de la Commission d’inspection des Centres de Détention Administrative, définies par l’arrêté du 8 Décembre 1960 publié au recueil des Actes Administratifs n° 102 du 16 Décembre 1960, ont fait l’objet d’une diffusion le 24 décembre 1960, sous n° 8009/CM.\n\nLe Général de Corps d’Armée AILLERET\nCommandant Supérieur des Forces en Algérie\nP.o. le Lieutenant-Colonel BECK",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-15",
+    "sourceImage": "15-20260108_110949.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "CICDA",
+        "issue": "sigle_incertain",
+        "note": "L'image et l'OCR donnent tous deux CICDA, mais sans définition explicite du sigle dans le document présent.",
+        "suggestion": "Laisser le sigle tel quel."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Arrêté n° 9.755/C.C. du 4 Novembre 1961 mettant fin aux fonctions du Général Durand en qualité de Président de la CICDA.",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture 'Général Durand' est très probable à l'image et à l'OCR mais non irréfutable sans validation humaine.",
+        "suggestion": "Conserver la lecture, signaler l'incertitude sur le nom propre."
+      },
+      {
+        "confidence": "high",
+        "fragment": "le Colonel Saint-Martin Secrétaire Général de la CICDA",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture 'Saint-Martin' est très probable à l'image et l'OCR.",
+        "suggestion": "Conserver la lecture, signaler l'incertitude sur le nom propre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "E.M.I. 2°, 3°, 4° Bureaux",
+        "issue": "sigle_incertain",
+        "note": "'E.M.I.' lu ainsi sur la ligne destinataire et sur l'image, mais impossible d'assurer la justesse du sigle sans contexte externe.",
+        "suggestion": "Conserver EMI, introduire un doute sur le sigle."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Le Général de Corps d’Armée AILLERET",
+        "issue": "nom_propre_incertain",
+        "note": "Nom apparemment bien lisible sur l'image, mais incertitude de validation.",
+        "suggestion": "Transcrire tel quel, en rappelant le doute nominal."
+      },
+      {
+        "confidence": "high",
+        "fragment": "12 Novembre 1961",
+        "issue": "date_incertaine",
+        "note": "Date lisible sur l'image, mais toute datation non validée doit être signalée.",
+        "suggestion": "Garder la date, préciser l'incertitude historique."
+      },
+      {
+        "confidence": "high",
+        "fragment": "13 NOV. 1961",
+        "issue": "date_incertaine",
+        "note": "Datation du tampon. Lecture simple, mais ne pas valider formellement.",
+        "suggestion": "Inclure la date, avec la réserve sur la validation humaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Pour Information et diffusion à l’échelon Secteur - C.T.T. - C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "Les sigles C.T.T. et C.M.I. ne sont pas explicités dans le document.",
+        "suggestion": "Conserver en l'état, mentionner l'incertitude."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "n° 9735/C.C.\n\nARRETE du 4 NOVEMBRE 1961 mettant fin aux fonctions du Président de la Commission d'Inspection des Centres de Détention Administrative en Algérie\n\nLe DELEGUE GENERAL EN ALGERIE\n\nVU la loi n° 47-1853 du 20 Septembre 1957 portant statut organique de l'Algérie,\n\nVU le décret n° 58-1233 du 16 Décembre 1958 relatif à l'exercice de leurs pouvoirs par les autorités civiles et militaires en Algérie,\n\nVU le décret du 23 Novembre 1960 portant nomination du Délégué Général en Algérie,\n\nVU l'arrêté du 8 Décembre 1960 portant création d'une Commission d'Inspection des Centres de Détention Administrative en Algérie,\n\nARRETE :\n\nARTICLE 1er. Il est mis fin, sur sa demande, à compter du 30 Novembre 1961, aux fonctions du Général de Division DURAND en qualité de Président de la Commission d’Inspection des Centres de Détention Administrative en Algérie.\n\nARTICLE 2. – Le Directeur des Cabinets Civil et Militaire du Délégué Général en Algérie est chargé de l’exécution du présent arrêté qui sera publié au Recueil des Actes Administratifs de la Délégation Générale en Algérie.\n\nFait à ALGER, le 4 Novembre 1961\n\nLe DELEGUE GENERAL EN ALGERIE\n\nSigné : Jean MORIN",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-16",
+    "sourceImage": "16-20260108_111138.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "DURAND",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre DURAND apparaît en majuscules, souligné, et semble confirmé par l'image mais il s'agit d'une lecture probable selon les règles.",
+        "suggestion": "DURAND"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Président",
+        "issue": "mot_illisible",
+        "note": "Le mot est bien lisible sur l'image mais une lecture à partir de l'OCR seul donnait des incohérences, on retient la version image.",
+        "suggestion": "Président"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jean MORIN",
+        "issue": "nom_propre_incertain",
+        "note": "La signature utilise un patronyme courant, mais en vertu des consignes il faut marquer une incertitude.",
+        "suggestion": "Jean MORIN"
+      },
+      {
+        "confidence": "high",
+        "fragment": "ALGER",
+        "issue": "lieu_incertain",
+        "note": "Vu la clarté sur l'image, la lecture 'ALGER' est très probable mais doit être signalée comme non totalement certaine.",
+        "suggestion": "ALGER"
+      },
+      {
+        "confidence": "high",
+        "fragment": "4 Novembre 1961",
+        "issue": "date_incertaine",
+        "note": "La date peu ambiguë mais la règle impose d'indiquer une incertitude.",
+        "suggestion": "4 Novembre 1961"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "DELEGATION GENERALE EN ALGERIE\n\nARRETE\n\nCOMMISSION D'INSPECTION DES CENTRES DE DETENTION ADMINISTRATIVE EN ALGERIE\n\nLe Délégué Général en Algérie,\n\nVU la loi n° 47-1853 du 20 Septembre 1957 portant statut organique de l'Algérie,\nVU le décret n° 58-1233 du 16 Décembre 1958 relatif à l'exercice de leurs pouvoirs par les autorités civiles et militaires en Algérie,\nVU le décret du 23 Novembre 1960 portant nomination du Délégué Général en Algérie,\nVU l'arrêté du 8 Décembre 1960 portant création d'une Commission d'Inspection des Centres de Détention Administrative en Algérie,\n\nARRETE :\n\nARTICLE 1er : est nommé à compter du 1er Octobre 1961 Secrétaire Général de la Commission d'Inspection des Centres de Détention Administrative en Algérie, le Colonel SAINT MARTIN Jean, chargé de mission au Cabinet Militaire du Délégué Général en Algérie.\n\nARTICLE 2 - En cas d'absence du Président et des membres de la Commission, le Secrétaire Général est chargé de l'expédition des affaires courantes.\n\nARTICLE 3 : Le Directeur du Cabinet du Délégué Général en Algérie est chargé de l'exécution du présent arrêté qui sera publié au Recueil des Actes Administratifs de la Délégation Générale en Algérie.\n\nFait à ROCHER NOIR, le 4 NOVEMBRE 1961\nLe DELEGUE GENERAL EN ALGERIE\nSigné : Jean MORIN",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-17",
+    "sourceImage": "17-20260108_111149.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "SAINT MARTIN Jean",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est confirmé par l'image, mais les majuscules, l'espacement et la présence éventuelle d'un accent ne sont pas totalement certains.",
+        "suggestion": "Lecture probable correcte mais vérifier la graphie exacte du nom."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ROCHER NOIR",
+        "issue": "lieu_incertain",
+        "note": "La localisation est lisible mais place et orthographe à vérifier.",
+        "suggestion": "Lecture probable : ROCHER NOIR."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Jean MORIN",
+        "issue": "nom_propre_incertain",
+        "note": "Signature confirmée visuellement mais possibilité d'une autre lecture du nom si le manuscrit apparaissait différemment dans d'autres documents.",
+        "suggestion": "Lecture probable Jean MORIN."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "CABINET DU GENERAL\nArrivé le : 8 NOV. 1961\nClassé : 610\n\nDÉCISION\n\nportant nomination du Président de la Commission Centrale d'examen des Assignations à résidence surveillée.\n\nLE DÉLÉGUÉ GÉNÉRAL EN ALGÉRIE,\n\nVu la décision n° 6.948 - CC du 3 Août 1960 fixant la composition de la Commission Centrale d'Examen des Assignations à résidence ;\n\nVu les instructions du Premier Ministre en date du 29 Octobre 1960 portant réglementation des détentions administratives dans les départements algériens ;\n\nDÉCIDE :\n\nArticle 1er. - Le Procureur Général PEZAUD, Procureur Général près la Cour d'Appel de Constantine, est désigné comme Président de la Commission Centrale d'Examen des Assignations à résidence en remplacement du Procureur Général BERTRAND.\n\nArticle 2. - Le Directeur des Cabinets Civil et Militaire est chargé de l'exécution de la présente décision qui entre immédiatement en vigueur.\n\nLe Délégué Général en Algérie\nsigné : [mot illisible]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-18",
+    "sourceImage": "18-20260108_111305.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "signé : [mot illisible]",
+        "issue": "mot_illisible",
+        "note": "La signature manuscrite du Délégué Général en Algérie est présente, mais le nom propre n'est pas clairement lisible, ni sur l'image ni dans l'OCR.",
+        "suggestion": "Remplacer la zone de signature par une mention [mot illisible] sans affirmation du nom."
+      },
+      {
+        "confidence": "high",
+        "fragment": "BERTRAND",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom semble être BERTRAND, lu sur l'image, mais le manuscrit du nom pourrait laisser un léger doute.",
+        "suggestion": "Conserver la probable lecture BERTRAND mais souligner qu'il reste un doute minimal."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "6.948 - CC",
+        "issue": "sigle_incertain",
+        "note": "Le sigle 'CC' est probablement correct, mais la qualité de l'image et des tampons superposés rendent la certitude modérée.",
+        "suggestion": "Maintenir la lecture telle quelle avec réserve minime."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "A.S.P. 87.000, le 27 décembre 1961\n\nCOMMANDEMENT SUPERIEUR DES FORCES EN ALGERIE\nETAT-MAJOR INTERARMEES\nLE PROCUREUR GENERAL MILITAIRE\nN° 823 /CSF/EMI/PGM\n\nLe Procureur Général Militaire JONQUERES\nà\nMonsieur l'Avocat Général Militaire de la Zone Nord Algérois\n\nVous avez bien voulu, lors de la visite que je fis au secteur autonome Alger-Sahel, me poser, de la part du Colonel des COURTILS, Commandant la Zone Nord Algérois, la question de savoir si un hors-la-loi blessé au combat pouvait être soigné dans un hôpital militaire.\n\nEn ce qui concerne les hors-la-loi blessés pouvant bénéficier du statut des P.A.M., il semble que jusqu'ici leur admission dans un hôpital militaire n'ait jamais soulevé de difficultés. En fait, immédiatement après le combat, blessés des forces de l'ordre ou des unités rebelles sont conduits le plus souvent ensemble à l'hôpital militaire le plus proche. Il s'agit là de la mise en œuvre d'un impératif humanitaire que des considérations d'opportunité opérationnelle viennent renforcer.\n\nSi après les premiers soins prodigués il apparaît que les blessures demandent des traitements prolongés, ou entraînent des incapacités permanentes nécessitant des appareils onéreux ou des rééducations à longue échéance, le transfert dans un hôpital civil est généralement opéré.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-19",
+    "sourceImage": "19-20260108_111425.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "des COURTILS",
+        "issue": "nom_propre_incertain",
+        "note": "Nom du Colonel, lecture probable mais certains caractères pourraient prêter à confusion.",
+        "suggestion": "COURTILS (à confirmer sur l'image, bonne correspondance mais imprécision possible sur l'image)."
+      },
+      {
+        "confidence": "high",
+        "fragment": "P.A.M.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle P.A.M. est probable, visible sur l'image, mais sans garantie absolue de la signification.",
+        "suggestion": "P.A.M. (lecture confirmée sur l'image, signification non assurée)."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Il en va différemment lorsque le rebelle p.a.m. n'a pas été blessé au combat mais vient à avoir besoin de soins alors qu'il est déjà interné dans un C.M.I. (circulaire n° 194/Cab/J. du 11 mars 1961). Tant que le statut des prisonniers de guerre prévu par les Conventions de Genève n'est pas applicable aux P.a.M., ceux-ci doivent être transférés dans des hôpitaux civils pour y recevoir les soins dont ils sont justiciables.\n\nEn définitive il importe de souligner que dans la première hypothèse l'admission dans les hôpitaux militaires n'est prévue par aucun texte mais est commandée par des nécessités pratiques, et que le problème dans son ensemble, ne sera juridiquement réglé que si le statut des prisonniers de guerre était octroyé aux P.a.M. imposant dans tous les cas leur admission et leur surveillance dans les hôpitaux militaires. En l'état actuel des textes les pratiques ci-dessus rappelées sont exemptes de critiques.\n\nCopie à : \"A titre d'information\"\n- M. le Général Cdt Supérieur des Forces en Algérie (Cabinet)\n- MM. les Généraux Cdt les C.A. d'ALGER\nd'ORAN\nde CONSTANTINE\n- M. le Général Directeur du Service de Santé\n- MM. les Généraux Cdt les :\n  ZNA - ZSA - ZEA - ZOK - ZEC - ZNC - ZSC - ZCO - ZNO - ZSO - ZEO - ZOO - ZES - ZGS (Avocats Généraux Militaires)\n- M. le Général Cdt Interarmées au SAHARA",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-20",
+    "sourceImage": "20-20260108_111436.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "p.a.m.; P.a.M.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle apparaît plusieurs fois dans le document sous différentes capitalisations (p.a.m., P.a.M.), mais sa signification exacte ou la forme officielle n'est pas confirmée visuellement.",
+        "suggestion": "Ne pas affirmer la signification du sigle."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle C.M.I. est lisible et confirmé par l'image. La signification n'est pas explicitée.",
+        "suggestion": "Mentionner sans expliciter la signification."
+      },
+      {
+        "confidence": "high",
+        "fragment": "circulaire n° 194/Cab/J. du 11 mars 1961",
+        "issue": "lecture_probable",
+        "note": "La date et le numéro sont bien visibles, sauf pour les lettres exactes du sigle qui restent à confirmer sur d'autres sources éventuelles.",
+        "suggestion": "Transcrire comme visible."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "P.a.M. ceux-ci doivent être transférés",
+        "issue": "lecture_probable",
+        "note": "Petite incertitude sur la ponctuation autour du sigle, mais l'image appuie la version retranscrite.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Copie à : .\"'A titre d'information\" l..ng.Ÿle Général Cdt Supérieur...",
+        "issue": "mot_illisible",
+        "note": "La ligne suivante 'l..ng.Ÿle...' est illisible sur l'image et probablement erronée dans l'OCR ; semble hors du texte adressé, à ne pas inclure dans la lecture probable.",
+        "suggestion": "Mettre de côté le fragment comme mot illisible."
+      },
+      {
+        "confidence": "high",
+        "fragment": "MM. les Généraux Cdt les C.A. d'ALGER\nd'ORAN\nde CONSTANTINE",
+        "issue": "lecture_probable",
+        "note": "Organisation claire sur l'image. Mauvaise séparation de lignes dans l'OCR nettoyé, corrigée à la lecture.",
+        "suggestion": "Présenter la liste sous forme structurée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "RR/YR-27.6.\nS.P. 87.000, le 29 Juin 1962.\n\nCOMMANDEMENT SUPERIEUR DES FORCES EN ALGERIE\nETAT-MAJOR INTERARMEES\nBureau du MORAL\nNo 1.578 / CSFA/EMI/MA.\nNo 1.950 / CSFA/EMI/2/O.I.\n\nNOTE DE SERVICE\n\nOBJET : — Fermeture des centres de détention administrative.\n— Destination à donner aux archives.\n\nREFERENCE : — Message no 1.503/CSFA/EMI/MA du 19 Juin 1962.\n\nPar message de référence, il a été prescrit de fermer avant le 1er Juillet 1962 les Centres Militaires de Détention Administrative (CTT et CMI). La présente Note de Service a pour objet de préciser la destination à donner aux archives de ces Centres (1).\n\n1.– Ces archives peuvent être classées en deux grandes catégories :\n11.– des documents permettant de suivre la position des internés de leur capture à leur libération (registre d’entrées et sorties, fichier, dossiers individuels) et leur état de santé (cahier de visite médicale);\n\n12.– des documents administratifs (cahiers d’alimentation et de contrôle des hommes et objets précieux).\n\n2.– Il n’est pas exclu que dans l’avenir, le cas de certains internés ne fasse l’objet d’un contentieux ouvert par les Autorités Algériennes. Il importera donc de pouvoir répondre aux accusations qui pourraient être ainsi formulées.\n\n.......................................................\n\n(1) – Les documents à tenir dans chaque centre sont énumérés à l’Article 5 du Mémento concernant l’assignation à résidence surveillée (no 632/CAB/J du 12 Avril 1961).",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-21",
+    "sourceImage": "21-20260108_111701.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "CTT",
+        "issue": "sigle_incertain",
+        "note": "Le sigle CTT (Centres Militaires de Détention Administrative) semble être une lecture correcte basée sur l'image, car le texte est bien lisible, mais il reste une très légère ambiguïté due à la police dactylographiée.",
+        "suggestion": "CTT"
+      },
+      {
+        "confidence": "high",
+        "fragment": "No 1.578 / CSFA/EMI/MA.",
+        "issue": "sigle_incertain",
+        "note": "Les sigles CSFA/EMI/MA et CSFA/EMI/2/O.I. sont confirmés par l'image, mais toute la suite des sigles reste sujette à la lecture précise et à d'éventuelles particularités dactylographiées.",
+        "suggestion": "CSFA/EMI/MA"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Article 5 du Mémento concernant l’assignation à résidence surveillée (no 632/CAB/J du 12 Avril 1961).",
+        "issue": "nom_propre_incertain",
+        "note": "Le numéro de référence, le sigle CAB/J, et la date semblent corrects, mais une validation humaine serait nécessaire compte tenu de la possibilité d'interprétation erronée sur la photo.",
+        "suggestion": "no 632/CAB/J du 12 Avril 1961"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "3. – En conséquence :\n\n– seront conservés aux Etats-Majors de Corps d’Armée au moins les registres des entrées et sorties, les cahiers de visite médicale, ainsi que les dossiers des individus dont il apparaît que le cas pourrait devenir l’objet d’un litige ;\n\n– seront versés au Bureau des Archives Collectives de BLIDA tous les autres documents, qui devront être classés par Centre et par catégorie, de façon à permettre de retrouver aisément, le cas échéant, toutes pièces intéressant le fonctionnement des Centres.\n\nLe Colonel VALENTIN,\nChef d’Etat-Major\n\nDESTINATAIRES :\n– M. le Général Cdt la R.T. et le C.A. ALGER\n– M. le Général Cdt la R.T. et le C.A. ORAN\n– M. le Général Cdt la R.T. et le C.A. CONSTANTINE\n– M. le Général Cdt supérieur et Cdt la R.M. du SAHARA\n– M. le Commandant du Bureau des Archives Collectives\n              – BLIDA –\n\n         “ Pour information ”\n– M. le Haut Commissaire de la République\n   ( Cabinet Militaire ) ROCHER NOIR.\n– M. le Haut Commissaire de la République\n   ( Cabinet Militaire – Justice ) ALGER\n– M. le Procureur Général Militaire ( ROCHER NOIR )\n– M. le Colonel Inspecteur des C.D.A. ALGER\n– M. le Magistrat Général Inspecteur des Juridictions Militaires en Algérie – ALGER.\n– M. le Général Commandant la Gendarmerie en Algérie ( ALGER )\n– M. le Général Commandant Supérieur des Forces en Algérie ( Cabinet )\n\n– E.M.I. – C.E.M. }\n    – B.3.\n    – G.E.G.\n    – B.4./ ISA – ALGER\n    – RECHAIA",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-22",
+    "sourceImage": "22-20260108_111711.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Le Colonel VALENTIN, Chef d’Etat-Major",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom et le titre sont assez lisibles sur l'image mais sans garantie absolue sur l'exactitude du nom de famille.",
+        "suggestion": "Lecture conforme à l'image, légère incertitude sur une possible variante du nom ou du titre."
+      },
+      {
+        "confidence": "high",
+        "fragment": "RECHAIA",
+        "issue": "lieu_incertain",
+        "note": "Le mot RECHAIA est bien présent, mais ce toponyme est donné exactement comme sur l'image malgré une incertitude persistante quant à l'orthographe manuscrite.",
+        "suggestion": "Lecture la plus probable de la mention au sein du tableau EMI - CEM."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "C.D.A.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle C.D.A. est lisible, son sens ne doit pas être déduit en dehors de la source.",
+        "suggestion": "Garder le sigle tel quel."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "B.4./ ISA – ALGER",
+        "issue": "sigle_incertain",
+        "note": "Lecture probable du sigle et de la section. L'image permet ce relevé, mais la disposition précise des points et barres peut prêter à confusion.",
+        "suggestion": "Restituer l'expression telle que sur l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le Colonel VALENTIN, Chef d’Etat-Major",
+        "issue": "lecture_probable",
+        "note": "La signature manuscrite n'est pas intégralement lisible ni formellement transcrite.",
+        "suggestion": "Omettre la signature manuscrite du champ principal de transcription."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "COMMANDAMENT EN CHEF DES FORCES\nEN ALGÉRIE\nETAT-MAJOR INTERARMÉES\n5e BUREAU\nN° 17 /E.M.I.5/ACT/S\n\nALGER, le 9 JAN 1960\n\nRAPPORT\n\ndu Chef de Bataillon COGNIET,\nde l'Etat-Major Interarmées - 5e Bureau -\nau sujet de la réunion du Comité A.P.S. - Matignon\ndu Mardi 5 Janvier 1960\n\nI.- RAPPORT DE LA CROIX-ROUGE -\n\nMonsieur RENOU fait au nom du Ministre des Armées l'historique de \"l'affaire\".\n\nLe Ministre des Armées détenait le rapport depuis trois semaines.(1)\nQuelques informations parues au sujet de ce rapport dans la presse lui ont laissé supposer qu'il y avait une fuite. (2) Le 30 Décembre, il apprend que le journal LE MONDE possédait le rapport et se proposait de le publier. Le Ministre fit prendre contact avec la rédaction de ce quotidien pour lui demander d'en publier une analyse \"sans vinaigre\", de ne pas employer un sous-titrage tendancieux, de ne pas mettre au bas des commentaires une signature \"incendiaire\" et enfin de ne le publier qu'après les fêtes.\n\nPar ailleurs, le Ministre des Armées a demandé au Gouvernement de publier préventivement un communiqué destiné à amoindrir les effets de la publication de l'analyse du rapport.\n\n(1)- Le Quai en fut le premier destinataire.\n(2)- Le rapport a été tiré en 127 exemplaires.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-23",
+    "sourceImage": "23-20260108_112414.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Chef de Bataillon COGNIET",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre 'COGNIET' est assez lisible sur l'image mais pourrait être sujet à légère ambiguïté vue la qualité du scan.",
+        "suggestion": "Lecture probable confirmée par l'image, mais avec une réserve."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Monsieur RENOU",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom RENOU correspond assez bien à l'image mais présente un risque minime d'erreur typographique.",
+        "suggestion": "Lecture probable retenue, mais pourrait requérir confirmation humaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "COMITÉ A.P.S. - Matignon",
+        "issue": "sigle_incertain",
+        "note": "Le sigle A.P.S. est lisible mais on ne peut pas en garantir la signification sans contexte externe.",
+        "suggestion": "Lecture litterale du texte."
+      },
+      {
+        "confidence": "high",
+        "fragment": "le 9 JAN 1960",
+        "issue": "date_incertaine",
+        "note": "La date semble claire sur l'image mais pourrait être relue comme 1966 à cause d'une légère tache à droite du dernier chiffre.",
+        "suggestion": "Lecture probable tranchée en faveur de 1960."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "LE MONDE",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du journal paraît bien formé mais une légère confusion possible avec un autre titre existe vu la police dactylo.",
+        "suggestion": "Lecture probable conservée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Parue le lundi 4 Janvier après-midi, l’analyse semble à Monsieur GUILLAUMAT « aussi objective que possible ». C’est pourquoi il « s’étonne » qu’Alger ait saisi « LE MONDE », « ce qui rend son action plus délicate ».\n\nDe la discussion qui suivit cet exposé ressort :\n– que nul n’a recherché d’où venait la fuite ; (1)\n– que le communiqué gouvernemental peut paraître comme un aveu de complicité. Le Gouvernement aurait dû s’opposer à la publication d’un rapport qui lui était adressé sous le sceau du secret et non le laisser paraître.\n– que l’étranger sera sensible à la propagande faite par la presse française contre son Armée et contre la guerre d’Algérie. Cet aspect de la question a décidé le Premier Ministre à faire saisir « LIBERATION » de façon à donner « un coup de semonce » aux hebdomadaires « L’EXPRESS » et « FRANCE-OBSERVATEUR ».\n– que le seul aspect à exploiter est « l’honnêteté et la générosité de la France » qui seule accepte de recevoir de telles missions et de leur présenter sincèrement ses problèmes.\n\nEn résumé l’adversaire a réussi son opération et rien d’efficace ne lui a été ni ne lui sera opposé.\n\nII. – CENTRES DE REGROUPEMENT –\n\nAprès la publicité donnée aux camps d’internement ou d’hébergement, l’adversaire va glisser son offensive sur les centres de regroupement de façon à confondre les deux choses dans les esprits.\n\nL’« OBSERVER » va demander une autorisation d’enquête sur ce sujet à Alger.\n\nJ’ai objecté que si l’on ne pouvait pas s’opposer à la chose (ce qui semble être l’avis du Comité) on adresse à Alger des journalistes plus favorables que l’OBSERVER et que ceux-ci traitent du problème dans son ensemble et dans en véritable aspect et non pas du problème « d’un » centre de regroupement choisi parmi les moins bons.\n\nLe Comité demande que le DELEGUE GENERAL du GOUVERNEMENT fasse connaître le plus rapidement possible à Paris son avis sur ce sujet.\n\n(1) – On laisse planer le doute sur la Croix Rouge.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-24",
+    "sourceImage": "24-20260108_112427.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "en véritable aspect et non pas du problème « d’un » centre de regroupement choisi parmi les moins bons.",
+        "issue": "lecture_probable",
+        "note": "Lecture vérifiée à partir de l'image manuscrite, possible légère variation dans la formulation exacte.",
+        "suggestion": "Lecture majoritairement conforme à l'image, mais mot « en véritable » ou « dans son véritable » à valider sur original."
+      },
+      {
+        "confidence": "high",
+        "fragment": "LIBERATION, L’EXPRESS, FRANCE-OBSERVATEUR",
+        "issue": "sigle_incertain",
+        "note": "Noms propres de presse adaptés de l'image, mais vérification orthographique à faire sur original.",
+        "suggestion": "Vérification des titres des journaux recommandée car OCR porte à confusion sur « I:‘WBESS »."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Le Comité demande que le DELEGUE GENERAL du GOUVERNEMENT fasse connaître le plus rapidement possible à Paris son avis sur ce sujet.",
+        "issue": "lecture_probable",
+        "note": "Lecture vérifiée, mais la formulation exacte pourrait varier (notamment: 'le plus rapidement possible').",
+        "suggestion": "Bien distinct sur l'image, mais niveau de certitude sur la formulation exacte à affiner."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "(1) – On laisse planer le doute sur la Croix Rouge.",
+        "issue": "lecture_probable",
+        "note": "Mentions en bas de page un peu atténuées sur l’image, mais sens reconstitué avec fiabilité.",
+        "suggestion": "L'image confirme intégralement le fragment malgré un petit flou."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "III. – COOPÉRATION FRANCO-BRITANNIQUE EN AFRIQUE –\n\nUne réunion doit avoir lieu à Paris le 8 Janvier pour mettre au point une coordination des émissions françaises et anglaises à l’usage du continent africain.\n\nA l’ordre du jour de cette réunion :\n– examen d’ensemble des moyens de l’information,\n– influence progressiste dans les chaînes d’émission à destination de l’Afrique,\n– pénétration communiste dans les syndicats africains,\n– analyse des techniques subversives appliquées à l’Afrique.\n\nIV. – PROPAGANDE FRANÇAISE AUX U.S.A. –\n\n41.– Quatre sujets :\n– la bombe atomique\n– le voyage du Général de GAULLE aux U.S.A. (19 Avril)\n– l’Algérie\n– la Communauté.\n\n42.– Bombe atomique :\n– Pas de journaliste à Reggan le jour J (sauf peut-être un représentant de l’A.F.P.), mais :\n– à Paris Monsieur RENOU donnera les documents suivants à la presse : Livre blanc sur la bombe – Film de sa fabrication – numéro spécial de Paris-Match (le tout édité en plusieurs langues) ;\n– à New York, une personnalité atomiste française donnera le jour J une conférence de presse.\n\n43.– Voyage du Président de la République ;\n– Film T.V. : le Général de GAULLE\n                la Ve République\n– Crédits : 7 millions",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-25",
+    "sourceImage": "25-20260108_112440.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Monsieur RENOU",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom est probable, mais une légère incertitude persiste à cause de la qualité de l'image.",
+        "suggestion": "Monsieur RENOU"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Reggan",
+        "issue": "lieu_incertain",
+        "note": "La lecture de ce toponyme est probable, mais pourrait comporter une confusion avec d'autres caractères similaires.",
+        "suggestion": "Reggan"
+      },
+      {
+        "confidence": "high",
+        "fragment": "le voyage du Général de GAULLE aux U.S.A. (19 Avril)",
+        "issue": "date_incertaine",
+        "note": "La date est lisible sur l'image, mais la précision du mois pourrait être vérifiée si d'autres documents sont disponibles.",
+        "suggestion": "19 Avril"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "44.- Algérie :\n- Crédits : 80 millions\n- 13 films T.V. - 8 anciens - 5 à faire\n- Voyages en Algérie\n- Voyage aux U.S.A. de Me ABDESSALAM très apprécié des américains\n\n45.- Communauté :\n- 2 films T.V. : politique et institutions\n                      économie et techniques\n- 3 brochures : politique et institutions\n                       économie et techniques\n                       culture\n- Supplément \"Communauté française\" dans le \"New York Times\" (coût : 3 000 dollars la page)\n\nV.- DESIDERATA :\n- Le Comité demande que Monsieur DELOUVRIER envoie à la séance du Mardi 19 Janvier, un de ses représentants qualifiés pour présenter le point de la question syndicale en Algérie.\n- Les Affaires Étrangères demandent que l'on ne donne plus régulièrement le bilan des pertes rebelles ou amies. Les commentateurs étrangers appuient toute leur action sur ces chiffres.\n\nLe Chef de Bataillon COGNET\ndu 5e Bureau de l'E.M.I.\n\nDESTINATAIRE :\nMonsieur le Colonel, Chef de l'E.M.I.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-26",
+    "sourceImage": "26-20260108_112451.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Me ABDESSALAM",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est difficile à confirmer totalement en raison de la qualité dactylographique.",
+        "suggestion": "Lecture directe de l'image mais le nom reste hypothétique."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "COGNET",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du signataire est lisible mais peut être sujet à interprétation à cause de l'écriture manuscrite.",
+        "suggestion": "Lecture probable basée sur la signature et la dactylographie."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "19 Janvier",
+        "issue": "date_incertaine",
+        "note": "La date semble correcte mais sa lisibilité complète doit être vérifiée sur l'original en cas de doute.",
+        "suggestion": "Lecture probable selon l'image et l'OCR."
+      },
+      {
+        "confidence": "high",
+        "fragment": "\"Communauté française\" dans le \"New York Times\" (coût : 3 000 dollars la page)",
+        "issue": "lecture_probable",
+        "note": "Cette portion semble fidèle à la source image mais la précision du coût pourrait varier selon la frappe.",
+        "suggestion": "Lecture conforme à l'image à un détail près potentiellement typographique."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "14 JANV 1960\n\nMonsieur le Délégué Général du Gouvernement en Algérie\n\nLa publication par \"LE MONDE\" et d'autres journaux étrangers ou français d'extraits du rapport du C.I.C.R. ou d'informations faisant état de la mise en circulation de photocopies du rapport me suggère les réflexions suivantes que j'ai l'honneur de vous soumettre :\n\n1° - La publication elle-même est très fâcheuse pour la cause même que l'on prétend défendre ; elle compromet l'efficacité des missions futures du C.I.C.R., et constitue en outre la divulgation de secrets militaires.\n\n2° - Le document, avant d'être publié, a été dérobé (semble-t-il) à une des autorités le détenant régulièrement ; il aurait été photocopié et diffusé.\n\nL'infraction première constituée par le vol de documents et sa remise à des tiers constitue, en outre la violation du secret professionnel, le vol et la divulgation de documents intéressant la Défense Nationale.\n\nLa lumière complète sur cette \" fuite \" ne peut sans doute être faite qu'après ouverture d'une information judiciaire.\n\nIl semble que, si on désire ouvrir une procédure, on ait le choix entre plusieurs qualifications d'infractions graves.\n\nIl y a lieu de remarquer d'autre part que les Officiers, lors des visites des représentants du C.I.C.R., n'hésitent pas à donner leur nom et parfois ceux de leurs subordonnés, le caractère confidentiel de la mission du C.I.C.R. leur offrant toute garantie.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-27",
+    "sourceImage": "27-20260108_112702.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "\"14 JANV 1960\"",
+        "issue": "date_incertaine",
+        "note": "La date est lisible d'après l'image, mais il subsiste un faible doute sur l'exactitude du libellé ('JANV' pourrait être lu différemment selon l'usure de la frappe).",
+        "suggestion": "Lecture probable : \"14 JANV 1960\""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Monsieur le Délégué Général du Gouvernement en Algérie",
+        "issue": "nom_propre_incertain",
+        "note": "La formule complète peut prêter à confusion quant au titre exact. Pas de nom individuel visible ici.",
+        "suggestion": "Lecture probable conforme à l'OCR et l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "\"LE MONDE\"",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du journal est entre guillemets. Lecture probable confirmée par l'image.",
+        "suggestion": "Lecture conforme."
+      },
+      {
+        "confidence": "high",
+        "fragment": "C.I.C.R.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle est apparemment correct et répété plusieurs fois. Faible marge d'incertitude car reproduction fidèle de l'image.",
+        "suggestion": "Lecture probable : \"C.I.C.R.\""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "semble-t-il",
+        "issue": "mot_illisible",
+        "note": "Le passage relatif à la disparition du document reste sujet à l'usure du texte, mais la lecture semble corroborée par la source image.",
+        "suggestion": "Lecture probable : \"semble-t-il\""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "- 2 -\n\nCes précisions peuvent désormais tomber facilement entre les mains du F.L.N. qui serait sans doute tenté d'opérer des représailles contre les militaires ainsi désignés à ses coups.\n\nCe fait constitue une aggravation de la faute commise.\n\nIl pourrait enfin être intéressant de rapprocher cette \"fuite\" de celle qui a suivi les décisions de grâces prises au début de 1959 par le Président de la République.\n\nSigné : CHALLE",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-28",
+    "sourceImage": "28-20260108_112716.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "entre les mains du F.L.N.",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable mais la présence d'initiales pose une incertitude de sigle.",
+        "suggestion": "Vérifier l'acronyme original dans les archives."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "grâces prises au début de 1959 par le Président de la République.",
+        "issue": "date_incertaine",
+        "note": "La date semble correcte mais nécessite vérification sur document original.",
+        "suggestion": "Confirmer la date mentionnée dans des sources complémentaires."
+      },
+      {
+        "confidence": "low",
+        "fragment": "texte en transparence sous la signature 'Signé : CHALLE'",
+        "issue": "mot_illisible",
+        "note": "La partie inférieure (texte visible à travers le verso) n'est pas exploitable.",
+        "suggestion": "Reproduire l'image avec rétroéclairage ou examiner le verso directement."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "MINISTÈRE DES ARMÉES\nPARIS, le 18 SEPT 1961\nN° 027134 MA/CC\nPrière de rappeler la Référence\nLE MINISTRE DES ARMÉES\nà\nMonsieur le Général Commandant Supérieur des Forces en Algérie\n- CABINET -\n\nPar lettre du 14 Avril 1961, Monsieur le Président de la Commission de Sauvegarde vous a saisi de doléances émanant des détenus du camp de BOGHARI, et plus particulièrement du cas du nommé Abdelhamid BENZINE, signalé par Maître Angeline DOMINIQUE, avocat à la Cour d'Appel de PARIS. Il attirait également votre attention sur le fait que des doléances de même nature étaient formulées au sujet du camp de BURDEAU.\n\nJ'ai l'honneur de vous prier de bien vouloir me faire connaître si vous avez répondu à Monsieur le Président PATIN et m'adresser une copie de votre réponse.\n\nPour le Ministre et par délégation\n[Signature manuscrite]\nCasimir BIRDS\nDirecteur du Cabinet du Ministre des Armées",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-29",
+    "sourceImage": "29-20260108_113527.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Casimir BIRDS",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de signature est manuscrit et difficile à lire, la lecture la plus probable est Casimir BIRDS mais sans certitude.",
+        "suggestion": "Casimir BIRDS"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "18 SEPT 1961",
+        "issue": "date_incertaine",
+        "note": "La date est bien lisible mais toujours à confirmer lors d'une validation humaine.",
+        "suggestion": "18 SEPT 1961"
+      },
+      {
+        "confidence": "high",
+        "fragment": "BURDEAU",
+        "issue": "lieu_incertain",
+        "note": "Le nom BURDEAU semble correct d'après l'image mais sans confirmation externe.",
+        "suggestion": "BURDEAU"
+      },
+      {
+        "confidence": "high",
+        "fragment": "PATIN",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom PATIN apparaît clairement mais sans autre source pour confirmation.",
+        "suggestion": "PATIN"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "23 SEP. 1961\nA Monsieur le Ministre des Armées (Cabinet)\nOBJET : — Camp militaire d’internés de BOGHARI.\nREFERENCE : — Votre lettre n°027.134/MA/CC du 18 septembre 1961.\nPIÈCES JOINTES : — Copie de la lettre n°1930/CAB/J du 8 juillet 1961 et dossier de 4 pièces.\nJ'ai l'honneur de vous rendre compte de ce que, dès la réception de la lettre du 14 Avril 1961 de Monsieur le Président de la Commission de Sauvegarde relative aux doléances émanant d’internés du C.M.I. de BOGHARI, j'ai fait effectuer par le Général Président de la Commission d’Inspection des Centres de détention administrative, une enquête approfondie sur les faits allégués.\nCette enquête ayant montré que des fautes avaient été commises, j’ai pris les sanctions et mesures nécessaires pour que le régime intérieur du C.M.I. soit intégralement appliqué dans ce camp.\nCeci fait, j’ai répondu le 8 juillet 1961 à Monsieur le Président de la Commission de Sauvegarde.\nJe vous adresse ci-joint copie de cette lettre et copie des documents qui lui étaient annexés.\nLe Général de Corps d’Armée C. AILLERET Commandant Supérieur des Forces en Algérie\nPar ordre\nLe Colonel VIALA\nDirecteur du Cabinet\nSigné : VIALA",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-30",
+    "sourceImage": "30-20260108_113537.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Le Général de Corps d’Armée C. AILLERET (nom propre, signature en bas)",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom apparaît en rouge et ne ressort pas parfaitement sur l'image.",
+        "suggestion": "Lecture probable sur la base de l'image, mais le contraste rend la confirmation incertaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "BOGHARI",
+        "issue": "lieu_incertain",
+        "note": "La mention BOGHARI est manuscrite en haut du document, et tapée plusieurs fois. La correspondance avec l'OCR et l'image est élevée.",
+        "suggestion": "BOGHARI peut être retenu avec un niveau de confiance élevé."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "14 Avril 1961 / 18 septembre 1961 / 8 juillet 1961",
+        "issue": "date_incertaine",
+        "note": "Lecture correcte selon l'image, mais une légère incertitude subsiste sur la date manuscrite partiellement masquée.",
+        "suggestion": "Ces dates paraissent probables."
+      },
+      {
+        "confidence": "high",
+        "fragment": "C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "Lecture correcte sur document, mais signification exacte non déterminée ici.",
+        "suggestion": "La mention C.M.I. semble exacte en tant que sigle."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Commission de Sauvegarde / Commission d’Inspection des Centres de détention administrative",
+        "issue": "mot_illisible",
+        "note": "Certains mots sont atténués par les tampons mais restent lisibles dans le contexte.",
+        "suggestion": "Lecture probable du passage malgré les tampons."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "S.P. 87.000, le 8 JUILLET 1961\n\nLe Général de Corps d’Armée C. AILLERET\nCommandant Supérieur des Forces en Algérie\n\nCOMMANDAMENT SUPÉRIEUR DES FORCES EN ALGÉRIE\nCabinet\nN° 1930/Cab\n\nÀ Monsieur le Président de la Commission de Sauvegarde.\n\nDÉCLASSIFIÉ SUR ORDRE N° 504284 du 14/9/62\n\nSECRET                  COPIE\n\nOBJET : Traitement des assignés au C.M.I. de BOGHARI\nREFERENCE : Votre lettre du 14 Avril 1961\nP.JOINTES : 1°/ - Régime intérieur des C.M.I. N° 973/EMI/3/PH du 17.4.1961\n           2°/ - Certificat médical\n           3°/ - Rapport du 2° Bureau du Secteur de BOGHARI en date du 22. Avril 1961.\n           4°/ - Memento sur l'assignation à résidence N° 632/CAB/J/ du 12.4.1961.-\n\nVous avez bien voulu me communiquer les extraits de deux lettres de Me Angeline DOMINIQUE et de Me Gisèle HALIMI relatives au traitement des rebelles pris les armes à la main, assignés à résidence au Camp Militaire de BOGHARI.\n\nJ’ai demandé au Général de Division, Président de la Commission d’Inspection des Centres de détention administrative d’aller sur place effectuer une enquête afin de vérifier la véracité des faits relatés.\n\nLe Général DURAND accompagné de Monsieur ARNULF, Contrôleur Général de la Sûreté Nationale et membre de la Commission se sont rendus inopinément en inspection le 2 Mai 1961 à BOGHARI.\n\nIls ont constaté que les installations du Centre étaient convenables et que les internés dans le camp normal, comme dans les cellules paraissaient traités correctement.\n\nPar contre, les assignés placés dans la section spécialisée étaient menés avec une discipline de fer et plusieurs d’entre eux, au cours d’entretiens particuliers, se sont plaints de coups et de mesures vexatoires de toutes sortes. D’autre part, les durées de détention en cellule étaient souvent exagérées.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-31",
+    "sourceImage": "31-20260108_113606.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "504284 du 14/9/62",
+        "issue": "lecture_probable",
+        "note": "Le numéro et la date du tampon de déclassification sont peu nets sur l’image.",
+        "suggestion": "Lecture probable basée sur une observation attentive, mais nécessite confirmation par relecture humaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "BOGHARI",
+        "issue": "lieu_incertain",
+        "note": "Le lieu apparaît clairement sur l'image, mais il peut toujours exister des variantes de toponymie ou d’orthographe.",
+        "suggestion": "Lecture conforme à l'image mais reste à valider."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle C.M.I. est conforme à l'image, mais la signification exacte du sigle n'est pas explicitée dans le texte.",
+        "suggestion": "Lecture conforme à l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Angeline DOMINIQUE et de Me Gisèle HALIMI",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms propres sont bien lisibles, mais toujours à confirmer (risque d'homonymie ou d'erreur de dactylographie à ne pas exclure).",
+        "suggestion": "Lecture conforme à l'image, à valider lors relecture experte."
+      },
+      {
+        "confidence": "high",
+        "fragment": "2 Mai 1961",
+        "issue": "date_incertaine",
+        "note": "Date lisible sur l'image mais à valider absolument dans le cadre d'une expertise.",
+        "suggestion": "Lecture probable fidèle à la source."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Ces mesures étant en contradiction formelle avec les instructions données antérieurement et rappelées récemment dans le règlement du régime intérieur des C.M.I. (joint en annexe N° 1), j'ai été amené à :\n\n1°/ — Prescrire la relève et la dissolution de l'unité de réserve qui avait la surveillance de la section spécialisée.\n\n2°/ — Décider le remplacement du Capitaine Commandant le Centre dont la mutation est en cours,\n\n3°/ — Faire prononcer à l'encontre du Capitaine Commandant le Centre et des gradés responsables des sanctions disciplinaires.\n\n4°/ — Demander au Général Commandant le Corps d'Armée d'ALGER la révision de tous les cas des assignés placés dans la section spécialisée, et de ne pas y affecter automatiquement les individus ayant bénéficié d'une suspension de peine.\n\nCes dispositions ont mis fin aux abus constatés.\n\nEn ce qui concerne les deux points particuliers mentionnés dans votre correspondance, les résultats de l'enquête sont les suivants :\n\n1°/ — Le nommé ABDELHAMID BENSINE a été trouvé par le Général DURAND en bonne santé, le Médecin du Camp n'avait d'ailleurs décelé aucune affection grave ou contagieuse (voir P.J. N° 2).\n\n2°/ — Depuis le 1er Janvier 1961, il y a eu cinq décès parmi les assignés\n- 2 morts de maladie à l'hôpital\n- 3 morts violentes, par balle ; le nommé SENOUCCI abattu au cours d'une tentative d'évasion, le 11 Mars 1961 après les sommations réglementaires (voir P.J. N° 3).",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-32",
+    "sourceImage": "32-20260108_113637.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "La lecture du sigle pourrait être affectée par une confusion mineure (lettre 'M' ou 'N'), mais la graphie dans l'image rejoint l'OCR.",
+        "suggestion": "Probablement C.M.I."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "le Capitaine Commandant le Centre et des gradés responsables des sanctions disciplinaires",
+        "issue": "lecture_probable",
+        "note": "Le passage manque légèrement de clarté sur la nature exacte des sanctions prononcées, l'image laisse supposer qu'il s'agit bien de leur responsabilité disciplinaire.",
+        "suggestion": "Conserver la formulation telle que relevée."
+      },
+      {
+        "confidence": "high",
+        "fragment": "ABDELHAMID BENSINE, Général DURAND, SENOUCCI",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms propres semblent lisibles mais restent sous réserve sans validation externe.",
+        "suggestion": "ABDELHAMID BENSINE, Général DURAND, SENOUCCI"
+      },
+      {
+        "confidence": "high",
+        "fragment": "1er Janvier 1961, 11 Mars 1961",
+        "issue": "date_incertaine",
+        "note": "Les dates sont clairement visibles, mais l'exactitude dépendrait d'une vérification contextuelle.",
+        "suggestion": "Transcrire telles quelles : 1er Janvier 1961, 11 Mars 1961"
+      },
+      {
+        "confidence": "high",
+        "fragment": "P.J. N° 2, P.J. N° 3",
+        "issue": "sigle_incertain",
+        "note": "La mention 'P.J.' semble cohérente mais n'est pas explicitée (Probablement 'pièce jointe').",
+        "suggestion": "Conserver tel quel."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "- les nommés MEZIZ et MEZIANE victimes d'un regrettable accident survenu le 13 Mars 1961 (voir P.J. N°3). Une enquête complémentaire a, d'ailleurs, sur mon ordre été ouverte afin de déterminer la part de responsabilité du militaire de garde, auteur involontaire de ces deux décès. Celui-ci déféré devant le Tribunal Militaire de MEDEA a été condamné à trois mois de prison avec sursis.\n\nIl semble donc que sont inexacts les faits relatés dans la lettre de Me HALIMI, au sujet de 3 prisonniers torturés jusqu'à épuisement puis achevés par balle.\n\nD'autre part, le Général Président de la Commission d'Inspection des Centres de Détention Administrative a visité le 4/9 Mai le C.M.I. de BURDEAU, il a pu se rendre compte que si la discipline y était stricte, les assignés étaient traités matériellement et moralement dans des conditions humaines, et qu'ils n'étaient pas l'objet de sévices.\n\nLes irrégularités constatées au Camp de BOGHARI ayant cessé, et les prescriptions du Mémento (P.J. N°4) ainsi que du règlement intérieur des C.M.I. ayant été à nouveau rappelées, le régime des camps militaires d'internés est maintenant conforme aux dispositions légales définies par l'article 3 de la convention de GENEVE ; le Général Président de la Commission d'Inspection et les Officiers supérieurs inspecteurs des C.A. veilleront d'ailleurs par de fréquents contrôles à leur stricte application.\n\nCOPIE à :\n\n- M. le Délégué Général en Algérie\n- CABINET CIVIL -\n- M. le Général Cdt. la R.T. et le C.A. d'ALGER\n- CABINET -\n\nSigné : AILLERET\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-33",
+    "sourceImage": "33-20260108_113703.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "4/9 Mai le C.M.I.",
+        "issue": "date_incertaine",
+        "note": "La date de visite du C.M.I. de BURDEAU présente une ambiguïté typographique (\"4/9 Mai\"?), difficile à trancher à partir de l'image.",
+        "suggestion": "Lire le passage comme \"4/9 Mai\" ou \"4-9 Mai\", en attente de validation"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "C.A. d'ALGER",
+        "issue": "sigle_incertain",
+        "note": "Le sigle 'C.A.' n'est pas explicité dans ce passage.",
+        "suggestion": "Transcrire tel quel 'C.A.' en laissant la signification ouverte."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Signé : AILLERET",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est restitué selon l'image mais peut nécessiter une validation externe pour confirmation orthographique.",
+        "suggestion": "Transcrire 'AILLERET' selon l'image."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ALGER, le 17 Avril 1961\n\nCOMMANDEMENT EN CHEF DES FORCES\nEN ALGÉRIE\nETAT-MAJOR INTERARMES\n\nREFERENCE : - Instruction n° 10.772/CC/PG du 7.12.1960.\n\nRÈGLEMENT DU RÉGIME INTÉRIEUR\n\nDANS LES CENTRES MILITAIRES D'INTERNÉS (C. M. I.)\n\nApprouvé par le Général d'Armée GAMBIEZ, Commandant en Chef des Forces en Algérie\nle 17 Avril 1961 sous le n° 948/EMIA/3/PH\n\nExemplaire n° __________  AVRIL 1961",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-34",
+    "sourceImage": "34-20260108_113736.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "GAMBIEZ",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est lu comme 'GAMBIEZ' sur l'image et correspond à l'OCR, mais une incertitude subsiste sur l'orthographe exacte en l'absence de validation humaine.",
+        "suggestion": "Maintenir la lecture GAMBIEZ mais signaler l’incertitude."
+      },
+      {
+        "confidence": "high",
+        "fragment": "17 Avril 1961",
+        "issue": "date_incertaine",
+        "note": "La date semble être corrigée manuellement à la main sur l'image (le chiffre 7 surimposé) à deux endroits. Lecture \"17 Avril 1961\" probable, mais incertitude due à la correction manuscrite.",
+        "suggestion": "Privilégier la date 17 Avril 1961 tout en mentionnant la correction manuscrite."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "948/EMIA/3/PH",
+        "issue": "lecture_probable",
+        "note": "La mention du numéro et du sigle final comporte des lettres partiellement manuscrites, la lecture est probable mais mérite validation.",
+        "suggestion": "Lecture retenue mais à revoir : 948/EMIA/3/PH."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "1.\n\nINTRODUCTION\n\nLes Camps Militaires d'Internés (C.M.I.) sont destinés à recevoir les rebelles :\n- appartenant à bande armée\n- capturés les armes à la main (ou non)\n- ayant fait l'objet d'un arrêté préfectoral d'assignation à résidence surveillée en C.M.I.\n\nLa procédure de l'assignation à résidence surveillée dans un C.M.I. est fixée par les dispositions de l'Instruction n° 10.772/GC/DG du 7.12.1960 sur le régime des détentions administratives en Algérie.\n\nLes modalités de la constitution des dossiers des assignés dans ces camps sont fixées par le Mémento 6.790/CM du 20.11.1959 (et ses 3 modificatifs).\n\nLes C.M.I. sont placés sous la direction, l'administration et la garde de l'Autorité Militaire. Ce sont des organismes de Corps d'Armée, supportés territorialement par le Commandement de la Zone d'implantation.\n\nChaque C.M.I. est placé sous le Commandement d'un Officier.\n\nL'inspection et le contrôle des C.M.I. sont assurés :\n- à l'échelon du Corps d'Armée : par un Officier Général ou Supérieur, Inspecteur, désigné par le Général Commandant la Région Territoriale et le Corps d'Armée;\n- à l'échelon du Commandement Chef des Forces en Algérie : par la Commission d'Inspection des Centres de Détention Administrative, composée d'un Officier Général, Président, d'un magistrat et d'un haut fonctionnaire de la Sûreté Nationale.\n\nUne Commission d'Examen des assignations à résidence dans les C.M.I. fonctionne dans chaque Région Territoriale. Instituée par le Général Commandant le Corps d'Armée, elle a pour mission d'examiner périodiquement les dossiers de tous les internés et de proposer au Général Commandant la Région les libérations estimées possibles.\n\n../../...",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-35",
+    "sourceImage": "35-20260108_113750.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Instruction n° 10.772/GC/DG du 7.12.1960",
+        "issue": "sigle_incertain",
+        "note": "Le sigle GC/DG et la date sont lisibles sur l'image mais pourraient présenter des risques confusions selon la qualité, donc retenu avec une confiance moyenne.",
+        "suggestion": "Lecture confirmée mais signalée car présence de plusieurs sigles similaires dans d'autres documents de même type."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Mémento 6.790/CM du 20.11.1959 (et ses 3 modificatifs)",
+        "issue": "sigle_incertain",
+        "note": "Le numéro et la date sont clairement lisibles mais la mention des \"3 modificatifs\" est légèrement floue, confiance moyenne.",
+        "suggestion": "Lecture probable mais à confirmer dans une vérification croisée."
+      },
+      {
+        "confidence": "high",
+        "fragment": "le Commandement de la Zone d'implantation",
+        "issue": "lecture_probable",
+        "note": "Phrase complète sur l'image, reformulée pour respecter la syntaxe observée, haut degré de certitude.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Le règlement de Régime Intérieur commun aux divers C.M.I. est fixé par le Général Commandant en Chef des Forces en Algérie. Les Généraux Commandant les Régions Territoriales et Corps d'Armée gardent toute latitude pour compléter ledit règlement par des prescriptions en vue de tenir compte des conditions particulières à chacun des Centres placés sous leur autorité.\n\nL'ensemble de ces dispositions doit avoir pour but de permettre aux C.M.I. de remplir leur mission qui est :\n\n1° – de maintenir hors d'état de reprendre la lutte des adversaires qui ont appartenu à des bandes armées ;\n2° – de sélectionner ces personnels en vue de séparer les irréductibles des autres ;\n3° – de préparer la libération de ces derniers afin de n'y procéder qu'en s'entourant du maximum de garanties.\n\nL'accomplissement de cette mission nécessite :\n\n– une discipline militaire stricte ;\n– des conditions matérielles de vie (logement, alimentation, hygiène, soins médicaux etc...) très correctes ;\n– une activité dirigée ;\n– des contacts continuels et confiants entre cadres et moniteurs d'une part, et internés d'autre part.\n\nEn toute occasion, les internés doivent être traités avec humanité, conformément aux dispositions des Conventions de Genève (Art. 3).",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-36",
+    "sourceImage": "36-20260108_113803.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "Sigle reproduit tel que visible sur l’image, mais pas explicitement défini.",
+        "suggestion": "Lecture du sigle conforme à l’image, incertitude sur sa signification exacte."
+      },
+      {
+        "confidence": "high",
+        "fragment": "les irréductibles",
+        "issue": "lecture_probable",
+        "note": "Le mot apparaît clairement sur l’image, légère hésitation possible sur l’accentuation ou la segmentation, mais le sens semble assuré.",
+        "suggestion": "Conserver « irréductibles »."
+      },
+      {
+        "confidence": "high",
+        "fragment": "activité dirigée ;",
+        "issue": "lecture_probable",
+        "note": "La formule est claire sur l’image, bien que la ligne soit plus pâle.",
+        "suggestion": "« activité dirigée » paraît correct."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "RÈGLEMENT DU RÉGIME INTÉRIEUR\nDES CENTRES MILITAIRES D’INTERNÉS\n\nI. — DISCIPLINE\n\n11. — Les internés sont astreints à demeurer dans les limites du Centre et à se soumettre aux règles particulières de discipline intérieure nécessaires au maintien de l’ordre, de la sécurité et de la salubrité. Toutes les activités susceptibles d’entraîner un désordre quelconque à l’intérieur du camp sont interdites.\n\n12. — Tout interné qui franchit sans autorisation les limites du C.M.I. dans lequel il est assigné à résidence, peut faire l’objet de poursuites judiciaires, conformément aux dispositions de l’Article 12 du Décret du 17 Mars 1956.\n\nLorsqu’il ne peut être appréhendé sur le champ, un avis de recherche est diffusé.\n\nÀ l’intérieur du Camp et à certaines heures fixées selon les emplois du temps respectifs, les internés sont libres de circuler dans des enceintes ou locaux déterminés, en respectant les consignes reçues.\n\nPendant les heures du couvre-feu fixé par le Commandant du Camp, la circulation des assignés en dehors de leur dortoir est interdite si ce n’est pour se rendre aux locaux sanitaires les plus proches.\n\nDes consignes particulières sont données aux sentinelles concernant leur rôle à l’encontre des internés surpris à circuler en dehors des limites permises, et en particulier aux abords de l’enceinte du camp.\n\n13. — Les internés en C.M.I. sont répartis à l’intérieur du camp par catégories, dans des blocs séparés, en fonction :\n\n  — de leur durée de séjour\n  — de leur comportement dont l’évolution doit être consignée périodiquement au dossier individuel, sous le contrôle de l’officier psychologue adjoint au Commandant du Centre.\n\nChaque interné a une place qui lui est fixée dans un bâtiment déterminé. Le Commandant du Centre décide ou autorise les mutations éventuelles.\n",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-37",
+    "sourceImage": "37-20260108_113818.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Commandant du Centre décide ou autorise les mutations éventuelles.",
+        "issue": "lecture_probable",
+        "note": "La fin du texte pourrait être incomplète du fait de la coupure, le passage est coupé par un «…/…» qui annonce une suite sur la page suivante.",
+        "suggestion": "Vérifier sur la page suivante pour confirmer l’exhaustivité de la phrase."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "14. – Le contrôle de la présence des internés, conformément à l'horaire et à l'emploi du temps, est assuré par des appels fréquents effectués de jour comme de nuit, à des heures variables. Il sera procédé au minimum à un appel quotidien.\n\nII. – SANCTIONS\n\n21. – Les punitions pouvant être infligées selon les cas, sont les suivantes :\n- Primo : suppression d'accès au foyer ;\n- Secundo : changement de place désignée dans le même bloc ou dans un autre de même catégorie ;\n- Tertio : privation de visites pour une durée maximum d'un mois ;\n- Quarto : isolement dans un local approprié pour une durée maximum de 15 jours ;\n- Quinto : changement de catégorie avec transfert dans une section spécialisée du Centre ou dans un autre Centre spécialisé.\n\n22. – Les quatre premières catégories de punitions sont prononcées par le Commandant du Centre. La cinquième doit être approuvée par le Général Commandant le Corps d’Armée ou par l’Officier Inspecteur désigné par ses soins.\n\n23. – Les punitions seront toujours clairement motivées et devront comporter outre l’avis du cadre proposant la sanction, celui de l’Officier adjoint psychologue. Elles sont dûment enregistrées et classées au dossier individuel de l’intéressé.\n\n24. – L’isolement punitif comporte pour l’individu sanctionné la possibilité d’effectuer une promenade surveillée en plein air, d’une heure par jour.\n\n25. – Les internés transférés dans une Section ou dans un Centre spécialisé seront soumis à une garde et à une discipline strictes, adaptées à leur comportement individuel ou collectif. Les conditions matérielles dans lesquelles ils seront placés ne doivent pas être différentes de celles des autres internés.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-38",
+    "sourceImage": "38-20260108_113830.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Général Commandant le Corps d’Armée ou par l’Officier Inspecteur désigné par ses soins.",
+        "issue": "nom_propre_incertain",
+        "note": "Bien que les titres semblent clairs sur l'image, toute identification de personnes ou organismes doit être notée en incertitude par principe requis.",
+        "suggestion": "Lecture conforme à l’image, mais prudence nécessaire sur les titres propres."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "III.- DEPOT DES OBJETS ET FONDS PERSONNELS\n\n31.- Dès son arrivée au Centre, l'interné est fouillé et se voit retirer les objets dangereux, les papiers et documents divers dont il est porteur, à l'exception toutefois des documents, lettres et photos de caractère familial. \n\nUn procès-verbal de prise en charge est établi et signé par le gradé préposé au retrait et par le propriétaire. Si celui-ci ne peut signer, il appose l'empreinte de ses deux index. En cas de refus de signer, mention en est faite au P.V.\n\nUne nouvelle fouille est effectuée chaque fois qu'un interné revient au C.M.I. après l'avoir quitté pour hospitalisation ou pour tout autre motif.\n\n32.- Chaque interné est tenu de déposer également la totalité de l'argent dont il est détenteur. Conformément à la N.D.S. 1925/3/DIAS/CCFA du 9.9.1960, une fiche individuelle de dépôt est établie au nom de l'intéressé et créditée en conséquence.\n\nLes opérations réalisées sont reproduites sur le carnet de caisse collectif des fonds particuliers. L'hébergé certifie sur la fiche individuelle l'exactitude de la somme déposée (signature ou index), en présence de deux témoins qui signent également.\n\nLa même procédure est appliquée lors de chaque réception (envoi ou retrait de fonds). Les virements de compte à compte sont interdits.\n\nIV.- COURRIER - MANDATS - COLIS\n\n41.- Les internés peuvent recevoir (ou expédier) des lettres, mandats et colis divers sous réserve d'un contrôle systématique préalable. Le courrier est remis individuellement à chaque assigné.\n\n42.- La correspondance, de préférence rédigée en français, devra se limiter à des nouvelles d'ordre personnel, familial ou professionnel. Les lettres contenant des indications de nature politique ou de caractère subversif sont censurées ou retenues et classées au dossier des intéressés.\n\n43.- Les journaux ou périodiques sont, en principe, interdits, sauf ceux portés sur une liste approuvée et contrôlée par le Général Commandant le Corps d'Armée, et affichée dans le camp. En cas d'urgence, l'Officier Commandant le camp garde l'initiative de censurer tout périodique ou journal d'actualité ou non, jugé nocif par l'Officier psychologue.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-39",
+    "sourceImage": "39-20260108_113843.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "N.D.S. 1925/3/DIAS/CCFA du 9.9.1960",
+        "issue": "sigle_incertain",
+        "note": "La lecture du sigle N.D.S. et des lettres dans la référence administrative est plausible mais la typographie pourrait prêter à confusion avec certains caractères dans l'image.",
+        "suggestion": "Vérifier dans l'image la correspondance exacte des lettres du sigle et la date."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "l'Officier psychologue",
+        "issue": "nom_propre_incertain",
+        "note": "Le texte mentionne que le jugement est fait par \"l'Officier psychologue\", le rôle exact peut être sujet à interprétation.",
+        "suggestion": "L'appellation du poste est plausible mais doit être vérifiée selon la source image, absence de nom propre précis."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "V.- DROIT DE VISITE FAMILIALE\n\n51.- Les hébergés ont droit, en principe, à compter du deuxième mois de séjour en C.M.I. à deux visites familiales par mois.\n\n52.- Les visites sont réservées aux conjoints, parents en ligne directe ou proches collatéraux qui devront obtenir l'autorisation de l'Officier Commandant le Centre.\n\nVI.- EMPLOIS DU TEMPS\n\n61.- Les heures de lever, de coucher, du couvre-feu et des repas sont fixées, selon la saison et les jours, par le Commandant du Camp.\n\n62.- Des emplois du temps particuliers précisent l'horaire et les activités utilitaires, éducatives ou distractives prescrites aux assignés des diverses catégories et sections.\n\nVII.- TRAVAIL\n\n71.- Le travail est obligatoire et fixé à une durée quotidienne de 8 heures, conformément aux prescriptions du Mémento 6.790/CM.\n\n72.- Il est adapté aux capacités physiques et, autant que possible, aux connaissances professionnelles ou pré-professionnelles des internés. Les activités utilitaires et rééducatives doivent être coordonnées dans la perspective d'un reclassement social ultérieur.\n\n73.- Les internés sont employés à des travaux d'intérêt commun ou divers, à l'intérieur du Centre ou à proximité. Des prestations de services peuvent être fournies à l'unité support, par roulement.\n\nConformément aux prescriptions de l'article 3 du Décret 56.274 du 17.3.56, les internés peuvent également être utilisés à des prestations de main-d'œuvre destinées à réparer des dommages causés aux biens publics ou privés par les rebelles.\n\n74.- Les internés envoyés par groupes à l'extérieur du C.M.I. pour exécuter des travaux de plus ou moins longue durée sont placés sous la responsabilité du Commandant d'Unité qui en assure l'emploi. Ce dernier devra recevoir du Commandant du C.M.I. toutes précisions sur le régime à leur appliquer. Un moniteur gradé appartenant au C.M.I. accompagnera chaque détachement.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-40",
+    "sourceImage": "40-20260108_113858.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "V.- DROIT DE VISITE FAMILIALE ... VII.- TRAVAIL",
+        "issue": "lecture_probable",
+        "note": "La quasi-totalité du texte est clairement confirmée par l'image, mais il subsiste toujours une part d'incertitude mineure propre à ce type de transcription qui interdit de la valider complétement.",
+        "suggestion": "Lecture fidèle à l'image ; toute incertitude résiduelle semble intrinsèquement faible."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "main-d'œuvre destinées à réparer des dommages causés aux biens publics ou privés par les rebelles.",
+        "issue": "mot_illisible",
+        "note": "Le mot 'rebelles' à la toute fin de l'avant-dernier paragraphe est bien lisible sur l'image, mais en contexte archivistique, il est recommandé de signaler les mots sensibles ou potentiellement sujets à ambiguïté.",
+        "suggestion": "Mot recopié d'après image ; faible risque d'erreur mais prudence d'usage."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "VIII. – DISTRACTIONS\n\n81. – La discipline prescrite aux internés ainsi que les diverses activités n’excluent pas la possibilité de jeux collectifs d’extérieur ou d’intérieur tendant à une détente physique et morale dans une ambiance favorable.\n\n82. – L’éducation physique et les jeux sportifs seront encouragés et prévus à l’emploi du temps.\n\n83. – Des séances de cinéma pourront être réalisées les jours de repos, ainsi que diverses séances récréatives.\n\n84. – Ces diverses activités de détente, ainsi que la durée des pauses-repos seront toujours planifiées par l’Officier psychologue adjoint au Commandant du Camp, qui les propose à la décision du Commandant.\n\nIX. – ACTION MORALE, CIVIQUE ET CULTURELLE\n\n91. – Les activités morales, civiques et culturelles sont réglées par des emplois du temps proposés par l’Officier adjoint psychologue au Commandant du Camp. Dans le cadre de ces activités, des classes et des ateliers fonctionnent et des jardins sont entretenus. Le temps consacré à ces activités est compté dans les heures de travail.\n\nDes causeries, discussions et projections sont organisées avec tous moyens pédagogiques appropriés.\n\nX. – BIBLIOTHEQUE\n\n101. – Une bibliothèque est aménagée au profit des internés. Elle est composée de livres soumis à la censure de l’Officier psychologue. La liste de ces ouvrages, arrêtée par le Commandant du Centre, sera périodiquement contrôlée par le Général Commandant le Corps d’Armée.\n\n102. – La lecture est autorisée, outre le jour de repos, à certaines heures de détente fixées par le règlement intérieur.\n\nXI. – FOYER\n\n111. – Dans chaque camp fonctionne un foyer où les internés ont accès pour consommer ou acquérir de menus objets d’utilisation courante.\n\n112. – Le Commandant du Centre demeure responsable de sa gestion.\n\n113. – Les bénéfices sont utilisés pour fournir des secours soit aux internés chargés de famille, soit aux libérables.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-41",
+    "sourceImage": "41-20260108_113919.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Commandant du Centre, sera périodiquement contrôlée par le Général Commandant le Corps d’Armée",
+        "issue": "nom_propre_incertain",
+        "note": "L'image indique clairement le texte mais l'identification précise du ou des Corps d'Armée impliqués n'est pas certaine sans contexte externe.",
+        "suggestion": "Lecture littérale fidèle au document, validation du nom par l'image mais sens exact institutionnel incertain sans vérification supplémentaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "XII. – NOURRITURE\n\n121. – Dans la limite du montant de la prime d’alimentation, la nourriture est fournie aux internés, sous la responsabilité de l’Officier administratif adjoint au Commandant du Centre, par le gradé gestionnaire. Les repas, y compris la boisson, seront toujours corrects tant pour la quantité que pour la qualité et pour la préparation, à laquelle participent un certain nombre d’internés sélectionnés comme cuisiniers (en principe un pour 50 assignés).\n\nXIII. – RELIGION\n\n131. – Les pratiques religieuses sont librement autorisées et respectées. Elles le sont toutefois à titre individuel et ne doivent pas donner lieu à divers rassemblements ou manifestations collectives.\n\n132. – Durant le mois de Ramadan, l’horaire de travail est allégé en conséquence, à l’initiative du Commandant du Centre.\n\nXIV. – TENUE DES INTERNES\n\nLes vêtements distribués aux internés doivent être simples mais corrects. La tenue doit être uniforme et adaptée à la saison ou à la température. Une marque voyante distinctive sera portée au dos de la veste.\n\nXV. – HYGIENE\n\n151. – Toutes mesures seront prescrites pour faire respecter les règles de l’hygiène corporelle, vestimentaire, et pour assurer la salubrité des locaux.\n\n152. – Les soins quotidiens de propreté doivent être respectés par tous les internés auxquels seront fournis les moyens (savon, eau courante, douche systématique chaque semaine).\n\nLes soins de coiffure devront pouvoir être donnés régulièrement. Les internés doivent pouvoir laver leur linge chaque semaine.\n\n153. – Une désinfection systématique des locaux (réfectoires, dortoirs, blocs sanitaires...) sera assurée chaque mois.\n\n154. – Les Commandants de C.M.I. veilleront d’une façon particulière à la propreté générale du camp et à la stricte application des règles d’hygiène individuelle et collective prescrites ci-dessus.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-42",
+    "sourceImage": "42-20260108_113950.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Officier administratif adjoint au Commandant du Centre",
+        "issue": "mot_illisible",
+        "note": "Le mot 'adjoint' était mal reconnu dans l'OCR (adminiS-tratif adjoi...); confirmé par l’image, mais le trait d’union peut masquer une coupure, lecture probable.",
+        "suggestion": "Lecture conforme à l’image mais avec réserve sur la disposition exacte du trait d’union."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Commandants de C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle C.M.I. est clairement visible sur l’image mais non développé, donc incertitude sur sa signification exacte.",
+        "suggestion": "Reproduction fidèle du texte sans tentative de deviner la signification du sigle."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Une marque voyante distinctive sera portée au dos de la veste.",
+        "issue": "lecture_probable",
+        "note": "Texte confirmé par l’image, malgré une zone légèrement floue.",
+        "suggestion": "Lecture haute confiance, transcription conforme à la source."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "XVI. - SOINS MEDICAUX\n\n161. - Les internés ont droit aux contrôles et aux soins médicaux.\nLe Service de Santé est placé sous la direction du médecin militaire de l'Unité administrative de soutien qui effectue les visites conformément aux prescriptions de la Note 164/CM du 12.1.1961.\nL'horaire et les modalités de ces visites sont fixés par des règlements particuliers portés à la connaissance des internés.\n\n162. - Les résultats de la visite systématique de dépistage à l'arrivée et ceux des autres visites sont portés sur les fiches médicales individuelles.\nUne infirmerie fonctionne dans le camp. Elle est équipée pour dispenser les soins courants ou immédiats (maladies bénignes, accidents sans gravité, premiers soins) et elle dispose d'une salle d'isolement.\n\n163. - L'hospitalisation est décidée par le Médecin militaire du Centre ou, en cas d'extrême urgence, sur ordre du Commandant du Camp.\nLe régime des internés hospitalisés est précisé par la note 194 CAB/J du 11 Mars 1961.\n\n164. - Les soins dentaires seront donnés soit au Centre même, soit à l'extérieur, suivant le cas.\n\nXVII. - CAS DE DECES\n\n171. - En cas de décès d'un interné, l'Officier Commandant le C.M.I., conformément à l'article 84 du Code Civil, avise sans délai le Maire intéressé ainsi que la famille, les Autorités préfectorales et militaires intéressées.\nL'inventaire des vêtements personnels, objets et fonds, authentifié par le Commandant du Centre, est adressé au Maire avec l'indication du dernier domicile connu, pour remise à la famille.\nLe Préfet du Département ayant pris l'arrêté d'assignation reçoit avec l'avis de décès, le rapport du médecin militaire du camp qui précise la cause du décès.\n\n172. - En cas de décès survenu dans un établissement hospitalier, l'Officier commandant le Centre demande un rapport au Médecin-Chef de cet établissement et l'adresse aux autorités civiles et militaires intéressées.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-43",
+    "sourceImage": "43-20260108_114039.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "CAB/J du 11 Mars 1961.",
+        "issue": "sigle_incertain",
+        "note": "La mention precise du sigle 'CAB/J' et la date '11 Mars 1961' apparaissent clairement sur l'image, mais l'interprétation du sigle mérite prudence sans contexte.",
+        "suggestion": "Ce sigle et cette date semblent plausibles à la lecture, mais une vérification contextuelle serait utile."
+      },
+      {
+        "confidence": "high",
+        "fragment": "l'Officier Commandant le C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle 'C.M.I.' est lu avec une grande confiance, mais sa signification exacte reste incertaine.",
+        "suggestion": "Citer le sigle comme tel sans supposer ce qu'il signifie."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Pour les autres formalités il applique la procédure prescrite précédemment à l'article 171.\n\n173.- En cas de suicide ou de mort violente ou si la cause du décès paraît suspecte, l'Officier commandant le Camp alerte sans délai les Autorités judiciaires (Gendarmerie). — Une copie du P.V. de gendarmerie est classée dans le dossier personnel et une enquête est effectuée.\n\nPour les autres formalités, il applique la procédure prescrite précédemment à l'article 171.\n\nXVIII. — APPRECIATIONS CONCERNANT LES INTERNES\nEN VUE DE LEUR LIBERATION EVENTUELLE\n\nLes internés doivent être notés chaque mois par les moniteurs d'encadrement et chaque trimestre par l'Officier psychologue.\n\nLes notes trimestrielles complétées par l'avis du Commandant du C.M.I. sont consignées au dossier individuel de l'intéressé.\n\nElles doivent permettre à la Commission Régionale d'Examen des assignés en C.M.I. d'arrêter, en parfaite connaissance de cause, ses propositions de libération.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-44",
+    "sourceImage": "44-20260108_114100.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "le Cemp",
+        "issue": "mot_illisible",
+        "note": "L'image indique 'Camp' et non 'Cemp'.",
+        "suggestion": "Probablement 'Camp' et non 'Cemp'."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "P.V. de gendermerie",
+        "issue": "mot_illisible",
+        "note": "L'OCR donne 'gendermerie', l'image montre 'gendarmerie'.",
+        "suggestion": "Très probable que ce soit 'gendarmerie'."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "C.H.I.",
+        "issue": "sigle_incertain",
+        "note": "L'OCR lit 'C.H.I.', l'image a 'C.M.I.'.",
+        "suggestion": "Il semble que le bon sigle soit 'C.M.I.'."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "connaissance de ceuse",
+        "issue": "mot_illisible",
+        "note": "L'image indique clairement 'cause' et non 'ceuse'.",
+        "suggestion": "Très probable que ce soit 'cause'."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "-RAPPORT-\n\ndu Capitaine PASCIUTO, Chef du 2ème Bureau du Secteur de BOGHARI, concernant l'usage des armes par le personnel de garde du C.M.I. du Camp MORAND (BOGHARI)\n\n------------------COPIE-----------------\n\nDe l'enquête menée le 21 Avril 1961 sur les conditions dans lesquelles le personnel de garde du C.M.I. a été appelé à faire usage des armes, il ressort que:\n\nI.- AFFAIRE POUGET :\n\n- Accident causé par arme à feu ayant entraîné la mort des P.A.M. MEZIR Ali et MEZZIANE Kaddour.\nAprès étude du dossier de l'affaire POUGET et de l'audition de l'intéressé, complétés par l'examen des lieux de l'accident, la conclusion suivante peut être dégagée.\n\nA/ CIRCONSTANCES DE L'ACCIDENT :\n\nLes circonstances de l'accident peuvent être considérées comme purement accidentelles et la bonne foi du 2° Classe POUGET ne saurait être mise en cause dans cet accident.\nLe geste de la sentinelle sous les armes semble devoir être admis pour les motifs suivants :\n\nL'appel des prisonniers se passait dans les formes réglementaires et aucune faute n'a pu être relevée au cours de l'enquête.\nPOUGET était chargé de faire refermer les portes des chambres après l'appel passé par le Caporal-chef de jour, ce qui fut fait d'ailleurs pour les trois premières chambres.\nUne fois l'appel terminé dans la chambre des P.A.M. MEZIR et MEZZIANE, POUGET voulut fermer la porte comme le prescrivait le règlement intérieur, c'est alors que le P.A.M. MEZIR s'opposa à la fermeture en retenant la porte par la poignée.\nPOUGET ordonna donc au P.A.M. de fermer la porte, immédiatement. Non seulement le P.A.M. obtempéra, mais encore fit-il des avances d'ordre sexuel à la sentinelle, ce qui exaspéra cette dernière.\nPOUGET arma ainsi le fusil garant qu'il avait en sa possession (1) dans le seul but de faire peur au P.A.M. MEZIR. Par un hasard malencontreux la détente du fusil entra en contact avec la cartouchière droite que l'intéressé avait à son ceinturon et le coup partit, tuant ainsi les deux P.A.M. précités.\n\nB/ Discipline intérieure du camp :\n\nL'appel se faisant conformément au règlement intérieur du camp, il semble qu'aucune faute ne puisse être retenue contre le personnel de garde du C.M.I.\n\n(1) les armes sont en permanence approvisionnées mais non armées.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-45",
+    "sourceImage": "45-20260108_114134.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "P.A.M. MEZIR Ali et MEZZIANE Kaddour",
+        "issue": "nom_propre_incertain",
+        "note": "La lisibilité des noms propres repose sur l'image, ils semblent corrects mais un doute subsiste toujours sur les majuscules et l'accentuation.",
+        "suggestion": "Vérification par confrontation à d'autres sources si une validation est requise."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Camp MORAND (BOGHARI)",
+        "issue": "lieu_incertain",
+        "note": "Le nom du camp et la localité sont lisibles et semblent plausibles, mais il existe une légère ambiguïté sur la lecture exacte.",
+        "suggestion": "Vérifier sur d'autres documents ou la page suivante."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "21 Avril 1961",
+        "issue": "date_incertaine",
+        "note": "La date est visible sur l'image mais l'année pourrait être lue différemment sur d'autres copies ou versions archivées.",
+        "suggestion": "À valider sur d'autres documents du même dossier si nécessaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "P.A.M.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle est net dans le document, mais sa signification exacte n'est pas précisée ici. L'acronyme est probable mais non certain.",
+        "suggestion": "Préciser le sens du sigle via contexte externe si une validation est requise."
+      },
+      {
+        "confidence": "low",
+        "fragment": "avances d'ordre sexuel à la sentinelle",
+        "issue": "lecture_probable",
+        "note": "La phrase est lisible mais certains caractères sont potentiellement ambigus à l'image (ponctuation). Lecture probable mais à confirmer.",
+        "suggestion": "Nouvelle vérification manuelle sur la zone."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "2.– AFFAIRE SENOUCI Maamar :\n\nP.A.M. abattu par le personnel du poste de police du quartier des irréductibles au camp MORAND (BOGHARI)\n\nL'audition du caporal-chef MONTLUC Maurice et de la sentinelle JANSSENS et l'examen des lieux où le P.A.M. SENOUCI Maamar fut abattu, permettent de faire ressortir les points suivants :\n\n– les sentinelles étaient effectivement à leur postes au moment où le P.A.M. SENOUCI Maamar tenta de s'évader en franchissant le concertina qui barrait l'entrée du quartier des irréductibles, fait expliqué par le peu de distance parcouru par le P.A.M. (30 mètres environ à l'extérieur du camp) avant d'être abattu.\n\n– les sommations réglementaires ayant été faites au fuyard l'ouverture du feu s'imposait étant donné l'heure tardive à laquelle se déroulait le fait (20 H. 30)\n\nEn conclusion, il semble que le caporal-chef MONTLUC et la sentinelle JANSSENS n'ont fait qu'appliquer strictement le règlement et qu'aucune faute ne peut être relevée à l'encontre de la discipline intérieure du C.M.I.\n\nS.P. 87.957 à BOGHARI le 22 Avril 1961\n\nSigné : ......",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-46",
+    "sourceImage": "46-20260108_114147.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "C.M.I.",
+        "issue": "sigle_incertain",
+        "note": "Le sigle apparait clairement à l'image, mais aucune explication n'est donnée dans le document. L'OCR a correctement transcrit ce fragment.",
+        "suggestion": "Lecture probable du sigle, sans pouvoir garantir sa signification exacte à partir des seules sources disponibles."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Signé : ......",
+        "issue": "mot_illisible",
+        "note": "Le(s) nom(s) du ou des signataires ne sont pas visibles sur l'image, uniquement une ligne de points.",
+        "suggestion": "Se limiter à \"Signé : ......\" sans tenter de compléter l'identité."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ANNEXE I\n\nCorps d'Armée et\nRégion Territoriale\n.... Division et Zone ....\nSecteur de ..........\n\nNOTICE DE RENSEIGNEMENTS\n\nNom et prénoms :\nDate et lieu de naissance :          et de :\nFils de :\nProfession :\nDomicile :\nSituation de famille :\nServices militaires :\nDécorations :\nDegré d'instruction :\nSituation de fortune :\nAntécédents professionnels :\nAntécédents judiciaires :\nInfluence\n    - privée :\n    - professionnelle :\nInfluence\n    - de l'intéressé :\n    - de sa famille :\nMandats électifs :\nAttitude politique :\n    - passée :\n    - récente :\nRelations connues :\n\nCirconstances ayant motivé l'arrestation (à remplir par le 2° Bureau de Secteur.)\n\nPhotographie    Empreintes digitales",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-47",
+    "sourceImage": "47-20260108_114316.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": ".... Division et Zone .... / Secteur de ..........",
+        "issue": "lecture_probable",
+        "note": "Les points de suspension et le format de la ligne ne sont pas parfaitement nets sur l'image et pourraient varier légèrement selon l'original.",
+        "suggestion": "Une vérification matérielle est recommandée pour confirmer l'espacement exact et le nombre de points."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Photographie    Empreintes digitales",
+        "issue": "lecture_probable",
+        "note": "L'image montre un espacement important entre les deux cadres, l'alignement exact des mots n'est pas garanti par la lecture assistée.",
+        "suggestion": "Confirmer la disposition finale sur l'original lors d'une validation humaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Degré d'instruction / Situation de fortune",
+        "issue": "mot_illisible",
+        "note": "Ces lignes n'apparaissaient pas du tout dans l'OCR mais sont lisibles sur l'image. Lecture recopiée depuis l'image.",
+        "suggestion": "Adopté comme probable, mais une relecture soignée sur original reste à faire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Notice de Renseignements (verso)\n\nAvis du Commandant de Quartier :\n\n______________________________________\n\nAvis de l'État-Major de Secteur :\n2ème Bureau :       3ème Bureau :\n\n______________________________________\n\nDécision du Commandant de Secteur :\n\nPositions successives de l'intéressé :\nArrêté le .................. à .........................\n\nCentre de Passage de :\nEntré le :\nSorti le :\nDirigé sur :\n\nCentre de Triage et de Transit : ..................\nEntré le :\nSorti le :\nDestination à la sortie :\nObservations faites pendant le séjour :\n\n______________________________________\n\nAutres décisions : (Renouvellements, mutations, etc...).",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-48",
+    "sourceImage": "48-20260108_114355.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Notice de Renseignements (verso)",
+        "issue": "lecture_probable",
+        "note": "La lecture est confirmée entre l'image et l'OCR.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "Avis du Commandant de Quartier :",
+        "issue": "lecture_probable",
+        "note": "Lecture certaine, l'image est nette.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "Avis de l'État-Major de Secteur : 2ème Bureau : 3ème Bureau :",
+        "issue": "lecture_probable",
+        "note": "Lecture visuellement confirmée.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "Positions successives de l'intéressé : Arrêté le .................. à .........................",
+        "issue": "mot_illisible",
+        "note": "Les pointillés indiquent que les informations concrètes étaient à compléter. Aucun mot illisible dans le formulaire.",
+        "suggestion": "Les zones pointillées sont des espaces à compléter, non des mots illisibles."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Centre de Passage de : Entré le : Sorti le : Dirigé sur :",
+        "issue": "lecture_probable",
+        "note": "Correspondance exacte entre OCR et image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "Centre de Triage et de Transit : .................. Entré le : Sorti le : Destination à la sortie : Observations faites pendant le séjour :",
+        "issue": "lecture_probable",
+        "note": "Lecture vérifiée et nette.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "Autres décisions : (Renouvellements, mutations, etc...).",
+        "issue": "lecture_probable",
+        "note": "Lecture confirmée sur l'image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Décision du Commandant de Secteur :",
+        "issue": "lecture_probable",
+        "note": "Lecture probable car sur l'image le mot « Secteur » semble typographiquement altéré (le S est en partie surchargé/touché), mais la correspondance contextuelle permet de déduire correctement.",
+        "suggestion": "Confirmer avec une inspection humaine approfondie."
+      }
+    ]
+  }
+]

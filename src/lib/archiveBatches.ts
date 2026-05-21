@@ -18,6 +18,12 @@ import lotRenseignementsDz1964001AssistedReadings from "../../data/generated/bat
 import lotRenseignementsDz1964001PublicAssets from "../../data/generated/batches/lot-renseignements-dz-1964-001/public-assets.json";
 import lotBoghariVisiteFichesLiaison1959001AssistedReadings from "../../data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/assisted-readings.json";
 import lotBoghariVisiteFichesLiaison1959001PublicAssets from "../../data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/public-assets.json";
+import lotGeneralDurand1h1239001AssistedReadings from "../../data/generated/batches/lot-general-durand-1h1239-001/assisted-readings.json";
+import lotGeneralDurand1h1239001PublicAssets from "../../data/generated/batches/lot-general-durand-1h1239-001/public-assets.json";
+import lotJuifsAlgeriensLutteAnticoloniale001AssistedReadings from "../../data/generated/batches/lot-juifs-algeriens-lutte-anticoloniale-001/assisted-readings.json";
+import lotJuifsAlgeriensLutteAnticoloniale001PublicAssets from "../../data/generated/batches/lot-juifs-algeriens-lutte-anticoloniale-001/public-assets.json";
+import lotExemplesAmicaleGenealogistesShd001AssistedReadings from "../../data/generated/batches/lot-exemples-amicale-genealogistes-shd-001/assisted-readings.json";
+import lotExemplesAmicaleGenealogistesShd001PublicAssets from "../../data/generated/batches/lot-exemples-amicale-genealogistes-shd-001/public-assets.json";
 import tiaretZaouiasAssistedReadings from "../../data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json";
 import tiaretZaouiasPublicAssets from "../../data/generated/batches/lot-tiaret-zaouias-001/public-assets.json";
 import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
@@ -124,6 +130,12 @@ const assetManifestRegistry: Record<string, AssetManifest> = {
     lotRenseignementsDz1964001PublicAssets as AssetManifest,
   "data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/public-assets.json":
     lotBoghariVisiteFichesLiaison1959001PublicAssets as AssetManifest,
+  "data/generated/batches/lot-general-durand-1h1239-001/public-assets.json":
+    lotGeneralDurand1h1239001PublicAssets as AssetManifest,
+  "data/generated/batches/lot-juifs-algeriens-lutte-anticoloniale-001/public-assets.json":
+    lotJuifsAlgeriensLutteAnticoloniale001PublicAssets as AssetManifest,
+  "data/generated/batches/lot-exemples-amicale-genealogistes-shd-001/public-assets.json":
+    lotExemplesAmicaleGenealogistesShd001PublicAssets as AssetManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/public-assets.json":
     tiaretZaouiasPublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
@@ -147,6 +159,12 @@ const assistedReadingManifestRegistry: Record<string, AssistedReadingManifest> =
     lotRenseignementsDz1964001AssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-boghari-visite-fiches-liaison-1959-001/assisted-readings.json":
     lotBoghariVisiteFichesLiaison1959001AssistedReadings as AssistedReadingManifest,
+  "data/generated/batches/lot-general-durand-1h1239-001/assisted-readings.json":
+    lotGeneralDurand1h1239001AssistedReadings as AssistedReadingManifest,
+  "data/generated/batches/lot-juifs-algeriens-lutte-anticoloniale-001/assisted-readings.json":
+    lotJuifsAlgeriensLutteAnticoloniale001AssistedReadings as AssistedReadingManifest,
+  "data/generated/batches/lot-exemples-amicale-genealogistes-shd-001/assisted-readings.json":
+    lotExemplesAmicaleGenealogistesShd001AssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json":
     tiaretZaouiasAssistedReadings as AssistedReadingManifest,
   "data/generated/pilot-batch-assisted-readings.example.json":

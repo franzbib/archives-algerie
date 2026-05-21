@@ -1,0 +1,1758 @@
+[
+  {
+    "assistedReadingText": "Recherche : juifs algériens et la guerre d'algérie\n\nVidéo principale :\nTitre : Ces JUIFS Algériens qui se sont battus pour l'indépendance de l'Algérie !!!\nChaîne : DZ Info News\nAbonnés : 4,54 k abonnés\nVues : 112 k vues - il y a 1 an #algérie #algerie #dz\nDécoupage vidéo :\n00:00 - Introduction\n00:27 - Jean Pierre Saïd ... afficher plus\n\nImage vidéo :\nCouverture, photographie ancienne d'un groupe, titre surimposé : \"Juifs d'Algérie\"\n\nSuggestions à droite (sélection, titres et chaînes) :\n- Enrico MACIAS se confie sur l'Algérie, Marine Le Pen et les... (Erwiné, 377 k vues - il y a 8 ans)\n- Les juifs d'Algérie, du décret Crémieux à l'exil Algérie-France... (Mucem, 234 k vues - il y a 3 ans)\n- WALDO DE LOS RIOS GRANDES EXITOS Canal Cecilgonzalez (112 k vues - il y a 3 mois)\n- Témoignages rares de chibanis dans leur quotidien, 60 ans... (France 3 Provence-Alpes-Côte d'Azur, 676 k vues - il y a 2 ans)\n- 60 ans de l'exode des Juifs d'Algérie l'année prochaine (4NEWS Français, 87 k vues - il y a 3 ans)\n- Propos Jean-Michel Aphatie : \"Il veut créer un sentiment de...\" (Europe 1, 28 k vues - il y a 4 jours)\n- LE JUDAÏSME D'ALGÉRIE (C'est Pas Sorcier ! Tocah-Box, 290 k vues - il y a 3 ans)\n- Music of Ennio Morricone\n\n(Ajout d'autres titres visibles sur l'image mais difficilement lisibles : lecture incertaine pour ces fragments)\n\nBoutons sous la vidéo : J'aime (1,8k), Partager, Télécharger, Clip.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-01",
+    "sourceImage": "01-20250302_154726.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Certains noms propres de chaînes ou titres de vidéos sur la droite sont tronqués ou partiellement masqués sur l'image",
+        "issue": "nom_propre_incertain",
+        "note": "L'image n'est pas assez nette pour garantir l'exactitude complète de chaque titre dans la liste de suggestions YouTube. Par exemple, le nom de la chaîne après \"Cecilgonzalez\" sur la vignette verte est incertain.",
+        "suggestion": "Transcription partielle ou approximative uniquement pour ces titres et noms de chaînes."
+      },
+      {
+        "confidence": "low",
+        "fragment": "\"… N ‘\\à‘\\“\\‘\\“‘…“……………H…\\W | 'Hm “‘u ‘…W“ | 7722N Enrico MACIAS ze corée ux / < l'Algérie, Marine Le Pen e ls …\" (début OCR)",
+        "issue": "mot_illisible",
+        "note": "Ce passage du début de l'OCR ne correspond pas à un texte lisible sur la capture d'écran fournie. Cela semble être une reconstruction incorrecte par l'OCR.",
+        "suggestion": "Passer outre ces fragments illisibles et s'en tenir à ce qui est visuellement identifiable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "\"00:27 - Jean Pierre Saïd ... afficher plus\"",
+        "issue": "nom_propre_incertain",
+        "note": "Bien que lisible sur l'image, sans confirmation indépendante du nom propre. La ponctuation ou la terminaison du nom pourrait différer.",
+        "suggestion": "Lecture probable d'après l'image, marqué incertain faute de recoupement."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Ces JUIFS Algériens qui se sont battus pour l'indépendance de l'Algérie !!!\n\nDZ Info News\n4,54 k abonnés\n\n112 404 vues 7 mai 2023 #algérie #algerie #dz\nCes JUIFS Algériens qui se sont battus pour l'indépendance de l'Algérie\n00:00 - Introduction\n00:27 - Jean Pierre Saïd\n01:33 - Daniel Timsit\n02:23 - Pierre Ghenassia\n03:24 - Alice Cherki\n04:06 - Adolfo Kaminsky",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-02",
+    "sourceImage": "02-20250302_154823.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Jean Pierre Saïd, Daniel Timsit, Pierre Ghenassia, Alice Cherki, Adolfo Kaminsky",
+        "issue": "nom_propre_incertain",
+        "note": "Présence de plusieurs noms propres d'après l'image ; tous sont issus de l'image, mais il reste possible que certains soient sujets à erreur de transcription. Les noms semblent lisibles mais doivent être confirmés avec une lecture attentive et croisée.",
+        "suggestion": "Ces noms sont probablement corrects d'après l'image, mais une petite incertitude demeure."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "DZ Info News",
+        "issue": "sigle_incertain",
+        "note": "L'expression 'DZ Info News' est visible en surimpression sur l'image ; le sigle DZ se réfère généralement à l'Algérie, mais cette interprétation doit être validée dans un autre contexte.",
+        "suggestion": "La lecture du sigle est probable mais non absolument certaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "7 mai 2023",
+        "issue": "date_incertaine",
+        "note": "La date '7 mai 2023' semble être la date de publication mentionnée sous la vidéo, selon l'image. Toutefois, la précision de cette date reste à confirmer sans croisement supplémentaire.",
+        "suggestion": "Lecture probable, mais vérification souhaitable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "SOYEZ LES MIEUX INFOR",
+        "issue": "mot_illisible",
+        "note": "L'image est partiellement coupée et ne permet pas de lire la suite de cette phrase.",
+        "suggestion": "Le texte complet semble être 'SOYEZ LES MIEUX INFORMÉS', mais cette lecture ne peut être assurée ici."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Pierre-Jean Le Foll-Luciani\nLes juifs algériens dans la lutte anticoloniale\nTrajectoires dissidentes (1934-1965)\nPresses Universitaires de Rennes",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-03",
+    "sourceImage": "03-20251216_125558.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Pierre-Jean Le Foll-Luciani",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est lisible sur l'image mais reste sujet à une faute potentielle d'interprétation ; toutefois la lisibilité visuelle est élevée.",
+        "suggestion": "Lecture très probable basée sur l'image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Les juifs algériens dans la lutte anticoloniale",
+        "issue": "lecture_probable",
+        "note": "Le titre est clairement lisible visuellement.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "Trajectoires dissidentes (1934-1965)",
+        "issue": "date_incertaine",
+        "note": "Dates entre parenthèses lisibles sur l'image ; la formulation \"1934-1965\" est visuellement très probable.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Presses Universitaires de Rennes",
+        "issue": "mot_illisible",
+        "note": "La mention de l'éditeur en bas est partiellement masquée ou floue mais reste très reconnaissable comme formule standard d'éditeur.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Les juifs algériens\ndans la lutte anticoloniale",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-04",
+    "sourceImage": "04-20251216_125618.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Les juifs algériens\ndans la lutte anticoloniale",
+        "issue": "lecture_probable",
+        "note": "La lecture est très probable à partir de l'image. L'OCR ne reflète qu'une fraction du titre.",
+        "suggestion": "Lecture confirmée à partir de l'image, malgré la troncature de l'OCR."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "HISTOIRE\n\nPierre-Jean LE FOLL-LUCIANI\nLes juifs algériens dans la lutte anticoloniale\n\n« Pour nous qui venions à peine d’avoir l’âge de raison en ces jours d’humiliation, ces années de jeunesse ont à jamais marqué notre vie et c’est pourquoi nous sommes fiers de l’injure qu’on nous lançait comme un opprobre : oui, nous sommes des juifs indigènes algériens... Et après ? Vous n’aurez pas notre cœur contre un certificat de nationalité dont vous vous servez comme d’un couperet de guillotine. »\n\nDiffusées clandestinement durant la guerre d’indépendance, ces lignes ont été écrites en 1957 par des juifs algériens qui, nés citoyens français vers 1930, déchus de la citoyenneté française durant trois années et exclus de l’école sous Vichy, sont devenus des militants communistes algériens après la Seconde Guerre mondiale avant de rejoindre le FLN en 1956.\n\nDe l’entre-deux-guerres à l’indépendance de l’Algérie, une petite minorité de juifs issus de familles autochtones ont suivi des trajectoires comparables, les déplaçant en quelques années des projets sociaux ordinaires de leurs parents - faire de leurs enfants de bons Français plus ou moins juifs - vers le projet politique inouï de s’affirmer Algériens. Bouleversant l’ordre du monde colonial par leurs prises de position politiques, par leurs sociabilités transgressives et jusque dans leur intimité affective, ces hommes et ces femmes ont engagé leur vie pour une Algérie décolonisée et socialiste dont ils seraient citoyens, participant pleinement — mais non sans difficultés dans leur confrontation avec le nationalisme algérien dominant — au mouvement national, aux épreuves de la clandestinité et de la répression durant la guerre d’indépendance, et aux premières années de construction de l’Algérie indépendante.\n\nBasé sur des entretiens biographiques menés avec 40 anciens militants, sur des sources privées et sur des fonds d’archives souvent inexplorés, cet ouvrage met en lumière les ressorts de ces trajectoires dissidentes en les articulant à une réflexion générale sur le rapport des juifs algériens à la question coloniale. Au prisme de cette entrée minoritaire, il s’agit aussi de construire une histoire par le bas des juifs d’Algérie, du communisme algérien et, plus généralement, de la société algérienne colonisée et nouvellement indépendante.\n\nPierre-Jean Le Foll-Luciani est agrégé et docteur en histoire. Il a publié en 2012 aux PUR un livre d’entretiens avec William Sportisse, Le Camp des oliviers. Parcours d’un communiste algérien. Le présent ouvrage est issu de sa thèse de doctorat.\n\nEn couverture : Alger, 1947. Mireille Saïd (sage-femme expulsée d’Algérie en 1957), entourée de son neveu Pierre Ghenassia (lycéen mort dans un maquis de l’ALN en 1957), entrevue de sa fille Josette et de son fils Jean-Pierre (journaliste interné au camp de Lodi de 1956 à 1960).\n\nPublié avec le soutien de l’université Rennes 2\nwww.pur-editions.fr\nISBN 978-2-7535-4000-2\n25 €",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-05",
+    "sourceImage": "05-20251216_125719.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Le Foll-Luciani / Le ForL-LucIAnt (nom de l’auteur)",
+        "issue": "nom_propre_incertain",
+        "note": "L'OCR donne mal le nom de l’auteur. L’image semble bien indiquer 'LE FOLL-LUCIANI', mais la typographie, les majuscules et le possible traitement de l’image par l’OCR rendent la certitude moyenne.",
+        "suggestion": "Lecture probable : Le Foll-Luciani"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "RM DR U cCommunisme algerlell et plllS generalement, de la société alg€l 1enne COlOÏÏÏSéC | , et nouvellement indépendante.",
+        "issue": "mot_illisible",
+        "note": "L’OCR produit une phrase très déformée à ce passage ; la formulation exacte est difficile à garantir sans erreurs.",
+        "suggestion": "Lecture probable d’après l’image : 'du communisme algérien et, plus généralement, de la société algérienne colonisée et nouvellement indépendante.'"
+      },
+      {
+        "confidence": "high",
+        "fragment": "ISBN / prix / www.pur-editions.fr",
+        "issue": "lecture_probable",
+        "note": "Ces éléments sont bien lisibles à l’image mais sont apparus partiellement ou mal formatés dans l’OCR.",
+        "suggestion": "Lecture probable : 'Publié avec le soutien de l’université Rennes 2 www.pur-editions.fr ISBN 978-2-7535-4000-2 25 €'"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "En couverture : Alger, 1947. Mireille Saïd (sage-femme expulsée d’Algérie en 1957), entourée de son neveu Pierre Ghenassia (lycéen mort dans un maquis de l’ALN en 1957), entrevue de sa fille Josette et de son fils Jean-Pierre (journaliste interné au camp de Lodi de 1956 à 1960).",
+        "issue": "mot_illisible",
+        "note": "Ce passage, absent de l'OCR, est partiellement difficile à lire dans l’image (compression/ombre en bas de page). Lecture probable établie, mais prudence sur la ponctuation exacte et certains prénoms.",
+        "suggestion": "Adopter la lecture image, signaler les prénoms comme hautement probables mais non certains."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "LES JUIFS ALGÉRIENS DANS LA LUTTE ANTICOLONIALE\n\nIllustration 1. – Alger, 1947. Mireille Saïd, sage-femme qui sera expulsée d’Algérie en 1957, entourée de sa fille Josette, qui sera arrêtée par l’armée française en 1957, et de son neveu Pierre Ghenassia, qui mourra dans un maquis de l’ALN dix ans plus tard. À l’arrière-plan, son fils Jean-Pierre, qui sera détenu au camp de Lodi de 1956 à 1960.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-06",
+    "sourceImage": "06-20251216_130717.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Mireille Saïd, sage-femme ... expulsée d’Algérie en 1957",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'Mireille Saïd' est bien lisible sur l'image mais, sans contexte extérieur, on ne peut garantir à 100% l'identité.",
+        "suggestion": "Lecture fidèle à l'image"
+      },
+      {
+        "confidence": "high",
+        "fragment": "Pierre Ghenassia",
+        "issue": "nom_propre_incertain",
+        "note": "Nom lisible, mais incertitude toujours requise pour la transcription assistée.",
+        "suggestion": "Nom tel que sur l'image"
+      },
+      {
+        "confidence": "high",
+        "fragment": "L’ALN",
+        "issue": "sigle_incertain",
+        "note": "Le sigle ALN est net sur l'image, mais mentionné comme incertain par principe méthodologique.",
+        "suggestion": "Lecture probable : L'ALN"
+      },
+      {
+        "confidence": "high",
+        "fragment": "1947",
+        "issue": "date_incertaine",
+        "note": "Date visible sur l'image, mais toujours consignée comme hypothétique.",
+        "suggestion": "Lecture probable : 1947"
+      },
+      {
+        "confidence": "high",
+        "fragment": "camp de Lodi de 1956 à 1960",
+        "issue": "lieu_incertain",
+        "note": "Lieu et dates lisibles; déclaration par précaution.",
+        "suggestion": "Lecture probable : camp de Lodi, 1956 à 1960"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATION 2. — Constantine, 1914. Les enfants Guedj, filles et fils de rabbin, posent en costume local. Au premier plan à gauche, Rebecca Guedj, qui se mariera à Alger avec Jacob Timsit et donnera naissance à Meyer, Marguerite, Daniel, Huguette et Gabriel Timsit.\n\nILLUSTRATION 3. — Constantine, 1920. La famille Sportisse : le père, Simah, et les enfants (Lucien et Berthe en haut, Germaine, Suzanne et Bernard en bas) sont bilingues et habillés à l’européenne. La mère, Sarah Guedj (à gauche), et sa sœur Zahira, portent le vêtement local et ne s’expriment qu’en arabe.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-07",
+    "sourceImage": "07-20251216_130749.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Jacob Timsit",
+        "issue": "nom_propre_incertain",
+        "note": "La mention du nom propre semble conforme sur l'image, mais la typographie rend la certitude limitée.",
+        "suggestion": "Lecture probable mais à valider sur meilleure résolution."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Sportisse : le père, Simah, et les enfants (Lucien et Berthe en haut, Germaine, Suzanne et Bernard en bas)... La mère, Sarah Guedj (à gauche), et sa sœur Zahira",
+        "issue": "nom_propre_incertain",
+        "note": "Certains prénoms et noms peuvent présenter une légère incertitude en raison de la qualité de l'image, mais semblent cohérents. Lecture probable.",
+        "suggestion": "Une confirmation sur source indépendante serait nécessaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Zahira",
+        "issue": "nom_propre_incertain",
+        "note": "La mention Zahira, bien que lisible, comporte une légère incertitude de lecture de la première lettre.",
+        "suggestion": "Vérification recommandée sur original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "bilingues et habillés à l’européenne",
+        "issue": "mot_illisible",
+        "note": "Cette phrase est plus difficile à lire sur l'image et peut avoir subi une altération de l'OCR.",
+        "suggestion": "Lecture contextuelle appuyée sur l'image et l'OCR."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATION 4. – Constantine, 1957. Sidi Fredj Halimi, dit « Baba Laaziz » (1876-1957), grand rabbin de Constantine et grand-père maternel de Jean Beckouche.\n\nILLUSTRATION 5. – Constantine, années 1950. Fête familiale regroupant quatre générations autour de Sidi Fredj Halimi. À gauche, assis à la gauche de la sœur du grand rabbin (vêtue du vêtement local), les parents de Jean Beckouche, Michel Beckouche et Pauline Halimi.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-08",
+    "sourceImage": "08-20251216_130754.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Assis à la gauche de la sœur du grand rabbin (vêtue du vêtement local)",
+        "issue": "lecture_probable",
+        "note": "Le texte OCR fortement déformé sur cette section mais l'image permet de confirmer une lecture probable proche de celle-ci.",
+        "suggestion": "Utilisation de la photographie et d'une relecture visuelle pour suggérer ce passage malgré l'OCR confus."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jean Beckouche, Michel Beckouche et Pauline Halimi",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms sont possibles mais toujours sujets à précaution, car l'OCR subtilise parfois les lettres.",
+        "suggestion": "Confirmer avec une source additionnelle pour lever tout doute orthographique."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATION 17. — Constantine, 25 novembre 1945. Congrès régional des JC. Des jeunes communistes du département posent avec La Jeune Algérie. Debout, de gauche à droite : Abdelkader Belkhodja, Abdelaziz Rouigui, Youcef Briki, X, Bachir Djeroud, Élie Attali. Accroupis : Brahim Dekoumi, X, X, X.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-09",
+    "sourceImage": "09-20251216_130939.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Abdelaziz Rouigui",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est lu à partir de l'image ; il n'apparaît pas de façon claire dans l'OCR, mais il semble probable à partir de la photo.",
+        "suggestion": "Lecture basée sur l'image, incertitude sur l'exactitude du nom."
+      },
+      {
+        "confidence": "high",
+        "fragment": "X, X, X",
+        "issue": "nom_propre_incertain",
+        "note": "Le texte sur l'image indique clairement l'utilisation de 'X' pour des personnes non identifiées ou illisibles.",
+        "suggestion": "Reprendre tel quel sans supposer de noms."
+      },
+      {
+        "confidence": "high",
+        "fragment": "25 novembre 1945",
+        "issue": "date_incertaine",
+        "note": "Date lisible sur l'image, mais toujours considérée incertaine tant que non validée.",
+        "suggestion": "Proposée d'après l'image, à vérifier."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "JC",
+        "issue": "sigle_incertain",
+        "note": "Le sigle 'JC' est probablement 'Jeunesses Communistes', mais cela reste une hypothèse basée uniquement sur le texte proposé.",
+        "suggestion": "Conserver le sigle sans interprétation."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Illustration 19. — Boufarik, 22 avril 1946. Élie Chaïa, un cartable à la main, lors d’une tournée pour dynamiser l’UJDA. À gauche, Émile Adjedj.\n\nIllustration 20. — Sétif, été 1946. De gauche à droite : Ahmed Khellef (président de l’UJDA), Imnaouar Awadja (dirigeant local du PCA), William Sportisse (secrétaire régional de l’UJDA) et Ahmed Rabadj (dirigeant local de l’UJDA).",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-10",
+    "sourceImage": "10-20251216_131036.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Illustration 19. — Boufarik, 22 avril 1946. Élie Chaïa, un cartable à la main, lors d’une tournée pour dynamiser l’UJDA. À gauche, Émile Adjedj.",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture des noms propres est confirmée par l'image et meilleure que l'OCR.",
+        "suggestion": "Relecture soignée des noms propres : Élie Chaïa, Émile Adjedj."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Illustration 20. — Sétif, été 1946. De gauche à droite : Ahmed Khellef (président de l’UJDA), Imnaouar Awadja (dirigeant local du PCA), William Sportisse (secrétaire régional de l’UJDA) et Ahmed Rabadj (dirigeant local de l’UJDA).",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture des noms propres améliorée à partir de l'image. Plusieurs noms étaient peu lisibles ou fautifs dans l'OCR (ex: TMNaoua, Awadja).",
+        "suggestion": "Relecture attentive : Ahmed Khellef, Imnaouar Awadja, William Sportisse, Ahmed Rabadj."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Boufarik, 22 avril 1946 ; Sétif, été 1946",
+        "issue": "date_incertaine",
+        "note": "Dates lues clairement sur l'image mais non totalement fiables sur une base OCR unique.",
+        "suggestion": "Vérifier la correspondance avec l'image en cas de doute."
+      },
+      {
+        "confidence": "high",
+        "fragment": "UJDA, PCA",
+        "issue": "sigle_incertain",
+        "note": "La présence des sigles est fortement probable car lisible sur image, mais l’OCR les a mal restitués.",
+        "suggestion": "Les sigles sont UJDA (Union de la Jeunesse Démocratique Algérienne) et PCA (Parti Communiste Algérien)."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Illustration 21. — Une de La Jeune Algérie (organe de l’UJDA) n°29, août 1946. Ce numéro marque le tournant « national » algérien de l’UJDA et du PCA.\n\nIllustration 22. — Alger, été 1947. La délégation algérienne du festival mondial de la jeunesse de Prague, composée de communistes et de nationalistes, dans le bateau pour Marseille. Debout à gauche, les bras croisés, Lina Guigui. Accroupis, de gauche à droite : Alfred Strich (tenu par Bahi Boulahbel), Élie Aouate (de profil) et Chiquitou (t-shirt blanc).",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-11",
+    "sourceImage": "11-20251216_131040.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Les noms propres : Lina Guigui, Alfred Strich (tenu par Bahi Boulahbel), Élie Aouate, Chiquitou",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture des noms, notamment pour \"Bahi Boulahbel\" et \"Chiquitou\", reste à confirmer sur l'image qui présente une faible qualité d'impression.",
+        "suggestion": "Relecture sur original ou recoupement avec autre source recommandé."
+      },
+      {
+        "confidence": "high",
+        "fragment": "dates : août 1946, été 1947",
+        "issue": "date_incertaine",
+        "note": "La date d'août 1946 pour le n°29 de La Jeune Algérie et celle de l'été 1947 sont très probablement correctes, mais l’image du périodique et de la légende pourrait prêter à confusion sur l'année précise.",
+        "suggestion": "Vérification sur source périodique originale à considérer."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "UJDA, PCA",
+        "issue": "sigle_incertain",
+        "note": "Les sigles apparaissent clairement mais leur pleine signification n’est pas explicitée sur l’image pour cette page.",
+        "suggestion": "Confirmer la signification complète des sigles sur d'autres pages ou documents."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATIONS 25 et 26. – Paris, Maison des Lettres de la rue Férou, décembre 1952. Des communistes maghrébins et français célèbrent le mariage de Jean et Fanny Beckouche. Premier cliché : le marié et son témoin, Amokrane Ould Aoudia, avocat qui mourra assassiné par les services secrets français en 1959. Second cliché, de gauche à droite : Armand et Jacqueline Meppiel (PCF), Jean Beckouche, X, Amokrane Ould Aoudia, Mme Panier (concierge communiste), André Akoun (groupe de langue algérien), Djillali Rahmouni (groupe de langue marocain, futur maquisard de l’ALN), Mlle Panier et Hadi Messouak (groupe de langue marocain).",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-12",
+    "sourceImage": "12-20251216_131113.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "X",
+        "issue": "nom_propre_incertain",
+        "note": "Un des noms dans la liste des personnes figurant sur le second cliché est indiqué par une simple lettre X, ce qui montre une incertitude sur l'identité de cette personne.",
+        "suggestion": "L'image confirme la présence d'une personne non identifiée nommée X dans la description."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATION 27. – Paris, vers 1952. Au centre, assis, Jean Beckouche. À sa droite, Ahmed Inal, dirigeant du groupe de langue algérien, qui gagnera un maquis de l’ALN en 1956 et sera assassiné par l’armée française. Autour d’Inal, les Constantinois Jules Melki et Robert Zerbib. À droite, Humbert de Vellis, membre du groupe de langue tunisien, et son épouse Monique.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-13",
+    "sourceImage": "13-20251216_131142.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Jules Melki et Robert Zerbib",
+        "issue": "nom_propre_incertain",
+        "note": "L'image permet de confirmer partiellement les noms, mais l'OCR avait \"Melki\" et \"Zerbib\", orthographiés de façon correcte mais la qualité des caractères pourrait causer des confusions de lettres similaires en OCR.",
+        "suggestion": "Lecture probable, noms propres non validés avec certitude."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Paris, vers 1952",
+        "issue": "date_incertaine",
+        "note": "La date est lisible sur l'image et confirmée par l'OCR, mais toute mention de date reste de l'ordre du probable sans source externe.",
+        "suggestion": "Lecture probable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Ahmed Inal, dirigeant du groupe de langue algérien",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom et le statut sont confirmés par la majorité des lettres sur l'image, mais une légère incertitude subsiste sur l'orthographe exacte possible du prénom et du nom.",
+        "suggestion": "Lecture probable, attention à l'orthographe."
+      },
+      {
+        "confidence": "high",
+        "fragment": "gagnera un maquis de l’ALN en 1956 et sera assassiné par l’armée française.",
+        "issue": "lecture_probable",
+        "note": "Cette partie du texte est confirmée par l'image.",
+        "suggestion": "Lecture probable, sans garantie historique."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Humbert de Vellis",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom semble bien visible sur l'image, mais risques d'erreur sur la transcription exacte en OCR.",
+        "suggestion": "Lecture probable."
+      },
+      {
+        "confidence": "high",
+        "fragment": "son épouse Monique",
+        "issue": "lecture_probable",
+        "note": "Lecture confirmée par l'image.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATION 29. — Oran, vers 1950. Des militants communistes. Debout à gauche, avec lunettes de vue et souriant, Gaston Attia, cadre du PCA et responsable de la cellule du quartier juif.\n\nILLUSTRATION 30. — Constantine, vers 1950. Des militants communistes. Debout, de gauche à droite : Saïd Zitouni, Antoine Garcia, Bernard et William Sportisse, Robert et Adrienne Rollin. Accroupis : Bahi Boulahbel et Mlle Rollin.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-14",
+    "sourceImage": "14-20251216_131159.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Said Zitouni, Antoine Garcia, Bernard et William Sportisse, Robert et Adrienne Rollin, Bahi Boulahbel, Mlle Rollin",
+        "issue": "nom_propre_incertain",
+        "note": "Noms propres issus de la transcription visuelle, mais impossibles à confirmer absolument sans expertise additionnelle.",
+        "suggestion": "Lecture tirée de l'image car la partie OCR était dégradée à cet endroit."
+      },
+      {
+        "confidence": "high",
+        "fragment": "ILLUSTRATION 29. — Oran, vers 1950. Des militants communistes. Debout à gauche, avec lunettes de vue et souriant, Gaston Attia, cadre du PCA et responsable de la cellule du quartier juif.",
+        "issue": "lecture_probable",
+        "note": "La formulation semble correspondre, mais une incertitude reste sur la fidélité de quelques mots.",
+        "suggestion": "Comparaison positive côté image/OCR ; texte à peu près confirmé visuellement."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ILLUSTRATION 30. — Constantine, vers 1950. Des militants communistes.",
+        "issue": "lieu_incertain",
+        "note": "La mention de Constantine est claire visuellement mais pourrait être contestée si la source image était ambiguë.",
+        "suggestion": "Lecture probable à confirmer sur l'original."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Illustration 32. – Alger, été 1953. Accueil des délégués algériens de retour du festival mondial de la jeunesse de Bucarest. À gauche, Jean-Pierre Saïd, un carnet et un crayon à la main, s’entretient avec une déléguée pour Alger Républicain. À droite, Sadek Hadjerès.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-15",
+    "sourceImage": "15-20251216_131231.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Alger, été 1953.",
+        "issue": "date_incertaine",
+        "note": "Lecture appuyée sur l'image, mais il reste un faible doute sur l'année en l'absence de source critique externe.",
+        "suggestion": "Lecture probable sur l'image : Alger, été 1953."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jean-Pierre Saïd",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture appuyée sur l'image, le nom paraît correct mais pas absolument certain sans source externe.",
+        "suggestion": "Lecture probable sur l'image : Jean-Pierre Saïd"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Sadek Hadjerès",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture appuyée sur l'image, mais sans validation externe, il reste une incertitude.",
+        "suggestion": "Lecture probable sur l'image : Sadek Hadjerès"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "LES JUIFS ALGÉRIENS DANS LA LUTTE ANTICOLONIALE\n\nILLUSTRATION 33. — Alger, 1954. Un couple « mixte » et communiste : Gilberte Chemouilli et son mari Bouali Taleb posent pour Alger Républicain après trois jours passés au poste de police dans le cadre d'une enquête sur des communistes espagnols réfugiés à Alger. Bouali Taleb mourra au maquis en 1957.\n\nILLUSTRATION 34. — Alger, vers 1950. Reine Zaoui, militante du PCA originaire de Constantine et épouse de Georges Raffini, qui mourra assassiné par l’ALN dans un maquis des Aurès fin 1955.\n\nXVII",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-16",
+    "sourceImage": "16-20251216_131236.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Gilberte Chemouilli",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom est difficile à lire et pourrait légèrement varier, mais la lecture semble probable à partir de l'image.",
+        "suggestion": "Lecture probable d'après l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Bouali Taleb",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom du mari apparaît clairement sur l'image mais l'OCR était très corrompu.",
+        "suggestion": "Lecture probable d'après l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Reine Zaoui",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom est plus lisible sur l'image que dans l'OCR, mais une légère incertitude demeure.",
+        "suggestion": "Lecture probable d'après l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Georges Raffini",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre difficile à confirmer uniquement via l'image.",
+        "suggestion": "Lecture probable d'après l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ALN",
+        "issue": "sigle_incertain",
+        "note": "Le sigle ALN est probable mais pas parfaitement lisible sur l'image.",
+        "suggestion": "Lecture probable d'après l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Aurès fin 1955",
+        "issue": "date_incertaine",
+        "note": "La date est lisible mais pourrait être sujette à caution; la présence de 'fin 1955' reste probable.",
+        "suggestion": "Lecture probable d'après l'image."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATION 35. — Alger, 1952. Internat de l’hôpital d’El Kettar. À gauche, Rubens Fitoussi, militant du PCA, assis en face de son camarade Sadek Hadjerès. En bout de table, le docteur Ferrand (chef de clinique) ; à droite, le laborantin Bensemane.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-17",
+    "sourceImage": "17-20251216_131315.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Rubens Fitoussi, militant du PCA",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom et de l'appartenance paraît plausible mais les noms propres ne peuvent être totalement garantis.",
+        "suggestion": "Lecture plausible à fort degré de confiance, mais à considérer comme non validée."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Sadek Hadjerès",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre bien lisible sur l'image mais non certifié.",
+        "suggestion": "Lecture plausible à fort degré de confiance, mais à considérer comme non validée."
+      },
+      {
+        "confidence": "high",
+        "fragment": "docteur Ferrand",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre et titre visibles mais incertitude standard sur toute identification nominative.",
+        "suggestion": "Lecture probable à haut degré de confiance, non validée."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Bensemane",
+        "issue": "nom_propre_incertain",
+        "note": "Nom lisible mais voir commentaire général sur les noms propres.",
+        "suggestion": "Lecture plausible à fort degré de confiance, non validée."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Internat de l’hôpital d’El Kettar",
+        "issue": "lieu_incertain",
+        "note": "La localisation est bien lisible mais toute mention de lieu précis reste à prendre avec prudence.",
+        "suggestion": "Lecture probable non validée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "LES JUIFS ALGÉRIENS DANS LA LUTTE ANTICOLONIALE\n\nILLUSTRATION 37. — Varsovie, juillet 1955. La délégation algérienne lors du défilé d'ouverture du festival mondial de la jeunesse, avec des vêtements d'apparat algériens. Au second plan à droite, tête nue, Jacqueline Scheroun. Devant elle, Mireille Saïd est vêtue d’un haïk. Le metteur en scène Mustapha Kateb est au second plan, au centre, derrière le porteur de drapeau.\n\nILLUSTRATION 38. — Varsovie, juillet 1955. Des membres de la délégation algérienne autour de la troupe de théâtre El Mesrah El Djazaïri. Debout au centre, Mustapha Kateb ; à sa gauche, Jacqueline Scheroun.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-18",
+    "sourceImage": "18-20251216_131341.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Jacqueline Scheroun",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre figure clairement sur l'image, mais l'OCR le transcrit de différentes manières (Schecroun/Scheroun), l'image donne la version correcte.",
+        "suggestion": "Jacqueline Scheroun"
+      },
+      {
+        "confidence": "high",
+        "fragment": "Mustapha Kateb",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom est mal restitué par l'OCR (Kateb/Katep) mais l'image le rend lisible.",
+        "suggestion": "Mustapha Kateb"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Mireille Saïd",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom apparaît dans la légende de l'image, l'OCR propose 'Saïd' mais la lisibilité reste moyenne.",
+        "suggestion": "Mireille Saïd"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "El Mesrah El Djazaïri",
+        "issue": "nom_propre_incertain",
+        "note": "La mention du théâtre apparaît sur l'image mais risque de confusion de lecture, l'OCR récupère mal le nom.",
+        "suggestion": "El Mesrah El Djazaïri"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATIONS 41, 42 et 43. — Pierre Ghenassia (1939-1957). En bas : sur la plage de Ténès à l'été 1956 avec son cousin Jean-Pierre Saïd, quelques semaines avant de monter dans un maquis de l'ALN où il mourra en février 1957.\n\nXXI",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-19",
+    "sourceImage": "19-20251216_131420.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "ILLUSTRATIONS 41, 42 et 43.",
+        "issue": "lecture_probable",
+        "note": "Le mot 'ILLUSTRATIONS' est assez net mais une faible incertitude demeure en raison d'une légère déformation sur l'image.",
+        "suggestion": "Le terme semble toutefois le plus probable à la lecture."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Pierre Ghenassia (1939-1957). En bas : sur la plage de Ténès à l'été 1956 avec son cousin Jean-Pierre Saïd, quelques semaines avant de monter dans un maquis de l'ALN où il mourra en février 1957.",
+        "issue": "lecture_probable",
+        "note": "Ce passage est quasiment totalement lisible et correspond bien à l'image.",
+        "suggestion": "Aucune autre suggestion, la lecture semble fiable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "XXI",
+        "issue": "lecture_probable",
+        "note": "Le numéro de page 'XXI' est net sur l'image, faible doute possible en raison de la qualité de reproduction, mais la lecture s'aligne avec la structure du document.",
+        "suggestion": "Lecture très probable."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATIONS 44 et 45. – Base aérienne d’Hussein Dey, vers 1956. Pierre Khalifa, communiste constantinois, en uniforme de l’armée française. Il sera condamné en novembre 1956 pour « participation au fonctionnement de ligue dissoute et à une entreprise de démoralisation de l’armée ». Second cliché : à Paris, vers 1958, après sa libération de prison.\n\nILLUSTRATIONS 46 et 47. – Le changement d’apparence. À gauche, William Sportisse en période de légalité. À droite, « Omar » dans la clandestinité, en 1961.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-20",
+    "sourceImage": "20-20251216_131512.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Pierre Khalifa",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom est bien lisible sur l'image, mais peut prêter à confusion en raison de la graphie et contexte.",
+        "suggestion": "Probablement correct, à confirmer sur la source originale."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "\"Omar\"",
+        "issue": "nom_propre_incertain",
+        "note": "Présence de guillemets autour du prénom, pourrait indiquer un pseudonyme ou surnom ; à confirmer.",
+        "suggestion": "Transcrire tel quel mais incertitude sur la forme et contexte exact."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "UNION NATIONALE DES ÉTUDIANTS DE FRANCE\nFÉDÉRATION [ASSOCIATIVE?] COOPÉRATIVE DES ÉTUDIANTS EN SCIENCES\nUNEF\nSECTION [Huea, MAP?] N° 074680\nNOM : BECKOUCHE\nPRÉNOMS : Joseph\nADRESSE : 32 rue Blomet Paris 15e\nLe Président de l'U.N.E.F : J. BALLARD      Le Président de l'Association : [illisible]      Le Trésorier : [illisible]\n\nILLUSTRATION 48. – Paris, janvier 1955. Carte de membre de l’UNEF d’André Beckouche, militant du groupe de langue algérien et de l’Union des étudiants algériens de Paris. Établie quelques mois avant son retour en Algérie pour militer, elle sera diffusée par la DST au sein de la police et de l’armée à sa poursuite à partir d’octobre 1956.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-21",
+    "sourceImage": "21-20251216_131517.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "[ASSOCIATIVE?]",
+        "issue": "mot_illisible",
+        "note": "Le mot complet est difficile à lire dans l'en-tête.",
+        "suggestion": "Basé sur l'image, semble commencer par 'ASSOCI', mais reste incertain."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "[Huea, MAP?]",
+        "issue": "mot_illisible",
+        "note": "Le nom de la section ou sigle n'est pas clairement lisible.",
+        "suggestion": "Non résolu, plusieurs lettres incertaines."
+      },
+      {
+        "confidence": "high",
+        "fragment": "NOM : BECKOUCHE",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom semble BECKOUCHE mais il reste une petite incertitude sur une ou deux lettres.",
+        "suggestion": "Lecture probable confirmée visuellement."
+      },
+      {
+        "confidence": "high",
+        "fragment": "PRÉNOMS : Joseph",
+        "issue": "nom_propre_incertain",
+        "note": "Le prénom Joseph est lisible mais manuscrit.",
+        "suggestion": "Lecture probable confirmée visuellement."
+      },
+      {
+        "confidence": "high",
+        "fragment": "ADRESSE : 32 rue Blomet Paris 15e",
+        "issue": "lecture_probable",
+        "note": "La lecture de l'adresse est claire sauf peut-être l'indice de l'arrondissement (« 15e »).",
+        "suggestion": "Lecture probable confirmée visuellement."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Le Président de l'Association : [illisible]",
+        "issue": "mot_illisible",
+        "note": "La ou les signatures à droite sont difficilement interprétables.",
+        "suggestion": "Impossible d’établir la lecture."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Le Trésorier : [illisible]",
+        "issue": "mot_illisible",
+        "note": "Nom et signature illisibles.",
+        "suggestion": "Non lisible sur l’image comme sur l'OCR."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Illustrations 50 et 51. – Prague, novembre 1961. Les communistes algériens sortis de la clandestinité, du maquis ou de prison réfugiés auprès de la délégation extérieure du PCA accueillent Henri Alleg, récemment évadé de la prison de Rennes. Assis : Tassadit et Larbi Bouhali, André Courounen, Henri Alleg et Simone Benamara-Bouaziz. Debout : Arlette Bourgel, André Beckouche et Abdelhamid Boudaif. Second cliché : Paul Bouaziz, Henri Alleg et Abdelkader Safer.\n\nXXIV",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-22",
+    "sourceImage": "22-20251216_131555.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "André Courounen",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom est difficile à lire sur l'image et pourrait être mal orthographié.",
+        "suggestion": "Lecture probable d'après l'image, incertitude sur l'orthographe exacte."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Prague, novembre 1961",
+        "issue": "date_incertaine",
+        "note": "L'image est lisible pour la date, mais il subsiste un doute sur l'interprétation en l'absence de certification.",
+        "suggestion": "Lecture probable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Simone Benamara-Bouaziz",
+        "issue": "nom_propre_incertain",
+        "note": "Possibilité d'erreur de lecture sur le nom composé.",
+        "suggestion": "Lecture probable d'après l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Boudaif",
+        "issue": "nom_propre_incertain",
+        "note": "Possibilité d'autres orthographes proches sur l'image.",
+        "suggestion": "Lecture probable du nom."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATION 52. – Camp d’internement de Lodi, 1957. Une partie de l’équipe d’Alger Républicain. Debout, de gauche à droite : X, Paul Amar, X, René Azoulay, Jean-Pierre Saïd, Alexandre Valero. Accroupis : René Duvalet, Vincent Ivorra, Henri Zannettacci, Raymond Neveu, X.\n\nILLUSTRATION 53. – Camp d’internement de Lodi, début 1957. Debout, de gauche à droite : Louis Pont, Roger Perles, Isaac Nahori, Victor Marin, Roland Rhaïs, Louis Grange, Georges Gallinari, Claude Duclerc, René Azoulay, Alexandre Valero. En bas : Paul Amar, Jean-Pierre Saïd, Pierre Cots, X, Robert Villars, X, Henri Zannettacci.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-23",
+    "sourceImage": "23-20251216_131559.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "X",
+        "issue": "nom_propre_incertain",
+        "note": "Le X remplace un nom propre illisible ou non identifié dans la légende (photo du haut et du bas pour Illustration 52, et également dans la liste pour Illustration 53).",
+        "suggestion": "Le texte original signale lui-même la présence de noms indéterminés."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Jean-Pierre Saïd",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'Jean-Pierre Saïd' semble correct d'après l'image, mais l'OCR donne 'Jean-Pierre Said' (sans tréma). Lecture par image suggère la présence du tréma.",
+        "suggestion": "Préférer la version avec tréma pour une hypothèse."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Roland Rhaïs",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'Roland Rhaïs' dans l'image est mal retranscrit en OCR sous 'Rolana Kpais'/'Rhaïs'. Lecture possible confirmée par l'image.",
+        "suggestion": "La lecture correcte semble être 'Roland Rhaïs'."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Georges Gallinari",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'Georges Gallinari' est presque illisible en OCR ('Georges Gallinar @'), mais clair sur l'image.",
+        "suggestion": "Corriger selon ce qu’indique l’image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Pierre Cots",
+        "issue": "nom_propre_incertain",
+        "note": "OCR propose 'Pierre Cot' (sans 's'). Image semble indiquer 'Cots', mais faible résolution.",
+        "suggestion": "La version 'Cots' est probable mais à confirmer."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Claude Duclerc",
+        "issue": "nom_propre_incertain",
+        "note": "Nom absent dans l’OCR, présent sur l’image (Illustration 53).",
+        "suggestion": "Ajouté comme lecture probable depuis l’image."
+      },
+      {
+        "confidence": "high",
+        "fragment": "XXV",
+        "issue": "lecture_probable",
+        "note": "Le chiffre romain en bas de page indique la pagination, ce n’est pas du texte principal.",
+        "suggestion": "À ignorer dans la transcription."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATION 54. — Camp d’internement de Lodi, 1er mai 1957. Rassemblement des détenus à l’occasion du 1er mai. Au premier plan à gauche, Jean-Pierre Saïd.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-24",
+    "sourceImage": "24-20251216_131629.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "ILLUSTRATION 54. — Camp d’internement de Lodi, 1er mai 1957. Rassemblement des détenus à l’occasion du 1er mai. Au premier plan à gauche, Jean-Pierre Saïd.",
+        "issue": "lecture_probable",
+        "note": "La lecture bénéficie de la clarté de la légende sur l'image pour tous ces éléments mais n'est pas validée humainement.",
+        "suggestion": "Lecture basée principalement sur l'image. Correction de la date ('1er mai' au lieu de '17 mai') et du nom propre ('Jean-Pierre Saïd' au lieu de 'Jean-Dierre Saïd')."
+      },
+      {
+        "confidence": "low",
+        "fragment": "J mai 1957",
+        "issue": "mot_illisible",
+        "note": "Le début du texte OCR n'est pas clairement lisible (\"J mai 1957\") et ne correspond pas au texte de l'image.",
+        "suggestion": "Soutient que ce fragment devait être '1er mai 1957' d'après la légende visible."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Jean-Dierre Saïd",
+        "issue": "nom_propre_incertain",
+        "note": "L'OCR fournit 'Jean-Dierre Saïd', mais l'image indique 'Jean-Pierre Saïd'.",
+        "suggestion": "Le texte de l'image est plus fiable pour ce nom propre."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Illustration 56. – Camp d’internement de Lodi, 1958. Mardochée Azuelos et Victor Marin.\nIllustration 57. – Camp d’internement de Lodi, 1959. Georges Hadjadj et Robert Manaranche.\nIllustration 58. – Camp d’internement de Lodi, 1957. Henri Zannettacci et Isaac Nahori.\nXXVII",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-25",
+    "sourceImage": "25-20251216_131633.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Noms propres (Mardochée Azuelos, Victor Marin, Georges Hadjadj, Robert Manaranche, Henri Zannettacci, Isaac Nahori)",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture plausible, calquée sur l'image ; l'OCR ne permet pas de confirmer l'orthographe exacte.",
+        "suggestion": "Vérification humaine nécessaire pour l’orthographe exacte."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Années (1958, 1959, 1957)",
+        "issue": "date_incertaine",
+        "note": "Lecture directement issue de l'image, bonne lisibilité visuelle.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "Camp d’internement de Lodi",
+        "issue": "lieu_incertain",
+        "note": "Lecture issue de l'image, Lodi identifié visuellement.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "XXVII",
+        "issue": "mot_illisible",
+        "note": "Correspond à la pagination en bas de page.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "LES JUIFS ALGÉRIENS DANS LA LUTTE ANTICOLONIALE\n\nILLUSTRATION 68. – Alger, 1962. La famille Sportisse à l'indépendance : William, Germaine, Bernard (frères et sœurs) et Édith (épouse de Bernard).\n\nILLUSTRATIONS 69 et 70. – Juillet 1963. Carte nationale d'identité algérienne de Lucien Hanoun, obtenue en vertu de l'article 8 du code de la nationalité (« participation à la lutte de libération nationale »).\n\nXXXI",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-26",
+    "sourceImage": "26-20251216_131706.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Germaine",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture certaine sur l'image, mais attention aux variations possibles (prénom).",
+        "suggestion": "Le prénom 'Germaine' semble probable et figurant clairement, mais vérifier sur la source définitive."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lucien Hanoun",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable à partir de la légende visible sous la carte d'identité.",
+        "suggestion": "Ce nom figure bien, mais comme il s'agit d'un document d'archive, prudence d'usage recommandée sans validation humaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "article 8 du code de la nationalité (« participation à la lutte de libération nationale »).",
+        "issue": "lecture_probable",
+        "note": "Lecture fidèlement recopiée d'après la ligne de la légende visible sous les images.",
+        "suggestion": "Le passage semble exact entre OCR et image, mais la formulation entre parenthèses doit rester soumise à vérification contextuelle au besoin."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ILLUSTRATION 71. — Alger, 1963. Visite d’Ernesto Che Guevara. À droite, Jean-Pierre Saïd prend des notes pour Alger Républicain.\n\nILLUSTRATION 72. — El Harrach (Maison-Carrée), fin 1966. À sa sortie de prison, Gilberte Chemouilli, arrêtée et torturée par l’armée algérienne en septembre 1965, pose avec sa petite-fille Yamina.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-27",
+    "sourceImage": "27-20251216_131729.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "ILLUSTRATION 71. — Alger, 1963. Visite d’Ernesto Che Guevara. À droite, Jean-Pierre Saïd prend des notes pour Alger Républicain.",
+        "issue": "lecture_probable",
+        "note": "Lecture confirmée par confrontation directe à l'image. Pas de difficulté majeure de lecture.",
+        "suggestion": "Aucune hésitation détectée sur ce fragment, concordance image/OCR."
+      },
+      {
+        "confidence": "high",
+        "fragment": "ILLUSTRATION 72. — El Harrach (Maison-Carrée), fin 1966. À sa sortie de prison, Gilberte Chemouilli, arrêtée et torturée par l’armée algérienne en septembre 1965, pose avec sa petite-fille Yamina.",
+        "issue": "lecture_probable",
+        "note": "Lecture confirmée, noms propres et informations recopiés d’après l’image sans extrapolation.",
+        "suggestion": "Correspondance directe entre image et transcription proposée."
+      },
+      {
+        "confidence": "low",
+        "fragment": "V1 Urrêtée c, El Flay lorturée rach ; . parVané son-Carré ‘ llh 16e algéri Ce), fin 1966 À ' ; Chemot lenne en se, À sà sortie de prison, Gilberte C Plemb e e 1965, pose avec sa petite-fille Yamind.",
+        "issue": "mot_illisible",
+        "note": "Ce passage de l’OCR est inutilisable et n’est pas proposé dans la lecture probable, car largement illisible et incohérent.",
+        "suggestion": "Se référer exclusivement à l’image pour ce passage."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jean-Pierre Saïd, Gilberte Chemouilli, Yamina",
+        "issue": "nom_propre_incertain",
+        "note": "Épellation des noms propres recopiée visuellement, mais sans certitude absolue sur chaque lettre.",
+        "suggestion": "En cas d’usage exigeant, vérifier sur le document original."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Alger, 1963. El Harrach (Maison-Carrée), fin 1966. septembre 1965.",
+        "issue": "date_incertaine",
+        "note": "Les dates semblent claires sur l’image mais leur précision ne peut être absolument garantie sans le document source.",
+        "suggestion": "Prudence sur les dates en l’absence de validation humaine complémentaire."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Alger, El Harrach (Maison-Carrée)",
+        "issue": "lieu_incertain",
+        "note": "Lecture des toponymes basée sur l’image, impossible de valider l’orthographe parfaite.",
+        "suggestion": "Pour usage formel, contrôle nécessaire sur le document original."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "formes d’action afin d’être « dignes de [leurs] frères de combat dans les maquis et dans toute l’Algérie »92.\nAu même moment, le FLN s’organise sur l’université à travers l’UGEMA. Mohammed Ben Yahia, Lamine Khène, Saïd Hermouche, Allaloua Ben Boutache, sont parmi ses principaux membres, avec Boualem Oussedik, très proches des communistes et probablement membre de l’Union de la jeunesse démocratique algérienne, très actif sur la faculté de médecine d’Alger.\nIndépendamment de tout contact entre les dirigeants du PCA et du FLN, des étudiants communistes et nationalistes, soudés par des amitiés anciennes, en arrivent à des actions communes : Gabriel Timsit et Ahmed Nanni Boudraa, par exemple camarades de promotion, et les frères Timsit à affinités très fortes, mêlant communistes et nationalistes « socialisants » ou « sans dogmatisme », au point d’aboutir, en 1955, à la création d’un réseau FLN unitaire au sein duquel l’organisation communiste continue d’exister comme entité autonome. Leur activité clandestine se fait dès lors au profit du PCA et du FLN, sans que les frontières soient toujours bien nettes. Ainsi, sur le plan logistique circulent des planques, des chauffeurs et du matériel (machines à écrire, radios, médicaments) entre les deux organisations. De même, lorsqu’au printemps 1955, Salah Hadjeri se voit demander par Larbi Ben M’Hidi, dirigeant du FLN, s’il peut fournir une aide médicale et recruter des médecins pour les maquis, il se tourne naturellement vers ses anciens camarades de la faculté de médecine : Simone Aïach, Lucien Amzeleg, Meyer Timsit et Daniel Timsit soignent ainsi des clandestins ou des maquisards communistes et nationalistes et/ou apportent des médicaments à l’ALN, tandis que Georges Counillon et Salah Mohammed Said gagnent le maquis par d’autres canaux.\nD’après Daniel Timsit, Mohammed Ben Yahia, lorsqu’il aura connaissance de l’existence de ce réseau unitaire, demandera aux communistes de ne participer - qu’individuellement à l’action du FLN. Il est clair que tous les membres du FLN ne sont pas partisans de cette collaboration : en mars 1956, un tract du FLN distribué à la cité U menace explicitement les communistes, qualifiés de « factieux » et d’« agents de division » car ils se réclameraient du FLN pour organiser les étudiants au profit du PCA dans des actions « contre-révolutionnaires et anti-nationales »94. Les étudiants communistes répondent qu’ils « n’ont jamais agi dans leur lutte patriotique qu’en leur nom propre, [ ... ] en patriotes algériens, soucieux d’éviter tout ce qui peut diviser les étudiants anticolonialistes et de rechercher tout ce qui les unit »95. Lorsque le 19 mai 1956, l’UGEMA déclenche la grève illimitée des cours et appelle les étudiants à s’engager dans le FLN-ALN, les communistes relaient l’appel en affirmant qu’ils seraient « indignes de [leur] peuple » s’ils restaient en marge de la lutte »96. À cette date, des étudiants communistes comme Daniel Timsit et Nour Eddine Rebah sont déjà au maquis ou s’apprêtent à le rejoindre. Les autres se dispersent : Daniel et Paulette Touboul rentrent à Oran, où ils sont arrêtés en septembre, et d’autres demeurent à Alger où ils sont traqués dès octobre dans le cadre du démantèlement du réseau de bombes de la Zone autonome d’Alger.\n\nDaniel Timsit et les bombes du FLN\n\nEn février 1956, le bulletin des étudiants communistes titre : « Il faut agir par tous les moyens. Il faut pour la lutte armer »97. Appelant à « l’aide des maquisards et de tous les moyens », il se place sous le haut patronage de Lénine : “une classe opprimée ne mériterait que d’être traitée en esclave, si elle ne s’efforçait pas d’apprendre à manier les armes, d’avoir des armes, etc.” Deux mois plus tard, les étudiants se font plus précis : « Étudiant, tu ne dois plus te contenter de sympathiser avec le mouvement de Libération. Il faut mettre toutes tes connaissances au service de la lutte libératrice. Dans le même numéro, ils célèbrent la désertion d’Henri Maillot, organisée par le PCA et prouvant que « la lutte du peuple n’a jamais eu un caractère racial »98. Cependant, chez certains étudiants nationalistes dont le dirigeant, Daniel Timsit, naît une colère face à ce qu’ils jugent être une inertie du PCA, accentuée entre autres par le fait qu’après le vote par le PCF des pouvoirs spéciaux, la direction régionale du PCA défend ce vote dans une « circulaire intérieure » et d’autre écrits de discussion ; (dont un exemplaire est retrouvé dans le casier de Daniel Timsit en mai)99. Lucien Hanoun, qui dirige alors un réseau clandestin de propagande et fut l’enseignant de Daniel Timsit dans le lycée juif de Ben-Aknoun mis en place sous Vichy, évoque la personnalité de son ancien élève :\n\n“Très ardent, d’une ardeur. ... Et puis alors, c’est le fil du rasoir. Et dans le militant et dans l’action. J’emploie ce terme à dessein, parce que je le rencontre pendant la guerre. Moi, je ne lui dis pas ce que je fais, et je le vois furieux. Furieux contre le Parti communiste algérien, qu’il n’est pas loin de mépriser parce qu’il n’en faisait pas assez. C’est terrible hein ! C’est un juif algérien. Il était Algérien après bien d’autres considérations ! Les parents ne sont pas comme ça. Et la famille [du frère de Daniel Timsit] l’est [algérienne], mais l’est par conviction politique, comme moi. Et ils sont communistes avant d’être Algériens, et avant d’être partisans de la lutte pour l’indépendance. Mais lui, il est non seulement les deux dedans, mais ça vient jusque-là [au cou] (rires). [...] Je vous indique des choses très dures, et que je comprends mal. Moi, je suis l’aîné, celui qui a été son prof [...]. Et il me parle sur un ton que je n’accepte pas »100.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-28",
+    "sourceImage": "28-20251216_132859.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Allaloua Ben Boutache",
+        "issue": "nom_propre_incertain",
+        "note": "Le prénom et le nom d’Allaloua Ben Boutache sont peu courants et la qualité de l’image laisse planer un doute sur l'exactitude de l’OCR.",
+        "suggestion": "Allalou Ben Boutache ou variante possible."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "machines à écrire, radios, médicaments",
+        "issue": "lecture_probable",
+        "note": "Les items listés en logistique sont lisibles mais l’ordre exact et la ponctuation pourraient prêter à confusion.",
+        "suggestion": "Ordre confirmé à partir de l’image, mais incertitude sur une virgule éventuelle."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Saïd Hermouche",
+        "issue": "nom_propre_incertain",
+        "note": "Le prénom et le nom Hermouche sont peu distincts sur l’image.",
+        "suggestion": "Hermouche ou Hermoueîxté selon l’OCR ; lecture difficile."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "\"factieux\" et d' « agents de division »",
+        "issue": "lecture_probable",
+        "note": "Ponctuation et guillemets difficilement visibles.",
+        "suggestion": "Texte vraisemblablement exact, faible incertitude sur la ponctuation."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lamine Khène",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre n'est pas parfaitement net.",
+        "suggestion": "La lecture semble correcte mais incertitude orthographique mineure."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Henri Maillot",
+        "issue": "nom_propre_incertain",
+        "note": "Nom correct selon l’image, mais faible flou dans la ligne concernée.",
+        "suggestion": "Lecture la plus probable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Ben-Aknoun",
+        "issue": "lieu_incertain",
+        "note": "Lecture du nom du lycée : l'image laisse voir la lettre ‘B’ au début, mais le reste reste un peu flou.",
+        "suggestion": "Probablement Ben-Aknoun, mais confirmation utile."
+      },
+      {
+        "confidence": "low",
+        "fragment": "leurs affinités très fortes, mêlant communistes et nationalistes « socialisants » ou « sans dogmatisme », au point d’aboutir, en 1955, à la création d’un réseau FLN unitaire",
+        "issue": "lecture_probable",
+        "note": "Phrase complexe et dense, transcription fidèle mais marge d’incertitude sur la ponctuation.",
+        "suggestion": "Lecture fidèle à l’image et à l’OCR, mais structure de la phrase délicate à retranscrire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "INVENTER DES ALGÉRIANITÉS. EN GUERRE ET EN PAYS LIBÉRÉ (1954-1965)\nPour Daniel Timsit, la participation à la lutte armée est une condition d’acceptation des communistes au sein du FLN, mais elle est également liée à l’action et au climat de l’université, où les communistes s’entretiennent à la base avec des nationalistes et se heurtent à la haine des « ultras ». En mars 1956, il entreprend ainsi de recruter des étudiants pour fabriquer des explosifs, initiative semble-t-il personnelle. Ce premier réseau de fabrication de bombes (avril-mai) n’est ni un réseau des CDL — même s’il est majoritairement composé de communistes — ni un réseau de l’ALN, même s’il est lié à des éléments de la Zone autonome d’Alger (ZAA). À ce flou organisationnel s’ajoute une certaine imprudence. Lors de l’enquête menée après son arrestation, plusieurs personnes entendues font état d’une « nature bouillante et impulsive », d’une « exaltation » de Daniel Timsit — caractère que ses anciens camarades désignent aujourd’hui par le terme « romantique ». Étudiant en physique, André Backouche a quelque temps le projet de fabriquer des bombes de façon empirique, sur le modèle de la résistance française, et se trouve lié à ce premier réseau :\n« Une expérience a eu lieu en ma présence, elle a échoué. Heureusement, cela m’a permis de comprendre immédiatement, mais un peu tard, que Daniel Timsit n’était pas quelqu’un avec qui je devais faire équipe. Ce qui fait que je n’ai plus rien fait avec Daniel et j’avais des instructions pour ça, le cloisonnement. Malheureusement un peu tard. Faute d’expérience. Le non-respect de cette règle a été la principale cause des catastrophes. En fait il n’avait peut-être pas vraiment conscience de la gravité de l’entreprise. Paix à son âme, c’était avec son cœur et les meilleures intentions du monde. Je crois qu’il l’a payé. »\nLes résultats de l’enquête menée par l’instruction civile et militaire, couplés à des témoignages, établissent les éléments suivants — qui restent sujets à caution. Souhaitant fabriquer des explosifs qui seraient remis aux CDL et à la ZAA, Daniel Timsit se tourne vers un chimiste, Giorgio Arbib, juif tunisien et ancien des étudiants communistes, qui accepte de travailler à la constitution d’un premier réseau avec Smaïl Bendjaballah et Boualem Oussedik. Nanni Bouderba leur procure de la glycérine, de l’acide sulfurique et de l’acide nitrique, et ils mènent des expériences chez Giorgio Arbib et dans la villa des parents Timsit à la Bouzaréah. Elles sont interrompues le 6 mai par l’explosion accidentelle d’une bombe cachée par Daniel Timsit dans une salle désaffectée de l’hôpital Mustapha. Le réseau se démantèle, et Daniel Timsit contacte le PCA et le FLN pour qu’ils l’aident à le fuir. Le FLN organise son départ pour le massif de Collo, où il doit s’occuper d’un hôpital du FLN. Mais lorsque son frère Gabriel et Nanni Bouderba arrivent, il a déjà fui vers Tlemcen. Caché dans des conditions précaires à Sidi-Bel-Abbès, il dit alors perdre confiance dans le PCA car il n’est pas acheminé vers un maquis. En juillet 1956, le FLN accepte l’intégration individuelle des communistes à l’ALN, et c’est Sadek Hadjerès qui, au nom du PCA, offre l’organisation d’un nouveau réseau de fabrication d’explosifs, cette fois directement pour le FLN. Giorgio Arbib s’installe dans le laboratoire fin juillet, tandis que Daniel Timsit, réfugié chez un ami d’enfance, reçoit les visites de Giorgio Arbib, puis de Georges Smadja, qui l’invitent à rejoindre le réseau. Dans ses mémoires, Daniel Timsit dit avoir rompu avec le PCA à son retour à Alger. En réalité ses contacts ont duré jusqu’à son intégration à la ZAA en août, et sa rupture avec le PCA résulte des accords entre FLN et PCA. Cependant, Daniel Timsit présente cette rupture comme un choix motivé par des divergences avec le PCA, et ces divergences transparaissent de fait dans un certain nombre de sources où sont rapportés ses propos :\n« Le dernier jour où nous nous sommes rencontrés, alors que j’avais déjà remarqué le changement d’attitude de OUSSEDIK qui devenait hargneux envers les Partis communistes Algérien et Français, j’ai eu l’après-midi une conversation avec ce même OUSSEDIK, TIMSIT et HASSIBA. Là, TIMSIT approuvait OUSSEDIK dans ses propos outranciers tels que : “Maurice THOREZ est un colonialiste”, “Le Parti Communiste français n’est pas assez avec nous”, L’Humanité est en arrière de France Observateur et même de l’Express”. Ils soutenaient que le Parti Communiste Algérien aurait dû se dissoudre dans le FLN etc.\nLe laboratoire est situé à Birkadem, dans une ferme appartenant à Abdelaziz Bensaïd, 27 ans. Il est dirigé par Abdallah Kechida alias Si Mourad, 20 ans, avec pour agent de liaison principal la lycéenne Hassiba Ben Bouali, et comprend quatre membres du premier réseau : Daniel Timsit, Giorgio Arbib, Boualem Oussedik et Smaïl Bendjaballah. D’autres militants, nationalistes et communistes, participent à des liaisons et à la fourniture de produits. Qu’y fabrique-t-on ? D’après le rapport commandé par l’instruction, pas grand-chose ; l’équipement est qualifié de « médiocre », et l’expert affirme qu’il s’agit d’un laboratoire « poussiéreux, où l’on ne peut faire que des opérations chimiques banales » et une petite quantité de fulminate de mercure, de la nitroglycérine et… Or, l’expert est formel : aucun attentat du FLN à Alger n’a été commis avec ces produits. Pourtant, les témoignages de Daniel Timsit, Giorgio Arbib et Yacef Saadi ne laissent aucun doute quant à l’utilisation de fulminate de mercure dans les attentats contre des civils européens à la Cafétéria et au Milk Bar le 30 septembre 1956, qui font deux morts et aboutissent à l’arrestation générale du réseau.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-29",
+    "sourceImage": "29-20251216_132932.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "…de l’ALN, même s’il est lié à des éléments de la Zone autonome d’Alger (ZAA).",
+        "issue": "sigle_incertain",
+        "note": "La signification précise de certains sigles, notamment ZAA, pourrait faire l’objet d’une interprétation, mais l’image semble confirmer leur usage.",
+        "suggestion": "Vérifier la définition exacte de ZAA sur d’autres pages ou sources."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Boualem Oussedik",
+        "issue": "nom_propre_incertain",
+        "note": "L’écriture du nom propre semble bien confirmée par l’image, mais doit être gardée comme probable.",
+        "suggestion": "Nom propre à confirmer sur liste fiable si usage externe."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Nanni Bouderba",
+        "issue": "nom_propre_incertain",
+        "note": "Le prénom et le nom semblent corrects mais sans preuve extérieure ils restent probables.",
+        "suggestion": "Nom propre à confirmer sur liste fiable si usage externe."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Cafétéria et au Milk Bar le 30 septembre 1956",
+        "issue": "date_incertaine",
+        "note": "La date du 30 septembre 1956 est bien lisible sur l’image, mais tout usage daté doit rester hypothétique dans ce contexte.",
+        "suggestion": "Date à confirmer avant validation contextuelle ou administrative."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "« Maurice THOREZ est un colonialiste », « Le Parti Communiste français n’est pas assez avec nous », L’Humanité est en arrière de France Observateur et même de l’Express »",
+        "issue": "lecture_probable",
+        "note": "Ce passage sur les propos rapportés est bien visible mais reste issu de témoignages et citations, prudence dans l’interprétation.",
+        "suggestion": "À mentionner comme citation d’un témoignage si réutilisé."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "...du réseau dix jours plus tard : le fulminate de mercure a servi d’amorce pour les bombes montées dans un autre laboratoire dirigé par Abderrahmane Taleb, étudiant en chimie, et Arbib savent immédiatement, à la description des explosions — qui aboutit à son exécution, —, provoquant d’après la PRG une “émotion parmi les communautés qui craignent que l’affaire Timsit ne soit relancée, peut-être rouverte”.\nExceptionnelle à bien des égards, l’activité de Daniel Timsit amène à questionner les attitudes concrètes des témoins face à l’ALN, tant à l’égard des formes prises par la lutte armée que devant l’éventualité d’une entrée dans ses rangs.\n\nCombattre dans l’ALN ?\nContrairement aux allégations de plusieurs tracts du FLN-ALN, les militants juifs, très majoritairement (ex-membres du PCA), agissent pour l’essentiel dans des réseaux politiques qui ne sont qu’indirectement liés à la lutte armée. Si la clandestinité et les secrets qui l’entourent empêchent toute affirmation définitive, ceux qui sont engagés dans la lutte armée se comptent probablement sur les doigts de la main, et sont encore moins nombreux que les combattants européens. Comment expliquer cette quasi-absence de juifs dans l’ALN ?\n\nDésengagements et débats face aux pratiques de l’ALN\nDès le 1er novembre 1954, l’assassinat de l’instituteur Guy Monnerot par le FLN, dont la nouvelle est largement répandue et commentée par la presse française, est l’objet de réprobations et de craintes parmi les militants anticolonialistes. Il en va de même des premiers attentats indifférenciés contre des civils, d’autant plus problématiques pour les militants non musulmans qu’ils introduisent le soupçon d’une insurrection à dimension raciale, alors que leur simple présence auprès du FLN permettrait de désamorcer cette accusation. Simone Aïach, partisane d’actions armées, dit avoir été « horrifiée » par les attentats contre des civils qui, mettant « tout le monde dans le même sac », ont « contribué à faire la fermeture totale de la population française, et à faire que la population a fait bloc! ». Christian, engagé dans la lutte armée à Oran, se souvient avoir critiqué auprès de Yacef Saadi, l’un des responsables des attentats contre les civils, considérant qu’il fallait « neutraliser les Européens, et non les radicaliser ». De même, Jacqueline Schercroun affirme qu’elle n’aurait pas été disposée à poser une bombe visant des militaires, et a fortiori contre des civils.\n\nCette position — acceptation voire participation à l’insurrection, mais réprobation à la fois morale et politique des attentats visant des civils de manière indifférenciée — est majoritaire parmi les témoins, et il s’agit également de la position de la direction du PCA clandestin qui, selon ses propres textes publics ainsi que dans des analyses internes, s’oppose dans ses derniers mois d’activité à la stratégie d’attentats aveugles du FLN.\n\nIl retire et certains militants du PC se retirent de la lutte en raison de leurs trajectoires politiques, voire par absence de confiance envers les nationalistes qui dirigent la lutte, comme André Hanoun, ou d’autres qui ont cessé ou ont songé à cesser leur engagement. De même, Jacques Azoulay, en situation logistique au sein du PCA clandestin, se désengage vers 1957, lorsque son épouse est assassinée et ses deux jeunes enfants sont victimes d’un attentat. Les effets de tels drames familiaux ne sont toutefois pas systématiques : Marie Moatti, arrêtée fin 1956 dans l’affaire des bombes puis disculpée début mars 1957, ou encore son frère Georges, lui-même « libéral », dans l’attentat du casino de la Corniche du 3 juin 1957, ce qui n’interfère pas dans son engagement.\nLors de leur procès, Daniel Timsit et Giorgio Arbib déclarent qu’ils ne savaient pas à quoi étaient destinées leurs bombes et n’avaient pas à le savoir. La ZAA n’avait probablement pas mis « cartes sur table » avec le laboratoire, si l’on en croit leurs témoignages postérieurs et la réaction immédiate de Daniel Timsit qui, bouleversé par les attentats du 30 septembre 1956, cherche à rencontrer l’abbé Barthez à qui il confie sa culpabilité. Plusieurs témoignages font toutefois état de discussions lors desquelles des communistes défendent, à l’image de certains responsables du FLN, la légitimité de ces attentats. Simone Aïach évoque ainsi des camarades « mi-figue, mi-raisin », et Albert Smadja, qui y était hostile, se souvient qu’au camp de Lodi où il est détenu en 1957-1958, les communistes ne sont « pas unanimes » sur la question. Il est également probable que des militants eux-mêmes menacés de mort aient pu trouver une certaine satisfaction à voir des lieux réputés fréquentés par les « ultras » attaqués à la bombe, mais cela est beaucoup plus improbable lorsque des civils sont visés aveuglément. Toutefois, Claude Ouazana raconte qu’à Paris, en 1957, apprenant qu’un attentat venait d’être mis dans le quartier juif d’Oran où vit une partie de sa famille, il en voulut à un camarade juif du FLN, qu’il décrit comme ayant été d’une « intransigeance féroce » à Oran. « J’étais furieux : “C’est dégueulasse, je ne comprends pas, c’est merdique, crapuleux” ».\n\n[...]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-30",
+    "sourceImage": "30-20251216_132949.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "… du réseau dix jours plus tard: le fulminate de mercure à servi @ artie du K mon . . [ Jes bombes MOn e Timsit et Arbib savent immédiatement, à ] ; étudiant en chimie - 41 b ; ME S ; ue leurs produits ont été utilisés, et Ta}eb le confirmera explolenî;iîboutit à son exécution —, provoquant d'après la PRG une uS SOn ;ÏÎnÈÎI—;:chommunÏâŒ qui craignent que | affau‘elg uC 20 S l‘€1ûngèîtl Jes ayant innocentés pour les <Ë°“’_‘ SE DE 2 pr0Êî sn nelle à bien des égards, l'activité de Daniel Timsit amène ï > HR à questi y les attitudes concrètes des témoins face à l'ALN, tant à l’égard des f KS ne it l’éventualité d’une entrée dans ses r par la lutre armée que devant - ; S rangs. Mane T r , mes Prises",
+        "issue": "mot_illisible",
+        "note": "Passage flou et haché en haut de page gauche, très difficile à déchiffrer sur l’image comme dans l’OCR.",
+        "suggestion": "Lecture impossible du début ; seule l'intention générale du passage est restituée."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Exceptionnelle à bien des égards, l’activité de Daniel Timsit amène à questionner…",
+        "issue": "lecture_probable",
+        "note": "Phrase confirmée sur l’image mais ponctuation possiblement altérée par l’OCR.",
+        "suggestion": "Ponctuation vérifiée sur l’image, texte conforme."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Desengagements et debats face aux pratiques de l’ALN",
+        "issue": "lecture_probable",
+        "note": "L’OCR confond certains accents et lettres, mais la structure générale est conservée.",
+        "suggestion": "Corrigé d'après l’image et contexte du paragraphe."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Simone Aïach, partisane d’actions armées, dit avoir été « horrifiée » par les attentats contre des civils…",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre partiellement flou dans l’image, mais passant pour probable étant donné la répétition.",
+        "suggestion": "Reprise du texte OCR avec validation visuelle."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Claude Ouazana raconte qu’à Paris, en 1957… à un camarade juif du FLN, qu’il décrit comme ayant été d’une « intransigeance féroce »",
+        "issue": "nom_propre_incertain",
+        "note": "Nom de Claude Ouazana plausible mais un doute subsiste à cause de la lisibilité moyenne.",
+        "suggestion": "Indiqué comme lecture probable."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Des velléités contrariées. Les militants juifs et la lutte armée\n\nUn soutien ou une participation à la lutte armée ne peuvent se concevoir sans une certaine capacité à haïr et sans l’acceptation – voire le souhait – de la mort des ennemis, qu’ils soient des militaires ou des civils. Lucien Hanoun affirme clairement :\n\n« Il m’aurait été difficile de prendre les armes, à moi, contre les soldats français. […] Il faut dire qu’en milieu européen — ou juif —, il n’y avait pas cette haine fondamentale de l’Algérien, opprimé pour l’opprimer ! »\n\nCette haine anticoloniale existe pourtant chez des non-musulmans, mais il est probable que pour la plupart de ceux qui participent par la bande ou de manière marginale à la lutte armée, le souhait de la mort de l’autre soit progressif, à mesure qu’ils deviennent témoins des actes d’« ultras » ou de l’armée française, apprennent une exécution ou sont eux-mêmes victimes de menaces de mort ou de la répression. Âgé de 16 ans en 1954, Simon, qui grandit en milieu judéo-arabe dans la Casbah d’Alger, apprend que le père d’un ami « sauté » le 1er novembre, puis assiste à l’assassinat de son « frère de lait » musulman par un membre des Unités territoriales. Il fait alors le serment, avec trois amis musulmans, de le venger en s’engageant dans le FLN. Simone Aïach, sans nouvelles de son mari Georges Hadjadj depuis son enlèvement par les parachutistes en juin 1957, se rend au quartier général du général Massu pendant l’été :\n\n« J’ai rencontré Massu ce jour-là. Il descendait de sa jeep. Et je lui ai dit tout ce que j’avais sur le cœur. J’ai compris que moi j’étais capable de tuer, que j’étais capable. J’étais tellement bouleversée par sa disparition et la réponse de Massu là-dedans que je crois que si j’avais eu une arme, j’aurais été capable de m’en servir. »\n\nDe même Marie, dont le mari est alors au maquis, se souvient de son expulsion d’Algérie fin 1956, au moment où elle se trouve entourée de soldats français : « J’aurais été capable de faire sauter une bombe pour exploser. »\n\nPour les militants engagés dans les villes – quelles que soient les origines – et leur organisation (CDL ou ALN), « les difficultés, ce n’est pas tellement de poser la bombe, c’est de reconstituer un groupe armé ». À Blida et Alger, les CDL, organisateurs du « maquis rouge » et de plusieurs attentats contre des civils, comptent Marylise Benhaïm parmi leurs agents de liaison les plus actifs et organisent le passage au maquis du déserteur Georges Bensaïd, à qui n’est confiée qu’une éphémère tâche politique car il n’a pas part pour la lutte armée. À Tlemcen, Maurice Benhamou est l’un des bras droits d’Ahmed Inal et assure des liaisons avec les maquis de l’ALN, notamment l’acheminement de médicaments et le passage de déserteurs au maquis, jusqu’à ce qu’il doive fuir pour Paris dès le printemps 1956, et son ami Inal, capturé et supplicié et assassiné par l’armée française en novembre 1956.\n\nÀ Alger, Tayeb Bouhraoua, responsable d’équipes de CDL qui réussissent peu de sabotages, évoque un certain Zmirou, volontaire pour tuer un ancien « mouchard » de la DST et pour incendier un bâtiment, mais renonce devant les difficultés de l’entreprise et au risque de tuer des civils. À Oran enfin, après le démantèlement des CDL en septembre 1956, la DST produit lors de l’instruction un témoignage indiquant que le responsable de la distribution à l’échelle de la ville était Émile Schecroun. Il aurait été chargé de la distribution des armes, notamment issues du stock detourné par Henri Abécassis.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-31",
+    "sourceImage": "31-20251216_133004.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Zmirou, volontaire pour tuer un ancien « mouchard » de la DST et pour incendier un bâtiment",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom « Zmirou » comporte une incertitude de lecture entre l'OCR et l'image ; la typographie laisse un doute.",
+        "suggestion": "Vérifier sur l'image ou dans une version plus nette si le nom propre est correctement relevé dans la source."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Henri Abécassis",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom à la fin du passage est déduit de l'image, mais il demeure une incertitude de lecture directe en raison de la typographie et des césures.",
+        "suggestion": "Confirmer le nom dans une source alternative ou demander validation humaine."
+      },
+      {
+        "confidence": "low",
+        "fragment": "au moment où elle se trouve entourée de soldats français : « J’aurais été capable de faire sauter une bombe pour exploser. »",
+        "issue": "mot_illisible",
+        "note": "Le sens exact de la citation de \"Marie\" peut être incertain, une partie étant peu lisible.",
+        "suggestion": "Vérifier le passage sur l'image originale avec une résolution plus élevée."
+      },
+      {
+        "confidence": "high",
+        "fragment": "des Unités territoriales",
+        "issue": "sigle_incertain",
+        "note": "L'OCR ne donne pas de sigle ici, mais le texte mentionne les \"Unités territoriales\" ; il y a une forte probabilité sur la terminologie mais le sigle demeure incertain.",
+        "suggestion": "Valider le sigle lors d'une vérification humaine ou avec l'ensemble du document."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lucien Hanoun affirme clairement",
+        "issue": "lecture_probable",
+        "note": "La formulation attribuée à Lucien Hanoun est reconstruite d'après image/OCR, mais une ambiguïté subsiste sur la phrase exacte.",
+        "suggestion": "Se référer à la source archivistique si disponible ou effectuer une validation manuelle sur l'image."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Maillot128), de la constitution de groupes armés, de vols d’explosifs et d’armes, ainsi que de la planification de divers attentats129. Étudiant l’action de l’ALN à Oran, Omar Carlier souligne que si la réussite et l’efficacité de l’action de l’ALN tiennent sans doute aux acteurs directs, et même à l’équipe dirigeante, elles lui importent beaucoup moins que son actualisation même. Car c’est le passage à l’acte qui fait sens et qui fait preuve130. Ce constat peut également être fait à propos des combattants communistes, et à fortiori à propos de non-musulmans dont le surgissement armé, rendu public, prend une signification symbolique forte quels que soient les actions effectivement réalisées.\n\nEn dehors de ces contraintes objectives rencontrées par tous les combattants des villes, des militants non musulmans — et peut-être particulièrement des juifs — semblent bien faire face à des obstacles spécifiques lorsqu’ils cherchent à gagner le maquis. Arlette Bourgel, enceinte, entre en cavale en mars 1957 avec son compagnon André Beckouche131 :\n\n« Quand on était poursuivis… Eh bien, c’est pas évident d’aller dans le maquis. [...] Des gens ont pris des contacts pour nous […]. Déjà, on disait — je ne sais pas dans quelle mesure c’est vrai, mais c’est probable — que pour aller au maquis, il fallait avoir abattu quelqu’un. Pour les Algériens. Et j’imagine que pour nous, ça devait être encore beaucoup plus difficile. Donc ce n’est pas tout de savoir engagés aux côtés des nationalistes ; on peut dire — en tout cas on allait dans la même direction ; ça ne suffisait pas pour qu’on nous fasse confiance et qu’on nous accepte ! »\n\nClaude Sixou, qui intègre le FLN à Paris et rejoint Tunis à l’été 1957, cherche par tous les moyens à se faire envoyer dans un maquis, brûlant d’envie de se confronter à l’armée française. Il se souvient de la dernière phrase de sa lettre d’insoumission, retirée à la demande du FLN (« En définitive, je préfère être un simple soldat dans l’armée algérienne qu’un sous-lieutenant dans l’armée française »), ainsi que d’une phrase de la lettre qu’il envoie à son père à la même époque (« J’avais le choix de mourir en Algérie avec une balle dans la nuque, ou de mourir en Tunisie avec une balle par-devant. J’ai choisi la balle par-devant »). En 1960, souffrant de la solitude à Alger et estimant que les petites tâches qui lui sont confiées par le PCA conviendraient mieux « à un père de famille », il écrit :\n\n« Non, ce n’était pas en question. Je n’ai pas insisté. Tous les relents de compte. J’ai su après. J’ai pensé que c’était parce que, je ne savais pas, tous les règlements de compte. [...] Comme beaucoup, j’idéisais la réalisation du FLN, auréolée d’une image de pureté révolutionnaire. »\n\nCette idéalisation du FLN, auréolée d’une image de pureté révolutionnaire malgré certaines actions perçues comme des « bavures », n’est pas partagée par tous les communistes. Claude Ouazana, recevant à Paris début 1956 des nouvelles de ses camarades rentrés en Algérie pour lutter, dont une carte d’Ahmed Inal concluant par le mot « Rentre », raconte la réaction viscérale de Malek Haddad qui lit cette carte avec lui (« N’y va pas ! » — finalement contredit d’un « Fais ce qu’il te dit ») ; de même que M’hamed Issiakhem lui aurait dit : « N’y va pas, on t’égorgerait devant moi, je n’y pourrais rien134. Tayeb Bouhraoua confirme :\n\n« C’était extrêmement difficile au maquis pour les communistes algériens musulmans, que dire pour des juifs ? [...] Moi, un m’a posé la question. “Moi, je ne te conseille pas !” »\n\nSi tous les membres du PCA ne sont pas immédiatement au fait des difficultés rencontrées dès 1955 par leurs camarades montés au maquis — qui vont de la relégation à des tâches subalternes à l’exécution pure et simple —, il est rapidement notoire que Georges Counillon, Laïd Lamrani, Roland Siméon, André Martinez, Georges Raffini ou Salah Mohamed Saïd ont été liquidés physiquement au sein du maquis, à tel point que plane à l’époque et jusqu’à aujourd’hui l’hypothèse d’une liquidation « pour un certain nombre de communistes et de sympathisants prétendument morts au champ d’honneur ». Visés comme concurrents politiques, les communistes sont aussi potentiellement visés comme intellectuels et comme non-musulmans, et peut-être encore plus s’ils sont juifs. On comprend dans ces conditions que des militants se voient déconseiller de rejoindre le maquis par des membres du FLN ou du PCA — qui a de surcroit besoin de forces pour maintenir son organisation dans les villes.\n\nPierre Ghenassia (1939-1957), un maquisard juif algérien\n\nPierre Ghenassia est le seul exemple documenté de juif algérien ayant appartenu à un maquis de l’ALN. Né le 24 juillet 1939 à Ténès d’un père fonctionnaire et d’une mère bijoutière, il est le cousin germain maternel de deux militants du PCA, Rubens Fitoussi et Jean-Pierre Saïd. Ses parents ne semblent ",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-32",
+    "sourceImage": "32-20251216_133020.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Maillor!®)",
+        "issue": "mot_illisible",
+        "note": "Probable lect. 'Maillot' mais graphie à confirmer ; le caractère après 'Maillot' dans l'OCR ne correspond pas à ce qui est vu sur l'image.",
+        "suggestion": "Lire 'Maillot'."
+      },
+      {
+        "confidence": "low",
+        "fragment": "action de p Tms",
+        "issue": "mot_illisible",
+        "note": "Fragment OCR inexploitable, lecture impossible sans contexte certain.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "aClîlons « i”‘P01:Ë) à “«beaucoup moins que son actualisation même.",
+        "issue": "mot_illisible",
+        "note": "Passage à reformuler avec prudence ; phrase rétablie via l'image, caractères OCR erronés.",
+        "suggestion": "Restituer selon l'image : 'beaucoup moins que son actualisation même.'"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Omar Carlier souligne que si la réussite et l’efficacité e action de p Tms sans doute aux acteurs directs, et même à l’équipe dirigeante » aClîlons « i”‘P01:Ë) à “«beaucoup moins que son actualisation même.",
+        "issue": "lecture_probable",
+        "note": "La syntaxe est reconstituée, certains mots incertains.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Quand on était poursuivis... Eh bien, c’est pas évident d’aller ; maquis. [:..] Des gens ont pris des contacts pour nous […]. Déjà ;>11€ë1—(i , “ ne sais pas dans quelle mesure c'est vrai, mais c’est probable — que l>0Uf ;S maquis, il fallait avoir abateu quelqu’un.",
+        "issue": "mot_illisible",
+        "note": "Ponctuation et enchaînement maladroits via OCR. Reformulé d'après l'image, mais éléments lacunaires d'intonation.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "la lettre qu’il envoie à son père à la même époque (« J’avais le choix de mourir en Algérie avec une balle dans la nuque, ou de mourir en Tunisie avec une balle par-devant. J’ai choisi la balle par-devant »).",
+        "issue": "lecture_probable",
+        "note": "Formulation confirmée par relecture visuelle.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Claude Ouazana, recevant à Paris début 1956 des îouïrîZ toäS s rentrés en Algérie pour lutter, dont une carte d’Ahmed Inal corîcluî ntre», raconte la réaction viscérale de Malek Haddad",
+        "issue": "mot_illisible",
+        "note": "Mauvaise reconnaissance dans OCR, remplacé par relecture de l'image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "rarmet par | ï » X e «balle dans Ja nl‘qucv-l évoque ® balle par-devant” qu’ ; e s l’uniforme { 369 Ï rs Ls Ÿ 2s , x]",
+        "issue": "mot_illisible",
+        "note": "Fin de page et notes mal reconnues par OCR ; contenu non restituable.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Pierre Ghenassia est le seul exemple documenté de juif algérien ayant app£ï—Ç un laquis de l'ALN.",
+        "issue": "mot_illisible",
+        "note": "Lecture probable rétablie comme « ayant appartenu à un maquis de l’ALN ».",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "INVENTER DES ALGÉRIANITÉS EN GUERRE ET EN PAYS LIBÉRÉ (1954-1965)\n\nDes Algérianités – en guerre\n\nMoins politisés, mais ses cousins insistent sur les bonnes relations entretenues par la famille avec des musulmans de Ténès et des environs. Et si Pierre Ghenassia lui-même n’a jamais été membre du PCA, il a probablement été influencé par son voisin principal animateur du PCA à Ténès, qui souhaitait aussi l’anticolonialisme dans la Masebeuf. Dès l’âge de 15 à 18 ans, le jeune homme prend part à la lutte «dans la peau». Interne au lycée d’Alger, il part pour l’anticolonialisme, soutenu par sa tante Mireille Saïd, qui bascule dans le soutien à l’insurrection après 1954 et dont le fils Jean-Pierre milite au PCA clandestin. Fin juillet 1955, ce dernier part au festival mondial de la jeunesse à Varsovie et correspond à des réunions clandestines avec des communistes et dépose des journaux clandestins La Voix des soldats dans un lieu fréquenté de Ténès. À cette époque, il évolue probablement dans des cercles du PCA et du FLN animés d’un bouillonnement commun.\n\nParmi les étudiants de la faculté d’Alger, et lorsqu’en mai 1956, l’UGEMA appelle à la grève des cours et des examens, il déserte le lycée. C’est sans doute en novembre 1956, peut-être au moment de la fête juive de Hanouka, qu’il gagne le maquis. Sa cousine Josette Saïd raconte : «À Ténès, il n’y avait pas de viande kashir, donc il est parti soi-disant pour aller chercher la viande chez son oncle, à Orléansville. [...] Ma tante attendait son paquet, et elle a téléphoné à son frère, qui lui a dit : ‘On l’a pas vu.’ Le départ, c’est ça. Écoute, c’est la légende.»\n\nLes RG, qui pensent en 1959 qu’il est en wilaya V, inscrivent dans la rubrique «emploi dans la rébellion» : «De constitution fragile, sa fonction exacte dans l’ALN n’a pu être déterminée.». Sans doute d’abord monté dans un maquis de la région de Ténès par l’intermédiaire de réseaux communistes, il rejoint la wilaya IV, où il remplit plusieurs fonctions, dont celle d’infirmier. Le commandant Azzedine écrit en 1976 :\n\n«Parmi [les infirmiers et médecins], l’une des figures les plus attachantes fut celle de notre infirmier zonal, Hadj. Nous l’appelions ainsi, mais son vrai nom était Ganacia (sic). Il était israélite, parlait très bien l’arabe. Pour tous ceux qui tiennent comme un fait établi le prétendu antagonisme de nos origines religieuses, je voudrais qu’on le sache : Hadj est mort, refusant d’abandonner ses blessés. C’était un fier et nous l’avons pleuré. À Boukren, il sauva Boualem Oussedik de la gangrène. [...] Hadj est mort à Tiberguent [le 22 février 1957], en défendant une infirmerie et les blessés dont il avait la responsabilité.»\n\nCette insistance sur sa judéité est présente dès 1957 dans des tracts de la wilaya IV adressés aux juifs algériens, dans lesquels Pierre Ghenassia est nommé comme un exemple à suivre. Azzedine met également en avant son algérianité à travers son nom de guerre et sa maîtrise de l’arabe – ce dernier n’étant d’ailleurs pas avéré.\n\nUne lettre envoyée par Pierre Ghenassia à ses parents depuis le maquis le 3 février 1957 – probablement la dernière qu’il a écrite – donne de très riches informations :\n\n«Chers Parents\nJ’emprunte cette fois-ci l’organisation du maquis pour vous faire parvenir des nouvelles qui sont excellentes. En ce moment je me remets très vite d’une petite affection intestinale. Je vais déjà très bien. Cela fait déjà trois mois que je suis ici et je n’ai pas vu le temps passer. Bien des aventures me sont arrivées mais celles-ci, je me réserve de vous les conter après l’indépendance in challah.\n\nJe milite depuis au milieu de milliers de jeunes qui comme moi ont rejoint le maquis et dans un magnifique élan d’enthousiasme tendent tout leur effort à la réalisation de leur idéal. Un véritable esprit révolutionnaire existe et nous marchons infailliblement vers la liberté. Je suis pour le moment assez loin mais je pense peut-être revenir dans nos parages. Et vous comment allez-vous ? Anne-Marie travaille-t-elle toujours aussi bien en classe. Et la 203 se porte-t-elle toujours aussi bien.\n\nNous avons ici un excellent moral car nous sommes sûrs en considérant tous les symptômes politiques que l’issue est proche. J’ai été affecté au service de presse de la wilaya et j’ai dernièrement fait, armé d’un appareil de photos, une enquête sur les atrocités des Nazis Français dans un douar particulièrement éprouvé. J’en ai été écœuré.\n\nIci vois-tu ‘l’on sue et l’on crève’ comme dit la chanson. On ne se lave pas souvent non plus et on a des poux ; mais cela fait rien on a tout accepté. J’ai appris par les journaux que l’organisation de Ténès avait été décapitée. J’ai fui à temps.\n\nBon je crois que je vous ai assez rassuré comme cela. Je vous quitte en vous embrassant affectueusement.\n\nÀ bientôt dans une Algérie libre et indépendante.\nPierre – dit ‘El Hadj’»",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-33",
+    "sourceImage": "33-20251216_133048.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "INVENTER DES ALGÉRIANITÉS EN GUERRE ET EN PAYS LIBÉRÉ (1954-1965)",
+        "issue": "lecture_probable",
+        "note": "Le titre principal dépend de la lisibilité partielle en haut de page, recoupée avec l'OCR. Vérifié par image mais certaines lettres du titre sont peu claires.",
+        "suggestion": "Lecture générale du titre semble cohérente mais peut comporter des variantes orthographiques mineures."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Masebeuf / Masebeuf.",
+        "issue": "nom_propre_incertain",
+        "note": "Le mot 'Masebeuf' est restitué selon la forme la mieux lisible sur l'image, mais le nom propre pourrait être mal identifié par l'OCR.",
+        "suggestion": "Vérifier orthographe exacte sur version papier ou autre source."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jean-Pierre milite au PCA clandestin.",
+        "issue": "lecture_probable",
+        "note": "Phrase sujette à incertitude car plusieurs éléments du nom et de la syntaxe sont peu nets, mais lecture plausible à partir de l'image.",
+        "suggestion": "Lecture plausible mais à confirmer."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Lettre manuscrite citée (extrait)",
+        "issue": "lecture_probable",
+        "note": "L'organisation du texte et l'origine de la lettre sont restituées à partir de la justification typographique et des guillemets, mais certaines lignes sont indistinctes.",
+        "suggestion": "Mentionner comme citation probable, sans garantir la ponctuation."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Ganacia (sic)",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre peu sûr d'après l'image et l'OCR ; l’orthographe doit être confirmée.",
+        "suggestion": "Ne pas affirmer la graphie exacte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Azzedine écrit en 1976",
+        "issue": "date_incertaine",
+        "note": "La date est issue de la phrase de transition, mais la formulation exacte n'est pas pleinement garantie.",
+        "suggestion": "La date doit être vérifiée sur source primaire."
+      },
+      {
+        "confidence": "high",
+        "fragment": "le 22 février 1957",
+        "issue": "date_incertaine",
+        "note": "Date lisible sur l'image mais nécessiterait confirmation sur original ou note infrapaginale.",
+        "suggestion": "Lecture apparemment correcte mais prudent de garder un seuil d’incertitude."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "wilaya IV",
+        "issue": "sigle_incertain",
+        "note": "Wilaya IV mentionnée à plusieurs reprises : l’OCR la restitue bien, la numérotation est probable.",
+        "suggestion": "Lecture plausible – à confirmer en contexte."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Nazis Français",
+        "issue": "mot_illisible",
+        "note": "Le terme apparaît flou dans cette phrase, lisible avec difficulté et contextuellement probable.",
+        "suggestion": "Mentionner la lecture comme probable mais non certaine."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "La Voix des soldats, bulletin clandestin édité par le PCA à destination des soldats français de janvier 1956 à mars 1957, se voit accorder dans plusieurs histoires communistes une place qui semble sans commune mesure avec la réalité du réseau, ce que Lucien Hanoun, dirigeant du réseau, relativise lui-même dans un témoignage tardif mais non motivé fin 1956-14, affirme d'ailleurs en détail de 1955 jusqu'au démantèlement du réseau, accérant pour le relater, mais l'usage systématique des tracts du PCA — dont Maurice Audin et Omar Djeghri, tous deux assassinés — et déborda sur le FLN. Dans ses mémoires, le général Massu affirme d’ailleurs qu'en 1957, « depuis des mois, tous les services de police prévoient un pot monstre pour le jour où ils cravateront l'imprimerie clandestine de La Voix du Soldat », et qu'après avoir démantelé le réseau responsable de ce « torchon clandestin », un « message chiffré » de Paris [lui] précisa que son importance se situait sur le plan gouvernemental. »\n\nL’étude de ce réseau est aussi un biais intéressant pour questionner le fonctionnement du PCA clandestin, ses relations avec le PCF et son regard sur le « peuple de France », autour d’un point crucial : l’attitude face au contingent français d’Algérie, dès le cessez-le-feu, les parents des anciens de l’ALN et participer à se venger (Alger Républicain, 6 mars 1962, p. 13). Toutefois, Lucien Hanoun, qui dispose de son réseau estimé à environ 120 militants, âgé de 41 ans mais sans contrainte familiale, est désigné enseignant rompu à l’écriture journalistique, après avoir servi cinq ans dans l’armée française et conservant ses liens de famille, le fait porter aux nues le « peuple de France ». Il considère André Moine comme un modèle, là où de jeunes radicaux le considèrent comme un frein. Toutefois, de nombreux jeunes pris dans le bouillonnement anti-guerre participent à son réseau, et Lucien Hanoun se rendra compte que ses troupes étaient plus nombreuses, à certains moments, que les communistes algérois dans la lutte armée. Cependant, les militants de ce réseau sont quasi exclusivement européens et juifs, ce qui témoigne à n’en pas douter d’une division des origines au sein de la lutte.\n\nPlusieurs anciens responsables du réseau estiment a posteriori que cette action était plus symbolique qu’effective, et témoignent de leurs difficultés à fabriquer le journal et à intéresser les premiers concernés. De fait, Jean-Pierre Saïd et Pierre Khalifa semblent avoir été les seuls soldats à avoir participé à la diffusion du journal à l’intérieur des casernes. Le premier, journaliste à Alger Républicain, âgé de 21 ans, fait son service militaire à Batna, dans les Aurès, en 1954 :\n\n« J’ai eu de la chance, je m’en suis bien sorti à l’intérieur du poste parce que j’avais un colonel qui avait été un résistant, qui avait fait la Résistance avec les FTP. Les petits copains, je les connais. » Mot à mot. « Je ne veux pas que tu me classes ».",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-34",
+    "sourceImage": "34-20251216_133108.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "accérant pour le relater",
+        "issue": "mot_illisible",
+        "note": "Le passage est faiblement lisible sur l'image, l'OCR propose une lecture confuse ('accé...'), et le mot exact n'est pas certain.",
+        "suggestion": "Relire sur original, mot probablement erroné ou déformé, contexte : récit du démantèlement du réseau."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "fin 1956-14, affirme d'ailleurs en détail de 1955 jusqu'au démantèlement du réseau",
+        "issue": "lecture_probable",
+        "note": "Correspondance confuse dans l'OCR et formulation ambiguë sur l'image ; la chronologie exacte reste à vérifier.",
+        "suggestion": "Revoir datation et formulation, la lecture proposée reprend la structure visible mais la véracité chronologique est à confirmer."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Lucien Hanoun, qui dispose de son réseau estimé à environ 120 militants",
+        "issue": "lecture_probable",
+        "note": "Le nombre exact tiré de l'image est lisible, mais reste une estimation rapportée indirectement dans le texte.",
+        "suggestion": "Mentionner comme estimation, sauf confirmation directe dans le texte source."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Jean-Pierre Saïd et Pierre Khalifa semblent avoir été les seuls soldats à avoir participé à la diffusion du journal à l’intérieur des casernes.",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'Saïd' et 'Khalifa' sont lisibles sur l'image mais restent sujets à vérification (possibilité de mauvaise lecture ou d'erreur de l'OCR en cas de qualité d'image variable).",
+        "suggestion": "Nom propre à confirmer lors d'une validation humaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "« J’ai eu de la chance, je m’en suis bien sorti à l’intérieur du poste parce que j’avais un colonel qui avait été un résistant, qui avait fait la Résistance avec les FTP. Les petits copains, je les connais. » Mot à mot. « Je ne veux pas que tu me classes ».",
+        "issue": "lecture_probable",
+        "note": "La citation apparaît clairement sur l'image, mais la fidélité mot à mot dépend de la vérification sur exemplaire original.",
+        "suggestion": "Vérifier la ponctuation exacte à l'original pour certitude intégrale."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Hédia Bensahli\nL'Algérie juive\nL'autre moi que je connais si peu\nPréface de Valérie Zenatti\nÉDITIONS ALTAVA",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-35",
+    "sourceImage": "35-20251216_133345.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Hédia Bensahli",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est lisible visuellement mais la police décorative pourrait entraîner une incertitude minime sans OCR.",
+        "suggestion": "Lecture probable mais à confirmer en recoupant d'autres sources."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Valérie Zenatti",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est lisible visuellement mais demande validation externe.",
+        "suggestion": "Lecture probable mais à confirmer."
+      },
+      {
+        "confidence": "high",
+        "fragment": "ÉDITIONS ALTAVA",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de l'éditeur est lisible mais demande confirmation.",
+        "suggestion": "Lecture probable mais non certifiée en l’absence de recoupement."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "L’Algérie juive\n\nL’autre moi que je connais si peu\n\nPréface de Valérie Zenatti\n\nBnF\nPHS",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-36",
+    "sourceImage": "36-20251216_133358.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "L’Algérie juive / L’autre moi que je connais si peu / Préface de Valérie Zenatti",
+        "issue": "lecture_probable",
+        "note": "La lecture de ce bloc est hautement probable : tout est parfaitement lisible au centre de la page.",
+        "suggestion": "Aucune incertitude significative sur le texte central."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "BnF PHS (tampon)",
+        "issue": "sigle_incertain",
+        "note": "Le cachet est bien identifié comme BnF PHS, mais ne faisant pas partie du texte d’auteur, il est indiqué à part.",
+        "suggestion": "Lecture du cachet à confirmer si usage bibliographique."
+      },
+      {
+        "confidence": "high",
+        "fragment": "BNF DLL 04-06-24",
+        "issue": "lecture_probable",
+        "note": "Lecture du tampon en haut à droite, probablement une référence de dépôt légal.",
+        "suggestion": "Lecture du sigle et de la date probable, mais considérer comme note marginale."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "47423712 (manuscrit en haut à gauche), DLE-20240604-35672 / 2024-112346 (étiquette en bas à gauche)",
+        "issue": "lecture_probable",
+        "note": "Numéros manuscrits et d’étiquette lisibles, mais ne faisant pas partie du corps du texte.",
+        "suggestion": "Attention, non pertinent pour la transcription du texte éditorial."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "L’histoire des relations entre Juifs et Musulmans en Algérie présente le paradoxe de deux \"communautés\" qui avaient lié des relations de proximité et furent séparées par un sillon prenant au fil du temps l’aspect d’un fossé se creusant inexorablement à mesure que s’écrivait l’histoire.\n\nJérémy Guedj\n\nL’Algérie ne me doit rien, mais moi je dois à l’Algérie. Je dois d’y être né, d’un père d’Aïn-Beïda, d’un grand-père et de toute une lignée venue de la Basse-Casbah. Je dois à l’Algérie d’avoir vécu de soleil, d’avoir été nourri de son amour pudique et braillard, excessif et profond, ensemencée des cris de la rue, où j’ai appris la vie, la lutte, la fraternité.\n\nRoger Hanin",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-37",
+    "sourceImage": "37-20251216_133411.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "\"Jérémy Guedj\"",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom propre s'appuie sur l'image, non sur l'OCR.",
+        "suggestion": "Vérifier dans le document original pour confirmer l'orthographe exacte du nom."
+      },
+      {
+        "confidence": "high",
+        "fragment": "\"Roger Hanin\"",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom propre s'appuie sur l'image, non sur l'OCR.",
+        "suggestion": "Vérifier dans le document original pour confirmer l'orthographe exacte du nom."
+      },
+      {
+        "confidence": "low",
+        "fragment": "La totalité des phrases de la page",
+        "issue": "lecture_probable",
+        "note": "L'OCR ne propose aucune base fiable pour la transcription ; la lecture a été reconstituée à partir de l'image seulement.",
+        "suggestion": "Demander une validation humaine sur la totalité de la lecture proposée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Hédia Bensahli\nL’ALGÉRIE JUIVE\n\nLa présence juive en Algérie a souvent été minimisée, même niée dans les discours de tous les vainqueurs. Mais, malgré tout, elle s’est maintenue jusqu'à ce que la colonisation la dissolve dans ses statistiques : On parlera alors de Français, puis on affublera les Juifs algériens de l’identité « pied-noir ». Dans l’Algérie postcoloniale, la liesse de l’indépendance et les enjeux idéologiques (aussi) finissent par faire de ces autochtones une réalité anecdotique. Pourtant, deux mille ans d’histoire et un héritage culturel des plus féconds sont là pour témoigner d’une trajectoire historique qui place la judéité au cœur de l’intimité algérienne. L’Algérie juive, ce n’est pas une Algérie à côté, ou contre d’autres, mais c’est l’une des racines les plus authentiques d’un creuset multiculturel et multiethnique plusieurs fois millénaires.\n\n(HR)\n\nHédia Bensahli est une écrivaine franco-algérienne. Titulaire d’un master en littérature (Alger) et d’un DEA en didactologie des langues et des cultures (Sorbonne-Paris III), elle se consacre actuellement à son métier d’enseignante et à l’écriture. Récompensée par le Prix Yamina Mechakra (Algérie, 2019) pour son premier roman, Orages, elle est finaliste du Prix Mohammed Dib (Algérie, 2022) pour son deuxième roman, L’agonisant, une exofiction sur l’illustre peintre autrichien Egon Shiele auquel elle invente un destin algérien.\n\n22 €\nISBN : 978-2-494387-05-8\nwww.editions-altava.com",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-38",
+    "sourceImage": "38-20251216_133425.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "(HR)",
+        "issue": "mot_illisible",
+        "note": "Ce fragment n'est pas présent sur l'image, c'est une insertion interprétative provenant de la structure et non du texte, à supprimer si besoin.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "L’Algérie juive, ce n’est pas une Algérie à côté, ou contre d’autres, mais c’est l’une des racines les plus authentiques d’un creuset multiculturel et multiethnique plusieurs fois millénaires.",
+        "issue": "lecture_probable",
+        "note": "Lecture confirmée visuellement ligne à ligne, très forte correspondance avec l'image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "exofiction sur l’illustre peintre autrichien Egon Shiele auquel elle invente un destin algérien.",
+        "issue": "nom_propre_incertain",
+        "note": "L'orthographe exacte du nom propre pourrait être \"Schiele\" (Egon Schiele) mais la lecture de l'image semble indiquer \"Shiele\".",
+        "suggestion": "Vérifier sur l'image la graphie exacte (Schiele/Shiele)."
+      }
+    ]
+  }
+]
