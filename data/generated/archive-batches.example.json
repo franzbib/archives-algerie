@@ -160,17 +160,17 @@
       "collectionId": "shd-gh-1h3421-d1-bleuite-fln-abattus-w3-amirouche",
       "title": "SHD GH 1H3421 D1 - Bleuite, FLN abattus W3, lettre d'Amirouche",
       "sourceType": "google_drive",
-      "status": "planned",
+      "status": "review_ready",
       "driveSource": {
         "driveFolderUrl": "https://drive.google.com/drive/folders/1scxkOKKKmCKpwBuiF1wLTdv736pwItZH",
         "inventoryManifest": null
       },
-      "assetManifest": null,
-      "assistedReadingManifest": null,
-      "reviewRoute": null,
+      "assetManifest": "data/generated/batches/lot-bleuite-fln-w3-amirouche-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-bleuite-fln-w3-amirouche-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-bleuite-fln-w3-amirouche-001",
       "legacyReviewRoute": null,
-      "itemCount": null,
-      "notes": "Source Drive identifiee par inventaire leger local : dossier SHD GH 1H3421 D1 Bleuite, FLN abattus W3, lettre d'Amirouche. Lot JPG de premiere vague, techniquement simple mais editorialement sensible ; aucune ingestion, aucun OCR, aucune lecture assistee et aucun upload n'ont encore ete produits."
+      "itemCount": 55,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees. Lot editorialement sensible a controler humainement avec prudence documentaire."
     },
     {
       "lotId": "lot-fln-w4-005",

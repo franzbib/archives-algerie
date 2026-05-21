@@ -12,6 +12,8 @@ import gouasZaouiasAssistedReadings from "../../data/generated/batches/lot-gouas
 import gouasZaouiasPublicAssets from "../../data/generated/batches/lot-gouas-zaouias-001/public-assets.json";
 import pamCimLiberesAssistedReadings from "../../data/generated/batches/lot-pam-cim-liberes-001/assisted-readings.json";
 import pamCimLiberesPublicAssets from "../../data/generated/batches/lot-pam-cim-liberes-001/public-assets.json";
+import lotBleuiteFlnW3Amirouche001AssistedReadings from "../../data/generated/batches/lot-bleuite-fln-w3-amirouche-001/assisted-readings.json";
+import lotBleuiteFlnW3Amirouche001PublicAssets from "../../data/generated/batches/lot-bleuite-fln-w3-amirouche-001/public-assets.json";
 import tiaretZaouiasAssistedReadings from "../../data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json";
 import tiaretZaouiasPublicAssets from "../../data/generated/batches/lot-tiaret-zaouias-001/public-assets.json";
 import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
@@ -112,6 +114,8 @@ const assetManifestRegistry: Record<string, AssetManifest> = {
     gouasZaouiasPublicAssets as AssetManifest,
   "data/generated/batches/lot-pam-cim-liberes-001/public-assets.json":
     pamCimLiberesPublicAssets as AssetManifest,
+  "data/generated/batches/lot-bleuite-fln-w3-amirouche-001/public-assets.json":
+    lotBleuiteFlnW3Amirouche001PublicAssets as AssetManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/public-assets.json":
     tiaretZaouiasPublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
@@ -129,6 +133,8 @@ const assistedReadingManifestRegistry: Record<string, AssistedReadingManifest> =
     gouasZaouiasAssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-pam-cim-liberes-001/assisted-readings.json":
     pamCimLiberesAssistedReadings as AssistedReadingManifest,
+  "data/generated/batches/lot-bleuite-fln-w3-amirouche-001/assisted-readings.json":
+    lotBleuiteFlnW3Amirouche001AssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json":
     tiaretZaouiasAssistedReadings as AssistedReadingManifest,
   "data/generated/pilot-batch-assisted-readings.example.json":
