@@ -292,6 +292,40 @@
       "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
     },
     {
+      "lotId": "lot-boghari-ancienne-001",
+      "collectionId": "boghari-ancienne",
+      "title": "Boghari a l'ancienne",
+      "sourceType": "google_drive",
+      "status": "review_ready",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1pxD86rzZWP3vkw3MEF3I2dZ_GUrOQTnP",
+        "inventoryManifest": null
+      },
+      "assetManifest": "data/generated/batches/lot-boghari-ancienne-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-boghari-ancienne-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-boghari-ancienne-001",
+      "legacyReviewRoute": null,
+      "itemCount": 67,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
+    },
+    {
+      "lotId": "lot-morts-france-boghari-14-18-001",
+      "collectionId": "morts-france-14-18-boghari-boghar-pierrefitte",
+      "title": "Morts pour la France 14-18 - Boghari, Boghar, Pierrefitte",
+      "sourceType": "google_drive",
+      "status": "review_ready",
+      "driveSource": {
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1VruKwbS-LABv2MDpmxPC4GIDTxweObOM",
+        "inventoryManifest": null
+      },
+      "assetManifest": "data/generated/batches/lot-morts-france-boghari-14-18-001/public-assets.json",
+      "assistedReadingManifest": "data/generated/batches/lot-morts-france-boghari-14-18-001/assisted-readings.json",
+      "reviewRoute": "/lots/lot-morts-france-boghari-14-18-001",
+      "legacyReviewRoute": null,
+      "itemCount": 93,
+      "notes": "Lot pret pour revue ; images publiees et lectures assistees non validees."
+    },
+    {
       "lotId": "lot-fln-w4-005",
       "collectionId": "shd-gr-1h1646-lettres-directives-fln-wilaya4",
       "title": "SHD GR 1H1646 - Lettres et directives FLN Wilaya 4",

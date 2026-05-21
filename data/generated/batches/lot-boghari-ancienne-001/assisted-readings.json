@@ -1,0 +1,1951 @@
+[
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-01",
+    "sourceImage": "01-10007493_1412481435675703_831813686_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre repris tel quel, difficile à vérifier précisément sans informations externes.",
+        "suggestion": "Lecture probable du nom, basée sur l’apparence claire sur l’image et la correspondance de l’OCR."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "prisoniers bogarien au camp mourand\n\npage ksar el boukhari al'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-02",
+    "sourceImage": "02-1011060_1419443768312803_1671005864_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "bogarien",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture correcte du mot pourrait être \"boghariens\" ou une autre forme selon le contexte ou l'image, mais l'OCR donne \"bogarien\". L'image montre un mot équivalent mais la terminaison exacte reste à confirmer.",
+        "suggestion": "boghariens"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "mourand",
+        "issue": "nom_propre_incertain",
+        "note": "Le mot \"mourand\" issu de l'OCR est difficile à valider strictement sur l'image, il pourrait s'agir d'un nom propre mal restitué.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "lieu_incertain",
+        "note": "Le nom du lieu apparaît comme \"ksar el boukhari\". La formulation exacte ou l'orthographe pourrait varier.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "high",
+        "fragment": "al'ancienne",
+        "issue": "lecture_probable",
+        "note": "La mention \"al'ancienne\" sur l'image est lisible, mais la ponctuation (apostrophe) n'est pas totalement certaine.",
+        "suggestion": "à l'ancienne"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-03",
+    "sourceImage": "03-10153110_1427483357508844_2868798907605136544_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom propre correspond bien à l'image et à l'OCR, mais la transcription d'un nom de lieu implique toujours une part d'hypothèse, en particulier pour l'orthographe. Ici, 'ksar' pourrait s'écrire 'ksar', 'k'sar', 'qusar', etc. Absence de majuscule au début, probablement en raison du style du document et du lettrage original.",
+        "suggestion": "Lecture probable, mais le nom de lieu doit rester sous réserve."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-04",
+    "sourceImage": "04-10154022_1429042364019610_3228429995979988509_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable extraite de l'image, mais absence de contexte sur la certitude orthographique du nom propre.",
+        "suggestion": "ksar el boukhari"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page.",
+    "reviewId": "page-05",
+    "sourceImage": "05-10154891_1423841974539649_400079426288228401_n.jpg",
+    "status": "assisted_unavailable",
+    "uncertainties": []
+  },
+  {
+    "assistedReadingText": "",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page.",
+    "reviewId": "page-06",
+    "sourceImage": "06-10155257_1423261014597745_7428182695927787849_n.jpg",
+    "status": "assisted_unavailable",
+    "uncertainties": []
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-07",
+    "sourceImage": "07-10155281_1430065033917343_4738437717118824776_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "lieu_incertain",
+        "note": "Le nom du lieu pourrait varier ou être orthographié différemment. L’image est claire mais il reste toujours une incertitude sur la précision onomastique sans autre source.",
+        "suggestion": "Lecture confirmée visuellement, mais prudence sur la normalisation du nom."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-08",
+    "sourceImage": "08-10157357_1421705828086597_239598651_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "à l'ancienne",
+        "issue": "lecture_probable",
+        "note": "La cédille sous le 'a' dans 'à l'ancienne' est visible dans l'image mais pourrait être confondue selon la qualité. La lecture semble néanmoins correcte.",
+        "suggestion": "Conserver la graphie avec accent grave."
+      },
+      {
+        "confidence": "high",
+        "fragment": "page ksar el boukhari",
+        "issue": "lecture_probable",
+        "note": "La mention est clairement lisible dans l'image.",
+        "suggestion": ""
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari a l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-09",
+    "sourceImage": "09-10157404_1430065667250613_1996657946343600611_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre pourrait varier selon la translittération ou l'orthographe exacte.",
+        "suggestion": "Vérifier l'orthographe du lieu dans une source indépendante si besoin."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ksar el boukhari à l'ancienne\nactuellement hadjout",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-10",
+    "sourceImage": "10-10168092_1425184901072023_7067825217031379723_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "à l'ancienne",
+        "issue": "lecture_probable",
+        "note": "La typographie rend l'apostrophe discrète, mais la lecture 'à l'ancienne' paraît probable.",
+        "suggestion": "Vérifier la forme exacte de 'à l'ancienne'."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "actuellement hadjout",
+        "issue": "lecture_probable",
+        "note": "La mention 'actuellement hadjout' est visible sur l'image mais absente de l'OCR nettoyé.",
+        "suggestion": "Vérifier l'orthographe exacte de 'hadiout/hadjout' et la disposition du texte."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-11",
+    "sourceImage": "11-1016931_1426511927605987_5105543308918925530_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": []
+  },
+  {
+    "assistedReadingText": "",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page.",
+    "reviewId": "page-12",
+    "sourceImage": "12-10174909_1431302217126958_1988732524198117944_n.jpg",
+    "status": "assisted_unavailable",
+    "uncertainties": []
+  },
+  {
+    "assistedReadingText": "Algérie - Boghari - Le ksar et le village français",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-13",
+    "sourceImage": "13-10175977_1426110594312787_7212722857746753748_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "Algérie - Boghari",
+        "issue": "lieu_incertain",
+        "note": "Lecture tirée de l’image, typique de la toponymie, mais toujours incertaine sans contexte externe.",
+        "suggestion": "Lieu vraisemblable mais non absolument confirmé sans d'autres sources."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Le ksar et le village français",
+        "issue": "lecture_probable",
+        "note": "Fragment lisible à l'image malgré la faible qualité.",
+        "suggestion": "Lecture très probable mais demande toujours vérification humaine."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Agério - Bogtari L ksx t le",
+        "issue": "mot_illisible",
+        "note": "Ce texte OCR ne correspond pas exactement à ce qui est visible sur l'image.",
+        "suggestion": "Se baser sur l’image pour la lecture principale."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-14",
+    "sourceImage": "14-10177913_1431301817126998_262816984499439849_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture probable à partir de l'image, mais le nom propre KSAR EL BOUKHARI pourrait comporter une variante d'orthographe ou de transcription.",
+        "suggestion": "Confirmer ultérieurement dans le contexte archivistique ou avec la source primaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-15",
+    "sourceImage": "15-10251921_1430066697250510_8520755385877676657_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est lisible, mais il est toujours possible qu'il y ait une variation orthographique ou une lecture marginalement différente selon la graphie, même si l'OCR et l'image convergent.",
+        "suggestion": "Vérifier l'orthographe exacte du toponyme sur documents de référence."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne\n\nECOLE DE FILLES",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-16",
+    "sourceImage": "16-10255669_1423858434538003_8974375898553430350_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "page ksar el boukhari à l'ancienne",
+        "issue": "lecture_probable",
+        "note": "Texte clairement lisible en haut de l'image, mais la formulation exacte (ponctuation, accents) peut avoir une faible marge de déformation à cause du style graphique.",
+        "suggestion": "Conserver la formulation telle que lue, mais rester vigilant sur d'éventuelles variantes minimes en cas de comparaison fine avec d'autres sources."
+      },
+      {
+        "confidence": "high",
+        "fragment": "ECOLE DE FILLES",
+        "issue": "lecture_probable",
+        "note": "Texte lisible sur la façade du bâtiment, très probable comme lecture même sans OCR.",
+        "suggestion": "Lecture confirmée par l'image, pas d'incertitude majeure détectée ici."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-17",
+    "sourceImage": "17-10256472_1427483920842121_4772398587575083601_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "ksar el boukhari",
+        "issue": "lieu_incertain",
+        "note": "La lecture du nom propre 'ksar el boukhari' repose exclusivement sur le texte typographié présent sur l'image, mais ne peut être confirmée comme un intitulé certifié sans autre source.",
+        "suggestion": "Vérification de la toponymie suggérée par d'autres documents."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-18",
+    "sourceImage": "18-10258018_1423252434598603_8004677338771082060_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "Bien que le nom apparaisse clairement dans le texte en bas de l'image, il s'agit d'un toponyme qui ne peut être confirmé avec certitude à ce stade de transcription hypothétique selon les consignes.",
+        "suggestion": "Lecture probable correcte mais identification à valider."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "BOGHARI. — Les Arcades\n\n10           Cliché R.                                 H. Morando, édit., Boghari",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-19",
+    "sourceImage": "19-10259813_1426109030979610_2075047022042326433_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "H. Morando, édit., Boghari",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre de l'éditeur est partiellement lisible mais pourrait comporter des variantes ou une lecture imparfaite (p.ex. Morando/Morand).",
+        "suggestion": "Lecture probable conforme à l'image, incertitude sur orthographe précise."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Cliché R.",
+        "issue": "nom_propre_incertain",
+        "note": "Le 'R.' après 'Cliché' pourrait désigner une initiale ou un nom abregé dont la forme exacte reste incertaine.",
+        "suggestion": "Lecture probable mais incertitude sur la lettre ou le nom complet."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Les Arcades",
+        "issue": "lecture_probable",
+        "note": "La mention 'Les Arcades' est lisible mais il existe un très léger doute sur l'article ou la casse suivant la qualité du scan.",
+        "suggestion": "Lecture quasiment certaine d'après l'image."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-20",
+    "sourceImage": "20-10259951_1431302470460266_6934290933888621986_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "à l'ancienne",
+        "issue": "mot_illisible",
+        "note": "Le mot semble être 'ancienne', cependant une lettre semble surchargée ou floue.",
+        "suggestion": "à l'ancienne"
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "lieu_incertain",
+        "note": "Le terme 'ksar el boukhari' semble désigner un lieu mais sans validation externe.",
+        "suggestion": "ksar el boukhari"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ksar el boukhari à l'ancienne\nLa préparation du Couscous",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-21",
+    "sourceImage": "21-10273664_1426514430939070_3440245675718223356_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre semble être correctement lu, mais la différenciation entre \"ksar\" ou une variante similaire reste incertaine car l'image est stylisée.",
+        "suggestion": "ksar el boukhari"
+      },
+      {
+        "confidence": "high",
+        "fragment": "à l'ancienne",
+        "issue": "lecture_probable",
+        "note": "Lecture confirmée mais la police peut prêter à confusion sur l'accent.",
+        "suggestion": "à l'ancienne"
+      },
+      {
+        "confidence": "high",
+        "fragment": "La préparation du Couscous",
+        "issue": "lecture_probable",
+        "note": "Lecture claire malgré la petite taille de la police sur l'image.",
+        "suggestion": "La préparation du Couscous"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari al'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-22",
+    "sourceImage": "22-10288701_1437415643182282_8836079768049070545_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre lisible sur l'image mais doit rester marqué incertain",
+        "suggestion": "Lecture probable : « ksar el boukhari »."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Sur l’image, une vieille photographie montre un autobus rempli de passagers, certains assis à l’intérieur, d’autres sur le toit, la majorité portant des vêtements traditionnels. On distingue sur le panneau du bus l’inscription suivante (lecture probable) :\n\nAUTOBUS DES MESSAGERIES DE BORDJ-BOU-ARRERIDJ - M'SILA A BOUGZADA\n\nLégende ajoutée (en bas de l’image, hors du bus) :\npage ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-23",
+    "sourceImage": "23-10294327_1434204653503381_2241781685276909954_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "AUTOBUS DES MESSAGERIES DE BORDJ-BOU-ARRERIDJ - M'SILA A BOUGZADA",
+        "issue": "nom_propre_incertain",
+        "note": "Noms de villes écrits en lettres capitales sur la carrosserie mais certains caractères sont peu lisibles.",
+        "suggestion": "Lecture à confirmer sur document source ou avec OCR plus performant."
+      },
+      {
+        "confidence": "high",
+        "fragment": "page ksar el boukhari à l'ancienne",
+        "issue": "lecture_probable",
+        "note": "Texte en bas de l’image clairement lisible.",
+        "suggestion": "Lecture probable valide visuellement mais non certifiée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-24",
+    "sourceImage": "24-10295944_1427483357508844_2868798907605136544_o.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "lieu_incertain",
+        "note": "Le nom du lieu provient du texte, mais sans validation externe il faut considérer une incertitude de toponyme.",
+        "suggestion": "Lecture probable fidèle à l'image et à l'OCR, mais le toponyme reste à confirmer par source indépendante."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-25",
+    "sourceImage": "25-10298901_1431302653793581_5651921800437799498_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "ksar el boukhari à l'ancienne",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est probable car bien lisible, mais la graphie pourrait varier ou comporter un accent non précisé par le contexte.",
+        "suggestion": "ksar el boukhari à l'ancienne, tel que lu sur l'image, sans modification."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "FORGERON\nksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-26",
+    "sourceImage": "26-10311772_1435380943385752_2207859583282075020_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "La mention 'ksar el boukhari' parait lisible sur l'image mais il y a toujours un faible risque d'erreur de lecture ou d'interprétation pour un nom propre.",
+        "suggestion": "Lecture probable mais à faire valider."
+      },
+      {
+        "confidence": "high",
+        "fragment": "FORGERON",
+        "issue": "lecture_probable",
+        "note": "Le mot en haut de la façade est très clairement lisible sur l'image, avec forte probabilité d'exactitude.",
+        "suggestion": "Lecture quasi certaine."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-27",
+    "sourceImage": "27-10325585_1430065367250643_1634760654600830752_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "ksar el boukhari à l'ancienne",
+        "issue": "lecture_probable",
+        "note": "La lecture est très probable car le texte est visuellement net en bas de l'image. Aucun mot illisible ni nom propre incertain repéré.",
+        "suggestion": "Aucune incertitude majeure, la phrase semble confirmée par l'image."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Sur la photographie, on observe un groupe d’enfants et d’adultes posant devant un bâtiment. Plusieurs noms sont inscrits au-dessus des têtes des individus. Voici la lecture probable des noms visibles :\n\nPremière rangée (en bas, de gauche à droite) :\n- DJEBAR\n- HADJALI\n- GUETTAF\n- ZAHI\n- NAAIMA (devant la pancarte)\n- YAHIAOUI\n- ZIREM\n- OULDSAID\n- FERHAT\n\nDeuxième rangée (de gauche à droite) :\n- MICILI\n- BETTACHE\n- HAOATIS\n- HABACHE\n- GOUTTA\n- ZOUBIR\n- LADJEL\n- KHEMICHE\n- TAIBI\n\nTroisième rangée (de gauche à droite) :\n- MESSAOUDI\n- AFRIT\n- MEMMI\n- MEARFI\n- DAHAMANI (en rose)\n- HAMBI (en rose)\n\nQuatrième rangée (de gauche à droite) :\n- BECHARI (en rose)\n- MATMOURA\n- MANSSOUN (en rose)\n- GOUTIA\n- YAHIAOUI\n- BRIK\n- MISSOUMI\n- ZOUAOUCHA\n\nDernière rangée (haut, de gauche à droite) :\n- YAGOUB\n- BOUKHATEM\n\nCette lecture est réalisée depuis l’image uniquement, car aucun texte OCR n’est fourni. Les éléments en rose correspondent à un niveau d’inscription différent qui n’affecte pas la lecture des noms.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-28",
+    "sourceImage": "28-10338893_1436801249910388_6607156370939007525_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "BECHARI, MANSSOUN, BIHALIL, DAHAMANI, HAMBI",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms écrits en rose pourraient signaler une incertitude (affichage ou orthographe) ou une différenciation non expliquée sur l'image.",
+        "suggestion": "Confirmer l'exactitude de l'orthographe ou du statut particulier de ces noms."
+      },
+      {
+        "confidence": "low",
+        "fragment": "NAIMA (sur la pancarte tenue au centre)",
+        "issue": "lecture_probable",
+        "note": "La pancarte semble porter une inscription, mais la résolution ne permet pas de lire toutes les informations à l'intérieur.",
+        "suggestion": "Un scan haute définition de la pancarte serait nécessaire pour lecture fiable."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-29",
+    "sourceImage": "29-10352887_1433000390290474_1777835338605967595_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "à l'ancienne / äl'ancienne",
+        "issue": "mot_illisible",
+        "note": "L'OCR indique 'äl'ancienne' tandis que l'image montre clairement 'à l'ancienne'.",
+        "suggestion": "Préférer la lecture de l'image pour corriger l'accent et l'orthographe."
+      },
+      {
+        "confidence": "low",
+        "fragment": "£",
+        "issue": "mot_illisible",
+        "note": "Le caractère '£' présent dans l'OCR n'apparaît à aucun endroit visible de l'image.",
+        "suggestion": "Ignorer ce caractère pour la lecture probable."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "vue generale ksar el boukhari",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-30",
+    "sourceImage": "30-10371746_1437670389823474_8653588405562412821_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom propre semble probable mais il subsiste une incertitude sur l'exactitude orthographique ou toponymique.",
+        "suggestion": "La lecture paraît correcte sur l'image, mais sans garantie absolue sur le nom de lieu."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ksar el boukhari à l'ancienne\n6518 A Barbier Mauresque ND phot",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-31",
+    "sourceImage": "31-10373999_1435380653385781_31336440116157215_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "6518 A Barbier Mauresque ND phot",
+        "issue": "lecture_probable",
+        "note": "Cette ligne en bas de l'image est partiellement peu lisible à cause du contraste et de la surimpression sur le sol.",
+        "suggestion": "Le fragment semble indiquer une légende d'éditeur, probablement 'Barbier Mauresque ND phot', mais certains caractères pourraient différer."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-32",
+    "sourceImage": "32-10376322_1434791206778059_6695517277672635354_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture du nom propre `ksar el boukhari` est probable mais non certaine compte tenu de la police et du contraste.",
+        "suggestion": "Prudence sur l'exactitude de l'orthographe et du découpage du nom propre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "à l'ancienne",
+        "issue": "lecture_probable",
+        "note": "Le fragment `à l'ancienne` est lisible mais la présence potentielle d'une ligature ou accent pourrait affecter la lecture.",
+        "suggestion": "Vérifier l'accentuation lors de la validation."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Fabricant de Beignets\nCollections ND Phot",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-33",
+    "sourceImage": "33-10402073_1435380793385767_699350006885962902_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Collections ND Phot",
+        "issue": "sigle_incertain",
+        "note": "Le mot 'Phot' suggère probablement 'Photographe' ou 'Photographie', mais la lecture exacte du sigle ND n'est pas certaine.",
+        "suggestion": "Lecture probable conforme à l'image, mais interprétation de 'ND' incertaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Fabricant de Beignets",
+        "issue": "lecture_probable",
+        "note": "Texte clairement lisible sur l'image, lecture confirmée mais toujours à prendre comme probable.",
+        "suggestion": "Aucune correction suggérée, correspond à l'image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "93 T",
+        "issue": "mot_illisible",
+        "note": "Le numéro ou code '93 T' visible sur l'image en bas à gauche n'est pas repris par l'OCR. Sa signification n'est pas certaine.",
+        "suggestion": "Ajouter dans la lecture si pertinent, mais reste incertain."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "marché ksar el boukhari",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-34",
+    "sourceImage": "34-10411958_1437670259823487_359329467735720650_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "lieu_incertain",
+        "note": "Le nom de lieu est lisible sur l'image, mais la certitude sur l'identification exacte du lieu sans autre contexte ne peut être absolue.",
+        "suggestion": "Lecture plausible basée sur le texte imprimé visible en haut de l'image."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "zn\nlouaoucha pamza\n8\në",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-35",
+    "sourceImage": "35-1098199_1416647691925744_103988190_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "zn\nlouaoucha pamza\n8\në",
+        "issue": "mot_illisible",
+        "note": "Ce fragment ne correspond à aucun écrit lisible sur l'image ; la quasi-totalité des éléments présents sont des noms propres ou des mentions (date, lieu) qui n'apparaissent pas dans l'OCR proposé.",
+        "suggestion": "La transcription probable du texte manuscrit ou ajouté sur la photo comprend 'ksar el boukhari 1956', les noms de personnes, et la pancarte marquée 'Boghari 1956'. Aucun de ces éléments n'est fidèlement reflété par l'OCR nettoyé."
+      },
+      {
+        "confidence": "low",
+        "fragment": "louaoucha pamza",
+        "issue": "nom_propre_incertain",
+        "note": "Sur la photo, il est difficile d'assurer que le nom 'louaoucha pamza' apparaisse tel quel ; les noms visibles sont plus nombreux et certains difficiles à lire.",
+        "suggestion": "Nom propre très incertain, plusieurs variantes pourraient exister selon la disposition sur l'image."
+      },
+      {
+        "confidence": "low",
+        "fragment": "8",
+        "issue": "mot_illisible",
+        "note": "La présence d'un chiffre isolé ne semble pas avoir de correspondance claire sur l'image analysée.",
+        "suggestion": "Probablement une erreur ou un artefact OCR."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "ë",
+        "issue": "mot_illisible",
+        "note": "Caractère isolé, ne correspondant à aucun élément lisible de la photo.",
+        "suggestion": "Vraisemblablement une erreur de reconnaissance."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari al'ancienne\n\nBENZERROUK\nMHAMED (1947)\nsortie. sortie\ncimitiere benalia",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-36",
+    "sourceImage": "36-1157658_1418829378374242_121062761_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "BENZERROUK",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre semble correct d'après l'image mais toute majuscule OCRisée reste à confirmer.",
+        "suggestion": "Lecture probable mais incertaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "MHAMED",
+        "issue": "nom_propre_incertain",
+        "note": "Vérification sur l'image possible, la lisibilité est moyenne, nom propre à confirmer.",
+        "suggestion": "Lecture probable mais incertaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "(1947)",
+        "issue": "date_incertaine",
+        "note": "La date semble correcte mais absence de contexte de validation externe.",
+        "suggestion": "Lecture probable."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "cimitiere benalia",
+        "issue": "lieu_incertain",
+        "note": "Le toponyme correspond à ce qui est visible sur l'image, mais confirmation impossible sans contexte complémentaire.",
+        "suggestion": "Lecture probable."
+      },
+      {
+        "confidence": "high",
+        "fragment": "page ksar el boukhari al'ancienne",
+        "issue": "lecture_probable",
+        "note": "Texte d'en-tête très lisible sur l'image et en accord avec l'OCR.",
+        "suggestion": "Lecture probable, forte probabilité de justesse."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Pays : ksar el boghari a l'ancienne\n\n6. - BOGHARI (Algérie). - Oudat Sidi et Musiciens Indigènes",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-37",
+    "sourceImage": "37-1185447_1394325437491303_6400375_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Pays : ksar el boghari a l'ancienne",
+        "issue": "lecture_probable",
+        "note": "Texte en surimpression partiellement lisible, la casse et l'espacement sont difficiles à déterminer avec certitude.",
+        "suggestion": "Lecture probable basée sur l'image, pourrait varier légèrement selon la typographie exacte."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Oudat Sidi",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre difficile à confirmer avec certitude sur l'image ; la lecture semble plausible.",
+        "suggestion": "Lecture probable comme 'Oudat Sidi', mais pourrait être une autre graphie similaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "BOGHARI (Algérie) - Le Ksar - Grande Rue\n\npage ksar el boukhari al'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-38",
+    "sourceImage": "38-1379373_1421085101482003_1077402175_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "page ksar el boukhari al'ancienne",
+        "issue": "lecture_probable",
+        "note": "Texte surimprimé dans la bordure basse de l'image, typique d'une page ou groupe Facebook ; la formulation exacte dépend de la visibilité sur l'image et pourrait varier légèrement dans l'orthographe ou la casse.",
+        "suggestion": "page ksar el boukhari al'ancienne"
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "matmoura ahmed",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-39",
+    "sourceImage": "39-1505547_1433341673589679_187657349824741294_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "matmoura ahmed",
+        "issue": "nom_propre_incertain",
+        "note": "La syntaxe et l'orthographe du nom sont plausibles selon l'image, mais la confirmation est impossible sans source externe.",
+        "suggestion": "Lecture fondée sur la netteté visuelle de l'image ; pas de certitude sur l'exactitude du nom."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "boghari 1952\npage ksar el boukhari à l'ancienne\n\n(Sur l'image, une classe d'enfants et un adulte posant devant un bâtiment. Au centre, un élève tient une ardoise où l'on peut lire : 'BOGHARI 1952')",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-40",
+    "sourceImage": "40-1517478_1421736654750181_612642268_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "page ksar el boukhari à l'ancienne",
+        "issue": "lecture_probable",
+        "note": "Le mot 'ancienne' comporte un accent à l'envers mais semble correct par comparaison avec l'image.",
+        "suggestion": "à l'ancienne est probablement correct mais la fonte utilisée et l'accent peuvent prêter à confusion."
+      },
+      {
+        "confidence": "high",
+        "fragment": "boghari 1952",
+        "issue": "date_incertaine",
+        "note": "La date 1952 apparaît deux fois (en haut à gauche en couleur et sur l'ardoise au centre) mais il reste une petite incertitude du fait de la double visibilité.",
+        "suggestion": "1952 est très probable comme année, mais la règle demande d'ajouter une incertitude sur les dates."
+      },
+      {
+        "confidence": "high",
+        "fragment": "BOGHARI",
+        "issue": "lieu_incertain",
+        "note": "Le nom du lieu, BOGHARI, est lisible sur l'image, mais doit apparaître dans les incertitudes selon les règles.",
+        "suggestion": "BOGHARI comme lieu affiché sur l'ardoise est très probable."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "marchands fruits et legumes annee 50 bmb",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-41",
+    "sourceImage": "41-1524829_1392204324370081_1814949557_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "bmb",
+        "issue": "sigle_incertain",
+        "note": "Le sigle 'bmb' en fin de légende est peu lisible sur l'image et n'est pas explicitement clarifié, il peut y avoir une confusion ou une faute typographique.",
+        "suggestion": "Lecture probable 'bmb', mais incertitude sur le sigle réel."
+      },
+      {
+        "confidence": "high",
+        "fragment": "annee 50",
+        "issue": "date_incertaine",
+        "note": "La légende évoque l'année 50, il n'est pas sûr s'il s'agit de 1950 ou d'une autre décennie '50'.",
+        "suggestion": "Probable référence aux années 1950, mais la décennie exacte n'est pas assurée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "saada daira keb",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-42",
+    "sourceImage": "42-1536568_1389055144684999_1392101717_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "daira keb",
+        "issue": "nom_propre_incertain",
+        "note": "Le second mot 'daira keb' peut être une abréviation ou un nom spécifique. Sa lecture graphique correspond à ce qui est visible mais le sens exact et la segmentation n'est pas confirmée.",
+        "suggestion": "Lecture du texte centrée sur l'image, possibilité d'une abréviation administrative."
+      },
+      {
+        "confidence": "high",
+        "fragment": "saada",
+        "issue": "nom_propre_incertain",
+        "note": "Mot distinct en haut à gauche, il pourrait s'agir d'un nom géographique ou administratif, mais cela reste une hypothèse.",
+        "suggestion": "Lecture probable (graphie claire mais signification contextuelle incertaine)."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Aucune lecture assistee exploitable produite pour cette page.",
+    "reviewId": "page-43",
+    "sourceImage": "43-1546221_1421082934815553_615525007_n.jpg",
+    "status": "assisted_unavailable",
+    "uncertainties": []
+  },
+  {
+    "assistedReadingText": "BOGHARI (Algérie). – Place de la Commune mixte\nH. Monédio, éditeur, Boghari",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-44",
+    "sourceImage": "44-1607006_1395088814081632_1743900376_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "BOGHARI (Algérie).",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture du nom propre basée sur l'image, mais il existe un faible risque d'erreur de lecture dû au style typographique.",
+        "suggestion": "Vérifier le nom propre avec une source indépendante."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Place de la Commune mixte",
+        "issue": "lecture_probable",
+        "note": "Lecture claire sur l'image, mais possible confusion due à l'usure visuelle du support.",
+        "suggestion": "Confirmer lors d’une validation humaine sur pièce."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "H. Monédio, éditeur, Boghari",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom de l’éditeur est lisible mais pourrait être sujet à interprétation typographique (M ou N, accents).",
+        "suggestion": "Confirmer précisément l’orthographe de l’éditeur sur document original."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "pont route de boghar\nsaada",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-45",
+    "sourceImage": "45-1609651_1395959757327871_468494338_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "saada",
+        "issue": "lieu_incertain",
+        "note": "Le mot 'saada' est bien visible sur l'image, mais il pourrait s'agir d'un nom propre de lieu ou d'un autre terme ; incertitude sur la nature exacte.",
+        "suggestion": "Lecture probable correcte mais possible incertitude sur la référence géographique."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari al'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-46",
+    "sourceImage": "46-1621900_1416371955286651_245332882_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "École de garçons Boukhari (ardoise tenue au 1er rang)",
+        "issue": "mot_illisible",
+        "note": "Texte manuscrit sur l'ardoise difficile à lire précisément sur l'image, lecture probable mais non certaine.",
+        "suggestion": "Texte susceptible d'apporter une information sur l'école ou la classe, mais incertitude sur la totalité des mots inscrits."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Photographie de groupe scolaire en noir et blanc, montrant une classe composée d'enfants ainsi qu'une institutrice debout à droite. Au centre, un élève tient une ardoise marquée \"1948 - 49\". Plusieurs noms en couleur sont superposés sur chaque élève, probablement pour identifier chaque personne (ex : BENISSA, BENDOU, KAHIAL, HAMZA, etc). Une inscription manuscrite est visible en bas à droite de l'image, difficile à lire mais semblant comporter une date (\"1948 - 49\").",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-47",
+    "sourceImage": "47-1621934_1396588377265009_2114849680_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Inscription manuscrite en bas à droite",
+        "issue": "mot_illisible",
+        "note": "Le texte manuscrit en bas de la photo est en grande partie illisible, à part la date '1948 - 49'.",
+        "suggestion": "Inspection directe de l'original ou version haute résolution requise pour lecture complète."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Noms propres superposés sur chaque élève",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms apparaissent sous une forme graphique moderne sur la photo et ne semblent pas issus du document original.",
+        "suggestion": "Mentionner ces noms avec réserve, validation par une source primaire nécessaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari a l ancienne\n\nKSAR EL BOUKHARI 1954\n\n(Boukhari K. - illisible sur l'ardoise)\n\nPhoto d'un groupe d'élèves et d'un adulte, apparemment une photo de classe.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-48",
+    "sourceImage": "48-1622744_1408199716103875_1425356702_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Texte sur l'ardoise (inscription manuscrite tenue au centre en bas de la photo)",
+        "issue": "mot_illisible",
+        "note": "Le texte complet n'est pas lisible ; seule une portion apparaît comme « Boukhari K. » ou similaire, le reste étant flou.",
+        "suggestion": "Relecture à partir d'un scan de meilleure résolution ou d'une version agrandie pourrait permettre d'en savoir plus."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "page ksar el boukhari a l ancienne",
+        "issue": "lecture_probable",
+        "note": "L'inscription en haut est globalement lisible mais une incertitude mineure porte sur la précision du mot 'ancienne', dont l'orthographe pourrait être altérée.",
+        "suggestion": "Vérification orthographique ou comparaison avec d'autres sources si besoin."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari a l'ancienne\nDe gauche à droite\n(assis, 2ème)\nChahid Benaicha Tayeb\n\n[Sur un panneau tenu par un élève au premier rang : \"BOGHARI 1958\"]",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-49",
+    "sourceImage": "49-1653522_1415376265386220_759168290_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Benaicha Tayeb",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre est lu sur l'image, mais l'exactitude ne peut être garantie sans autre source.",
+        "suggestion": "Conserver tel quel, mais noter la possibilité d'une erreur sur le nom propre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "BOGHARI 1958",
+        "issue": "mot_illisible",
+        "note": "Lecture visuelle du panneau, les caractères sont partiellement nets, mais la clarté n'est pas parfaite.",
+        "suggestion": "Lecture probable mais à confirmer."
+      },
+      {
+        "confidence": "high",
+        "fragment": "page ksar el boukhari a l'ancienne, De gauche à droite, (assis, 2ème)",
+        "issue": "lecture_probable",
+        "note": "Le reste du texte est clairement lisible sur l'image et correspond à l'OCR nettoyé.",
+        "suggestion": "Lecture confirmée visuellement, mais toujours à valider selon procédure."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari a l'ancienne\n\nDe gauche à droite (assis, 2ème) Chahid Benaicha Tayeb",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-50",
+    "sourceImage": "50-1653522_1415376265386220_759168290_n.jpgi.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Chahid Benaicha Tayeb",
+        "issue": "nom_propre_incertain",
+        "note": "Nom propre restitué sur base de lisibilité moyenne ; incertitude sur la lecture exacte.",
+        "suggestion": "Une vérification sur la source originale ou auprès d'une liste fiable est conseillée."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "L'image montre un kiosque à musique de forme octogonale en maçonnerie, avec un escalier visible menant à la plateforme centrale. Le kiosque est situé sur une place dégagée, entourée d'une grille basse et d'arbres. À l'arrière-plan, on distingue les toits d'un bâtiment (probablement public ou administratif), et une horloge sur une façade. Aucun texte manuscrit ou imprimé n'est lisible sur l'image à part le mot « saada » en rouge en haut à gauche.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-51",
+    "sourceImage": "51-1654122_1400337113556802_1881138570_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "saada",
+        "issue": "mot_illisible",
+        "note": "Le mot « saada » figure en rouge en haut à gauche sans indication claire de sa signification ou de son contexte sur la photo.",
+        "suggestion": "Mentionner le mot tel quel mais sans pouvoir l'affirmer comme un nom propre ou un titre."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari à lancienne\nocb ksar el boukhari",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-52",
+    "sourceImage": "52-1779838_1410304835893363_1047692373_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "page ksar el boukhari à lancienne",
+        "issue": "lecture_probable",
+        "note": "Fragment correctement lu, mais \"lancienne\" semble être une faute d’orthographe pour \"l’ancienne\".",
+        "suggestion": "page ksar el boukhari à l’ancienne"
+      },
+      {
+        "confidence": "high",
+        "fragment": "ocb ksar el boukhari",
+        "issue": "lecture_probable",
+        "note": "Le texte est bien lisible en bas à gauche de l'image.",
+        "suggestion": "ocb ksar el boukhari"
+      },
+      {
+        "confidence": "low",
+        "fragment": "ZAIBBECK, MAZOUZ, ZAF, HAMZA, REZIGUE",
+        "issue": "nom_propre_incertain",
+        "note": "Ces noms propres apparaissent sur l'image en lettres orange ; leur transcription exacte n’est pas certaine car manuscrite et stylisée.",
+        "suggestion": "Ne pas intégrer ces fragments à la lecture assistée sans validation supplémentaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "\".É\nBs Ms L ué ENUVER VATIE ts cs cceakcae uË\nVRS UD S D- RDU JeSVOIE MEU\n, W\n\"“\"‘°_iè.i\"",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-53",
+    "sourceImage": "53-1800359_1406478216276025_1086402771_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "\".É\nBs Ms L ué ENUVER VATIE ts cs cceakcae uË\nVRS UD S D- RDU JeSVOIE MEU\n, W\n\"“\"‘°_iè.i\"",
+        "issue": "mot_illisible",
+        "note": "Presque tout ce fragment est de lecture indéchiffrable, autant sur l'image que sur l'OCR.",
+        "suggestion": "Probablement beaucoup d'erreurs OCR ; aucun contenu significatif lisible confirmé."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "boghari 1948\npage ksar el boukhari à l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-54",
+    "sourceImage": "54-1891197_1408746999382480_543596750_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Manuscrit sur l'ardoise en bas de la photo",
+        "issue": "mot_illisible",
+        "note": "Le texte manuscrit sur l'ardoise visible en bas de la photo est pratiquement impossible à lire sur cette image, à cause de la résolution et du contraste.",
+        "suggestion": "L'image plus nette pourrait permettre de confirmer ou exclure une date ou un nom propre."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "page ksar el boukhari à l'ancienne",
+        "issue": "lieu_incertain",
+        "note": "L'interprétation dépend du texte graphique bleu, qui pourrait contenir une erreur ou une approximation sur le lieu exact.",
+        "suggestion": "Confirmer l'orthographe du lieu avec des sources externes si besoin (hors des contraintes présentes)."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "1948",
+        "issue": "date_incertaine",
+        "note": "La date apparaît clairement, mais dépend d'un texte graphique qui pourrait théoriquement être postérieur à la photo originale.",
+        "suggestion": "Croiser avec d'autres indices pour valider la date si nécessaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Photographie de groupe représentant une classe d'élèves et deux adultes (instituteur ?), prise devant une façade de bâtiment (volet visible à gauche). Sur l'image, les prénoms (ou noms) de chaque individu sont indiqués en surimpression, en lettres roses. Les noms sont (de haut en bas et de gauche à droite, approximativement) :\n\nLigne supérieure : YAHYAOUI, YACOUB, BOUHAMAMA\nLigne suivante : ZEKHARA, NAIT YOUNI, MAKHZOUMI, GOUNI, BRINI, MISSOUMI\nLigne suivante : MEZALOUDI, AKRIT, MAMRI, KHELLAF, MERAFI, DAHAMANI, HARROU, ZOUOUCHIA\nLigne suivante : ROUCHI, BETCHACHE, TAJOUITI, GUESBA, AMERBACHE, ABOUCHER, LAROUANI, TAIBIA\nAvant-dernière ligne : DJEBAR, HADJOUF, GHETLAS, ZIANI, NAIMA, YAHYAOUI, OUYO SAID, ZIRAO, FERHAT\nLes prénoms sont placés devant chaque individu ; deux personnes adultes (debout au centre) portent également des étiquettes mais la lisibilité est faible.\n\nL'image est abîmée et certaines parties en bas à gauche et à droite sont partiellement effacées.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-55",
+    "sourceImage": "55-1896964_1401414833449030_1541448571_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Noms propres manuscrits (par ex. ZEKHARA, MAKHZOUMI, etc.)",
+        "issue": "nom_propre_incertain",
+        "note": "Plusieurs noms sont composés en lettres roses et peuvent prêter à confusion selon la police manuscrite.",
+        "suggestion": "Lecture des noms probable mais non certaine, risque d’erreur de transcription dans un ou plusieurs cas."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Partie inférieure gauche et droite (noms ou visages coupés)",
+        "issue": "mot_illisible",
+        "note": "La photographie est très dégradée à ces endroits.",
+        "suggestion": "Noms et visages non identifiables dans ces zones."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Étiquette sur les deux adultes (au centre de la seconde rangée)",
+        "issue": "lecture_probable",
+        "note": "Difficile à lire en raison de la qualité image/contraste.",
+        "suggestion": "Lecture à vérifier dans une version plus nette de l'image."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ksar el boukhari à l'ancienne\nCamp Morand - Boghari 1939",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-56",
+    "sourceImage": "56-1902006_1424125341177979_8798142332585545026_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari à l'ancienne",
+        "issue": "nom_propre_incertain",
+        "note": "Bien que lisible, il subsiste une incertitude sur la transcription exacte du nom propre, notamment sur les accents et la casse.",
+        "suggestion": "Conserver la version lue telle quelle, en restant attentif à d'éventuelles variantes d'écriture."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Camp Morand - Boghari 1939",
+        "issue": "nom_propre_incertain",
+        "note": "Les noms 'Camp Morand' et 'Boghari' semblent lisibles, mais méritent une validation ultérieure pour éviter toute confusion ou erreur d'identification des lieux ou entités.",
+        "suggestion": "Revoir la lecture des noms propres à validation humaine."
+      },
+      {
+        "confidence": "high",
+        "fragment": "1939",
+        "issue": "date_incertaine",
+        "note": "La date paraît lisible sur l'image mais nécessite toujours vérification approfondie lors d'une validation experte.",
+        "suggestion": "La date 1939 est probablement correcte mais reste à confirmer lors d'une vérification finale."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Directeur : M. Rahmouni\nCheikh    : Si Ali\nMaître    : M. Jean Paul\n\npage ksar el boukhari al'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-57",
+    "sourceImage": "57-1903992_1415375992052914_205094229_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "M. Jean Paul",
+        "issue": "nom_propre_incertain",
+        "note": "L'image permet une lecture probable, mais le nom ne peut être affirmé avec certitude sans source secondaire.",
+        "suggestion": "Lecture probable du nom, mais il existe un léger doute sur la formulation exacte (Jean Paul ou autre)."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "page ksar el boukhari al'ancienne",
+        "issue": "lecture_probable",
+        "note": "Cette phrase au bas de l'image est lisible mais la ponctuation et l'usage précis (« al'ancienne » ou « à l'ancienne ») comporte une incertitude.",
+        "suggestion": "Lecture probable, nécessite validation pour l'orthographe exacte."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "17 — BOGHARI (Algérie) - Vue générale du Ksar\n\nColl. Ecolie - Photo Albert",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-58",
+    "sourceImage": "58-1908270_1426511854272661_3916952434728288219_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Coll. Ecolie - Photo Albert",
+        "issue": "mot_illisible",
+        "note": "Le mot 'Ecolie' peut être incertain, la lettre initiale et l'ensemble du terme étant peu lisibles sur l'image.",
+        "suggestion": "'Ecolie' pourrait aussi être 'École' ou un autre mot similaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "CHAHBOUNIA  MISSOUMI  MAZBOURI\nTRABELSSI   ZIAT     HAMZA    HAMZA    CHRIF\nDOMINIQUE           ZAIBECK\npage ksar el boukhari a l'ancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-59",
+    "sourceImage": "59-1911692_1411805799076600_674842411_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "CHAHBOUNIA, MISSOUMI, MAZBOURI, TRABELSSI, ZIAT, HAMZA, CHRIF, DOMINIQUE, ZAIBECK",
+        "issue": "nom_propre_incertain",
+        "note": "L'image donne l'impression que ces noms sont corrects, mais la qualité et l'intégrité de certains caractères pourraient altérer l'orthographe exacte.",
+        "suggestion": "Vérification rapprochée sur document original nécessaire pour valider orthographe exacte."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "boghari 1955",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-60",
+    "sourceImage": "60-1911771_1413304998926680_1222929423_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "boghari 1955",
+        "issue": "date_incertaine",
+        "note": "La date exacte pourrait être 1955-56 selon l'ardoise sur la photo. 'boghari 1955' figure seulement en haut à gauche : il y a donc une incertitude sur la date précise.",
+        "suggestion": "'boghari 1955-56' pourrait être une alternative plus précise selon l'image, mais uniquement 'boghari 1955' est lisible en haut à gauche et confirmé par l'OCR."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "boghari",
+        "issue": "lieu_incertain",
+        "note": "Le mot 'boghari' correspond probablement à un lieu, mais sans autre contexte l'identification reste une hypothèse.",
+        "suggestion": "Ne pas affirmer de nom de lieu catégorique sans validation supplémentaire."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Un paysage désertique avec deux palmiers au centre. Au premier plan, un personnage en vêtements traditionnels se tient près des troncs. En arrière-plan, on distingue des collines et une construction blanche à toit rouge. En bas, un ruisseau ou un canal d'irrigation. En bas à droite, une inscription manuscrite difficile à lire, probablement une signature accompagnée d'une date.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-61",
+    "sourceImage": "61-1932424_1423253904598456_2959754356650944174_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "low",
+        "fragment": "Inscription manuscrite en bas à droite",
+        "issue": "mot_illisible",
+        "note": "L'image semble comporter une signature et une date manuscrites qui ne sont pas parfaitement lisibles, d’autant plus qu’aucun texte OCR n’est disponible.",
+        "suggestion": "Lecture probable mais incertaine, nécessite vérification manuelle ou excellente résolution pour confirmation du nom propre et de la date."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Nom propre du signataire",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom inscrit en bas à droite n'est pas distinctement lisible.",
+        "suggestion": "Nom du peintre/signataire à vérifier selon l’image en haute résolution ou source externe."
+      },
+      {
+        "confidence": "low",
+        "fragment": "Date manuscrite à la droite de la signature",
+        "issue": "date_incertaine",
+        "note": "La date apposée juste après la signature est difficile à confirmer.",
+        "suggestion": "Non certifiée, nécessite un examen plus poussé."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "page ksar el boukhari a lancienne",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-62",
+    "sourceImage": "62-397520_1411456515778195_1064960398_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ksar el boukhari",
+        "issue": "nom_propre_incertain",
+        "note": "La lecture des noms propres dépend de l'OCR et pourrait être sujette à confusion.",
+        "suggestion": "Vérifier le nom du lieu lors d'une validation humaine."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "a lancienne",
+        "issue": "lecture_probable",
+        "note": "L'expression 'a lancienne' pourrait comporter une faute ou une variante orthographique non rectifiée.",
+        "suggestion": "A vérifier lors d'une validation humaine."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "14. - Environs de Boghari (Algérie). - Le Pont de l'Oued-el-Akoun\nSAADA\nPAGE / KSAR EL BOOKHARI A L ANCIENNE",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-63",
+    "sourceImage": "63-64150_1393906724199841_417923858_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "Le Pont de l'Oued-el-Akoun",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom exact de l'oued (rivière) est partiellement lisible selon l'image mais la dernière lettre pourrait être ambiguë.",
+        "suggestion": "L'image indique 'Oued-el-Akoun' mais la calligraphie reste peu nette à cet endroit."
+      },
+      {
+        "confidence": "high",
+        "fragment": "SAADA",
+        "issue": "sigle_incertain",
+        "note": "Le mot 'SAADA' ne s'explique pas clairement, il pourrait s'agir d'un nom de page, d'éditeur ou autre sigle.",
+        "suggestion": "Conservation fidèle du mot saisi, sans certitude sur sa nature exacte."
+      },
+      {
+        "confidence": "high",
+        "fragment": "PAGE / KSAR EL BOOKHARI A L ANCIENNE",
+        "issue": "lecture_probable",
+        "note": "Le titre central en rose est lisible sur l'image, mais la typographie stylisée complique la certitude totale.",
+        "suggestion": "Ceci semble correspondre à la mention rédactionnelle ajoutée par une page internet ou un collectif."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Cette image montre une équipe de football en noir et blanc, composée de onze hommes en tenue sportive posant pour la photo. Des noms sont inscrits au-dessus de chacun d’eux, vraisemblablement pour les identifier :\n\nEn haut (de gauche à droite) :\n- TRABELSSI\n- CHAMBOUNIA\n- MISSOUMI\n- WAZBOURI\n- CHERIF\n\nAu milieu :\n- ZIAT\n- HAMZA\n- HAMZA\n\nEn bas ou accroupis (de gauche à droite) :\n- ben kara\n- (position centrale, bras croisés)\n- ZAMBECK\n\nUne mention figure également en bas de l’image : \"page ksar el boukhari à l’ancienne\".\n\nLa transcription des noms suit leur disposition sur la photo, mais certains noms pourraient être sujets à variations orthographiques car visibles uniquement sur l’image.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-64",
+    "sourceImage": "64-947241_1497185077205338_5949403596666802775_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ben kara",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom 'ben kara' est lisible sur l’image, mais l’orthographe pourrait être sujette à caution (écriture manuscrite ou police fantaisie).",
+        "suggestion": "Conserver la graphie telle qu’elle apparaît sur l’image, sans garantie formelle."
+      },
+      {
+        "confidence": "high",
+        "fragment": "page ksar el boukhari à l’ancienne",
+        "issue": "lecture_probable",
+        "note": "La phrase est bien lisible et cohérente malgré un léger effet de style graphique.",
+        "suggestion": "Transcrire tel quel le texte visible en bas de l’image."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "WAZBOURI",
+        "issue": "nom_propre_incertain",
+        "note": "L’orthographe WAZBOURI est conforme à l’image mais pourrait varier.",
+        "suggestion": "Conserver la graphie visible, mentionner l’incertitude sur l’orthographe."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "TRABELSSI, CHAMBOUNIA, MISSOUMI, CHERIF, ZIAT, HAMZA, HAMZA, ZAMBECK",
+        "issue": "nom_propre_incertain",
+        "note": "Tous les noms sont directement pris de l’image, mais pourraient comporter des variantes orthographiques non visibles.",
+        "suggestion": "Reprendre l’ensemble des noms tels qu’ils apparaissent pour une lecture probable."
+      },
+      {
+        "confidence": "low",
+        "fragment": "(personne centrale en bas, non nommée clairement)",
+        "issue": "mot_illisible",
+        "note": "Le nom de la personne centrale accroupie n’est pas évident ou pas mentionné.",
+        "suggestion": "Signaler l’absence d’identification, ne pas inventer."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "AFRIQUE FRANÇAISE\nALGERIE\n\nSAHARA ou GRAND DÉSERT\n\nCarte présentant les divisions et routes principales de l'Algérie, avec quelques villes et cours d'eau notables. Divers noms de lieux sont indiqués dans l'ensemble du territoire et aux frontières.\n\nIl y a des encadrés avec des illustrations :\n- En haut à gauche : portrait légendé \"DEY D'ALGER\"\n- En haut à droite : portrait légendé \"ABD-EL-KADER\"\n- En bas à gauche : image légendée \"ALGER\"\n- En bas à droite : image légendée \"CONSTANTINE\"\n\nUne légende ou un tableau central liste des explications, probablement des subdivisions administratives (types de territoire, etc.), mais les petits caractères sont difficilement déchiffrables depuis l’image.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-65",
+    "sourceImage": "65-984087_1428094390781074_3591071318192976565_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "high",
+        "fragment": "AFRIQUE FRANÇAISE / ALGERIE",
+        "issue": "lecture_probable",
+        "note": "Lecture très probable à cause de la taille et du style très lisibles du titre sur l'image.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Tableau central avec légende ou explications",
+        "issue": "mot_illisible",
+        "note": "Caractères trop petits sur l’image pour confirmer le texte exact.",
+        "suggestion": "Présence d'une légende ou tableau explicatif au centre."
+      },
+      {
+        "confidence": "high",
+        "fragment": "DEY D'ALGER et ABD-EL-KADER",
+        "issue": "nom_propre_incertain",
+        "note": "Lecture à partir des légendes sous les portraits, les lettres sont apparentes mais il subsiste une incertitude sur l’exactitude orthographique notamment sur ABD-EL-KADER.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "medium",
+        "fragment": "Sous-titre : 'SAHARA ou GRAND DÉSERT'",
+        "issue": "lecture_probable",
+        "note": "Lecture probable, mais certains mots du sous-titre pourraient être très légèrement différents.",
+        "suggestion": ""
+      },
+      {
+        "confidence": "low",
+        "fragment": "Liste exacte des villes et routes",
+        "issue": "mot_illisible",
+        "note": "La lecture précise de chaque toponyme sur la carte est sujette à caution, plusieurs noms restent difficiles à déchiffrer à cause de la résolution et de la taille.",
+        "suggestion": "Mention générale de la présences de multiples villes, routes et frontières."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "Sur l’image de la carte postale, on peut lire distinctement en bas à gauche, imprimé : \n\"Edition Andruet, Café, Boghari\".\n\nEn haut à gauche, sur le bâtiment (sous l'arche), il est écrit : \n\"DE VILLE\"\n(la première partie du mot ou de l’expression est partiellement hors champ ou couverte dans l’image).\n\nL’image montre une rue bordée d’arbres, des personnes marchant ou debout, des charrettes et, à gauche, le bâtiment de la mairie.",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-66",
+    "sourceImage": "66-994123_1395959563994557_1429892333_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "\"DE VILLE\"",
+        "issue": "mot_illisible",
+        "note": "Le début du panneau sur le bâtiment n'est pas intégralement visible ou lisible ; seule la fin \"DE VILLE\" est certaine.",
+        "suggestion": "Le panneau pourrait indiquer \"MAIRIE DE VILLE\" ou une mention similaire, mais seule la partie \"DE VILLE\" peut être lue."
+      },
+      {
+        "confidence": "high",
+        "fragment": "Edition Andruet, Café, Boghari",
+        "issue": "lecture_probable",
+        "note": "Lecture stable sur l’image, mention d'éditeur en bas à gauche.",
+        "suggestion": "Le texte de l’éditeur en bas à gauche semble bien lu, aucun doute significatif."
+      }
+    ]
+  },
+  {
+    "assistedReadingText": "ecole boghari - classe de filles - 1956",
+    "confidence": "low",
+    "humanValidation": {
+      "notes": null,
+      "validated": false,
+      "validatedAt": null,
+      "validatedBy": null
+    },
+    "note": "Lecture assistee IA non validee ; a verifier sur l'image.",
+    "reviewId": "page-67",
+    "sourceImage": "67-999277_1396124787311368_1407129935_n.jpg",
+    "status": "assisted_unverified",
+    "uncertainties": [
+      {
+        "confidence": "medium",
+        "fragment": "ecole boghari",
+        "issue": "nom_propre_incertain",
+        "note": "Le nom propre de l'école est peu lisible en raison de la qualité de l'image et de la police, lecture probable mais incertaine.",
+        "suggestion": "Lecture de l'image semble indiquer 'boghari', mais sans certitude totale."
+      },
+      {
+        "confidence": "medium",
+        "fragment": "1956",
+        "issue": "date_incertaine",
+        "note": "La date visible en bas à gauche semble être 1956, mais un reflet lumineux gêne la lecture parfaite.",
+        "suggestion": "Lecture probable de '1956', sous réserve de vérification sur image originale de meilleure qualité."
+      },
+      {
+        "confidence": "high",
+        "fragment": "classe de filles",
+        "issue": "lecture_probable",
+        "note": "La mention 'classe de filles' est clairement visible sur l'image.",
+        "suggestion": ""
+      }
+    ]
+  }
+]

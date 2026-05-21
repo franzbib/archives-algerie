@@ -28,6 +28,10 @@ import lotHistoireAlgerieFrancaiseTome1001AssistedReadings from "../../data/gene
 import lotHistoireAlgerieFrancaiseTome1001PublicAssets from "../../data/generated/batches/lot-histoire-algerie-francaise-tome-1-001/public-assets.json";
 import lotTitteri1h1216001AssistedReadings from "../../data/generated/batches/lot-titteri-1h1216-001/assisted-readings.json";
 import lotTitteri1h1216001PublicAssets from "../../data/generated/batches/lot-titteri-1h1216-001/public-assets.json";
+import lotBoghariAncienne001AssistedReadings from "../../data/generated/batches/lot-boghari-ancienne-001/assisted-readings.json";
+import lotBoghariAncienne001PublicAssets from "../../data/generated/batches/lot-boghari-ancienne-001/public-assets.json";
+import lotMortsFranceBoghari1418001AssistedReadings from "../../data/generated/batches/lot-morts-france-boghari-14-18-001/assisted-readings.json";
+import lotMortsFranceBoghari1418001PublicAssets from "../../data/generated/batches/lot-morts-france-boghari-14-18-001/public-assets.json";
 import tiaretZaouiasAssistedReadings from "../../data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json";
 import tiaretZaouiasPublicAssets from "../../data/generated/batches/lot-tiaret-zaouias-001/public-assets.json";
 import publicBatchAssets from "../../data/generated/public-batch-assets.example.json";
@@ -144,6 +148,10 @@ const assetManifestRegistry: Record<string, AssetManifest> = {
     lotHistoireAlgerieFrancaiseTome1001PublicAssets as AssetManifest,
   "data/generated/batches/lot-titteri-1h1216-001/public-assets.json":
     lotTitteri1h1216001PublicAssets as AssetManifest,
+  "data/generated/batches/lot-boghari-ancienne-001/public-assets.json":
+    lotBoghariAncienne001PublicAssets as AssetManifest,
+  "data/generated/batches/lot-morts-france-boghari-14-18-001/public-assets.json":
+    lotMortsFranceBoghari1418001PublicAssets as AssetManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/public-assets.json":
     tiaretZaouiasPublicAssets as AssetManifest,
   "data/generated/public-batch-assets.example.json": publicBatchAssets as AssetManifest,
@@ -177,6 +185,10 @@ const assistedReadingManifestRegistry: Record<string, AssistedReadingManifest> =
     lotHistoireAlgerieFrancaiseTome1001AssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-titteri-1h1216-001/assisted-readings.json":
     lotTitteri1h1216001AssistedReadings as AssistedReadingManifest,
+  "data/generated/batches/lot-boghari-ancienne-001/assisted-readings.json":
+    lotBoghariAncienne001AssistedReadings as AssistedReadingManifest,
+  "data/generated/batches/lot-morts-france-boghari-14-18-001/assisted-readings.json":
+    lotMortsFranceBoghari1418001AssistedReadings as AssistedReadingManifest,
   "data/generated/batches/lot-tiaret-zaouias-001/assisted-readings.json":
     tiaretZaouiasAssistedReadings as AssistedReadingManifest,
   "data/generated/pilot-batch-assisted-readings.example.json":
