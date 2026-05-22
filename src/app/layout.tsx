@@ -4,6 +4,7 @@ import Link from "next/link";
 import {
   ClipboardCheck,
   ClipboardList,
+  FolderOpen,
   Layers3,
   Library,
   Search,
@@ -80,6 +81,14 @@ export default function RootLayout({
                 >
                   <ClipboardCheck className="h-3.5 w-3.5" />
                   <span className="hidden sm:inline">Relecture</span>
+                </Link>
+                <Link
+                  href="/dossiers"
+                  className="flex items-center gap-1.5 text-xs text-foreground/50 hover:text-foreground/80 transition-colors"
+                  title="Vos dossiers documentaires"
+                >
+                  <FolderOpen className="h-3.5 w-3.5" />
+                  <span className="hidden sm:inline">Dossiers</span>
                 </Link>
               </div>
             </nav>
