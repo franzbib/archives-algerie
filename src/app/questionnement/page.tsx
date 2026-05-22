@@ -45,7 +45,7 @@ const methodSteps = [
 ];
 
 const safeguards = [
-  "La recherche V1 n'est pas une recherche semantique.",
+  "La recherche actuelle n'est pas une recherche sémantique.",
   "Aucune question n'est envoyee a OpenAI depuis cette page.",
   "Une lecture assistee n'est pas une transcription validee.",
   "La frise chronologique ne produit pas d'interpretation historique.",
@@ -173,12 +173,10 @@ export default function QuestionnementPage() {
                 Prochaine étape
               </p>
               <h2 className="mt-2 font-serif text-xl font-medium text-foreground">
-                Vers une recherche sourcée
+                Vers une recherche IA sourcée
               </h2>
               <p className="mt-3 text-sm leading-6 text-foreground/75">
-                La suite logique consiste a consolider les corrections humaines,
-                distinguer les niveaux de confiance, puis seulement ensuite
-                preparer une recherche semantique citee et verifiable.
+                Une recherche assistée par IA est en préparation. Elle devra rester strictement liée aux documents sources et aux lectures assistées disponibles, sans produire de fausses informations.
               </p>
             </section>
           </div>

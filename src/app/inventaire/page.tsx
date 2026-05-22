@@ -230,13 +230,13 @@ export default function InventoryPage() {
             >
               <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">Étape 1</p>
               <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
-                Inventaire Drive pilote
+                Inventaire initial (Drive)
               </h3>
             </Link>
             <div className="border border-paper-border bg-paper p-5 opacity-75">
               <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">Étape 2</p>
               <h3 className="mt-2 font-serif text-lg font-medium text-foreground">
-                Pipeline local pilote
+                Ancien pipeline local
               </h3>
             </div>
             <div className="border border-paper-border bg-paper p-5 opacity-75">
@@ -251,7 +251,7 @@ export default function InventoryPage() {
             >
               <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">Historique</p>
               <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
-                Pilotes publies
+                Fonds publiés V0
               </h3>
             </Link>
             <Link
@@ -260,7 +260,7 @@ export default function InventoryPage() {
             >
               <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-warm">Historique</p>
               <h3 className="mt-2 font-serif text-lg font-medium text-foreground group-hover:text-warm">
-                Boghari V0
+                Fonds Boghari V0
               </h3>
             </Link>
           </div>

@@ -7,18 +7,16 @@ type ArchiveTimelineProps = {
 
 export function ArchiveTimeline({ timeline }: ArchiveTimelineProps) {
   return (
-    <section className="border border-paper-border bg-paper p-6 md:p-10 overflow-hidden">
-      <div className="mb-8">
-        <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-          Repères chronologiques
+    <section className="border border-dashed border-paper-border bg-paper p-5 md:p-6 overflow-hidden">
+      <div className="mb-6">
+        <p className="font-mono text-[10px] font-semibold uppercase tracking-widest text-warm">
+          Outil exploratoire expérimental
         </p>
-        <h2 className="mt-2 font-serif text-3xl font-medium text-foreground">
-          Situer les documents dans le temps
+        <h2 className="mt-2 font-serif text-2xl font-medium text-foreground">
+          Pistes chronologiques dans le corpus
         </h2>
-        <p className="mt-4 max-w-3xl text-base leading-7 text-foreground/80">
-          Cette frise permet de croiser les grands repères historiques avec les
-          dates extraites des documents d&apos;archives. Sur ordinateur, faites défiler
-          horizontalement pour explorer l&apos;ensemble de la chronologie.
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-foreground/80">
+          Cette section expérimentale ne prétend pas à l&apos;exhaustivité historique et ne place qu&apos;un échantillon restreint de documents dont la date a pu être repérée automatiquement.
         </p>
       </div>
 
@@ -64,11 +62,11 @@ function HistoricalEventItem({ event }: { event: Extract<UnifiedTimelineEvent, {
       {/* Marqueur : aligné verticalement sur mobile, horizontalement sur desktop */}
       <span className="absolute left-[-20px] -translate-x-1/2 top-2 md:left-4 md:translate-x-0 md:top-[-40px] md:-translate-y-1/2 h-3.5 w-3.5 bg-warm" />
 
-      <article className="border border-paper-border bg-paper p-6 h-full shadow-sm">
-        <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+      <article className="border border-paper-border bg-background p-5 h-full shadow-sm opacity-80 hover:opacity-100 transition-opacity">
+        <p className="font-mono text-[10px] font-semibold uppercase tracking-widest text-warm">
           {formatDate(event.date)}
         </p>
-        <h3 className="mt-3 font-serif text-2xl font-medium text-foreground">
+        <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
           {event.title}
         </h3>
         <p className="mt-3 text-sm leading-6 text-foreground/80">{event.summary}</p>
@@ -94,7 +92,7 @@ function DocumentEventItem({ event }: { event: Extract<UnifiedTimelineEvent, { k
           <p className="font-mono text-[10px] font-semibold uppercase tracking-widest text-warm">
             {formatDate(event.date)}
           </p>
-          <h3 className="mt-2 font-serif text-lg font-medium text-foreground">
+          <h3 className="mt-2 font-serif text-base font-medium text-foreground">
             {event.title}
           </h3>
           <p className="mt-2 text-sm leading-6 text-foreground/75 line-clamp-3">

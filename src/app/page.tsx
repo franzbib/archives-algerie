@@ -159,19 +159,19 @@ export default function Home() {
           <div className="flex flex-wrap gap-x-12 gap-y-4">
             <div className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-warm/50"></span>
-              Environ {consultablePageCount} pages consultables
+              {consultablePageCount > 1000 ? "Plus d'un millier de pages consultables" : `Environ ${consultablePageCount} pages consultables`}
             </div>
             <div className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-warm/50"></span>
-              {reviewReadyBatches.length} lots intégrés
+              Plusieurs vagues de lots déjà publiées
             </div>
             <div className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-warm/50"></span>
-              Recherche V1 disponible
+              Recherche textuelle simple disponible
             </div>
             <div className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-warm/50"></span>
-              Inventaire technique accessible
+              Registre technique du corpus accessible
             </div>
           </div>
         </div>
