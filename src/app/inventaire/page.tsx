@@ -212,6 +212,7 @@ export default function InventoryPage() {
               </h2>
               <p className="mt-2 text-sm leading-6 text-foreground/70">
                 Ces anciens compteurs et routes de suivi reflètent l&apos;état du tout premier manifeste local.
+                La route historique <Link href="/collections" className="text-warm hover:underline font-medium">/collections</Link> est conservée uniquement à des fins de traçabilité technique du projet.
               </p>
             </div>
           </div>

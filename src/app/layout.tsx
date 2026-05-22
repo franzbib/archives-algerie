@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import {
-  Archive,
   ClipboardCheck,
   ClipboardList,
   Layers3,
@@ -81,14 +80,6 @@ export default function RootLayout({
                 >
                   <ClipboardCheck className="h-3.5 w-3.5" />
                   <span className="hidden sm:inline">Relecture</span>
-                </Link>
-                <Link
-                  href="/collections"
-                  className="flex items-center gap-1.5 text-xs text-foreground/50 hover:text-foreground/80 transition-colors"
-                  title="Ancienne structuration V0"
-                >
-                  <Archive className="h-3.5 w-3.5" />
-                  <span className="hidden sm:inline">Repère V0</span>
                 </Link>
               </div>
             </nav>

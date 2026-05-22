@@ -176,18 +176,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* 6. Repère V0 */}
-      <section className="bg-background">
-        <div className="mx-auto flex max-w-4xl flex-col items-center justify-center px-6 py-12 lg:px-8">
-          <Link
-            href="/collections"
-            className="text-xs text-foreground/40 hover:text-foreground/80 transition-colors"
-          >
-            Repère V0 / traçabilité ancienne
-          </Link>
-        </div>
-      </section>
     </main>
   );
 }
