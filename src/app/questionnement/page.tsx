@@ -22,7 +22,7 @@ const currentState = [
   },
   {
     icon: <Search className="h-5 w-5" />,
-    title: "Recherche V1",
+    title: "Recherche simple",
     text: "Une recherche textuelle simple peut interroger les lectures assistees deja publiees.",
   },
   {
@@ -72,17 +72,14 @@ export default function QuestionnementPage() {
       <section className="border-b border-paper-border bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-            Exploration raisonnée
+            Recherche dans le corpus
           </p>
           <h1 className="mt-3 max-w-4xl font-serif text-4xl font-medium text-foreground">
-            Interroger prudemment les lots d&apos;archives deja prepares.
+            Interroger prudemment les lectures assistées.
           </h1>
-          <p className="mt-5 max-w-3xl text-base leading-7 text-foreground/80">
-            Cette page rassemble les premiers outils de consultation transversale :
-            une recherche textuelle simple dans les lectures assistees publiees,
-            des liens vers les pages de revue et quelques reperes chronologiques.
-            Elle ne produit pas de synthese automatique et ne remplace pas la
-            verification sur image.
+          <p className="mt-5 max-w-3xl text-base leading-7 text-foreground/80 font-serif">
+            Cette page permet d&apos;effectuer une recherche textuelle simple dans les lectures assistées déjà publiées.
+            Elle n&apos;est pas exhaustive et dépend du volume de documents traités. Les résultats trouvés doivent toujours être vérifiés sur l&apos;image source.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -90,13 +87,13 @@ export default function QuestionnementPage() {
               href="/lots"
               className="inline-flex items-center justify-center border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
             >
-              Consulter les lots
+              Parcourir le catalogue
             </Link>
             <Link
               href="/inventaire"
               className="inline-flex items-center justify-center border border-paper-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-foreground"
             >
-              Voir le suivi d&apos;inventaire
+              Voir le registre technique
             </Link>
           </div>
         </div>

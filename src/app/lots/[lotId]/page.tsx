@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ShieldAlert } from "lucide-react";
+import { ArrowLeft, ShieldAlert, FolderOpen, BookOpen } from "lucide-react";
 import { LotReviewBrowser } from "@/components/lots/lot-review-browser";
 import { StatusBadge } from "@/components/ui/status-badge";
 import {
@@ -9,7 +9,6 @@ import {
   getArchiveBatchPageCount,
   getArchiveBatchReviewItems,
   getArchiveBatchSummary,
-  getArchiveBatchTypeLabel,
   getAssetsForBatch,
   isArchiveBatchReviewReady,
 } from "@/lib/archiveBatches";
@@ -40,82 +39,105 @@ export default async function LotReviewPage({
   const isReviewReady = isArchiveBatchReviewReady(batch);
   const pageCount = getArchiveBatchPageCount(batch);
 
+  const firstReviewItem = reviewItems.length > 0 ? reviewItems[0] : null;
+
   return (
     <main className="min-h-screen bg-background pb-16">
       <div className="border-b border-paper-border bg-paper/60">
         <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
           <Link
             href="/lots"
-            className="inline-flex items-center gap-2 text-sm text-warm hover:text-foreground"
+            className="inline-flex items-center gap-2 text-sm text-warm hover:text-foreground transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
-            Retour aux lots
+            Retour au catalogue
           </Link>
         </div>
       </div>
 
       <section className="border-b border-paper-border bg-paper">
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-          <div className="flex flex-wrap items-center gap-3">
-            <StatusBadge variant={isReviewReady ? "warning" : "neutral"}>
-              {isReviewReady ? "Lot pret pour revue" : "Lot planifie"}
-            </StatusBadge>
-            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-              {batch.lotId}
-            </p>
+          <div className="flex flex-col border border-paper-border bg-background p-8 md:p-12 shadow-sm">
+            <div className="flex flex-wrap items-start justify-between gap-6 border-b border-paper-border pb-8">
+              <div>
+                <div className="flex items-center gap-3">
+                  <FolderOpen className="h-5 w-5 text-warm" />
+                  <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
+                    Dossier d&apos;archives — {batch.lotId}
+                  </p>
+                </div>
+                <h1 className="mt-4 font-serif text-4xl font-medium text-foreground md:text-5xl">
+                  {batch.title}
+                </h1>
+              </div>
+              <StatusBadge variant={isReviewReady ? "neutral" : "warning"}>
+                {isReviewReady ? "Lot publié" : "Lot en préparation"}
+              </StatusBadge>
+            </div>
+
+            <div className="grid gap-8 pt-8 md:grid-cols-[2fr_1fr]">
+              <div>
+                <p className="text-base leading-relaxed text-foreground/80 font-serif">
+                  {batch.notes}
+                </p>
+                {firstReviewItem && (
+                  <div className="mt-8">
+                    <Link
+                      href={`/lots/${batch.lotId}/${firstReviewItem.reviewId}`}
+                      className="inline-flex items-center gap-2 border border-foreground bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+                    >
+                      <BookOpen className="h-4 w-4" />
+                      Commencer la consultation
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 border-l border-paper-border pl-8">
+                <SummaryItem label="Collection" value={batch.collectionId} />
+                <SummaryItem label="Pages" value={String(pageCount)} />
+                <SummaryItem label="Lectures assistées" value={String(summary.assistedReadingCount)} />
+                <SummaryItem label="Validation" value="Non validée" />
+              </div>
+            </div>
           </div>
-          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground">
-            {batch.title}
-          </h1>
-          <p className="mt-5 max-w-3xl text-base leading-7 text-foreground/80">
-            {batch.notes}
-          </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-10 lg:px-8">
-        <div className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          <SummaryCard label="Collection" value={batch.collectionId} />
-          <SummaryCard label="Pages" value={String(pageCount)} />
-          <SummaryCard label="Type de lot" value={getArchiveBatchTypeLabel(batch)} />
-          <SummaryCard
-            label="Lectures assistees"
-            value={String(summary.assistedReadingCount)}
-          />
-          <SummaryCard label="Validation" value="Non validee" />
-        </div>
-
-        <section className="mb-8 border border-paper-border bg-paper p-6">
+        <div className="mb-8 border border-paper-border bg-paper/50 p-6">
           <div className="flex items-start gap-3">
             <ShieldAlert className="mt-1 h-5 w-5 shrink-0 text-warm" />
             <div className="space-y-2 text-sm leading-6 text-foreground/80">
               <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-                Avertissement methodologique
+                Note de consultation
               </p>
               <p>
-                Cette revue generique ne valide pas les pages, documents, OCR ou
-                lectures assistees. Les sources doivent etre controlees sur image.
+                Ce lot contient des images sources brutes. Les éventuelles lectures assistées proposées n&apos;ont pas été validées humainement et peuvent contenir des erreurs. L&apos;image source reste la seule référence valable pour toute citation ou analyse.
               </p>
             </div>
           </div>
-        </section>
+        </div>
 
         {assets.length > 0 ? (
-          <LotReviewBrowser
-            assets={assets}
-            languageDetections={languageDetections}
-            lotId={batch.lotId}
-            reviewItems={reviewItems}
-          />
-        ) : (
-          <section className="border border-paper-border bg-paper p-8">
-            <h2 className="font-serif text-2xl font-medium text-foreground">
-              Lot a venir
+          <div>
+            <h2 className="font-serif text-2xl font-medium text-foreground mb-6">
+              Planche contact ({pageCount} pages)
             </h2>
-            <p className="mt-3 max-w-2xl text-sm leading-6 text-foreground/75">
-              Aucun manifeste public d&apos;images n&apos;est encore associe a ce lot.
-              Il devra d&apos;abord passer par un inventaire controle, puis par une
-              publication explicite.
+            <LotReviewBrowser
+              assets={assets}
+              languageDetections={languageDetections}
+              lotId={batch.lotId}
+              reviewItems={reviewItems}
+            />
+          </div>
+        ) : (
+          <section className="border border-paper-border bg-paper p-8 text-center">
+            <h2 className="font-serif text-2xl font-medium text-foreground">
+              Lot en préparation
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-sm leading-6 text-foreground/75">
+              Les documents de ce lot ne sont pas encore disponibles à la consultation. Ils apparaîtront ici une fois le processus de publication terminé.
             </p>
           </section>
         )}
@@ -124,11 +146,11 @@ export default async function LotReviewPage({
   );
 }
 
-function SummaryCard({ label, value }: { label: string; value: string }) {
+function SummaryItem({ label, value }: { label: string; value: string }) {
   return (
-    <div className="border border-paper-border bg-paper p-4">
-      <p className="font-mono text-xs uppercase tracking-wide text-warm">{label}</p>
-      <p className="mt-2 break-words text-xl font-semibold text-foreground">{value}</p>
+    <div>
+      <p className="font-mono text-[10px] uppercase tracking-widest text-foreground/50">{label}</p>
+      <p className="mt-1 text-base font-medium text-foreground">{value}</p>
     </div>
   );
 }

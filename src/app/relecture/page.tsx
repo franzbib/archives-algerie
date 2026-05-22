@@ -20,10 +20,10 @@ export default function AnnotationReviewPage() {
       <section className="border-b border-paper-border bg-paper">
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-            Relecture documentaire
+            Espace de travail
           </p>
           <h1 className="mt-3 font-serif text-4xl font-medium text-foreground">
-            Relecture des annotations
+            Modération des propositions
           </h1>
           <div className="mt-6 flex max-w-3xl items-start gap-3 border border-paper-border bg-background p-4 text-sm leading-6 text-foreground/80">
             <ShieldAlert className="mt-1 h-5 w-5 shrink-0 text-warm" />

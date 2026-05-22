@@ -49,42 +49,48 @@ export default function RootLayout({
                 Archives Algerie
               </span>
             </Link>
-            <nav className="flex flex-wrap items-center justify-end gap-4 sm:gap-6">
-              <Link
-                href="/lots"
-                className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
-              >
-                <Layers3 className="h-4 w-4 stroke-[2]" />
-                Lots d&apos;archives
-              </Link>
-              <Link
-                href="/questionnement"
-                className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
-              >
-                <Search className="h-4 w-4 stroke-[2]" />
-                Recherche V1
-              </Link>
-              <Link
-                href="/inventaire"
-                className="flex items-center gap-2 text-sm font-medium text-warm transition-colors hover:text-foreground"
-              >
-                <ClipboardList className="h-4 w-4 stroke-[2]" />
-                Etat du corpus
-              </Link>
-              <Link
-                href="/relecture"
-                className="flex items-center gap-2 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
-              >
-                <ClipboardCheck className="h-4 w-4 stroke-[2]" />
-                Relecture
-              </Link>
-              <Link
-                href="/collections"
-                className="flex items-center gap-2 border-l border-paper-border pl-4 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground sm:pl-6"
-              >
-                <Archive className="h-4 w-4 stroke-[2]" />
-                Reperes V0
-              </Link>
+            <nav className="flex flex-wrap items-center justify-end gap-x-6 gap-y-2">
+              <div className="flex items-center gap-6">
+                <Link
+                  href="/lots"
+                  className="flex items-center gap-2 text-sm font-medium text-warm hover:text-foreground transition-colors"
+                >
+                  <Layers3 className="h-4 w-4 stroke-[2]" />
+                  Lots
+                </Link>
+                <Link
+                  href="/questionnement"
+                  className="flex items-center gap-2 text-sm font-medium text-warm hover:text-foreground transition-colors"
+                >
+                  <Search className="h-4 w-4 stroke-[2]" />
+                  Recherche
+                </Link>
+                <Link
+                  href="/inventaire"
+                  className="flex items-center gap-2 text-sm font-medium text-warm hover:text-foreground transition-colors"
+                >
+                  <ClipboardList className="h-4 w-4 stroke-[2]" />
+                  Registre
+                </Link>
+              </div>
+              <div className="flex items-center gap-4 border-l border-paper-border pl-6">
+                <Link
+                  href="/relecture"
+                  className="flex items-center gap-1.5 text-xs text-foreground/50 hover:text-foreground/80 transition-colors"
+                  title="Espace de travail modération"
+                >
+                  <ClipboardCheck className="h-3.5 w-3.5" />
+                  <span className="hidden sm:inline">Relecture</span>
+                </Link>
+                <Link
+                  href="/collections"
+                  className="flex items-center gap-1.5 text-xs text-foreground/50 hover:text-foreground/80 transition-colors"
+                  title="Ancienne structuration V0"
+                >
+                  <Archive className="h-3.5 w-3.5" />
+                  <span className="hidden sm:inline">Repère V0</span>
+                </Link>
+              </div>
             </nav>
           </div>
         </header>

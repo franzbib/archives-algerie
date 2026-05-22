@@ -50,35 +50,35 @@ export default function InventoryPage() {
       <section className="border-b border-paper-border bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-            Suivi technique du pipeline d&apos;archives
+            Suivi technique du corpus
           </p>
           <h1 className="mt-3 font-serif text-4xl font-medium text-foreground">
-            Tableau de bord des traitements
+            Registre technique
           </h1>
-          <p className="mt-5 max-w-3xl text-base leading-7 text-foreground/80">
-            Cette page donne une vue d&apos;ensemble de l&apos;avancement technique des lots, du pipeline OCR, et de l&apos;activation des briques fonctionnelles du projet. Elle est destinee au pilotage et non a la consultation.
+          <p className="mt-5 max-w-3xl text-base leading-7 text-foreground/80 font-serif">
+            Ce registre documente l&apos;état technique de la numérisation et du traitement des lots d&apos;archives. Il permet de suivre l&apos;avancement du pipeline d&apos;ingestion (OCR, publication R2, génération des manifestes) avant la mise à disposition publique.
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8 space-y-16">
 
-        {/* Avertissement Consultation */}
-        <div className="border border-foreground bg-background p-6">
+        {/* Note de Registre */}
+        <div className="border border-paper-border bg-paper p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="font-mono text-xs font-semibold uppercase tracking-widest text-warm">
-                Avertissement
+                Note de consultation
               </p>
-              <p className="mt-2 text-sm font-medium text-foreground">
-                Cette page suit le traitement technique des lots.
+              <p className="mt-2 text-sm text-foreground/80 font-serif">
+                Pour consulter les documents et leurs lectures assistées, veuillez vous rendre dans le catalogue public.
               </p>
             </div>
             <Link
               href="/lots"
               className="inline-flex shrink-0 items-center justify-center border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
             >
-              Consulter les archives dans /lots
+              Aller au catalogue
             </Link>
           </div>
         </div>
