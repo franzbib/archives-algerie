@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      .bg { fill: #F5F5F0; }
+      .card { fill: #FFFFFF; stroke: rgba(0,0,0,0.15); stroke-width: 1; }
+      .text-title { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 32px; fill: #222222; letter-spacing: -0.03em; }
+      .text-body { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; fill: #222222; }
+      .text-mono { font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 14px; fill: #5B4275; }
+      .badge-text { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 12px; fill: #222222; letter-spacing: 0.05em; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" class="bg"/>
+  
+  <!-- Title -->
+  <text x="50" y="80" class="text-title">STYLE TILE : LABORATOIRE TYPOGRAPHIQUE</text>
+  <path d="M50 100h700" stroke="#222222" stroke-width="2"/>
+  
+  <!-- Colors -->
+  <text x="50" y="150" class="text-mono">PALETTE</text>
+  <rect x="50" y="170" width="60" height="60" fill="#FFFFFF" stroke="#000"/>
+  <rect x="130" y="170" width="60" height="60" fill="#F5F5F0" stroke="#000"/>
+  <rect x="210" y="170" width="60" height="60" fill="#222222"/>
+  <rect x="290" y="170" width="60" height="60" fill="#5B4275"/>
+  <rect x="370" y="170" width="60" height="60" fill="#FDE047"/>
+  
+  <text x="50" y="255" class="text-mono" font-size="10">Paper   Margin  Ink     Accent  Highlight</text>
+  
+  <!-- Typography -->
+  <text x="50" y="320" class="text-mono">TYPOGRAPHIE</text>
+  <text x="50" y="360" font-family="'Inter'" font-weight="900" font-size="48" fill="#222">Inter Black 48px</text>
+  <text x="50" y="400" font-family="'Inter'" font-weight="400" font-size="16" fill="#222">Inter Regular 16px. Utilisé pour le corps de texte des fiches.</text>
+  <text x="50" y="430" font-family="'JetBrains Mono'" font-weight="400" font-size="14" fill="#5B4275">JetBrains Mono 14px. Pour la taxonomie et le code.</text>
+  
+  <!-- UI Element: Card -->
+  <text x="480" y="150" class="text-mono">UI: FICHE RESSOURCE</text>
+  
+  <g transform="translate(480, 170)">
+    <rect width="270" height="150" class="card"/>
+    <!-- Hard shadow effect -->
+    <rect x="3" y="3" width="270" height="150" fill="none" stroke="#222222" stroke-width="1"/>
+    
+    <text x="20" y="40" class="text-mono" font-size="12">#RES-1042</text>
+    <text x="20" y="70" class="text-title" font-size="20">Fiche de Grammaire</text>
+    <text x="20" y="95" class="text-body" font-size="14" fill="#666">Une ressource annotée.</text>
+    
+    <!-- Badge -->
+    <rect x="20" y="115" width="75" height="20" fill="none" stroke="#222222" stroke-width="1"/>
+    <text x="28" y="129" class="badge-text">[ GRAM ]</text>
+    
+    <rect x="105" y="115" width="60" height="20" fill="#15803D"/>
+    <text x="113" y="129" class="badge-text" fill="#FFF">[ VERIFIED ]</text>
+  </g>
+  
+  <!-- Repères -->
+  <path d="M20 20 L10 20 L10 30" fill="none" stroke="#222" stroke-width="2"/>
+  <path d="M780 20 L790 20 L790 30" fill="none" stroke="#222" stroke-width="2"/>
+  <path d="M20 580 L10 580 L10 570" fill="none" stroke="#222" stroke-width="2"/>
+  <path d="M780 580 L790 580 L790 570" fill="none" stroke="#222" stroke-width="2"/>
+</svg>
