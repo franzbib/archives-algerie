@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Fond du logo -->
+  <rect width="100" height="100" rx="24" fill="#0F766E"/>
+  
+  <!-- Lignes représentant le texte / le document -->
+  <path d="M25 35h50M25 50h50M25 65h25" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Nœuds représentant la connexion / le réseau / les communs -->
+  <circle cx="65" cy="65" r="7" fill="#FFFFFF"/>
+  <circle cx="82" cy="48" r="6" fill="#F97316"/>
+  
+  <!-- Ligne reliant les nœuds -->
+  <path d="M65 65l17-17" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+</svg>
